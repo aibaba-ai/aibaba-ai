@@ -12,8 +12,8 @@ from langsmith.run_trees import RunTree
 from langsmith.utils import get_env_var
 from typing_extensions import Literal
 
-from langchain_core.runnables.base import RunnableLambda, RunnableParallel
-from langchain_core.tracers.langchain import LangChainTracer
+from aiagentsforce_core.runnables.base import RunnableLambda, RunnableParallel
+from aiagentsforce_core.tracers.langchain import AI Agents ForceTracer
 
 
 def _get_posts(client: Client) -> list:
@@ -60,7 +60,7 @@ def test_config_traceable_handoff() -> None:
     mock_client_ = Client(
         session=mock_session, api_key="test", auto_batch_tracing=False
     )
-    tracer = LangChainTracer(
+    tracer = AI Agents ForceTracer(
         client=mock_client_, project_name="another-flippin-project", tags=["such-a-tag"]
     )
 
@@ -147,7 +147,7 @@ async def test_config_traceable_async_handoff() -> None:
     mock_client_ = Client(
         session=mock_session, api_key="test", auto_batch_tracing=False
     )
-    tracer = LangChainTracer(client=mock_client_)
+    tracer = AI Agents ForceTracer(client=mock_client_)
 
     @traceable
     def my_great_great_grandchild_function(a: int) -> int:
@@ -211,7 +211,7 @@ async def test_config_traceable_async_handoff() -> None:
         parent_run_id = id_
 
 
-@patch("langchain_core.tracers.langchain.get_client")
+@patch("aiagentsforce_core.tracers.langchain.get_client")
 @pytest.mark.parametrize("enabled", [None, True, False])
 @pytest.mark.parametrize("env", ["", "true"])
 def test_tracing_enable_disable(
@@ -255,7 +255,7 @@ async def test_runnable_sequence_parallel_trace_nesting(method: str) -> None:
     mock_client_ = Client(
         session=mock_session, api_key="test", auto_batch_tracing=False
     )
-    tracer = LangChainTracer(client=mock_client_)
+    tracer = AI Agents ForceTracer(client=mock_client_)
 
     @RunnableLambda
     def my_child_function(a: int) -> int:
@@ -433,7 +433,7 @@ def test_tree_is_constructed(parent_type: Literal["ls", "lc"]) -> None:
             def parent(_) -> str:  # type: ignore
                 return child.invoke("foo")
 
-            tracer = LangChainTracer()
+            tracer = AI Agents ForceTracer()
             assert parent.invoke(..., {"run_id": rid, "callbacks": [tracer]}) == "foo"  # type: ignore
             run = tracer.latest_run
 

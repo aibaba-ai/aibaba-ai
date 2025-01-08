@@ -1,9 +1,9 @@
 """
-LangChain Couchbase Caches
+AI Agents Force Couchbase Caches
 
 Functions "_hash", "_loads_generations" and "_dumps_generations"
 are duplicated in this utility from modules:
-    - "libs/community/langchain_community/cache.py"
+    - "libs/community/aiagentsforce_community/cache.py"
 """
 
 import hashlib
@@ -13,11 +13,11 @@ from datetime import timedelta
 from typing import Any, Dict, Optional, Union
 
 from couchbase.cluster import Cluster
-from langchain_core.caches import RETURN_VAL_TYPE, BaseCache
-from langchain_core.embeddings import Embeddings
-from langchain_core.load.dump import dumps
-from langchain_core.load.load import loads
-from langchain_core.outputs import Generation
+from aiagentsforce_core.caches import RETURN_VAL_TYPE, BaseCache
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.load.dump import dumps
+from aiagentsforce_core.load.load import loads
+from aiagentsforce_core.outputs import Generation
 
 from langchain_couchbase.vectorstores import CouchbaseVectorStore
 

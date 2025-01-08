@@ -5,7 +5,7 @@ import pytest
 import requests
 from requests.exceptions import ConnectionError, HTTPError
 
-from langchain_community.llms.llamafile import Llamafile
+from aiagentsforce_community.llms.llamafile import Llamafile
 
 LLAMAFILE_SERVER_BASE_URL = os.getenv(
     "LLAMAFILE_SERVER_BASE_URL", "http://localhost:8080"

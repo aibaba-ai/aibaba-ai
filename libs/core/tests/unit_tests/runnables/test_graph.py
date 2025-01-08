@@ -4,15 +4,15 @@ from pydantic import BaseModel
 from syrupy import SnapshotAssertion
 from typing_extensions import override
 
-from langchain_core.language_models import FakeListLLM
-from langchain_core.output_parsers.list import CommaSeparatedListOutputParser
-from langchain_core.output_parsers.string import StrOutputParser
-from langchain_core.output_parsers.xml import XMLOutputParser
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.runnables.base import Runnable, RunnableConfig
-from langchain_core.runnables.graph import Edge, Graph, Node
-from langchain_core.runnables.graph_mermaid import _escape_node_label
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
+from aiagentsforce_core.language_models import FakeListLLM
+from aiagentsforce_core.output_parsers.list import CommaSeparatedListOutputParser
+from aiagentsforce_core.output_parsers.string import StrOutputParser
+from aiagentsforce_core.output_parsers.xml import XMLOutputParser
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.runnables.base import Runnable, RunnableConfig
+from aiagentsforce_core.runnables.graph import Edge, Graph, Node
+from aiagentsforce_core.runnables.graph_mermaid import _escape_node_label
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
 from tests.unit_tests.pydantic_utils import _normalize_schema
 
 
@@ -115,7 +115,7 @@ def test_graph_sequence(snapshot: SnapshotAssertion) -> None:
                 "id": 2,
                 "type": "runnable",
                 "data": {
-                    "id": ["langchain_core", "language_models", "fake", "FakeListLLM"],
+                    "id": ["aiagentsforce_core", "language_models", "fake", "FakeListLLM"],
                     "name": "FakeListLLM",
                 },
                 "metadata": {"key": 2},
@@ -170,7 +170,7 @@ def test_graph_sequence(snapshot: SnapshotAssertion) -> None:
                 "id": 2,
                 "type": "runnable",
                 "data": {
-                    "id": ["langchain_core", "language_models", "fake", "FakeListLLM"],
+                    "id": ["aiagentsforce_core", "language_models", "fake", "FakeListLLM"],
                     "name": "FakeListLLM",
                 },
                 "metadata": {"key": 2},

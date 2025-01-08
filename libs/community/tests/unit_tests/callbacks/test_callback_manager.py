@@ -3,15 +3,15 @@
 from unittest.mock import patch
 
 import pytest
-from langchain_core.callbacks.manager import CallbackManager, trace_as_chain_group
-from langchain_core.outputs import LLMResult
-from langchain_core.tracers.langchain import LangChainTracer, wait_for_all_tracers
-from langchain_core.utils.pydantic import get_fields
+from aiagentsforce_core.callbacks.manager import CallbackManager, trace_as_chain_group
+from aiagentsforce_core.outputs import LLMResult
+from aiagentsforce_core.tracers.langchain import AI Agents ForceTracer, wait_for_all_tracers
+from aiagentsforce_core.utils.pydantic import get_fields
 from langsmith import utils as ls_utils
 
-from langchain_community.callbacks import get_openai_callback
-from langchain_community.callbacks.manager import get_bedrock_anthropic_callback
-from langchain_community.llms.openai import BaseOpenAI
+from aiagentsforce_community.callbacks import get_openai_callback
+from aiagentsforce_community.callbacks.manager import get_bedrock_anthropic_callback
+from aiagentsforce_community.llms.openai import BaseOpenAI
 
 
 def test_callback_manager_configure_context_vars(
@@ -23,12 +23,12 @@ def test_callback_manager_configure_context_vars(
     monkeypatch.setenv("LANGCHAIN_TRACING_V2", "true")
     monkeypatch.setenv("LANGCHAIN_TRACING", "false")
     monkeypatch.setenv("LANGCHAIN_API_KEY", "foo")
-    with patch.object(LangChainTracer, "_update_run_single"):
-        with patch.object(LangChainTracer, "_persist_run_single"):
+    with patch.object(AI Agents ForceTracer, "_update_run_single"):
+        with patch.object(AI Agents ForceTracer, "_persist_run_single"):
             with trace_as_chain_group("test") as group_manager:
                 assert len(group_manager.handlers) == 1
                 tracer = group_manager.handlers[0]
-                assert isinstance(tracer, LangChainTracer)
+                assert isinstance(tracer, AI Agents ForceTracer)
 
                 with get_openai_callback() as cb:
                     # This is a new empty callback handler
@@ -121,4 +121,4 @@ def test_callback_manager_configure_context_vars(
                     assert cb.completion_tokens == 1
                     assert cb.total_cost > 0
             wait_for_all_tracers()
-            assert LangChainTracer._persist_run_single.call_count == 4  # type: ignore
+            assert AI Agents ForceTracer._persist_run_single.call_count == 4  # type: ignore

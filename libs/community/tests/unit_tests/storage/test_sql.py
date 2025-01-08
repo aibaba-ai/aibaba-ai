@@ -3,11 +3,11 @@ from typing import AsyncGenerator, Generator, cast
 import pytest
 import sqlalchemy as sa
 from langchain.storage._lc_store import create_kv_docstore, create_lc_store
-from langchain_core.documents import Document
-from langchain_core.stores import BaseStore
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.stores import BaseStore
 from packaging import version
 
-from langchain_community.storage.sql import SQLStore
+from aiagentsforce_community.storage.sql import SQLStore
 
 is_sqlalchemy_v1 = version.parse(sa.__version__).major == 1
 

@@ -1,6 +1,6 @@
 """Test johnsnowlabs embeddings."""
 
-from langchain_community.embeddings.johnsnowlabs import JohnSnowLabsEmbeddings
+from aiagentsforce_community.embeddings.johnsnowlabs import JohnSnowLabsEmbeddings
 
 
 def test_johnsnowlabs_embed_document() -> None:

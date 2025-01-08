@@ -1,3 +1,3 @@
 This package has moved!
 
-https://github.com/langchain-ai/langchain-azure/tree/main/libs/azure-dynamic-sessions
+https://github.com/AI-Agents-Force-SDK/langchain-azure/tree/main/libs/azure-dynamic-sessions

@@ -5,7 +5,7 @@ from typing import AsyncGenerator, Tuple
 
 import pytest_asyncio
 
-from langchain_community.embeddings import XinferenceEmbeddings
+from aiagentsforce_community.embeddings import XinferenceEmbeddings
 
 
 @pytest_asyncio.fixture

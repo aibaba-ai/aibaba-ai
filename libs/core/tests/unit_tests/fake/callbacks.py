@@ -6,8 +6,8 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from langchain_core.callbacks.base import AsyncCallbackHandler, BaseCallbackHandler
-from langchain_core.messages import BaseMessage
+from aiagentsforce_core.callbacks.base import AsyncCallbackHandler, BaseCallbackHandler
+from aiagentsforce_core.messages import BaseMessage
 
 
 class BaseFakeCallbackHandler(BaseModel):

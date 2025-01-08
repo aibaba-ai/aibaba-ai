@@ -50,7 +50,7 @@ Types of length-based splitting:
 - **Token-based**: Splits text based on the number of tokens, which is useful when working with language models.
 - **Character-based**: Splits text based on the number of characters, which can be more consistent across different types of text.
 
-Example implementation using LangChain's `CharacterTextSplitter` with token-based splitting:
+Example implementation using AI Agents Force's `CharacterTextSplitter` with token-based splitting:
 
 ```python
 from langchain_text_splitters import CharacterTextSplitter
@@ -71,7 +71,7 @@ texts = text_splitter.split_text(document)
 
 Text is naturally organized into hierarchical units such as paragraphs, sentences, and words. 
 We can leverage this inherent structure to inform our splitting strategy, creating split that maintain natural language flow, maintain semantic coherence within split, and adapts to varying levels of text granularity.
-LangChain's [`RecursiveCharacterTextSplitter`](/docs/how_to/recursive_text_splitter/) implements this concept:
+AI Agents Force's [`RecursiveCharacterTextSplitter`](/docs/how_to/recursive_text_splitter/) implements this concept:
 - The `RecursiveCharacterTextSplitter` attempts to keep larger units (e.g., paragraphs) intact.
 - If a unit exceeds the chunk size, it moves to the next level (e.g., sentences).
 - This process continues down to the word level if necessary.

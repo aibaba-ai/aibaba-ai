@@ -1,9 +1,9 @@
 # flake8: noqa
 """Test sentence_transformer embeddings."""
 
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 
-from langchain_community.embeddings.sentence_transformer import (
+from aiagentsforce_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,
 )
 

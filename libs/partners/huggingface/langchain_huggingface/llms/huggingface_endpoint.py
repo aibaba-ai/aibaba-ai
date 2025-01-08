@@ -4,13 +4,13 @@ import logging
 import os
 from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.llms import LLM
-from langchain_core.outputs import GenerationChunk
-from langchain_core.utils import from_env, get_pydantic_field_names
+from aiagentsforce_core.language_models.llms import LLM
+from aiagentsforce_core.outputs import GenerationChunk
+from aiagentsforce_core.utils import from_env, get_pydantic_field_names
 from pydantic import ConfigDict, Field, model_validator
 from typing_extensions import Self
 
@@ -49,7 +49,7 @@ class HuggingFaceEndpoint(LLM):
             print(llm.invoke("What is Deep Learning?"))
 
             # Streaming response example
-            from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+            from aiagentsforce_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
             callbacks = [StreamingStdOutCallbackHandler()]
             llm = HuggingFaceEndpoint(

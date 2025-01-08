@@ -2,7 +2,7 @@ from typing import cast
 
 from pydantic import SecretStr
 
-from langchain_community.embeddings import MiniMaxEmbeddings
+from aiagentsforce_community.embeddings import MiniMaxEmbeddings
 
 
 def test_initialization_with_alias() -> None:

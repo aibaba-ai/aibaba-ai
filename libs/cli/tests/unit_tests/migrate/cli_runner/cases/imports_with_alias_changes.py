@@ -20,7 +20,7 @@ cases = [
         expected=File(
             "app.py",
             content=[
-                "from langchain_core.runnables import RunnableMap",
+                "from aiagentsforce_core.runnables import RunnableMap",
                 "",
                 "chain = RunnableMap({})",
             ],

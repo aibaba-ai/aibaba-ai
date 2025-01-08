@@ -5,7 +5,7 @@ from typing import cast
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.llms.forefrontai import ForefrontAI
+from aiagentsforce_community.llms.forefrontai import ForefrontAI
 
 
 def test_forefrontai_api_key_is_secret_string() -> None:

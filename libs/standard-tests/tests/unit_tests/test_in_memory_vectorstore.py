@@ -1,5 +1,5 @@
 import pytest
-from langchain_core.vectorstores import (
+from aiagentsforce_core.vectorstores import (
     InMemoryVectorStore,
     VectorStore,
 )

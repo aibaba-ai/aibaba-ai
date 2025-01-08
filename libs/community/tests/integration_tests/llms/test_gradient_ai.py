@@ -11,7 +11,7 @@ You'll then need to set:
 
 import os
 
-from langchain_community.llms import GradientLLM
+from aiagentsforce_community.llms import GradientLLM
 
 
 def test_gradient_acall() -> None:

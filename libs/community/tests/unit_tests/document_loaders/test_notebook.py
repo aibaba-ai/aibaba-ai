@@ -2,7 +2,7 @@ import json
 
 from pytest_mock import MockerFixture
 
-from langchain_community.document_loaders.notebook import NotebookLoader
+from aiagentsforce_community.document_loaders.notebook import NotebookLoader
 
 
 def test_initialization() -> None:

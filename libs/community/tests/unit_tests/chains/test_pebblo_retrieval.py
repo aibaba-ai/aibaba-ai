@@ -6,24 +6,24 @@ from typing import Any, List
 from unittest.mock import Mock
 
 import pytest
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain_core.documents import Document
-from langchain_core.vectorstores import (
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.vectorstores import (
     InMemoryVectorStore,
     VectorStore,
     VectorStoreRetriever,
 )
 
-from langchain_community.chains import PebbloRetrievalQA
-from langchain_community.chains.pebblo_retrieval.models import (
+from aiagentsforce_community.chains import PebbloRetrievalQA
+from aiagentsforce_community.chains.pebblo_retrieval.models import (
     AuthContext,
     ChainInput,
     SemanticContext,
 )
-from langchain_community.vectorstores.pinecone import Pinecone
+from aiagentsforce_community.vectorstores.pinecone import Pinecone
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

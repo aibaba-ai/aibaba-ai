@@ -1,6 +1,6 @@
 """Test TensorflowHub embeddings."""
 
-from langchain_community.embeddings import TensorflowHubEmbeddings
+from aiagentsforce_community.embeddings import TensorflowHubEmbeddings
 
 
 def test_tensorflowhub_embedding_documents() -> None:

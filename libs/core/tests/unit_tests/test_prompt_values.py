@@ -1,4 +1,4 @@
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     HumanMessage,
@@ -8,7 +8,7 @@ from langchain_core.messages import (
     ToolMessage,
     ToolMessageChunk,
 )
-from langchain_core.prompt_values import ChatPromptValueConcrete
+from aiagentsforce_core.prompt_values import ChatPromptValueConcrete
 
 
 def test_chat_prompt_value_concrete() -> None:

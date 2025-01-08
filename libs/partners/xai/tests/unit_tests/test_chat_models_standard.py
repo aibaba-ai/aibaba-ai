@@ -1,8 +1,8 @@
-"""Standard LangChain interface tests"""
+"""Standard AI Agents Force interface tests"""
 
 from typing import Tuple, Type
 
-from langchain_core.language_models import BaseChatModel
+from aiagentsforce_core.language_models import BaseChatModel
 from langchain_tests.unit_tests import (  # type: ignore[import-not-found]
     ChatModelUnitTests,  # type: ignore[import-not-found]
 )

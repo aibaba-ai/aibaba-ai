@@ -1,12 +1,12 @@
-"""Standard LangChain interface tests"""
+"""Standard AI Agents Force interface tests"""
 
 from typing import Type
 
 import pytest
-from langchain_core.language_models import BaseChatModel
+from aiagentsforce_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
-from langchain_community.chat_models.litellm import ChatLiteLLM
+from aiagentsforce_community.chat_models.litellm import ChatLiteLLM
 
 
 class TestLiteLLMStandard(ChatModelIntegrationTests):

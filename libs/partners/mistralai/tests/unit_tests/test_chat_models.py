@@ -5,8 +5,8 @@ from typing import Any, AsyncGenerator, Dict, Generator, List, cast
 from unittest.mock import patch
 
 import pytest
-from langchain_core.callbacks.base import BaseCallbackHandler
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks.base import BaseCallbackHandler
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -216,7 +216,7 @@ def test__convert_dict_to_message_tool_call() -> None:
             InvalidToolCall(
                 name="GenerateUsername",
                 args="oops",
-                error="Function GenerateUsername arguments:\n\noops\n\nare not valid JSON. Received JSONDecodeError Expecting value: line 1 column 1 (char 0)\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE ",  # noqa: E501
+                error="Function GenerateUsername arguments:\n\noops\n\nare not valid JSON. Received JSONDecodeError Expecting value: line 1 column 1 (char 0)\nFor troubleshooting, visit: https://docs.aiagentsforce.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE ",  # noqa: E501
                 id="ssAbar4Dr",
                 type="invalid_tool_call",
             ),

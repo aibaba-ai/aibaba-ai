@@ -2,7 +2,7 @@
 
 import pytest
 
-from langchain_community.embeddings import HuggingFaceHubEmbeddings
+from aiagentsforce_community.embeddings import HuggingFaceHubEmbeddings
 
 
 def test_huggingfacehub_embedding_documents() -> None:

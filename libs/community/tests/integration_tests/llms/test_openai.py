@@ -4,12 +4,12 @@ from pathlib import Path
 from typing import Generator
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.chat_models.openai import ChatOpenAI
-from langchain_community.llms.loading import load_llm
-from langchain_community.llms.openai import OpenAI
+from aiagentsforce_community.chat_models.openai import ChatOpenAI
+from aiagentsforce_community.llms.loading import load_llm
+from aiagentsforce_community.llms.openai import OpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import (
     FakeCallbackHandler,
 )

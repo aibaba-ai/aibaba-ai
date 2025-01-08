@@ -7,12 +7,12 @@ import time
 from typing import Any, Generator
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.aerospike import (
+from aiagentsforce_community.vectorstores.aerospike import (
     Aerospike,
 )
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

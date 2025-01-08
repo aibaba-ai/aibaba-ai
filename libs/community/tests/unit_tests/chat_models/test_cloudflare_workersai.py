@@ -3,8 +3,8 @@
 from typing import Any, Dict, List, Type
 
 import pytest
-from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import (
+from aiagentsforce_core.language_models import BaseChatModel
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
@@ -13,7 +13,7 @@ from langchain_core.messages import (
 )
 from langchain_tests.unit_tests import ChatModelUnitTests
 
-from langchain_community.chat_models.cloudflare_workersai import (
+from aiagentsforce_community.chat_models.cloudflare_workersai import (
     ChatCloudflareWorkersAI,
     _convert_messages_to_cloudflare_messages,
 )

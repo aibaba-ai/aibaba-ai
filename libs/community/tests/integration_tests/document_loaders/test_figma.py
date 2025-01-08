@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.figma import FigmaFileLoader
+from aiagentsforce_community.document_loaders.figma import FigmaFileLoader
 
 ACCESS_TOKEN = ""
 IDS = ""

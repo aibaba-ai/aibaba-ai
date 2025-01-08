@@ -21,42 +21,42 @@ from pytest_mock import MockerFixture
 from syrupy import SnapshotAssertion
 from typing_extensions import TypedDict
 
-from langchain_core.callbacks.manager import (
+from aiagentsforce_core.callbacks.manager import (
     Callbacks,
     atrace_as_chain_group,
     trace_as_chain_group,
 )
-from langchain_core.documents import Document
-from langchain_core.language_models import (
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.language_models import (
     FakeListChatModel,
     FakeListLLM,
     FakeStreamingListLLM,
 )
-from langchain_core.load import dumpd, dumps
-from langchain_core.load.load import loads
-from langchain_core.messages import (
+from aiagentsforce_core.load import dumpd, dumps
+from aiagentsforce_core.load.load import loads
+from aiagentsforce_core.messages import (
     AIMessageChunk,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.messages.base import BaseMessage
-from langchain_core.output_parsers import (
+from aiagentsforce_core.messages.base import BaseMessage
+from aiagentsforce_core.output_parsers import (
     BaseOutputParser,
     CommaSeparatedListOutputParser,
     StrOutputParser,
 )
-from langchain_core.outputs.chat_generation import ChatGeneration
-from langchain_core.outputs.llm_result import LLMResult
-from langchain_core.prompt_values import ChatPromptValue, StringPromptValue
-from langchain_core.prompts import (
+from aiagentsforce_core.outputs.chat_generation import ChatGeneration
+from aiagentsforce_core.outputs.llm_result import LLMResult
+from aiagentsforce_core.prompt_values import ChatPromptValue, StringPromptValue
+from aiagentsforce_core.prompts import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
     PromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import (
+from aiagentsforce_core.retrievers import BaseRetriever
+from aiagentsforce_core.runnables import (
     AddableDict,
     ConfigurableField,
     ConfigurableFieldMultiOption,
@@ -76,18 +76,18 @@ from langchain_core.runnables import (
     add,
     chain,
 )
-from langchain_core.runnables.base import RunnableMap, RunnableSerializable
-from langchain_core.runnables.utils import Input, Output
-from langchain_core.tools import BaseTool, tool
-from langchain_core.tracers import (
+from aiagentsforce_core.runnables.base import RunnableMap, RunnableSerializable
+from aiagentsforce_core.runnables.utils import Input, Output
+from aiagentsforce_core.tools import BaseTool, tool
+from aiagentsforce_core.tracers import (
     BaseTracer,
     ConsoleCallbackHandler,
     Run,
     RunLog,
     RunLogPatch,
 )
-from langchain_core.tracers.context import collect_runs
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
+from aiagentsforce_core.tracers.context import collect_runs
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
 from tests.unit_tests.pydantic_utils import _normalize_schema, _schema
 from tests.unit_tests.stubs import AnyStr, _any_id_ai_message, _any_id_ai_message_chunk
 
@@ -95,7 +95,7 @@ PYDANTIC_VERSION = tuple(map(int, pydantic.__version__.split(".")))
 
 
 class FakeTracer(BaseTracer):
-    """Fake tracer that records LangChain execution.
+    """Fake tracer that records AI Agents Force execution.
     It replaces run ids with deterministic UUIDs for snapshotting."""
 
     def __init__(self) -> None:
@@ -323,7 +323,7 @@ def test_schemas(snapshot: SnapshotAssertion) -> None:
                 "\n"
                 "    .. code-block:: python\n"
                 "\n"
-                "        from langchain_core.documents "
+                "        from aiagentsforce_core.documents "
                 "import Document\n"
                 "\n"
                 "        document = Document(\n"
@@ -5315,8 +5315,8 @@ async def test_passthrough_atransform_with_dicts() -> None:
 
 
 def test_listeners() -> None:
-    from langchain_core.runnables import RunnableLambda
-    from langchain_core.tracers.schemas import Run
+    from aiagentsforce_core.runnables import RunnableLambda
+    from aiagentsforce_core.tracers.schemas import Run
 
     def fake_chain(inputs: dict) -> dict:
         return {**inputs, "key": "extra"}
@@ -5345,8 +5345,8 @@ def test_listeners() -> None:
 
 
 async def test_listeners_async() -> None:
-    from langchain_core.runnables import RunnableLambda
-    from langchain_core.tracers.schemas import Run
+    from aiagentsforce_core.runnables import RunnableLambda
+    from aiagentsforce_core.tracers.schemas import Run
 
     def fake_chain(inputs: dict) -> dict:
         return {**inputs, "key": "extra"}
@@ -5379,9 +5379,9 @@ def test_closing_iterator_doesnt_raise_error() -> None:
     """Test that closing an iterator calls on_chain_end rather than on_chain_error."""
     import time
 
-    from langchain_core.callbacks import BaseCallbackHandler
-    from langchain_core.language_models.fake_chat_models import GenericFakeChatModel
-    from langchain_core.output_parsers import StrOutputParser
+    from aiagentsforce_core.callbacks import BaseCallbackHandler
+    from aiagentsforce_core.language_models.fake_chat_models import GenericFakeChatModel
+    from aiagentsforce_core.output_parsers import StrOutputParser
 
     on_chain_error_triggered = False
     on_chain_end_triggered = False

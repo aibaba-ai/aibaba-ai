@@ -4,9 +4,9 @@ from typing import TYPE_CHECKING, Any, Dict, Generator
 
 import pytest
 import requests
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Meilisearch
+from aiagentsforce_community.vectorstores import Meilisearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 if TYPE_CHECKING:

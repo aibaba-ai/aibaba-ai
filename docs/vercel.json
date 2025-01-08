@@ -80,7 +80,7 @@
     },
     {
       "source": "/docs/tutorials/data_generation",
-      "destination": "https://python.langchain.com/v0.2/docs/tutorials/data_generation/"
+      "destination": "https://docs.aiagentsforce.com/v0.2/docs/tutorials/data_generation/"
     },
     {
       "source": "/docs/langsmith(/?)",
@@ -108,7 +108,7 @@
     },
     {
       "source": "/v0.2/docs/templates/:path(.*/?)*",
-      "destination": "https://github.com/langchain-ai/langchain/tree/v0.2/templates/:path*"
+      "destination": "https://github.com/AI-Agents-Force-SDK/langchain/tree/v0.2/templates/:path*"
     },
     {
       "source": "/docs/integrations/providers/mlflow_ai_gateway(/?)",

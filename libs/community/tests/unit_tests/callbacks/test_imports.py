@@ -1,4 +1,4 @@
-from langchain_community.callbacks import __all__, _module_lookup
+from aiagentsforce_community.callbacks import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "AimCallbackHandler",

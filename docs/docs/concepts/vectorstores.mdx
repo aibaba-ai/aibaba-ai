@@ -26,13 +26,13 @@ Vector stores are frequently used to search over unstructured data, such as text
 
 ## Integrations
 
-LangChain has a large number of vectorstore integrations, allowing users to easily switch between different vectorstore implementations.
+AI Agents Force has a large number of vectorstore integrations, allowing users to easily switch between different vectorstore implementations.
 
-Please see the [full list of LangChain vectorstore integrations](/docs/integrations/vectorstores/).
+Please see the [full list of AI Agents Force vectorstore integrations](/docs/integrations/vectorstores/).
 
 ## Interface
 
-LangChain provides a standard interface for working with vector stores, allowing users to easily switch between different vectorstore implementations.
+AI Agents Force provides a standard interface for working with vector stores, allowing users to easily switch between different vectorstore implementations.
 
 The interface consists of basic methods for writing, deleting and searching for documents in the vector store.
 
@@ -45,12 +45,12 @@ The key methods are:
 
 ## Initialization
 
-Most vectors in LangChain accept an embedding model as an argument when initializing the vector store.
+Most vectors in AI Agents Force accept an embedding model as an argument when initializing the vector store.
 
-We will use LangChain's [InMemoryVectorStore](https://python.langchain.com/api_reference/core/vectorstores/langchain_core.vectorstores.in_memory.InMemoryVectorStore.html) implementation to illustrate the API.
+We will use AI Agents Force's [InMemoryVectorStore](https://docs.aiagentsforce.com/api_reference/core/vectorstores/aiagentsforce_core.vectorstores.in_memory.InMemoryVectorStore.html) implementation to illustrate the API.
 
 ```python
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 # Initialize with an embedding model
 vector_store = InMemoryVectorStore(embedding=SomeEmbeddingModel())
 ```
@@ -59,11 +59,11 @@ vector_store = InMemoryVectorStore(embedding=SomeEmbeddingModel())
 
 To add documents, use the `add_documents` method.
 
-This API works with a list of [Document](https://python.langchain.com/api_reference/core/documents/langchain_core.documents.base.Document.html) objects.
+This API works with a list of [Document](https://docs.aiagentsforce.com/api_reference/core/documents/aiagentsforce_core.documents.base.Document.html) objects.
 `Document` objects all have `page_content` and `metadata` attributes, making them a universal way to store unstructured text and associated metadata.
 
 ```python
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 document_1 = Document(
     page_content="I had chocalate chip pancakes and scrambled eggs for breakfast this morning.",
@@ -125,8 +125,8 @@ to the documentation of the specific vectorstore you are using to see what simil
 
 Given a similarity metric to measure the distance between the embedded query and any embedded document, we need an algorithm to efficiently search over *all* the embedded documents to find the most similar ones.
 There are various ways to do this. As an example, many vectorstores implement [HNSW (Hierarchical Navigable Small World)](https://www.pinecone.io/learn/series/faiss/hnsw/), a graph-based index structure that allows for efficient similarity search.
-Regardless of the search algorithm used under the hood, the LangChain vectorstore interface has a `similarity_search` method for all integrations. 
-This will take the search query, create an embedding, find similar documents, and return them as a list of [Documents](https://python.langchain.com/api_reference/core/documents/langchain_core.documents.base.Document.html).
+Regardless of the search algorithm used under the hood, the AI Agents Force vectorstore interface has a `similarity_search` method for all integrations. 
+This will take the search query, create an embedding, find similar documents, and return them as a list of [Documents](https://docs.aiagentsforce.com/api_reference/core/documents/aiagentsforce_core.documents.base.Document.html).
 
 ```python
 query = "my query"
@@ -134,7 +134,7 @@ docs = vectorstore.similarity_search(query)
 ```
 
 Many vectorstores support search parameters to be passed with the `similarity_search` method. See the documentation for the specific vectorstore you are using to see what parameters are supported.
-As an example [Pinecone](https://python.langchain.com/api_reference/pinecone/vectorstores/langchain_pinecone.vectorstores.PineconeVectorStore.html#langchain_pinecone.vectorstores.PineconeVectorStore.similarity_search) several parameters that are important general concepts:
+As an example [Pinecone](https://docs.aiagentsforce.com/api_reference/pinecone/vectorstores/langchain_pinecone.vectorstores.PineconeVectorStore.html#langchain_pinecone.vectorstores.PineconeVectorStore.similarity_search) several parameters that are important general concepts:
 Many vectorstores support [the `k`](/docs/integrations/vectorstores/pinecone/#query-directly), which controls the number of Documents to return, and `filter`, which allows for filtering documents by metadata.
 
 - `query (str) – Text to look up documents similar to.`
@@ -162,7 +162,7 @@ Here is example usage with [Pinecone](/docs/integrations/vectorstores/pinecone/#
 
 ```python
 vectorstore.similarity_search(
-    "LangChain provides abstractions to make working with LLMs easy",
+    "AI Agents Force provides abstractions to make working with LLMs easy",
     k=2,
     filter={"source": "tweet"},
 )
@@ -171,21 +171,21 @@ vectorstore.similarity_search(
 :::info[Further reading]
 
 * See Pinecone's [documentation](https://docs.pinecone.io/guides/data/filter-with-metadata) on filtering with metadata.
-* See the [list of LangChain vectorstore integrations](/docs/integrations/retrievers/self_query/) that support metadata filtering.
+* See the [list of AI Agents Force vectorstore integrations](/docs/integrations/retrievers/self_query/) that support metadata filtering.
 
 :::
 
 ## Advanced search and retrieval techniques
 
 While algorithms like HNSW provide the foundation for efficient similarity search in many cases, additional techniques can be employed to improve search quality and diversity.
-For example, [maximal marginal relevance](https://python.langchain.com/v0.1/docs/modules/model_io/prompts/example_selectors/mmr/) is a re-ranking algorithm used to diversify search results, which is applied after the initial similarity search to ensure a more diverse set of results.
+For example, [maximal marginal relevance](https://docs.aiagentsforce.com/v0.1/docs/modules/model_io/prompts/example_selectors/mmr/) is a re-ranking algorithm used to diversify search results, which is applied after the initial similarity search to ensure a more diverse set of results.
 As a second example, some [vector stores](/docs/integrations/retrievers/pinecone_hybrid_search/) offer built-in [hybrid-search](https://docs.pinecone.io/guides/data/understanding-hybrid-search) to combine keyword and semantic similarity search, which marries the benefits of both approaches. 
-At the moment, there is no unified way to perform hybrid search using LangChain vectorstores, but it is generally exposed as a keyword argument that is passed in with `similarity_search`.
+At the moment, there is no unified way to perform hybrid search using AI Agents Force vectorstores, but it is generally exposed as a keyword argument that is passed in with `similarity_search`.
 See this [how-to guide on hybrid search](/docs/how_to/hybrid/) for more details.
 
 | Name                                                                                                              | When to use                                           | Description                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | [Hybrid search](/docs/integrations/retrievers/pinecone_hybrid_search/)                                            | When combining keyword-based and semantic similarity. | Hybrid search combines keyword and semantic similarity, marrying the benefits of both approaches. [Paper](https://arxiv.org/abs/2210.11934). |
-| [Maximal Marginal Relevance (MMR)](https://python.langchain.com/api_reference/pinecone/vectorstores/langchain_pinecone.vectorstores.PineconeVectorStore.html#langchain_pinecone.vectorstores.PineconeVectorStore.max_marginal_relevance_search) | When needing to diversify search results.             | MMR attempts to diversify the results of a search to avoid returning similar and redundant documents.                                        |
+| [Maximal Marginal Relevance (MMR)](https://docs.aiagentsforce.com/api_reference/pinecone/vectorstores/langchain_pinecone.vectorstores.PineconeVectorStore.html#langchain_pinecone.vectorstores.PineconeVectorStore.max_marginal_relevance_search) | When needing to diversify search results.             | MMR attempts to diversify the results of a search to avoid returning similar and redundant documents.                                        |
 
  

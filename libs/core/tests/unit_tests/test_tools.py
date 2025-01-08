@@ -25,32 +25,32 @@ from pydantic.v1 import BaseModel as BaseModelV1
 from pydantic.v1 import ValidationError as ValidationErrorV1
 from typing_extensions import TypedDict
 
-from langchain_core import tools
-from langchain_core.callbacks import (
+from aiagentsforce_core import tools
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from langchain_core.callbacks.manager import (
+from aiagentsforce_core.callbacks.manager import (
     CallbackManagerForRetrieverRun,
 )
-from langchain_core.documents import Document
-from langchain_core.messages import ToolCall, ToolMessage
-from langchain_core.messages.tool import ToolOutputMixin
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import (
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.messages import ToolCall, ToolMessage
+from aiagentsforce_core.messages.tool import ToolOutputMixin
+from aiagentsforce_core.retrievers import BaseRetriever
+from aiagentsforce_core.runnables import (
     Runnable,
     RunnableConfig,
     RunnableLambda,
     ensure_config,
 )
-from langchain_core.tools import (
+from aiagentsforce_core.tools import (
     BaseTool,
     StructuredTool,
     Tool,
     ToolException,
     tool,
 )
-from langchain_core.tools.base import (
+from aiagentsforce_core.tools.base import (
     InjectedToolArg,
     InjectedToolCallId,
     SchemaAnnotationError,
@@ -58,8 +58,8 @@ from langchain_core.tools.base import (
     _is_message_content_type,
     get_all_basemodel_annotations,
 )
-from langchain_core.utils.function_calling import convert_to_openai_function
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, _create_subset_model
+from aiagentsforce_core.utils.function_calling import convert_to_openai_function
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, _create_subset_model
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler
 from tests.unit_tests.pydantic_utils import _schema
 
@@ -1888,7 +1888,7 @@ def test_args_schema_explicitly_typed() -> None:
 @pytest.mark.parametrize("pydantic_model", TEST_MODELS)
 def test_structured_tool_with_different_pydantic_versions(pydantic_model: Any) -> None:
     """This should test that one can type the args schema as a pydantic model."""
-    from langchain_core.tools import StructuredTool
+    from aiagentsforce_core.tools import StructuredTool
 
     def foo(a: int, b: str) -> str:
         """Hahaha"""

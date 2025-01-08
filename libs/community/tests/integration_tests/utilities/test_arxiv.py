@@ -3,11 +3,11 @@
 from typing import Any, List
 
 import pytest
-from langchain_core.documents import Document
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.tools import BaseTool
 
-from langchain_community.tools import ArxivQueryRun
-from langchain_community.utilities import ArxivAPIWrapper
+from aiagentsforce_community.tools import ArxivQueryRun
+from aiagentsforce_community.utilities import ArxivAPIWrapper
 
 
 @pytest.fixture

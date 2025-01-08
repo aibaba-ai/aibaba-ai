@@ -3,9 +3,9 @@
 
 Testing is a critical part of the development process that ensures your code works as expected and meets the desired quality standards.
 
-In the LangChain ecosystem, we have 2 main types of tests: **unit tests** and **integration tests**.
+In the AI Agents Force ecosystem, we have 2 main types of tests: **unit tests** and **integration tests**.
 
-For integrations that implement standard LangChain abstractions, we have a set of **standard tests** (both unit and integration) that help maintain compatibility between different components and ensure reliability of high-usage ones.
+For integrations that implement standard AI Agents Force abstractions, we have a set of **standard tests** (both unit and integration) that help maintain compatibility between different components and ensure reliability of high-usage ones.
 
 ## Unit Tests
 
@@ -14,7 +14,7 @@ For integrations that implement standard LangChain abstractions, we have a set o
 **Example**: Testing the `convert_langchain_aimessage_to_dict` function to confirm it correctly converts an AI message to a dictionary format:
 
 ```python
-from langchain_core.messages import AIMessage, ToolCall, convert_to_openai_messages
+from aiagentsforce_core.messages import AIMessage, ToolCall, convert_to_openai_messages
 
 def test_convert_to_openai_messages():
     ai_message = AIMessage(
@@ -62,9 +62,9 @@ def test_integration_with_service():
 
 ## Standard Tests
 
-**Definition**: Standard tests are pre-defined tests provided by LangChain to ensure consistency and reliability across all tools and integrations. They include both unit and integration test templates tailored for LangChain components.
+**Definition**: Standard tests are pre-defined tests provided by AI Agents Force to ensure consistency and reliability across all tools and integrations. They include both unit and integration test templates tailored for AI Agents Force components.
 
-**Example**: Subclassing LangChain's `ToolsUnitTests` or `ToolsIntegrationTests` to automatically run standard tests:
+**Example**: Subclassing AI Agents Force's `ToolsUnitTests` or `ToolsIntegrationTests` to automatically run standard tests:
 
 ```python
 from langchain_tests.unit_tests import ToolsUnitTests

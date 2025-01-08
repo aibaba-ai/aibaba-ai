@@ -19,14 +19,14 @@ from typing import (
 )
 from uuid import uuid4
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from langchain_core.callbacks.manager import AsyncCallbackManagerForLLMRun
-from langchain_core.exceptions import OutputParserException
-from langchain_core.language_models import LanguageModelInput
-from langchain_core.language_models.chat_models import BaseChatModel, LangSmithParams
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks.manager import AsyncCallbackManagerForLLMRun
+from aiagentsforce_core.exceptions import OutputParserException
+from aiagentsforce_core.language_models import LanguageModelInput
+from aiagentsforce_core.language_models.chat_models import BaseChatModel, LangSmithParams
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -35,22 +35,22 @@ from langchain_core.messages import (
     ToolCall,
     ToolMessage,
 )
-from langchain_core.messages.ai import UsageMetadata
-from langchain_core.messages.tool import tool_call
-from langchain_core.output_parsers import (
+from aiagentsforce_core.messages.ai import UsageMetadata
+from aiagentsforce_core.messages.tool import tool_call
+from aiagentsforce_core.output_parsers import (
     JsonOutputKeyToolsParser,
     JsonOutputParser,
     PydanticOutputParser,
     PydanticToolsParser,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from langchain_core.tools import BaseTool
-from langchain_core.utils.function_calling import (
+from aiagentsforce_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aiagentsforce_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aiagentsforce_core.tools import BaseTool
+from aiagentsforce_core.utils.function_calling import (
     _convert_any_typed_dicts_to_pydantic as convert_any_typed_dicts_to_pydantic,
 )
-from langchain_core.utils.function_calling import convert_to_openai_tool
-from langchain_core.utils.pydantic import TypeBaseModel, is_basemodel_subclass
+from aiagentsforce_core.utils.function_calling import convert_to_openai_tool
+from aiagentsforce_core.utils.pydantic import TypeBaseModel, is_basemodel_subclass
 from ollama import AsyncClient, Client, Message, Options
 from pydantic import BaseModel, PrivateAttr, model_validator
 from pydantic.json_schema import JsonSchemaValue
@@ -818,7 +818,7 @@ class ChatOllama(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: If provided, which tool for model to call. **This parameter
                 is currently ignored as it is not supported by Ollama.**
             kwargs: Any additional parameters are passed directly to
@@ -851,7 +851,7 @@ class ChatOllama(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -877,7 +877,7 @@ class ChatOllama(BaseChatModel):
             kwargs: Additional keyword args aren't supported.
 
         Returns:
-            A Runnable that takes same inputs as a :class:`langchain_core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aiagentsforce_core.language_models.chat.BaseChatModel`.
 
             | If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs an instance of ``schema`` (i.e., a Pydantic object). Otherwise, if ``include_raw`` is False then Runnable outputs a dict.
 

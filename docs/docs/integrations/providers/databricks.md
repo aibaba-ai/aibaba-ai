@@ -3,13 +3,13 @@ Databricks
 
 > [Databricks](https://www.databricks.com/) Intelligence Platform is the world's first data intelligence platform powered by generative AI. Infuse AI into every facet of your business.
 
-Databricks embraces the LangChain ecosystem in various ways:
+Databricks embraces the AI Agents Force ecosystem in various ways:
 
-1. 🚀 **Model Serving** - Access state-of-the-art LLMs, such as DBRX, Llama3, Mixtral, or your fine-tuned models on [Databricks Model Serving](https://www.databricks.com/product/model-serving), via a highly available and low-latency inference endpoint. LangChain provides LLM (`Databricks`), Chat Model (`ChatDatabricks`), and Embeddings (`DatabricksEmbeddings`) implementations, streamlining the integration of your models hosted on Databricks Model Serving with your LangChain applications.
-2. 📃 **Vector Search** - [Databricks Vector Search](https://www.databricks.com/product/machine-learning/vector-search) is a serverless vector database seamlessly integrated within the Databricks Platform. Using `DatabricksVectorSearch`, you can incorporate the highly scalable and reliable similarity search engine into your LangChain applications.
-3. 📊 **MLflow** - [MLflow](https://mlflow.org/) is an open-source platform to manage full the ML lifecycle, including experiment management, evaluation, tracing, deployment, and more. [MLflow's LangChain Integration](/docs/integrations/providers/mlflow_tracking) streamlines the process of developing and operating modern compound ML systems.
-4. 🌐 **SQL Database** - [Databricks SQL](https://www.databricks.com/product/databricks-sql) is integrated with `SQLDatabase` in LangChain, allowing you to access the auto-optimizing, exceptionally performant data warehouse.
-5. 💡 **Open Models** - Databricks open sources models, such as [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm), which are available through the [Hugging Face Hub](https://huggingface.co/databricks/dbrx-instruct). These models can be directly utilized with LangChain, leveraging its integration with the `transformers` library.
+1. 🚀 **Model Serving** - Access state-of-the-art LLMs, such as DBRX, Llama3, Mixtral, or your fine-tuned models on [Databricks Model Serving](https://www.databricks.com/product/model-serving), via a highly available and low-latency inference endpoint. AI Agents Force provides LLM (`Databricks`), Chat Model (`ChatDatabricks`), and Embeddings (`DatabricksEmbeddings`) implementations, streamlining the integration of your models hosted on Databricks Model Serving with your AI Agents Force applications.
+2. 📃 **Vector Search** - [Databricks Vector Search](https://www.databricks.com/product/machine-learning/vector-search) is a serverless vector database seamlessly integrated within the Databricks Platform. Using `DatabricksVectorSearch`, you can incorporate the highly scalable and reliable similarity search engine into your AI Agents Force applications.
+3. 📊 **MLflow** - [MLflow](https://mlflow.org/) is an open-source platform to manage full the ML lifecycle, including experiment management, evaluation, tracing, deployment, and more. [MLflow's AI Agents Force Integration](/docs/integrations/providers/mlflow_tracking) streamlines the process of developing and operating modern compound ML systems.
+4. 🌐 **SQL Database** - [Databricks SQL](https://www.databricks.com/product/databricks-sql) is integrated with `SQLDatabase` in AI Agents Force, allowing you to access the auto-optimizing, exceptionally performant data warehouse.
+5. 💡 **Open Models** - Databricks open sources models, such as [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm), which are available through the [Hugging Face Hub](https://huggingface.co/databricks/dbrx-instruct). These models can be directly utilized with AI Agents Force, leveraging its integration with the `transformers` library.
 
 Installation
 ------------
@@ -33,7 +33,7 @@ from databricks_langchain import ChatDatabricks
 chat_model = ChatDatabricks(endpoint="databricks-meta-llama-3-70b-instruct")
 ```
 
-See the [usage example](/docs/integrations/chat/databricks) for more guidance on how to use it within your LangChain application.
+See the [usage example](/docs/integrations/chat/databricks) for more guidance on how to use it within your AI Agents Force application.
 
 LLM
 ---
@@ -45,12 +45,12 @@ Text completion models have been deprecated and the latest and most popular mode
 :::
 
 ```
-from langchain_community.llm.databricks import Databricks
+from aiagentsforce_community.llm.databricks import Databricks
 
 llm = Databricks(endpoint="your-completion-endpoint")
 ```
 
-See the [usage example](/docs/integrations/llms/databricks) for more guidance on how to use it within your LangChain application.
+See the [usage example](/docs/integrations/llms/databricks) for more guidance on how to use it within your AI Agents Force application.
 
 
 Embeddings
@@ -64,7 +64,7 @@ from databricks_langchain import DatabricksEmbeddings
 embeddings = DatabricksEmbeddings(endpoint="databricks-bge-large-en")
 ```
 
-See the [usage example](/docs/integrations/text_embedding/databricks) for more guidance on how to use it within your LangChain application.
+See the [usage example](/docs/integrations/text_embedding/databricks) for more guidance on how to use it within your AI Agents Force application.
 
 
 Vector Search
@@ -86,36 +86,36 @@ dvs = DatabricksVectorSearch(
 docs = dvs.similarity_search("What is vector search?)
 ```
 
-See the [usage example](/docs/integrations/vectorstores/databricks_vector_search) for how to set up vector indices and integrate them with LangChain.
+See the [usage example](/docs/integrations/vectorstores/databricks_vector_search) for how to set up vector indices and integrate them with AI Agents Force.
 
 
 MLflow Integration
 ------------------
 
-In the context of LangChain integration, MLflow provides the following capabilities:
+In the context of AI Agents Force integration, MLflow provides the following capabilities:
 
-- **Experiment Tracking**: Tracks and stores models, artifacts, and traces from your LangChain experiments.
+- **Experiment Tracking**: Tracks and stores models, artifacts, and traces from your AI Agents Force experiments.
 - **Dependency Management**: Automatically records dependency libraries, ensuring consistency among development, staging, and production environments.
-- **Model Evaluation** Offers native capabilities for evaluating LangChain applications.
-- **Tracing**: Visually traces data flows through your LangChain application.
+- **Model Evaluation** Offers native capabilities for evaluating AI Agents Force applications.
+- **Tracing**: Visually traces data flows through your AI Agents Force application.
 
-See [MLflow LangChain Integration](/docs/integrations/providers/mlflow_tracking) to learn about the full capabilities of using MLflow with LangChain through extensive code examples and guides.
+See [MLflow AI Agents Force Integration](/docs/integrations/providers/mlflow_tracking) to learn about the full capabilities of using MLflow with AI Agents Force through extensive code examples and guides.
 
 SQLDatabase
 -----------
-You can connect to Databricks SQL using the SQLDatabase wrapper of LangChain.
+You can connect to Databricks SQL using the SQLDatabase wrapper of AI Agents Force.
 ```
 from langchain.sql_database import SQLDatabase
 
 db = SQLDatabase.from_databricks(catalog="samples", schema="nyctaxi")
 ```
 
-See [Databricks SQL Agent](https://docs.databricks.com/en/large-language-models/langchain.html#databricks-sql-agent) for how to connect Databricks SQL with your LangChain Agent as a powerful querying tool.
+See [Databricks SQL Agent](https://docs.databricks.com/en/large-language-models/langchain.html#databricks-sql-agent) for how to connect Databricks SQL with your AI Agents Force Agent as a powerful querying tool.
 
 Open Models
 -----------
 
-To directly integrate Databricks's open models hosted on HuggingFace, you can use the [HuggingFace Integration](/docs/integrations/providers/huggingface) of LangChain.
+To directly integrate Databricks's open models hosted on HuggingFace, you can use the [HuggingFace Integration](/docs/integrations/providers/huggingface) of AI Agents Force.
 
 ```
 from langchain_huggingface import HuggingFaceEndpoint

@@ -4,7 +4,7 @@ import os
 
 import pytest
 
-from langchain_community.embeddings import IpexLLMBgeEmbeddings
+from aiagentsforce_community.embeddings import IpexLLMBgeEmbeddings
 
 model_ids_to_test = os.getenv("TEST_IPEXLLM_BGE_EMBEDDING_MODEL_IDS") or ""
 skip_if_no_model_ids = pytest.mark.skipif(

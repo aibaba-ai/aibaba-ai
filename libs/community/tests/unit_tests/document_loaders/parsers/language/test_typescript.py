@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from langchain_community.document_loaders.parsers.language.typescript import (
+from aiagentsforce_community.document_loaders.parsers.language.typescript import (
     TypeScriptSegmenter,
 )
 

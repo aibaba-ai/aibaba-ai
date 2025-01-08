@@ -6,12 +6,12 @@ from typing import AsyncGenerator, Generator, List, Optional, cast
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from langchain_core.embeddings import Embeddings
-from langchain_core.load.dump import dumps
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, Generation, LLMResult
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.load.dump import dumps
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration, Generation, LLMResult
 
-from langchain_community.cache import AsyncRedisCache, RedisCache, RedisSemanticCache
+from aiagentsforce_community.cache import AsyncRedisCache, RedisCache, RedisSemanticCache
 from tests.integration_tests.cache.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

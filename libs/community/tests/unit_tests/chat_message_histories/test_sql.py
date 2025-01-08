@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any, AsyncGenerator, Generator, List, Tuple
 
 import pytest
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
 from sqlalchemy import Column, Integer, Text
 
 try:
@@ -16,8 +16,8 @@ except ImportError:
 
     Base = declarative_base()  # type:ignore
 
-from langchain_community.chat_message_histories import SQLChatMessageHistory
-from langchain_community.chat_message_histories.sql import DefaultMessageConverter
+from aiagentsforce_community.chat_message_histories import SQLChatMessageHistory
+from aiagentsforce_community.chat_message_histories.sql import DefaultMessageConverter
 
 
 @pytest.fixture()

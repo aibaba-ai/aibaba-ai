@@ -9,9 +9,9 @@ import json
 import os
 
 from langchain.memory import ConversationBufferMemory
-from langchain_core.messages import message_to_dict
+from aiagentsforce_core.messages import message_to_dict
 
-from langchain_community.chat_message_histories import RocksetChatMessageHistory
+from aiagentsforce_community.chat_message_histories import RocksetChatMessageHistory
 
 collection_name = "langchain_demo"
 session_id = "MySession"

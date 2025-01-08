@@ -1,6 +1,6 @@
 """Test jina embeddings."""
 
-from langchain_community.embeddings.jina import JinaEmbeddings
+from aiagentsforce_community.embeddings.jina import JinaEmbeddings
 
 
 def test_jina_embedding_documents() -> None:

@@ -2,7 +2,7 @@ import sys
 from typing import Any, Optional
 from unittest.mock import MagicMock, patch
 
-from langchain_community.embeddings import GPT4AllEmbeddings
+from aiagentsforce_community.embeddings import GPT4AllEmbeddings
 
 _GPT4ALL_MODEL_NAME = "all-MiniLM-L6-v2.gguf2.f16.gguf"
 _GPT4ALL_NTHREADS = 4

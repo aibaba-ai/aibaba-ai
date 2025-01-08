@@ -1,7 +1,7 @@
 from typing import Any, Dict
 
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.runnables import Runnable, RunnableLambda
+from aiagentsforce_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from aiagentsforce_core.runnables import Runnable, RunnableLambda
 
 from .parsers import RoleMap
 from .utils import load, prepare

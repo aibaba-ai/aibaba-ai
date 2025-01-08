@@ -2,7 +2,7 @@ import shutil
 import tempfile
 import unittest
 
-from langchain_community.graphs import KuzuGraph
+from aiagentsforce_community.graphs import KuzuGraph
 
 EXPECTED_SCHEMA = """Node properties: [{'properties': [('name', 'STRING')], 'label': 'Movie'}, {'properties': [('name', 'STRING'), ('birthDate', 'STRING')], 'label': 'Person'}]
 Relationships properties: [{'properties': [], 'label': 'ActedIn'}]

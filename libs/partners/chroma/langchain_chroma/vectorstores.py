@@ -25,10 +25,10 @@ from typing import (
 import chromadb
 import chromadb.config
 import numpy as np
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.utils import xor_args
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.utils import xor_args
+from aiagentsforce_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
     from chromadb.api.types import ID, OneOrMany, Where, WhereDocument
@@ -185,7 +185,7 @@ class Chroma(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from langchain_core.documents import Document
+            from aiagentsforce_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})
@@ -475,7 +475,7 @@ class Chroma(VectorStore):
                     if "Expected metadata value to be" in str(e):
                         msg = (
                             "Try filtering complex metadata using "
-                            "langchain_community.vectorstores.utils.filter_complex_metadata."
+                            "aiagentsforce_community.vectorstores.utils.filter_complex_metadata."
                         )
                         raise ValueError(e.args[0] + "\n\n" + msg)
                     else:
@@ -561,7 +561,7 @@ class Chroma(VectorStore):
                     if "Expected metadata value to be" in str(e):
                         msg = (
                             "Try filtering complex metadata from the document using "
-                            "langchain_community.vectorstores.utils.filter_complex_metadata."
+                            "aiagentsforce_community.vectorstores.utils.filter_complex_metadata."
                         )
                         raise ValueError(e.args[0] + "\n\n" + msg)
                     else:

@@ -2,10 +2,10 @@ import os
 from typing import List
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings.openai import OpenAIEmbeddings
-from langchain_community.vectorstores import (
+from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores import (
     DistanceStrategy,
     Kinetica,
     KineticaSettings,

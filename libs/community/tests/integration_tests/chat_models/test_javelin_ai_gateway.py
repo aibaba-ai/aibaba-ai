@@ -2,7 +2,7 @@
 
 from pydantic import SecretStr
 
-from langchain_community.chat_models import ChatJavelinAIGateway
+from aiagentsforce_community.chat_models import ChatJavelinAIGateway
 
 
 def test_api_key_is_secret_string() -> None:

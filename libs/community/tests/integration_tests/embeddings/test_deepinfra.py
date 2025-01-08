@@ -1,6 +1,6 @@
 """Test DeepInfra API wrapper."""
 
-from langchain_community.embeddings import DeepInfraEmbeddings
+from aiagentsforce_community.embeddings import DeepInfraEmbeddings
 
 
 def test_deepinfra_call() -> None:

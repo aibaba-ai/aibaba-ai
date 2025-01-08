@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from langchain_community.document_loaders import UnstructuredTSVLoader
+from aiagentsforce_community.document_loaders import UnstructuredTSVLoader
 
 EXAMPLE_DIRECTORY = file_path = Path(__file__).parent.parent / "examples"
 

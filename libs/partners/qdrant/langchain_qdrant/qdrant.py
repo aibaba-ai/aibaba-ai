@@ -19,9 +19,9 @@ from typing import (
 )
 
 import numpy as np
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.vectorstores import VectorStore
 from qdrant_client import QdrantClient, models
 
 from langchain_qdrant._utils import maximal_marginal_relevance
@@ -86,7 +86,7 @@ class QdrantVectorStore(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from langchain_core.documents import Document
+            from aiagentsforce_core.documents import Document
             from uuid import uuid4
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})

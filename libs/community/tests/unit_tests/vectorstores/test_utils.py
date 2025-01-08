@@ -3,9 +3,9 @@
 from typing import cast
 
 import numpy as np
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.utils import (
+from aiagentsforce_community.vectorstores.utils import (
     filter_complex_metadata,
     maximal_marginal_relevance,
 )

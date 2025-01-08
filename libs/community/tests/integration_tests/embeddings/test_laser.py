@@ -2,7 +2,7 @@
 
 import pytest
 
-from langchain_community.embeddings.laser import LaserEmbeddings
+from aiagentsforce_community.embeddings.laser import LaserEmbeddings
 
 
 @pytest.mark.filterwarnings("ignore::UserWarning:")

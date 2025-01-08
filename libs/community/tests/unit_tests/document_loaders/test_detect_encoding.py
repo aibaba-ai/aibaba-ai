@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.document_loaders import CSVLoader, DirectoryLoader, TextLoader
-from langchain_community.document_loaders.helpers import detect_file_encodings
+from aiagentsforce_community.document_loaders import CSVLoader, DirectoryLoader, TextLoader
+from aiagentsforce_community.document_loaders.helpers import detect_file_encodings
 
 
 @pytest.mark.requires("chardet")

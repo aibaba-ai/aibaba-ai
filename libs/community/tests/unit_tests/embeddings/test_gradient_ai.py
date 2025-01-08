@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from langchain_community.embeddings import GradientEmbeddings
+from aiagentsforce_community.embeddings import GradientEmbeddings
 
 _MODEL_ID = "my_model_valid_id"
 _GRADIENT_SECRET = "secret_valid_token_123456"

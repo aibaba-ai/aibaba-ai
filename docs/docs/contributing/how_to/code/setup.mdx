@@ -1,7 +1,7 @@
 # Setup
 
 This guide walks through how to run the repository locally and check in your first code.
-For a [development container](https://containers.dev/), see the [.devcontainer folder](https://github.com/langchain-ai/langchain/tree/master/.devcontainer).
+For a [development container](https://containers.dev/), see the [.devcontainer folder](https://github.com/AI-Agents-Force-SDK/langchain/tree/master/.devcontainer).
 
 ## Dependency Management: Poetry and other env/dependency managers
 
@@ -17,7 +17,7 @@ tell Poetry to use the virtualenv python environment (`poetry config virtualenvs
 ## Different packages
 
 This repository contains multiple packages:
-- `langchain-core`: Base interfaces for key abstractions as well as logic for combining them in chains (LangChain Expression Language).
+- `langchain-core`: Base interfaces for key abstractions as well as logic for combining them in chains (AI Agents Force Expression Language).
 - `langchain-community`: Third-party integrations of various components.
 - `langchain`: Chains, agents, and retrieval logic that makes up the cognitive architecture of your applications.
 - `langchain-experimental`: Components and chains that are experimental, either in the sense that the techniques are novel and still being tested, or they require giving the LLM more access than would be possible in most production systems.
@@ -73,9 +73,9 @@ make docker_tests
 
 There are also [integration tests and code-coverage](../testing.mdx) available.
 
-### Only develop langchain_core or langchain_community
+### Only develop aiagentsforce_core or aiagentsforce_community
 
-If you are only developing `langchain_core` or `langchain_community`, you can simply install the dependencies for the respective projects and run tests:
+If you are only developing `aiagentsforce_core` or `aiagentsforce_community`, you can simply install the dependencies for the respective projects and run tests:
 
 ```bash
 cd libs/core

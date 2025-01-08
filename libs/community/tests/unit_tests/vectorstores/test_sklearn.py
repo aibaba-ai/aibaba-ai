@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.vectorstores import SKLearnVectorStore
+from aiagentsforce_community.vectorstores import SKLearnVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

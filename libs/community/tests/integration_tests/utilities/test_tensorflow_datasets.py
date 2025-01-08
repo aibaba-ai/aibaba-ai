@@ -5,10 +5,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pydantic import ValidationError
 
-from langchain_community.utilities.tensorflow_datasets import TensorflowDatasets
+from aiagentsforce_community.utilities.tensorflow_datasets import TensorflowDatasets
 
 if TYPE_CHECKING:
     import tensorflow as tf

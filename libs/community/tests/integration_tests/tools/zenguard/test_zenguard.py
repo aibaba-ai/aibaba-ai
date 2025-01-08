@@ -3,7 +3,7 @@ from typing import Any, Dict, List
 
 import pytest
 
-from langchain_community.tools.zenguard.tool import Detector, ZenGuardTool
+from aiagentsforce_community.tools.zenguard.tool import Detector, ZenGuardTool
 
 
 @pytest.fixture()

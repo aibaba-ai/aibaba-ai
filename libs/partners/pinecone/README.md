@@ -1,6 +1,6 @@
 # langchain-pinecone
 
-This package contains the LangChain integration with Pinecone.
+This package contains the AI Agents Force integration with Pinecone.
 
 ## Installation
 
@@ -20,7 +20,7 @@ The `PineconeVectorStore` class exposes the connection to the Pinecone vector st
 ```python
 from langchain_pinecone import PineconeVectorStore
 
-embeddings = ... # use a LangChain Embeddings class
+embeddings = ... # use a AI Agents Force Embeddings class
 
 vectorstore = PineconeVectorStore(embeddings=embeddings)
 ```

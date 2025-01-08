@@ -4,7 +4,7 @@ from unittest import mock
 
 import pytest
 
-from langchain_community.chat_models.azure_openai import AzureChatOpenAI
+from aiagentsforce_community.chat_models.azure_openai import AzureChatOpenAI
 
 
 @mock.patch.dict(

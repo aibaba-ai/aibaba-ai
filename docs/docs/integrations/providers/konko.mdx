@@ -41,7 +41,7 @@ See a usage [example](/docs/integrations/llms/konko).
 - **Completion with mistralai/Mistral-7B-v0.1:**
 
   ```python
-  from langchain_community.llms import Konko
+  from aiagentsforce_community.llms import Konko
   llm = Konko(max_tokens=800, model='mistralai/Mistral-7B-v0.1')
   prompt = "Generate a Product Description for Apple Iphone 15"
   response = llm.invoke(prompt)
@@ -55,8 +55,8 @@ See a usage [example](/docs/integrations/chat/konko).
 - **ChatCompletion with Mistral-7B:**
 
   ```python
-  from langchain_core.messages import HumanMessage
-  from langchain_community.chat_models import ChatKonko
+  from aiagentsforce_core.messages import HumanMessage
+  from aiagentsforce_community.chat_models import ChatKonko
   chat_instance = ChatKonko(max_tokens=10, model = 'mistralai/mistral-7b-instruct-v0.1')
   msg = HumanMessage(content="Hi")
   chat_response = chat_instance([msg])

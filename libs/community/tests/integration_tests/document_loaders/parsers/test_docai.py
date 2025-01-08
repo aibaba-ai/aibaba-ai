@@ -4,7 +4,7 @@ from unittest.mock import ANY, patch
 
 import pytest
 
-from langchain_community.document_loaders.parsers import DocAIParser
+from aiagentsforce_community.document_loaders.parsers import DocAIParser
 
 
 @pytest.mark.requires("google.cloud", "google.cloud.documentai")

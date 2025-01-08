@@ -2,7 +2,7 @@
 
 import pytest
 
-from langchain_community.vectorstores.elasticsearch import (
+from aiagentsforce_community.vectorstores.elasticsearch import (
     ApproxRetrievalStrategy,
     ElasticsearchStore,
 )

@@ -17,10 +17,10 @@ from typing import (
 )
 
 import pytest
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models.litellm_router import ChatLiteLLMRouter
+from aiagentsforce_community.chat_models.litellm_router import ChatLiteLLMRouter
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 model_group_gpt4 = "gpt-4"

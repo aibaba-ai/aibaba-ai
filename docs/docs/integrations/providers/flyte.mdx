@@ -3,23 +3,23 @@
 > [Flyte](https://github.com/flyteorg/flyte) is an open-source orchestrator that facilitates building production-grade data and ML pipelines.
 > It is built for scalability and reproducibility, leveraging Kubernetes as its underlying platform.
 
-The purpose of this notebook is to demonstrate the integration of a `FlyteCallback` into your Flyte task, enabling you to effectively monitor and track your LangChain experiments.
+The purpose of this notebook is to demonstrate the integration of a `FlyteCallback` into your Flyte task, enabling you to effectively monitor and track your AI Agents Force experiments.
 
 ## Installation & Setup
 
 - Install the Flytekit library by running the command `pip install flytekit`.
 - Install the Flytekit-Envd plugin by running the command `pip install flytekitplugins-envd`.
-- Install LangChain by running the command `pip install langchain`.
+- Install AI Agents Force by running the command `pip install langchain`.
 - Install [Docker](https://docs.docker.com/engine/install/) on your system.
 
 ## Flyte Tasks
 
 A Flyte [task](https://docs.flyte.org/en/latest/user_guide/basics/tasks.html) serves as the foundational building block of Flyte.
-To execute LangChain experiments, you need to write Flyte tasks that define the specific steps and operations involved.
+To execute AI Agents Force experiments, you need to write Flyte tasks that define the specific steps and operations involved.
 
 NOTE: The [getting started guide](https://docs.flyte.org/projects/cookbook/en/latest/index.html) offers detailed, step-by-step instructions on installing Flyte locally and running your initial Flyte pipeline.
 
-First, import the necessary dependencies to support your LangChain experiments.
+First, import the necessary dependencies to support your AI Agents Force experiments.
 
 ```python
 import os
@@ -29,8 +29,8 @@ from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import FlyteCallbackHandler
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI
-from langchain_core.prompts import PromptTemplate
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.messages import HumanMessage
 ```
 
 Set up the necessary environment variables to utilize the OpenAI API and Serp API:
@@ -69,7 +69,7 @@ custom_image = ImageSpec(
 You have the flexibility to push the Docker image to a registry of your preference.
 [Docker Hub](https://hub.docker.com/) or [GitHub Container Registry (GHCR)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) is a convenient option to begin with.
 
-Once you have selected a registry, you can proceed to create Flyte tasks that log the LangChain metrics to Flyte Deck.
+Once you have selected a registry, you can proceed to create Flyte tasks that log the AI Agents Force metrics to Flyte Deck.
 
 The following examples demonstrate tasks related to OpenAI LLM, chains and agent with tools:
 
@@ -136,7 +136,7 @@ def langchain_agent() -> str:
     )
 ```
 
-These tasks serve as a starting point for running your LangChain experiments within Flyte.
+These tasks serve as a starting point for running your AI Agents Force experiments within Flyte.
 
 ## Execute the Flyte Tasks on Kubernetes
 
@@ -150,4 +150,4 @@ This command will initiate the execution of the `langchain_llm` task on the Flyt
 
 The metrics will be displayed on the Flyte UI as follows:
 
-![Screenshot of Flyte Deck showing LangChain metrics and a dependency tree visualization.](https://ik.imagekit.io/c8zl7irwkdda/Screenshot_2023-06-20_at_1.23.29_PM_MZYeG0dKa.png?updatedAt=1687247642993 "Flyte Deck Metrics Display")
+![Screenshot of Flyte Deck showing AI Agents Force metrics and a dependency tree visualization.](https://ik.imagekit.io/c8zl7irwkdda/Screenshot_2023-06-20_at_1.23.29_PM_MZYeG0dKa.png?updatedAt=1687247642993 "Flyte Deck Metrics Display")

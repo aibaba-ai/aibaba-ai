@@ -9,7 +9,7 @@ import aiohttp
 import pytest
 import requests_mock
 
-from langchain_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
+from aiagentsforce_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
 
 link_to_one_two = """
 <div><a href="/one">link_to_one</a></div>

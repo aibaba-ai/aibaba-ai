@@ -6,9 +6,9 @@ from unittest.mock import patch
 from urllib.error import HTTPError
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.arxiv import ArxivLoader
+from aiagentsforce_community.document_loaders.arxiv import ArxivLoader
 
 EXAMPLE_HELLO_PDF_PATH = Path(__file__).parents[1] / "examples" / "hello.pdf"
 

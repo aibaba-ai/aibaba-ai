@@ -3,12 +3,12 @@ import json
 from typing import Any
 from unittest import mock
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_transformers.nuclia_text_transform import (
+from aiagentsforce_community.document_transformers.nuclia_text_transform import (
     NucliaTextTransformer,
 )
-from langchain_community.tools.nuclia.tool import NucliaUnderstandingAPI
+from aiagentsforce_community.tools.nuclia.tool import NucliaUnderstandingAPI
 
 
 def fakerun(**args: Any) -> Any:
@@ -36,7 +36,7 @@ def fakerun(**args: Any) -> Any:
 
 async def test_nuclia_loader() -> None:
     with mock.patch(
-        "langchain_community.tools.nuclia.tool.NucliaUnderstandingAPI._arun",
+        "aiagentsforce_community.tools.nuclia.tool.NucliaUnderstandingAPI._arun",
         new_callable=fakerun,
     ):
         with mock.patch("os.environ.get", return_value="_a_key_"):

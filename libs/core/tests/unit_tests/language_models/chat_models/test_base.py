@@ -6,22 +6,22 @@ from typing import Any, Literal, Optional, Union
 
 import pytest
 
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models import BaseChatModel, FakeListChatModel
-from langchain_core.language_models.fake_chat_models import FakeListChatModelError
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.language_models import BaseChatModel, FakeListChatModel
+from aiagentsforce_core.language_models.fake_chat_models import FakeListChatModelError
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.outputs.llm_result import LLMResult
-from langchain_core.tracers.base import BaseTracer
-from langchain_core.tracers.context import collect_runs
-from langchain_core.tracers.event_stream import _AstreamEventsCallbackHandler
-from langchain_core.tracers.schemas import Run
+from aiagentsforce_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aiagentsforce_core.outputs.llm_result import LLMResult
+from aiagentsforce_core.tracers.base import BaseTracer
+from aiagentsforce_core.tracers.context import collect_runs
+from aiagentsforce_core.tracers.event_stream import _AstreamEventsCallbackHandler
+from aiagentsforce_core.tracers.schemas import Run
 from tests.unit_tests.fake.callbacks import (
     BaseFakeCallbackHandler,
     FakeAsyncCallbackHandler,

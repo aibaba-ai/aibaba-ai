@@ -1,6 +1,6 @@
 """Integration test for Dataforseo API Wrapper."""
 
-from langchain_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
+from aiagentsforce_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
 
 
 def test_search_call() -> None:

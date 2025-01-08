@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.llms.huggingface_endpoint import HuggingFaceEndpoint
-from langchain_community.llms.loading import load_llm
+from aiagentsforce_community.llms.huggingface_endpoint import HuggingFaceEndpoint
+from aiagentsforce_community.llms.loading import load_llm
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 

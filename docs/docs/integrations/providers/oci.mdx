@@ -1,6 +1,6 @@
 # Oracle Cloud Infrastructure (OCI)
 
-The `LangChain` integrations related to [Oracle Cloud Infrastructure](https://www.oracle.com/artificial-intelligence/).
+The `AI Agents Force` integrations related to [Oracle Cloud Infrastructure](https://www.oracle.com/artificial-intelligence/).
 
 ## OCI Generative AI
 > Oracle Cloud Infrastructure (OCI) [Generative AI](https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm) is a fully managed service that provides a set of state-of-the-art,
@@ -8,7 +8,7 @@ The `LangChain` integrations related to [Oracle Cloud Infrastructure](https://ww
 > Using the OCI Generative AI service you can access ready-to-use pretrained models, or create and host your own fine-tuned
 > custom models based on your own data on dedicated AI clusters. 
 
-To use, you should have the latest `oci` python SDK and the langchain_community package installed.
+To use, you should have the latest `oci` python SDK and the aiagentsforce_community package installed.
 
 ```bash
 pip install -U oci langchain-community
@@ -17,11 +17,11 @@ pip install -U oci langchain-community
 See [chat](/docs/integrations/llms/oci_generative_ai), [complete](/docs/integrations/chat/oci_generative_ai), and [embedding](/docs/integrations/text_embedding/oci_generative_ai) usage examples.
 
 ```python
-from langchain_community.chat_models import ChatOCIGenAI
+from aiagentsforce_community.chat_models import ChatOCIGenAI
 
-from langchain_community.llms import OCIGenAI
+from aiagentsforce_community.llms import OCIGenAI
 
-from langchain_community.embeddings import OCIGenAIEmbeddings
+from aiagentsforce_community.embeddings import OCIGenAIEmbeddings
 ```
 
 ## OCI Data Science Model Deployment Endpoint
@@ -42,8 +42,8 @@ See [chat](/docs/integrations/chat/oci_data_science) and [complete](/docs/integr
 
 
 ```python
-from langchain_community.chat_models import ChatOCIModelDeployment
+from aiagentsforce_community.chat_models import ChatOCIModelDeployment
 
-from langchain_community.llms import OCIModelDeploymentLLM
+from aiagentsforce_community.llms import OCIModelDeploymentLLM
 ```
 

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.document_loaders.mhtml import MHTMLLoader
+from aiagentsforce_community.document_loaders.mhtml import MHTMLLoader
 
 HERE = Path(__file__).parent
 EXAMPLES = HERE.parent.parent / "integration_tests" / "examples"
@@ -20,6 +20,6 @@ def test_mhtml_loader() -> None:
     metadata = docs[0].metadata
     content = docs[0].page_content
 
-    assert metadata["title"] == "LangChain"
+    assert metadata["title"] == "AI Agents Force"
     assert metadata["source"] == str(file_path)
     assert "LANG CHAIN 🦜️🔗Official Home Page" in content

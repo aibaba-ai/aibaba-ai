@@ -8,16 +8,16 @@ from unittest.mock import patch
 import pytest
 from pydantic import SecretStr
 
-from langchain_core import utils
-from langchain_core.utils import (
+from aiagentsforce_core import utils
+from aiagentsforce_core.utils import (
     check_package_version,
     from_env,
     get_pydantic_field_names,
     guard_import,
 )
-from langchain_core.utils._merge import merge_dicts
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION
-from langchain_core.utils.utils import secret_from_env
+from aiagentsforce_core.utils._merge import merge_dicts
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION
+from aiagentsforce_core.utils.utils import secret_from_env
 
 
 @pytest.mark.parametrize(
@@ -36,7 +36,7 @@ def test_check_package_version(
     actual_version: str,
     expected: Optional[tuple[type[Exception], str]],
 ) -> None:
-    with patch("langchain_core.utils.utils.version", return_value=actual_version):
+    with patch("aiagentsforce_core.utils.utils.version", return_value=actual_version):
         if expected is None:
             check_package_version(package, **check_kwargs)
         else:
@@ -159,10 +159,10 @@ def test_merge_dicts_0_3(
 @pytest.mark.parametrize(
     ("module_name", "pip_name", "package", "expected"),
     [
-        ("langchain_core.utils", None, None, utils),
-        ("langchain_core.utils", "langchain-core", None, utils),
-        ("langchain_core.utils", None, "langchain-core", utils),
-        ("langchain_core.utils", "langchain-core", "langchain-core", utils),
+        ("aiagentsforce_core.utils", None, None, utils),
+        ("aiagentsforce_core.utils", "langchain-core", None, utils),
+        ("aiagentsforce_core.utils", None, "langchain-core", utils),
+        ("aiagentsforce_core.utils", "langchain-core", "langchain-core", utils),
     ],
 )
 def test_guard_import(
@@ -185,11 +185,11 @@ def test_guard_import(
 @pytest.mark.parametrize(
     ("module_name", "pip_name", "package"),
     [
-        ("langchain_core.utilsW", None, None),
-        ("langchain_core.utilsW", "langchain-core-2", None),
-        ("langchain_core.utilsW", None, "langchain-coreWX"),
-        ("langchain_core.utilsW", "langchain-core-2", "langchain-coreWX"),
-        ("langchain_coreW", None, None),  # ModuleNotFoundError
+        ("aiagentsforce_core.utilsW", None, None),
+        ("aiagentsforce_core.utilsW", "langchain-core-2", None),
+        ("aiagentsforce_core.utilsW", None, "langchain-coreWX"),
+        ("aiagentsforce_core.utilsW", "langchain-core-2", "langchain-coreWX"),
+        ("aiagentsforce_coreW", None, None),  # ModuleNotFoundError
     ],
 )
 def test_guard_import_failure(

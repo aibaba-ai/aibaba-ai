@@ -3,8 +3,8 @@ from typing import Any
 
 import pytest
 
-from langchain_community.document_loaders import SitemapLoader
-from langchain_community.document_loaders.sitemap import _extract_scheme_and_domain
+from aiagentsforce_community.document_loaders import SitemapLoader
+from aiagentsforce_community.document_loaders.sitemap import _extract_scheme_and_domain
 
 
 def test_sitemap() -> None:
@@ -12,7 +12,7 @@ def test_sitemap() -> None:
     loader = SitemapLoader("https://api.python.langchain.com/sitemap.xml")
     documents = loader.load()
     assert len(documents) > 1
-    assert "LangChain Python API" in documents[0].page_content
+    assert "AI Agents Force Python API" in documents[0].page_content
 
 
 def test_sitemap_block() -> None:
@@ -22,7 +22,7 @@ def test_sitemap_block() -> None:
     )
     documents = loader.load()
     assert len(documents) == 1
-    assert "LangChain Python API" in documents[0].page_content
+    assert "AI Agents Force Python API" in documents[0].page_content
 
 
 def test_sitemap_block_only_one() -> None:
@@ -32,7 +32,7 @@ def test_sitemap_block_only_one() -> None:
     )
     documents = loader.load()
     assert len(documents) > 1
-    assert "LangChain Python API" in documents[0].page_content
+    assert "AI Agents Force Python API" in documents[0].page_content
 
 
 def test_sitemap_block_blocknum_default() -> None:
@@ -42,7 +42,7 @@ def test_sitemap_block_blocknum_default() -> None:
     )
     documents = loader.load()
     assert len(documents) > 1
-    assert "LangChain Python API" in documents[0].page_content
+    assert "AI Agents Force Python API" in documents[0].page_content
 
 
 def test_sitemap_block_size_to_small() -> None:
@@ -81,7 +81,7 @@ def test_filter_sitemap() -> None:
     )
     documents = loader.load()
     assert len(documents) == 1
-    assert "LangChain Python API" in documents[0].page_content
+    assert "AI Agents Force Python API" in documents[0].page_content
 
 
 def test_sitemap_metadata() -> None:
@@ -114,7 +114,7 @@ def test_sitemap_metadata_extraction() -> None:
     documents = loader.load()
     assert len(documents) > 1
     assert "title" in documents[0].metadata
-    assert "LangChain" in documents[0].metadata["title"]
+    assert "AI Agents Force" in documents[0].metadata["title"]
 
 
 def test_sitemap_metadata_default() -> None:

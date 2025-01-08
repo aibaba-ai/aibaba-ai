@@ -3,7 +3,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from langchain_community.embeddings import EmbaasEmbeddings
+from aiagentsforce_community.embeddings import EmbaasEmbeddings
 
 
 def test_api_key_is_string() -> None:

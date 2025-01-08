@@ -22,7 +22,7 @@ import sqlalchemy as sa
 
 from packaging import version
 
-from langchain_community.utilities.sql_database import SQLDatabase
+from aiagentsforce_community.utilities.sql_database import SQLDatabase
 
 metadata_obj = MetaData()
 

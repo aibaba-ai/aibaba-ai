@@ -4,7 +4,7 @@ import os
 
 import pytest
 
-from langchain_community.chat_models import ChatPerplexity
+from aiagentsforce_community.chat_models import ChatPerplexity
 
 os.environ["PPLX_API_KEY"] = "foo"
 

@@ -1,9 +1,9 @@
 import os
 
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_message_histories import Neo4jChatMessageHistory
-from langchain_community.graphs import Neo4jGraph
+from aiagentsforce_community.chat_message_histories import Neo4jChatMessageHistory
+from aiagentsforce_community.graphs import Neo4jGraph
 
 
 def test_add_messages() -> None:

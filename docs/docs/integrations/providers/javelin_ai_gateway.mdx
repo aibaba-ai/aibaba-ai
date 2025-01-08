@@ -30,8 +30,8 @@ export JAVELIN_API_KEY=...
 ```python
 
 from langchain.chains import LLMChain
-from langchain_community.llms import JavelinAIGateway
-from langchain_core.prompts import PromptTemplate
+from aiagentsforce_community.llms import JavelinAIGateway
+from aiagentsforce_core.prompts import PromptTemplate
 
 route_completions = "eng_dept03"
 
@@ -51,7 +51,7 @@ print(result)
 ## Embeddings Example
 
 ```python
-from langchain_community.embeddings import JavelinAIGatewayEmbeddings
+from aiagentsforce_community.embeddings import JavelinAIGatewayEmbeddings
 from langchain_openai import OpenAIEmbeddings
 
 embeddings = JavelinAIGatewayEmbeddings(
@@ -65,8 +65,8 @@ print(embeddings.embed_documents(["hello"]))
 
 ## Chat Example
 ```python
-from langchain_community.chat_models import ChatJavelinAIGateway
-from langchain_core.messages import HumanMessage, SystemMessage
+from aiagentsforce_community.chat_models import ChatJavelinAIGateway
+from aiagentsforce_core.messages import HumanMessage, SystemMessage
 
 messages = [
     SystemMessage(

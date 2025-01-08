@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from langchain_community.tools.openai_dalle_image_generation import (
+from aiagentsforce_community.tools.openai_dalle_image_generation import (
     OpenAIDALLEImageGenerationTool,
 )
 

@@ -5,7 +5,7 @@ about the operational complexity of running databases at scale.
 One significant advantage of Upstash is that their databases support HTTP and all of their SDKs use HTTP.
 This means that you can run this in serverless platforms, edge or any platform that does not support TCP connections.
 
-Currently, there are two Upstash integrations available for LangChain: 
+Currently, there are two Upstash integrations available for AI Agents Force: 
 Upstash Vector as a vector embedding database and Upstash Redis as a cache and memory store.
 
 # Upstash Vector
@@ -27,7 +27,7 @@ Create a `UpstashVectorStore` object using credentials from the Upstash Console.
 You also need to pass in an `Embeddings` object which can turn text into vector embeddings.
 
 ```python
-from langchain_community.vectorstores.upstash import UpstashVectorStore
+from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
 import os
 
 os.environ["UPSTASH_VECTOR_REST_URL"] = "<UPSTASH_VECTOR_REST_URL>"
@@ -47,7 +47,7 @@ feature, [create an Upstash Vector index by selecting a model](https://upstash.c
 and simply pass `embedding=True`:
 
 ```python
-from langchain_community.vectorstores.upstash import UpstashVectorStore
+from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
 import os
 
 os.environ["UPSTASH_VECTOR_REST_URL"] = "<UPSTASH_VECTOR_REST_URL>"
@@ -65,7 +65,7 @@ for more detail on embedding models.
 You can use namespaces to partition your data in the index. Namespaces are useful when you want to query over huge amount of data, and you want to partition the data to make the queries faster. When you use namespaces, there won't be post-filtering on the results which will make the query results more precise.
 
 ```python
-from langchain_community.vectorstores.upstash import UpstashVectorStore
+from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
 import os
 
 os.environ["UPSTASH_VECTOR_REST_URL"] = "<UPSTASH_VECTOR_REST_URL>"
@@ -81,7 +81,7 @@ store = UpstashVectorStore(
 
 ```python
 from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.document_loaders import TextLoader
+from aiagentsforce_community.document_loaders import TextLoader
 from langchain_openai import OpenAIEmbeddings
 
 loader = TextLoader("../../modules/state_of_the_union.txt")
@@ -178,7 +178,7 @@ print(info)
 
 # Upstash Redis
 
-This page covers how to use [Upstash Redis](https://upstash.com/redis) with LangChain.
+This page covers how to use [Upstash Redis](https://upstash.com/redis) with AI Agents Force.
 
 ## Installation and Setup
 - Upstash Redis Python SDK can be installed with `pip install upstash-redis`
@@ -186,7 +186,7 @@ This page covers how to use [Upstash Redis](https://upstash.com/redis) with Lang
 
 
 ## Integrations
-All of Upstash-LangChain integrations are based on `upstash-redis` Python SDK being utilized as wrappers for LangChain.
+All of Upstash-AI Agents Force integrations are based on `upstash-redis` Python SDK being utilized as wrappers for AI Agents Force.
 This SDK utilizes Upstash Redis DB by giving UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN parameters from the console.
 
 
@@ -215,7 +215,7 @@ langchain.llm_cache = UpstashRedisCache(redis_=Redis(url=URL, token=TOKEN))
 See a [usage example](/docs/integrations/memory/upstash_redis_chat_message_history).
 
 ```python
-from langchain_community.chat_message_histories import (
+from aiagentsforce_community.chat_message_histories import (
     UpstashRedisChatMessageHistory,
 )
 ```

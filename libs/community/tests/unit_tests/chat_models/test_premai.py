@@ -3,12 +3,12 @@
 from typing import cast
 
 import pytest
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from langchain_community.chat_models import ChatPremAI
-from langchain_community.chat_models.premai import (
+from aiagentsforce_community.chat_models import ChatPremAI
+from aiagentsforce_community.chat_models.premai import (
     SINGLE_TOOL_PROMPT_TEMPLATE,
     TOOL_PROMPT_HEADER,
     _messages_to_prompt_dict,

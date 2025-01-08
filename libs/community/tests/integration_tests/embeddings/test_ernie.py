@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_community.embeddings.ernie import ErnieEmbeddings
+from aiagentsforce_community.embeddings.ernie import ErnieEmbeddings
 
 
 def test_embedding_documents_1() -> None:

@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from langchain_community.llms.moonshot import Moonshot
+from aiagentsforce_community.llms.moonshot import Moonshot
 
 os.environ["MOONSHOT_API_KEY"] = "key"
 

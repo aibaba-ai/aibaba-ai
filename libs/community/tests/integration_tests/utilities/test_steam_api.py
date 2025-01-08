@@ -1,6 +1,6 @@
 import ast
 
-from langchain_community.utilities.steam import SteamWebAPIWrapper
+from aiagentsforce_community.utilities.steam import SteamWebAPIWrapper
 
 
 def test_get_game_details() -> None:

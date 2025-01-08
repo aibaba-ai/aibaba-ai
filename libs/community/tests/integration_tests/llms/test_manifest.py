@@ -1,6 +1,6 @@
 """Test manifest integration."""
 
-from langchain_community.llms.manifest import ManifestWrapper
+from aiagentsforce_community.llms.manifest import ManifestWrapper
 
 
 def test_manifest_wrapper() -> None:

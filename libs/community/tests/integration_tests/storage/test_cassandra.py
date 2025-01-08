@@ -6,8 +6,8 @@ from typing import TYPE_CHECKING
 
 import pytest
 
-from langchain_community.storage.cassandra import CassandraByteStore
-from langchain_community.utilities.cassandra import SetupMode
+from aiagentsforce_community.storage.cassandra import CassandraByteStore
+from aiagentsforce_community.utilities.cassandra import SetupMode
 
 if TYPE_CHECKING:
     from cassandra.cluster import Session

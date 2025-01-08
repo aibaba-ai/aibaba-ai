@@ -2,9 +2,9 @@ from typing import List
 from unittest.mock import MagicMock
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers import AmazonKnowledgeBasesRetriever
+from aiagentsforce_community.retrievers import AmazonKnowledgeBasesRetriever
 
 
 @pytest.fixture

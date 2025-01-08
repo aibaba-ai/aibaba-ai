@@ -26,7 +26,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": true,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/anthropic/chat_models/langchain_anthropic.chat_models.ChatAnthropic.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/anthropic/chat_models/langchain_anthropic.chat_models.ChatAnthropic.html"
                 
             },
             {
@@ -38,7 +38,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/mistralai/chat_models/langchain_mistralai.chat_models.ChatMistralAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/mistralai/chat_models/langchain_mistralai.chat_models.ChatMistralAI.html"
             },
             {
                 "name": "ChatFireworks",
@@ -49,7 +49,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/fireworks/chat_models/langchain_fireworks.chat_models.ChatFireworks.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/fireworks/chat_models/langchain_fireworks.chat_models.ChatFireworks.html"
             },
             {
                 "name": "AzureChatOpenAI",
@@ -60,7 +60,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": true,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/openai/chat_models/langchain_openai.chat_models.azure.AzureChatOpenAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/openai/chat_models/langchain_openai.chat_models.azure.AzureChatOpenAI.html"
             },
             {
                 "name": "ChatOpenAI",
@@ -71,7 +71,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": true,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/openai/chat_models/langchain_openai.chat_models.base.ChatOpenAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/openai/chat_models/langchain_openai.chat_models.base.ChatOpenAI.html"
             },
             {
                 "name": "ChatTogether",
@@ -82,7 +82,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/together/chat_models/langchain_together.chat_models.ChatTogether.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/together/chat_models/langchain_together.chat_models.ChatTogether.html"
             },
             {
                 "name": "ChatVertexAI",
@@ -93,7 +93,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": true,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/google_vertexai/chat_models/langchain_google_vertexai.chat_models.ChatVertexAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/google_vertexai/chat_models/langchain_google_vertexai.chat_models.ChatVertexAI.html"
             },
             {
                 "name": "ChatGoogleGenerativeAI",
@@ -104,7 +104,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": true,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/google_genai/chat_models/langchain_google_genai.chat_models.ChatGoogleGenerativeAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/google_genai/chat_models/langchain_google_genai.chat_models.ChatGoogleGenerativeAI.html"
             },
             {
                 "name": "ChatGroq",
@@ -115,7 +115,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/groq/chat_models/langchain_groq.chat_models.ChatGroq.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/groq/chat_models/langchain_groq.chat_models.ChatGroq.html"
             },
             {
                 "name": "ChatCohere",
@@ -126,7 +126,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/cohere/chat_models/langchain_cohere.chat_models.ChatCohere.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/cohere/chat_models/langchain_cohere.chat_models.ChatCohere.html"
             },
             {
                 "name": "ChatBedrock",
@@ -137,7 +137,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock.ChatBedrock.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock.ChatBedrock.html"
             },
             {
                 "name": "ChatHuggingFace",
@@ -148,7 +148,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": true,
-                "apiLink": "https://python.langchain.com/api_reference/huggingface/chat_models/langchain_huggingface.chat_models.huggingface.ChatHuggingFace.html",
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/huggingface/chat_models/langchain_huggingface.chat_models.huggingface.ChatHuggingFace.html",
             },
             {
                 "name": "ChatNVIDIA",
@@ -159,7 +159,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": true,
                 "local": true,
-                "apiLink": "https://python.langchain.com/api_reference/nvidia_ai_endpoints/chat_models/langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/nvidia_ai_endpoints/chat_models/langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.html"
             },
             {
                 "name": "ChatOllama",
@@ -170,7 +170,7 @@ const FEATURE_TABLES = {
                 "json_mode": true,
                 "multimodal": false,
                 "local": true,
-                "apiLink": "https://python.langchain.com/api_reference/ollama/chat_models/langchain_ollama.chat_models.ChatOllama.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/ollama/chat_models/langchain_ollama.chat_models.ChatOllama.html"
             },
             {
                 "name": "ChatLlamaCpp",
@@ -181,7 +181,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": true,
-                "apiLink": "https://python.langchain.com/api_reference/community/chat_models/langchain_community.chat_models.llamacpp.ChatLlamaCpp.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/community/chat_models/aiagentsforce_community.chat_models.llamacpp.ChatLlamaCpp.html"
             },
             {
                 "name": "ChatAI21",
@@ -192,7 +192,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/ai21/chat_models/langchain_ai21.chat_models.ChatAI21.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/ai21/chat_models/langchain_ai21.chat_models.ChatAI21.html"
             },
             {
                 "name": "ChatUpstage",
@@ -203,7 +203,7 @@ const FEATURE_TABLES = {
                 "json_mode": false, 
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/upstage/chat_models/langchain_upstage.chat_models.ChatUpstage.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/upstage/chat_models/langchain_upstage.chat_models.ChatUpstage.html"
             },
             {
                 "name": "ChatDatabricks",
@@ -214,7 +214,7 @@ const FEATURE_TABLES = {
                 "json_mode": false, 
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/upstage/chat_models/langchain_databricks.chat_models.ChatDatabricks.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/upstage/chat_models/langchain_databricks.chat_models.ChatDatabricks.html"
             },
             {
                 "name": "ChatWatsonx",
@@ -225,7 +225,7 @@ const FEATURE_TABLES = {
                 "json_mode": true, 
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/ibm/chat_models/langchain_ibm.chat_models.ChatWatsonx.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/ibm/chat_models/langchain_ibm.chat_models.ChatWatsonx.html"
             },
             {
                 "name": "ChatXAI",
@@ -236,7 +236,7 @@ const FEATURE_TABLES = {
                 "json_mode": false,
                 "multimodal": false,
                 "local": false,
-                "apiLink": "https://python.langchain.com/api_reference/xai/chat_models/langchain_xai.chat_models.ChatXAI.html"
+                "apiLink": "https://docs.aiagentsforce.com/api_reference/xai/chat_models/langchain_xai.chat_models.ChatXAI.html"
             },
         ],
     },
@@ -255,67 +255,67 @@ const FEATURE_TABLES = {
                 name: "AI21LLM",
                 link: "ai21",
                 package: "langchain-ai21",
-                apiLink: "https://python.langchain.com/api_reference/ai21/llms/langchain_ai21.llms.AI21LLM.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/ai21/llms/langchain_ai21.llms.AI21LLM.html"
             },
             {
                 name: "AnthropicLLM",
                 link: "anthropic",
                 package: "langchain-anthropic",
-                apiLink: "https://python.langchain.com/api_reference/anthropic/llms/langchain_anthropic.llms.AnthropicLLM.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/anthropic/llms/langchain_anthropic.llms.AnthropicLLM.html"
             },
             {
                 name: "AzureOpenAI",
                 link: "azure_openai",
                 package: "langchain-openai",
-                apiLink: "https://python.langchain.com/api_reference/openai/llms/langchain_openai.llms.azure.AzureOpenAI.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/openai/llms/langchain_openai.llms.azure.AzureOpenAI.html"
             },
             {
                 name: "BedrockLLM",
                 link: "bedrock",
                 package: "langchain-aws",
-                apiLink: "https://python.langchain.com/api_reference/aws/llms/langchain_aws.llms.bedrock.BedrockLLM.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/aws/llms/langchain_aws.llms.bedrock.BedrockLLM.html"
             },
             {
                 name: "CohereLLM",
                 link: "cohere",
                 package: "langchain-cohere",
-                apiLink: "https://python.langchain.com/api_reference/cohere/llms/langchain_cohere.llms.Cohere.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/cohere/llms/langchain_cohere.llms.Cohere.html"
             },
             {
                 name: "FireworksLLM",
                 link: "fireworks",
                 package: "langchain-fireworks",
-                apiLink: "https://python.langchain.com/api_reference/fireworks/llms/langchain_fireworks.llms.Fireworks.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/fireworks/llms/langchain_fireworks.llms.Fireworks.html"
             },
             {
                 name: "OllamaLLM",
                 link: "ollama",
                 package: "langchain-ollama",
-                apiLink: "https://python.langchain.com/api_reference/ollama/llms/langchain_ollama.llms.OllamaLLM.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/ollama/llms/langchain_ollama.llms.OllamaLLM.html"
             },
             {
                 name: "OpenAILLM",
                 link: "openai",
                 package: "langchain-openai",
-                apiLink: "https://python.langchain.com/api_reference/openai/llms/langchain_openai.llms.base.OpenAI.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/openai/llms/langchain_openai.llms.base.OpenAI.html"
             },
             {
                 name: "TogetherLLM",
                 link: "together",
                 package: "langchain-together",
-                apiLink: "https://python.langchain.com/api_reference/together/llms/langchain_together.llms.Together.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/together/llms/langchain_together.llms.Together.html"
             },
             {
                 name: "VertexAILLM",
                 link: "google_vertexai",
                 package: "langchain-google_vertexai",
-                apiLink: "https://python.langchain.com/api_reference/google_vertexai/llms/langchain_google_vertexai.llms.VertexAI.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/google_vertexai/llms/langchain_google_vertexai.llms.VertexAI.html"
             },
             {
                 name: "NVIDIA",
                 link: "NVIDIA",
                 package: "langchain-nvidia",
-                apiLink: "https://python.langchain.com/api_reference/nvidia_ai_endpoints/llm/langchain_nvidia_ai_endpoints.llm.NVIDIA.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/nvidia_ai_endpoints/llm/langchain_nvidia_ai_endpoints.llm.NVIDIA.html"
             },
         ],
     },
@@ -330,85 +330,85 @@ const FEATURE_TABLES = {
                 name: "AzureOpenAI",
                 link: "azureopenai",
                 package: "langchain-openai",
-                apiLink: "https://python.langchain.com/api_reference/openai/embeddings/langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/openai/embeddings/langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.html"
             },
             {
                 name: "Ollama",
                 link: "ollama",
                 package: "langchain-ollama",
-                apiLink: "https://python.langchain.com/api_reference/ollama/embeddings/langchain_ollama.embeddings.OllamaEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/ollama/embeddings/langchain_ollama.embeddings.OllamaEmbeddings.html"
             },
             {
                 name: "AI21",
                 link: "ai21",
                 package: "langchain-ai21",
-                apiLink: "https://python.langchain.com/api_reference/ai21/embeddings/langchain_ai21.embeddings.AI21Embeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/ai21/embeddings/langchain_ai21.embeddings.AI21Embeddings.html"
             },
             {
                 name: "Fake",
                 link: "fake",
                 package: "langchain-core",
-                apiLink: "https://python.langchain.com/api_reference/core/embeddings/langchain_core.embeddings.fake.FakeEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/core/embeddings/aiagentsforce_core.embeddings.fake.FakeEmbeddings.html"
             },
             {
                 name: "OpenAI",
                 link: "openai",
                 package: "langchain-openai",
-                apiLink: "https://python.langchain.com/api_reference/openai/chat_models/langchain_openai.chat_models.base.ChatOpenAI.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/openai/chat_models/langchain_openai.chat_models.base.ChatOpenAI.html"
             },
             {
                 name: "Together",
                 link: "together",
                 package: "langchain-together",
-                apiLink: "https://python.langchain.com/api_reference/together/embeddings/langchain_together.embeddings.TogetherEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/together/embeddings/langchain_together.embeddings.TogetherEmbeddings.html"
             },
             {
                 name: "Fireworks",
                 link: "fireworks",
                 package: "langchain-fireworks",
-                apiLink: "https://python.langchain.com/api_reference/fireworks/embeddings/langchain_fireworks.embeddings.FireworksEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/fireworks/embeddings/langchain_fireworks.embeddings.FireworksEmbeddings.html"
             },
             {
                 name: "MistralAI",
                 link: "mistralai",
                 package: "langchain-mistralai",
-                apiLink: "https://python.langchain.com/api_reference/mistralai/embeddings/langchain_mistralai.embeddings.MistralAIEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/mistralai/embeddings/langchain_mistralai.embeddings.MistralAIEmbeddings.html"
             },
             {
                 name: "Cohere",
                 link: "cohere",
                 package: "langchain-cohere",
-                apiLink: "https://python.langchain.com/api_reference/cohere/embeddings/langchain_cohere.embeddings.CohereEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/cohere/embeddings/langchain_cohere.embeddings.CohereEmbeddings.html"
             },
             {
                 name: "Nomic",
                 link: "nomic",
                 package: "langchain-nomic",
-                apiLink: "https://python.langchain.com/api_reference/nomic/embeddings/langchain_nomic.embeddings.NomicEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/nomic/embeddings/langchain_nomic.embeddings.NomicEmbeddings.html"
             },
             {
                 name: "Databricks",
                 link: "databricks",
                 package: "langchain-databricks",
-                apiLink: "https://python.langchain.com/api_reference/nomic/embeddings/langchain_databricks.embeddings.DatabricksEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/nomic/embeddings/langchain_databricks.embeddings.DatabricksEmbeddings.html"
             },
             {
                 name: "VoyageAI",
                 link: "voyageai",
                 package: "langchain-voyageai",
-                apiLink: "https://python.langchain.com/api_reference/voyageai/embeddings/langchain_voyageai.embeddings.VoyageAIEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/voyageai/embeddings/langchain_voyageai.embeddings.VoyageAIEmbeddings.html"
             },
             {
                 name: "IBM",
                 link: "ibm_watsonx",
                 package: "langchain-ibm",
-                apiLink: "https://python.langchain.com/api_reference/ibm/embeddings/langchain_ibm.embeddings.WatsonxEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/ibm/embeddings/langchain_ibm.embeddings.WatsonxEmbeddings.html"
             },
             {
                 name: "NVIDIA",
                 link: "nvidia_ai_endpoints",
                 package: "langchain-nvidia",
-                apiLink: "https://python.langchain.com/api_reference/nvidia_ai_endpoints/embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/nvidia_ai_endpoints/embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html"
             },
         ]
     },
@@ -426,7 +426,7 @@ const FEATURE_TABLES = {
                 link: "bedrock",
                 selfHost: false,
                 cloudOffering: true,
-                apiLink: "https://python.langchain.com/api_reference/aws/retrievers/langchain_aws.retrievers.bedrock.AmazonKnowledgeBasesRetriever.html",
+                apiLink: "https://docs.aiagentsforce.com/api_reference/aws/retrievers/langchain_aws.retrievers.bedrock.AmazonKnowledgeBasesRetriever.html",
                 package: "langchain_aws"
             },
             {
@@ -434,15 +434,15 @@ const FEATURE_TABLES = {
                 link: "azure_ai_search",
                 selfHost: false,
                 cloudOffering: true,
-                apiLink: "https://python.langchain.com/api_reference/community/retrievers/langchain_community.retrievers.azure_ai_search.AzureAISearchRetriever.html",
-                package: "langchain_community"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/retrievers/aiagentsforce_community.retrievers.azure_ai_search.AzureAISearchRetriever.html",
+                package: "aiagentsforce_community"
             },
             {
                 name: "ElasticsearchRetriever",
                 link: "elasticsearch_retriever",
                 selfHost: true,
                 cloudOffering: true,
-                apiLink: "https://python.langchain.com/api_reference/elasticsearch/retrievers/langchain_elasticsearch.retrievers.ElasticsearchRetriever.html",
+                apiLink: "https://docs.aiagentsforce.com/api_reference/elasticsearch/retrievers/langchain_elasticsearch.retrievers.ElasticsearchRetriever.html",
                 package: "langchain_elasticsearch"
             },
             {
@@ -450,7 +450,7 @@ const FEATURE_TABLES = {
                 link: "milvus_hybrid_search",
                 selfHost: true,
                 cloudOffering: false,
-                apiLink: "https://python.langchain.com/api_reference/milvus/retrievers/langchain_milvus.retrievers.milvus_hybrid_search.MilvusCollectionHybridSearchRetriever.html",
+                apiLink: "https://docs.aiagentsforce.com/api_reference/milvus/retrievers/langchain_milvus.retrievers.milvus_hybrid_search.MilvusCollectionHybridSearchRetriever.html",
                 package: "langchain_milvus"
             },
             {
@@ -458,7 +458,7 @@ const FEATURE_TABLES = {
                 link: "google_vertex_ai_search",
                 selfHost: false,
                 cloudOffering: true,
-                apiLink: "https://python.langchain.com/api_reference/google_community/vertex_ai_search/langchain_google_community.vertex_ai_search.VertexAISearchRetriever.html",
+                apiLink: "https://docs.aiagentsforce.com/api_reference/google_community/vertex_ai_search/langchain_google_community.vertex_ai_search.VertexAISearchRetriever.html",
                 package: "langchain_google_community"
             }
         ],
@@ -479,22 +479,22 @@ const FEATURE_TABLES = {
                 name: "ArxivRetriever",
                 link: "arxiv",
                 source: (<>Scholarly articles on <a href="https://arxiv.org/">arxiv.org</a></>),
-                apiLink: "https://python.langchain.com/api_reference/community/retrievers/langchain_community.retrievers.arxiv.ArxivRetriever.html",
-                package: "langchain_community"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/retrievers/aiagentsforce_community.retrievers.arxiv.ArxivRetriever.html",
+                package: "aiagentsforce_community"
             },
             {
                 name: "TavilySearchAPIRetriever",
                 link: "tavily",
                 source: "Internet search",
-                apiLink: "https://python.langchain.com/api_reference/community/retrievers/langchain_community.retrievers.tavily_search_api.TavilySearchAPIRetriever.html",
-                package: "langchain_community"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/retrievers/aiagentsforce_community.retrievers.tavily_search_api.TavilySearchAPIRetriever.html",
+                package: "aiagentsforce_community"
             },
             {
                 name: "WikipediaRetriever",
                 link: "wikipedia",
                 source: (<><a href="https://www.wikipedia.org/">Wikipedia</a> articles</>),
-                apiLink: "https://python.langchain.com/api_reference/community/retrievers/langchain_community.retrievers.wikipedia.WikipediaRetriever.html",
-                package: "langchain_community"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/retrievers/aiagentsforce_community.retrievers.wikipedia.WikipediaRetriever.html",
+                package: "aiagentsforce_community"
             }
         ]
 
@@ -523,7 +523,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from an AWS S3 directory",
                 partnerPackage: false,
                 loaderName: "S3DirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.s3_directory.S3DirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.s3_directory.S3DirectoryLoader.html"
             },
             {
                 name: "AWS S3 File",
@@ -531,7 +531,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from an AWS S3 file",
                 partnerPackage: false,
                 loaderName: "S3FileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.s3_file.S3FileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.s3_file.S3FileLoader.html"
             },
             {
                 name: "Azure AI Data",
@@ -539,7 +539,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Azure AI services",
                 partnerPackage: false,
                 loaderName: "AzureAIDataLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.azure_ai_data.AzureAIDataLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.azure_ai_data.AzureAIDataLoader.html"
             },
             {
                 name: "Azure Blob Storage Container",
@@ -547,7 +547,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from an Azure Blob Storage container",
                 partnerPackage: false,
                 loaderName: "AzureBlobStorageContainerLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.azure_blob_storage_container.AzureBlobStorageContainerLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.azure_blob_storage_container.AzureBlobStorageContainerLoader.html"
             },
             {
                 name: "Azure Blob Storage File",
@@ -555,7 +555,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from an Azure Blob Storage file",
                 partnerPackage: false,
                 loaderName: "AzureBlobStorageFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.azure_blob_storage_file.AzureBlobStorageFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.azure_blob_storage_file.AzureBlobStorageFileLoader.html"
             },
             {
                 name: "Dropbox",
@@ -563,7 +563,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Dropbox",
                 partnerPackage: false,
                 loaderName: "DropboxLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.dropbox.DropboxLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.dropbox.DropboxLoader.html"
             },
             {
                 name: "Google Cloud Storage Directory",
@@ -571,7 +571,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from GCS bucket",
                 partnerPackage: true,
                 loaderName: "GCSDirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/google_community/gcs_directory/langchain_google_community.gcs_directory.GCSDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/google_community/gcs_directory/langchain_google_community.gcs_directory.GCSDirectoryLoader.html"
             },
             {
                 name: "Google Cloud Storage File",
@@ -579,7 +579,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from GCS file object",
                 partnerPackage: true,
                 loaderName: "GCSFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/google_community/gcs_file/langchain_google_community.gcs_file.GCSFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/google_community/gcs_file/langchain_google_community.gcs_file.GCSFileLoader.html"
             },
             {
                 name: "Google Drive",
@@ -587,7 +587,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Google Drive (Google Docs only)",
                 partnerPackage: true,
                 loaderName: "GoogleDriveLoader",
-                apiLink: "https://python.langchain.com/api_reference/google_community/drive/langchain_google_community.drive.GoogleDriveLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/google_community/drive/langchain_google_community.drive.GoogleDriveLoader.html"
             },
             {
                 name: "Huawei OBS Directory",
@@ -595,7 +595,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Huawei Object Storage Service Directory",
                 partnerPackage: false,
                 loaderName: "OBSDirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.obs_directory.OBSDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.obs_directory.OBSDirectoryLoader.html"
             },
             {
                 name: "Huawei OBS File",
@@ -603,7 +603,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Huawei Object Storage Service File",
                 partnerPackage: false,
                 loaderName: "OBSFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.obs_file.OBSFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.obs_file.OBSFileLoader.html"
             },
             {
                 name: "Microsoft OneDrive",
@@ -611,7 +611,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Microsoft OneDrive",
                 partnerPackage: false,
                 loaderName: "OneDriveLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.onedrive.OneDriveLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.onedrive.OneDriveLoader.html"
             },
             {
                 name: "Microsoft SharePoint",
@@ -619,7 +619,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Microsoft SharePoint",
                 partnerPackage: false,
                 loaderName: "SharePointLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.sharepoint.SharePointLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.sharepoint.SharePointLoader.html"
                 
             },
             {
@@ -628,7 +628,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Tencent Cloud Object Storage Directory",
                 partnerPackage: false,
                 loaderName: "TencentCOSDirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.tencent_cos_directory.TencentCOSDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.tencent_cos_directory.TencentCOSDirectoryLoader.html"
             },
             {
                 name: "Tencent COS File",
@@ -636,7 +636,7 @@ const FEATURE_TABLES = {
                 source: "Load documents from Tencent Cloud Object Storage File",
                 partnerPackage: false,
                 loaderName: "TencentCOSFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.tencent_cos_file.TencentCOSFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.tencent_cos_file.TencentCOSFileLoader.html"
             },
         ]
     },
@@ -655,31 +655,31 @@ const FEATURE_TABLES = {
                 name: "Telegram",
                 link: "telegram",
                 loaderName: "TelegramChatFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.telegram.TelegramChatFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.telegram.TelegramChatFileLoader.html"
             },
             {
                 name: "WhatsApp",
                 link: "whatsapp_chat",
                 loaderName: "WhatsAppChatLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/chat_loaders/langchain_community.chat_loaders.whatsapp.WhatsAppChatLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/chat_loaders/aiagentsforce_community.chat_loaders.whatsapp.WhatsAppChatLoader.html"
             },
             {
                 name: "Discord",
                 link: "discord",
                 loaderName: "DiscordChatLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.discord.DiscordChatLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.discord.DiscordChatLoader.html"
             },
             {
                 name: "Facebook Chat",
                 link: "facebook_chat",
                 loaderName: "FacebookChatLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.facebook_chat.FacebookChatLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.facebook_chat.FacebookChatLoader.html"
             },
             {
                 name: "Mastodon",
                 link: "mastodon",
                 loaderName: "MastodonTootsLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.mastodon.MastodonTootsLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.mastodon.MastodonTootsLoader.html"
             }
         ]
     },
@@ -698,43 +698,43 @@ const FEATURE_TABLES = {
                 name: "Figma",
                 link: "figma",
                 loaderName: "FigmaFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.figma.FigmaFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.figma.FigmaFileLoader.html"
             },
             {
                 name: "Notion",
                 link: "notion",
                 loaderName: "NotionDirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.notion.NotionDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.notion.NotionDirectoryLoader.html"
             },
             {
                 name: "Slack",
                 link: "slack",
                 loaderName: "SlackDirectoryLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.slack_directory.SlackDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.slack_directory.SlackDirectoryLoader.html"
             },
             {
                 name: "Quip",
                 link: "quip",
                 loaderName: "QuipLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.quip.QuipLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.quip.QuipLoader.html"
             },
             {
                 name: "Trello",
                 link: "trello",
                 loaderName: "TrelloLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.trello.TrelloLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.trello.TrelloLoader.html"
             },
             {
                 name: "Roam",
                 link: "roam",
                 loaderName: "RoamLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.roam.RoamLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.roam.RoamLoader.html"
             },
             {
                 name: "GitHub",
                 link: "github",
                 loaderName: "GithubFileLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.github.GithubFileLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.github.GithubFileLoader.html"
             }
         ]
     },
@@ -753,14 +753,14 @@ const FEATURE_TABLES = {
                 name: "Twitter",
                 link: "twitter",
                 loaderName: "TwitterTweetLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.twitter.TwitterTweetLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.twitter.TwitterTweetLoader.html"
                 
             },
             {
                 name: "Reddit",
                 link: "RedditPostsLoader",
                 loaderName: "RedditPostsLoader",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.reddit.RedditPostsLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.reddit.RedditPostsLoader.html"
             },
         ]
     },
@@ -779,35 +779,35 @@ const FEATURE_TABLES = {
                 link: "web_base",
                 source: "Uses urllib and BeautifulSoup to load and parse HTML web pages",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.web_base.WebBaseLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.web_base.WebBaseLoader.html"
             },
             {
                 name: "Unstructured",
                 link: "unstructured_file",
                 source: "Uses Unstructured to load and parse web pages",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
             },
             {
                 name: "RecursiveURL",
                 link: "recursive_url",
                 source: "Recursively scrapes all child links from a root URL",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.recursive_url_loader.RecursiveUrlLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.recursive_url_loader.RecursiveUrlLoader.html"
             },
             {
                 name: "Sitemap",
                 link: "sitemap",
                 source: "Scrapes all pages on a given sitemap",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.sitemap.SitemapLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.sitemap.SitemapLoader.html"
             },
             {
                 name: "Firecrawl",
                 link: "firecrawl",
                 source: "API service that can be deployed locally, hosted version has free credits.",
                 api: "API",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.firecrawl.FireCrawlLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.firecrawl.FireCrawlLoader.html"
             }
         ]
     },
@@ -826,63 +826,63 @@ const FEATURE_TABLES = {
                 link: "pypdfloader",
                 source: "Uses `pypdf` to load and parse PDFs",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PyPDFLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PyPDFLoader.html"
             },
             {
                 name: "Unstructured",
                 link: "unstructured_file",
                 source: "Uses Unstructured's open source library to load PDFs",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
             },
             {
                 name: "Amazon Textract",
                 link: "amazon_textract",
                 source: "Uses AWS API to load PDFs",
                 api: "API",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.AmazonTextractPDFLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.AmazonTextractPDFLoader.html"
             },
             {
                 name: "MathPix",
                 link: "mathpix",
                 source: "Uses MathPix to load PDFs",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.MathpixPDFLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.MathpixPDFLoader.html"
             },
             {
                 name: "PDFPlumber",
                 link: "pdfplumber",
                 source: "Load PDF files using PDFPlumber",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PDFPlumberLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PDFPlumberLoader.html"
             },
             {
                 name: "PyPDFDirectry",
                 link: "pypdfdirectory",
                 source: "Load a directory with PDF files",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PyPDFDirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PyPDFDirectoryLoader.html"
             },
             {
                 name: "PyPDFium2",
                 link: "pypdfium2",
                 source: "Load PDF files using PyPDFium2",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PyPDFium2Loader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PyPDFium2Loader.html"
             },
             {
                 name: "PyMuPDF",
                 link: "pymupdf",
                 source: "Load PDF files using PyMuPDF",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PyMuPDFLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PyMuPDFLoader.html"
             },
             {
                 name: "PDFMiner",
                 link: "pdfminer",
                 source: "Load PDF files using PDFMiner",
                 api: "Package",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.pdf.PDFMinerLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.pdf.PDFMinerLoader.html"
             }
         ]
     },
@@ -899,31 +899,31 @@ const FEATURE_TABLES = {
                 name: "CSVLoader",
                 link: "csv",
                 source: "CSV files",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.csv_loader.CSVLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.csv_loader.CSVLoader.html"
             },
             {
                 name: "DirectoryLoader",
                 link: "../../how_to/document_loader_directory",
                 source: "All files in a given directory",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.directory.DirectoryLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.directory.DirectoryLoader.html"
             },
             {
                 name: "Unstructured",
                 link: "unstructured_file",
                 source: "Many file types (see https://docs.unstructured.io/platform/supported-file-types)",
-                apiLink: "https://python.langchain.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/unstructured/document_loaders/langchain_unstructured.document_loaders.UnstructuredLoader.html"
             },
             {
                 name: "JSONLoader",
                 link: "json",
                 source: "JSON files",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.json_loader.JSONLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.json_loader.JSONLoader.html"
             },
             {
                 name: "BSHTMLLoader",
                 link: "bshtml",
                 source: "HTML files",
-                apiLink: "https://python.langchain.com/api_reference/community/document_loaders/langchain_community.document_loaders.html_bs.BSHTMLLoader.html"
+                apiLink: "https://docs.aiagentsforce.com/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.html_bs.BSHTMLLoader.html"
             },
         ]
     },
@@ -1037,7 +1037,7 @@ const FEATURE_TABLES = {
             },
             {
                 name: "InMemoryVectorStore",
-                link: "https://python.langchain.com/api_reference/core/vectorstores/langchain_core.vectorstores.in_memory.InMemoryVectorStore.html",
+                link: "https://docs.aiagentsforce.com/api_reference/core/vectorstores/aiagentsforce_core.vectorstores.in_memory.InMemoryVectorStore.html",
                 deleteById: true,
                 filtering: true,
                 searchByVector: false,

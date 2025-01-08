@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import pytest
 
-from langchain_community.vectorstores.azuresearch import AzureSearch
+from aiagentsforce_community.vectorstores.azuresearch import AzureSearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 DEFAULT_VECTOR_DIMENSION = 4
@@ -197,7 +197,7 @@ def test_ids_used_correctly() -> None:
     """Check whether vector store uses the document ids when provided with them."""
     from azure.search.documents import SearchClient
     from azure.search.documents.indexes import SearchIndexClient
-    from langchain_core.documents import Document
+    from aiagentsforce_core.documents import Document
 
     class Response:
         def __init__(self) -> None:

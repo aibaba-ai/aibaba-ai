@@ -1,10 +1,10 @@
 """Test volc engine maas chat model."""
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models.volcengine_maas import VolcEngineMaasChat
+from aiagentsforce_community.chat_models.volcengine_maas import VolcEngineMaasChat
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

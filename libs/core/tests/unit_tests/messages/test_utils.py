@@ -6,8 +6,8 @@ from typing import Any, Callable, Optional, Union
 
 import pytest
 
-from langchain_core.language_models.fake_chat_models import FakeChatModel
-from langchain_core.messages import (
+from aiagentsforce_core.language_models.fake_chat_models import FakeChatModel
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
@@ -15,14 +15,14 @@ from langchain_core.messages import (
     ToolCall,
     ToolMessage,
 )
-from langchain_core.messages.utils import (
+from aiagentsforce_core.messages.utils import (
     convert_to_messages,
     convert_to_openai_messages,
     filter_messages,
     merge_message_runs,
     trim_messages,
 )
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.tools import BaseTool
 
 
 @pytest.mark.parametrize("msg_cls", [HumanMessage, AIMessage, SystemMessage])
@@ -544,7 +544,7 @@ def test_convert_to_messages() -> None:
         ),
         # String
         "14.1",
-        # LangChain dict
+        # AI Agents Force dict
         {
             "role": "ai",
             "content": [{"type": "text", "text": "15.1"}],

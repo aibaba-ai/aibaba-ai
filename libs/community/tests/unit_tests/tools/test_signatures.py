@@ -5,13 +5,13 @@ import re
 from typing import List, Type
 
 import pytest
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.tools import BaseTool
 
-from langchain_community.tools.amadeus.base import AmadeusBaseTool
-from langchain_community.tools.gmail.base import GmailBaseTool
-from langchain_community.tools.office365.base import O365BaseTool
-from langchain_community.tools.playwright.base import BaseBrowserTool
-from langchain_community.tools.slack.base import SlackBaseTool
+from aiagentsforce_community.tools.amadeus.base import AmadeusBaseTool
+from aiagentsforce_community.tools.gmail.base import GmailBaseTool
+from aiagentsforce_community.tools.office365.base import O365BaseTool
+from aiagentsforce_community.tools.playwright.base import BaseBrowserTool
+from aiagentsforce_community.tools.slack.base import SlackBaseTool
 
 
 def get_non_abstract_subclasses(cls: Type[BaseTool]) -> List[Type[BaseTool]]:

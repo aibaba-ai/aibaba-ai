@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from langchain_community.embeddings import YandexGPTEmbeddings
+from aiagentsforce_community.embeddings import YandexGPTEmbeddings
 
 YANDEX_MODULE_NAME2 = (
     "yandex.cloud.ai.foundation_models.v1.embedding.embedding_service_pb2_grpc"

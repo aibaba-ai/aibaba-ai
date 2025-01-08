@@ -6,7 +6,7 @@ import openai
 from langchain_openai.embeddings.base import OpenAIEmbeddings
 
 
-def test_langchain_openai_embedding_documents() -> None:
+def test_aiagentforce_openai_embedding_documents() -> None:
     """Test openai embeddings."""
     documents = ["foo bar"]
     embedding = OpenAIEmbeddings()
@@ -15,7 +15,7 @@ def test_langchain_openai_embedding_documents() -> None:
     assert len(output[0]) > 0
 
 
-def test_langchain_openai_embedding_query() -> None:
+def test_aiagentforce_openai_embedding_query() -> None:
     """Test openai embeddings."""
     document = "foo bar"
     embedding = OpenAIEmbeddings()
@@ -23,7 +23,7 @@ def test_langchain_openai_embedding_query() -> None:
     assert len(output) > 0
 
 
-def test_langchain_openai_embeddings_dimensions() -> None:
+def test_aiagentforce_openai_embeddings_dimensions() -> None:
     """Test openai embeddings."""
     documents = ["foo bar"]
     embedding = OpenAIEmbeddings(model="text-embedding-3-small", dimensions=128)
@@ -32,7 +32,7 @@ def test_langchain_openai_embeddings_dimensions() -> None:
     assert len(output[0]) == 128
 
 
-def test_langchain_openai_embeddings_equivalent_to_raw() -> None:
+def test_aiagentforce_openai_embeddings_equivalent_to_raw() -> None:
     documents = ["disallowed special token '<|endoftext|>'"]
     embedding = OpenAIEmbeddings()
 
@@ -46,7 +46,7 @@ def test_langchain_openai_embeddings_equivalent_to_raw() -> None:
     assert np.allclose(lc_output, direct_output, atol=0.001)
 
 
-async def test_langchain_openai_embeddings_equivalent_to_raw_async() -> None:
+async def test_aiagentforce_openai_embeddings_equivalent_to_raw_async() -> None:
     documents = ["disallowed special token '<|endoftext|>'"]
     embedding = OpenAIEmbeddings()
 
@@ -60,7 +60,7 @@ async def test_langchain_openai_embeddings_equivalent_to_raw_async() -> None:
     assert np.allclose(lc_output, direct_output, atol=0.001)
 
 
-def test_langchain_openai_embeddings_dimensions_large_num() -> None:
+def test_aiagentforce_openai_embeddings_dimensions_large_num() -> None:
     """Test openai embeddings."""
     documents = [f"foo bar {i}" for i in range(2000)]
     embedding = OpenAIEmbeddings(model="text-embedding-3-small", dimensions=128)

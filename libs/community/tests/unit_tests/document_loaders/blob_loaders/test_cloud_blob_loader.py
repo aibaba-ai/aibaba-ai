@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 import pytest
 
-from langchain_community.document_loaders.blob_loaders import CloudBlobLoader
+from aiagentsforce_community.document_loaders.blob_loaders import CloudBlobLoader
 
 
 @pytest.fixture

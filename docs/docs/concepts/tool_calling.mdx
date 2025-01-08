@@ -21,7 +21,7 @@ You will sometimes hear the term `function calling`. We use this term interchang
 
 ## Key concepts 
 
-**(1) Tool Creation:** Use the [@tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html) decorator to create a [tool](/docs/concepts/tools). A tool is an association between a function and its schema.
+**(1) Tool Creation:** Use the [@tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html) decorator to create a [tool](/docs/concepts/tools). A tool is an association between a function and its schema.
 **(2) Tool Binding:** The tool needs to be connected to a model that supports tool calling. This gives the model awareness of the tool and the associated input schema required by the tool.
 **(3) Tool Calling:** When appropriate, the model can decide to call a tool and ensure its response conforms to the tool's input schema.
 **(4) Tool Execution:** The tool can be executed using the arguments provided by the model.
@@ -49,7 +49,7 @@ response = model_with_tools.invoke(user_input)
 The recommended way to create a tool is using the `@tool` decorator.
 
 ```python
-from langchain_core.tools import tool
+from aiagentsforce_core.tools import tool
 
 @tool
 def multiply(a: int, b: int) -> int:
@@ -73,7 +73,7 @@ def multiply(a: int, b: int) -> int:
 See our [model integration page](/docs/integrations/chat/) for a list of providers that support tool calling.
 :::
 
-The central concept to understand is that LangChain provides a standardized interface for connecting tools to models. 
+The central concept to understand is that AI Agents Force provides a standardized interface for connecting tools to models. 
 The `.bind_tools()` method can be used to specify which tools are available for a model to call. 
 
 ```python

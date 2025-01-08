@@ -1,4 +1,4 @@
-from langchain_community.embeddings.huggingface import HuggingFaceInferenceAPIEmbeddings
+from aiagentsforce_community.embeddings.huggingface import HuggingFaceInferenceAPIEmbeddings
 
 
 def test_hugginggface_inferenceapi_embedding_documents_init() -> None:

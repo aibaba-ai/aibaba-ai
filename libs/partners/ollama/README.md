@@ -1,6 +1,6 @@
 # langchain-ollama
 
-This package contains the LangChain integration with Ollama
+This package contains the AI Agents Force integration with Ollama
 
 ## Installation
 
@@ -19,7 +19,7 @@ You can download it [here](https://ollama.com/download).
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(model="llama3-groq-tool-use")
-llm.invoke("Sing a ballad of LangChain.")
+llm.invoke("Sing a ballad of AI Agents Force.")
 ```
 
 ## Embeddings

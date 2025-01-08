@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from langchain_core._api.deprecation import (
+from aiagentsforce_core._api.deprecation import (
     deprecated,
     rename_parameter,
     warn_deprecated,
@@ -50,7 +50,7 @@ from langchain_core._api.deprecation import (
                 "addendum": "Please migrate your code.",
                 "removal": "2.5.0",
             },
-            "`SomeFunction` was deprecated in LangChain 1.5.0 and will be "
+            "`SomeFunction` was deprecated in AI Agents Force 1.5.0 and will be "
             "removed in 2.5.0 Please migrate your code.",
         ),
     ],
@@ -126,7 +126,7 @@ def test_deprecated_function() -> None:
         assert len(warning_list) == 1
         warning = warning_list[0].message
         assert str(warning) == (
-            "The function `deprecated_function` was deprecated in LangChain 2.0.0 "
+            "The function `deprecated_function` was deprecated in AI Agents Force 2.0.0 "
             "and will be removed in 3.0.0"
         )
 
@@ -148,7 +148,7 @@ async def test_deprecated_async_function() -> None:
         warning = warning_list[0].message
         assert str(warning) == (
             "The function `deprecated_async_function` was deprecated "
-            "in LangChain 2.0.0 and will be removed in 3.0.0"
+            "in AI Agents Force 2.0.0 and will be removed in 3.0.0"
         )
 
         doc = deprecated_function.__doc__

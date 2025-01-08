@@ -2,9 +2,9 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.document_loaders.concurrent import ConcurrentLoader
-from langchain_community.document_loaders.generic import GenericLoader
-from langchain_community.document_loaders.parsers import LanguageParser
+from aiagentsforce_community.document_loaders.concurrent import ConcurrentLoader
+from aiagentsforce_community.document_loaders.generic import GenericLoader
+from aiagentsforce_community.document_loaders.parsers import LanguageParser
 
 
 def test_language_loader_for_python() -> None:

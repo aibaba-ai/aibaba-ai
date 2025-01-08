@@ -1,11 +1,11 @@
 """Integration test for doc reordering."""
 
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 
-from langchain_community.document_transformers.long_context_reorder import (
+from aiagentsforce_community.document_transformers.long_context_reorder import (
     LongContextReorder,
 )
-from langchain_community.embeddings import OpenAIEmbeddings
+from aiagentsforce_community.embeddings import OpenAIEmbeddings
 
 
 def test_long_context_reorder() -> None:

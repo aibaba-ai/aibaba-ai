@@ -3,9 +3,9 @@
 import os
 
 import pytest
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms.bigdl_llm import BigdlLLM
+from aiagentsforce_community.llms.bigdl_llm import BigdlLLM
 
 model_ids_to_test = os.getenv("TEST_BIGDLLLM_MODEL_IDS") or ""
 skip_if_no_model_ids = pytest.mark.skipif(

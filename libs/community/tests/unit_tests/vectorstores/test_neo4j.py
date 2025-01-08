@@ -1,6 +1,6 @@
 """Test Neo4j functionality."""
 
-from langchain_community.vectorstores.neo4j_vector import (
+from aiagentsforce_community.vectorstores.neo4j_vector import (
     dict_to_yaml_str,
     remove_lucene_chars,
 )

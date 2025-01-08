@@ -1,6 +1,6 @@
 """Test LLM utility functions."""
 
-from langchain_community.llms.utils import enforce_stop_tokens
+from aiagentsforce_community.llms.utils import enforce_stop_tokens
 
 
 def test_enforce_stop_tokens() -> None:

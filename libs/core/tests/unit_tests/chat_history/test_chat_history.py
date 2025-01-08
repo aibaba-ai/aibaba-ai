@@ -1,7 +1,7 @@
 from collections.abc import Sequence
 
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.messages import BaseMessage, HumanMessage
+from aiagentsforce_core.chat_history import BaseChatMessageHistory
+from aiagentsforce_core.messages import BaseMessage, HumanMessage
 
 
 def test_add_message_implementation_only() -> None:

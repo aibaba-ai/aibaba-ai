@@ -1,9 +1,9 @@
 """Test LLM callbacks."""
 
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.messages import HumanMessage
 
-from langchain_community.chat_models.fake import FakeListChatModel
-from langchain_community.llms.fake import FakeListLLM
+from aiagentsforce_community.chat_models.fake import FakeListChatModel
+from aiagentsforce_community.llms.fake import FakeListLLM
 from tests.unit_tests.callbacks.fake_callback_handler import (
     FakeCallbackHandler,
     FakeCallbackHandlerWithChatStart,

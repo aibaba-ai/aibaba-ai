@@ -1,7 +1,7 @@
 import requests
 from pytest import MonkeyPatch
 
-from langchain_community.embeddings.ollama import OllamaEmbeddings
+from aiagentsforce_community.embeddings.ollama import OllamaEmbeddings
 
 
 class MockResponse:

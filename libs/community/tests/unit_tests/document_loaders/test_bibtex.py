@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.document_loaders.bibtex import BibtexLoader
+from aiagentsforce_community.document_loaders.bibtex import BibtexLoader
 
 BIBTEX_EXAMPLE_FILE = Path(__file__).parent / "sample_documents" / "bibtex.bib"
 

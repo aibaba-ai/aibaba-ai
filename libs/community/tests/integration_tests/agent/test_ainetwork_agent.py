@@ -10,9 +10,9 @@ from urllib.error import HTTPError
 import pytest
 from langchain.agents import AgentType, initialize_agent
 
-from langchain_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
-from langchain_community.chat_models import ChatOpenAI
-from langchain_community.tools.ainetwork.utils import authenticate
+from aiagentsforce_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
+from aiagentsforce_community.chat_models import ChatOpenAI
+from aiagentsforce_community.tools.ainetwork.utils import authenticate
 
 
 class Match(Enum):
@@ -98,7 +98,7 @@ def test_ainetwork_toolkit() -> None:
     UUID = uuid.UUID(
         int=(int(time.time() * 1000) << 64) | (uuid.uuid4().int & ((1 << 64) - 1))
     )
-    app_name = f"_langchain_test__{str(UUID).replace('-', '_')}"
+    app_name = f"_aiagentforce_test__{str(UUID).replace('-', '_')}"
     agent.run(f"""Create app {app_name}""")
     validate(f"/manage_app/{app_name}/config", {"admin": {self_address: True}})
     validate(f"/apps/{app_name}/DB", None, "owner")

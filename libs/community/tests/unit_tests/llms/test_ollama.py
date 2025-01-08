@@ -1,7 +1,7 @@
 import requests
 from pytest import MonkeyPatch
 
-from langchain_community.llms.ollama import Ollama
+from aiagentsforce_community.llms.ollama import Ollama
 
 
 def mock_response_stream():  # type: ignore[no-untyped-def]

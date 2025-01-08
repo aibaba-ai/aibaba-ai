@@ -21,7 +21,7 @@ pip install fiddler-client
 
 
 ```python
-from langchain_community.callbacks.fiddler_callback import FiddlerCallbackHandler
+from aiagentsforce_community.callbacks.fiddler_callback import FiddlerCallbackHandler
 ```
 
 See an [example](/docs/integrations/callbacks/fiddler).

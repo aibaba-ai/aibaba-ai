@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from langchain_community.document_loaders.parsers.language.lua import LuaSegmenter
+from aiagentsforce_community.document_loaders.parsers.language.lua import LuaSegmenter
 
 
 @pytest.mark.requires("tree_sitter", "tree_sitter_languages")
@@ -33,7 +33,7 @@ end"""
     @pytest.mark.skip(
         reason=(
             "Flakey. To be investigated. See "
-            "https://github.com/langchain-ai/langchain/actions/runs/7907779756/job/21585580650."
+            "https://github.com/AI-Agents-Force-SDK/langchain/actions/runs/7907779756/job/21585580650."
         )
     )
     def test_extract_functions_classes(self) -> None:
@@ -45,8 +45,8 @@ end"""
     @pytest.mark.skip(
         reason=(
             "Flakey. To be investigated. See "
-            "https://github.com/langchain-ai/langchain/actions/runs/7923203031/job/21632416298?pr=17599 "  # noqa: E501
-            "and https://github.com/langchain-ai/langchain/actions/runs/7923784089/job/2163420864."
+            "https://github.com/AI-Agents-Force-SDK/langchain/actions/runs/7923203031/job/21632416298?pr=17599 "  # noqa: E501
+            "and https://github.com/AI-Agents-Force-SDK/langchain/actions/runs/7923784089/job/2163420864."
         )
     )
     def test_simplify_code(self) -> None:

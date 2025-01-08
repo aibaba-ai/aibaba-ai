@@ -1,10 +1,10 @@
 from typing import Generator, Tuple
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from langchain_tests.integration_tests.base_store import BaseStoreSyncTests
 
-from langchain_community.storage.mongodb import MongoDBByteStore, MongoDBStore
+from aiagentsforce_community.storage.mongodb import MongoDBByteStore, MongoDBStore
 
 pytest.importorskip("pymongo")
 

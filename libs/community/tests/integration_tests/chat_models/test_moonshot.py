@@ -3,11 +3,11 @@
 from typing import Type, cast
 
 import pytest
-from langchain_core.language_models import BaseChatModel
+from aiagentsforce_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 from pydantic import SecretStr
 
-from langchain_community.chat_models.moonshot import MoonshotChat
+from aiagentsforce_community.chat_models.moonshot import MoonshotChat
 
 
 class TestMoonshotChat(ChatModelIntegrationTests):

@@ -8,11 +8,11 @@ Outlines supports multiple backends, including:
 - vLLM
 - MLX
 
-This integration allows you to use Outlines models with LangChain, providing both LLM and chat model interfaces.
+This integration allows you to use Outlines models with AI Agents Force, providing both LLM and chat model interfaces.
 
 ## Installation and Setup
 
-To use Outlines with LangChain, you'll need to install the Outlines library:
+To use Outlines with AI Agents Force, you'll need to install the Outlines library:
 
 ```bash
 pip install outlines
@@ -27,18 +27,18 @@ Depending on the backend you choose, you may need to install additional dependen
 
 ## LLM
 
-To use Outlines as an LLM in LangChain, you can use the `Outlines` class:
+To use Outlines as an LLM in AI Agents Force, you can use the `Outlines` class:
 
 ```python
-from langchain_community.llms import Outlines
+from aiagentsforce_community.llms import Outlines
 ```
 
 ## Chat Models
 
-To use Outlines as a chat model in LangChain, you can use the `ChatOutlines` class:
+To use Outlines as a chat model in AI Agents Force, you can use the `ChatOutlines` class:
 
 ```python
-from langchain_community.chat_models import ChatOutlines
+from aiagentsforce_community.chat_models import ChatOutlines
 ```
 
 ## Model Configuration
@@ -135,7 +135,7 @@ Outlines provides several methods for structured generation:
 ### LLM Example
 
 ```python
-from langchain_community.llms import Outlines
+from aiagentsforce_community.llms import Outlines
 
 llm = Outlines(model="meta-llama/Llama-2-7b-chat-hf", max_tokens=100)
 result = llm.invoke("Tell me a short story about a robot.")
@@ -145,8 +145,8 @@ print(result)
 ### Chat Model Example
 
 ```python
-from langchain_community.chat_models import ChatOutlines
-from langchain_core.messages import HumanMessage, SystemMessage
+from aiagentsforce_community.chat_models import ChatOutlines
+from aiagentsforce_core.messages import HumanMessage, SystemMessage
 
 chat = ChatOutlines(model="meta-llama/Llama-2-7b-chat-hf", max_tokens=100)
 messages = [
@@ -160,8 +160,8 @@ print(result.content)
 ### Streaming Example
 
 ```python
-from langchain_community.chat_models import ChatOutlines
-from langchain_core.messages import HumanMessage
+from aiagentsforce_community.chat_models import ChatOutlines
+from aiagentsforce_core.messages import HumanMessage
 
 chat = ChatOutlines(model="meta-llama/Llama-2-7b-chat-hf", streaming=True)
 for chunk in chat.stream("Tell me a joke about programming."):
@@ -172,7 +172,7 @@ print()
 ### Structured Output Example
 
 ```python
-from langchain_community.llms import Outlines
+from aiagentsforce_community.llms import Outlines
 from pydantic import BaseModel
 
 class MovieReview(BaseModel):

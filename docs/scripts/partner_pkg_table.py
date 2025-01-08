@@ -94,7 +94,7 @@ def package_row(p: dict) -> str:
     link = p["provider_page"]
     title = p["name_title"]
     provider = f"[{title}]({link})" if link else title
-    return f"| {provider} | [{p['name']}](https://python.langchain.com/api_reference/{p['name_short'].replace('-', '_')}/) | ![PyPI - Downloads](https://img.shields.io/pypi/dm/{p['name']}?style=flat-square&label=%20&color=blue) | ![PyPI - Version](https://img.shields.io/pypi/v/{p['name']}?style=flat-square&label=%20&color=orange) | {js} |"
+    return f"| {provider} | [{p['name']}](https://docs.aiagentsforce.com/api_reference/{p['name_short'].replace('-', '_')}/) | ![PyPI - Downloads](https://img.shields.io/pypi/dm/{p['name']}?style=flat-square&label=%20&color=blue) | ![PyPI - Version](https://img.shields.io/pypi/v/{p['name']}?style=flat-square&label=%20&color=orange) | {js} |"
 
 
 def table() -> str:
@@ -115,12 +115,12 @@ sidebar_class_name: hidden
 
 :::info
 
-If you'd like to write your own integration, see [Extending LangChain](/docs/how_to/#custom).
+If you'd like to write your own integration, see [Extending AI Agents Force](/docs/how_to/#custom).
 If you'd like to contribute an integration, see [Contributing integrations](/docs/contributing/how_to/integrations/).
 
 :::
 
-LangChain integrates with many providers.
+AI Agents Force integrates with many providers.
 
 ## Integration Packages
 

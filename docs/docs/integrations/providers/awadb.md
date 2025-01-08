@@ -12,7 +12,7 @@ pip install awadb
 ## Vector store
 
 ```python
-from langchain_community.vectorstores import AwaDB
+from aiagentsforce_community.vectorstores import AwaDB
 ```
 
 See a [usage example](/docs/integrations/vectorstores/awadb).
@@ -21,7 +21,7 @@ See a [usage example](/docs/integrations/vectorstores/awadb).
 ## Embedding models
 
 ```python
-from langchain_community.embeddings import AwaEmbeddings
+from aiagentsforce_community.embeddings import AwaEmbeddings
 ```
 
 See a [usage example](/docs/integrations/text_embedding/awadb).

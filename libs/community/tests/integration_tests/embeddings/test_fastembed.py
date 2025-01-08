@@ -2,7 +2,7 @@
 
 import pytest
 
-from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
+from aiagentsforce_community.embeddings.fastembed import FastEmbedEmbeddings
 
 
 @pytest.mark.parametrize(

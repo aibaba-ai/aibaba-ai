@@ -1,9 +1,9 @@
 import time
 from typing import Optional as Optional
 
-from langchain_core.caches import InMemoryCache
-from langchain_core.language_models import GenericFakeChatModel
-from langchain_core.rate_limiters import InMemoryRateLimiter
+from aiagentsforce_core.caches import InMemoryCache
+from aiagentsforce_core.language_models import GenericFakeChatModel
+from aiagentsforce_core.rate_limiters import InMemoryRateLimiter
 
 
 def test_rate_limit_invoke() -> None:
@@ -226,7 +226,7 @@ SerializableModel.model_rebuild()
 
 def test_serialization_with_rate_limiter() -> None:
     """Test model serialization with rate limiter."""
-    from langchain_core.load import dumps
+    from aiagentsforce_core.load import dumps
 
     model = SerializableModel(
         messages=iter(["hello", "world", "!"]),

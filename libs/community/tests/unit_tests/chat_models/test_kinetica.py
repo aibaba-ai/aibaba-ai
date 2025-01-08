@@ -3,9 +3,9 @@
 import logging
 from typing import Any
 
-from langchain_core.messages import AIMessage
+from aiagentsforce_core.messages import AIMessage
 
-from langchain_community.chat_models.kinetica import ChatKinetica, KineticaUtil
+from aiagentsforce_community.chat_models.kinetica import ChatKinetica, KineticaUtil
 
 LOG = logging.getLogger(__name__)
 

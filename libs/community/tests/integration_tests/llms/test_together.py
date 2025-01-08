@@ -9,7 +9,7 @@ You'll then need to set TOGETHER_API_KEY environment variable to your api key.
 
 import pytest as pytest
 
-from langchain_community.llms import Together
+from aiagentsforce_community.llms import Together
 
 
 def test_together_call() -> None:

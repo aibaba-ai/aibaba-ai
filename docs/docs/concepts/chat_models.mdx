@@ -14,10 +14,10 @@ The newest generation of chat models offer additional capabilities:
 
 ## Features
 
-LangChain provides a consistent interface for working with chat models from different providers while offering additional features for monitoring, debugging, and optimizing the performance of applications that use LLMs.
+AI Agents Force provides a consistent interface for working with chat models from different providers while offering additional features for monitoring, debugging, and optimizing the performance of applications that use LLMs.
 
 * Integrations with many chat model providers (e.g., Anthropic, OpenAI, Ollama, Microsoft Azure, Google Vertex, Amazon Bedrock, Hugging Face, Cohere, Groq). Please see [chat model integrations](/docs/integrations/chat/) for an up-to-date list of supported models.
-* Use either LangChain's [messages](/docs/concepts/messages) format or OpenAI format.
+* Use either AI Agents Force's [messages](/docs/concepts/messages) format or OpenAI format.
 * Standard [tool calling API](/docs/concepts/tool_calling): standard interface for binding tools to models, accessing tool call requests made by models, and sending tool results back to the model.
 * Standard API for [structuring outputs](/docs/concepts/structured_outputs/#structured-output-method) via the `with_structured_output` method.
 * Provides support for [async programming](/docs/concepts/async), [efficient batching](/docs/concepts/runnables/#optimized-parallel-execution-batch), [a rich streaming API](/docs/concepts/streaming).
@@ -26,14 +26,14 @@ LangChain provides a consistent interface for working with chat models from diff
 
 ## Integrations
 
-LangChain has many chat model integrations that allow you to use a wide variety of models from different providers.
+AI Agents Force has many chat model integrations that allow you to use a wide variety of models from different providers.
 
 These integrations are one of two types:
 
-1. **Official models**: These are models that are officially supported by LangChain and/or model provider. You can find these models in the `langchain-<provider>` packages.
+1. **Official models**: These are models that are officially supported by AI Agents Force and/or model provider. You can find these models in the `langchain-<provider>` packages.
 2. **Community models**: There are models that are mostly contributed and supported by the community. You can find these models in the `langchain-community` package.
 
-LangChain chat models are named with a convention that prefixes "Chat" to their class names (e.g., `ChatOllama`, `ChatAnthropic`, `ChatOpenAI`, etc.).
+AI Agents Force chat models are named with a convention that prefixes "Chat" to their class names (e.g., `ChatOllama`, `ChatAnthropic`, `ChatOpenAI`, etc.).
 
 Please review the [chat model integrations](/docs/integrations/chat/) for a list of supported models.
 
@@ -44,7 +44,7 @@ Models that do **not** include the prefix "Chat" in their name or include "LLM" 
 
 ## Interface
 
-LangChain chat models implement the [BaseChatModel](https://python.langchain.com/api_reference/core/language_models/langchain_core.language_models.chat_models.BaseChatModel.html) interface. Because `BaseChatModel` also implements the [Runnable Interface](/docs/concepts/runnables), chat models support a [standard streaming interface](/docs/concepts/streaming), [async programming](/docs/concepts/async), optimized [batching](/docs/concepts/runnables/#optimized-parallel-execution-batch), and more. Please see the [Runnable Interface](/docs/concepts/runnables) for more details.
+AI Agents Force chat models implement the [BaseChatModel](https://docs.aiagentsforce.com/api_reference/core/language_models/aiagentsforce_core.language_models.chat_models.BaseChatModel.html) interface. Because `BaseChatModel` also implements the [Runnable Interface](/docs/concepts/runnables), chat models support a [standard streaming interface](/docs/concepts/streaming), [async programming](/docs/concepts/async), optimized [batching](/docs/concepts/runnables/#optimized-parallel-execution-batch), and more. Please see the [Runnable Interface](/docs/concepts/runnables) for more details.
 
 Many of the key methods of chat models operate on [messages](/docs/concepts/messages) as input and return messages as output.
 
@@ -53,8 +53,8 @@ Chat models offer a standard set of parameters that can be used to configure the
 :::note
 In documentation, we will often use the terms "LLM" and "Chat Model" interchangeably. This is because most modern LLMs are exposed to users via a chat model interface.
 
-However, LangChain also has implementations of older LLMs that do not follow the chat model interface and instead use an interface that takes a string as input and returns a string as output. These models are typically named without the "Chat" prefix (e.g., `Ollama`, `Anthropic`, `OpenAI`, etc.).
-These models implement the [BaseLLM](https://python.langchain.com/api_reference/core/language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM) interface and may be named with the "LLM" suffix (e.g., `OllamaLLM`, `AnthropicLLM`, `OpenAILLM`, etc.). Generally, users should not use these models.
+However, AI Agents Force also has implementations of older LLMs that do not follow the chat model interface and instead use an interface that takes a string as input and returns a string as output. These models are typically named without the "Chat" prefix (e.g., `Ollama`, `Anthropic`, `OpenAI`, etc.).
+These models implement the [BaseLLM](https://docs.aiagentsforce.com/api_reference/core/language_models/aiagentsforce_core.language_models.llms.BaseLLM.html#aiagentsforce_core.language_models.llms.BaseLLM) interface and may be named with the "LLM" suffix (e.g., `OllamaLLM`, `AnthropicLLM`, `OpenAILLM`, etc.). Generally, users should not use these models.
 :::
 
 ### Key methods
@@ -67,15 +67,15 @@ The key methods of a chat model are:
 4. **bind_tools**: A method that allows you to bind a tool to a chat model for use in the model's execution context.
 5. **with_structured_output**: A wrapper around the `invoke` method for models that natively support [structured output](/docs/concepts/structured_outputs).
 
-Other important methods can be found in the [BaseChatModel API Reference](https://python.langchain.com/api_reference/core/language_models/langchain_core.language_models.chat_models.BaseChatModel.html).
+Other important methods can be found in the [BaseChatModel API Reference](https://docs.aiagentsforce.com/api_reference/core/language_models/aiagentsforce_core.language_models.chat_models.BaseChatModel.html).
 
 ### Inputs and outputs
 
 Modern LLMs are typically accessed through a chat model interface that takes [messages](/docs/concepts/messages) as input and returns [messages](/docs/concepts/messages) as output. Messages are typically associated with a role (e.g., "system", "human", "assistant") and one or more content blocks that contain text or potentially multimodal data (e.g., images, audio, video).
 
-LangChain supports two message formats to interact with chat models:
+AI Agents Force supports two message formats to interact with chat models:
 
-1. **LangChain Message Format**: LangChain's own message format, which is used by default and is used internally by LangChain.
+1. **AI Agents Force Message Format**: AI Agents Force's own message format, which is used by default and is used internally by AI Agents Force.
 2. **OpenAI's Message Format**: OpenAI's message format.
 
 ### Standard parameters
@@ -92,14 +92,14 @@ Many chat models have standardized parameters that can be used to configure the 
 | `max_retries`  | The maximum number of attempts the system will make to resend a request if it fails due to issues like network timeouts or rate limits.                                                                                                                                                                        |
 | `api_key`      | The API key required for authenticating with the model provider. This is usually issued when you sign up for access to the model.                                                                                                                                                                              |
 | `base_url`     | The URL of the API endpoint where requests are sent. This is typically provided by the model's provider and is necessary for directing your requests.                                                                                                                                                          |
-| `rate_limiter` | An optional [BaseRateLimiter](https://python.langchain.com/api_reference/core/rate_limiters/langchain_core.rate_limiters.BaseRateLimiter.html#langchain_core.rate_limiters.BaseRateLimiter) to space out requests to avoid exceeding rate limits.  See [rate-limiting](#rate-limiting) below for more details. |
+| `rate_limiter` | An optional [BaseRateLimiter](https://docs.aiagentsforce.com/api_reference/core/rate_limiters/aiagentsforce_core.rate_limiters.BaseRateLimiter.html#aiagentsforce_core.rate_limiters.BaseRateLimiter) to space out requests to avoid exceeding rate limits.  See [rate-limiting](#rate-limiting) below for more details. |
 
 Some important things to note:
 
 - Standard parameters only apply to model providers that expose parameters with the intended functionality. For example, some providers do not expose a configuration for maximum output tokens, so max_tokens can't be supported on these.
 - Standard parameters are currently only enforced on integrations that have their own integration packages (e.g. `langchain-openai`, `langchain-anthropic`, etc.), they're not enforced on models in `langchain-community`.
 
-Chat models also accept other parameters that are specific to that integration. To find all the parameters supported by a Chat model head to the their respective [API reference](https://python.langchain.com/api_reference/) for that model.
+Chat models also accept other parameters that are specific to that integration. To find all the parameters supported by a Chat model head to the their respective [API reference](https://docs.aiagentsforce.com/api_reference/) for that model.
 
 ## Tool calling
 

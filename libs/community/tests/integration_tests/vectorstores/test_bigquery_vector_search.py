@@ -10,7 +10,7 @@ import uuid
 
 import pytest
 
-from langchain_community.vectorstores.bigquery_vector_search import BigQueryVectorSearch
+from aiagentsforce_community.vectorstores.bigquery_vector_search import BigQueryVectorSearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 TEST_TABLE_NAME = "langchain_test_table"

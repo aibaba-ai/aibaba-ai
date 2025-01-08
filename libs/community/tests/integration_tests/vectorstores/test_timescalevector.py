@@ -4,9 +4,9 @@ import os
 from datetime import datetime, timedelta
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.timescalevector import TimescaleVector
+from aiagentsforce_community.vectorstores.timescalevector import TimescaleVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 SERVICE_URL = TimescaleVector.service_url_from_db_params(

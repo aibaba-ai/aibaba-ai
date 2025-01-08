@@ -4,12 +4,12 @@ import asyncio
 import os
 
 from aiohttp import ClientSession
-from langchain_core.callbacks.manager import atrace_as_chain_group, trace_as_chain_group
-from langchain_core.prompts import PromptTemplate
-from langchain_core.tracers.context import tracing_v2_enabled
+from aiagentsforce_core.callbacks.manager import atrace_as_chain_group, trace_as_chain_group
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.tracers.context import tracing_v2_enabled
 
-from langchain_community.chat_models import ChatOpenAI
-from langchain_community.llms import OpenAI
+from aiagentsforce_community.chat_models import ChatOpenAI
+from aiagentsforce_community.llms import OpenAI
 
 questions = [
     (

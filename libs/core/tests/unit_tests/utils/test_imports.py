@@ -1,4 +1,4 @@
-from langchain_core.utils import __all__
+from aiagentsforce_core.utils import __all__
 
 EXPECTED_ALL = [
     "StrictFormatter",

@@ -1,10 +1,10 @@
-"""Standard LangChain interface tests"""
+"""Standard AI Agents Force interface tests"""
 
 import os
 from typing import Type
 
 import pytest
-from langchain_core.language_models import BaseChatModel
+from aiagentsforce_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from langchain_openai import AzureChatOpenAI

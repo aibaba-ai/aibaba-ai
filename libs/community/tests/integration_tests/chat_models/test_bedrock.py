@@ -3,16 +3,16 @@
 from typing import Any, cast
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import (
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models import BedrockChat
+from aiagentsforce_community.chat_models import BedrockChat
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

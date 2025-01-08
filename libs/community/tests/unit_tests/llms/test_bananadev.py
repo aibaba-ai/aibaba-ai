@@ -5,7 +5,7 @@ from typing import cast
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.llms.bananadev import Banana
+from aiagentsforce_community.llms.bananadev import Banana
 
 
 def test_api_key_is_secret_string() -> None:

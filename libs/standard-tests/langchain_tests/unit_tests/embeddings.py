@@ -4,7 +4,7 @@ from typing import Tuple, Type
 from unittest import mock
 
 import pytest
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.embeddings import Embeddings
 from pydantic import SecretStr
 
 from langchain_tests.base import BaseStandardTests

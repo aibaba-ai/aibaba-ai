@@ -1,8 +1,8 @@
 from typing import Any, Optional
 
-from langchain_core.caches import RETURN_VAL_TYPE, BaseCache
-from langchain_core.globals import set_llm_cache
-from langchain_core.language_models import FakeListLLM
+from aiagentsforce_core.caches import RETURN_VAL_TYPE, BaseCache
+from aiagentsforce_core.globals import set_llm_cache
+from aiagentsforce_core.language_models import FakeListLLM
 
 
 class InMemoryCache(BaseCache):

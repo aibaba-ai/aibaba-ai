@@ -2,9 +2,9 @@
 
 import os
 
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.embeddings.openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
+from aiagentsforce_community.document_loaders import PyPDFLoader
+from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores import FAISS
 
 
 def test_pdf_pagesplitter() -> None:

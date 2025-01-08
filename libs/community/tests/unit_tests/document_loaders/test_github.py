@@ -1,10 +1,10 @@
 import base64
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest_mock import MockerFixture
 
-from langchain_community.document_loaders.github import (
+from aiagentsforce_community.document_loaders.github import (
     GithubFileLoader,
     GitHubIssuesLoader,
 )

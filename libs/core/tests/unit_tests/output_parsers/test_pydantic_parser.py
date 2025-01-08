@@ -8,12 +8,12 @@ import pytest
 from pydantic import BaseModel, Field
 from pydantic.v1 import BaseModel as V1BaseModel
 
-from langchain_core.exceptions import OutputParserException
-from langchain_core.language_models import ParrotFakeChatModel
-from langchain_core.output_parsers import PydanticOutputParser
-from langchain_core.output_parsers.json import JsonOutputParser
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.utils.pydantic import TBaseModel
+from aiagentsforce_core.exceptions import OutputParserException
+from aiagentsforce_core.language_models import ParrotFakeChatModel
+from aiagentsforce_core.output_parsers import PydanticOutputParser
+from aiagentsforce_core.output_parsers.json import JsonOutputParser
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.utils.pydantic import TBaseModel
 
 
 class ForecastV2(pydantic.BaseModel):

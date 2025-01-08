@@ -2,9 +2,9 @@ from typing import Dict
 from unittest.mock import MagicMock, patch
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.psychic import PsychicLoader
+from aiagentsforce_community.document_loaders.psychic import PsychicLoader
 
 
 @pytest.fixture

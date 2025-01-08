@@ -1,6 +1,6 @@
 import pathlib
 
-from langchain_community.chat_loaders import slack, utils
+from aiagentsforce_community.chat_loaders import slack, utils
 
 
 def test_slack_chat_loader() -> None:

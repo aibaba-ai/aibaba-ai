@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from langchain_community.vectorstores import LanceDB
+from aiagentsforce_community.vectorstores import LanceDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

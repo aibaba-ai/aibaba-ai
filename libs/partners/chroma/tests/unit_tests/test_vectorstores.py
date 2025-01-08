@@ -1,4 +1,4 @@
-from langchain_core.embeddings.fake import (
+from aiagentsforce_core.embeddings.fake import (
     FakeEmbeddings,
 )
 

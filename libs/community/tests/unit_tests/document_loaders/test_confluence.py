@@ -4,9 +4,9 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import requests
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.confluence import (
+from aiagentsforce_community.document_loaders.confluence import (
     ConfluenceLoader,
     ContentFormat,
 )

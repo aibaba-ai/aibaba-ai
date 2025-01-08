@@ -4,7 +4,7 @@ from unittest.mock import patch
 import pytest
 import pytest_asyncio
 
-from langchain_core.indexing import InMemoryRecordManager
+from aiagentsforce_core.indexing import InMemoryRecordManager
 
 
 @pytest.fixture()

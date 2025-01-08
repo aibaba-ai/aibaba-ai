@@ -2,9 +2,9 @@ import uuid
 from typing import Callable, Optional
 
 import pytest
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.embeddings import Embeddings
 
-from langchain_community.vectorstores import Qdrant
+from aiagentsforce_community.vectorstores import Qdrant
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

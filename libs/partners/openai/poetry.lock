@@ -522,7 +522,7 @@ url = "../../core"
 [[package]]
 name = "langchain-tests"
 version = "0.3.7"
-description = "Standard tests for LangChain implementations"
+description = "Standard tests for AI Agents Force implementations"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []

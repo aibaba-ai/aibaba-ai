@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
 
-from langchain_community import document_loaders
-from langchain_core.document_loaders.base import BaseLoader
+from aiagentsforce_community import document_loaders
+from aiagentsforce_core.document_loaders.base import BaseLoader
 
 KV_STORE_TEMPLATE = """\
 ---
@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 # Key-value stores
 
-[Key-value stores](/docs/concepts/key_value_stores) are used by other LangChain components to store and retrieve data.
+[Key-value stores](/docs/concepts/key_value_stores) are used by other AI Agents Force components to store and retrieve data.
 
 :::info
 
@@ -33,46 +33,46 @@ The following table shows information on all available key-value stores.
 
 KV_STORE_FEAT_TABLE = {
     "AstraDBByteStore": {
-        "class": "[AstraDBByteStore](https://python.langchain.com/api_reference/astradb/storage/langchain_astradb.storage.AstraDBByteStore.html)",
+        "class": "[AstraDBByteStore](https://docs.aiagentsforce.com/api_reference/astradb/storage/langchain_astradb.storage.AstraDBByteStore.html)",
         "local": False,
-        "package": "[langchain_astradb](https://python.langchain.com/api_reference/astradb/)",
+        "package": "[langchain_astradb](https://docs.aiagentsforce.com/api_reference/astradb/)",
         "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_astradb?style=flat-square&label=%20)",
     },
     "CassandraByteStore": {
-        "class": "[CassandraByteStore](https://python.langchain.com/api_reference/community/storage/langchain_community.storage.cassandra.CassandraByteStore.html)",
+        "class": "[CassandraByteStore](https://docs.aiagentsforce.com/api_reference/community/storage/aiagentsforce_community.storage.cassandra.CassandraByteStore.html)",
         "local": False,
-        "package": "[langchain_community](https://python.langchain.com/api_reference/community/)",
-        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_community?style=flat-square&label=%20)",
+        "package": "[aiagentsforce_community](https://docs.aiagentsforce.com/api_reference/community/)",
+        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/aiagentsforce_community?style=flat-square&label=%20)",
     },
     "ElasticsearchEmbeddingsCache": {
-        "class": "[ElasticsearchEmbeddingsCache](https://python.langchain.com/api_reference/elasticsearch/cache/langchain_elasticsearch.cache.ElasticsearchEmbeddingsCache.html)",
+        "class": "[ElasticsearchEmbeddingsCache](https://docs.aiagentsforce.com/api_reference/elasticsearch/cache/langchain_elasticsearch.cache.ElasticsearchEmbeddingsCache.html)",
         "local": True,
-        "package": "[langchain_elasticsearch](https://python.langchain.com/api_reference/elasticsearch/)",
+        "package": "[langchain_elasticsearch](https://docs.aiagentsforce.com/api_reference/elasticsearch/)",
         "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_elasticsearch?style=flat-square&label=%20)",
     },
     "LocalFileStore": {
-        "class": "[LocalFileStore](https://python.langchain.com/api_reference/storage/langchain.storage.file_system.LocalFileStore.html)",
+        "class": "[LocalFileStore](https://docs.aiagentsforce.com/api_reference/storage/langchain.storage.file_system.LocalFileStore.html)",
         "local": True,
-        "package": "[langchain](https://python.langchain.com/api_reference/langchain/)",
+        "package": "[langchain](https://docs.aiagentsforce.com/api_reference/langchain/)",
         "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain?style=flat-square&label=%20)",
     },
     "InMemoryByteStore": {
-        "class": "[InMemoryByteStore](https://python.langchain.com/api_reference/core/stores/langchain_core.stores.InMemoryByteStore.html)",
+        "class": "[InMemoryByteStore](https://docs.aiagentsforce.com/api_reference/core/stores/aiagentsforce_core.stores.InMemoryByteStore.html)",
         "local": True,
-        "package": "[langchain_core](https://python.langchain.com/api_reference/core/)",
-        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_core?style=flat-square&label=%20)",
+        "package": "[aiagentsforce_core](https://docs.aiagentsforce.com/api_reference/core/)",
+        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/aiagentsforce_core?style=flat-square&label=%20)",
     },
     "RedisStore": {
-        "class": "[RedisStore](https://python.langchain.com/api_reference/community/storage/langchain_community.storage.redis.RedisStore.html)",
+        "class": "[RedisStore](https://docs.aiagentsforce.com/api_reference/community/storage/aiagentsforce_community.storage.redis.RedisStore.html)",
         "local": True,
-        "package": "[langchain_community](https://python.langchain.com/api_reference/community/)",
-        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_community?style=flat-square&label=%20)",
+        "package": "[aiagentsforce_community](https://docs.aiagentsforce.com/api_reference/community/)",
+        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/aiagentsforce_community?style=flat-square&label=%20)",
     },
     "UpstashRedisByteStore": {
-        "class": "[UpstashRedisByteStore](https://python.langchain.com/api_reference/community/storage/langchain_community.storage.upstash_redis.UpstashRedisByteStore.html)",
+        "class": "[UpstashRedisByteStore](https://docs.aiagentsforce.com/api_reference/community/storage/aiagentsforce_community.storage.upstash_redis.UpstashRedisByteStore.html)",
         "local": False,
-        "package": "[langchain_community](https://python.langchain.com/api_reference/community/)",
-        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain_community?style=flat-square&label=%20)",
+        "package": "[aiagentsforce_community](https://docs.aiagentsforce.com/api_reference/community/)",
+        "downloads": "![PyPI - Downloads](https://img.shields.io/pypi/dm/aiagentsforce_community?style=flat-square&label=%20)",
     },
 }
 

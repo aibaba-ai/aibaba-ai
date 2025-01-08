@@ -6,7 +6,7 @@ sidebar_position: 1
 
 
 
-LangChain v0.2 was released in May 2024. This release includes a number of [breaking changes and deprecations](/docs/versions/v0_2/deprecations). This document contains a guide on upgrading to 0.2.x.
+AI Agents Force v0.2 was released in May 2024. This release includes a number of [breaking changes and deprecations](/docs/versions/v0_2/deprecations). This document contains a guide on upgrading to 0.2.x.
 
 :::note Reference
 
@@ -18,7 +18,7 @@ LangChain v0.2 was released in May 2024. This release includes a number of [brea
 
 # Migration
 
-This documentation will help you upgrade your code to LangChain `0.2.x.`. To prepare for migration, we first recommend you take the following steps:
+This documentation will help you upgrade your code to AI Agents Force `0.2.x.`. To prepare for migration, we first recommend you take the following steps:
 
 1. Install the 0.2.x versions of langchain-core, langchain and upgrade to recent versions of other packages that you may be using. (e.g. langgraph, langchain-community, langchain-openai, etc.)
 2. Verify that your code runs properly with the new packages (e.g., unit tests pass).
@@ -44,10 +44,10 @@ Here is an example of the import changes that the migration script can help appl
 
 | From Package        | To Package               | Deprecated Import                                                  | New Import                                                          |
 |---------------------|--------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------|
-| langchain           | langchain-community      | from langchain.vectorstores import InMemoryVectorStore             | from langchain_community.vectorstores import InMemoryVectorStore    |
-| langchain-community | langchain_openai         | from langchain_community.chat_models import ChatOpenAI             | from langchain_openai import ChatOpenAI                             |
-| langchain-community | langchain-core           | from langchain_community.document_loaders import Blob              | from langchain_core.document_loaders import Blob                    |
-| langchain           | langchain-core           | from langchain.schema.document import Document                     | from langchain_core.documents import Document                       |
+| langchain           | langchain-community      | from langchain.vectorstores import InMemoryVectorStore             | from aiagentsforce_community.vectorstores import InMemoryVectorStore    |
+| langchain-community | langchain_openai         | from aiagentsforce_community.chat_models import ChatOpenAI             | from langchain_openai import ChatOpenAI                             |
+| langchain-community | langchain-core           | from aiagentsforce_community.document_loaders import Blob              | from aiagentsforce_core.document_loaders import Blob                    |
+| langchain           | langchain-core           | from langchain.schema.document import Document                     | from aiagentsforce_core.documents import Document                       |
 | langchain           | langchain-text-splitters | from langchain.text_splitter import RecursiveCharacterTextSplitter | from langchain_text_splitters import RecursiveCharacterTextSplitter |
 
 
@@ -66,7 +66,7 @@ You will need to run the migration script **twice** as it only applies one impor
 
 For example, say your code still uses `from langchain.chat_models import ChatOpenAI`:
 
-After the first run, you’ll get: `from langchain_community.chat_models import ChatOpenAI`
+After the first run, you’ll get: `from aiagentsforce_community.chat_models import ChatOpenAI`
 After the second run, you’ll get: `from langchain_openai import ChatOpenAI`
 
 ```bash

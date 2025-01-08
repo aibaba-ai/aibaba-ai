@@ -1,9 +1,9 @@
 """Unit tests for html2text document transformer."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_transformers import Html2TextTransformer
+from aiagentsforce_community.document_transformers import Html2TextTransformer
 
 
 @pytest.mark.requires("html2text")

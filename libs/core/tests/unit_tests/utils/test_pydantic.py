@@ -6,7 +6,7 @@ from typing import Any, Optional
 import pytest
 from pydantic import ConfigDict
 
-from langchain_core.utils.pydantic import (
+from aiagentsforce_core.utils.pydantic import (
     PYDANTIC_MAJOR_VERSION,
     _create_subset_model_v2,
     create_model_v2,

@@ -1,9 +1,9 @@
 """Integration test for POWERBI API Wrapper."""
 
 import pytest
-from langchain_core.utils import get_from_env
+from aiagentsforce_core.utils import get_from_env
 
-from langchain_community.utilities.powerbi import PowerBIDataset
+from aiagentsforce_community.utilities.powerbi import PowerBIDataset
 
 
 def azure_installed() -> bool:

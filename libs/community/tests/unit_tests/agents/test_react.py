@@ -3,15 +3,15 @@
 from typing import Union
 
 from langchain.agents.react.base import ReActChain, ReActDocstoreAgent
-from langchain_core.agents import AgentAction
-from langchain_core.documents import Document
-from langchain_core.language_models import FakeListLLM
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.tools import Tool
+from aiagentsforce_core.agents import AgentAction
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.language_models import FakeListLLM
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.tools import Tool
 
-from langchain_community.docstore.base import Docstore
+from aiagentsforce_community.docstore.base import Docstore
 
-_PAGE_CONTENT = """This is a page about LangChain.
+_PAGE_CONTENT = """This is a page about AI Agents Force.
 
 It is a really cool framework.
 

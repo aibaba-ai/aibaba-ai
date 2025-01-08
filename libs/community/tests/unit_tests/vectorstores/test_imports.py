@@ -1,7 +1,7 @@
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.vectorstores import VectorStore
 
-from langchain_community import vectorstores
-from langchain_community.vectorstores import __all__, _module_lookup
+from aiagentsforce_community import vectorstores
+from aiagentsforce_community.vectorstores import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "Aerospike",

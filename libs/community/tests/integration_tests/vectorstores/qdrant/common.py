@@ -1,6 +1,6 @@
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 
 def qdrant_is_not_running() -> bool:

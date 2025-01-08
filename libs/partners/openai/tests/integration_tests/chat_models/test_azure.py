@@ -5,14 +5,14 @@ import os
 from typing import Any, Optional
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import (
     AIMessageChunk,
     BaseMessage,
     BaseMessageChunk,
     HumanMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from langchain_openai import AzureChatOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler

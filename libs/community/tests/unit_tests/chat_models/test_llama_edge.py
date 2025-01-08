@@ -1,5 +1,5 @@
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     ChatMessage,
     FunctionMessage,
@@ -7,7 +7,7 @@ from langchain_core.messages import (
     SystemMessage,
 )
 
-from langchain_community.chat_models.llama_edge import (
+from aiagentsforce_community.chat_models.llama_edge import (
     LlamaEdgeChatService,
     _convert_dict_to_message,
     _convert_message_to_dict,

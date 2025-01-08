@@ -5,19 +5,19 @@ from typing import Any
 
 import pytest
 
-from langchain_core.example_selectors import BaseExampleSelector
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from langchain_core.prompts import (
+from aiagentsforce_core.example_selectors import BaseExampleSelector
+from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.prompts import (
     AIMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
 )
-from langchain_core.prompts.chat import SystemMessagePromptTemplate
-from langchain_core.prompts.few_shot import (
+from aiagentsforce_core.prompts.chat import SystemMessagePromptTemplate
+from aiagentsforce_core.prompts.few_shot import (
     FewShotChatMessagePromptTemplate,
     FewShotPromptTemplate,
 )
-from langchain_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.prompts.prompt import PromptTemplate
 
 EXAMPLE_PROMPT = PromptTemplate(
     input_variables=["question", "answer"], template="{question}: {answer}"

@@ -4,10 +4,10 @@ import os
 from typing import Any, Generator
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms import AzureOpenAI
+from aiagentsforce_community.llms import AzureOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")

@@ -2,7 +2,7 @@ import base64
 import re
 from typing import Dict, List, Type, Union
 
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     FunctionMessage,

@@ -1,4 +1,4 @@
-from langchain_community.retrievers import __all__, _module_lookup
+from aiagentsforce_community.retrievers import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "AmazonKendraRetriever",
@@ -31,7 +31,7 @@ EXPECTED_ALL = [
     "PineconeHybridSearchRetriever",
     "PubMedRetriever",
     "QdrantSparseVectorRetriever",
-    "RemoteLangChainRetriever",
+    "RemoteAI Agents ForceRetriever",
     "RememberizerRetriever",
     "SVMRetriever",
     "TavilySearchAPIRetriever",

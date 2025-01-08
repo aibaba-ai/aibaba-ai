@@ -2,9 +2,9 @@ from typing import Dict, List
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.mongodb import MongodbLoader
+from aiagentsforce_community.document_loaders.mongodb import MongodbLoader
 
 
 @pytest.fixture
@@ -53,7 +53,7 @@ async def test_load_mocked_with_filters(expected_documents: List[Document]) -> N
     with patch(
         "motor.motor_asyncio.AsyncIOMotorClient", return_value=MagicMock()
     ), patch(
-        "langchain_community.document_loaders.mongodb.MongodbLoader.aload",
+        "aiagentsforce_community.document_loaders.mongodb.MongodbLoader.aload",
         new=mock_async_load,
     ):
         loader = MongodbLoader(

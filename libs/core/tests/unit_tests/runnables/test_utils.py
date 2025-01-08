@@ -3,8 +3,8 @@ from typing import Callable
 
 import pytest
 
-from langchain_core.runnables.base import RunnableLambda
-from langchain_core.runnables.utils import (
+from aiagentsforce_core.runnables.base import RunnableLambda
+from aiagentsforce_core.runnables.utils import (
     get_function_nonlocals,
     get_lambda_source,
     indent_lines_after_first,

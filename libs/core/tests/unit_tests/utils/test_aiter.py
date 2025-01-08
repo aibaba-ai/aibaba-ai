@@ -2,7 +2,7 @@ from collections.abc import AsyncIterator
 
 import pytest
 
-from langchain_core.utils.aiter import abatch_iterate
+from aiagentsforce_core.utils.aiter import abatch_iterate
 
 
 @pytest.mark.parametrize(

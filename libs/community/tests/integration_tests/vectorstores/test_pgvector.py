@@ -5,11 +5,11 @@ from typing import Any, Dict, Generator, List, Type, Union
 
 import pytest
 import sqlalchemy
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.orm import Session
 
-from langchain_community.vectorstores.pgvector import (
+from aiagentsforce_community.vectorstores.pgvector import (
     SUPPORTED_OPERATORS,
     PGVector,
 )

@@ -1,10 +1,10 @@
 """Test Deep Lake functionality."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest import FixtureRequest
 
-from langchain_community.vectorstores import DeepLake
+from aiagentsforce_community.vectorstores import DeepLake
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

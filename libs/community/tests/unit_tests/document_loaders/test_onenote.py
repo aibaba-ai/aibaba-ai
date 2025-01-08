@@ -4,10 +4,10 @@ from unittest.mock import Mock
 
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest_mock import MockerFixture
 
-from langchain_community.document_loaders.onenote import OneNoteLoader
+from aiagentsforce_community.document_loaders.onenote import OneNoteLoader
 
 
 def test_initialization() -> None:
@@ -48,7 +48,7 @@ def test_load(mocker: MockerFixture) -> None:
     assert documents == []
 
     mocker.patch(
-        "langchain_community.document_loaders.onenote.OneNoteLoader._get_page_content",
+        "aiagentsforce_community.document_loaders.onenote.OneNoteLoader._get_page_content",
         return_value=(
             "<html><head><title>Test Title</title></head>"
             "<body><p>Test Content</p></body></html>"

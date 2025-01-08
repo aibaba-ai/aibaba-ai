@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.ifixit import IFixitLoader
+from aiagentsforce_community.document_loaders.ifixit import IFixitLoader
 
 
 def test_ifixit_loader() -> None:

@@ -9,7 +9,7 @@ pagination_prev: null
 This guide is a work-in-progress.
 :::
 
-First, duplicate this template repository: https://github.com/langchain-ai/integration-repo-template
+First, duplicate this template repository: https://github.com/AI-Agents-Force-SDK/integration-repo-template
 
 In this guide, we will create a `libs/langchain-parrot-link` folder, simulating the creation
 of a partner package for a fake company, "Parrot Link AI".
@@ -24,7 +24,7 @@ from langchain_{partner} import X
 
 ## Set up a new package
 
-To set up a new partner package, use the latest version of the LangChain CLI. You can install or update it with:
+To set up a new partner package, use the latest version of the AI Agents Force CLI. You can install or update it with:
 
 ```bash
 pip install -U langchain-cli
@@ -94,14 +94,14 @@ to the relevant `docs/docs/integrations` directory in the monorepo root.
 ## (If Necessary) Deprecate community integration
 
 Note: this is only necessary if you're migrating an existing community integration into 
-a partner package. If the component you're integrating is net-new to LangChain (i.e. 
+a partner package. If the component you're integrating is net-new to AI Agents Force (i.e. 
 not already in the `community` package), you can skip this step.
 
 Let's pretend we migrated our `ChatParrotLink` chat model from the community package to 
 the partner package. We would need to deprecate the old model in the community package.
 
 We would do that by adding a `@deprecated` decorator to the old model as follows, in
-`libs/community/langchain_community/chat_models/parrot_link.py`.
+`libs/community/aiagentsforce_community/chat_models/parrot_link.py`.
 
 Before our change, our chat model might look like this:
 
@@ -113,7 +113,7 @@ class ChatParrotLink(BaseChatModel):
 After our change, it would look like this:
 
 ```python
-from langchain_core._api.deprecation import deprecated
+from aiagentsforce_core._api.deprecation import deprecated
 
 @deprecated(
     since="0.0.<next community version>", 

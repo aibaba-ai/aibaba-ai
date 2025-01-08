@@ -1,9 +1,9 @@
-from langchain_core.globals import get_debug, set_debug
+from aiagentsforce_core.globals import get_debug, set_debug
 
 
 def test_debug_is_settable_via_setter() -> None:
-    from langchain_core import globals
-    from langchain_core.callbacks.manager import _get_debug
+    from aiagentsforce_core import globals
+    from aiagentsforce_core.callbacks.manager import _get_debug
 
     previous_value = globals._debug
     previous_fn_reading = _get_debug()

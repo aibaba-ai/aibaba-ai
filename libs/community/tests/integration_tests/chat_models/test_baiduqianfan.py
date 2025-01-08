@@ -1,8 +1,8 @@
-from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
-from langchain_core.messages.tool import ToolCall
-from langchain_core.tools import tool
+from aiagentsforce_core.messages import AIMessage, HumanMessage, ToolMessage
+from aiagentsforce_core.messages.tool import ToolCall
+from aiagentsforce_core.tools import tool
 
-from langchain_community.chat_models import QianfanChatEndpoint
+from aiagentsforce_community.chat_models import QianfanChatEndpoint
 
 
 @tool

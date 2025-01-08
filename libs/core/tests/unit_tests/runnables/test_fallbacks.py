@@ -10,17 +10,17 @@ import pytest
 from pydantic import BaseModel
 from syrupy import SnapshotAssertion
 
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models import (
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.language_models import (
     BaseChatModel,
     FakeListLLM,
     LanguageModelInput,
 )
-from langchain_core.load import dumps
-from langchain_core.messages import BaseMessage
-from langchain_core.outputs import ChatResult
-from langchain_core.prompts import PromptTemplate
-from langchain_core.runnables import (
+from aiagentsforce_core.load import dumps
+from aiagentsforce_core.messages import BaseMessage
+from aiagentsforce_core.outputs import ChatResult
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.runnables import (
     Runnable,
     RunnableBinding,
     RunnableGenerator,
@@ -29,7 +29,7 @@ from langchain_core.runnables import (
     RunnablePassthrough,
     RunnableWithFallbacks,
 )
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.tools import BaseTool
 
 
 @pytest.fixture()

@@ -8,13 +8,13 @@ export default function VectorStoreTabs(props) {
 
     const vectorStoreVarName = customVarName ?? "vector_store";
 
-    const fakeEmbeddingsString = `from langchain_core.embeddings import DeterministicFakeEmbedding\n\nembeddings = DeterministicFakeEmbedding(size=100)`;
+    const fakeEmbeddingsString = `from aiagentsforce_core.embeddings import DeterministicFakeEmbedding\n\nembeddings = DeterministicFakeEmbedding(size=100)`;
 
     const tabItems = [
         {
             value: "In-memory",
             label: "In-memory",
-            text: `from langchain_core.vectorstores import InMemoryVectorStore\n${useFakeEmbeddings ? fakeEmbeddingsString : ""}\n${vectorStoreVarName} = InMemoryVectorStore(embeddings)`,
+            text: `from aiagentsforce_core.vectorstores import InMemoryVectorStore\n${useFakeEmbeddings ? fakeEmbeddingsString : ""}\n${vectorStoreVarName} = InMemoryVectorStore(embeddings)`,
             packageName: "langchain-core",
             default: true,
         },
@@ -35,7 +35,7 @@ export default function VectorStoreTabs(props) {
         {
             value: "FAISS",
             label: "FAISS",
-            text: `from langchain_community.vectorstores import FAISS\n${useFakeEmbeddings ? fakeEmbeddingsString : ""}\n${vectorStoreVarName} = FAISS(embedding_function=embeddings)`,
+            text: `from aiagentsforce_community.vectorstores import FAISS\n${useFakeEmbeddings ? fakeEmbeddingsString : ""}\n${vectorStoreVarName} = FAISS(embedding_function=embeddings)`,
             packageName: "langchain-community",
             default: false,
         },

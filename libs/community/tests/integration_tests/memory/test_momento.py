@@ -12,9 +12,9 @@ from typing import Iterator
 
 import pytest
 from langchain.memory import ConversationBufferMemory
-from langchain_core.messages import message_to_dict
+from aiagentsforce_core.messages import message_to_dict
 
-from langchain_community.chat_message_histories import MomentoChatMessageHistory
+from aiagentsforce_community.chat_message_histories import MomentoChatMessageHistory
 
 
 def random_string() -> str:

@@ -1,4 +1,4 @@
-# LangChain Expression Language (LCEL)
+# AI Agents Force Expression Language (LCEL)
 
 :::info Prerequisites
 * [Runnable Interface](/docs/concepts/runnables)
@@ -6,23 +6,23 @@
 
 The **L**ang**C**hain **E**xpression **L**anguage (LCEL) takes a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) approach to building new [Runnables](/docs/concepts/runnables) from existing Runnables.
 
-This means that you describe what *should* happen, rather than *how* it should happen, allowing LangChain to optimize the run-time execution of the chains.
+This means that you describe what *should* happen, rather than *how* it should happen, allowing AI Agents Force to optimize the run-time execution of the chains.
 
 We often refer to a `Runnable` created using LCEL as a "chain". It's important to remember that a "chain" is `Runnable` and it implements the full [Runnable Interface](/docs/concepts/runnables).
 
 :::note
 * The [LCEL cheatsheet](/docs/how_to/lcel_cheatsheet/) shows common patterns that involve the Runnable interface and LCEL expressions.
 * Please see the following list of [how-to guides](/docs/how_to/#langchain-expression-language-lcel) that cover common tasks with LCEL.
-* A list of built-in `Runnables` can be found in the [LangChain Core API Reference](https://python.langchain.com/api_reference/core/runnables.html). Many of these Runnables are useful when composing custom "chains" in LangChain using LCEL.
+* A list of built-in `Runnables` can be found in the [AI Agents Force Core API Reference](https://docs.aiagentsforce.com/api_reference/core/runnables.html). Many of these Runnables are useful when composing custom "chains" in AI Agents Force using LCEL.
 :::
 
 ## Benefits of LCEL
 
-LangChain optimizes the run-time execution of chains built with LCEL in a number of ways:
+AI Agents Force optimizes the run-time execution of chains built with LCEL in a number of ways:
 
 - **Optimized parallel execution**: Run Runnables in parallel using [RunnableParallel](#runnableparallel) or run multiple inputs through a given chain in parallel using the [Runnable Batch API](/docs/concepts/runnables/#optimized-parallel-execution-batch). Parallel execution can significantly reduce the latency as processing can be done in parallel instead of sequentially.
 - **Guaranteed Async support**: Any chain built with LCEL can be run asynchronously using the [Runnable Async API](/docs/concepts/runnables/#asynchronous-support). This can be useful when running chains in a server environment where you want to handle large number of requests concurrently.
-- **Simplify streaming**: LCEL chains can be streamed, allowing for incremental output as the chain is executed. LangChain can optimize the streaming of the output to minimize the time-to-first-token(time elapsed until the first chunk of output from a [chat model](/docs/concepts/chat_models) or [llm](/docs/concepts/text_llms) comes out).
+- **Simplify streaming**: LCEL chains can be streamed, allowing for incremental output as the chain is executed. AI Agents Force can optimize the streaming of the output to minimize the time-to-first-token(time elapsed until the first chunk of output from a [chat model](/docs/concepts/chat_models) or [llm](/docs/concepts/text_llms) comes out).
 
 Other benefits include:
 
@@ -30,11 +30,11 @@ Other benefits include:
 As your chains get more and more complex, it becomes increasingly important to understand what exactly is happening at every step.
 With LCEL, **all** steps are automatically logged to [LangSmith](https://docs.smith.langchain.com/) for maximum observability and debuggability.
 - **Standard API**: Because all chains are built using the Runnable interface, they can be used in the same way as any other Runnable.
-- [**Deployable with LangServe**](/docs/concepts/architecture#langserve): Chains built with LCEL can be deployed using for production use.
+- [**Deployable with aiagentsforceapi**](/docs/concepts/architecture#aiagentsforceapi): Chains built with LCEL can be deployed using for production use.
 
 ## Should I use LCEL?
 
-LCEL is an [orchestration solution](https://en.wikipedia.org/wiki/Orchestration_(computing)) -- it allows LangChain to handle run-time execution of chains in an optimized way.
+LCEL is an [orchestration solution](https://en.wikipedia.org/wiki/Orchestration_(computing)) -- it allows AI Agents Force to handle run-time execution of chains in an optimized way.
 
 While we have seen users run chains with hundreds of steps in production, we generally recommend using LCEL for simpler orchestration tasks. When the application requires complex state management, branching, cycles or multiple agents, we recommend that users take advantage of [LangGraph](/docs/concepts/architecture#langgraph).
 
@@ -48,14 +48,14 @@ Here are some guidelines:
 
 ## Composition Primitives
 
-`LCEL` chains are built by composing existing `Runnables` together. The two main composition primitives are [RunnableSequence](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.RunnableSequence.html#langchain_core.runnables.base.RunnableSequence) and [RunnableParallel](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.RunnableParallel.html#langchain_core.runnables.base.RunnableParallel).
+`LCEL` chains are built by composing existing `Runnables` together. The two main composition primitives are [RunnableSequence](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.RunnableSequence.html#aiagentsforce_core.runnables.base.RunnableSequence) and [RunnableParallel](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.RunnableParallel.html#aiagentsforce_core.runnables.base.RunnableParallel).
 
 Many other composition primitives (e.g., [RunnableAssign](
-https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.passthrough.RunnableAssign.html#langchain_core.runnables.passthrough.RunnableAssign
+https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.passthrough.RunnableAssign.html#aiagentsforce_core.runnables.passthrough.RunnableAssign
 )) can be thought of as variations of these two primitives.
 
 :::note
-You can find a list of all composition primitives in the [LangChain Core API Reference](https://python.langchain.com/api_reference/core/runnables.html).
+You can find a list of all composition primitives in the [AI Agents Force Core API Reference](https://docs.aiagentsforce.com/api_reference/core/runnables.html).
 :::
 
 ### RunnableSequence
@@ -63,7 +63,7 @@ You can find a list of all composition primitives in the [LangChain Core API Ref
 `RunnableSequence` is a composition primitive that allows you "chain" multiple runnables sequentially, with the output of one runnable serving as the input to the next.
 
 ```python
-from langchain_core.runnables import RunnableSequence
+from aiagentsforce_core.runnables import RunnableSequence
 chain = RunnableSequence([runnable1, runnable2])
 ```
 
@@ -89,7 +89,7 @@ final_output = runnable2.invoke(output1)
 `RunnableParallel` is a composition primitive that allows you to run multiple runnables concurrently, with the same input provided to each.
 
 ```python
-from langchain_core.runnables import RunnableParallel
+from aiagentsforce_core.runnables import RunnableParallel
 chain = RunnableParallel({
     "key1": runnable1,
     "key2": runnable2,

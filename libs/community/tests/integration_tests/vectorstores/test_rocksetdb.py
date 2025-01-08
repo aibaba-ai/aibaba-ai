@@ -2,9 +2,9 @@ import logging
 import os
 import uuid
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.rocksetdb import Rockset
+from aiagentsforce_community.vectorstores.rocksetdb import Rockset
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     fake_texts,

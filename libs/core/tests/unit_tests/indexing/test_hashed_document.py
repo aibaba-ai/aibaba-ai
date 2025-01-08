@@ -1,7 +1,7 @@
 import pytest
 
-from langchain_core.documents import Document
-from langchain_core.indexing.api import _HashedDocument
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.indexing.api import _HashedDocument
 
 
 def test_hashed_document_hashing() -> None:

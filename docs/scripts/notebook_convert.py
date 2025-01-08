@@ -141,7 +141,7 @@ def _modify_frontmatter(
     # if frontmatter exists
     rel_path = notebook_path.relative_to(intermediate_docs_dir).as_posix()
     edit_url = (
-        f"https://github.com/langchain-ai/langchain/edit/master/docs/docs/{rel_path}"
+        f"https://github.com/AI-Agents-Force-SDK/langchain/edit/master/docs/docs/{rel_path}"
     )
     frontmatter = {
         "custom_edit_url": edit_url,

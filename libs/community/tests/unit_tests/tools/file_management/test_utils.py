@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 
 import pytest
 
-from langchain_community.tools.file_management.utils import (
+from aiagentsforce_community.tools.file_management.utils import (
     FileValidationError,
     get_validated_relative_path,
 )

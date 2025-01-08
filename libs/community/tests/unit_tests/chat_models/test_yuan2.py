@@ -1,13 +1,13 @@
 """Test ChatYuan2 wrapper."""
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,
 )
 
-from langchain_community.chat_models.yuan2 import (
+from aiagentsforce_community.chat_models.yuan2 import (
     ChatYuan2,
     _convert_dict_to_message,
     _convert_message_to_dict,

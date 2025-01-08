@@ -6,7 +6,7 @@ import uuid
 
 import pytest
 
-from langchain_community.storage.redis import RedisStore
+from aiagentsforce_community.storage.redis import RedisStore
 
 if typing.TYPE_CHECKING:
     from redis import Redis

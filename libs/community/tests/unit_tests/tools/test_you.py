@@ -2,8 +2,8 @@ from unittest.mock import AsyncMock, patch
 
 import responses
 
-from langchain_community.tools.you import YouSearchTool
-from langchain_community.utilities.you import YouSearchAPIWrapper
+from aiagentsforce_community.tools.you import YouSearchTool
+from aiagentsforce_community.utilities.you import YouSearchAPIWrapper
 
 from ..utilities.test_you import (
     LIMITED_PARSED_OUTPUT,

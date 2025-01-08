@@ -6,7 +6,7 @@ pip install clarifai
 You'll need to set env variable CLARIFAI_PAT_KEY to your personal access token key.
 """
 
-from langchain_community.llms.clarifai import Clarifai
+from aiagentsforce_community.llms.clarifai import Clarifai
 
 
 def test_clarifai_call() -> None:

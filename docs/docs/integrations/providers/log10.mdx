@@ -1,6 +1,6 @@
 # Log10
 
-This page covers how to use the [Log10](https://log10.io) within LangChain.
+This page covers how to use the [Log10](https://log10.io) within AI Agents Force.
 
 ## What is Log10?
 
@@ -18,7 +18,7 @@ Integration with log10 is a simple one-line `log10_callback` integration as show
 
 ```python
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.messages import HumanMessage
 
 from log10.langchain import Log10Callback
 from log10.llm import Log10Config
@@ -41,9 +41,9 @@ llm = ChatOpenAI(model="gpt-3.5-turbo", callbacks=[log10_callback])
 
 ```python
 from langchain_openai import OpenAI
-from langchain_community.chat_models import ChatAnthropic
+from aiagentsforce_community.chat_models import ChatAnthropic
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.messages import HumanMessage
 
 from log10.langchain import Log10Callback
 from log10.llm import Log10Config

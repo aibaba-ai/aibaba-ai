@@ -2,10 +2,10 @@
 
 from typing import Generator, cast
 
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 from pydantic import SecretStr
 
-from langchain_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
+from aiagentsforce_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
 
 
 def test_call() -> None:

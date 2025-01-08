@@ -10,7 +10,7 @@ from contextlib import asynccontextmanager
 from typing import Any, Optional
 from uuid import UUID
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackHandler,
     AsyncCallbackManager,
     BaseCallbackHandler,

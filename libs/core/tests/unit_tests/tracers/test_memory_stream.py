@@ -4,7 +4,7 @@ import time
 from collections.abc import AsyncIterator
 from concurrent.futures import ThreadPoolExecutor
 
-from langchain_core.tracers.memory_stream import _MemoryStream
+from aiagentsforce_core.tracers.memory_stream import _MemoryStream
 
 
 async def test_same_event_loop() -> None:

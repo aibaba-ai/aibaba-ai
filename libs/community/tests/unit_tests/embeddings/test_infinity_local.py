@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from langchain_community.embeddings.infinity_local import InfinityEmbeddingsLocal
+from aiagentsforce_community.embeddings.infinity_local import InfinityEmbeddingsLocal
 
 try:
     import torch  # noqa

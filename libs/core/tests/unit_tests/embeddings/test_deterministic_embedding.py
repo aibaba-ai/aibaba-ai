@@ -1,4 +1,4 @@
-from langchain_core.embeddings import DeterministicFakeEmbedding
+from aiagentsforce_core.embeddings import DeterministicFakeEmbedding
 
 
 def test_deterministic_fake_embeddings() -> None:

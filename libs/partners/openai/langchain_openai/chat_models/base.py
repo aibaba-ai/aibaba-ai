@@ -33,19 +33,19 @@ from urllib.parse import urlparse
 
 import openai
 import tiktoken
-from langchain_core._api.deprecation import deprecated
-from langchain_core.callbacks import (
+from aiagentsforce_core._api.deprecation import deprecated
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import LanguageModelInput
-from langchain_core.language_models.chat_models import (
+from aiagentsforce_core.language_models import LanguageModelInput
+from aiagentsforce_core.language_models.chat_models import (
     BaseChatModel,
     LangSmithParams,
     agenerate_from_stream,
     generate_from_stream,
 )
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -63,34 +63,34 @@ from langchain_core.messages import (
     ToolMessage,
     ToolMessageChunk,
 )
-from langchain_core.messages.ai import (
+from aiagentsforce_core.messages.ai import (
     InputTokenDetails,
     OutputTokenDetails,
     UsageMetadata,
 )
-from langchain_core.messages.tool import tool_call_chunk
-from langchain_core.output_parsers import JsonOutputParser, PydanticOutputParser
-from langchain_core.output_parsers.openai_tools import (
+from aiagentsforce_core.messages.tool import tool_call_chunk
+from aiagentsforce_core.output_parsers import JsonOutputParser, PydanticOutputParser
+from aiagentsforce_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
     make_invalid_tool_call,
     parse_tool_call,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.runnables import Runnable, RunnableMap, RunnablePassthrough, chain
-from langchain_core.runnables.config import run_in_executor
-from langchain_core.tools import BaseTool
-from langchain_core.utils import get_pydantic_field_names
-from langchain_core.utils.function_calling import (
+from aiagentsforce_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aiagentsforce_core.runnables import Runnable, RunnableMap, RunnablePassthrough, chain
+from aiagentsforce_core.runnables.config import run_in_executor
+from aiagentsforce_core.tools import BaseTool
+from aiagentsforce_core.utils import get_pydantic_field_names
+from aiagentsforce_core.utils.function_calling import (
     convert_to_openai_function,
     convert_to_openai_tool,
 )
-from langchain_core.utils.pydantic import (
+from aiagentsforce_core.utils.pydantic import (
     PydanticBaseModel,
     TypeBaseModel,
     is_basemodel_subclass,
 )
-from langchain_core.utils.utils import _build_model_kwargs, from_env, secret_from_env
+from aiagentsforce_core.utils.utils import _build_model_kwargs, from_env, secret_from_env
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 
@@ -98,13 +98,13 @@ logger = logging.getLogger(__name__)
 
 
 def _convert_dict_to_message(_dict: Mapping[str, Any]) -> BaseMessage:
-    """Convert a dictionary to a LangChain message.
+    """Convert a dictionary to a AI Agents Force message.
 
     Args:
         _dict: The dictionary.
 
     Returns:
-        The LangChain message.
+        The AI Agents Force message.
     """
     role = _dict.get("role")
     name = _dict.get("name")
@@ -190,10 +190,10 @@ def _format_message_content(content: Any) -> Any:
 
 
 def _convert_message_to_dict(message: BaseMessage) -> dict:
-    """Convert a LangChain message to a dictionary.
+    """Convert a AI Agents Force message to a dictionary.
 
     Args:
-        message: The LangChain message.
+        message: The AI Agents Force message.
 
     Returns:
         The dictionary.
@@ -1104,7 +1104,7 @@ class BaseChatOpenAI(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call. Options are:
 
                 - str of the form ``"<<tool_name>>"``: calls <<tool_name>> tool.
@@ -1192,7 +1192,7 @@ class BaseChatOpenAI(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -1243,7 +1243,7 @@ class BaseChatOpenAI(BaseChatModel):
             kwargs: Additional keyword args aren't supported.
 
         Returns:
-            A Runnable that takes same inputs as a :class:`langchain_core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aiagentsforce_core.language_models.chat.BaseChatModel`.
 
             | If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs an instance of ``schema`` (i.e., a Pydantic object). Otherwise, if ``include_raw`` is False then Runnable outputs a dict.
 
@@ -1851,7 +1851,7 @@ class ChatOpenAI(BaseChatOpenAI):  # type: ignore[override]
 
             import base64
             import httpx
-            from langchain_core.messages import HumanMessage
+            from aiagentsforce_core.messages import HumanMessage
 
             image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
             image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")

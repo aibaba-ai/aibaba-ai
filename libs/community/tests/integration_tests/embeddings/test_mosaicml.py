@@ -1,6 +1,6 @@
 """Test mosaicml embeddings."""
 
-from langchain_community.embeddings.mosaicml import MosaicMLInstructorEmbeddings
+from aiagentsforce_community.embeddings.mosaicml import MosaicMLInstructorEmbeddings
 
 
 def test_mosaicml_embedding_documents() -> None:

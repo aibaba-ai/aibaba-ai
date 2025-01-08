@@ -3,10 +3,10 @@ from unittest import mock
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from langchain_core.callbacks import CallbackManager
+from aiagentsforce_core.callbacks import CallbackManager
 from pydantic import SecretStr
 
-from langchain_community.llms.writer import Writer
+from aiagentsforce_community.llms.writer import Writer
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 """Classes for mocking Writer responses."""

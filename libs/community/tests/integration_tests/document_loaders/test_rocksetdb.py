@@ -1,9 +1,9 @@
 import logging
 import os
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import RocksetLoader
+from aiagentsforce_community.document_loaders import RocksetLoader
 
 logger = logging.getLogger(__name__)
 

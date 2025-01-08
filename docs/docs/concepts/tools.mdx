@@ -6,21 +6,21 @@
 
 ## Overview
 
-The **tool** abstraction in LangChain associates a Python **function** with a **schema** that defines the function's **name**, **description** and **expected arguments**. 
+The **tool** abstraction in AI Agents Force associates a Python **function** with a **schema** that defines the function's **name**, **description** and **expected arguments**. 
 
 **Tools** can be passed to [chat models](/docs/concepts/chat_models) that support [tool calling](/docs/concepts/tool_calling) allowing the model to request the execution of a specific function with specific inputs.
 
 ## Key concepts
 
 - Tools are a way to encapsulate a function and its schema in a way that can be passed to a chat model.
-- Create tools using the [@tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html) decorator, which simplifies the process of tool creation, supporting the following:
+- Create tools using the [@tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html) decorator, which simplifies the process of tool creation, supporting the following:
    - Automatically infer the tool's **name**, **description** and **expected arguments**, while also supporting customization.
    - Defining tools that return **artifacts** (e.g. images, dataframes, etc.)
    - Hiding input arguments from the schema (and hence from the model) using **injected tool arguments**.
 
 ## Tool interface
 
-The tool interface is defined in the [BaseTool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.base.BaseTool.html#langchain_core.tools.base.BaseTool) class which is a subclass of the [Runnable Interface](/docs/concepts/runnables).
+The tool interface is defined in the [BaseTool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.base.BaseTool.html#aiagentsforce_core.tools.base.BaseTool) class which is a subclass of the [Runnable Interface](/docs/concepts/runnables).
 
 The key attributes that correspond to the tool's **schema**:
 
@@ -35,10 +35,10 @@ The key methods to execute the function associated with the **tool**:
 
 ## Create tools using the `@tool` decorator
 
-The recommended way to create tools is using the [@tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html) decorator. This decorator is designed to simplify the process of tool creation and should be used in most cases. After defining a function, you can decorate it with [@tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html) to create a tool that implements the [Tool Interface](#tool-interface).
+The recommended way to create tools is using the [@tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html) decorator. This decorator is designed to simplify the process of tool creation and should be used in most cases. After defining a function, you can decorate it with [@tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html) to create a tool that implements the [Tool Interface](#tool-interface).
 
 ```python
-from langchain_core.tools import tool
+from aiagentsforce_core.tools import tool
 
 @tool
 def multiply(a: int, b: int) -> int:
@@ -49,7 +49,7 @@ def multiply(a: int, b: int) -> int:
 For more details on how to create tools, see the [how to create custom tools](/docs/how_to/custom_tools/) guide.
 
 :::note
-LangChain has a few other ways to create tools; e.g., by sub-classing the [BaseTool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.base.BaseTool.html#langchain_core.tools.base.BaseTool) class or by using `StructuredTool`. These methods are shown in the [how to create custom tools guide](/docs/how_to/custom_tools/), but
+AI Agents Force has a few other ways to create tools; e.g., by sub-classing the [BaseTool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.base.BaseTool.html#aiagentsforce_core.tools.base.BaseTool) class or by using `StructuredTool`. These methods are shown in the [how to create custom tools guide](/docs/how_to/custom_tools/), but
 we generally recommend using the `@tool` decorator for most cases.
 :::
 
@@ -77,7 +77,7 @@ print(multiply.args)
 ```
 
 :::note
-If you're using pre-built LangChain or LangGraph components like [create_react_agent](https://langchain-ai.github.io/langgraph/reference/prebuilt/#langgraph.prebuilt.chat_agent_executor.create_react_agent),you might not need to interact with tools directly. However, understanding how to use them can be valuable for debugging and testing. Additionally, when building custom LangGraph workflows, you may find it necessary to work with tools directly.
+If you're using pre-built AI Agents Force or LangGraph components like [create_react_agent](https://langchain-ai.github.io/langgraph/reference/prebuilt/#langgraph.prebuilt.chat_agent_executor.create_react_agent),you might not need to interact with tools directly. However, understanding how to use them can be valuable for debugging and testing. Additionally, when building custom LangGraph workflows, you may find it necessary to work with tools directly.
 :::
 
 ## Configuring the schema
@@ -85,7 +85,7 @@ If you're using pre-built LangChain or LangGraph components like [create_react_a
 The `@tool` decorator offers additional options to configure the schema of the tool (e.g., modify name, description
 or parse the function's doc-string to infer the schema).
 
-Please see the [API reference for @tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html) for more details and review the [how to create custom tools](/docs/how_to/custom_tools/) guide for examples.
+Please see the [API reference for @tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html) for more details and review the [how to create custom tools](/docs/how_to/custom_tools/) guide for examples.
 
 ## Tool artifacts
 
@@ -123,7 +123,7 @@ There are cases where certain arguments need to be passed to a tool at runtime b
 For example, if a tool requires a `user_id` to be injected dynamically at runtime, it can be structured in this way:
 
 ```python
-from langchain_core.tools import tool, InjectedToolArg
+from aiagentsforce_core.tools import tool, InjectedToolArg
 
 @tool
 def user_specific_tool(input_data: str, user_id: InjectedToolArg) -> str:
@@ -131,7 +131,7 @@ def user_specific_tool(input_data: str, user_id: InjectedToolArg) -> str:
     return f"User {user_id} processed {input_data}"
 ```
 
-Annotating the `user_id` argument with `InjectedToolArg` tells LangChain that this argument should not be exposed as part of the
+Annotating the `user_id` argument with `InjectedToolArg` tells AI Agents Force that this argument should not be exposed as part of the
 tool's schema.
 
 See [how to pass run time values to tools](/docs/how_to/tool_runtime/) for more details on how to use `InjectedToolArg`.  
@@ -144,7 +144,7 @@ You can use the `RunnableConfig` object to pass custom run time values to tools.
 If you need to access the [RunnableConfig](/docs/concepts/runnables/#runnableconfig) object from within a tool. This can be done by using the `RunnableConfig` annotation in the tool's function signature.
 
 ```python
-from langchain_core.runnables import RunnableConfig
+from aiagentsforce_core.runnables import RunnableConfig
 
 @tool
 async def some_func(..., config: RunnableConfig) -> ...:
@@ -183,7 +183,7 @@ When designing tools to be used by models, keep the following in mind:
 ## Toolkits
 <span data-heading-keywords="toolkit,toolkits"></span>
 
-LangChain has a concept of **toolkits**. This a very thin abstraction that groups tools together that
+AI Agents Force has a concept of **toolkits**. This a very thin abstraction that groups tools together that
 are designed to be used together for specific tasks.
 
 ### Interface
@@ -202,10 +202,10 @@ tools = toolkit.get_tools()
 
 See the following resources for more information:
 
-- [API Reference for @tool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.convert.tool.html)
+- [API Reference for @tool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.convert.tool.html)
 - [How to create custom tools](/docs/how_to/custom_tools/)
 - [How to pass run time values to tools](/docs/how_to/tool_runtime/)
-- [All LangChain tool how-to guides](https://docs.langchain.com/docs/how_to/#tools)
+- [All AI Agents Force tool how-to guides](https://docs.langchain.com/docs/how_to/#tools)
 - [Additional how-to guides that show usage with LangGraph](https://langchain-ai.github.io/langgraph/how-tos/tool-calling/)
 - Tool integrations, see the [tool integration docs](https://docs.langchain.com/docs/integrations/tools/).
 

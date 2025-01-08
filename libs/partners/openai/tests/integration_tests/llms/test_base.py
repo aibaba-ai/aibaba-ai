@@ -3,8 +3,8 @@
 from typing import Generator
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.outputs import LLMResult
 
 from langchain_openai import OpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler

@@ -1,6 +1,6 @@
 """Test ForefrontAI API wrapper."""
 
-from langchain_community.llms.forefrontai import ForefrontAI
+from aiagentsforce_community.llms.forefrontai import ForefrontAI
 
 
 def test_forefrontai_call() -> None:

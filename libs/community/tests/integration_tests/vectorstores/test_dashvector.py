@@ -1,8 +1,8 @@
 from time import sleep
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import DashVector
+from aiagentsforce_community.vectorstores import DashVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 texts = ["foo", "bar", "baz"]

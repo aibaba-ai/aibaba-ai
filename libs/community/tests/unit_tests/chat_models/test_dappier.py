@@ -3,9 +3,9 @@
 from typing import List
 
 import pytest
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
 
-from langchain_community.chat_models.dappier import _format_dappier_messages
+from aiagentsforce_community.chat_models.dappier import _format_dappier_messages
 
 
 @pytest.mark.parametrize(

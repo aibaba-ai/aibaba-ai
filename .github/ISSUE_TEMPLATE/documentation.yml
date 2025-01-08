@@ -1,5 +1,5 @@
 name: Documentation
-description: Report an issue related to the LangChain documentation.
+description: Report an issue related to the AI Agents Force documentation.
 title: "DOC: <Please write a comprehensive title after the 'DOC: ' prefix>"
 labels: [03 - Documentation]
 
@@ -15,17 +15,17 @@ body:
       Do **NOT** use this to ask usage questions or reporting issues with your code.
       
       If you have usage questions or need help solving some problem, 
-      please use [GitHub Discussions](https://github.com/langchain-ai/langchain/discussions).
+      please use [GitHub Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions).
       
       If you're in the wrong place, here are some helpful links to find a better
       place to ask your question:
       
-      [LangChain documentation with the integrated search](https://python.langchain.com/docs/get_started/introduction),
-      [API Reference](https://python.langchain.com/api_reference/),
-      [GitHub search](https://github.com/langchain-ai/langchain),
-      [LangChain Github Discussions](https://github.com/langchain-ai/langchain/discussions),
-      [LangChain Github Issues](https://github.com/langchain-ai/langchain/issues?q=is%3Aissue),
-      [LangChain ChatBot](https://chat.langchain.com/)
+      [AI Agents Force documentation with the integrated search](https://https://docs.aiagentsforce.com//get_started/introduction),
+      [API Reference](https://docs.aiagentsforce.com/api_reference/),
+      [GitHub search](https://github.com/AI-Agents-Force-SDK/langchain),
+      [AI Agents Force Github Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions),
+      [AI Agents Force Github Issues](https://github.com/AI-Agents-Force-SDK/langchain/issues?q=is%3Aissue),
+      [AI Agents Force ChatBot](https://chat.langchain.com/)
 - type: input
   id: url
   attributes:

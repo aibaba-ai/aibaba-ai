@@ -1,6 +1,6 @@
 from typing import Any
 
-from langchain_community.adapters import openai as lcopenai
+from aiagentsforce_community.adapters import openai as lcopenai
 
 
 def _test_no_stream(**kwargs: Any) -> None:

@@ -4,7 +4,7 @@
 [Unstructured.IO](https://www.unstructured.io/) extracts clean text from raw source documents like
 PDFs and Word documents.
 This page covers how to use the [`unstructured`](https://github.com/Unstructured-IO/unstructured)
-ecosystem within LangChain.
+ecosystem within AI Agents Force.
 
 ## Installation and Setup
 
@@ -15,7 +15,7 @@ dependencies running.
   open-source `unstructured` package, install the Python SDK with `pip install unstructured-client`
   along with `pip install langchain-unstructured` to use the `UnstructuredLoader` and partition
   remotely against the Unstructured API. This loader lives
-  in a LangChain partner repo instead of the `langchain-community` repo and you will need an
+  in a AI Agents Force partner repo instead of the `langchain-community` repo and you will need an
   `api_key`, which you can generate a free key [here](https://unstructured.io/api-key/).
     - Unstructured's documentation for the sdk can be found here:
       https://docs.unstructured.io/api-reference/api-services/sdk
@@ -63,7 +63,7 @@ from langchain_unstructured import UnstructuredLoader
 `CHM` means `Microsoft Compiled HTML Help`.
 
 ```python
-from langchain_community.document_loaders import UnstructuredCHMLoader
+from aiagentsforce_community.document_loaders import UnstructuredCHMLoader
 ```
 
 ### UnstructuredCSVLoader
@@ -75,7 +75,7 @@ Each record consists of one or more fields, separated by commas.
 See a [usage example](/docs/integrations/document_loaders/csv#unstructuredcsvloader).
 
 ```python
-from langchain_community.document_loaders import UnstructuredCSVLoader
+from aiagentsforce_community.document_loaders import UnstructuredCSVLoader
 ```
 
 ### UnstructuredEmailLoader
@@ -83,7 +83,7 @@ from langchain_community.document_loaders import UnstructuredCSVLoader
 See a [usage example](/docs/integrations/document_loaders/email).
 
 ```python
-from langchain_community.document_loaders import UnstructuredEmailLoader
+from aiagentsforce_community.document_loaders import UnstructuredEmailLoader
 ```
 
 ### UnstructuredEPubLoader
@@ -96,7 +96,7 @@ software is available for most smartphones, tablets, and computers.
 See a [usage example](/docs/integrations/document_loaders/epub).
 
 ```python
-from langchain_community.document_loaders import UnstructuredEPubLoader
+from aiagentsforce_community.document_loaders import UnstructuredEPubLoader
 ```
 
 ### UnstructuredExcelLoader
@@ -104,7 +104,7 @@ from langchain_community.document_loaders import UnstructuredEPubLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_excel).
 
 ```python
-from langchain_community.document_loaders import UnstructuredExcelLoader
+from aiagentsforce_community.document_loaders import UnstructuredExcelLoader
 ```
 
 ### UnstructuredFileIOLoader
@@ -112,7 +112,7 @@ from langchain_community.document_loaders import UnstructuredExcelLoader
 See a [usage example](/docs/integrations/document_loaders/google_drive#passing-in-optional-file-loaders).
 
 ```python
-from langchain_community.document_loaders import UnstructuredFileIOLoader
+from aiagentsforce_community.document_loaders import UnstructuredFileIOLoader
 ```
 
 ### UnstructuredHTMLLoader
@@ -120,7 +120,7 @@ from langchain_community.document_loaders import UnstructuredFileIOLoader
 See a [usage example](/docs/how_to/document_loader_html).
 
 ```python
-from langchain_community.document_loaders import UnstructuredHTMLLoader
+from aiagentsforce_community.document_loaders import UnstructuredHTMLLoader
 ```
 
 ### UnstructuredImageLoader
@@ -128,7 +128,7 @@ from langchain_community.document_loaders import UnstructuredHTMLLoader
 See a [usage example](/docs/integrations/document_loaders/image).
 
 ```python
-from langchain_community.document_loaders import UnstructuredImageLoader
+from aiagentsforce_community.document_loaders import UnstructuredImageLoader
 ```
 
 ### UnstructuredMarkdownLoader
@@ -136,7 +136,7 @@ from langchain_community.document_loaders import UnstructuredImageLoader
 See a [usage example](/docs/integrations/vectorstores/starrocks).
 
 ```python
-from langchain_community.document_loaders import UnstructuredMarkdownLoader
+from aiagentsforce_community.document_loaders import UnstructuredMarkdownLoader
 ```
 
 ### UnstructuredODTLoader
@@ -149,7 +149,7 @@ providing an open, XML-based file format specification for office applications.
 See a [usage example](/docs/integrations/document_loaders/odt).
 
 ```python
-from langchain_community.document_loaders import UnstructuredODTLoader
+from aiagentsforce_community.document_loaders import UnstructuredODTLoader
 ```
 
 ### UnstructuredOrgModeLoader
@@ -159,7 +159,7 @@ An [Org Mode](https://en.wikipedia.org/wiki/Org-mode) document is a document edi
 See a [usage example](/docs/integrations/document_loaders/org_mode).
 
 ```python
-from langchain_community.document_loaders import UnstructuredOrgModeLoader
+from aiagentsforce_community.document_loaders import UnstructuredOrgModeLoader
 ```
 
 ### UnstructuredPDFLoader
@@ -167,7 +167,7 @@ from langchain_community.document_loaders import UnstructuredOrgModeLoader
 See a [usage example](/docs/how_to/document_loader_pdf/#layout-analysis-and-extraction-of-text-from-images).
 
 ```python
-from langchain_community.document_loaders import UnstructuredPDFLoader
+from aiagentsforce_community.document_loaders import UnstructuredPDFLoader
 ```
 
 ### UnstructuredPowerPointLoader
@@ -175,7 +175,7 @@ from langchain_community.document_loaders import UnstructuredPDFLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_powerpoint).
 
 ```python
-from langchain_community.document_loaders import UnstructuredPowerPointLoader
+from aiagentsforce_community.document_loaders import UnstructuredPowerPointLoader
 ```
 
 ### UnstructuredRSTLoader
@@ -186,7 +186,7 @@ used primarily in the Python programming language community for technical docume
 See a [usage example](/docs/integrations/document_loaders/rst).
 
 ```python
-from langchain_community.document_loaders import UnstructuredRSTLoader
+from aiagentsforce_community.document_loaders import UnstructuredRSTLoader
 ```
 
 ### UnstructuredRTFLoader
@@ -194,7 +194,7 @@ from langchain_community.document_loaders import UnstructuredRSTLoader
 See a usage example in the API documentation.
 
 ```python
-from langchain_community.document_loaders import UnstructuredRTFLoader
+from aiagentsforce_community.document_loaders import UnstructuredRTFLoader
 ```
 
 ### UnstructuredTSVLoader
@@ -205,7 +205,7 @@ Records are separated by newlines, and values within a record are separated by t
 See a [usage example](/docs/integrations/document_loaders/tsv).
 
 ```python
-from langchain_community.document_loaders import UnstructuredTSVLoader
+from aiagentsforce_community.document_loaders import UnstructuredTSVLoader
 ```
 
 ### UnstructuredURLLoader
@@ -213,7 +213,7 @@ from langchain_community.document_loaders import UnstructuredTSVLoader
 See a [usage example](/docs/integrations/document_loaders/url).
 
 ```python
-from langchain_community.document_loaders import UnstructuredURLLoader
+from aiagentsforce_community.document_loaders import UnstructuredURLLoader
 ```
 
 ### UnstructuredWordDocumentLoader
@@ -221,7 +221,7 @@ from langchain_community.document_loaders import UnstructuredURLLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_word#using-unstructured).
 
 ```python
-from langchain_community.document_loaders import UnstructuredWordDocumentLoader
+from aiagentsforce_community.document_loaders import UnstructuredWordDocumentLoader
 ```
 
 ### UnstructuredXMLLoader
@@ -229,6 +229,6 @@ from langchain_community.document_loaders import UnstructuredWordDocumentLoader
 See a [usage example](/docs/integrations/document_loaders/xml).
 
 ```python
-from langchain_community.document_loaders import UnstructuredXMLLoader
+from aiagentsforce_community.document_loaders import UnstructuredXMLLoader
 ```
 

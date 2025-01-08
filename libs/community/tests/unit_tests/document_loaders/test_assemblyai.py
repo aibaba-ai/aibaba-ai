@@ -3,11 +3,11 @@ import responses
 from pytest_mock import MockerFixture
 from requests import HTTPError
 
-from langchain_community.document_loaders import (
+from aiagentsforce_community.document_loaders import (
     AssemblyAIAudioLoaderById,
     AssemblyAIAudioTranscriptLoader,
 )
-from langchain_community.document_loaders.assemblyai import TranscriptFormat
+from aiagentsforce_community.document_loaders.assemblyai import TranscriptFormat
 
 
 @pytest.mark.requires("assemblyai")

@@ -15,21 +15,21 @@ from typing import (
 import pytest
 from pydantic import BaseModel
 
-from langchain_core.callbacks import CallbackManagerForRetrieverRun, Callbacks
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.documents import Document
-from langchain_core.language_models import FakeStreamingListLLM, GenericFakeChatModel
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManagerForRetrieverRun, Callbacks
+from aiagentsforce_core.chat_history import BaseChatMessageHistory
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.language_models import FakeStreamingListLLM, GenericFakeChatModel
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.prompt_values import ChatPromptValue
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import (
+from aiagentsforce_core.prompt_values import ChatPromptValue
+from aiagentsforce_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from aiagentsforce_core.retrievers import BaseRetriever
+from aiagentsforce_core.runnables import (
     ConfigurableField,
     Runnable,
     RunnableConfig,
@@ -38,12 +38,12 @@ from langchain_core.runnables import (
     chain,
     ensure_config,
 )
-from langchain_core.runnables.config import get_callback_manager_for_config
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.runnables.schema import StreamEvent
-from langchain_core.runnables.utils import Input, Output
-from langchain_core.tools import tool
-from langchain_core.utils.aiter import aclosing
+from aiagentsforce_core.runnables.config import get_callback_manager_for_config
+from aiagentsforce_core.runnables.history import RunnableWithMessageHistory
+from aiagentsforce_core.runnables.schema import StreamEvent
+from aiagentsforce_core.runnables.utils import Input, Output
+from aiagentsforce_core.tools import tool
+from aiagentsforce_core.utils.aiter import aclosing
 from tests.unit_tests.runnables.test_runnable_events_v1 import (
     _assert_events_equal_allow_superset_metadata,
 )
@@ -2527,7 +2527,7 @@ async def test_cancel_astream_events() -> None:
 
 async def test_custom_event() -> None:
     """Test adhoc event."""
-    from langchain_core.callbacks.manager import adispatch_custom_event
+    from aiagentsforce_core.callbacks.manager import adispatch_custom_event
 
     # Ignoring type due to RunnableLamdba being dynamic when it comes to being
     # applied as a decorator to async functions.
@@ -2604,7 +2604,7 @@ async def test_custom_event() -> None:
 
 async def test_custom_event_nested() -> None:
     """Test adhoc event in a nested chain."""
-    from langchain_core.callbacks.manager import adispatch_custom_event
+    from aiagentsforce_core.callbacks.manager import adispatch_custom_event
 
     # Ignoring type due to RunnableLamdba being dynamic when it comes to being
     # applied as a decorator to async functions.
@@ -2715,7 +2715,7 @@ async def test_custom_event_root_dispatch() -> None:
     # This just tests that nothing breaks on the path.
     # It shouldn't do anything at the moment, since the tracer isn't configured
     # to handle adhoc events.
-    from langchain_core.callbacks.manager import adispatch_custom_event
+    from aiagentsforce_core.callbacks.manager import adispatch_custom_event
 
     # Expected behavior is that the event cannot be dispatched
     with pytest.raises(RuntimeError):
@@ -2729,8 +2729,8 @@ IS_GTE_3_11 = sys.version_info >= (3, 11)
 @pytest.mark.skipif(not IS_GTE_3_11, reason="Requires Python >=3.11")
 async def test_custom_event_root_dispatch_with_in_tool() -> None:
     """Test adhoc event in a nested chain."""
-    from langchain_core.callbacks.manager import adispatch_custom_event
-    from langchain_core.tools import tool
+    from aiagentsforce_core.callbacks.manager import adispatch_custom_event
+    from aiagentsforce_core.tools import tool
 
     @tool
     async def foo(x: int) -> int:

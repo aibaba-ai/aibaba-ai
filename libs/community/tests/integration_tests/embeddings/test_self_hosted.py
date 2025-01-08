@@ -2,7 +2,7 @@
 
 from typing import Any
 
-from langchain_community.embeddings import (
+from aiagentsforce_community.embeddings import (
     SelfHostedEmbeddings,
     SelfHostedHuggingFaceEmbeddings,
     SelfHostedHuggingFaceInstructEmbeddings,

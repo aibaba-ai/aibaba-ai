@@ -1,10 +1,10 @@
 import os
 
-from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
-from langchain_core.tools import tool
+from aiagentsforce_core.messages import AIMessage, HumanMessage, ToolMessage
+from aiagentsforce_core.tools import tool
 from pydantic import BaseModel
 
-from langchain_community.chat_models import MiniMaxChat
+from aiagentsforce_community.chat_models import MiniMaxChat
 
 
 def test_chat_minimax_not_group_id() -> None:

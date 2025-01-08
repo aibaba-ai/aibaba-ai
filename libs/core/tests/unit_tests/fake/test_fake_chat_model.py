@@ -4,14 +4,14 @@ from itertools import cycle
 from typing import Any, Optional, Union
 from uuid import UUID
 
-from langchain_core.callbacks.base import AsyncCallbackHandler
-from langchain_core.language_models import (
+from aiagentsforce_core.callbacks.base import AsyncCallbackHandler
+from aiagentsforce_core.language_models import (
     FakeListChatModel,
     GenericFakeChatModel,
     ParrotFakeChatModel,
 )
-from langchain_core.messages import AIMessage, AIMessageChunk, BaseMessage
-from langchain_core.outputs import ChatGenerationChunk, GenerationChunk
+from aiagentsforce_core.messages import AIMessage, AIMessageChunk, BaseMessage
+from aiagentsforce_core.outputs import ChatGenerationChunk, GenerationChunk
 from tests.unit_tests.stubs import (
     _any_id_ai_message,
     _any_id_ai_message_chunk,

@@ -3,10 +3,10 @@
 import os
 from typing import List, Tuple
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings import FakeEmbeddings
-from langchain_community.vectorstores import Lantern
+from aiagentsforce_community.embeddings import FakeEmbeddings
+from aiagentsforce_community.vectorstores import Lantern
 
 CONNECTION_STRING = Lantern.connection_string_from_db_params(
     driver=os.environ.get("TEST_LANTERN_DRIVER", "psycopg2"),

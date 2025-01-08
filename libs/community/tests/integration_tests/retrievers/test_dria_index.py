@@ -1,7 +1,7 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers import DriaRetriever
+from aiagentsforce_community.retrievers import DriaRetriever
 
 
 # Set a fixture for DriaRetriever

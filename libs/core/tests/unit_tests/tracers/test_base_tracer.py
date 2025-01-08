@@ -12,20 +12,20 @@ import pytest
 from freezegun import freeze_time
 from langsmith import Client, traceable
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.exceptions import TracerException
-from langchain_core.messages import HumanMessage
-from langchain_core.outputs import LLMResult
-from langchain_core.runnables import chain as as_runnable
-from langchain_core.tracers.base import BaseTracer
-from langchain_core.tracers.schemas import Run
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.exceptions import TracerException
+from aiagentsforce_core.messages import HumanMessage
+from aiagentsforce_core.outputs import LLMResult
+from aiagentsforce_core.runnables import chain as as_runnable
+from aiagentsforce_core.tracers.base import BaseTracer
+from aiagentsforce_core.tracers.schemas import Run
 
 SERIALIZED = {"id": ["llm"]}
 SERIALIZED_CHAT = {"id": ["chat_model"]}
 
 
 class FakeTracer(BaseTracer):
-    """Fake tracer that records LangChain execution."""
+    """Fake tracer that records AI Agents Force execution."""
 
     def __init__(self) -> None:
         """Initialize the tracer."""

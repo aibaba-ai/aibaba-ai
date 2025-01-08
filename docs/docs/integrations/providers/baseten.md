@@ -3,7 +3,7 @@
 >[Baseten](https://baseten.co) is a provider of all the infrastructure you need to deploy and serve 
 > ML models performantly, scalably, and cost-efficiently.
 
->As a model inference platform, `Baseten` is a `Provider` in the LangChain ecosystem. 
+>As a model inference platform, `Baseten` is a `Provider` in the AI Agents Force ecosystem. 
 The `Baseten` integration currently implements a single `Component`, LLMs, but more are planned!
 
 >`Baseten` lets you run both open source models like Llama 2 or Mistral and run proprietary or 
@@ -19,7 +19,7 @@ fine-tuned models on dedicated GPUs. If you're used to a provider like OpenAI, u
 
 ## Installation and Setup
 
-You'll need two things to use Baseten models with LangChain:
+You'll need two things to use Baseten models with AI Agents Force:
 
 - A [Baseten account](https://baseten.co)
 - An [API key](https://docs.baseten.co/observability/api-keys)
@@ -35,5 +35,5 @@ export BASETEN_API_KEY="paste_your_api_key_here"
 See a [usage example](/docs/integrations/llms/baseten).
 
 ```python
-from langchain_community.llms import Baseten
+from aiagentsforce_community.llms import Baseten
 ```

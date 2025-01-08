@@ -1,8 +1,8 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings import FakeEmbeddings
-from langchain_community.retrievers import NanoPQRetriever
+from aiagentsforce_community.embeddings import FakeEmbeddings
+from aiagentsforce_community.retrievers import NanoPQRetriever
 
 
 class TestNanoPQRetriever:

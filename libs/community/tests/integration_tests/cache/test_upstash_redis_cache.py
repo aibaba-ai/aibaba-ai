@@ -4,9 +4,9 @@ import uuid
 
 import langchain
 import pytest
-from langchain_core.outputs import Generation, LLMResult
+from aiagentsforce_core.outputs import Generation, LLMResult
 
-from langchain_community.cache import UpstashRedisCache
+from aiagentsforce_community.cache import UpstashRedisCache
 from tests.unit_tests.llms.fake_chat_model import FakeChatModel
 from tests.unit_tests.llms.fake_llm import FakeLLM
 

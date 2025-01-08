@@ -7,7 +7,7 @@ You can check it out here: https://app.premai.io
 
 import pytest
 
-from langchain_community.embeddings.premai import PremAIEmbeddings
+from aiagentsforce_community.embeddings.premai import PremAIEmbeddings
 
 
 @pytest.fixture

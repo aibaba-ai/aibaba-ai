@@ -1,8 +1,8 @@
 """Test MyScale functionality."""
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import MyScale, MyScaleSettings
+from aiagentsforce_community.vectorstores import MyScale, MyScaleSettings
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

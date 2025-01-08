@@ -8,7 +8,7 @@ of the models (i.e., not necessarily from loading or dumping JSON).
 import pytest
 from pydantic import RootModel, ValidationError
 
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     AnyMessage,

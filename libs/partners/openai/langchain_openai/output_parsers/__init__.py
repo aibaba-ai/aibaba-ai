@@ -1,4 +1,4 @@
-from langchain_core.output_parsers.openai_tools import (
+from aiagentsforce_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     JsonOutputToolsParser,
     PydanticToolsParser,

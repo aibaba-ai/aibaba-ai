@@ -2,9 +2,9 @@ from pathlib import Path
 
 import numpy as np
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.tiledb import TileDB
+from aiagentsforce_community.vectorstores.tiledb import TileDB
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

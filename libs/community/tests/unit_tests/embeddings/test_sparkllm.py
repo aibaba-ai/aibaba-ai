@@ -4,7 +4,7 @@ from typing import cast
 import pytest
 from pydantic import SecretStr
 
-from langchain_community.embeddings import SparkLLMTextEmbeddings
+from aiagentsforce_community.embeddings import SparkLLMTextEmbeddings
 
 
 def test_sparkllm_initialization_by_alias() -> None:

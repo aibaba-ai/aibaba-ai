@@ -2,7 +2,7 @@ from typing import Dict
 
 from pytest_mock import MockerFixture
 
-from langchain_community.embeddings import InfinityEmbeddings
+from aiagentsforce_community.embeddings import InfinityEmbeddings
 
 _MODEL_ID = "BAAI/bge-small"
 _INFINITY_BASE_URL = "https://localhost/api"

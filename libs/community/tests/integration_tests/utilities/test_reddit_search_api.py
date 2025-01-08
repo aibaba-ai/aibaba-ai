@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_community.utilities.reddit_search import RedditSearchAPIWrapper
+from aiagentsforce_community.utilities.reddit_search import RedditSearchAPIWrapper
 
 
 @pytest.fixture

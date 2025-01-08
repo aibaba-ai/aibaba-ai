@@ -3,10 +3,10 @@
 from unittest.mock import MagicMock
 
 import pytest
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.messages import HumanMessage
 from pytest import MonkeyPatch
 
-from langchain_community.chat_models.oci_generative_ai import ChatOCIGenAI
+from aiagentsforce_community.chat_models.oci_generative_ai import ChatOCIGenAI
 
 
 class MockResponseDict(dict):

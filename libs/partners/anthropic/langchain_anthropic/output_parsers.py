@@ -1,9 +1,9 @@
 from typing import Any, List, Optional, Type, Union, cast
 
-from langchain_core.messages import AIMessage, ToolCall
-from langchain_core.messages.tool import tool_call
-from langchain_core.output_parsers import BaseGenerationOutputParser
-from langchain_core.outputs import ChatGeneration, Generation
+from aiagentsforce_core.messages import AIMessage, ToolCall
+from aiagentsforce_core.messages.tool import tool_call
+from aiagentsforce_core.output_parsers import BaseGenerationOutputParser
+from aiagentsforce_core.outputs import ChatGeneration, Generation
 from pydantic import BaseModel, ConfigDict
 
 

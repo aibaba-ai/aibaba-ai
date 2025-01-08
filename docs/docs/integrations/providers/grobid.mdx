@@ -7,22 +7,22 @@ It is designed and expected to be used to parse academic papers, where it works 
 *Note*: if the articles supplied to Grobid are large documents (e.g. dissertations) exceeding a certain number
 of elements, they might not be processed.
 
-This page covers how to use the Grobid to parse articles for LangChain.
+This page covers how to use the Grobid to parse articles for AI Agents Force.
 
 ## Installation
 The grobid installation is described in details in https://grobid.readthedocs.io/en/latest/Install-Grobid/.
 However, it is probably easier and less troublesome to run grobid through a docker container,
 as documented [here](https://grobid.readthedocs.io/en/latest/Grobid-docker/).
 
-## Use Grobid with LangChain
+## Use Grobid with AI Agents Force
 
 Once grobid is installed and up and running (you can check by accessing it http://localhost:8070),
 you're ready to go.
 
 You can now use the GrobidParser to produce documents
 ```python
-from langchain_community.document_loaders.parsers import GrobidParser
-from langchain_community.document_loaders.generic import GenericLoader
+from aiagentsforce_community.document_loaders.parsers import GrobidParser
+from aiagentsforce_community.document_loaders.generic import GenericLoader
 
 #Produce chunks from article paragraphs
 loader = GenericLoader.from_filesystem(

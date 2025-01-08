@@ -2,9 +2,9 @@
 
 import time
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Clarifai
+from aiagentsforce_community.vectorstores import Clarifai
 
 
 def test_clarifai_with_from_texts() -> None:

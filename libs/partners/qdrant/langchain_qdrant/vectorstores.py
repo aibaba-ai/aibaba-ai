@@ -23,11 +23,11 @@ from typing import (
 )
 
 import numpy as np
-from langchain_core._api.deprecation import deprecated
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.runnables.config import run_in_executor
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core._api.deprecation import deprecated
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.runnables.config import run_in_executor
+from aiagentsforce_core.vectorstores import VectorStore
 from qdrant_client import AsyncQdrantClient, QdrantClient
 from qdrant_client.http import models
 from qdrant_client.local.async_qdrant_local import AsyncQdrantLocal

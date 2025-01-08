@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # How to migrate to LangGraph memory
 
-As of the v0.3 release of LangChain, we recommend that LangChain users take advantage of [LangGraph persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/) to incorporate `memory` into their LangChain application.
+As of the v0.3 release of AI Agents Force, we recommend that AI Agents Force users take advantage of [LangGraph persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/) to incorporate `memory` into their AI Agents Force application.
 
 * Users that rely on `RunnableWithMessageHistory` or `BaseChatMessageHistory` do **not** need to make any changes, but are encouraged to consider using LangGraph for more complex use cases.
-* Users that rely on deprecated memory abstractions from LangChain 0.0.x should follow this guide to upgrade to the new LangGraph persistence feature in LangChain 0.3.x.
+* Users that rely on deprecated memory abstractions from AI Agents Force 0.0.x should follow this guide to upgrade to the new LangGraph persistence feature in AI Agents Force 0.3.x.
 
 ## Why use LangGraph for memory?
 
@@ -18,16 +18,16 @@ The main advantages of persistence in LangGraph are:
   - Error recovery
   - Allowing human intervention in AI workflows
   - Exploring different conversation paths ("time travel")
-- Full compatibility with both traditional [language models](/docs/concepts/text_llms) and modern [chat models](/docs/concepts/chat_models). Early memory implementations in LangChain weren't designed for newer chat model APIs, causing issues with features like tool-calling. LangGraph memory can persist any custom state.
+- Full compatibility with both traditional [language models](/docs/concepts/text_llms) and modern [chat models](/docs/concepts/chat_models). Early memory implementations in AI Agents Force weren't designed for newer chat model APIs, causing issues with features like tool-calling. LangGraph memory can persist any custom state.
 - Highly customizable, allowing you to fully control how memory works and use different storage backends.
 
-## Evolution of memory in LangChain
+## Evolution of memory in AI Agents Force
 
-The concept of memory has evolved significantly in LangChain since its initial release.
+The concept of memory has evolved significantly in AI Agents Force since its initial release.
 
-### LangChain 0.0.x memory
+### AI Agents Force 0.0.x memory
 
-Broadly speaking, LangChain 0.0.x memory was used to handle three main use cases:
+Broadly speaking, AI Agents Force 0.0.x memory was used to handle three main use cases:
 
 | Use Case                             | Example                                                                                                                           |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -35,9 +35,9 @@ Broadly speaking, LangChain 0.0.x memory was used to handle three main use cases
 | Extraction of structured information | Extract structured information from the conversation history, such as a list of facts learned about the user.                     |
 | Composite memory implementations     | Combine multiple memory sources, e.g., a list of known facts about the user along with facts learned during a given conversation. |
 
-While the LangChain 0.0.x memory abstractions were useful, they were limited in their capabilities and not well suited for real-world conversational AI applications. These memory abstractions lacked built-in support for multi-user, multi-conversation scenarios, which are essential for practical conversational AI systems.
+While the AI Agents Force 0.0.x memory abstractions were useful, they were limited in their capabilities and not well suited for real-world conversational AI applications. These memory abstractions lacked built-in support for multi-user, multi-conversation scenarios, which are essential for practical conversational AI systems.
 
-Most of these implementations have been officially deprecated in LangChain 0.3.x in favor of LangGraph persistence.
+Most of these implementations have been officially deprecated in AI Agents Force 0.3.x in favor of LangGraph persistence.
 
 ### RunnableWithMessageHistory and BaseChatMessageHistory
 
@@ -45,12 +45,12 @@ Most of these implementations have been officially deprecated in LangChain 0.3.x
 Please see [How to use BaseChatMessageHistory with LangGraph](./chat_history), if you would like to use `BaseChatMessageHistory` (with or without `RunnableWithMessageHistory`) in LangGraph.
 :::
 
-As of LangChain v0.1, we started recommending that users rely primarily on [BaseChatMessageHistory](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.html#langchain_core.runnables.history.RunnableWithMessageHistory). `BaseChatMessageHistory` serves
+As of AI Agents Force v0.1, we started recommending that users rely primarily on [BaseChatMessageHistory](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.history.RunnableWithMessageHistory.html#aiagentsforce_core.runnables.history.RunnableWithMessageHistory). `BaseChatMessageHistory` serves
 as a simple persistence for storing and retrieving messages in a conversation.
 
-At that time, the only option for orchestrating LangChain chains was via [LCEL](https://python.langchain.com/docs/how_to/#langchain-expression-language-lcel). To incorporate memory with `LCEL`, users had to use the [RunnableWithMessageHistory](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.html#langchain_core.runnables.history.RunnableWithMessageHistory) interface. While sufficient for basic chat applications, many users found the API unintuitive and challenging to use.
+At that time, the only option for orchestrating AI Agents Force chains was via [LCEL](https://https://docs.aiagentsforce.com//how_to/#langchain-expression-language-lcel). To incorporate memory with `LCEL`, users had to use the [RunnableWithMessageHistory](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.history.RunnableWithMessageHistory.html#aiagentsforce_core.runnables.history.RunnableWithMessageHistory) interface. While sufficient for basic chat applications, many users found the API unintuitive and challenging to use.
 
-As of LangChain v0.3, we recommend that **new** code takes advantage of LangGraph for both orchestration and persistence:
+As of AI Agents Force v0.3, we recommend that **new** code takes advantage of LangGraph for both orchestration and persistence:
 
 - Orchestration: In LangGraph, users define [graphs](https://langchain-ai.github.io/langgraph/concepts/low_level/) that specify the flow of the application. This allows users to keep using `LCEL` within individual nodes when `LCEL` is needed, while making it easy to define complex orchestration logic that is more readable and maintainable.
 - Persistence: Users can rely on LangGraph's [persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/) to store and retrieve data. LangGraph persistence is extremely flexible and can support a much wider range of use cases than the `RunnableWithMessageHistory` interface.
@@ -65,7 +65,7 @@ If you have been using `RunnableWithMessageHistory` or `BaseChatMessageHistory`,
 
 These guides assume some familiarity with the following concepts:
 - [LangGraph](https://langchain-ai.github.io/langgraph/)
-- [v0.0.x Memory](https://python.langchain.com/v0.1/docs/modules/memory/)
+- [v0.0.x Memory](https://docs.aiagentsforce.com/v0.1/docs/modules/memory/)
 - [How to add persistence ("memory") to your graph](https://langchain-ai.github.io/langgraph/how-tos/persistence/)
 :::
 
@@ -114,7 +114,7 @@ them less widely used than the conversation history management abstractions.
 For this reason, there are no migration guides for these abstractions. If you're struggling to migrate an application
 that relies on these abstractions, please:
 1) Please review this [Long-term memory agent tutorial](long_term_memory_agent) which should provide a good starting point for how to extract structured information from the conversation history.
-2) If you're still struggling, please open an issue on the LangChain GitHub repository, explain your use case, and we'll try to provide more guidance on how to migrate these abstractions.
+2) If you're still struggling, please open an issue on the AI Agents Force GitHub repository, explain your use case, and we'll try to provide more guidance on how to migrate these abstractions.
 
 The general strategy for extracting structured information from the conversation history is to use a chat model with tool calling capabilities to extract structured information from the conversation history.
 The extracted information can then be saved into an appropriate data structure (e.g., a dictionary), and information from it can be retrieved and added into the prompt as needed.
@@ -143,10 +143,10 @@ Explore persistence with LangGraph:
 
 Add persistence with simple LCEL (favor langgraph for more complex use cases):
 
-* [How to add message history](https://python.langchain.com/docs/how_to/message_history/)
+* [How to add message history](https://https://docs.aiagentsforce.com//how_to/message_history/)
 
 Working with message history:
 
-* [How to trim messages](https://python.langchain.com/docs/how_to/trim_messages)
-* [How to filter messages](https://python.langchain.com/docs/how_to/filter_messages/)
-* [How to merge message runs](https://python.langchain.com/docs/how_to/merge_message_runs/)
+* [How to trim messages](https://https://docs.aiagentsforce.com//how_to/trim_messages)
+* [How to filter messages](https://https://docs.aiagentsforce.com//how_to/filter_messages/)
+* [How to merge message runs](https://https://docs.aiagentsforce.com//how_to/merge_message_runs/)

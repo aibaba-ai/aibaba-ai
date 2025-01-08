@@ -55,13 +55,13 @@ export default function NotFoundContent({className}) {
 
 const suggestedLinks = {
   "/docs/changelog/core/": {
-    "canonical": "https://github.com/langchain-ai/langchain/releases?q=tag:%22langchain-core%3D%3D0%22&expanded=true",
+    "canonical": "https://github.com/AI-Agents-Force-SDK/langchain/releases?q=tag:%22langchain-core%3D%3D0%22&expanded=true",
     "alternative": [
       "/v0.1/docs/changelog/core/"
     ]
   },
   "/docs/changelog/langchain/": {
-    "canonical": "https://github.com/langchain-ai/langchain/releases?q=tag:%22langchain%3D%3D0%22&expanded=true",
+    "canonical": "https://github.com/AI-Agents-Force-SDK/langchain/releases?q=tag:%22langchain%3D%3D0%22&expanded=true",
     "alternative": [
       "/v0.1/docs/changelog/langchain/"
     ]

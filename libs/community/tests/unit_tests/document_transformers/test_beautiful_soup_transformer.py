@@ -1,9 +1,9 @@
 """Unit tests for beautiful soup document transformer."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_transformers import BeautifulSoupTransformer
+from aiagentsforce_community.document_transformers import BeautifulSoupTransformer
 
 
 @pytest.mark.requires("bs4")

@@ -2,15 +2,15 @@ from typing import Any, Dict, List  # type: ignore[import-not-found]
 from unittest.mock import MagicMock, Mock, patch
 
 import pytest  # type: ignore[import-not-found]
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatResult
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.outputs import ChatResult
+from aiagentsforce_core.tools import BaseTool
 
 from langchain_huggingface.chat_models import (  # type: ignore[import]
     TGI_MESSAGE,
@@ -251,7 +251,7 @@ def test_bind_tools(chat_hugging_face: Any) -> None:
     with patch(
         "langchain_huggingface.chat_models.huggingface.convert_to_openai_tool",
         side_effect=lambda x: x,
-    ), patch("langchain_core.runnables.base.Runnable.bind") as mock_super_bind:
+    ), patch("aiagentsforce_core.runnables.base.Runnable.bind") as mock_super_bind:
         chat_hugging_face.bind_tools(tools, tool_choice="auto")
         mock_super_bind.assert_called_once()
         _, kwargs = mock_super_bind.call_args

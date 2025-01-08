@@ -1,9 +1,9 @@
 """Unit tests for markdownify document transformer."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_transformers import MarkdownifyTransformer
+from aiagentsforce_community.document_transformers import MarkdownifyTransformer
 
 
 @pytest.mark.requires("markdownify")

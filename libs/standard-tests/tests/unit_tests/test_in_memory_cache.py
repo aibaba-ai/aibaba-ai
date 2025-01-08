@@ -1,5 +1,5 @@
 import pytest
-from langchain_core.caches import InMemoryCache
+from aiagentsforce_core.caches import InMemoryCache
 
 from langchain_tests.integration_tests.cache import (
     AsyncCacheTestSuite,

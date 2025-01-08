@@ -1,9 +1,9 @@
 """Test USearch functionality."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.usearch import USearch
+from aiagentsforce_community.vectorstores.usearch import USearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

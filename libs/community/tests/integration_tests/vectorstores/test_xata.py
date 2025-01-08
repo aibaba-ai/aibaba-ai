@@ -2,15 +2,15 @@
 
 Before running this test, please create a Xata database by following
 the instructions from:
-https://python.langchain.com/docs/integrations/vectorstores/xata
+https://docs.aiagentsforce.com/docs/integrations/vectorstores/xata
 """
 
 import os
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings.openai import OpenAIEmbeddings
-from langchain_community.vectorstores.xata import XataVectorStore
+from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores.xata import XataVectorStore
 
 
 class TestXata:

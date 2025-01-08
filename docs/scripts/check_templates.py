@@ -79,7 +79,7 @@ def check_header_order(path: Path) -> None:
             "\n- "
             f"{notfound_headers}"
             "\n\n"
-            "Please see https://github.com/langchain-ai/langchain/issues/"
+            "Please see https://github.com/AI-Agents-Force-SDK/langchain/issues/"
             f"{issue_number} for instructions on how to correctly format a "
             f"{doc_dir} integration page."
         )

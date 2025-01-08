@@ -3,9 +3,9 @@
 import os
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import TiDBVectorStore
+from aiagentsforce_community.vectorstores import TiDBVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 TiDB_CONNECT_URL = os.environ.get(
@@ -277,7 +277,7 @@ def test_relevance_score() -> None:
     metadatas = [{"page": str(i)} for i in range(len(texts))]
     docsearch_consine = TiDBVectorStore.from_texts(
         texts=texts,
-        table_name="test_tidb_vectorstore_langchain_cosine",
+        table_name="test_tidb_vectorstore_aiagentforce_cosine",
         embedding=FakeEmbeddingsWithAdaDimension(),
         connection_string=TiDB_CONNECT_URL,
         metadatas=metadatas,
@@ -296,7 +296,7 @@ def test_relevance_score() -> None:
 
     docsearch_l2 = TiDBVectorStore.from_texts(
         texts=texts,
-        table_name="test_tidb_vectorstore_langchain_cosine",
+        table_name="test_tidb_vectorstore_aiagentforce_cosine",
         embedding=FakeEmbeddingsWithAdaDimension(),
         connection_string=TiDB_CONNECT_URL,
         metadatas=metadatas,
@@ -313,7 +313,7 @@ def test_relevance_score() -> None:
     try:
         _ = TiDBVectorStore.from_texts(
             texts=texts,
-            table_name="test_tidb_vectorstore_langchain_inner",
+            table_name="test_tidb_vectorstore_aiagentforce_inner",
             embedding=FakeEmbeddingsWithAdaDimension(),
             connection_string=TiDB_CONNECT_URL,
             metadatas=metadatas,

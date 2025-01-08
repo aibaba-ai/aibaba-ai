@@ -1,7 +1,7 @@
 import json
 
-from langchain_core.load import dump, loads
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.load import dump, loads
+from aiagentsforce_core.prompts import ChatPromptTemplate
 
 
 def test_image_prompt_template_deserializable() -> None:

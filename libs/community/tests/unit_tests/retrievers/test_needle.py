@@ -29,7 +29,7 @@ def test_needle_retriever_initialization() -> None:
     """
     Test that the NeedleRetriever is initialized correctly.
     """
-    from langchain_community.retrievers.needle import NeedleRetriever  # noqa: I001
+    from aiagentsforce_community.retrievers.needle import NeedleRetriever  # noqa: I001
 
     retriever = NeedleRetriever(
         needle_api_key="mock_api_key",
@@ -45,7 +45,7 @@ def test_get_relevant_documents(mocker: MockerFixture) -> None:
     """
     Test that the retriever correctly fetches documents.
     """
-    from langchain_community.retrievers.needle import NeedleRetriever  # noqa: I001
+    from aiagentsforce_community.retrievers.needle import NeedleRetriever  # noqa: I001
 
     # Patch the actual NeedleClient import path used in the NeedleRetriever
     mocker.patch("needle.v1.NeedleClient", new=MockNeedleClient)

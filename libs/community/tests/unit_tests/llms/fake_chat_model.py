@@ -2,13 +2,13 @@
 
 from typing import Any, Dict, List, Optional
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import SimpleChatModel
-from langchain_core.messages import AIMessage, BaseMessage
-from langchain_core.outputs import ChatGeneration, ChatResult
+from aiagentsforce_core.language_models.chat_models import SimpleChatModel
+from aiagentsforce_core.messages import AIMessage, BaseMessage
+from aiagentsforce_core.outputs import ChatGeneration, ChatResult
 
 
 class FakeChatModel(SimpleChatModel):

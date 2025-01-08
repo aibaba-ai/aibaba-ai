@@ -1,6 +1,6 @@
 import os
 
-from langchain_community.retrievers.you import YouRetriever
+from aiagentsforce_community.retrievers.you import YouRetriever
 
 
 class TestYouRetriever:

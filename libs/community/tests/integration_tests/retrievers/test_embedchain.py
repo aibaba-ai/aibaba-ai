@@ -5,9 +5,9 @@ from typing import Any
 from unittest.mock import patch
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers.embedchain import EmbedchainRetriever
+from aiagentsforce_community.retrievers.embedchain import EmbedchainRetriever
 
 try:
     from embedchain import Pipeline

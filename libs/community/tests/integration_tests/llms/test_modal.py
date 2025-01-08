@@ -1,6 +1,6 @@
 """Test Modal API wrapper."""
 
-from langchain_community.llms.modal import Modal
+from aiagentsforce_community.llms.modal import Modal
 
 
 def test_modal_call() -> None:

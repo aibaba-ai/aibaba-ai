@@ -20,7 +20,7 @@ For more information:
 
 ## Installation and Setup
 
-To use `Vectara` with LangChain no special installation steps are required. 
+To use `Vectara` with AI Agents Force no special installation steps are required. 
 To get started, [sign up](https://vectara.com/integrations/langchain) for a free Vectara trial,
 and follow the [quickstart](https://docs.vectara.com/docs/quickstart) guide to create a corpus and an API key. 
 Once you have these, you can provide them as arguments to the Vectara `vectorstore`, or you can set them as environment variables.
@@ -31,11 +31,11 @@ Once you have these, you can provide them as arguments to the Vectara `vectorsto
 
 ## Vectara as a Vector Store
 
-There exists a wrapper around the Vectara platform, allowing you to use it as a `vectorstore` in LangChain:
+There exists a wrapper around the Vectara platform, allowing you to use it as a `vectorstore` in AI Agents Force:
 
 To import this vectorstore:
 ```python
-from langchain_community.vectorstores import Vectara
+from aiagentsforce_community.vectorstores import Vectara
 ```
 
 To create an instance of the Vectara vectorstore:
@@ -58,7 +58,7 @@ vectara.add_texts(["to be or not to be", "that is the question"])
 ```
 
 Since Vectara supports file-upload in the platform, we also added the ability to upload files (PDF, TXT, HTML, PPT, DOC, etc) directly. 
-When using this method, each file is uploaded directly to the Vectara backend, processed and chunked optimally there, so you don't have to use the LangChain document loader or chunking mechanism.
+When using this method, each file is uploaded directly to the Vectara backend, processed and chunked optimally there, so you don't have to use the AI Agents Force document loader or chunking mechanism.
 
 As an example:
 
@@ -72,7 +72,7 @@ Of course you do not have to add any data, and instead just connect to an existi
 
 To query the Vectara vectorstore, you can use the `similarity_search` method (or `similarity_search_with_score`), which takes a query string and returns a list of results:
 ```python
-results = vectara.similarity_search_with_score("what is LangChain?")
+results = vectara.similarity_search_with_score("what is AI Agents Force?")
 ```
 The results are returned as a list of relevant documents, and a relevance score of each document.
 
@@ -88,7 +88,7 @@ In this case, we used the default retrieval parameters, but you can also specify
 
 To get results without the relevance score, you can simply use the 'similarity_search' method:
 ```python   
-results = vectara.similarity_search("what is LangChain?")
+results = vectara.similarity_search("what is AI Agents Force?")
 ```
 
 ## Vectara for Retrieval Augmented Generation (RAG)
@@ -123,7 +123,7 @@ rag = vectara.as_rag(config)
 rag.invoke(query_str)['answer']
 ```
 
-The `as_rag` method returns a `VectaraRAG` object, which behaves just like any LangChain Runnable, including the `invoke` or `stream` methods.
+The `as_rag` method returns a `VectaraRAG` object, which behaves just like any AI Agents Force Runnable, including the `invoke` or `stream` methods.
 
 ## Vectara Chat
 
@@ -140,9 +140,9 @@ bot.invoke(query_str)['answer']
 ```
 
 The main difference is the following: with `as_chat` Vectara internally tracks the chat history and conditions each response on the full chat history.
-There is no need to keep that history locally to LangChain, as Vectara will manage it internally.
+There is no need to keep that history locally to AI Agents Force, as Vectara will manage it internally.
 
-## Vectara as a LangChain retriever only
+## Vectara as a AI Agents Force retriever only
 
 If you want to use Vectara as a retriever only, you can use the `as_retriever` method, which returns a `VectaraRetriever` object.
 ```python
@@ -174,7 +174,7 @@ print(f"Vectara FCS = {resp['fcs']}")
 
 ## Example Notebooks
 
-For a more detailed examples of using Vectara with LangChain, see the following example notebooks:
+For a more detailed examples of using Vectara with AI Agents Force, see the following example notebooks:
 * [this notebook](/docs/integrations/vectorstores/vectara) shows how to use Vectara: with full RAG or just as a retriever.
 * [this notebook](/docs/integrations/retrievers/self_query/vectara_self_query) shows the self-query capability with Vectara.
 * [this notebook](/docs/integrations/providers/vectara/vectara_chat) shows how to build a chatbot with Langchain and Vectara

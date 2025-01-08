@@ -12,19 +12,19 @@ from typing import (
 )
 
 import anthropic
-from langchain_core._api.deprecation import deprecated
-from langchain_core.callbacks import (
+from aiagentsforce_core._api.deprecation import deprecated
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import BaseLanguageModel, LangSmithParams
-from langchain_core.language_models.llms import LLM
-from langchain_core.outputs import GenerationChunk
-from langchain_core.prompt_values import PromptValue
-from langchain_core.utils import (
+from aiagentsforce_core.language_models import BaseLanguageModel, LangSmithParams
+from aiagentsforce_core.language_models.llms import LLM
+from aiagentsforce_core.outputs import GenerationChunk
+from aiagentsforce_core.prompt_values import PromptValue
+from aiagentsforce_core.utils import (
     get_pydantic_field_names,
 )
-from langchain_core.utils.utils import (
+from aiagentsforce_core.utils.utils import (
     _build_model_kwargs,
     from_env,
     secret_from_env,

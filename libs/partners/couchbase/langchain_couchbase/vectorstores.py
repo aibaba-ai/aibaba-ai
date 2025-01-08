@@ -18,9 +18,9 @@ from couchbase.cluster import Cluster
 from couchbase.exceptions import DocumentExistsException, DocumentNotFoundException
 from couchbase.options import SearchOptions
 from couchbase.vector_search import VectorQuery, VectorSearch
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.vectorstores import VectorStore
 
 
 class CouchbaseVectorStore(VectorStore):
@@ -90,7 +90,7 @@ class CouchbaseVectorStore(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from langchain_core.documents import Document
+            from aiagentsforce_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

@@ -4,7 +4,7 @@ pagination_prev: contributing/how_to/integrations/package
 ---
 # How to add standard tests to an integration
 
-When creating either a custom class for yourself or to publish in a LangChain integration, it is important to add standard tests to ensure it works as expected. This guide will show you how to add standard tests to each integration type.
+When creating either a custom class for yourself or to publish in a AI Agents Force integration, it is important to add standard tests to ensure it works as expected. This guide will show you how to add standard tests to each integration type.
 
 ## Setup
 
@@ -88,8 +88,8 @@ Additionally, chat model standard tests test a range of behaviors, from the most
 Tests for "optional" capabilities are controlled via a set of properties that can be overridden on the test model subclass.
 
 You can see the **entire list of configurable capabilities** in the API references for
-[unit tests](https://python.langchain.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.chat_models.ChatModelUnitTests.html)
-and [integration tests](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html).
+[unit tests](https://docs.aiagentsforce.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.chat_models.ChatModelUnitTests.html)
+and [integration tests](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html).
 
 For example, to enable integration tests for image inputs, we can implement
 
@@ -105,8 +105,8 @@ on the integration test class.
 
 Details on what tests are run, how each test can be skipped, and troubleshooting tips for each test can be found in the API references. See details:
 
-- [Unit tests API reference](https://python.langchain.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.chat_models.ChatModelUnitTests.html)
-- [Integration tests API reference](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html)
+- [Unit tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.chat_models.ChatModelUnitTests.html)
+- [Integration tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html)
 
 :::
 
@@ -164,14 +164,14 @@ empty vector store and tearing down the vector store after the test run ends.
 | --- | --- |
 | `vectorstore` | A generator that yields an empty vector store for unit tests. The vector store is cleaned up after the test run ends. |
 
-For example, below is the `VectorStoreIntegrationTests` class for the [Chroma](https://python.langchain.com/docs/integrations/vectorstores/chroma/)
+For example, below is the `VectorStoreIntegrationTests` class for the [Chroma](https://https://docs.aiagentsforce.com//integrations/vectorstores/chroma/)
 integration:
 
 ```python
 from typing import Generator
 
 import pytest
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.vectorstores import VectorStore
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
 from langchain_chroma import Chroma
@@ -192,7 +192,7 @@ class TestChromaStandard(VectorStoreIntegrationTests):
 
 Note that before the initial `yield`, we instantiate the vector store with an
 [embeddings](/docs/concepts/embedding_models/) object. This is a pre-defined
-["fake" embeddings model](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.html#langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.get_embeddings)
+["fake" embeddings model](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.html#langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.get_embeddings)
 that will generate short, arbitrary vectors for documents. You can use a different
 embeddings object if desired.
 
@@ -202,7 +202,7 @@ bring the vector store to a clean state. This logic is executed in between each 
 
 :::note
 
-Details on what tests are run and troubleshooting tips for each test can be found in the [API reference](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.html).
+Details on what tests are run and troubleshooting tips for each test can be found in the [API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.vectorstores.VectorStoreIntegrationTests.html).
 
 :::
 
@@ -221,8 +221,8 @@ To configure standard tests for an embeddings model, we subclass `EmbeddingsUnit
 
 Details on what tests are run, how each test can be skipped, and troubleshooting tips for each test can be found in the API references. See details:
 
-- [Unit tests API reference](https://python.langchain.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.embeddings.EmbeddingsUnitTests.html)
-- [Integration tests API reference](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.embeddings.EmbeddingsIntegrationTests.html)
+- [Unit tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.embeddings.EmbeddingsUnitTests.html)
+- [Integration tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.embeddings.EmbeddingsIntegrationTests.html)
 
 :::
 
@@ -292,8 +292,8 @@ override `tool_constructor_params`.
 
 Details on what tests are run, how each test can be skipped, and troubleshooting tips for each test can be found in the API references. See details:
 
-- [Unit tests API reference](https://python.langchain.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.tools.ToolsUnitTests.html)
-- [Integration tests API reference](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.tools.ToolsIntegrationTests.html)
+- [Unit tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/unit_tests/langchain_tests.unit_tests.tools.ToolsUnitTests.html)
+- [Integration tests API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.tools.ToolsIntegrationTests.html)
 
 :::
 
@@ -334,7 +334,7 @@ To configure standard tests for a retriever, we subclass `RetrieversUnitTests` a
 
 :::note
 
-Details on what tests are run and troubleshooting tips for each test can be found in the [API reference](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.retrievers.RetrieversIntegrationTests.html).
+Details on what tests are run and troubleshooting tips for each test can be found in the [API reference](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.retrievers.RetrieversIntegrationTests.html).
 
 :::
 
@@ -387,7 +387,7 @@ pytest --asyncio-mode=auto tests/integration_tests
 
 For a full list of the standard test suites that are available, as well as
 information on which tests are included and how to troubleshoot common issues,
-see the [Standard Tests API Reference](https://python.langchain.com/api_reference/standard_tests/index.html).
+see the [Standard Tests API Reference](https://docs.aiagentsforce.com/api_reference/standard_tests/index.html).
 
 You can see troubleshooting guides under the individual test suites listed in that API Reference. For example,
-[here is the guide for `ChatModelIntegrationTests.test_usage_metadata`](https://python.langchain.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html#langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.test_usage_metadata).
+[here is the guide for `ChatModelIntegrationTests.test_usage_metadata`](https://docs.aiagentsforce.com/api_reference/standard_tests/integration_tests/langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.html#langchain_tests.integration_tests.chat_models.ChatModelIntegrationTests.test_usage_metadata).

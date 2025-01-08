@@ -1,7 +1,7 @@
 import time
 from itertools import cycle
 
-from langchain_core.language_models import GenericFakeChatModel
+from aiagentsforce_core.language_models import GenericFakeChatModel
 
 
 def test_benchmark_model() -> None:

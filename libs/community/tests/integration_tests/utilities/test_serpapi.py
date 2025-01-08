@@ -1,6 +1,6 @@
 """Integration test for SerpAPI."""
 
-from langchain_community.utilities import SerpAPIWrapper
+from aiagentsforce_community.utilities import SerpAPIWrapper
 
 
 def test_call() -> None:

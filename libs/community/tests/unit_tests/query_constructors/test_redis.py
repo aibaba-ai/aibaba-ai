@@ -1,7 +1,7 @@
 from typing import Dict, Tuple
 
 import pytest
-from langchain_core.structured_query import (
+from aiagentsforce_core.structured_query import (
     Comparator,
     Comparison,
     Operation,
@@ -9,14 +9,14 @@ from langchain_core.structured_query import (
     StructuredQuery,
 )
 
-from langchain_community.query_constructors.redis import RedisTranslator
-from langchain_community.vectorstores.redis.filters import (
+from aiagentsforce_community.query_constructors.redis import RedisTranslator
+from aiagentsforce_community.vectorstores.redis.filters import (
     RedisFilterExpression,
     RedisNum,
     RedisTag,
     RedisText,
 )
-from langchain_community.vectorstores.redis.schema import (
+from aiagentsforce_community.vectorstores.redis.schema import (
     NumericFieldSchema,
     RedisModel,
     TagFieldSchema,

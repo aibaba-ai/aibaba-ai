@@ -6,7 +6,7 @@ import re
 import platform
 import pytest
 
-from langchain_community.llms.outlines import Outlines
+from aiagentsforce_community.llms.outlines import Outlines
 from pydantic import BaseModel
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
@@ -93,7 +93,7 @@ def test_outlines_json(llm: Outlines) -> None:
         name: str
 
     llm.json_schema = Person
-    output = llm.invoke("Q: Who is the author of LangChain?\n\nA: ")
+    output = llm.invoke("Q: Who is the author of AI Agents Force?\n\nA: ")
     person = Person.model_validate_json(output)
     assert isinstance(person, Person)
 

@@ -1,4 +1,4 @@
-from langchain_community.docstore import __all__, _module_lookup
+from aiagentsforce_community.docstore import __all__, _module_lookup
 
 EXPECTED_ALL = ["DocstoreFn", "InMemoryDocstore", "Wikipedia"]
 

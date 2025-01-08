@@ -114,7 +114,7 @@ You can find more config examples [here](https://docs.portkey.ai/docs/api-refere
 
 ## **Tracing Chains & Agents**
 
-Portkey's Langchain integration gives you full visibility into the running of an agent. Let's take an example of a [popular agentic workflow](https://python.langchain.com/docs/use_cases/tool_use/quickstart/#agents).
+Portkey's Langchain integration gives you full visibility into the running of an agent. Let's take an example of a [popular agentic workflow](https://https://docs.aiagentsforce.com//use_cases/tool_use/quickstart/#agents).
 
 We only need to modify the `ChatOpenAI` class to use the AI Gateway as above.
 
@@ -122,7 +122,7 @@ We only need to modify the `ChatOpenAI` class to use the AI Gateway as above.
 from langchain import hub  
 from langchain.agents import AgentExecutor, create_openai_tools_agent  
 from langchain_openai import ChatOpenAI
-from langchain_core.tools import tool
+from aiagentsforce_core.tools import tool
 from portkey_ai import PORTKEY_GATEWAY_URL, createHeaders
  
 prompt = hub.pull("hwchase17/openai-tools-agent")

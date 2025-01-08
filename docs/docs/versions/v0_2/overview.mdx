@@ -4,32 +4,32 @@ sidebar_position: 0
 
 # Overview
 
-## What’s new in LangChain?
+## What’s new in AI Agents Force?
 
 The following features have been added during the development of 0.1.x:
 
-- Better streaming support via the [Event Streaming API](https://python.langchain.com/docs/expression_language/streaming/#using-stream-events).
+- Better streaming support via the [Event Streaming API](https://https://docs.aiagentsforce.com//expression_language/streaming/#using-stream-events).
 - [Standardized tool calling support](https://blog.langchain.dev/tool-calling-with-langchain/)
-- A standardized interface for [structuring output](https://github.com/langchain-ai/langchain/discussions/18154)
-- [@chain decorator](https://python.langchain.com/docs/expression_language/how_to/decorator/) to more easily create **RunnableLambdas**
-- https://python.langchain.com/docs/expression_language/how_to/inspect/
+- A standardized interface for [structuring output](https://github.com/AI-Agents-Force-SDK/langchain/discussions/18154)
+- [@chain decorator](https://https://docs.aiagentsforce.com//expression_language/how_to/decorator/) to more easily create **RunnableLambdas**
+- https://https://docs.aiagentsforce.com//expression_language/how_to/inspect/
 - In Python, better async support for many core abstractions (thank you [@cbornet](https://github.com/cbornet)!!)
 - Include response metadata in `AIMessage` to make it easy to access raw output from the underlying models
-- Tooling to visualize [your runnables](https://python.langchain.com/docs/expression_language/how_to/inspect/) or [your langgraph app](https://github.com/langchain-ai/langgraph/blob/main/examples/visualization.ipynb)
+- Tooling to visualize [your runnables](https://https://docs.aiagentsforce.com//expression_language/how_to/inspect/) or [your langgraph app](https://github.com/AI-Agents-Force-SDK/langgraph/blob/main/examples/visualization.ipynb)
 - Interoperability of chat message histories across most providers
-- [Over 20+ partner packages in python](https://python.langchain.com/docs/integrations/providers/) for popular integrations
+- [Over 20+ partner packages in python](https://https://docs.aiagentsforce.com//integrations/providers/) for popular integrations
 
 
-## What’s coming to LangChain?
+## What’s coming to AI Agents Force?
 
 - We’ve been working hard on [langgraph](https://langchain-ai.github.io/langgraph/). We will be building more capabilities on top of it and focusing on making it the go-to framework for agent architectures.
 - Vectorstores V2! We’ll be revisiting our vectorstores abstractions to help improve usability and reliability.
 - Better documentation and versioned docs!
-- We’re planning a breaking release (0.3.0) sometime between July-September to [upgrade to full support of Pydantic 2](https://github.com/langchain-ai/langchain/discussions/19339), and will drop support for Pydantic 1 (including objects originating from the `v1` namespace of Pydantic 2).
+- We’re planning a breaking release (0.3.0) sometime between July-September to [upgrade to full support of Pydantic 2](https://github.com/AI-Agents-Force-SDK/langchain/discussions/19339), and will drop support for Pydantic 1 (including objects originating from the `v1` namespace of Pydantic 2).
 
 ## What changed?
 
-Due to the rapidly evolving field, LangChain has also evolved rapidly.
+Due to the rapidly evolving field, AI Agents Force has also evolved rapidly.
 
 This document serves to outline at a high level what has changed and why.
 
@@ -39,7 +39,7 @@ This document serves to outline at a high level what has changed and why.
 
 - This release completes the work that we started with release 0.1.0 by removing the dependency of `langchain` on `langchain-community`.
 - `langchain` package no longer requires `langchain-community` . Instead `langchain-community` will now depend on `langchain-core` and `langchain` .
-- User code that still relies on deprecated imports from `langchain` will continue to work as long `langchain_community` is installed. These imports will start raising errors in release 0.4.x.
+- User code that still relies on deprecated imports from `langchain` will continue to work as long `aiagentsforce_community` is installed. These imports will start raising errors in release 0.4.x.
 
 **As of 0.1.0:**
 
@@ -47,18 +47,18 @@ This document serves to outline at a high level what has changed and why.
 
 ### Ecosystem organization
 
-By the release of 0.1.0, LangChain had grown to a large ecosystem with many integrations and a large community.
+By the release of 0.1.0, AI Agents Force had grown to a large ecosystem with many integrations and a large community.
 
-To improve the usability of LangChain in production, we split the single `langchain` package into multiple packages. This allowed us to create a good foundation architecture for the LangChain ecosystem and improve the usability of `langchain` in production.
+To improve the usability of AI Agents Force in production, we split the single `langchain` package into multiple packages. This allowed us to create a good foundation architecture for the AI Agents Force ecosystem and improve the usability of `langchain` in production.
 
 Here is the high level break down of the Eco-system:
 
-- **langchain-core**:  contains core abstractions involving LangChain Runnables, tooling for observability, and base implementations of important abstractions (e.g., Chat Models).
+- **langchain-core**:  contains core abstractions involving AI Agents Force Runnables, tooling for observability, and base implementations of important abstractions (e.g., Chat Models).
 - **langchain:** contains generic code that is built using interfaces defined in `langchain-core`. This package is for code that generalizes well across different implementations of specific interfaces. For example, `create_tool_calling_agent` works across chat models that support [tool calling capabilities](https://blog.langchain.dev/tool-calling-with-langchain/).
-- **langchain-community**: community maintained 3rd party integrations. Contains integrations based on interfaces defined in **langchain-core**. Maintained by the LangChain community.
+- **langchain-community**: community maintained 3rd party integrations. Contains integrations based on interfaces defined in **langchain-core**. Maintained by the AI Agents Force community.
 - **Partner Packages (e.g., langchain-[partner])**: Partner packages are packages dedicated to especially popular integrations (e.g., `langchain-openai`, `langchain-anthropic` etc.). The dedicated packages generally benefit from better reliability and support.
 - `langgraph`: Build robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph.
-- `langserve`: Deploy LangChain chains as REST APIs.
+- `aiagentsforceapi`: Deploy AI Agents Force chains as REST APIs.
 
 
 In the 0.1.0 release, `langchain-community` was retained as required a dependency of `langchain`.
@@ -97,6 +97,6 @@ There is also a third less tangible benefit which is that being integration-agno
 
 `langchain-community` is intended to have all integration-specific components that are not yet being maintained in separate `langchain-{partner}` packages. Today this is still the majority of integrations and a lot of code. This code is primarily contributed by the community, while `langchain` is largely written by core maintainers. All of these integrations use optional dependencies and conditional imports, which prevents dependency bloat and conflicts but means compatible dependency versions are not made explicit. Given the volume of integrations in `langchain-community` and the speed at which integrations change, it’s very hard to follow semver versioning, and we currently don’t.
 
-All of which is to say that there’s no large benefits to `langchain` depending on `langchain-community` and some obvious downsides: the functionality in `langchain` should be integration agnostic anyways, `langchain-community` can’t be properly versioned, and depending on `langchain-community` increases the [vulnerability surface](https://github.com/langchain-ai/langchain/discussions/19083) of `langchain`.
+All of which is to say that there’s no large benefits to `langchain` depending on `langchain-community` and some obvious downsides: the functionality in `langchain` should be integration agnostic anyways, `langchain-community` can’t be properly versioned, and depending on `langchain-community` increases the [vulnerability surface](https://github.com/AI-Agents-Force-SDK/langchain/discussions/19083) of `langchain`.
 
 For more context about the reason for the organization please see our blog: https://blog.langchain.dev/langchain-v0-1-0/

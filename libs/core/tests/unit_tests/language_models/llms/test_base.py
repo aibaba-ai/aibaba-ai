@@ -3,14 +3,14 @@ from typing import Any, Optional
 
 import pytest
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import BaseLLM, FakeListLLM, FakeStreamingListLLM
-from langchain_core.language_models.fake import FakeListLLMError
-from langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from langchain_core.tracers.context import collect_runs
+from aiagentsforce_core.language_models import BaseLLM, FakeListLLM, FakeStreamingListLLM
+from aiagentsforce_core.language_models.fake import FakeListLLMError
+from aiagentsforce_core.outputs import Generation, GenerationChunk, LLMResult
+from aiagentsforce_core.tracers.context import collect_runs
 from tests.unit_tests.fake.callbacks import (
     BaseFakeCallbackHandler,
     FakeAsyncCallbackHandler,

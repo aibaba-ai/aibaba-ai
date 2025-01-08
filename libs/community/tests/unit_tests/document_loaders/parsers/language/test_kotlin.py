@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from langchain_community.document_loaders.parsers.language.kotlin import KotlinSegmenter
+from aiagentsforce_community.document_loaders.parsers.language.kotlin import KotlinSegmenter
 
 
 @pytest.mark.requires("tree_sitter", "tree_sitter_languages")

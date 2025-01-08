@@ -47,8 +47,8 @@ mlflow gateway start --config-path /path/to/config.yaml
 
 ## Example provided by `MLflow`
 
->The `mlflow.langchain` module provides an API for logging and loading `LangChain` models.
-> This module exports multivariate LangChain models in the langchain flavor and univariate LangChain
+>The `mlflow.langchain` module provides an API for logging and loading `AI Agents Force` models.
+> This module exports multivariate AI Agents Force models in the langchain flavor and univariate AI Agents Force
 > models in the pyfunc flavor.
 
 See the [API documentation and examples](https://www.mlflow.org/docs/latest/llms/langchain/index.html) for more information.
@@ -58,7 +58,7 @@ See the [API documentation and examples](https://www.mlflow.org/docs/latest/llms
 ```python
 import mlflow
 from langchain.chains import LLMChain, PromptTemplate
-from langchain_community.llms import Mlflow
+from aiagentsforce_community.llms import Mlflow
 
 llm = Mlflow(
     target_uri="http://127.0.0.1:5000",
@@ -85,7 +85,7 @@ print(model.predict([{"adjective": "funny"}]))
 ## Embeddings Example
 
 ```python
-from langchain_community.embeddings import MlflowEmbeddings
+from aiagentsforce_community.embeddings import MlflowEmbeddings
 
 embeddings = MlflowEmbeddings(
     target_uri="http://127.0.0.1:5000",
@@ -99,8 +99,8 @@ print(embeddings.embed_documents(["hello"]))
 ## Chat Example
 
 ```python
-from langchain_community.chat_models import ChatMlflow
-from langchain_core.messages import HumanMessage, SystemMessage
+from aiagentsforce_community.chat_models import ChatMlflow
+from aiagentsforce_core.messages import HumanMessage, SystemMessage
 
 chat = ChatMlflow(
     target_uri="http://127.0.0.1:5000",

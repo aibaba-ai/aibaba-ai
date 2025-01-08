@@ -79,21 +79,21 @@ organizing the results by a similarity Score.
 
 `ZepCloudChatMessageHistory` is compatible with `RunnableWithMessageHistory`.
 ```python
-from langchain_community.chat_message_histories import ZepCloudChatMessageHistory
+from aiagentsforce_community.chat_message_histories import ZepCloudChatMessageHistory
 ```
 
 See a [Perpetual Memory Example here](/docs/integrations/memory/zep_cloud_chat_message_history).
 
 You can use `ZepCloudMemory` together with agents that support Memory.
 ```python
-from langchain_community.memory import ZepCloudMemory
+from aiagentsforce_community.memory import ZepCloudMemory
 ```
 
 See a [Memory RAG Example here](/docs/integrations/memory/zep_memory_cloud).
 
 ## Retriever
 
-Zep's Memory Retriever is a LangChain Retriever that enables you to retrieve messages from a Zep Session and use them to construct your prompt.
+Zep's Memory Retriever is a AI Agents Force Retriever that enables you to retrieve messages from a Zep Session and use them to construct your prompt.
 
 The Retriever supports searching over both individual messages and summaries of conversations. The latter is useful for providing rich, but succinct context to the LLM as to relevant past conversations.
 
@@ -102,7 +102,7 @@ Zep's Memory Retriever supports both similarity search and [Maximum Marginal Rel
 See a [usage example](/docs/integrations/retrievers/zep_cloud_memorystore).
 
 ```python
-from langchain_community.retrievers import ZepCloudRetriever
+from aiagentsforce_community.retrievers import ZepCloudRetriever
 ```
 
 ## Vector store
@@ -114,7 +114,7 @@ Zep supports both similarity search and [Maximum Marginal Relevance (MMR) rerank
 MMR search is useful for ensuring that the retrieved documents are diverse and not too similar to each other.
 
 ```python
-from langchain_community.vectorstores import ZepCloudVectorStore
+from aiagentsforce_community.vectorstores import ZepCloudVectorStore
 ```
 
 See a [usage example](/docs/integrations/vectorstores/zep_cloud).

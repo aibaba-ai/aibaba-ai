@@ -3,9 +3,9 @@
 from typing import List
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import PubMedLoader
+from aiagentsforce_community.document_loaders import PubMedLoader
 
 xmltodict = pytest.importorskip("xmltodict")
 

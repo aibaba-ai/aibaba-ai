@@ -6,7 +6,7 @@ import pytest
 from pydantic import SecretStr
 from pytest import CaptureFixture, FixtureRequest
 
-from langchain_community.chat_models.azureml_endpoint import AzureMLChatOnlineEndpoint
+from aiagentsforce_community.chat_models.azureml_endpoint import AzureMLChatOnlineEndpoint
 
 
 @pytest.fixture(scope="class")

@@ -9,14 +9,14 @@ from urllib.request import HTTPError
 import pytest
 from pydantic import ValidationError
 
-from langchain_community.llms.azureml_endpoint import (
+from aiagentsforce_community.llms.azureml_endpoint import (
     AzureMLOnlineEndpoint,
     ContentFormatterBase,
     DollyContentFormatter,
     HFContentFormatter,
     OSSContentFormatter,
 )
-from langchain_community.llms.loading import load_llm
+from aiagentsforce_community.llms.loading import load_llm
 
 
 def test_gpt2_call() -> None:

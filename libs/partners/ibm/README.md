@@ -1,3 +1,3 @@
 This package has moved!
 
-https://github.com/langchain-ai/langchain-ibm/tree/main/libs/ibm
+https://github.com/AI-Agents-Force-SDK/langchain-ibm/tree/main/libs/ibm

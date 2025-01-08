@@ -15,13 +15,13 @@ from typing import (
     cast,
 )
 
-from langchain_core.callbacks.manager import (
+from aiagentsforce_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import LanguageModelInput
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import (
+from aiagentsforce_core.language_models import LanguageModelInput
+from aiagentsforce_core.language_models.chat_models import BaseChatModel
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -29,10 +29,10 @@ from langchain_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
-from langchain_core.runnables import Runnable
-from langchain_core.tools import BaseTool
-from langchain_core.utils.function_calling import convert_to_openai_tool
+from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aiagentsforce_core.runnables import Runnable
+from aiagentsforce_core.tools import BaseTool
+from aiagentsforce_core.utils.function_calling import convert_to_openai_tool
 from pydantic import model_validator
 from typing_extensions import Self
 
@@ -117,7 +117,7 @@ def _convert_TGI_message_to_LC_message(
 
 def _is_huggingface_hub(llm: Any) -> bool:
     try:
-        from langchain_community.llms.huggingface_hub import (  # type: ignore[import-not-found]
+        from aiagentsforce_community.llms.huggingface_hub import (  # type: ignore[import-not-found]
             HuggingFaceHub,
         )
 
@@ -129,7 +129,7 @@ def _is_huggingface_hub(llm: Any) -> bool:
 
 def _is_huggingface_textgen_inference(llm: Any) -> bool:
     try:
-        from langchain_community.llms.huggingface_text_gen_inference import (  # type: ignore[import-not-found]
+        from aiagentsforce_community.llms.huggingface_text_gen_inference import (  # type: ignore[import-not-found]
             HuggingFaceTextGenInference,
         )
 
@@ -414,7 +414,7 @@ class ChatHuggingFace(BaseChatModel):
         )
 
     def _to_chatml_format(self, message: BaseMessage) -> dict:
-        """Convert LangChain message to ChatML format."""
+        """Convert AI Agents Force message to ChatML format."""
 
         if isinstance(message, SystemMessage):
             role = "system"
@@ -486,7 +486,7 @@ class ChatHuggingFace(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call.
                 Must be the name of the single provided function or
                 "auto" to automatically determine which function to call

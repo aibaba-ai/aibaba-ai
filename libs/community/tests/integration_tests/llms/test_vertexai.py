@@ -10,9 +10,9 @@ import os
 from typing import Optional
 
 import pytest
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms import VertexAI, VertexAIModelGarden
+from aiagentsforce_community.llms import VertexAI, VertexAIModelGarden
 
 model_names_to_test = ["text-bison@001", "gemini-pro"]
 model_names_to_test_with_default = [None] + model_names_to_test

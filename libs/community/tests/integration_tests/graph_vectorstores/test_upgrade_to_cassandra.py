@@ -11,12 +11,12 @@ from contextlib import contextmanager
 from typing import Any, Generator, Iterable, Optional, Tuple, Union
 
 import pytest
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
 
-from langchain_community.graph_vectorstores import CassandraGraphVectorStore
-from langchain_community.utilities.cassandra import SetupMode
-from langchain_community.vectorstores import Cassandra
+from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+from aiagentsforce_community.utilities.cassandra import SetupMode
+from aiagentsforce_community.vectorstores import Cassandra
 
 TEST_KEYSPACE = "graph_test_keyspace"
 

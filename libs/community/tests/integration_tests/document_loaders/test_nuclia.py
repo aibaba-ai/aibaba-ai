@@ -3,8 +3,8 @@ import os
 from typing import Any
 from unittest import mock
 
-from langchain_community.document_loaders.nuclia import NucliaLoader
-from langchain_community.tools.nuclia.tool import NucliaUnderstandingAPI
+from aiagentsforce_community.document_loaders.nuclia import NucliaLoader
+from aiagentsforce_community.tools.nuclia.tool import NucliaUnderstandingAPI
 
 
 def fakerun(**args: Any) -> Any:
@@ -32,7 +32,7 @@ def fakerun(**args: Any) -> Any:
 @mock.patch.dict(os.environ, {"NUCLIA_NUA_KEY": "_a_key_"})
 def test_nuclia_loader() -> None:
     with mock.patch(
-        "langchain_community.tools.nuclia.tool.NucliaUnderstandingAPI._run",
+        "aiagentsforce_community.tools.nuclia.tool.NucliaUnderstandingAPI._run",
         new_callable=fakerun,
     ):
         nua = NucliaUnderstandingAPI(enable_ml=False)

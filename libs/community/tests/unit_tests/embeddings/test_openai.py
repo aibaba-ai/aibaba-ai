@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_community.embeddings.openai import OpenAIEmbeddings
+from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
 
 
 @pytest.mark.requires("openai")

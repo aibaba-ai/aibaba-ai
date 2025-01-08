@@ -5,9 +5,9 @@ from typing import Iterator
 
 import pytest
 
-from langchain_community.document_loaders.base import BaseBlobParser
-from langchain_community.document_loaders.blob_loaders import Blob
-from langchain_community.document_loaders.parsers import VsdxParser
+from aiagentsforce_community.document_loaders.base import BaseBlobParser
+from aiagentsforce_community.document_loaders.blob_loaders import Blob
+from aiagentsforce_community.document_loaders.parsers import VsdxParser
 
 _THIS_DIR = Path(__file__).parents[3]
 

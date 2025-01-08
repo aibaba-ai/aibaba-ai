@@ -3,7 +3,7 @@ import unittest
 from collections import namedtuple
 from typing import Any, Dict, List
 
-from langchain_community.graphs.age_graph import AGEGraph
+from aiagentsforce_community.graphs.age_graph import AGEGraph
 
 
 class TestAGEGraph(unittest.TestCase):

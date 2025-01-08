@@ -5,11 +5,11 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 from uuid import uuid4
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest_mock import MockerFixture
 
-from langchain_community.vectorstores import ZepVectorStore
-from langchain_community.vectorstores.zep import CollectionConfig
+from aiagentsforce_community.vectorstores import ZepVectorStore
+from aiagentsforce_community.vectorstores.zep import CollectionConfig
 
 if TYPE_CHECKING:
     from zep_python.document import Document as ZepDocument

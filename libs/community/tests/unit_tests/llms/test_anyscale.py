@@ -4,7 +4,7 @@ import pytest
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.llms.anyscale import Anyscale
+from aiagentsforce_community.llms.anyscale import Anyscale
 
 
 @pytest.mark.requires("openai")

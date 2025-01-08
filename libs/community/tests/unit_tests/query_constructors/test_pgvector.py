@@ -1,7 +1,7 @@
 from typing import Dict, Tuple
 
 import pytest as pytest
-from langchain_core.structured_query import (
+from aiagentsforce_core.structured_query import (
     Comparator,
     Comparison,
     Operation,
@@ -9,7 +9,7 @@ from langchain_core.structured_query import (
     StructuredQuery,
 )
 
-from langchain_community.query_constructors.pgvector import PGVectorTranslator
+from aiagentsforce_community.query_constructors.pgvector import PGVectorTranslator
 
 DEFAULT_TRANSLATOR = PGVectorTranslator()
 

@@ -5,13 +5,13 @@ from typing import Dict, Generator, List, Union
 
 import pytest
 from _pytest.fixtures import FixtureRequest
-from langchain_core.caches import InMemoryCache
-from langchain_core.language_models import FakeListChatModel, FakeListLLM
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.load import dumps
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration
+from aiagentsforce_core.caches import InMemoryCache
+from aiagentsforce_core.language_models import FakeListChatModel, FakeListLLM
+from aiagentsforce_core.language_models.chat_models import BaseChatModel
+from aiagentsforce_core.language_models.llms import BaseLLM
+from aiagentsforce_core.load import dumps
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration
 from sqlalchemy import Column, Integer, Sequence, String, create_engine
 from sqlalchemy.orm import Session
 
@@ -21,9 +21,9 @@ except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
 
 from langchain.globals import get_llm_cache, set_llm_cache
-from langchain_core.outputs import Generation, LLMResult
+from aiagentsforce_core.outputs import Generation, LLMResult
 
-from langchain_community.cache import SQLAlchemyCache
+from aiagentsforce_community.cache import SQLAlchemyCache
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 
@@ -235,7 +235,7 @@ def test_sql_alchemy_cache() -> None:
 
     engine = create_engine("sqlite://")
 
-    from langchain_community.cache import SQLAlchemyCache
+    from aiagentsforce_community.cache import SQLAlchemyCache
 
     set_llm_cache(SQLAlchemyCache(engine, FulltextLLMCache))
     llm = FakeLLM()

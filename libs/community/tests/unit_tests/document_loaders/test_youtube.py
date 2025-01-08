@@ -1,8 +1,8 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import YoutubeLoader
-from langchain_community.document_loaders.youtube import TranscriptFormat
+from aiagentsforce_community.document_loaders import YoutubeLoader
+from aiagentsforce_community.document_loaders.youtube import TranscriptFormat
 
 
 @pytest.mark.parametrize(

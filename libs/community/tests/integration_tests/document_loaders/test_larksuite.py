@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.larksuite import (
+from aiagentsforce_community.document_loaders.larksuite import (
     LarkSuiteDocLoader,
     LarkSuiteWikiLoader,
 )

@@ -4,9 +4,9 @@ from unittest.mock import AsyncMock, Mock
 import pytest
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
-from langchain_core.documents import Document
-from langchain_core.embeddings.fake import DeterministicFakeEmbedding
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings.fake import DeterministicFakeEmbedding
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 from tests.unit_tests.stubs import _any_id_document
 
 

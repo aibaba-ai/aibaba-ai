@@ -1,8 +1,8 @@
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers.breebs import BreebsRetriever
+from aiagentsforce_community.retrievers.breebs import BreebsRetriever
 
 
 class TestBreebsRetriever:

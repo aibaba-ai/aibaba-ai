@@ -4,16 +4,16 @@ import os
 from math import isclose
 from typing import Any, Dict, List, cast
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from yaml import safe_load
 
-from langchain_community.graphs import Neo4jGraph
-from langchain_community.vectorstores.neo4j_vector import (
+from aiagentsforce_community.graphs import Neo4jGraph
+from aiagentsforce_community.vectorstores.neo4j_vector import (
     Neo4jVector,
     SearchType,
     _get_search_index_query,
 )
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     AngularTwoDimensionalEmbeddings,
     FakeEmbeddings,

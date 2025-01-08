@@ -1,6 +1,6 @@
 """Test huggingface embeddings."""
 
-from langchain_community.embeddings.huggingface import (
+from aiagentsforce_community.embeddings.huggingface import (
     HuggingFaceEmbeddings,
     HuggingFaceInstructEmbeddings,
 )

@@ -1,12 +1,12 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.graph_vectorstores.base import (
+from aiagentsforce_community.graph_vectorstores.base import (
     Node,
     _documents_to_nodes,
     _texts_to_nodes,
 )
-from langchain_community.graph_vectorstores.links import Link
+from aiagentsforce_community.graph_vectorstores.links import Link
 
 
 def test_texts_to_nodes() -> None:

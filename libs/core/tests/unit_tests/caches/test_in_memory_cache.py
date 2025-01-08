@@ -1,7 +1,7 @@
 import pytest
 
-from langchain_core.caches import RETURN_VAL_TYPE, InMemoryCache
-from langchain_core.outputs import Generation
+from aiagentsforce_core.caches import RETURN_VAL_TYPE, InMemoryCache
+from aiagentsforce_core.outputs import Generation
 
 
 @pytest.fixture

@@ -4,9 +4,9 @@ from collections.abc import Iterator
 
 import pytest
 
-from langchain_core.document_loaders.base import BaseBlobParser, BaseLoader
-from langchain_core.documents import Document
-from langchain_core.documents.base import Blob
+from aiagentsforce_core.document_loaders.base import BaseBlobParser, BaseLoader
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.documents.base import Blob
 
 
 def test_base_blob_parser() -> None:

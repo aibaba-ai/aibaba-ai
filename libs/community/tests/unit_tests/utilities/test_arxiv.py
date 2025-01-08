@@ -1,6 +1,6 @@
 import pytest as pytest
 
-from langchain_community.utilities import ArxivAPIWrapper
+from aiagentsforce_community.utilities import ArxivAPIWrapper
 
 
 @pytest.mark.requires("arxiv")

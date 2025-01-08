@@ -4,11 +4,11 @@ from typing import Any, Dict, List
 from unittest.mock import MagicMock, patch
 
 import pytest
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from pydantic import ValidationError
 
-from langchain_community.chat_models import ChatReka
-from langchain_community.chat_models.reka import (
+from aiagentsforce_community.chat_models import ChatReka
+from aiagentsforce_community.chat_models.reka import (
     convert_to_reka_messages,
     process_content,
 )
@@ -213,14 +213,14 @@ def test_reka_tool_use_with_mocked_response() -> None:
         mock_tool_call = MagicMock()
         mock_tool_call.id = "tool_call_1"
         mock_tool_call.name = "search_tool"
-        mock_tool_call.parameters = {"query": "LangChain"}
+        mock_tool_call.parameters = {"query": "AI Agents Force"}
         mock_message.tool_calls = [mock_tool_call]
         mock_message.content = None
         mock_response.responses = [MagicMock(message=mock_message)]
         mock_chat.create.return_value = mock_response
 
         llm = ChatReka()
-        messages: List[BaseMessage] = [HumanMessage(content="Tell me about LangChain")]
+        messages: List[BaseMessage] = [HumanMessage(content="Tell me about AI Agents Force")]
         result = llm._generate(messages)
 
         assert len(result.generations) == 1
@@ -232,7 +232,7 @@ def test_reka_tool_use_with_mocked_response() -> None:
         assert tool_calls[0]["id"] == "tool_call_1"
         assert tool_calls[0]["function"]["name"] == "search_tool"
         assert tool_calls[0]["function"]["arguments"] == json.dumps(
-            {"query": "LangChain"}
+            {"query": "AI Agents Force"}
         )
 
 

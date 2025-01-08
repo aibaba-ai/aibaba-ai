@@ -11,9 +11,9 @@ from langsmith import Client
 from langsmith.run_trees import RunTree
 from langsmith.utils import get_env_var, get_tracer_project
 
-from langchain_core.outputs import LLMResult
-from langchain_core.tracers.langchain import LangChainTracer
-from langchain_core.tracers.schemas import Run
+from aiagentsforce_core.outputs import LLMResult
+from aiagentsforce_core.tracers.langchain import AI Agents ForceTracer
+from aiagentsforce_core.tracers.schemas import Run
 
 
 def test_example_id_assignment_threadsafe() -> None:
@@ -27,7 +27,7 @@ def test_example_id_assignment_threadsafe() -> None:
     client = unittest.mock.MagicMock(spec=Client)
     client.tracing_queue = None
     client.create_run = mock_create_run
-    tracer = LangChainTracer(client=client)
+    tracer = AI Agents ForceTracer(client=client)
     old_persist_run_single = tracer._persist_run_single
 
     def new_persist_run_single(run: Run) -> None:
@@ -67,7 +67,7 @@ def test_tracer_with_run_tree_parent() -> None:
     client = Client(session=mock_session, api_key="test")
     parent = RunTree(name="parent", inputs={"input": "foo"}, _client=client)  # type: ignore
     run_id = uuid.uuid4()
-    tracer = LangChainTracer(client=client)
+    tracer = AI Agents ForceTracer(client=client)
     tracer.order_map[parent.id] = (parent.trace_id, parent.dotted_order)
     tracer.run_map[str(parent.id)] = parent  # type: ignore
     tracer.on_chain_start(
@@ -85,7 +85,7 @@ def test_log_lock() -> None:
     """Test that example assigned at callback start/end is honored."""
 
     client = unittest.mock.MagicMock(spec=Client)
-    tracer = LangChainTracer(client=client)
+    tracer = AI Agents ForceTracer(client=client)
 
     with unittest.mock.patch.object(tracer, "_persist_run_single", new=lambda _: _):
         run_id_1 = UUID("9d878ab3-e5ca-4218-aef6-44cbdc90160a")
@@ -95,7 +95,7 @@ def test_log_lock() -> None:
         tracer.wait_for_futures()
 
 
-class LangChainProjectNameTest(unittest.TestCase):
+class AI Agents ForceProjectNameTest(unittest.TestCase):
     """
     Test that the project name is set correctly for runs.
     """
@@ -138,7 +138,7 @@ class LangChainProjectNameTest(unittest.TestCase):
                     mp.setenv(k, v)
 
                 client = unittest.mock.MagicMock(spec=Client)
-                tracer = LangChainTracer(client=client)
+                tracer = AI Agents ForceTracer(client=client)
                 projects = []
 
                 def mock_create_run(**kwargs: Any) -> Any:

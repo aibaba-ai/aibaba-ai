@@ -4,7 +4,7 @@ from typing import Generator
 
 import pytest
 
-from langchain_community.retrievers import NeuralDBRetriever
+from aiagentsforce_community.retrievers import NeuralDBRetriever
 
 
 @pytest.fixture(scope="session")

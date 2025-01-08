@@ -51,7 +51,7 @@ jobs:
         # Also installs dev/lint/test/typing dependencies, to ensure we have
         # type hints for as many of our libraries as possible.
         # This helps catch errors that require dependencies to be spotted, for example:
-        # https://github.com/langchain-ai/langchain/pull/10249/files#diff-935185cd488d015f026dcd9e19616ff62863e8cde8c0bee70318d3ccbca98341
+        # https://github.com/AI-Agents-Force-SDK/langchain/pull/10249/files#diff-935185cd488d015f026dcd9e19616ff62863e8cde8c0bee70318d3ccbca98341
         #
         # If you change this configuration, make sure to change the `cache-key`
         # in the `poetry_setup` action above to stop using the old cache.
@@ -79,7 +79,7 @@ jobs:
         # Also installs dev/lint/test/typing dependencies, to ensure we have
         # type hints for as many of our libraries as possible.
         # This helps catch errors that require dependencies to be spotted, for example:
-        # https://github.com/langchain-ai/langchain/pull/10249/files#diff-935185cd488d015f026dcd9e19616ff62863e8cde8c0bee70318d3ccbca98341
+        # https://github.com/AI-Agents-Force-SDK/langchain/pull/10249/files#diff-935185cd488d015f026dcd9e19616ff62863e8cde8c0bee70318d3ccbca98341
         #
         # If you change this configuration, make sure to change the `cache-key`
         # in the `poetry_setup` action above to stop using the old cache.

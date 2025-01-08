@@ -3,9 +3,9 @@ from typing import Any
 from unittest.mock import create_autospec
 
 import pytest
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.callbacks import UpstashRatelimitError, UpstashRatelimitHandler
+from aiagentsforce_community.callbacks import UpstashRatelimitError, UpstashRatelimitHandler
 
 logger = logging.getLogger(__name__)
 

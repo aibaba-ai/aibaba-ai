@@ -1,5 +1,5 @@
-from langchain_community.agent_toolkits import SQLDatabaseToolkit, create_sql_agent
-from langchain_community.utilities.sql_database import SQLDatabase
+from aiagentsforce_community.agent_toolkits import SQLDatabaseToolkit, create_sql_agent
+from aiagentsforce_community.utilities.sql_database import SQLDatabase
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

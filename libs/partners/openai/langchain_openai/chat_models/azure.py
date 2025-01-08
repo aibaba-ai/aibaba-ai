@@ -18,11 +18,11 @@ from typing import (
 )
 
 import openai
-from langchain_core.language_models.chat_models import LangSmithParams
-from langchain_core.messages import BaseMessage
-from langchain_core.outputs import ChatResult
-from langchain_core.utils import from_env, secret_from_env
-from langchain_core.utils.pydantic import is_basemodel_subclass
+from aiagentsforce_core.language_models.chat_models import LangSmithParams
+from aiagentsforce_core.messages import BaseMessage
+from aiagentsforce_core.outputs import ChatResult
+from aiagentsforce_core.utils import from_env, secret_from_env
+from aiagentsforce_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel, Field, SecretStr, model_validator
 from typing_extensions import Self
 
@@ -335,7 +335,7 @@ class AzureChatOpenAI(BaseChatOpenAI):
 
             import base64
             import httpx
-            from langchain_core.messages import HumanMessage
+            from aiagentsforce_core.messages import HumanMessage
 
             image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
             image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")

@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 import pytest
 from pytest import MonkeyPatch
 
-from langchain_community.llms.oci_generative_ai import OCIGenAI
+from aiagentsforce_community.llms.oci_generative_ai import OCIGenAI
 
 
 class MockResponseDict(dict):

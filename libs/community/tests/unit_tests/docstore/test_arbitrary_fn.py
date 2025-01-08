@@ -1,6 +1,6 @@
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.docstore.arbitrary_fn import DocstoreFn
+from aiagentsforce_community.docstore.arbitrary_fn import DocstoreFn
 
 
 def test_document_found() -> None:

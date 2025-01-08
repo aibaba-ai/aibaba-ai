@@ -4,7 +4,7 @@ from typing import Tuple
 import responses
 from requests import Request
 
-from langchain_community.document_loaders import HuggingFaceModelLoader
+from aiagentsforce_community.document_loaders import HuggingFaceModelLoader
 
 # Mocked model data to simulate an API response
 MOCKED_MODELS_RESPONSE = [

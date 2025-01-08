@@ -3,7 +3,7 @@
 from langchain_nomic.embeddings import NomicEmbeddings
 
 
-def test_langchain_nomic_embedding_documents() -> None:
+def test_aiagentforce_nomic_embedding_documents() -> None:
     """Test nomic embeddings."""
     documents = ["foo bar"]
     embedding = NomicEmbeddings(model="nomic-embed-text-v1")
@@ -12,7 +12,7 @@ def test_langchain_nomic_embedding_documents() -> None:
     assert len(output[0]) > 0
 
 
-def test_langchain_nomic_embedding_query() -> None:
+def test_aiagentforce_nomic_embedding_query() -> None:
     """Test nomic embeddings."""
     document = "foo bar"
     embedding = NomicEmbeddings(model="nomic-embed-text-v1")
@@ -20,7 +20,7 @@ def test_langchain_nomic_embedding_query() -> None:
     assert len(output) > 0
 
 
-def test_langchain_nomic_embedding_dimensionality() -> None:
+def test_aiagentforce_nomic_embedding_dimensionality() -> None:
     """Test nomic embeddings."""
     documents = ["foo bar"]
     embedding = NomicEmbeddings(model="nomic-embed-text-v1.5", dimensionality=256)

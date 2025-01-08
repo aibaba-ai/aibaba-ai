@@ -5,7 +5,7 @@ import time
 import pytest
 from freezegun import freeze_time
 
-from langchain_core.rate_limiters import InMemoryRateLimiter
+from aiagentsforce_core.rate_limiters import InMemoryRateLimiter
 
 
 @pytest.fixture

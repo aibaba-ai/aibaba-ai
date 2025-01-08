@@ -1,7 +1,7 @@
 from pydantic import ConfigDict, Field
 
-from langchain_core.load import Serializable, dumpd, load
-from langchain_core.load.serializable import _is_field_useful
+from aiagentsforce_core.load import Serializable, dumpd, load
+from aiagentsforce_core.load.serializable import _is_field_useful
 
 
 class NonBoolObj:
@@ -57,7 +57,7 @@ def test_simple_serialization_secret() -> None:
     """Test handling of secrets."""
     from pydantic import SecretStr
 
-    from langchain_core.load import Serializable
+    from aiagentsforce_core.load import Serializable
 
     class Foo(Serializable):
         bar: int

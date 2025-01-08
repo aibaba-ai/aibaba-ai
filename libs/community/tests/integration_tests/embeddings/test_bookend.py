@@ -1,6 +1,6 @@
 """Test Bookend AI embeddings."""
 
-from langchain_community.embeddings.bookend import BookendEmbeddings
+from aiagentsforce_community.embeddings.bookend import BookendEmbeddings
 
 
 def test_bookend_embedding_documents() -> None:

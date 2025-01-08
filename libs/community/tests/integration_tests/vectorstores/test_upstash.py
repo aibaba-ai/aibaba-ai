@@ -8,9 +8,9 @@ from typing import List, Tuple
 #
 # RuntimeError: asyncio.run() cannot be called from a running event loop
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.upstash import UpstashVectorStore
+from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
 )

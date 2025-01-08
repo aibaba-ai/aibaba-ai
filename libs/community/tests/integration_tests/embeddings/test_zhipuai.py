@@ -1,6 +1,6 @@
 """Test ZhipuAI Text Embedding."""
 
-from langchain_community.embeddings.zhipuai import ZhipuAIEmbeddings
+from aiagentsforce_community.embeddings.zhipuai import ZhipuAIEmbeddings
 
 
 def test_zhipuai_embedding_documents() -> None:

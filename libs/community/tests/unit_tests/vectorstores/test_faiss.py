@@ -6,15 +6,15 @@ import tempfile
 from typing import Union
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.docstore.base import Docstore
-from langchain_community.docstore.in_memory import InMemoryDocstore
-from langchain_community.vectorstores.faiss import FAISS
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.docstore.base import Docstore
+from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
+from aiagentsforce_community.vectorstores.faiss import FAISS
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
-_PAGE_CONTENT = """This is a page about LangChain.
+_PAGE_CONTENT = """This is a page about AI Agents Force.
 
 It is a really cool framework.
 

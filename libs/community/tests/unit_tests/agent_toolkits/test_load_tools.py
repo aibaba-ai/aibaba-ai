@@ -1,5 +1,5 @@
-from langchain_community.agent_toolkits.load_tools import load_tools
-from langchain_community.tools.requests.tool import (
+from aiagentsforce_community.agent_toolkits.load_tools import load_tools
+from aiagentsforce_community.tools.requests.tool import (
     RequestsDeleteTool,
     RequestsGetTool,
     RequestsPatchTool,

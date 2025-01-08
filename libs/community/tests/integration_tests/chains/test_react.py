@@ -2,8 +2,8 @@
 
 from langchain.agents.react.base import ReActChain
 
-from langchain_community.docstore import Wikipedia
-from langchain_community.llms.openai import OpenAI
+from aiagentsforce_community.docstore import Wikipedia
+from aiagentsforce_community.llms.openai import OpenAI
 
 
 def test_react() -> None:

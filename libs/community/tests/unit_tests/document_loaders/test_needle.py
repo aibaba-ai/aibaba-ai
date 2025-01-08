@@ -7,7 +7,7 @@ def test_add_and_fetch_files(mocker: MockerFixture) -> None:
     """
     Test adding and fetching files using the NeedleLoader with a mock.
     """
-    from langchain_community.document_loaders.needle import NeedleLoader  # noqa: I001
+    from aiagentsforce_community.document_loaders.needle import NeedleLoader  # noqa: I001
     from needle.v1.models import CollectionFile  # noqa: I001
 
     # Create mock instances using mocker

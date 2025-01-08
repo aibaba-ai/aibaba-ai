@@ -3,8 +3,8 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from langchain_community.tools.file_management.move import MoveFileTool
-from langchain_community.tools.file_management.utils import (
+from aiagentsforce_community.tools.file_management.move import MoveFileTool
+from aiagentsforce_community.tools.file_management.utils import (
     INVALID_PATH_TEMPLATE,
 )
 

@@ -2,7 +2,7 @@
 
 import responses
 
-from langchain_community.embeddings.cloudflare_workersai import (
+from aiagentsforce_community.embeddings.cloudflare_workersai import (
     CloudflareWorkersAIEmbeddings,
 )
 

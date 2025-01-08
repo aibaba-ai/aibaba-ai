@@ -2,14 +2,14 @@ from typing import Any, Callable, NamedTuple, Union
 
 import pytest
 
-from langchain_core.beta.runnables.context import Context
-from langchain_core.language_models import FakeListLLM, FakeStreamingListLLM
-from langchain_core.output_parsers.string import StrOutputParser
-from langchain_core.prompt_values import StringPromptValue
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.runnables.base import Runnable, RunnableLambda
-from langchain_core.runnables.passthrough import RunnablePassthrough
-from langchain_core.runnables.utils import aadd, add
+from aiagentsforce_core.beta.runnables.context import Context
+from aiagentsforce_core.language_models import FakeListLLM, FakeStreamingListLLM
+from aiagentsforce_core.output_parsers.string import StrOutputParser
+from aiagentsforce_core.prompt_values import StringPromptValue
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.runnables.base import Runnable, RunnableLambda
+from aiagentsforce_core.runnables.passthrough import RunnablePassthrough
+from aiagentsforce_core.runnables.utils import aadd, add
 
 
 class _TestCase(NamedTuple):

@@ -2,16 +2,16 @@
 
 from typing import Any, List, cast
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.messages.ai import AIMessageChunk
-from langchain_core.messages.tool import ToolCall, ToolMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.messages.ai import AIMessageChunk
+from aiagentsforce_core.messages.tool import ToolCall, ToolMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from pydantic import BaseModel, SecretStr
 from pytest import CaptureFixture
 
-from langchain_community.chat_models.tongyi import ChatTongyi
+from aiagentsforce_community.chat_models.tongyi import ChatTongyi
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 _FUNCTIONS: Any = [
@@ -85,7 +85,7 @@ def test_vision_model() -> None:
             HumanMessage(
                 content=[
                     {
-                        "image": "https://python.langchain.com/v0.1/assets/images/run_details-806f6581cd382d4887a5bc3e8ac62569.png"
+                        "image": "https://docs.aiagentsforce.com/v0.1/assets/images/run_details-806f6581cd382d4887a5bc3e8ac62569.png"
                     },
                     {"text": "Summarize the image"},
                 ]

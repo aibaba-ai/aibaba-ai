@@ -5,7 +5,7 @@ import time
 from typing import Any
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 from langchain_couchbase import CouchbaseVectorStore
 from tests.utils import (

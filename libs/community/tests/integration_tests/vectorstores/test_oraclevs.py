@@ -4,8 +4,8 @@
 import sys
 import threading
 
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores.oraclevs import (
+from aiagentsforce_community.embeddings import HuggingFaceEmbeddings
+from aiagentsforce_community.vectorstores.oraclevs import (
     OracleVS,
     _create_table,
     _index_exists,
@@ -14,7 +14,7 @@ from langchain_community.vectorstores.oraclevs import (
     drop_index_if_exists,
     drop_table_purge,
 )
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 
 username = ""
 password = ""

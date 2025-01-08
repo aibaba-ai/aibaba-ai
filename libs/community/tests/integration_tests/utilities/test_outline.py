@@ -4,9 +4,9 @@ from typing import List
 
 import pytest
 import responses
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.utilities import OutlineAPIWrapper
+from aiagentsforce_community.utilities import OutlineAPIWrapper
 
 OUTLINE_INSTANCE_TEST_URL = "https://app.getoutline.com"
 OUTLINE_SUCCESS_RESPONSE = {

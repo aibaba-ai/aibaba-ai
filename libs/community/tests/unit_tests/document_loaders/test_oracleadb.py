@@ -1,9 +1,9 @@
 from typing import Dict, List
 from unittest.mock import MagicMock, patch
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.oracleadb_loader import (
+from aiagentsforce_community.document_loaders.oracleadb_loader import (
     OracleAutonomousDatabaseLoader,
 )
 
@@ -37,7 +37,7 @@ def expected_documents() -> List[Document]:
 
 
 @patch(
-    "langchain_community.document_loaders.oracleadb_loader.OracleAutonomousDatabaseLoader._run_query"
+    "aiagentsforce_community.document_loaders.oracleadb_loader.OracleAutonomousDatabaseLoader._run_query"
 )
 def test_oracle_loader_load(mock_query: MagicMock) -> None:
     """Test oracleDB loader load function."""

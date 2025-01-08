@@ -1,6 +1,6 @@
 """Integration test for Sms."""
 
-from langchain_community.utilities.twilio import TwilioAPIWrapper
+from aiagentsforce_community.utilities.twilio import TwilioAPIWrapper
 
 
 def test_call() -> None:

@@ -4,13 +4,13 @@ from unittest import mock
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from langchain_core.callbacks.manager import CallbackManager
-from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aiagentsforce_core.callbacks.manager import CallbackManager
+from aiagentsforce_core.language_models import BaseChatModel
+from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from langchain_tests.unit_tests import ChatModelUnitTests
 from pydantic import SecretStr
 
-from langchain_community.chat_models.writer import ChatWriter
+from aiagentsforce_community.chat_models.writer import ChatWriter
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 """Classes for mocking Writer responses."""
@@ -224,29 +224,29 @@ class TestChatWriterCustom:
             assert chat.model_name == "palmyra-x-004"
             assert chat.temperature == (0.5 if "temperature" in case else 0.7)
 
-    def test_convert_writer_to_langchain_human(self) -> None:
-        """Test converting a human message dict to a LangChain message."""
+    def test_convert_writer_to_aiagentforce_human(self) -> None:
+        """Test converting a human message dict to a AI Agents Force message."""
         message = {"role": "user", "content": "Hello"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, HumanMessage)
         assert result.content == "Hello"
 
-    def test_convert_writer_to_langchain_ai(self) -> None:
-        """Test converting an AI message dict to a LangChain message."""
+    def test_convert_writer_to_aiagentforce_ai(self) -> None:
+        """Test converting an AI message dict to a AI Agents Force message."""
         message = {"role": "assistant", "content": "Hello"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, AIMessage)
         assert result.content == "Hello"
 
-    def test_convert_writer_to_langchain_system(self) -> None:
-        """Test converting a system message dict to a LangChain message."""
+    def test_convert_writer_to_aiagentforce_system(self) -> None:
+        """Test converting a system message dict to a AI Agents Force message."""
         message = {"role": "system", "content": "You are a helpful assistant"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, SystemMessage)
         assert result.content == "You are a helpful assistant"
 
-    def test_convert_writer_to_langchain_tool_call(self) -> None:
-        """Test converting a tool call message dict to a LangChain message."""
+    def test_convert_writer_to_aiagentforce_tool_call(self) -> None:
+        """Test converting a tool call message dict to a AI Agents Force message."""
         content = json.dumps({"result": 42})
         message = {
             "role": "tool",
@@ -259,7 +259,7 @@ class TestChatWriterCustom:
         assert result.name == "get_number"
         assert result.content == content
 
-    def test_convert_writer_to_langchain_with_tool_calls(self) -> None:
+    def test_convert_writer_to_aiagentforce_with_tool_calls(self) -> None:
         """Test converting an AIMessage with tool calls."""
         message = {
             "role": "assistant",
@@ -428,7 +428,7 @@ class TestChatWriterCustom:
 
 @pytest.mark.requires("writerai")
 class TestChatWriterStandart(ChatModelUnitTests):
-    """Test case for ChatWriter that inherits from standard LangChain tests."""
+    """Test case for ChatWriter that inherits from standard AI Agents Force tests."""
 
     @property
     def chat_model_class(self) -> Type[BaseChatModel]:

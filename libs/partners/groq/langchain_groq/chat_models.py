@@ -23,19 +23,19 @@ from typing import (
     cast,
 )
 
-from langchain_core._api import deprecated
-from langchain_core.callbacks import (
+from aiagentsforce_core._api import deprecated
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import LanguageModelInput
-from langchain_core.language_models.chat_models import (
+from aiagentsforce_core.language_models import LanguageModelInput
+from aiagentsforce_core.language_models.chat_models import (
     BaseChatModel,
     LangSmithParams,
     agenerate_from_stream,
     generate_from_stream,
 )
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -53,30 +53,30 @@ from langchain_core.messages import (
     ToolMessage,
     ToolMessageChunk,
 )
-from langchain_core.output_parsers import (
+from aiagentsforce_core.output_parsers import (
     JsonOutputParser,
     PydanticOutputParser,
 )
-from langchain_core.output_parsers.base import OutputParserLike
-from langchain_core.output_parsers.openai_tools import (
+from aiagentsforce_core.output_parsers.base import OutputParserLike
+from aiagentsforce_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
     make_invalid_tool_call,
     parse_tool_call,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from langchain_core.tools import BaseTool
-from langchain_core.utils import (
+from aiagentsforce_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aiagentsforce_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aiagentsforce_core.tools import BaseTool
+from aiagentsforce_core.utils import (
     from_env,
     get_pydantic_field_names,
     secret_from_env,
 )
-from langchain_core.utils.function_calling import (
+from aiagentsforce_core.utils.function_calling import (
     convert_to_openai_function,
     convert_to_openai_tool,
 )
-from langchain_core.utils.pydantic import is_basemodel_subclass
+from aiagentsforce_core.utils.pydantic import is_basemodel_subclass
 from pydantic import (
     BaseModel,
     ConfigDict,
@@ -731,7 +731,7 @@ class ChatGroq(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call.
                 Must be the name of the single provided function,
                 "auto" to automatically determine which function to call
@@ -785,7 +785,7 @@ class ChatGroq(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`langchain_core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -808,7 +808,7 @@ class ChatGroq(BaseChatModel):
                 with keys "raw", "parsed", and "parsing_error".
 
         Returns:
-            A Runnable that takes same inputs as a :class:`langchain_core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aiagentsforce_core.language_models.chat.BaseChatModel`.
 
             If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs
             an instance of ``schema`` (i.e., a Pydantic object).
@@ -1045,10 +1045,10 @@ class _FunctionCall(TypedDict):
 # Type conversion helpers
 #
 def _convert_message_to_dict(message: BaseMessage) -> dict:
-    """Convert a LangChain message to a dictionary.
+    """Convert a AI Agents Force message to a dictionary.
 
     Args:
-        message: The LangChain message.
+        message: The AI Agents Force message.
 
     Returns:
         The dictionary.
@@ -1145,13 +1145,13 @@ def _convert_chunk_to_message_chunk(
 
 
 def _convert_dict_to_message(_dict: Mapping[str, Any]) -> BaseMessage:
-    """Convert a dictionary to a LangChain message.
+    """Convert a dictionary to a AI Agents Force message.
 
     Args:
         _dict: The dictionary.
 
     Returns:
-        The LangChain message.
+        The AI Agents Force message.
     """
     id_ = _dict.get("id")
     role = _dict.get("role")

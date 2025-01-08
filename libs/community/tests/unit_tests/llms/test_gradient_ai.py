@@ -3,7 +3,7 @@ from typing import Dict
 import pytest
 from pytest_mock import MockerFixture
 
-from langchain_community.llms import GradientLLM
+from aiagentsforce_community.llms import GradientLLM
 
 _MODEL_ID = "my_model_valid_id"
 _GRADIENT_SECRET = "secret_valid_token_123456"

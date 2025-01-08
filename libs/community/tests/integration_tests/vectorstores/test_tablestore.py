@@ -3,10 +3,10 @@
 import os
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings import FakeEmbeddings
-from langchain_community.vectorstores.tablestore import TablestoreVectorStore
+from aiagentsforce_community.embeddings import FakeEmbeddings
+from aiagentsforce_community.vectorstores.tablestore import TablestoreVectorStore
 
 
 def test_tablestore() -> None:

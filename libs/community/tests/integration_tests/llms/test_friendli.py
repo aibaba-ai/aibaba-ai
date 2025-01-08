@@ -1,10 +1,10 @@
 """Test Friendli API."""
 
 import pytest
-from langchain_core.outputs.generation import Generation
-from langchain_core.outputs.llm_result import LLMResult
+from aiagentsforce_core.outputs.generation import Generation
+from aiagentsforce_core.outputs.llm_result import LLMResult
 
-from langchain_community.llms.friendli import Friendli
+from aiagentsforce_community.llms.friendli import Friendli
 
 
 @pytest.fixture

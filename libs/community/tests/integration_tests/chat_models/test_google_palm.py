@@ -4,10 +4,10 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
       valid API key.
 """
 
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
 
-from langchain_community.chat_models import ChatGooglePalm
+from aiagentsforce_community.chat_models import ChatGooglePalm
 
 
 def test_chat_google_palm() -> None:

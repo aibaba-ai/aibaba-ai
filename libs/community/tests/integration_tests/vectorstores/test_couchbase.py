@@ -5,9 +5,9 @@ import time
 from typing import Any
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.couchbase import CouchbaseVectorStore
+from aiagentsforce_community.vectorstores.couchbase import CouchbaseVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

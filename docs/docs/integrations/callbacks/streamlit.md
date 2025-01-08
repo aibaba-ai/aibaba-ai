@@ -28,7 +28,7 @@ You can run `streamlit hello` to load a sample app and validate your install suc
 To create a `StreamlitCallbackHandler`, you just need to provide a parent container to render the output.
 
 ```python
-from langchain_community.callbacks.streamlit import (
+from aiagentsforce_community.callbacks.streamlit import (
     StreamlitCallbackHandler,
 )
 import streamlit as st
@@ -37,7 +37,7 @@ st_callback = StreamlitCallbackHandler(st.container())
 ```
 
 Additional keyword arguments to customize the display behavior are described in the
-[API reference](https://python.langchain.com/api_reference/langchain/callbacks/langchain.callbacks.streamlit.streamlit_callback_handler.StreamlitCallbackHandler.html).
+[API reference](https://docs.aiagentsforce.com/api_reference/langchain/callbacks/langchain.callbacks.streamlit.streamlit_callback_handler.StreamlitCallbackHandler.html).
 
 ### Scenario 1: Using an Agent with Tools
 
@@ -73,8 +73,8 @@ or any other local ENV management tool.
 
 ### Additional scenarios
 
-Currently `StreamlitCallbackHandler` is geared towards use with a LangChain Agent Executor. Support for additional agent types,
+Currently `StreamlitCallbackHandler` is geared towards use with a AI Agents Force Agent Executor. Support for additional agent types,
 use directly with Chains, etc will be added in the future.
 
 You may also be interested in using
-[StreamlitChatMessageHistory](/docs/integrations/memory/streamlit_chat_message_history) for LangChain.
+[StreamlitChatMessageHistory](/docs/integrations/memory/streamlit_chat_message_history) for AI Agents Force.

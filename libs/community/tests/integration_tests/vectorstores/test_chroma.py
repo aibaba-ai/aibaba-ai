@@ -4,10 +4,10 @@ import uuid
 
 import pytest
 import requests
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings import FakeEmbeddings as Fak
-from langchain_community.vectorstores import Chroma
+from aiagentsforce_community.embeddings import FakeEmbeddings as Fak
+from aiagentsforce_community.vectorstores import Chroma
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

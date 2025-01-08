@@ -1,9 +1,9 @@
 """Test in memory docstore."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.docstore.in_memory import InMemoryDocstore
+from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
 
 
 def test_document_found() -> None:

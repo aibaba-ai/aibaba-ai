@@ -18,7 +18,7 @@ pip install "cassio>=0.1.6"
 ## Vector Store
 
 ```python
-from langchain_community.vectorstores import Cassandra
+from aiagentsforce_community.vectorstores import Cassandra
 ```
 
 Learn more in the [example notebook](/docs/integrations/vectorstores/cassandra).
@@ -26,7 +26,7 @@ Learn more in the [example notebook](/docs/integrations/vectorstores/cassandra).
 ## Chat message history
 
 ```python
-from langchain_community.chat_message_histories import CassandraChatMessageHistory
+from aiagentsforce_community.chat_message_histories import CassandraChatMessageHistory
 ```
 
 Learn more in the [example notebook](/docs/integrations/memory/cassandra_chat_message_history).
@@ -36,7 +36,7 @@ Learn more in the [example notebook](/docs/integrations/memory/cassandra_chat_me
 
 ```python
 from langchain.globals import set_llm_cache
-from langchain_community.cache import CassandraCache
+from aiagentsforce_community.cache import CassandraCache
 set_llm_cache(CassandraCache())
 ```
 
@@ -47,7 +47,7 @@ Learn more in the [example notebook](/docs/integrations/llm_caching#cassandra-ca
 
 ```python
 from langchain.globals import set_llm_cache
-from langchain_community.cache import CassandraSemanticCache
+from aiagentsforce_community.cache import CassandraSemanticCache
 set_llm_cache(CassandraSemanticCache(
     embedding=my_embedding,
     table_name="my_store",
@@ -59,7 +59,7 @@ Learn more in the [example notebook](/docs/integrations/llm_caching#cassandra-ca
 ## Document loader
 
 ```python
-from langchain_community.document_loaders import CassandraLoader
+from aiagentsforce_community.document_loaders import CassandraLoader
 ```
 
 Learn more in the [example notebook](/docs/integrations/document_loaders/cassandra).
@@ -75,7 +75,7 @@ The `Cassandra Database toolkit` enables AI engineers to efficiently integrate a
 with Cassandra data.
 
 ```python
-from langchain_community.agent_toolkits.cassandra_database.toolkit import (
+from aiagentsforce_community.agent_toolkits.cassandra_database.toolkit import (
     CassandraDatabaseToolkit,
 )
 ```
@@ -90,7 +90,7 @@ Cassandra Database individual tools:
 Tool for getting the schema of a keyspace in an Apache Cassandra database.
 
 ```python
-from langchain_community.tools import GetSchemaCassandraDatabaseTool
+from aiagentsforce_community.tools import GetSchemaCassandraDatabaseTool
 ```
 
 ### Get Table Data
@@ -98,7 +98,7 @@ from langchain_community.tools import GetSchemaCassandraDatabaseTool
 Tool for getting data from a table in an Apache Cassandra database.
 
 ```python
-from langchain_community.tools import GetTableDataCassandraDatabaseTool
+from aiagentsforce_community.tools import GetTableDataCassandraDatabaseTool
 ```
 
 ### Query
@@ -106,5 +106,5 @@ from langchain_community.tools import GetTableDataCassandraDatabaseTool
 Tool for querying an Apache Cassandra database with provided CQL.
 
 ```python
-from langchain_community.tools import QueryCassandraDatabaseTool
+from aiagentsforce_community.tools import QueryCassandraDatabaseTool
 ```

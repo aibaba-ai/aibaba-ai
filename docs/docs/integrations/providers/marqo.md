@@ -1,6 +1,6 @@
 # Marqo
 
-This page covers how to use the Marqo ecosystem within LangChain.
+This page covers how to use the Marqo ecosystem within AI Agents Force.
 
 ### **What is Marqo?**
 
@@ -25,7 +25,7 @@ The Marqo vectorstore can also work with existing multimodal indexes where your 
 
 To import this vectorstore:
 ```python
-from langchain_community.vectorstores import Marqo
+from aiagentsforce_community.vectorstores import Marqo
 ```
 
 For a more detailed walkthrough of the Marqo wrapper and some of its unique features, see [this notebook](/docs/integrations/vectorstores/marqo)

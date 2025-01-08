@@ -14,7 +14,7 @@ pip install uptrain
 ## Callbacks
 
 ```python
-from langchain_community.callbacks.uptrain_callback import UpTrainCallbackHandler
+from aiagentsforce_community.callbacks.uptrain_callback import UpTrainCallbackHandler
 ```
 
 See an [example](/docs/integrations/callbacks/uptrain).

@@ -7,10 +7,10 @@ from typing import Any, AsyncGenerator, Dict, Generator
 from unittest import mock
 
 import pytest
-from langchain_core.messages import AIMessage, AIMessageChunk
+from aiagentsforce_core.messages import AIMessage, AIMessageChunk
 from requests.exceptions import HTTPError
 
-from langchain_community.chat_models import (
+from aiagentsforce_community.chat_models import (
     ChatOCIModelDeploymentTGI,
     ChatOCIModelDeploymentVLLM,
 )
@@ -180,7 +180,7 @@ async def mocked_async_streaming_response(
     "ads.common.auth.default_signer", return_value=dict(signer=mock.MagicMock())
 )
 @mock.patch(
-    "langchain_community.utilities.requests.Requests.apost",
+    "aiagentsforce_community.utilities.requests.Requests.apost",
     mock.MagicMock(),
 )
 async def test_stream_async(*args: Any) -> None:

@@ -1,6 +1,6 @@
 """Test Anyscale API wrapper."""
 
-from langchain_community.llms.anyscale import Anyscale
+from aiagentsforce_community.llms.anyscale import Anyscale
 
 
 def test_anyscale_call() -> None:

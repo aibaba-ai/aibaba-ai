@@ -1,4 +1,4 @@
-from langchain_community.vectorstores.llm_rails import LLMRails
+from aiagentsforce_community.vectorstores.llm_rails import LLMRails
 
 #
 # For this test to run properly, please setup as follows:

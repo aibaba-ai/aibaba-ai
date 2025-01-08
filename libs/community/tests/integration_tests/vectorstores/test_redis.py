@@ -4,15 +4,15 @@ import os
 from typing import Any, Dict, List, Optional
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.redis import (
+from aiagentsforce_community.vectorstores.redis import (
     Redis,
     RedisFilter,
     RedisNum,
     RedisText,
 )
-from langchain_community.vectorstores.redis.filters import RedisFilterExpression
+from aiagentsforce_community.vectorstores.redis.filters import RedisFilterExpression
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

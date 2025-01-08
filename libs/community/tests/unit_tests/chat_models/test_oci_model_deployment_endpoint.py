@@ -2,10 +2,10 @@
 
 import pytest
 import responses
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 from pytest_mock import MockerFixture
 
-from langchain_community.chat_models import ChatOCIModelDeployment
+from aiagentsforce_community.chat_models import ChatOCIModelDeployment
 
 
 @pytest.mark.requires("ads")

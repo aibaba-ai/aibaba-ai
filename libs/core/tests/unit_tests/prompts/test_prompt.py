@@ -7,9 +7,9 @@ import pydantic
 import pytest
 from syrupy import SnapshotAssertion
 
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.prompts.string import PromptTemplateFormat
-from langchain_core.tracers.run_collector import RunCollectorCallbackHandler
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.prompts.string import PromptTemplateFormat
+from aiagentsforce_core.tracers.run_collector import RunCollectorCallbackHandler
 from tests.unit_tests.pydantic_utils import _normalize_schema
 
 PYDANTIC_VERSION = tuple(map(int, pydantic.__version__.split(".")))

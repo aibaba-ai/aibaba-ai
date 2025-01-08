@@ -10,10 +10,10 @@ Note: This test must be run with the following environment variables set:
 """
 
 import pytest
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models import ChatSnowflakeCortex
+from aiagentsforce_community.chat_models import ChatSnowflakeCortex
 
 
 @pytest.fixture

@@ -2,8 +2,8 @@ from typing import Union
 
 import pytest
 
-from langchain_core.messages import AIMessage
-from langchain_core.outputs import ChatGeneration
+from aiagentsforce_core.messages import AIMessage
+from aiagentsforce_core.outputs import ChatGeneration
 
 
 @pytest.mark.parametrize(

@@ -1,13 +1,13 @@
 """Integration test for embedding-based redundant doc filtering."""
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_transformers.embeddings_redundant_filter import (
+from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (
     EmbeddingsClusteringFilter,
     EmbeddingsRedundantFilter,
     _DocumentWithState,
 )
-from langchain_community.embeddings import OpenAIEmbeddings
+from aiagentsforce_community.embeddings import OpenAIEmbeddings
 
 
 def test_embeddings_redundant_filter() -> None:

@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from langchain_community.llms.yandex import YandexGPT
+from aiagentsforce_community.llms.yandex import YandexGPT
 
 
 def test_yandexgpt_initialization() -> None:

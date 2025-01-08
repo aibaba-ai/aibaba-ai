@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from langchain_community.document_loaders.parsers.language.ruby import RubySegmenter
+from aiagentsforce_community.document_loaders.parsers.language.ruby import RubySegmenter
 
 
 @pytest.mark.requires("tree_sitter", "tree_sitter_languages")

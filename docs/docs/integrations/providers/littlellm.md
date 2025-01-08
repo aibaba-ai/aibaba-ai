@@ -23,7 +23,7 @@ pip install litellm
 See a [usage example](/docs/integrations/chat/litellm).
 
 ```python
-from langchain_community.chat_models import ChatLiteLLM
+from aiagentsforce_community.chat_models import ChatLiteLLM
 ```
 
 ### ChatLiteLLMRouter
@@ -33,5 +33,5 @@ You also can use the `ChatLiteLLMRouter` to route requests to different LLMs or 
 See a [usage example](/docs/integrations/chat/litellm_router).
 
 ```python
-from langchain_community.chat_models import ChatLiteLLMRouter
+from aiagentsforce_community.chat_models import ChatLiteLLMRouter
 ```

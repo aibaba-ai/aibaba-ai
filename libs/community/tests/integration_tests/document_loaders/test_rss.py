@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from langchain_community.document_loaders.rss import RSSFeedLoader
+from aiagentsforce_community.document_loaders.rss import RSSFeedLoader
 
 
 def test_rss_loader() -> None:

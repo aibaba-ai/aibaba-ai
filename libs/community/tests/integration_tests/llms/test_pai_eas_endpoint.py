@@ -3,7 +3,7 @@
 import os
 from typing import Generator
 
-from langchain_community.llms.pai_eas_endpoint import PaiEasEndpoint
+from aiagentsforce_community.llms.pai_eas_endpoint import PaiEasEndpoint
 
 
 def test_pai_eas_v1_call() -> None:

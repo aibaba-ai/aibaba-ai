@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.stripe import StripeLoader
+from aiagentsforce_community.document_loaders.stripe import StripeLoader
 
 
 def test_stripe_loader() -> None:

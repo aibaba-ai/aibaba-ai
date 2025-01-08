@@ -1,7 +1,7 @@
 from typing import Any
 from unittest import mock
 
-from langchain_community.vectorstores.nucliadb import NucliaDB
+from aiagentsforce_community.vectorstores.nucliadb import NucliaDB
 
 
 class attrdict(dict):

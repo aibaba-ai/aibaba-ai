@@ -1,90 +1,90 @@
-# 🦜🍎️ LangChain Core
+# 🦜🍎️ AI Agents Force Core Foundation
 
-[![Downloads](https://static.pepy.tech/badge/langchain_core/month)](https://pepy.tech/project/langchain_core)
+[![Downloads](https://static.pepy.tech/badge/aiagentsforce_core/month)](https://pepy.tech/project/aiagentsforce_core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Quick Install
+## Installation
 
 ```bash
-pip install langchain-core
+pip install aiagentsforce-core
 ```
 
-## What is it?
+## Overview
 
-LangChain Core contains the base abstractions that power the rest of the LangChain ecosystem.
+AI Agents Force Core provides fundamental building blocks that serve as the foundation for the entire AI Agents Force ecosystem.
 
-These abstractions are designed to be as modular and simple as possible. Examples of these abstractions include those for language models, document loaders, embedding models, vectorstores, retrievers, and more.
+These foundational components are intentionally kept minimal and modular. They include essential abstractions for various components such as language models, document processing, embedding systems, vector databases, retrieval mechanisms, and more.
 
-The benefit of having these abstractions is that any provider can implement the required interface and then easily be used in the rest of the LangChain ecosystem.
+By establishing these standard interfaces, any provider can implement them and seamlessly integrate with the broader AI Agents Force ecosystem.
 
-For full documentation see the [API reference](https://python.langchain.com/api_reference/core/index.html).
+For comprehensive documentation, visit the [API reference](https://docs.aiagentsforce.com/api_reference/core/index.html).
 
-## 1️⃣ Core Interface: Runnables
+## 1️⃣ Primary Interface: Runnables
 
-The concept of a Runnable is central to LangChain Core – it is the interface that most LangChain Core components implement, giving them
+Runnables form the backbone of AI Agents Force Core. This interface is implemented by most components, providing:
 
-- a common invocation interface (invoke, batch, stream, etc.)
-- built-in utilities for retries, fallbacks, schemas and runtime configurability
-- easy deployment with [LangServe](https://github.com/langchain-ai/langserve)
+- Unified execution methods (invoke, batch, stream, etc.)
+- Built-in support for error handling, fallbacks, schemas, and runtime configuration
+- Integration with AI Agents Force Build for deployment
 
-For more check out the [runnable docs](https://python.langchain.com/docs/expression_language/interface). Examples of components that implement the interface include: LLMs, Chat Models, Prompts, Retrievers, Tools, Output Parsers.
+Learn more in the [runnable documentation](https://docs.aiagentsforce.com/docs/expression_language/interface). Key components implementing this interface include: LLMs, Chat Models, Prompts, Retrievers, Tools, and Output Parsers.
 
-You can use LangChain Core objects in two ways:
+Two approaches to using AI Agents Force Core:
 
-1. **imperative**, ie. call them directly, eg. `model.invoke(...)`
+1. **Direct (Imperative)**: Straight function calls like `model.invoke(...)`
 
-2. **declarative**, with LangChain Expression Language (LCEL)
+2. **Compositional (Declarative)**: Using AI Agents Force Expression Language (LCEL)
 
-3. or a mix of both! eg. one of the steps in your LCEL sequence can be a custom function
+3. **Hybrid**: Combine both approaches by including custom functions within LCEL sequences
 
-| Feature   | Imperative                      | Declarative    |
-| --------- | ------------------------------- | -------------- |
-| Syntax    | All of Python                   | LCEL           |
-| Tracing   | ✅ – Automatic                  | ✅ – Automatic |
-| Parallel  | ✅ – with threads or coroutines | ✅ – Automatic |
-| Streaming | ✅ – by yielding                | ✅ – Automatic |
-| Async     | ✅ – by writing async functions | ✅ – Automatic |
+| Capability | Direct Method                  | Compositional Method |
+| --------- | ------------------------------ | ------------------- |
+| Code Style | Standard Python               | LCEL                |
+| Tracing   | ✅ – Built-in                  | ✅ – Built-in       |
+| Parallel  | ✅ – Via threads/coroutines    | ✅ – Automatic      |
+| Streaming | ✅ – Through yield             | ✅ – Automatic      |
+| Async     | ✅ – Using async/await         | ✅ – Automatic      |
 
-## ⚡️ What is LangChain Expression Language?
+## ⚡️ Understanding LCEL
 
-LangChain Expression Language (LCEL) is a _declarative language_ for composing LangChain Core runnables into sequences (or DAGs), covering the most common patterns when building with LLMs.
+AI Agents Force Expression Language (LCEL) is a declarative approach for combining AI Agents Force Core components into sequences or directed acyclic graphs (DAGs), addressing common LLM integration patterns.
 
-LangChain Core compiles LCEL sequences to an _optimized execution plan_, with automatic parallelization, streaming, tracing, and async support.
+LCEL sequences are automatically optimized for execution, featuring parallel processing, streaming capabilities, tracing, and asynchronous operations.
 
-For more check out the [LCEL docs](https://python.langchain.com/docs/expression_language/).
+Explore more in the [LCEL documentation](https://docs.aiagentsforce.com/docs/expression_language/).
 
-![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](https://raw.githubusercontent.com/langchain-ai/langchain/master/docs/static/svg/langchain_stack_112024.svg "LangChain Framework Overview")
+![Framework architecture diagram showing the AI Agents Force system hierarchy and component relationships](https://raw.githubusercontent.com/AI-Agents-Force/AI-Agents-Force/master/docs/static/svg/aiagentsforce_stack_112024.svg "AI Agents Force Framework Overview")
 
-For more advanced use cases, also check out [LangGraph](https://github.com/langchain-ai/langgraph), which is a graph-based runner for cyclic and recursive LLM workflows.
+For complex workflows requiring cycles or recursion, consider [LangGraph](https://github.com/AI-Agents-Force-SDK/langgraph).
 
-## 📕 Releases & Versioning
+## 📕 Version Management
 
-`langchain-core` is currently on version `0.1.x`.
+Current version: `0.1.x`
 
-As `langchain-core` contains the base abstractions and runtime for the whole LangChain ecosystem, we will communicate any breaking changes with advance notice and version bumps. The exception for this is anything in `langchain_core.beta`. The reason for `langchain_core.beta` is that given the rate of change of the field, being able to move quickly is still a priority, and this module is our attempt to do so.
+As the foundational layer of AI Agents Force, we maintain strict version control with advance notifications of changes. The `aiagentsforce_core.beta` module is exempt from this policy to allow rapid innovation.
 
-Minor version increases will occur for:
+Version increment guidelines:
 
-- Breaking changes for any public interfaces NOT in `langchain_core.beta`
+Minor versions (0.x.0):
+- Breaking changes to public APIs outside `aiagentsforce_core.beta`
 
-Patch version increases will occur for:
-
+Patch versions (0.0.x):
 - Bug fixes
-- New features
-- Any changes to private interfaces
-- Any changes to `langchain_core.beta`
+- Feature additions
+- Internal interface changes
+- `aiagentsforce_core.beta` modifications
 
-## 💁 Contributing
+## 💁 Community Participation
 
-As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.
+We actively encourage contributions to this open-source project, whether through new features, infrastructure improvements, or documentation enhancements.
 
-For detailed information on how to contribute, see the [Contributing Guide](https://python.langchain.com/docs/contributing/).
+See our [Contributing Guide](https://docs.aiagentsforce.com/docs/contributing/) for details.
 
-## ⛰️ Why build on top of LangChain Core?
+## ⛰️ Benefits of AI Agents Force Core
 
-The whole LangChain ecosystem is built on top of LangChain Core, so you're in good company when building on top of it. Some of the benefits:
+As the foundation for the entire AI Agents Force ecosystem, building on AI Agents Force Core offers several advantages:
 
-- **Modularity**: LangChain Core is designed around abstractions that are independent of each other, and not tied to any specific model provider.
-- **Stability**: We are committed to a stable versioning scheme, and will communicate any breaking changes with advance notice and version bumps.
-- **Battle-tested**: LangChain Core components have the largest install base in the LLM ecosystem, and are used in production by many companies.
-- **Community**: LangChain Core is developed in the open, and we welcome contributions from the community.
+- **Independent Components**: Built around provider-agnostic, standalone abstractions
+- **Reliable API**: Committed to stable versioning with clear communication about changes
+- **Production-Ready**: Extensively tested and widely deployed across the LLM ecosystem
+- **Open Development**: Active community participation and contribution-friendly environment

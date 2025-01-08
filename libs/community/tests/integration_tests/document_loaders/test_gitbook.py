@@ -2,7 +2,7 @@ from typing import Optional
 
 import pytest
 
-from langchain_community.document_loaders.gitbook import GitbookLoader
+from aiagentsforce_community.document_loaders.gitbook import GitbookLoader
 
 
 class TestGitbookLoader:

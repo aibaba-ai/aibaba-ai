@@ -1,4 +1,4 @@
-from langchain_core.indexing import __all__
+from aiagentsforce_core.indexing import __all__
 
 
 def test_all() -> None:

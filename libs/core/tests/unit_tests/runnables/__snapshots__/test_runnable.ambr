@@ -92,7 +92,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -134,7 +134,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "runnables",
           "base",
           "RunnableLambda"
@@ -222,7 +222,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -341,7 +341,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -365,7 +365,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "runnables",
             "base",
             "RunnableLambda"
@@ -452,7 +452,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -843,7 +843,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeStreamingListLLM"
@@ -879,7 +879,7 @@
             "lc": 1,
             "type": "not_implemented",
             "id": [
-              "langchain_core",
+              "aiagentsforce_core",
               "language_models",
               "fake",
               "FakeStreamingListLLM"
@@ -922,7 +922,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"
@@ -944,7 +944,7 @@
                     "lc": 1,
                     "type": "not_implemented",
                     "id": [
-                      "langchain_core",
+                      "aiagentsforce_core",
                       "runnables",
                       "base",
                       "RunnableLambda"
@@ -963,7 +963,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "runnables",
           "base",
           "RunnableLambda"
@@ -1104,7 +1104,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "language_models",
           "fake_chat_models",
           "FakeListChatModel"
@@ -1215,7 +1215,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -1344,7 +1344,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "language_models",
           "fake_chat_models",
           "FakeListChatModel"
@@ -1454,7 +1454,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "language_models",
           "fake",
           "FakeListLLM"
@@ -1571,7 +1571,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeListLLM"
@@ -1584,7 +1584,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "runnables",
           "base",
           "RunnableLambda"
@@ -1694,7 +1694,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeStreamingListLLM"
@@ -1752,7 +1752,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"
@@ -1774,7 +1774,7 @@
                     "lc": 1,
                     "type": "not_implemented",
                     "id": [
-                      "langchain_core",
+                      "aiagentsforce_core",
                       "runnables",
                       "base",
                       "RunnableLambda"
@@ -1862,7 +1862,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "language_models",
                     "fake",
                     "FakeListLLM"
@@ -1935,7 +1935,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "language_models",
                     "fake",
                     "FakeListLLM"
@@ -1967,7 +1967,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -2473,7 +2473,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -2776,7 +2776,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -3066,7 +3066,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -3078,7 +3078,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -3378,7 +3378,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -3946,7 +3946,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -4268,7 +4268,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -4558,7 +4558,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -4570,7 +4570,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -4882,7 +4882,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -5450,7 +5450,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -5772,7 +5772,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -6062,7 +6062,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -6074,7 +6074,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -6324,7 +6324,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -6830,7 +6830,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -7133,7 +7133,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -7423,7 +7423,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -7435,7 +7435,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -7777,7 +7777,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -8345,7 +8345,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -8667,7 +8667,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -8957,7 +8957,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -8969,7 +8969,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -9264,7 +9264,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -9770,7 +9770,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -10073,7 +10073,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -10363,7 +10363,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -10375,7 +10375,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -10625,7 +10625,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -11193,7 +11193,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -11526,7 +11526,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -11816,7 +11816,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -11828,7 +11828,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -12090,7 +12090,7 @@
           
           This message represents the output of the model and consists of both
           the raw output as returned by the model together standardized fields
-          (e.g., tool calls, usage metadata) added by the LangChain framework.
+          (e.g., tool calls, usage metadata) added by the AI Agents Force framework.
         ''',
         'properties': dict({
           'additional_kwargs': dict({
@@ -12658,7 +12658,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -12980,7 +12980,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import HumanMessage, SystemMessage
+                  from aiagentsforce_core.messages import HumanMessage, SystemMessage
           
                   messages = [
                       SystemMessage(
@@ -13270,7 +13270,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   ToolMessage(content='42', tool_call_id='call_Jja7J89XsjrOLA5r!MEOW!SL')
           
@@ -13282,7 +13282,7 @@
           
               .. code-block:: python
           
-                  from langchain_core.messages import ToolMessage
+                  from aiagentsforce_core.messages import ToolMessage
           
                   tool_output = {
                       "stdout": "From the graph we can see that the correlation between x and y is ...",
@@ -13583,7 +13583,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "runnables",
                     "base",
                     "RunnableLambda"
@@ -13607,7 +13607,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "runnables",
                     "base",
                     "RunnableLambda"
@@ -13634,7 +13634,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"
@@ -13728,7 +13728,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake_chat_models",
             "FakeListChatModel"
@@ -13857,7 +13857,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "runnables",
             "base",
             "RunnableLambda"
@@ -13880,7 +13880,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "language_models",
                 "fake_chat_models",
                 "FakeListChatModel"
@@ -13892,7 +13892,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "language_models",
                 "fake",
                 "FakeListLLM"
@@ -14002,7 +14002,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "runnables",
             "base",
             "RunnableLambda"
@@ -14035,7 +14035,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "language_models",
                     "fake_chat_models",
                     "FakeListChatModel"
@@ -14056,7 +14056,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "language_models",
                 "fake",
                 "FakeListLLM"
@@ -14068,7 +14068,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"

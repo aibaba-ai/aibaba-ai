@@ -1,4 +1,4 @@
-from langchain_core.sys_info import print_sys_info
+from aiagentsforce_core.sys_info import print_sys_info
 
 
 def test_print_sys_info() -> None:

@@ -3,9 +3,9 @@ from typing import List
 
 import numpy as np
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.docarray import DocArrayHnswSearch
+from aiagentsforce_community.vectorstores.docarray import DocArrayHnswSearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

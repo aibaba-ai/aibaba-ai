@@ -5,13 +5,13 @@ from typing import Any, Dict, List, Optional
 
 import requests
 from aiohttp import ClientSession
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.llms import LLM
-from langchain_core.utils import get_pydantic_field_names
-from langchain_core.utils.utils import _build_model_kwargs, secret_from_env
+from aiagentsforce_core.language_models.llms import LLM
+from aiagentsforce_core.utils import get_pydantic_field_names
+from aiagentsforce_core.utils.utils import _build_model_kwargs, secret_from_env
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
 from langchain_fireworks.version import __version__

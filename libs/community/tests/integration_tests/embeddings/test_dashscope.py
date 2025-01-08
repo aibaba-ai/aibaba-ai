@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from langchain_community.embeddings.dashscope import DashScopeEmbeddings
+from aiagentsforce_community.embeddings.dashscope import DashScopeEmbeddings
 
 
 def test_dashscope_embedding_documents() -> None:

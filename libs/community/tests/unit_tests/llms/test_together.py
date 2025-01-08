@@ -5,7 +5,7 @@ from typing import cast
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.llms.together import Together
+from aiagentsforce_community.llms.together import Together
 
 
 def test_together_api_key_is_secret_string() -> None:

@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from langchain_community.llms.bedrock import (
+from aiagentsforce_community.llms.bedrock import (
     ALTERNATION_ERROR,
     Bedrock,
     _human_assistant_format,

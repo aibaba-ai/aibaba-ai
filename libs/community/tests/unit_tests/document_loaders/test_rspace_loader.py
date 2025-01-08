@@ -1,6 +1,6 @@
 import unittest
 
-from langchain_community.document_loaders.rspace import RSpaceLoader
+from aiagentsforce_community.document_loaders.rspace import RSpaceLoader
 
 
 class TestRSpaceLoader(unittest.TestCase):

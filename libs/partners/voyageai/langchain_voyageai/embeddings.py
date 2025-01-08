@@ -2,8 +2,8 @@ import logging
 from typing import Any, Iterable, List, Literal, Optional, cast
 
 import voyageai  # type: ignore
-from langchain_core.embeddings import Embeddings
-from langchain_core.utils import secret_from_env
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.utils import secret_from_env
 from pydantic import (
     BaseModel,
     ConfigDict,

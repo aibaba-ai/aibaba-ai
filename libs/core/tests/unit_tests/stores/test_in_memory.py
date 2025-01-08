@@ -4,7 +4,7 @@ from langchain_tests.integration_tests.base_store import (
     BaseStoreSyncTests,
 )
 
-from langchain_core.stores import InMemoryStore
+from aiagentsforce_core.stores import InMemoryStore
 
 
 # Check against standard tests

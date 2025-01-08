@@ -1,6 +1,6 @@
 # langchain-anthropic
 
-This package contains the LangChain integration for Anthropic's generative models.
+This package contains the AI Agents Force integration for Anthropic's generative models.
 
 ## Installation
 
@@ -16,7 +16,7 @@ To use, you should have an Anthropic API key configured. Initialize the model as
 
 ```
 from langchain_anthropic import ChatAnthropic
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
 model = ChatAnthropic(model="claude-3-opus-20240229", temperature=0, max_tokens=1024)
 ```
@@ -29,7 +29,7 @@ model = ChatAnthropic(model="claude-3-opus-20240229", temperature=0, max_tokens=
 
 `response = model.invoke([message])`
 
-For a more detailed walkthrough see [here](https://python.langchain.com/docs/integrations/chat/anthropic).
+For a more detailed walkthrough see [here](https://docs.aiagentsforce.com/docs/integrations/chat/anthropic).
 
 ## LLMs (Legacy)
 

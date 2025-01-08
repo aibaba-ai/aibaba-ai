@@ -6,7 +6,7 @@ from langchain_voyageai import VoyageAIEmbeddings
 MODEL = "voyage-2"
 
 
-def test_langchain_voyageai_embedding_documents() -> None:
+def test_aiagentforce_voyageai_embedding_documents() -> None:
     """Test voyage embeddings."""
     documents = ["foo bar"]
     embedding = VoyageAIEmbeddings(model=MODEL)  # type: ignore[call-arg]
@@ -15,7 +15,7 @@ def test_langchain_voyageai_embedding_documents() -> None:
     assert len(output[0]) == 1024
 
 
-def test_langchain_voyageai_embedding_documents_multiple() -> None:
+def test_aiagentforce_voyageai_embedding_documents_multiple() -> None:
     """Test voyage embeddings."""
     documents = ["foo bar", "bar foo", "foo"]
     embedding = VoyageAIEmbeddings(model=MODEL, batch_size=2)
@@ -26,7 +26,7 @@ def test_langchain_voyageai_embedding_documents_multiple() -> None:
     assert len(output[2]) == 1024
 
 
-def test_langchain_voyageai_embedding_query() -> None:
+def test_aiagentforce_voyageai_embedding_query() -> None:
     """Test voyage embeddings."""
     document = "foo bar"
     embedding = VoyageAIEmbeddings(model=MODEL)  # type: ignore[call-arg]
@@ -34,7 +34,7 @@ def test_langchain_voyageai_embedding_query() -> None:
     assert len(output) == 1024
 
 
-async def test_langchain_voyageai_async_embedding_documents_multiple() -> None:
+async def test_aiagentforce_voyageai_async_embedding_documents_multiple() -> None:
     """Test voyage embeddings."""
     documents = ["foo bar", "bar foo", "foo"]
     embedding = VoyageAIEmbeddings(model=MODEL, batch_size=2)
@@ -45,7 +45,7 @@ async def test_langchain_voyageai_async_embedding_documents_multiple() -> None:
     assert len(output[2]) == 1024
 
 
-async def test_langchain_voyageai_async_embedding_query() -> None:
+async def test_aiagentforce_voyageai_async_embedding_query() -> None:
     """Test voyage embeddings."""
     document = "foo bar"
     embedding = VoyageAIEmbeddings(model=MODEL)  # type: ignore[call-arg]
@@ -53,7 +53,7 @@ async def test_langchain_voyageai_async_embedding_query() -> None:
     assert len(output) == 1024
 
 
-def test_langchain_voyageai_embedding_documents_with_output_dimension() -> None:
+def test_aiagentforce_voyageai_embedding_documents_with_output_dimension() -> None:
     """Test voyage embeddings."""
     documents = ["foo bar"]
     embedding = VoyageAIEmbeddings(model="voyage-3-large", output_dimension=256)  # type: ignore[call-arg]

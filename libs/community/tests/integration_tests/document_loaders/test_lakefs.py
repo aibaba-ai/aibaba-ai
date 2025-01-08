@@ -6,13 +6,13 @@ import pytest
 import requests_mock
 from requests_mock.mocker import Mocker
 
-from langchain_community.document_loaders.lakefs import LakeFSLoader
+from aiagentsforce_community.document_loaders.lakefs import LakeFSLoader
 
 
 @pytest.fixture
 def mock_lakefs_client() -> Any:
     with patch(
-        "langchain_community.document_loaders.lakefs.LakeFSClient"
+        "aiagentsforce_community.document_loaders.lakefs.LakeFSClient"
     ) as mock_lakefs_client:
         mock_lakefs_client.return_value.ls_objects.return_value = [
             ("path_bla.txt", "https://physical_address_bla")
@@ -24,7 +24,7 @@ def mock_lakefs_client() -> Any:
 @pytest.fixture
 def mock_lakefs_client_no_presign_not_local() -> Any:
     with patch(
-        "langchain_community.document_loaders.lakefs.LakeFSClient"
+        "aiagentsforce_community.document_loaders.lakefs.LakeFSClient"
     ) as mock_lakefs_client:
         mock_lakefs_client.return_value.ls_objects.return_value = [
             ("path_bla.txt", "https://physical_address_bla")
@@ -36,7 +36,7 @@ def mock_lakefs_client_no_presign_not_local() -> Any:
 @pytest.fixture
 def mock_unstructured_local() -> Any:
     with patch(
-        "langchain_community.document_loaders.lakefs.UnstructuredLakeFSLoader"
+        "aiagentsforce_community.document_loaders.lakefs.UnstructuredLakeFSLoader"
     ) as mock_unstructured_lakefs:
         mock_unstructured_lakefs.return_value.load.return_value = [
             ("text content", "pdf content")
@@ -47,7 +47,7 @@ def mock_unstructured_local() -> Any:
 @pytest.fixture
 def mock_lakefs_client_no_presign_local() -> Any:
     with patch(
-        "langchain_community.document_loaders.lakefs.LakeFSClient"
+        "aiagentsforce_community.document_loaders.lakefs.LakeFSClient"
     ) as mock_lakefs_client:
         mock_lakefs_client.return_value.ls_objects.return_value = [
             ("path_bla.txt", "local:///physical_address_bla")

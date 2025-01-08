@@ -18,9 +18,9 @@ from typing import (
 )
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Cassandra
+from aiagentsforce_community.vectorstores import Cassandra
 from tests.integration_tests.vectorstores.fake_embeddings import (
     AngularTwoDimensionalEmbeddings,
     ConsistentFakeEmbeddings,

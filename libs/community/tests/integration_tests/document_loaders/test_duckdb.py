@@ -1,6 +1,6 @@
 import unittest
 
-from langchain_community.document_loaders.duckdb_loader import DuckDBLoader
+from aiagentsforce_community.document_loaders.duckdb_loader import DuckDBLoader
 
 try:
     import duckdb  # noqa: F401

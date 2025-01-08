@@ -1,9 +1,9 @@
-from langchain_core.tracers import __all__
+from aiagentsforce_core.tracers import __all__
 
 EXPECTED_ALL = [
     "BaseTracer",
     "EvaluatorCallbackHandler",
-    "LangChainTracer",
+    "AI Agents ForceTracer",
     "ConsoleCallbackHandler",
     "Run",
     "RunLog",

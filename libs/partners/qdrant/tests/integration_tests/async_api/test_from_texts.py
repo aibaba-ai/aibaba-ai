@@ -3,7 +3,7 @@ import uuid
 from typing import Optional
 
 import pytest  # type: ignore[import-not-found]
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 from langchain_qdrant import Qdrant
 from langchain_qdrant.vectorstores import QdrantException

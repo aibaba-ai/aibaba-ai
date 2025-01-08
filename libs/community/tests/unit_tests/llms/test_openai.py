@@ -1,7 +1,7 @@
 import pytest
 
-from langchain_community.llms.openai import OpenAI
-from langchain_community.utils.openai import is_openai_v1
+from aiagentsforce_community.llms.openai import OpenAI
+from aiagentsforce_community.utils.openai import is_openai_v1
 
 
 def _openai_v1_installed() -> bool:

@@ -2,7 +2,7 @@
 # 1. install vercel and python dependencies
 # 2. copy files from "source dir" to "intermediate dir"
 # 2. generate files like model feat table, etc in "intermediate dir"
-# 3. copy files to their right spots (e.g. langserve readme) in "intermediate dir"
+# 3. copy files to their right spots (e.g. aiagentsforceapi readme) in "intermediate dir"
 # 4. build the docs from "intermediate dir" to "output dir"
 
 SOURCE_DIR = docs/
@@ -39,9 +39,9 @@ generate-files:
 
 	$(PYTHON) scripts/partner_pkg_table.py $(INTERMEDIATE_DIR)
 
-	curl https://raw.githubusercontent.com/langchain-ai/langserve/main/README.md | sed 's/<=/\&lt;=/g' > $(INTERMEDIATE_DIR)/langserve.md
+	curl https://raw.githubusercontent.com/langchain-ai/aiagentsforceapi/main/README.md | sed 's/<=/\&lt;=/g' > $(INTERMEDIATE_DIR)/aiagentsforceapi.md
 	cp ../SECURITY.md $(INTERMEDIATE_DIR)/security.md
-	$(PYTHON) scripts/resolve_local_links.py $(INTERMEDIATE_DIR)/langserve.md https://github.com/langchain-ai/langserve/tree/main/
+	$(PYTHON) scripts/resolve_local_links.py $(INTERMEDIATE_DIR)/aiagentsforceapi.md https://github.com/AI-Agents-Force-SDK/aiagentsforceapi/tree/main/
 
 copy-infra:
 	mkdir -p $(OUTPUT_NEW_DIR)
@@ -78,7 +78,7 @@ vercel-build: install-vercel-deps build generate-references
 	cp -r ../libs/cli/langchain_cli/integration_template src/theme
 	rm -rf build
 	mkdir static/api_reference
-	git clone --depth=1 https://github.com/langchain-ai/langchain-api-docs-html.git
+	git clone --depth=1 https://github.com/AI-Agents-Force-SDK/langchain-api-docs-html.git
 	mv langchain-api-docs-html/api_reference_build/html/* static/api_reference/
 	rm -rf langchain-api-docs-html
 	NODE_OPTIONS="--max-old-space-size=5000" yarn run docusaurus build

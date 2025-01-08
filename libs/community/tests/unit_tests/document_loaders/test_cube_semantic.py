@@ -1,9 +1,9 @@
 import unittest
 from unittest.mock import MagicMock, Mock, patch
 
-from langchain_community.document_loaders import CubeSemanticLoader
+from aiagentsforce_community.document_loaders import CubeSemanticLoader
 
-MODULE_PATH = "langchain_community.document_loaders.cube_semantic.CubeSemanticLoader"
+MODULE_PATH = "aiagentsforce_community.document_loaders.cube_semantic.CubeSemanticLoader"
 
 
 class TestCubeSemanticLoader(unittest.TestCase):

@@ -1,4 +1,4 @@
-from langchain_core.runnables import __all__
+from aiagentsforce_core.runnables import __all__
 
 EXPECTED_ALL = [
     "chain",
@@ -39,5 +39,5 @@ def test_all_imports() -> None:
 
 def test_imports_for_specific_funcs() -> None:
     """Test that a few specific imports in more internal namespaces."""
-    # create_model implementation has been moved to langchain_core.utils.pydantic
-    from langchain_core.runnables.utils import create_model  # noqa
+    # create_model implementation has been moved to aiagentsforce_core.utils.pydantic
+    from aiagentsforce_core.runnables.utils import create_model  # noqa

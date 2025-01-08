@@ -4,8 +4,8 @@ from unittest.mock import MagicMock, patch
 
 from langsmith.schemas import Example
 
-from langchain_core.document_loaders import LangSmithLoader
-from langchain_core.documents import Document
+from aiagentsforce_core.document_loaders import LangSmithLoader
+from aiagentsforce_core.documents import Document
 
 
 def test_init() -> None:

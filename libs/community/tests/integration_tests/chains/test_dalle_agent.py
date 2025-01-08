@@ -2,8 +2,8 @@
 
 from langchain.agents import AgentType, initialize_agent
 
-from langchain_community.agent_toolkits.load_tools import load_tools
-from langchain_community.llms import OpenAI
+from aiagentsforce_community.agent_toolkits.load_tools import load_tools
+from aiagentsforce_community.llms import OpenAI
 
 
 def test_call() -> None:

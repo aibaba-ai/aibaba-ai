@@ -1,7 +1,7 @@
 from typing import Any
 
-from langchain_core.documents import Document
-from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.messages import AIMessage, AIMessageChunk, HumanMessage
 
 
 class AnyStr(str):

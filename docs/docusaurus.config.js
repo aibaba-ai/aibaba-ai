@@ -15,11 +15,11 @@ const baseUrl = "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "🦜️🔗 LangChain",
-  tagline: "LangChain Python Docs",
+  title: "🦜️🔗 AIAgentsForce",
+  tagline: "AIAgentsForce Python Docs",
   favicon: "img/brand/favicon.png",
   // Set the production url of your site here
-  url: "https://python.langchain.com",
+  url: "https://python.aiagentsforce.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: baseUrl,
@@ -86,7 +86,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          editUrl: "https://github.com/langchain-ai/langchain/edit/master/docs/",
+          editUrl: "https://github.com/AI-Agents-Force-SDK/langchain/edit/master/docs/",
           sidebarPath: require.resolve("./sidebars.js"),
           remarkPlugins: [
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
@@ -165,7 +165,7 @@ const config = {
           },
           {
             label: "API Reference",
-            to: "https://python.langchain.com/api_reference/",
+            to: "https://docs.aiagentsforce.com/api_reference/",
           },
           {
             type: "dropdown",
@@ -201,11 +201,11 @@ const config = {
               },
               {
                 href: "https://smith.langchain.com/hub",
-                label: "LangChain Hub",
+                label: "AI Agents Force Hub",
               },
               {
                 href: "https://js.langchain.com",
-                label: "LangChain JS/TS",
+                label: "AI Agents Force JS/TS",
               },
             ]
           },
@@ -220,11 +220,11 @@ const config = {
               },
               {
                 label: "v0.2",
-                href: "https://python.langchain.com/v0.2/docs/introduction"
+                href: "https://docs.aiagentsforce.com/v0.2/docs/introduction"
               },
               {
                 label: "v0.1",
-                href: "https://python.langchain.com/v0.1/docs/get_started/introduction"
+                href: "https://docs.aiagentsforce.com/v0.1/docs/get_started/introduction"
               }
             ]
           },
@@ -235,7 +235,7 @@ const config = {
           },
           // Please keep GitHub link to the right for consistency.
           {
-            href: "https://github.com/langchain-ai/langchain",
+            href: "https://github.com/AI-Agents-Force-SDK/langchain",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",
@@ -250,7 +250,7 @@ const config = {
             items: [
               {
                 label: "Twitter",
-                href: "https://twitter.com/LangChainAI",
+                href: "https://twitter.com/AI Agents ForceAI",
               },
             ],
           },
@@ -259,15 +259,15 @@ const config = {
             items: [
               {
                 label: "Organization",
-                href: "https://github.com/langchain-ai",
+                href: "https://github.com/AI-Agents-Force-SDK",
               },
               {
                 label: "Python",
-                href: "https://github.com/langchain-ai/langchain",
+                href: "https://github.com/AI-Agents-Force-SDK/langchain",
               },
               {
                 label: "JS/TS",
-                href: "https://github.com/langchain-ai/langchainjs",
+                href: "https://github.com/AI-Agents-Force-SDK/langchainjs",
               },
             ],
           },
@@ -284,12 +284,12 @@ const config = {
               },
               {
                 label: "YouTube",
-                href: "https://www.youtube.com/@LangChain",
+                href: "https://www.youtube.com/@AI Agents Force",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} LangChain, Inc.`,
+        //copyright: `Copyright © ${new Date().getFullYear()} AiAgentsForce, Inc.`,
       },
       algolia: {
         // The application ID provided by Algolia

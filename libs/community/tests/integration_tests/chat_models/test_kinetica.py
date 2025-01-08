@@ -5,14 +5,14 @@ from typing import TYPE_CHECKING, Generator
 
 import pandas as pd
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.prompts import ChatPromptTemplate
 
-from langchain_community.chat_models.kinetica import (
+from aiagentsforce_community.chat_models.kinetica import (
     ChatKinetica,
     KineticaSqlOutputParser,
     KineticaSqlResponse,

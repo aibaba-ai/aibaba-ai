@@ -2,8 +2,8 @@
 
 from typing import TYPE_CHECKING
 
-from langchain_community.document_loaders import PlaywrightURLLoader
-from langchain_community.document_loaders.url_playwright import PlaywrightEvaluator
+from aiagentsforce_community.document_loaders import PlaywrightURLLoader
+from aiagentsforce_community.document_loaders.url_playwright import PlaywrightEvaluator
 
 if TYPE_CHECKING:
     from playwright.async_api import Browser as AsyncBrowser

@@ -1,8 +1,8 @@
 """Test tair functionality."""
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.tair import Tair
+from aiagentsforce_community.vectorstores.tair import Tair
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

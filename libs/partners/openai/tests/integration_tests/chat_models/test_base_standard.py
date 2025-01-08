@@ -1,10 +1,10 @@
-"""Standard LangChain interface tests"""
+"""Standard AI Agents Force interface tests"""
 
 from pathlib import Path
 from typing import Dict, List, Literal, Type, cast
 
-from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import AIMessage
+from aiagentsforce_core.language_models import BaseChatModel
+from aiagentsforce_core.messages import AIMessage
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from langchain_openai import ChatOpenAI

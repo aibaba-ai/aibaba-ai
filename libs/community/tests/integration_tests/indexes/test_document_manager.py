@@ -4,7 +4,7 @@ from unittest.mock import patch
 import pytest
 import pytest_asyncio
 
-from langchain_community.indexes._document_manager import MongoDocumentManager
+from aiagentsforce_community.indexes._document_manager import MongoDocumentManager
 
 
 @pytest.fixture

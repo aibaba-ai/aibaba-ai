@@ -16,7 +16,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.engine import Engine, Result
 
-from langchain_community.utilities.sql_database import SQLDatabase, truncate_word
+from aiagentsforce_community.utilities.sql_database import SQLDatabase, truncate_word
 
 is_sqlalchemy_v1 = version.parse(sa.__version__).major == 1
 

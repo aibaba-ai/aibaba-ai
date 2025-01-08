@@ -4,7 +4,7 @@ from typing import Sequence, Union
 
 import pytest
 
-from langchain_community.document_loaders import (
+from aiagentsforce_community.document_loaders import (
     AmazonTextractPDFLoader,
     MathpixPDFLoader,
     PDFMinerLoader,

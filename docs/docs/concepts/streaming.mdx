@@ -9,9 +9,9 @@
 
 ## Overview
 
-Generating full responses from [LLMs](/docs/concepts/chat_models) often incurs a delay of several seconds, which becomes more noticeable in complex applications with multiple model calls. Fortunately, LLMs generate responses iteratively, allowing for intermediate results to be displayed as they are produced. By streaming these intermediate outputs, LangChain enables smoother UX in LLM-powered apps and offers built-in support for streaming at the core of its design.
+Generating full responses from [LLMs](/docs/concepts/chat_models) often incurs a delay of several seconds, which becomes more noticeable in complex applications with multiple model calls. Fortunately, LLMs generate responses iteratively, allowing for intermediate results to be displayed as they are produced. By streaming these intermediate outputs, AI Agents Force enables smoother UX in LLM-powered apps and offers built-in support for streaming at the core of its design.
 
-In this guide, we'll discuss streaming in LLM applications and explore how LangChain's streaming APIs facilitate real-time output from various components in your application.
+In this guide, we'll discuss streaming in LLM applications and explore how AI Agents Force's streaming APIs facilitate real-time output from various components in your application.
 
 ## What to stream in LLM applications
 
@@ -39,13 +39,13 @@ In some cases, you may need to stream **custom data** that goes beyond the infor
 
 ## Streaming APIs
 
-LangChain has two main APIs for streaming output in real-time. These APIs are supported by any component that implements the [Runnable Interface](/docs/concepts/runnables), including [LLMs](/docs/concepts/chat_models), [compiled LangGraph graphs](https://langchain-ai.github.io/langgraph/concepts/low_level/), and any Runnable generated with [LCEL](/docs/concepts/lcel).
+AI Agents Force has two main APIs for streaming output in real-time. These APIs are supported by any component that implements the [Runnable Interface](/docs/concepts/runnables), including [LLMs](/docs/concepts/chat_models), [compiled LangGraph graphs](https://langchain-ai.github.io/langgraph/concepts/low_level/), and any Runnable generated with [LCEL](/docs/concepts/lcel).
 
-1. sync [stream](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable.stream) and async [astream](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable.astream): Use to stream outputs from individual Runnables (e.g., a chat model) as they are generated or stream any workflow created with LangGraph.
-2. The async only [astream_events](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable.astream_events): Use this API to get access to custom events and intermediate outputs from LLM  applications built entirely with [LCEL](/docs/concepts/lcel). Note that this API is available, but not needed when working with LangGraph.
+1. sync [stream](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.Runnable.html#aiagentsforce_core.runnables.base.Runnable.stream) and async [astream](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.Runnable.html#aiagentsforce_core.runnables.base.Runnable.astream): Use to stream outputs from individual Runnables (e.g., a chat model) as they are generated or stream any workflow created with LangGraph.
+2. The async only [astream_events](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.Runnable.html#aiagentsforce_core.runnables.base.Runnable.astream_events): Use this API to get access to custom events and intermediate outputs from LLM  applications built entirely with [LCEL](/docs/concepts/lcel). Note that this API is available, but not needed when working with LangGraph.
 
 :::note
-In addition, there is a **legacy** async [astream_log](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable.astream_log) API. This API is not recommended for new projects it is more complex and less feature-rich than the other streaming APIs.
+In addition, there is a **legacy** async [astream_log](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.Runnable.html#aiagentsforce_core.runnables.base.Runnable.astream_log) API. This API is not recommended for new projects it is more complex and less feature-rich than the other streaming APIs.
 :::
 
 ### `stream()` and `astream()`
@@ -91,7 +91,7 @@ For more information, please see:
 
 #### Usage with LCEL
 
-If you compose multiple Runnables using [LangChain’s Expression Language (LCEL)](/docs/concepts/lcel), the `stream()` and `astream()` methods will, by convention, stream the output of the last step in the chain. This allows the final processed result to be streamed incrementally. **LCEL** tries to optimize streaming latency in pipelines such that the streaming results from the last step are available as soon as possible.
+If you compose multiple Runnables using [AI Agents Force’s Expression Language (LCEL)](/docs/concepts/lcel), the `stream()` and `astream()` methods will, by convention, stream the output of the last step in the chain. This allows the final processed result to be streamed incrementally. **LCEL** tries to optimize streaming latency in pipelines such that the streaming results from the last step are available as soon as possible.
 
 
 
@@ -107,7 +107,7 @@ While this API is available for use with [LangGraph](/docs/concepts/architecture
 For chains constructed using **LCEL**, the `.stream()` method only streams the output of the final step from te chain. This might be sufficient for some applications, but as you build more complex chains of several LLM calls together, you may want to use the intermediate values of the chain alongside the final output. For example, you may want to return sources alongside the final generation when building a chat-over-documents app.
 
 There are ways to do this [using callbacks](/docs/concepts/callbacks), or by constructing your chain in such a way that it passes intermediate
-values to the end with something like chained [`.assign()`](/docs/how_to/passthrough/) calls, but LangChain also includes an
+values to the end with something like chained [`.assign()`](/docs/how_to/passthrough/) calls, but AI Agents Force also includes an
 `.astream_events()` method that combines the flexibility of callbacks with the ergonomics of `.stream()`. When called, it returns an iterator
 which yields [various types of events](/docs/how_to/streaming/#event-reference) that you can filter and process according
 to the needs of your project.
@@ -115,8 +115,8 @@ to the needs of your project.
 Here's one small example that prints just events containing streamed chat model output:
 
 ```python
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.output_parsers import StrOutputParser
+from aiagentsforce_core.prompts import ChatPromptTemplate
 from langchain_anthropic import ChatAnthropic
 
 model = ChatAnthropic(model="claude-3-sonnet-20240229")
@@ -131,7 +131,7 @@ async for event in chain.astream_events({"topic": "parrot"}, version="v2"):
         print(event, end="|", flush=True)
 ```
 
-You can roughly think of it as an iterator over callback events (though the format differs) - and you can use it on almost all LangChain components!
+You can roughly think of it as an iterator over callback events (though the format differs) - and you can use it on almost all AI Agents Force components!
 
 See [this guide](/docs/how_to/streaming/#using-stream-events) for more detailed information on how to use `.astream_events()`, including a table listing available events.
 
@@ -140,17 +140,17 @@ See [this guide](/docs/how_to/streaming/#using-stream-events) for more detailed 
 To write custom data to the stream, you will need to choose one of the following methods based on the component you are working with:
 
 1. LangGraph's [StreamWriter](https://langchain-ai.github.io/langgraph/reference/types/#langgraph.types.StreamWriter) can be used to write custom data that will surface through **stream** and **astream** APIs when working with LangGraph. **Important** this is a LangGraph feature, so it is not available when working with pure LCEL. See [how to streaming custom data](https://langchain-ai.github.io/langgraph/how-tos/streaming-content/) for more information.
-2. [dispatch_events](https://python.langchain.com/api_reference/core/callbacks/langchain_core.callbacks.manager.dispatch_custom_event.html#) / [adispatch_events](https://python.langchain.com/api_reference/core/callbacks/langchain_core.callbacks.manager.adispatch_custom_event.html) can be used to write custom data that will be surfaced through the **astream_events** API. See [how to dispatch custom callback events](/docs/how_to/callbacks_custom_events/#astream-events-api) for more information.
+2. [dispatch_events](https://docs.aiagentsforce.com/api_reference/core/callbacks/aiagentsforce_core.callbacks.manager.dispatch_custom_event.html#) / [adispatch_events](https://docs.aiagentsforce.com/api_reference/core/callbacks/aiagentsforce_core.callbacks.manager.adispatch_custom_event.html) can be used to write custom data that will be surfaced through the **astream_events** API. See [how to dispatch custom callback events](/docs/how_to/callbacks_custom_events/#astream-events-api) for more information.
 
 ## "Auto-Streaming" Chat Models
 
-LangChain simplifies streaming from [chat models](/docs/concepts/chat_models) by automatically enabling streaming mode in certain cases, even when you’re not explicitly calling the streaming methods. This is particularly useful when you use the non-streaming `invoke` method but still want to stream the entire application, including intermediate results from the chat model.
+AI Agents Force simplifies streaming from [chat models](/docs/concepts/chat_models) by automatically enabling streaming mode in certain cases, even when you’re not explicitly calling the streaming methods. This is particularly useful when you use the non-streaming `invoke` method but still want to stream the entire application, including intermediate results from the chat model.
 
 ### How It Works
 
-When you call the `invoke` (or `ainvoke`) method on a chat model, LangChain will automatically switch to streaming mode if it detects that you are trying to stream the overall application. 
+When you call the `invoke` (or `ainvoke`) method on a chat model, AI Agents Force will automatically switch to streaming mode if it detects that you are trying to stream the overall application. 
 
-Under the hood, it'll have `invoke` (or `ainvoke`) use the `stream` (or `astream`) method to generate its output. The result of the invocation will be the same as far as the code that was using `invoke` is concerned; however, while the chat model is being streamed, LangChain will take care of invoking `on_llm_new_token` events in LangChain's [callback system](/docs/concepts/callbacks). These callback events
+Under the hood, it'll have `invoke` (or `ainvoke`) use the `stream` (or `astream`) method to generate its output. The result of the invocation will be the same as far as the code that was using `invoke` is concerned; however, while the chat model is being streamed, AI Agents Force will take care of invoking `on_llm_new_token` events in AI Agents Force's [callback system](/docs/concepts/callbacks). These callback events
 allow LangGraph `stream`/`astream` and `astream_events` to surface the chat model's output in real-time.
 
 Example:
@@ -158,7 +158,7 @@ Example:
 ```python
 def node(state):
     ...
-    # The code below uses the invoke method, but LangChain will 
+    # The code below uses the invoke method, but AI Agents Force will 
     # automatically switch to streaming mode
     # when it detects that the overall 
     # application is being streamed.
@@ -170,18 +170,18 @@ for chunk in compiled_graph.stream(..., mode="messages"):
 ```
 ## Async Programming
 
-LangChain offers both synchronous (sync) and asynchronous (async) versions of many of its methods. The async methods are typically prefixed with an "a" (e.g., `ainvoke`, `astream`). When writing async code, it's crucial to consistently use these asynchronous methods to ensure non-blocking behavior and optimal performance.
+AI Agents Force offers both synchronous (sync) and asynchronous (async) versions of many of its methods. The async methods are typically prefixed with an "a" (e.g., `ainvoke`, `astream`). When writing async code, it's crucial to consistently use these asynchronous methods to ensure non-blocking behavior and optimal performance.
 
 If streaming data fails to appear in real-time, please ensure that you are using the correct async methods for your workflow.
 
-Please review the [async programming in LangChain guide](/docs/concepts/async) for more information on writing async code with LangChain.
+Please review the [async programming in AI Agents Force guide](/docs/concepts/async) for more information on writing async code with AI Agents Force.
 
 ## Related Resources
 
-Please see the following how-to guides for specific examples of streaming in LangChain:
+Please see the following how-to guides for specific examples of streaming in AI Agents Force:
 * [LangGraph conceptual guide on streaming](https://langchain-ai.github.io/langgraph/concepts/streaming/)
 * [LangGraph streaming how-to guides](https://langchain-ai.github.io/langgraph/how-tos/#streaming)
-* [How to stream runnables](/docs/how_to/streaming/): This how-to guide goes over common streaming patterns with LangChain components (e.g., chat models) and with [LCEL](/docs/concepts/lcel).
+* [How to stream runnables](/docs/how_to/streaming/): This how-to guide goes over common streaming patterns with AI Agents Force components (e.g., chat models) and with [LCEL](/docs/concepts/lcel).
 * [How to stream chat models](/docs/how_to/chat_streaming/)
 * [How to stream tool calls](/docs/how_to/tool_streaming/)
 

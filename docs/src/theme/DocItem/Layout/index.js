@@ -35,12 +35,12 @@ export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
   const {metadata, frontMatter} = useDoc();
 
-  "https://github.com/langchain-ai/langchain/blob/master/docs/docs/introduction.ipynb"
+  "https://github.com/AI-Agents-Force-SDK/langchain/blob/master/docs/docs/introduction.ipynb"
   "https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/introduction.ipynb"
 
   const linkColab = frontMatter.link_colab || (
     metadata.editUrl?.endsWith(".ipynb") 
-      ? metadata.editUrl?.replace("https://github.com/langchain-ai/langchain/edit/", "https://colab.research.google.com/github/langchain-ai/langchain/blob/") 
+      ? metadata.editUrl?.replace("https://github.com/AI-Agents-Force-SDK/langchain/edit/", "https://colab.research.google.com/github/langchain-ai/langchain/blob/") 
       : null
   );
   const linkGithub = frontMatter.link_github || metadata.editUrl?.replace("/edit/", "/blob/");

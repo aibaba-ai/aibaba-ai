@@ -1,6 +1,6 @@
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_compressors.infinity_rerank import (
+from aiagentsforce_community.document_compressors.infinity_rerank import (
     InfinityRerank,
 )
 

@@ -3,9 +3,9 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import PolarsDataFrameLoader
+from aiagentsforce_community.document_loaders import PolarsDataFrameLoader
 
 if TYPE_CHECKING:
     import polars as pl

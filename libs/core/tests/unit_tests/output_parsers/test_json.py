@@ -5,12 +5,12 @@ from typing import Any
 import pytest
 from pydantic import BaseModel, Field
 
-from langchain_core.exceptions import OutputParserException
-from langchain_core.output_parsers.json import (
+from aiagentsforce_core.exceptions import OutputParserException
+from aiagentsforce_core.output_parsers.json import (
     SimpleJsonOutputParser,
 )
-from langchain_core.utils.function_calling import convert_to_openai_function
-from langchain_core.utils.json import parse_json_markdown, parse_partial_json
+from aiagentsforce_core.utils.function_calling import convert_to_openai_function
+from aiagentsforce_core.utils.json import parse_json_markdown, parse_partial_json
 from tests.unit_tests.pydantic_utils import _schema
 
 GOOD_JSON = """```json

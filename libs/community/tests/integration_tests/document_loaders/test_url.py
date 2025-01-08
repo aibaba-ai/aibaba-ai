@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_community.document_loaders import UnstructuredURLLoader
+from aiagentsforce_community.document_loaders import UnstructuredURLLoader
 
 
 def test_continue_on_failure_true() -> None:

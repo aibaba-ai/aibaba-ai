@@ -16,7 +16,7 @@ The way the model tokenizes the input depends on its **tokenizer algorithm**, wh
 
 The reason language models use tokens is tied to how they understand and predict language. Rather than processing characters or entire sentences directly, language models focus on **tokens**, which represent meaningful linguistic units. Here's how the process works:
 
-1. **Input Tokenization**: When you provide a model with a prompt (e.g., "LangChain is cool!"), the tokenizer algorithm splits the text into tokens. For example, the sentence could be tokenized into parts like `["Lang", "Chain", " is", " cool", "!"]`. Note that token boundaries don’t always align with word boundaries.
+1. **Input Tokenization**: When you provide a model with a prompt (e.g., "AI Agents Force is cool!"), the tokenizer algorithm splits the text into tokens. For example, the sentence could be tokenized into parts like `["Lang", "Chain", " is", " cool", "!"]`. Note that token boundaries don’t always align with word boundaries.
     ![](/img/tokenization.png)
 
 2. **Processing**: The transformer architecture behind these models processes tokens sequentially to predict the next token in a sentence. It does this by analyzing the relationships between tokens, capturing context and meaning from the input.

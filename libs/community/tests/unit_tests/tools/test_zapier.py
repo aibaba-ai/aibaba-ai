@@ -5,9 +5,9 @@ from unittest.mock import MagicMock, patch
 import pytest
 import requests
 
-from langchain_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT
-from langchain_community.tools.zapier.tool import ZapierNLARunAction
-from langchain_community.utilities.zapier import ZapierNLAWrapper
+from aiagentsforce_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT
+from aiagentsforce_community.tools.zapier.tool import ZapierNLARunAction
+from aiagentsforce_community.utilities.zapier import ZapierNLAWrapper
 
 
 def test_default_base_prompt() -> None:

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from langchain_core.runnables.config import run_in_executor
+from aiagentsforce_core.runnables.config import run_in_executor
 from pydantic import BaseModel, Field
 
 

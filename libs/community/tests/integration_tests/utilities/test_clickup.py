@@ -5,7 +5,7 @@ from datetime import datetime
 
 import pytest
 
-from langchain_community.utilities.clickup import ClickupAPIWrapper
+from aiagentsforce_community.utilities.clickup import ClickupAPIWrapper
 
 
 @pytest.fixture

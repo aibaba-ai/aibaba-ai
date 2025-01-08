@@ -8,9 +8,9 @@ from langchain_tests.integration_tests.indexer import (
     DocumentIndexerTestSuite,
 )
 
-from langchain_core.documents import Document
-from langchain_core.indexing.base import DocumentIndex
-from langchain_core.indexing.in_memory import (
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.indexing.base import DocumentIndex
+from aiagentsforce_core.indexing.in_memory import (
     InMemoryDocumentIndex,
 )
 

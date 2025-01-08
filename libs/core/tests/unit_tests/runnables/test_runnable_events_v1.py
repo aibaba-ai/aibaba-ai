@@ -9,29 +9,29 @@ from typing import Optional as Optional
 import pytest
 from pydantic import BaseModel
 
-from langchain_core.callbacks import CallbackManagerForRetrieverRun, Callbacks
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.documents import Document
-from langchain_core.language_models import FakeStreamingListLLM, GenericFakeChatModel
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManagerForRetrieverRun, Callbacks
+from aiagentsforce_core.chat_history import BaseChatMessageHistory
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.language_models import FakeStreamingListLLM, GenericFakeChatModel
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.prompt_values import ChatPromptValue
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import (
+from aiagentsforce_core.prompt_values import ChatPromptValue
+from aiagentsforce_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from aiagentsforce_core.retrievers import BaseRetriever
+from aiagentsforce_core.runnables import (
     ConfigurableField,
     Runnable,
     RunnableConfig,
     RunnableLambda,
 )
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.runnables.schema import StreamEvent
-from langchain_core.tools import tool
+from aiagentsforce_core.runnables.history import RunnableWithMessageHistory
+from aiagentsforce_core.runnables.schema import StreamEvent
+from aiagentsforce_core.tools import tool
 from tests.unit_tests.stubs import _any_id_ai_message, _any_id_ai_message_chunk
 
 

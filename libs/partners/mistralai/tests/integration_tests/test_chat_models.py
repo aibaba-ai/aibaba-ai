@@ -3,7 +3,7 @@
 import json
 from typing import Any, Optional
 
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessageChunk,

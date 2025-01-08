@@ -189,7 +189,7 @@ def search_code_for_arxiv_references(code_dir: Path) -> dict[str, set[str]]:
 def search_templates_for_arxiv_references(templates_dir: Path) -> dict[str, set[str]]:
     arxiv_url_pattern = re.compile(ARXIV_ID_PATTERN)
 
-    # loop all the Readme.md files since they are parsed into LangChain documentation
+    # loop all the Readme.md files since they are parsed into AI Agents Force documentation
     # exclude the Readme.md in the root folder
     files = (
         p.resolve()
@@ -401,26 +401,26 @@ def _format_doc_url(doc_path: str) -> str:
 
 
 def _format_api_ref_url(doc_path: str, compact: bool = False) -> str:
-    # agents/langchain_core.agents.AgentAction.html#langchain_core.agents.AgentAction
+    # agents/aiagentsforce_core.agents.AgentAction.html#aiagentsforce_core.agents.AgentAction
     return f"https://api.{LANGCHAIN_PYTHON_URL}/en/latest/{doc_path.split('langchain.com/')[-1]}"
 
 
 def _format_template_url(template_name: str) -> str:
     return (
-        f"https://github.com/langchain-ai/langchain/blob/v0.2/templates/{template_name}"
+        f"https://github.com/AI-Agents-Force-SDK/langchain/blob/v0.2/templates/{template_name}"
     )
 
 
 def _format_cookbook_url(cookbook_name: str) -> str:
-    return f"https://github.com/langchain-ai/langchain/blob/master/cookbook/{cookbook_name}.ipynb"
+    return f"https://github.com/AI-Agents-Force-SDK/langchain/blob/master/cookbook/{cookbook_name}.ipynb"
 
 
 def _compact_module_full_name(doc_path: str) -> str:
-    # agents/langchain_core.agents.AgentAction.html#langchain_core.agents.AgentAction
+    # agents/aiagentsforce_core.agents.AgentAction.html#aiagentsforce_core.agents.AgentAction
     module = doc_path.split("#")[1].replace("module-", "")
     if module.count(".") > 2:
-        # langchain_community.llms.oci_data_science_model_deployment_endpoint.OCIModelDeploymentTGI
-        # -> langchain_community...OCIModelDeploymentTGI
+        # aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint.OCIModelDeploymentTGI
+        # -> aiagentsforce_community...OCIModelDeploymentTGI
         module_parts = module.split(".")
         module = f"{module_parts[0]}...{module_parts[-1]}"
     return module
@@ -520,18 +520,18 @@ def generate_arxiv_references_page(file_name: Path, papers: list[ArxivPaper]) ->
         f.write(
             """# arXiv
             
-LangChain implements the latest research in the field of Natural Language Processing.
-This page contains `arXiv` papers referenced in the LangChain Documentation, API Reference,
+AI Agents Force implements the latest research in the field of Natural Language Processing.
+This page contains `arXiv` papers referenced in the AI Agents Force Documentation, API Reference,
  Templates, and Cookbooks.
 
-From the opposite direction, scientists use `LangChain` in research and reference it in the research papers. 
+From the opposite direction, scientists use `AI Agents Force` in research and reference it in the research papers. 
 
 `arXiv` papers with references to:
- [LangChain](https://arxiv.org/search/?query=langchain&searchtype=all&source=header) | [LangGraph](https://arxiv.org/search/?query=langgraph&searchtype=all&source=header) | [LangSmith](https://arxiv.org/search/?query=langsmith&searchtype=all&source=header)
+ [AI Agents Force](https://arxiv.org/search/?query=langchain&searchtype=all&source=header) | [LangGraph](https://arxiv.org/search/?query=langgraph&searchtype=all&source=header) | [LangSmith](https://arxiv.org/search/?query=langsmith&searchtype=all&source=header)
 
 ## Summary
 
-| arXiv id / Title | Authors | Published date 🔻 | LangChain Documentation|
+| arXiv id / Title | Authors | Published date 🔻 | AI Agents Force Documentation|
 |------------------|---------|-------------------|------------------------|
 """
         )
@@ -610,7 +610,7 @@ From the opposite direction, scientists use `LangChain` in research and referenc
 
 - **Authors:** {', '.join(paper.authors)}
 - **arXiv id:** [{paper.arxiv_id}]({paper.url})  **Published Date:** {paper.published_date}
-- **LangChain:**
+- **AI Agents Force:**
 
 {refs}
 

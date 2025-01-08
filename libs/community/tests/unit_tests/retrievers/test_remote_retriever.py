@@ -1,9 +1,9 @@
 from typing import Any, Dict
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest_mock import MockerFixture
 
-from langchain_community.retrievers import RemoteLangChainRetriever
+from aiagentsforce_community.retrievers import RemoteAI Agents ForceRetriever
 
 
 class MockResponse:
@@ -37,15 +37,15 @@ def mocked_requests_post(*args: Any, **kwargs: Any) -> MockResponse:
     )
 
 
-def test_RemoteLangChainRetriever_invoke(
+def test_RemoteAI Agents ForceRetriever_invoke(
     mocker: MockerFixture,
 ) -> None:
     mocker.patch("requests.post", side_effect=mocked_requests_post)
 
-    remote_langchain_retriever = RemoteLangChainRetriever(
+    remote_aiagentforce_retriever = RemoteAI Agents ForceRetriever(
         url="http://localhost:8000",
     )
-    response = remote_langchain_retriever.invoke("I like apples")
+    response = remote_aiagentforce_retriever.invoke("I like apples")
     want = [
         Document(page_content="I like apples", metadata={"test": 0}),
         Document(page_content="I like pineapples", metadata={"test": 1}),

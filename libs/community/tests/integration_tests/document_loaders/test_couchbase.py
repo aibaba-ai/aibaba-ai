@@ -1,6 +1,6 @@
 import unittest
 
-from langchain_community.document_loaders.couchbase import CouchbaseLoader
+from aiagentsforce_community.document_loaders.couchbase import CouchbaseLoader
 
 try:
     import couchbase  # noqa: F401

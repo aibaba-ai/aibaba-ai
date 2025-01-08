@@ -3,13 +3,13 @@
 from typing import cast
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.chat_models.jinachat import JinaChat
+from aiagentsforce_community.chat_models.jinachat import JinaChat
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

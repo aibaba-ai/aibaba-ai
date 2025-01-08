@@ -2,7 +2,7 @@ from typing import Dict
 
 import responses
 
-from langchain_community.utilities.infobip import InfobipAPIWrapper
+from aiagentsforce_community.utilities.infobip import InfobipAPIWrapper
 
 
 def test_send_sms() -> None:

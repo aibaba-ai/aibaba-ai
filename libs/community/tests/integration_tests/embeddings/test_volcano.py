@@ -1,6 +1,6 @@
 """Test Bytedance Volcano Embedding."""
 
-from langchain_community.embeddings import VolcanoEmbeddings
+from aiagentsforce_community.embeddings import VolcanoEmbeddings
 
 
 def test_embedding_documents() -> None:

@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from langchain_community.document_loaders import SlackDirectoryLoader
+from aiagentsforce_community.document_loaders import SlackDirectoryLoader
 
 
 def test_slack_directory_loader() -> None:

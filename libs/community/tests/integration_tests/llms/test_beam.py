@@ -1,6 +1,6 @@
 """Test Beam API wrapper."""
 
-from langchain_community.llms.beam import Beam
+from aiagentsforce_community.llms.beam import Beam
 
 
 def test_beam_call() -> None:

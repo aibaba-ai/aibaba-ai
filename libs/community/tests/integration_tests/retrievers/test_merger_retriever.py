@@ -1,7 +1,7 @@
 from langchain.retrievers.merger_retriever import MergerRetriever
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 
-from langchain_community.embeddings import OpenAIEmbeddings
+from aiagentsforce_community.embeddings import OpenAIEmbeddings
 
 
 def test_merger_retriever_get_relevant_docs() -> None:

@@ -18,9 +18,9 @@ from math import isclose
 from typing import Any, Dict, List
 
 from dotenv import load_dotenv
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.falkordb_vector import (
+from aiagentsforce_community.vectorstores.falkordb_vector import (
     FalkorDBVector,
     SearchType,
     process_index_data,

@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_core.utils.iter import batch_iterate
+from aiagentsforce_core.utils.iter import batch_iterate
 
 
 @pytest.mark.parametrize(

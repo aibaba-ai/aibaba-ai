@@ -7,13 +7,13 @@ import pkgutil
 
 import click
 
-from langchain_cli.namespaces.migrate.generate.generic import (
+from aiagentsforce_cli.namespaces.migrate.generate.generic import (
     generate_simplified_migrations,
 )
-from langchain_cli.namespaces.migrate.generate.grit import (
+from aiagentsforce_cli.namespaces.migrate.generate.grit import (
     dump_migrations_as_grit,
 )
-from langchain_cli.namespaces.migrate.generate.partner import (
+from aiagentsforce_cli.namespaces.migrate.generate.partner import (
     get_migrations_for_partner_package,
 )
 
@@ -31,7 +31,7 @@ def cli():
 )
 @click.option(
     "--pkg2",
-    default="langchain_community",
+    default="aiagentsforce_community",
 )
 @click.option(
     "--output",
@@ -82,7 +82,7 @@ def handle_partner(pkg: str, output: str = None):
     if migrations:
         with open(output_name, "w") as f:
             f.write(data)
-        click.secho(f"LangChain migration script saved to {output_name}")
+        click.secho(f"AI Agents Force migration script saved to {output_name}")
     else:
         click.secho(f"No migrations found for {pkg}", fg="yellow")
 
@@ -91,8 +91,8 @@ def handle_partner(pkg: str, output: str = None):
 @click.argument("pkg")
 @click.option("--output", default=None, help="Output file for the migration script.")
 def partner(pkg: str, output: str) -> None:
-    """Generate migration scripts specifically for LangChain modules."""
-    click.echo("Migration script for LangChain generated.")
+    """Generate migration scripts specifically for AI Agents Force modules."""
+    click.echo("Migration script for AI Agents Force generated.")
     handle_partner(pkg, output)
 
 
@@ -112,7 +112,7 @@ def json_to_grit(json_file: str) -> None:
 
 @cli.command()
 def all_installed_partner_pkgs() -> None:
-    """Generate migration scripts for all LangChain modules."""
+    """Generate migration scripts for all AI Agents Force modules."""
     # Will generate migrations for all partner packages.
     # Define as "langchain_<partner_name>".
     # First let's determine which packages are installed in the environment
@@ -121,7 +121,7 @@ def all_installed_partner_pkgs() -> None:
         name
         for _, name, _ in pkgutil.iter_modules()
         if name.startswith("langchain_")
-        and name not in {"langchain_core", "langchain_cli", "langchain_community"}
+        and name not in {"aiagentsforce_core", "langchain_cli", "aiagentsforce_community"}
     ]
     for pkg in langchain_pkgs:
         handle_partner(pkg)

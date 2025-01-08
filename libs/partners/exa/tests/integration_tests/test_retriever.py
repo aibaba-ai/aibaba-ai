@@ -1,4 +1,4 @@
-from langchain_core.documents import (
+from aiagentsforce_core.documents import (
     Document,  # type: ignore[import-not-found, import-not-found]
 )
 

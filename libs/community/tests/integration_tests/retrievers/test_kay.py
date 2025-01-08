@@ -1,9 +1,9 @@
 """Integration test for Kay.ai API Wrapper."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers import KayAiRetriever
+from aiagentsforce_community.retrievers import KayAiRetriever
 
 
 @pytest.mark.requires("kay")

@@ -2,7 +2,7 @@ import os
 from typing import List, Literal, Optional, overload
 
 import nomic  # type: ignore[import]
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.embeddings import Embeddings
 from nomic import embed
 
 

@@ -7,7 +7,7 @@ cases = [
         source=File(
             "app.py",
             content=[
-                "from langchain_community.chat_models import ChatOpenAI",
+                "from aiagentsforce_community.chat_models import ChatOpenAI",
                 "",
                 "",
                 "class foo:",

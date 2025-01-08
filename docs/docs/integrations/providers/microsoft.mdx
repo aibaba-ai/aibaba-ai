@@ -47,7 +47,7 @@ models hosted with [Azure Machine Learning](https://azure.microsoft.com/en-us/pr
 See a [usage example](/docs/integrations/llms/azure_ml).
 
 ```python
-from langchain_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
+from aiagentsforce_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
 ```
 
 ### Azure OpenAI
@@ -137,13 +137,13 @@ pip install azure-storage-blob
 See a [usage example for the Azure Blob Storage](/docs/integrations/document_loaders/azure_blob_storage_container).
 
 ```python
-from langchain_community.document_loaders import AzureBlobStorageContainerLoader
+from aiagentsforce_community.document_loaders import AzureBlobStorageContainerLoader
 ```
 
 See a [usage example for the Azure Files](/docs/integrations/document_loaders/azure_blob_storage_file).
 
 ```python
-from langchain_community.document_loaders import AzureBlobStorageFileLoader
+from aiagentsforce_community.document_loaders import AzureBlobStorageFileLoader
 ```
 
 
@@ -160,7 +160,7 @@ pip install o365
 See a [usage example](/docs/integrations/document_loaders/microsoft_onedrive).
 
 ```python
-from langchain_community.document_loaders import OneDriveLoader
+from aiagentsforce_community.document_loaders import OneDriveLoader
 ```
 
 ### Microsoft OneDrive File
@@ -174,7 +174,7 @@ pip install o365
 ```
 
 ```python
-from langchain_community.document_loaders import OneDriveFileLoader
+from aiagentsforce_community.document_loaders import OneDriveFileLoader
 ```
 
 
@@ -185,7 +185,7 @@ from langchain_community.document_loaders import OneDriveFileLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_word).
 
 ```python
-from langchain_community.document_loaders import UnstructuredWordDocumentLoader
+from aiagentsforce_community.document_loaders import UnstructuredWordDocumentLoader
 ```
 
 
@@ -203,7 +203,7 @@ representation of the Excel file will be available in the document metadata unde
 See a [usage example](/docs/integrations/document_loaders/microsoft_excel).
 
 ```python
-from langchain_community.document_loaders import UnstructuredExcelLoader
+from aiagentsforce_community.document_loaders import UnstructuredExcelLoader
 ```
 
 
@@ -216,7 +216,7 @@ from langchain_community.document_loaders import UnstructuredExcelLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_sharepoint).
 
 ```python
-from langchain_community.document_loaders.sharepoint import SharePointLoader
+from aiagentsforce_community.document_loaders.sharepoint import SharePointLoader
 ```
 
 
@@ -227,7 +227,7 @@ from langchain_community.document_loaders.sharepoint import SharePointLoader
 See a [usage example](/docs/integrations/document_loaders/microsoft_powerpoint).
 
 ```python
-from langchain_community.document_loaders import UnstructuredPowerPointLoader
+from aiagentsforce_community.document_loaders import UnstructuredPowerPointLoader
 ```
 
 ### Microsoft OneNote
@@ -241,7 +241,7 @@ pip install bs4 msal
 See a [usage example](/docs/integrations/document_loaders/microsoft_onenote).
 
 ```python
-from langchain_community.document_loaders.onenote import OneNoteLoader
+from aiagentsforce_community.document_loaders.onenote import OneNoteLoader
 ```
 
 ### Playwright URL Loader
@@ -261,7 +261,7 @@ pip install playwright unstructured
 See a [usage example](/docs/integrations/document_loaders/url/#playwright-url-loader).
 
 ```python
-from langchain_community.document_loaders.onenote import OneNoteLoader
+from aiagentsforce_community.document_loaders.onenote import OneNoteLoader
 ```
 
 ## Vector Stores
@@ -298,7 +298,7 @@ With Cosmos DB for MongoDB vCore, developers can enjoy the benefits of native Az
 See a [usage example](/docs/integrations/vectorstores/azure_cosmos_db).
 
 ```python
-from langchain_community.vectorstores import AzureCosmosDBVectorSearch
+from aiagentsforce_community.vectorstores import AzureCosmosDBVectorSearch
 ```
 
 #### Azure Cosmos DB NoSQL
@@ -330,7 +330,7 @@ in every Azure region and can automatically replicate data closer to users. It h
 See a [usage example](/docs/integrations/vectorstores/azure_cosmos_db_no_sql).
 
 ```python
-from langchain_community.vectorstores import AzureCosmosDBNoSQLVectorSearch
+from aiagentsforce_community.vectorstores import AzureCosmosDBNoSQLVectorSearch
 ```
 
 ### Azure Database for PostgreSQL
@@ -341,7 +341,7 @@ See [set up instructions](https://learn.microsoft.com/en-us/azure/postgresql/fle
 
 See a [usage example](/docs/integrations/memory/postgres_chat_message_history/). Simply use the [connection string](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python?tabs=cmd%2Cpassword#add-authentication-code) from your Azure Portal. 
 
-Since Azure Database for PostgreSQL is open-source Postgres, you can use the [LangChain's Postgres support](/docs/integrations/vectorstores/pgvector/) to connect to Azure Database for PostgreSQL.
+Since Azure Database for PostgreSQL is open-source Postgres, you can use the [AI Agents Force's Postgres support](/docs/integrations/vectorstores/pgvector/) to connect to Azure Database for PostgreSQL.
 
 ### Azure SQL Database
 
@@ -376,7 +376,7 @@ that gives developers infrastructure, APIs, and tools for information retrieval 
 queries at scale. See [here](/docs/integrations/vectorstores/azuresearch) for usage examples.
 
 ```python
-from langchain_community.vectorstores.azuresearch import AzureSearch
+from aiagentsforce_community.vectorstores.azuresearch import AzureSearch
 ```
 
 ## Retrievers
@@ -397,7 +397,7 @@ See [set up instructions](https://learn.microsoft.com/en-us/azure/search/search-
 See a [usage example](/docs/integrations/retrievers/azure_ai_search).
 
 ```python
-from langchain_community.retrievers import AzureAISearchRetriever
+from aiagentsforce_community.retrievers import AzureAISearchRetriever
 ```
 
 ## Vector Store
@@ -406,7 +406,7 @@ from langchain_community.retrievers import AzureAISearchRetriever
 
 See [set up instructions](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal) for Azure Database for PostgreSQL. 
 
-You need to [enable pgvector extension](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector) in your database to use Postgres as a vector store. Once you have the extension enabled, you can use the [PGVector in LangChain](/docs/integrations/vectorstores/pgvector/) to connect to Azure Database for PostgreSQL. 
+You need to [enable pgvector extension](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector) in your database to use Postgres as a vector store. Once you have the extension enabled, you can use the [PGVector in AI Agents Force](/docs/integrations/vectorstores/pgvector/) to connect to Azure Database for PostgreSQL. 
 
 See a [usage example](/docs/integrations/vectorstores/pgvector/). Simply use the [connection string](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python?tabs=cmd%2Cpassword#add-authentication-code) from your Azure Portal. 
 
@@ -437,8 +437,8 @@ Follow the documentation [here](/docs/integrations/tools/bing_search) to get a d
 The environment variable `BING_SUBSCRIPTION_KEY` and `BING_SEARCH_URL` are required from Bing Search resource.
 
 ```python
-from langchain_community.tools.bing_search import BingSearchResults
-from langchain_community.utilities import BingSearchAPIWrapper
+from aiagentsforce_community.tools.bing_search import BingSearchResults
+from aiagentsforce_community.utilities import BingSearchAPIWrapper
 
 api_wrapper = BingSearchAPIWrapper()
 tool = BingSearchResults(api_wrapper=api_wrapper)
@@ -457,18 +457,18 @@ pip install azure-ai-formrecognizer azure-cognitiveservices-speech azure-ai-visi
 See a [usage example](/docs/integrations/tools/azure_ai_services).
 
 ```python
-from langchain_community.agent_toolkits import azure_ai_services
+from aiagentsforce_community.agent_toolkits import azure_ai_services
 ```
 
 #### Azure AI Services individual tools
 
 The `azure_ai_services` toolkit includes the following tools:
 
-- Image Analysis: [AzureAiServicesImageAnalysisTool](https://python.langchain.com/api_reference/community/tools/langchain_community.tools.azure_ai_services.image_analysis.AzureAiServicesImageAnalysisTool.html)
-- Document Intelligence: [AzureAiServicesDocumentIntelligenceTool](https://python.langchain.com/api_reference/community/tools/langchain_community.tools.azure_ai_services.document_intelligence.AzureAiServicesDocumentIntelligenceTool.html)
-- Speech to Text: [AzureAiServicesSpeechToTextTool](https://python.langchain.com/api_reference/community/tools/langchain_community.tools.azure_ai_services.speech_to_text.AzureAiServicesSpeechToTextTool.html)
-- Text to Speech: [AzureAiServicesTextToSpeechTool](https://python.langchain.com/api_reference/community/tools/langchain_community.tools.azure_ai_services.text_to_speech.AzureAiServicesTextToSpeechTool.html)
-- Text Analytics for Health: [AzureAiServicesTextAnalyticsForHealthTool](https://python.langchain.com/api_reference/community/tools/langchain_community.tools.azure_ai_services.text_analytics_for_health.AzureAiServicesTextAnalyticsForHealthTool.html)
+- Image Analysis: [AzureAiServicesImageAnalysisTool](https://docs.aiagentsforce.com/api_reference/community/tools/aiagentsforce_community.tools.azure_ai_services.image_analysis.AzureAiServicesImageAnalysisTool.html)
+- Document Intelligence: [AzureAiServicesDocumentIntelligenceTool](https://docs.aiagentsforce.com/api_reference/community/tools/aiagentsforce_community.tools.azure_ai_services.document_intelligence.AzureAiServicesDocumentIntelligenceTool.html)
+- Speech to Text: [AzureAiServicesSpeechToTextTool](https://docs.aiagentsforce.com/api_reference/community/tools/aiagentsforce_community.tools.azure_ai_services.speech_to_text.AzureAiServicesSpeechToTextTool.html)
+- Text to Speech: [AzureAiServicesTextToSpeechTool](https://docs.aiagentsforce.com/api_reference/community/tools/aiagentsforce_community.tools.azure_ai_services.text_to_speech.AzureAiServicesTextToSpeechTool.html)
+- Text Analytics for Health: [AzureAiServicesTextAnalyticsForHealthTool](https://docs.aiagentsforce.com/api_reference/community/tools/aiagentsforce_community.tools.azure_ai_services.text_analytics_for_health.AzureAiServicesTextAnalyticsForHealthTool.html)
 
 ### Azure Cognitive Services
 
@@ -481,7 +481,7 @@ pip install azure-ai-formrecognizer azure-cognitiveservices-speech azure-ai-visi
 See a [usage example](/docs/integrations/tools/azure_cognitive_services).
 
 ```python
-from langchain_community.agent_toolkits import AzureCognitiveServicesToolkit
+from aiagentsforce_community.agent_toolkits import AzureCognitiveServicesToolkit
 ```
 
 #### Azure AI Services individual tools
@@ -494,7 +494,7 @@ The `azure_ai_services` toolkit includes the tools that queries the `Azure Cogni
 - `AzureCogsTextAnalyticsHealthTool`: Text Analytics for Health API
 
 ```python
-from langchain_community.tools.azure_cognitive_services import (
+from aiagentsforce_community.tools.azure_cognitive_services import (
     AzureCogsFormRecognizerTool,
     AzureCogsImageAnalysisTool,
     AzureCogsSpeech2TextTool,
@@ -515,7 +515,7 @@ pip install O365
 See a [usage example](/docs/integrations/tools/office365).
 
 ```python
-from langchain_community.agent_toolkits import O365Toolkit
+from aiagentsforce_community.agent_toolkits import O365Toolkit
 ```
 
 #### Office 365 individual tools
@@ -528,11 +528,11 @@ You can use individual tools from the Office 365 Toolkit:
 - `O365SendMessage`: sending an email in Office 365
 
 ```python
-from langchain_community.tools.office365 import O365CreateDraftMessage
-from langchain_community.tools.office365 import O365SearchEmails
-from langchain_community.tools.office365 import O365SearchEvents
-from langchain_community.tools.office365 import O365SendEvent
-from langchain_community.tools.office365 import O365SendMessage
+from aiagentsforce_community.tools.office365 import O365CreateDraftMessage
+from aiagentsforce_community.tools.office365 import O365SearchEmails
+from aiagentsforce_community.tools.office365 import O365SearchEvents
+from aiagentsforce_community.tools.office365 import O365SendEvent
+from aiagentsforce_community.tools.office365 import O365SendMessage
 ```
 
 ### Microsoft Azure PowerBI
@@ -546,8 +546,8 @@ pip install azure-identity
 See a [usage example](/docs/integrations/tools/powerbi).
 
 ```python
-from langchain_community.agent_toolkits import PowerBIToolkit
-from langchain_community.utilities.powerbi import PowerBIDataset
+from aiagentsforce_community.agent_toolkits import PowerBIToolkit
+from aiagentsforce_community.utilities.powerbi import PowerBIDataset
 ```
 
 #### PowerBI individual tools
@@ -558,9 +558,9 @@ You can use individual tools from the Azure PowerBI Toolkit:
 - `QueryPowerBITool`: querying a PowerBI Dataset
 
 ```python
-from langchain_community.tools.powerbi.tool import InfoPowerBITool
-from langchain_community.tools.powerbi.tool import ListPowerBITool
-from langchain_community.tools.powerbi.tool import QueryPowerBITool
+from aiagentsforce_community.tools.powerbi.tool import InfoPowerBITool
+from aiagentsforce_community.tools.powerbi.tool import ListPowerBITool
+from aiagentsforce_community.tools.powerbi.tool import QueryPowerBITool
 ```
 
 
@@ -580,7 +580,7 @@ pip install playwright lxml
 See a [usage example](/docs/integrations/tools/playwright).
 
 ```python
-from langchain_community.agent_toolkits import PlayWrightBrowserToolkit
+from aiagentsforce_community.agent_toolkits import PlayWrightBrowserToolkit
 ```
 
 #### PlayWright Browser individual tools
@@ -588,13 +588,13 @@ from langchain_community.agent_toolkits import PlayWrightBrowserToolkit
 You can use individual tools from the PlayWright Browser Toolkit.
 
 ```python
-from langchain_community.tools.playwright import ClickTool
-from langchain_community.tools.playwright import CurrentWebPageTool
-from langchain_community.tools.playwright import ExtractHyperlinksTool
-from langchain_community.tools.playwright import ExtractTextTool
-from langchain_community.tools.playwright import GetElementsTool
-from langchain_community.tools.playwright import NavigateTool
-from langchain_community.tools.playwright import NavigateBackTool
+from aiagentsforce_community.tools.playwright import ClickTool
+from aiagentsforce_community.tools.playwright import CurrentWebPageTool
+from aiagentsforce_community.tools.playwright import ExtractHyperlinksTool
+from aiagentsforce_community.tools.playwright import ExtractTextTool
+from aiagentsforce_community.tools.playwright import GetElementsTool
+from aiagentsforce_community.tools.playwright import NavigateTool
+from aiagentsforce_community.tools.playwright import NavigateBackTool
 ```
 
 ## Graphs
@@ -610,8 +610,8 @@ pip install gremlinpython
 See a [usage example](/docs/integrations/graphs/azure_cosmosdb_gremlin).
 
 ```python
-from langchain_community.graphs import GremlinGraph
-from langchain_community.graphs.graph_document import GraphDocument, Node, Relationship
+from aiagentsforce_community.graphs import GremlinGraph
+from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship
 ```
 
 ## Utilities
@@ -624,7 +624,7 @@ from langchain_community.graphs.graph_document import GraphDocument, Node, Relat
 See a [usage example](/docs/integrations/tools/bing_search).
 
 ```python
-from langchain_community.utilities import BingSearchAPIWrapper
+from aiagentsforce_community.utilities import BingSearchAPIWrapper
 ```
 
 ## More
@@ -643,7 +643,7 @@ pip install langchain-experimental openai presidio-analyzer presidio-anonymizer 
 python -m spacy download en_core_web_lg
 ```
 
-See [usage examples](https://python.langchain.com/v0.1/docs/guides/productionization/safety/presidio_data_anonymization).
+See [usage examples](https://docs.aiagentsforce.com/v0.1/docs/guides/productionization/safety/presidio_data_anonymization).
 
 ```python
 from langchain_experimental.data_anonymizer import PresidioAnonymizer, PresidioReversibleAnonymizer

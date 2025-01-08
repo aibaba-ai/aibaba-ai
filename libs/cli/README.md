@@ -1,6 +1,6 @@
 # langchain-cli
 
-This package implements the official CLI for LangChain. Right now, it is most useful
-for getting started with LangChain Templates!
+This package implements the official CLI for AI Agents Force. Right now, it is most useful
+for getting started with AI Agents Force Templates!
 
-[CLI Docs](https://github.com/langchain-ai/langchain/blob/master/libs/cli/DOCS.md)
+[CLI Docs](https://github.com/AI-Agents-Force-SDK/langchain/blob/master/libs/cli/DOCS.md)

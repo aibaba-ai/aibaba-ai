@@ -26,7 +26,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"
@@ -79,7 +79,7 @@
                 "lc": 1,
                 "type": "not_implemented",
                 "id": [
-                  "langchain_core",
+                  "aiagentsforce_core",
                   "language_models",
                   "fake",
                   "FakeListLLM"
@@ -123,7 +123,7 @@
                   "lc": 1,
                   "type": "not_implemented",
                   "id": [
-                    "langchain_core",
+                    "aiagentsforce_core",
                     "language_models",
                     "fake",
                     "FakeListLLM"
@@ -207,7 +207,7 @@
             "lc": 1,
             "type": "not_implemented",
             "id": [
-              "langchain_core",
+              "aiagentsforce_core",
               "runnables",
               "base",
               "RunnableLambda"
@@ -219,7 +219,7 @@
               "lc": 1,
               "type": "not_implemented",
               "id": [
-                "langchain_core",
+                "aiagentsforce_core",
                 "runnables",
                 "base",
                 "RunnableLambda"
@@ -263,7 +263,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "language_models",
           "fake",
           "FakeListLLM"
@@ -276,7 +276,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeListLLM"
@@ -317,7 +317,7 @@
         "lc": 1,
         "type": "not_implemented",
         "id": [
-          "langchain_core",
+          "aiagentsforce_core",
           "language_models",
           "fake",
           "FakeListLLM"
@@ -330,7 +330,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeListLLM"
@@ -342,7 +342,7 @@
           "lc": 1,
           "type": "not_implemented",
           "id": [
-            "langchain_core",
+            "aiagentsforce_core",
             "language_models",
             "fake",
             "FakeListLLM"

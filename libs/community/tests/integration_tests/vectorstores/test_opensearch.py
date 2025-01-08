@@ -1,9 +1,9 @@
 """Test OpenSearch functionality."""
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.opensearch_vector_search import (
+from aiagentsforce_community.vectorstores.opensearch_vector_search import (
     HYBRID_SEARCH,
     PAINLESS_SCRIPTING_SEARCH,
     SCRIPT_SCORING_SEARCH,

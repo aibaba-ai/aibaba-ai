@@ -26,10 +26,10 @@ except ImportError:
 
 from pydantic import BaseModel, Field
 
-from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
-from langchain_core.runnables import Runnable, RunnableLambda
-from langchain_core.tools import BaseTool, StructuredTool, Tool, tool
-from langchain_core.utils.function_calling import (
+from aiagentsforce_core.messages import AIMessage, HumanMessage, ToolMessage
+from aiagentsforce_core.runnables import Runnable, RunnableLambda
+from aiagentsforce_core.tools import BaseTool, StructuredTool, Tool, tool
+from aiagentsforce_core.utils.function_calling import (
     _convert_typed_dict_to_openai_function,
     convert_to_openai_function,
     tool_example_to_messages,

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from langchain_community.document_loaders import DocusaurusLoader
+from aiagentsforce_community.document_loaders import DocusaurusLoader
 
 DOCS_URL = str(Path(__file__).parent.parent / "examples/docusaurus-sitemap.xml")
 
@@ -19,7 +19,7 @@ def test_filter_docusaurus_sitemap() -> None:
         DOCS_URL,
         is_local=True,
         filter_urls=[
-            "https://python.langchain.com/docs/integrations/document_loaders/sitemap"
+            "https://docs.aiagentsforce.com/docs/integrations/document_loaders/sitemap"
         ],
     )
     documents = loader.load()

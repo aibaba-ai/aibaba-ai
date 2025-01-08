@@ -6,9 +6,9 @@ from typing import Any, Dict, List, Mapping, Optional, cast
 
 from couchbase.cluster import Cluster
 from couchbase.options import GetOptions
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.embeddings import Embeddings
-from langchain_core.language_models.llms import LLM
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.language_models.llms import LLM
 
 
 class FakeEmbeddings(Embeddings):

@@ -4,11 +4,11 @@ import uuid
 from typing import Generator, Iterator, List
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import TextLoader
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import MomentoVectorIndex
+from aiagentsforce_community.document_loaders import TextLoader
+from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores import MomentoVectorIndex
 
 API_KEY_ENV_VAR = "MOMENTO_API_KEY"
 

@@ -36,12 +36,12 @@ pip install --upgrade langchain-cratedb langchain-openai unstructured
 
 ## Documentation
 For a more detailed walkthrough of the CrateDB wrapper, see
-[using LangChain with CrateDB]. See also [all features of CrateDB]
+[using AI Agents Force with CrateDB]. See also [all features of CrateDB]
 to learn about other functionality provided by CrateDB.
 
 
 ## Features
-The CrateDB adapter for LangChain provides APIs to use CrateDB as vector store,
+The CrateDB adapter for AI Agents Force provides APIs to use CrateDB as vector store,
 document loader, and storage for chat messages.
 
 ### Vector Store
@@ -53,12 +53,12 @@ Make sure you've configured a valid OpenAI API key.
 export OPENAI_API_KEY=sk-XJZ...
 ```
 ```python
-from langchain_community.document_loaders import UnstructuredURLLoader
+from aiagentsforce_community.document_loaders import UnstructuredURLLoader
 from langchain_cratedb import CrateDBVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 
-loader = UnstructuredURLLoader(urls=["https://github.com/langchain-ai/langchain/raw/refs/tags/langchain-core==0.3.28/docs/docs/how_to/state_of_the_union.txt"])
+loader = UnstructuredURLLoader(urls=["https://github.com/AI-Agents-Force-SDK/langchain/raw/refs/tags/langchain-core==0.3.28/docs/docs/how_to/state_of_the_union.txt"])
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 docs = text_splitter.split_documents(documents)
@@ -86,7 +86,7 @@ Load load documents from a CrateDB database table, using the document loader
 To use the document loader in your applications:
 ```python
 import sqlalchemy as sa
-from langchain_community.utilities import SQLDatabase
+from aiagentsforce_community.utilities import SQLDatabase
 from langchain_cratedb import CrateDBLoader
 
 # Connect to a self-managed CrateDB instance on localhost.
@@ -194,4 +194,4 @@ print(answer.content)
 [CrateDBLoader Tutorial]: https://github.com/crate/cratedb-examples/blob/main/topic/machine-learning/llm-langchain/document_loader.ipynb
 [CrateDBVectorStore Tutorial]: https://github.com/crate/cratedb-examples/blob/main/topic/machine-learning/llm-langchain/vector_search.ipynb
 [langchain-cratedb]: https://pypi.org/project/langchain-cratedb/
-[using LangChain with CrateDB]: https://cratedb.com/docs/guide/integrate/langchain/
+[using AI Agents Force with CrateDB]: https://cratedb.com/docs/guide/integrate/langchain/

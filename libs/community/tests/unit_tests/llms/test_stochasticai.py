@@ -1,7 +1,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from langchain_community.llms.stochasticai import StochasticAI
+from aiagentsforce_community.llms.stochasticai import StochasticAI
 
 
 def test_api_key_is_string() -> None:

@@ -5,13 +5,13 @@ from uuid import UUID
 
 import pytest
 
-from langchain_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
-from langchain_core.callbacks.manager import (
+from aiagentsforce_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
+from aiagentsforce_core.callbacks.manager import (
     adispatch_custom_event,
     dispatch_custom_event,
 )
-from langchain_core.runnables import RunnableLambda
-from langchain_core.runnables.config import RunnableConfig
+from aiagentsforce_core.runnables import RunnableLambda
+from aiagentsforce_core.runnables.config import RunnableConfig
 
 
 class AsyncCustomCallbackHandler(AsyncCallbackHandler):

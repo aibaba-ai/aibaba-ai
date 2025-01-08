@@ -1,8 +1,8 @@
 """Test Tongyi API wrapper."""
 
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms.tongyi import Tongyi
+from aiagentsforce_community.llms.tongyi import Tongyi
 
 
 def test_tongyi_call() -> None:

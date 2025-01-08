@@ -6,7 +6,7 @@ from typing import List
 import numpy as np
 import pinecone  # type: ignore
 import pytest  # type: ignore[import-not-found]
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from langchain_openai import OpenAIEmbeddings  # type: ignore[import-not-found]
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 from pinecone import ServerlessSpec
@@ -295,7 +295,7 @@ class TestPinecone(VectorStoreIntegrationTests):
     def mock_pool_not_supported(self, mocker: MockerFixture) -> None:
         """
         This is the error thrown when multiprocessing is not supported.
-        See https://github.com/langchain-ai/langchain/issues/11168
+        See https://github.com/AI-Agents-Force-SDK/langchain/issues/11168
         """
         mocker.patch(
             "multiprocessing.synchronize.SemLock.__init__",

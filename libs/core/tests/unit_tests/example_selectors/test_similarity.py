@@ -1,13 +1,13 @@
 from collections.abc import Iterable
 from typing import Any, Optional, cast
 
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings, FakeEmbeddings
-from langchain_core.example_selectors import (
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings, FakeEmbeddings
+from aiagentsforce_core.example_selectors import (
     MaxMarginalRelevanceExampleSelector,
     SemanticSimilarityExampleSelector,
 )
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.vectorstores import VectorStore
 
 
 class DummyVectorStore(VectorStore):

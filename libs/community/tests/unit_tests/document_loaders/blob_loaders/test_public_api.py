@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.blob_loaders import __all__
+from aiagentsforce_community.document_loaders.blob_loaders import __all__
 
 
 def test_public_api() -> None:

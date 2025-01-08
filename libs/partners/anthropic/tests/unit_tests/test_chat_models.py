@@ -5,9 +5,9 @@ from typing import Any, Callable, Dict, Literal, Type, cast
 
 import pytest
 from anthropic.types import Message, TextBlock, Usage
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
-from langchain_core.runnables import RunnableBinding
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aiagentsforce_core.runnables import RunnableBinding
+from aiagentsforce_core.tools import BaseTool
 from pydantic import BaseModel, Field, SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 

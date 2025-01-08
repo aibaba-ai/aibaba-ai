@@ -1,9 +1,9 @@
 import time
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.alibabacloud_opensearch import (
+from aiagentsforce_community.vectorstores.alibabacloud_opensearch import (
     AlibabaCloudOpenSearch,
     AlibabaCloudOpenSearchSettings,
 )

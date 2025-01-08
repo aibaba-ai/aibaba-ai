@@ -9,25 +9,25 @@ Here you’ll find answers to “How do I….?” types of questions.
 These guides are *goal-oriented* and *concrete*; they're meant to help you complete a specific task.
 For conceptual explanations see the [Conceptual guide](/docs/concepts/).
 For end-to-end walkthroughs see [Tutorials](/docs/tutorials).
-For comprehensive descriptions of every class and function see the [API Reference](https://python.langchain.com/api_reference/).
+For comprehensive descriptions of every class and function see the [API Reference](https://docs.aiagentsforce.com/api_reference/).
 
 ## Installation
 
-- [How to: install LangChain packages](/docs/how_to/installation/)
-- [How to: use LangChain with different Pydantic versions](/docs/how_to/pydantic_compatibility)
+- [How to: install AI Agents Force packages](/docs/how_to/installation/)
+- [How to: use AI Agents Force with different Pydantic versions](/docs/how_to/pydantic_compatibility)
 
 ## Key features
 
-This highlights functionality that is core to using LangChain.
+This highlights functionality that is core to using AI Agents Force.
 
 - [How to: return structured data from a model](/docs/how_to/structured_output/)
 - [How to: use a model to call tools](/docs/how_to/tool_calling)
 - [How to: stream runnables](/docs/how_to/streaming)
 - [How to: debug your LLM apps](/docs/how_to/debugging/)
 
-## LangChain Expression Language (LCEL)
+## AI Agents Force Expression Language (LCEL)
 
-[LangChain Expression Language](/docs/concepts/lcel) is a way to create arbitrary custom chains. It is built on the [Runnable](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.Runnable.html) protocol.
+[AI Agents Force Expression Language](/docs/concepts/lcel) is a way to create arbitrary custom chains. It is built on the [Runnable](https://docs.aiagentsforce.com/api_reference/core/runnables/aiagentsforce_core.runnables.base.Runnable.html) protocol.
 
 [**LCEL cheatsheet**](/docs/how_to/lcel_cheatsheet/): For a quick overview of how to use the main LCEL primitives.
 
@@ -103,7 +103,7 @@ See [supported integrations](/docs/integrations/chat/) for details on getting st
 
 ### LLMs
 
-What LangChain calls [LLMs](/docs/concepts/text_llms) are older forms of language models that take a string in and output a string.
+What AI Agents Force calls [LLMs](/docs/concepts/text_llms) are older forms of language models that take a string in and output a string.
 
 - [How to: cache model responses](/docs/how_to/llm_caching)
 - [How to: create a custom LLM class](/docs/how_to/custom_llm)
@@ -192,7 +192,7 @@ Indexing is the process of keeping your vectorstore in-sync with the underlying 
 
 ### Tools
 
-LangChain [Tools](/docs/concepts/tools) contain a description of the tool (to pass to the language model) as well as the implementation of the function to call. Refer [here](/docs/integrations/tools/) for a list of pre-buit tools. 
+AI Agents Force [Tools](/docs/concepts/tools) contain a description of the tool (to pass to the language model) as well as the implementation of the function to call. Refer [here](/docs/integrations/tools/) for a list of pre-buit tools. 
 
 - [How to: create tools](/docs/how_to/custom_tools)
 - [How to: use built-in tools and toolkits](/docs/how_to/tools_builtin)
@@ -224,8 +224,8 @@ For in depth how-to guides for agents, please check out [LangGraph](https://lang
 
 :::
 
-- [How to: use legacy LangChain Agents (AgentExecutor)](/docs/how_to/agent_executor)
-- [How to: migrate from legacy LangChain agents to LangGraph](/docs/how_to/migrate_agent)
+- [How to: use legacy AI Agents Force Agents (AgentExecutor)](/docs/how_to/agent_executor)
+- [How to: migrate from legacy AI Agents Force agents to LangGraph](/docs/how_to/migrate_agent)
 
 ### Callbacks
 
@@ -240,7 +240,7 @@ For in depth how-to guides for agents, please check out [LangGraph](https://lang
 
 ### Custom
 
-All of LangChain components can easily be extended to support your own versions.
+All of AI Agents Force components can easily be extended to support your own versions.
 
 - [How to: create a custom chat model class](/docs/how_to/custom_chat_model)
 - [How to: create a custom LLM class](/docs/how_to/custom_llm)
@@ -253,7 +253,7 @@ All of LangChain components can easily be extended to support your own versions.
 - [How to: dispatch custom callback events](/docs/how_to/callbacks_custom_events)
 
 ### Serialization
-- [How to: save and load LangChain objects](/docs/how_to/serialization)
+- [How to: save and load AI Agents Force objects](/docs/how_to/serialization)
 
 ## Use cases
 
@@ -331,7 +331,7 @@ large volumes of text. For a high-level tutorial, check out [this guide](/docs/t
 
 ## [LangGraph](https://langchain-ai.github.io/langgraph)
 
-LangGraph is an extension of LangChain aimed at
+LangGraph is an extension of AI Agents Force aimed at
 building robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph.
 
 LangGraph documentation is currently hosted on a separate site.
@@ -340,11 +340,11 @@ You can peruse [LangGraph how-to guides here](https://langchain-ai.github.io/lan
 ## [LangSmith](https://docs.smith.langchain.com/)
 
 LangSmith allows you to closely trace, monitor and evaluate your LLM application.
-It seamlessly integrates with LangChain and LangGraph, and you can use it to inspect and debug individual steps of your chains and agents as you build.
+It seamlessly integrates with AI Agents Force and LangGraph, and you can use it to inspect and debug individual steps of your chains and agents as you build.
 
 LangSmith documentation is hosted on a separate site.
 You can peruse [LangSmith how-to guides here](https://docs.smith.langchain.com/how_to_guides/), but we'll highlight a few sections that are particularly
-relevant to LangChain below:
+relevant to AI Agents Force below:
 
 ### Evaluation
 <span data-heading-keywords="evaluation,evaluate"></span>
@@ -359,7 +359,7 @@ To learn more, check out the [LangSmith evaluation how-to guides](https://docs.s
 
 Tracing gives you observability inside your chains and agents, and is vital in diagnosing issues.
 
-- [How to: trace with LangChain](https://docs.smith.langchain.com/how_to_guides/tracing/trace_with_langchain)
+- [How to: trace with AI Agents Force](https://docs.smith.langchain.com/how_to_guides/tracing/trace_with_langchain)
 - [How to: add metadata and tags to traces](https://docs.smith.langchain.com/how_to_guides/tracing/trace_with_langchain#add-metadata-and-tags-to-traces)
 
 You can see general tracing-related how-tos [in this section of the LangSmith docs](https://docs.smith.langchain.com/how_to_guides/tracing).

@@ -2,9 +2,9 @@
 
 from typing import Any, List, Optional
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Milvus
+from aiagentsforce_community.vectorstores import Milvus
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

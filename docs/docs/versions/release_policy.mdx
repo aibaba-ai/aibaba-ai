@@ -3,9 +3,9 @@ sidebar_position: 2
 sidebar_label: Release policy
 ---
 
-# LangChain release policy
+# AI Agents Force release policy
 
-The LangChain ecosystem is composed of different component packages (e.g., `langchain-core`, `langchain`, `langchain-community`, `langgraph`, `langserve`, partner packages etc.)
+The AI Agents Force ecosystem is composed of different component packages (e.g., `langchain-core`, `langchain`, `langchain-community`, `langgraph`, `aiagentsforceapi`, partner packages etc.)
 
 ## Versioning
 
@@ -70,7 +70,7 @@ We will generally try to avoid making unnecessary changes, and will provide a de
 
 ### Stability of other packages
 
-The stability of other packages in the LangChain ecosystem may vary:
+The stability of other packages in the AI Agents Force ecosystem may vary:
 
 - `langchain-community` is a community maintained package that contains 3rd party integrations. While we do our best to review and test changes in `langchain-community`, `langchain-community` is expected to experience more breaking changes than `langchain` and `langchain-core` as it contains many community contributions.
 - Partner packages may follow different stability and versioning policies, and users should refer to the documentation of those packages for more information; however, in general these packages are expected to be stable.
@@ -89,7 +89,7 @@ Certain APIs are explicitly marked as “internal” in a couple of ways:
 
 - Some documentation refers to internals and mentions them as such. If the documentation says that something is internal, it may change.
 - Functions, methods, and other objects prefixed by a leading underscore (**`_`**). This is the standard Python convention of indicating that something is private; if any method starts with a single **`_`**, it’s an internal API.
-    - **Exception:** Certain methods are prefixed with `_` , but do not contain an implementation. These methods are *meant* to be overridden by sub-classes that provide the implementation. Such methods are generally part of the **Public API** of LangChain.
+    - **Exception:** Certain methods are prefixed with `_` , but do not contain an implementation. These methods are *meant* to be overridden by sub-classes that provide the implementation. Such methods are generally part of the **Public API** of AI Agents Force.
 
 ## Deprecation policy
 

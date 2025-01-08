@@ -622,7 +622,7 @@ if __name__ == "__main__":
         people, sort_keys=False, width=200, allow_unicode=True
     )
     if people_old_content == new_people_content:
-        logging.info("The LangChain People data hasn't changed, finishing.")
+        logging.info("The AI Agents Force People data hasn't changed, finishing.")
         sys.exit(0)
     people_path.write_text(new_people_content, encoding="utf-8")
     logging.info("Setting up GitHub Actions git user")
@@ -636,7 +636,7 @@ if __name__ == "__main__":
     logging.info("Adding updated file")
     subprocess.run(["git", "add", str(people_path)], check=True)
     logging.info("Committing updated file")
-    message = "👥 Update LangChain people data"
+    message = "👥 Update AI Agents Force people data"
     result = subprocess.run(["git", "commit", "-m", message], check=True)
     logging.info("Pushing branch")
     subprocess.run(["git", "push", "origin", branch_name, "-f"], check=True)

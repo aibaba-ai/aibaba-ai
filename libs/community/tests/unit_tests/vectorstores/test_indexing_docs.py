@@ -1,6 +1,6 @@
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core.vectorstores import VectorStore
 
-import langchain_community.vectorstores
+import aiagentsforce_community.vectorstores
 
 
 def test_compatible_vectorstore_documentation() -> None:
@@ -34,9 +34,9 @@ def test_compatible_vectorstore_documentation() -> None:
 
     # Check all vector store classes for compatibility
     compatible = set()
-    for class_name in langchain_community.vectorstores.__all__:
+    for class_name in aiagentsforce_community.vectorstores.__all__:
         # Get the definition of the class
-        cls = getattr(langchain_community.vectorstores, class_name)
+        cls = getattr(aiagentsforce_community.vectorstores, class_name)
 
         # If the class corresponds to a vectorstore, check its compatibility
         if issubclass(cls, VectorStore):

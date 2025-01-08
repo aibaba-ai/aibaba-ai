@@ -1,7 +1,7 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers.bm25 import BM25Retriever
+from aiagentsforce_community.retrievers.bm25 import BM25Retriever
 
 
 @pytest.mark.requires("rank_bm25")

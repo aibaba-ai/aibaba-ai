@@ -7,8 +7,8 @@ from typing import Any, Dict, List
 import numpy as np
 import pytest
 
-from langchain_community.vectorstores import HanaDB
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores import HanaDB
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

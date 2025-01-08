@@ -4,7 +4,7 @@ import json
 from typing import Any, Optional
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -12,8 +12,8 @@ from langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.tools import tool
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.tools import tool
 from pydantic import BaseModel, Field
 
 from langchain_groq import ChatGroq

@@ -3,9 +3,9 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import GeoDataFrameLoader
+from aiagentsforce_community.document_loaders import GeoDataFrameLoader
 
 if TYPE_CHECKING:
     from geopandas import GeoDataFrame

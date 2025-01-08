@@ -1,8 +1,8 @@
 """Test ClickHouse functionality."""
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Clickhouse, ClickhouseSettings
+from aiagentsforce_community.vectorstores import Clickhouse, ClickhouseSettings
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

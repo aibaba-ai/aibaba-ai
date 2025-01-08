@@ -3,17 +3,17 @@
 from typing import Any, Optional
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import (
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import (
     ChatGeneration,
     ChatResult,
     LLMResult,
 )
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
-from langchain_community.chat_models.openai import ChatOpenAI
+from aiagentsforce_community.chat_models.openai import ChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

@@ -31,7 +31,7 @@ Please see [installation instructions](https://github.com/IntelLabs/vdms/blob/ma
 The vector store is a simple wrapper around VDMS. It provides a simple interface to store and retrieve data.
 
 ```python
-from langchain_community.document_loaders import TextLoader
+from aiagentsforce_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 
 loader = TextLoader("./state_of_the_union.txt")
@@ -39,8 +39,8 @@ documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 docs = text_splitter.split_documents(documents)
 
-from langchain_community.vectorstores import VDMS
-from langchain_community.vectorstores.vdms import VDMS_Client
+from aiagentsforce_community.vectorstores import VDMS
+from aiagentsforce_community.vectorstores.vdms import VDMS_Client
 from langchain_huggingface import HuggingFaceEmbeddings
 
 client = VDMS_Client("localhost", 55555)

@@ -3,9 +3,9 @@
 from tempfile import TemporaryDirectory
 
 import pytest
-from langchain_core.tools import BaseTool
+from aiagentsforce_core.tools import BaseTool
 
-from langchain_community.agent_toolkits.file_management.toolkit import (
+from aiagentsforce_community.agent_toolkits.file_management.toolkit import (
     FileManagementToolkit,
 )
 

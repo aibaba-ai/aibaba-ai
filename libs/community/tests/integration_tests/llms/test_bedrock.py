@@ -8,9 +8,9 @@ import os
 from typing import Any
 
 import pytest
-from langchain_core.callbacks import AsyncCallbackHandler
+from aiagentsforce_core.callbacks import AsyncCallbackHandler
 
-from langchain_community.llms.bedrock import Bedrock
+from aiagentsforce_community.llms.bedrock import Bedrock
 
 # this is the guardrails id for the model you want to test
 GUARDRAILS_ID = os.environ.get("GUARDRAILS_ID", "7jarelix77")

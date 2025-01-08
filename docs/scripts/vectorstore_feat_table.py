@@ -4,8 +4,8 @@ from pathlib import Path
 
 from langchain_astradb import AstraDBVectorStore
 from langchain_chroma import Chroma
-from langchain_community import vectorstores
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_community import vectorstores
+from aiagentsforce_core.vectorstores import VectorStore
 from langchain_couchbase import CouchbaseVectorStore
 from langchain_milvus import Milvus
 from langchain_mongodb import MongoDBAtlasVectorSearch

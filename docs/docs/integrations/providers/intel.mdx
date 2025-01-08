@@ -4,7 +4,7 @@
 
 >[Intel® Extension for Transformers](https://github.com/intel/intel-extension-for-transformers?tab=readme-ov-file#intel-extension-for-transformers) (ITREX) is an innovative toolkit designed to accelerate GenAI/LLM everywhere with the optimal performance of Transformer-based models on various Intel platforms, including Intel Gaudi2, Intel CPU, and Intel GPU.
 
-This page covers how to use optimum-intel and ITREX with LangChain.
+This page covers how to use optimum-intel and ITREX with AI Agents Force.
 
 ## Optimum-intel
 
@@ -30,7 +30,7 @@ See a [usage example](/docs/integrations/text_embedding/optimum_intel).
 We also offer a full tutorial notebook "rag_with_quantized_embeddings.ipynb" for using the embedder in a RAG pipeline in the cookbook dir.
 
 ```python
-from langchain_community.embeddings import QuantizedBiEncoderEmbeddings
+from aiagentsforce_community.embeddings import QuantizedBiEncoderEmbeddings
 ```
 
 ## Intel® Extension for Transformers (ITREX)
@@ -62,7 +62,7 @@ pip install -U torch onnx accelerate datasets
 See a [usage example](/docs/integrations/text_embedding/itrex).
 
 ```python
-from langchain_community.embeddings import QuantizedBgeEmbeddings
+from aiagentsforce_community.embeddings import QuantizedBgeEmbeddings
 ```
 
 ### Weight-Only Quantization with ITREX

@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.joplin import JoplinLoader
+from aiagentsforce_community.document_loaders.joplin import JoplinLoader
 
 
 def test_joplin_loader() -> None:

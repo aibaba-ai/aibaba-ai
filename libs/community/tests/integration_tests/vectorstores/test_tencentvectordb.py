@@ -3,10 +3,10 @@
 import time
 from typing import List, Optional
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import TencentVectorDB
-from langchain_community.vectorstores.tencentvectordb import ConnectionParams
+from aiagentsforce_community.vectorstores import TencentVectorDB
+from aiagentsforce_community.vectorstores.tencentvectordb import ConnectionParams
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

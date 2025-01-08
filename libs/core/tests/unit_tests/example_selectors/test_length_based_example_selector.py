@@ -2,10 +2,10 @@
 
 import pytest
 
-from langchain_core.example_selectors import (
+from aiagentsforce_core.example_selectors import (
     LengthBasedExampleSelector,
 )
-from langchain_core.prompts import PromptTemplate
+from aiagentsforce_core.prompts import PromptTemplate
 
 EXAMPLES = [
     {"question": "Question: who are you?\nAnswer: foo"},

@@ -1,6 +1,6 @@
 """Test HuggingFace Pipeline wrapper."""
 
-from langchain_community.llms.weight_only_quantization import WeightOnlyQuantPipeline
+from aiagentsforce_community.llms.weight_only_quantization import WeightOnlyQuantPipeline
 
 model_id = "google/flan-t5-large"
 

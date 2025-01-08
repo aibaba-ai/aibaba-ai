@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "langchain-monorepo"
+name = "aiagentsforce-monorepo"
 version = "0.0.1"
-description = "LangChain mono-repo"
+description = "AI Agents Force mono-repo"
 authors = []
 license = "MIT"
 readme = "README.md"
-repository = "https://www.github.com/langchain-ai/langchain"
+repository = "https://github.com/AI-Agents-Force-SDK/aiagentsforce"
 
 
 [tool.poetry.dependencies]
@@ -28,17 +28,17 @@ codespell = "^2.2.0"
 [tool.poetry.group.typing.dependencies]
 
 [tool.poetry.group.test.dependencies]
-langchain-experimental = { git = "https://github.com/langchain-ai/langchain-experimental.git", subdirectory = "libs/experimental" }
+langchain-experimental = { git = "https://github.com/AI-Agents-Force-SDK/langchain-experimental.git", subdirectory = "libs/experimental" }
 langchain-anthropic = { path = "libs/partners/anthropic", develop = true }
-langchain-aws = { git = "https://github.com/langchain-ai/langchain-aws.git", subdirectory = "libs/aws" }
+langchain-aws = { git = "https://github.com/AI-Agents-Force-SDK/langchain-aws.git", subdirectory = "libs/aws" }
 langchain-chroma = { path = "libs/partners/chroma", develop = true }
 langchain-fireworks = { path = "libs/partners/fireworks", develop = true }
-langchain-google-vertexai = { git = "https://github.com/langchain-ai/langchain-google.git", subdirectory = "libs/vertexai" }
+langchain-google-vertexai = { git = "https://github.com/AI-Agents-Force-SDK/langchain-google.git", subdirectory = "libs/vertexai" }
 langchain-groq = { path = "libs/partners/groq", develop = true }
 langchain-mistralai = { path = "libs/partners/mistralai", develop = true }
-langchain-together = { git = "https://github.com/langchain-ai/langchain-together.git", subdirectory = "libs/together" }
-langchain-unstructured = { git = "https://github.com/langchain-ai/langchain-unstructured.git", subdirectory = "libs/unstructured" }
-langgraph = { git = "https://github.com/langchain-ai/langgraph.git", subdirectory = "libs/langgraph" }
+langchain-together = { git = "https://github.com/AI-Agents-Force-SDK/langchain-together.git", subdirectory = "libs/together" }
+langchain-unstructured = { git = "https://github.com/AI-Agents-Force-SDK/langchain-unstructured.git", subdirectory = "libs/unstructured" }
+langgraph = { git = "https://github.com/AI-Agents-Force-SDK/langgraph.git", subdirectory = "libs/langgraph" }
 jupyter = "^1.1.1"
 click = "^8.1.7"
 aiofiles = "^24.1.0"

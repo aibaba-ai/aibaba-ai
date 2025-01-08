@@ -1,6 +1,6 @@
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_models.baichuan import ChatBaichuan
+from aiagentsforce_community.chat_models.baichuan import ChatBaichuan
 
 # For testing, run:
 # TEST_FILE=tests/integration_tests/chat_models/test_baichuan.py make test

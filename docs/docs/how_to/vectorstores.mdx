@@ -26,7 +26,7 @@ os.environ['OPENAI_API_KEY'] = getpass.getpass('OpenAI API Key:')
 ```
 
 ```python
-from langchain_community.document_loaders import TextLoader
+from aiagentsforce_community.document_loaders import TextLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import CharacterTextSplitter
 
@@ -67,7 +67,7 @@ pip install faiss-cpu
 ```
 
 ```python
-from langchain_community.vectorstores import FAISS
+from aiagentsforce_community.vectorstores import FAISS
 
 db = FAISS.from_documents(documents, OpenAIEmbeddings())
 ```
@@ -82,7 +82,7 @@ pip install lancedb
 ```
 
 ```python
-from langchain_community.vectorstores import LanceDB
+from aiagentsforce_community.vectorstores import LanceDB
 
 import lancedb
 
@@ -153,7 +153,7 @@ print(docs[0].page_content)
 
 Vector stores are usually run as a separate service that requires some IO operations, and therefore they might be called asynchronously. That gives performance benefits as you don't waste time waiting for responses from external services. That might also be important if you work with an asynchronous framework, such as [FastAPI](https://fastapi.tiangolo.com/).
 
-LangChain supports async operation on vector stores. All the methods might be called using their async counterparts, with the prefix `a`, meaning `async`.
+AI Agents Force supports async operation on vector stores. All the methods might be called using their async counterparts, with the prefix `a`, meaning `async`.
 
 ```python
 docs = await db.asimilarity_search(query)

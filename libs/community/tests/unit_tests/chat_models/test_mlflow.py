@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 from langchain.agents import AgentExecutor, create_tool_calling_agent
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -18,11 +18,11 @@ from langchain_core.messages import (
     ToolCallChunk,
     ToolMessageChunk,
 )
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.tools import StructuredTool
+from aiagentsforce_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.tools import StructuredTool
 from pydantic import BaseModel
 
-from langchain_community.chat_models.mlflow import ChatMlflow
+from aiagentsforce_community.chat_models.mlflow import ChatMlflow
 
 
 @pytest.fixture

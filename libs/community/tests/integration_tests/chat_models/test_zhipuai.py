@@ -1,11 +1,11 @@
 """Test ZhipuAI Chat Model."""
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.tools import tool
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.tools import tool
 
-from langchain_community.chat_models.zhipuai import ChatZhipuAI
+from aiagentsforce_community.chat_models.zhipuai import ChatZhipuAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

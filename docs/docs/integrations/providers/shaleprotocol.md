@@ -6,7 +6,7 @@ Our free tier supports up to 1K daily requests per key as we want to eliminate t
 
 With Shale Protocol, developers/researchers can create apps and explore the capabilities of open LLMs at no cost.
 
-This page covers how Shale-Serve API can be incorporated with LangChain.
+This page covers how Shale-Serve API can be incorporated with AI Agents Force.
 
 As of June 2023, the API supports Vicuna-13B by default. We are going to support more LLMs such as Falcon-40B in future releases. 
 
@@ -20,8 +20,8 @@ As of June 2023, the API supports Vicuna-13B by default. We are going to support
 For example
 ```python
 from langchain_openai import OpenAI
-from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.output_parsers import StrOutputParser
 
 import os
 os.environ['OPENAI_API_BASE'] = "https://shale.live/v1"

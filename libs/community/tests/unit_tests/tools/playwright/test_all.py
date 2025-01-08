@@ -4,7 +4,7 @@ from unittest.mock import Mock
 
 import pytest
 
-from langchain_community.agent_toolkits import PlayWrightBrowserToolkit
+from aiagentsforce_community.agent_toolkits import PlayWrightBrowserToolkit
 
 
 @pytest.mark.requires("playwright")

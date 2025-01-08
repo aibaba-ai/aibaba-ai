@@ -1,6 +1,6 @@
 """Test edenai embeddings."""
 
-from langchain_community.embeddings.edenai import EdenAiEmbeddings
+from aiagentsforce_community.embeddings.edenai import EdenAiEmbeddings
 
 
 def test_edenai_embedding_documents() -> None:

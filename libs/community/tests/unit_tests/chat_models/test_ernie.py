@@ -1,12 +1,12 @@
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,
     SystemMessage,
 )
 
-from langchain_community.chat_models.ernie import _convert_message_to_dict
+from aiagentsforce_community.chat_models.ernie import _convert_message_to_dict
 
 
 def test__convert_dict_to_message_human() -> None:

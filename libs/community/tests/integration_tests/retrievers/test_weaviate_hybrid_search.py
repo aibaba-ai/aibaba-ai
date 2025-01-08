@@ -7,9 +7,9 @@ from typing import Generator, Union
 from uuid import uuid4
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers.weaviate_hybrid_search import (
+from aiagentsforce_community.retrievers.weaviate_hybrid_search import (
     WeaviateHybridSearchRetriever,
 )
 
@@ -51,7 +51,7 @@ class TestWeaviateHybridSearchRetriever:
 
         retriever = WeaviateHybridSearchRetriever(
             client=client,
-            index_name=f"LangChain_{uuid4().hex}",
+            index_name=f"AI Agents Force_{uuid4().hex}",
             text_key="text",
             attributes=["page"],
         )
@@ -79,7 +79,7 @@ class TestWeaviateHybridSearchRetriever:
 
         retriever = WeaviateHybridSearchRetriever(
             client=client,
-            index_name=f"LangChain_{uuid4().hex}",
+            index_name=f"AI Agents Force_{uuid4().hex}",
             text_key="text",
             attributes=["page"],
         )
@@ -104,7 +104,7 @@ class TestWeaviateHybridSearchRetriever:
 
         retriever = WeaviateHybridSearchRetriever(
             client=client,
-            index_name=f"LangChain_{uuid4().hex}",
+            index_name=f"AI Agents Force_{uuid4().hex}",
             text_key="text",
             attributes=["page"],
         )
@@ -134,7 +134,7 @@ class TestWeaviateHybridSearchRetriever:
 
         retriever = WeaviateHybridSearchRetriever(
             client=client,
-            index_name=f"LangChain_{uuid4().hex}",
+            index_name=f"AI Agents Force_{uuid4().hex}",
             text_key="text",
             attributes=["page"],
         )

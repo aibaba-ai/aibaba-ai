@@ -16,7 +16,7 @@ These prompt templates are used to format a single string, and generally are use
 For example, a common way to construct and use a PromptTemplate is as follows:
 
 ```python
-from langchain_core.prompts import PromptTemplate
+from aiagentsforce_core.prompts import PromptTemplate
 
 prompt_template = PromptTemplate.from_template("Tell me a joke about {topic}")
 
@@ -29,7 +29,7 @@ These prompt templates are used to format a list of messages. These "templates" 
 For example, a common way to construct and use a ChatPromptTemplate is as follows:
 
 ```python
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.prompts import ChatPromptTemplate
 
 prompt_template = ChatPromptTemplate([
     ("system", "You are a helpful assistant"),
@@ -52,8 +52,8 @@ But what if we wanted the user to pass in a list of messages that we would slot 
 This is how you use MessagesPlaceholder.
 
 ```python
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from aiagentsforce_core.messages import HumanMessage
 
 prompt_template = ChatPromptTemplate([
     ("system", "You are a helpful assistant"),

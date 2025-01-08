@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
-from langchain_community.llms.loading import load_llm
+from aiagentsforce_community.llms.huggingface_pipeline import HuggingFacePipeline
+from aiagentsforce_community.llms.loading import load_llm
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 

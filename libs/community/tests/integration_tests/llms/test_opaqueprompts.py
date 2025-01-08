@@ -1,10 +1,10 @@
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import PromptTemplate
-from langchain_core.runnables import RunnableParallel
+from aiagentsforce_core.output_parsers import StrOutputParser
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.runnables import RunnableParallel
 
-import langchain_community.utilities.opaqueprompts as op
-from langchain_community.llms import OpenAI
-from langchain_community.llms.opaqueprompts import OpaquePrompts
+import aiagentsforce_community.utilities.opaqueprompts as op
+from aiagentsforce_community.llms import OpenAI
+from aiagentsforce_community.llms.opaqueprompts import OpaquePrompts
 
 prompt_template = """
 As an AI assistant, you will answer questions according to given context.

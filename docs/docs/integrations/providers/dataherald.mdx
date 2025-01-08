@@ -2,7 +2,7 @@
 
 >[Dataherald](https://www.dataherald.com) is a natural language-to-SQL.
 
-This page covers how to use the `Dataherald API` within LangChain.
+This page covers how to use the `Dataherald API` within AI Agents Force.
 
 ## Installation and Setup
 - Install requirements with 
@@ -21,7 +21,7 @@ pip install dataherald
 There exists a DataheraldAPIWrapper utility which wraps this API. To import this utility:
 
 ```python
-from langchain_community.utilities.dataherald import DataheraldAPIWrapper
+from aiagentsforce_community.utilities.dataherald import DataheraldAPIWrapper
 ```
 
 For a more detailed walkthrough of this wrapper, see [this notebook](/docs/integrations/tools/dataherald).
@@ -30,8 +30,8 @@ For a more detailed walkthrough of this wrapper, see [this notebook](/docs/integ
 
 You can use the tool in an agent like this:
 ```python
-from langchain_community.utilities.dataherald import DataheraldAPIWrapper
-from langchain_community.tools.dataherald.tool import DataheraldTextToSQL
+from aiagentsforce_community.utilities.dataherald import DataheraldAPIWrapper
+from aiagentsforce_community.tools.dataherald.tool import DataheraldTextToSQL
 from langchain_openai import ChatOpenAI
 from langchain import hub
 from langchain.agents import AgentExecutor, create_react_agent, load_tools

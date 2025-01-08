@@ -1,10 +1,10 @@
 from typing import Any, List, Optional
 
 import pytest
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models.llms import LLM
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.language_models.llms import LLM
 
-from langchain_community.llms.layerup_security import LayerupSecurity
+from aiagentsforce_community.llms.layerup_security import LayerupSecurity
 
 
 class MockLLM(LLM):

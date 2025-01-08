@@ -6,9 +6,9 @@ import os
 from typing import Any, Iterator
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.cassandra import CassandraLoader
+from aiagentsforce_community.document_loaders.cassandra import CassandraLoader
 
 CASSANDRA_DEFAULT_KEYSPACE = "docloader_test_keyspace"
 CASSANDRA_TABLE = "docloader_test_table"

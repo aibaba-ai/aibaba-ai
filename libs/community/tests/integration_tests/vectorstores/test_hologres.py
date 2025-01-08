@@ -3,9 +3,9 @@
 import os
 from typing import List
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.hologres import Hologres
+from aiagentsforce_community.vectorstores.hologres import Hologres
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 CONNECTION_STRING = Hologres.connection_string_from_db_params(

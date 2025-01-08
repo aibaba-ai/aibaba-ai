@@ -6,8 +6,8 @@ test_script = """
     import json
     import streamlit as st
     from langchain.memory import ConversationBufferMemory
-    from langchain_community.chat_message_histories import StreamlitChatMessageHistory
-    from langchain_core.messages import message_to_dict, BaseMessage
+    from aiagentsforce_community.chat_message_histories import StreamlitChatMessageHistory
+    from aiagentsforce_core.messages import message_to_dict, BaseMessage
 
     message_history = StreamlitChatMessageHistory()
     memory = ConversationBufferMemory(chat_memory=message_history, return_messages=True)

@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING
 
 import pytest
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage
 from pytest_mock import MockerFixture
 
-from langchain_community.chat_message_histories import ZepChatMessageHistory
+from aiagentsforce_community.chat_message_histories import ZepChatMessageHistory
 
 if TYPE_CHECKING:
     from zep_python import ZepClient

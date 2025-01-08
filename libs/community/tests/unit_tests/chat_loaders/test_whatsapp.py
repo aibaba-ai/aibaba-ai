@@ -1,6 +1,6 @@
 import pathlib
 
-from langchain_community.chat_loaders import utils, whatsapp
+from aiagentsforce_community.chat_loaders import utils, whatsapp
 
 
 def test_whatsapp_chat_loader() -> None:

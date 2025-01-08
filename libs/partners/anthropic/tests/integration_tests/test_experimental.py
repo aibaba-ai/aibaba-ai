@@ -3,7 +3,7 @@
 from enum import Enum
 from typing import List, Optional
 
-from langchain_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
 from langchain_anthropic.experimental import ChatAnthropicTools

@@ -1,6 +1,6 @@
 import responses
 
-from langchain_community.llms.cloudflare_workersai import CloudflareWorkersAI
+from aiagentsforce_community.llms.cloudflare_workersai import CloudflareWorkersAI
 
 
 @responses.activate

@@ -1,8 +1,8 @@
 from langchain.retrievers.contextual_compression import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import EmbeddingsFilter
 
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
+from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores import FAISS
 
 
 def test_contextual_compression_retriever_get_relevant_docs() -> None:

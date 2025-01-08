@@ -6,10 +6,10 @@ import uuid
 from typing import Generator, Union
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings.openai import OpenAIEmbeddings
-from langchain_community.vectorstores.weaviate import Weaviate
+from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+from aiagentsforce_community.vectorstores.weaviate import Weaviate
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 logging.basicConfig(level=logging.DEBUG)

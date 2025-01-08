@@ -13,9 +13,9 @@ from typing import Iterator
 
 import pytest
 from langchain.globals import set_llm_cache
-from langchain_core.outputs import Generation, LLMResult
+from aiagentsforce_core.outputs import Generation, LLMResult
 
-from langchain_community.cache import MomentoCache
+from aiagentsforce_community.cache import MomentoCache
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

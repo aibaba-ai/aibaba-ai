@@ -7,10 +7,10 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
 from pathlib import Path
 
 import pytest
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms.google_palm import GooglePalm
-from langchain_community.llms.loading import load_llm
+from aiagentsforce_community.llms.google_palm import GooglePalm
+from aiagentsforce_community.llms.loading import load_llm
 
 model_names = [None, "models/text-bison-001", "gemini-pro"]
 

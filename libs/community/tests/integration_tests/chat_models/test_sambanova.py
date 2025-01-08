@@ -1,6 +1,6 @@
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_models.sambanova import (
+from aiagentsforce_community.chat_models.sambanova import (
     ChatSambaNovaCloud,
     ChatSambaStudio,
 )

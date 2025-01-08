@@ -3,10 +3,10 @@
 from typing import List
 
 import pytest
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models.edenai import (
+from aiagentsforce_community.chat_models.edenai import (
     ChatEdenAI,
 )
 

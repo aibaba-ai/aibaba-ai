@@ -1,9 +1,9 @@
 from typing import Any
 
-from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage
-from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aiagentsforce_core.messages import AIMessage, AIMessageChunk, HumanMessage
+from aiagentsforce_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
-from langchain_community.chat_models.sparkllm import ChatSparkLLM
+from aiagentsforce_community.chat_models.sparkllm import ChatSparkLLM
 
 _FUNCTIONS: Any = [
     {

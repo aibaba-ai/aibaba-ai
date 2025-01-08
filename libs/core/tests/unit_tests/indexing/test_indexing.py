@@ -9,13 +9,13 @@ import pytest
 import pytest_asyncio
 from pytest_mock import MockerFixture
 
-from langchain_core.document_loaders.base import BaseLoader
-from langchain_core.documents import Document
-from langchain_core.embeddings import DeterministicFakeEmbedding
-from langchain_core.indexing import InMemoryRecordManager, aindex, index
-from langchain_core.indexing.api import IndexingException, _abatch, _HashedDocument
-from langchain_core.indexing.in_memory import InMemoryDocumentIndex
-from langchain_core.vectorstores import InMemoryVectorStore, VectorStore
+from aiagentsforce_core.document_loaders.base import BaseLoader
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import DeterministicFakeEmbedding
+from aiagentsforce_core.indexing import InMemoryRecordManager, aindex, index
+from aiagentsforce_core.indexing.api import IndexingException, _abatch, _HashedDocument
+from aiagentsforce_core.indexing.in_memory import InMemoryDocumentIndex
+from aiagentsforce_core.vectorstores import InMemoryVectorStore, VectorStore
 
 
 class ToyLoader(BaseLoader):

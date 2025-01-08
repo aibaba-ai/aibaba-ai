@@ -2,8 +2,8 @@
 
 from typing import Any, Dict, List, Mapping, Optional, cast
 
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models.llms import LLM
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.language_models.llms import LLM
 from pydantic import validator
 
 

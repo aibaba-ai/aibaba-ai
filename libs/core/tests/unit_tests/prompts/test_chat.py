@@ -8,20 +8,20 @@ import pytest
 from pydantic import ValidationError
 from syrupy import SnapshotAssertion
 
-from langchain_core._api.deprecation import (
-    LangChainPendingDeprecationWarning,
+from aiagentsforce_core._api.deprecation import (
+    AI Agents ForcePendingDeprecationWarning,
 )
-from langchain_core.load import dumpd, load
-from langchain_core.messages import (
+from aiagentsforce_core.load import dumpd, load
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
     get_buffer_string,
 )
-from langchain_core.prompt_values import ChatPromptValue
-from langchain_core.prompts import PromptTemplate
-from langchain_core.prompts.chat import (
+from aiagentsforce_core.prompt_values import ChatPromptValue
+from aiagentsforce_core.prompts import PromptTemplate
+from aiagentsforce_core.prompts.chat import (
     AIMessagePromptTemplate,
     BaseMessagePromptTemplate,
     ChatMessage,
@@ -32,8 +32,8 @@ from langchain_core.prompts.chat import (
     SystemMessagePromptTemplate,
     _convert_to_message,
 )
-from langchain_core.prompts.string import PromptTemplateFormat
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
+from aiagentsforce_core.prompts.string import PromptTemplateFormat
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION, PYDANTIC_MINOR_VERSION
 from tests.unit_tests.pydantic_utils import _normalize_schema
 
 
@@ -453,7 +453,7 @@ def test_chat_valid_infer_variables() -> None:
 
 async def test_chat_from_role_strings() -> None:
     """Test instantiation of chat template from role strings."""
-    with pytest.warns(LangChainPendingDeprecationWarning):
+    with pytest.warns(AI Agents ForcePendingDeprecationWarning):
         template = ChatPromptTemplate.from_role_strings(
             [
                 ("system", "You are a bot."),

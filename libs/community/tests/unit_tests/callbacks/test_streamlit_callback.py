@@ -4,7 +4,7 @@ from typing import Any
 from unittest import mock
 from unittest.mock import MagicMock
 
-from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
+from aiagentsforce_community.callbacks.streamlit import StreamlitCallbackHandler
 
 
 class TestImport(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestImport(unittest.TestCase):
         builtins.__import__ = self.builtins_import
 
     @mock.patch(
-        "langchain_community.callbacks.streamlit._InternalStreamlitCallbackHandler"
+        "aiagentsforce_community.callbacks.streamlit._InternalStreamlitCallbackHandler"
     )
     def test_create_internal_handler(self, mock_internal_handler: Any) -> None:
         """If we're using a Streamlit that does not expose its own

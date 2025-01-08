@@ -3,9 +3,9 @@
 from typing import Dict
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores.marqo import Marqo
+from aiagentsforce_community.vectorstores.marqo import Marqo
 
 DEFAULT_MARQO_URL = "http://localhost:8882"
 DEFAULT_MARQO_API_KEY = ""

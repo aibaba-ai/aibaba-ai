@@ -2,7 +2,7 @@ from unittest import mock
 
 import pytest
 
-from langchain_community.tools.databricks._execution import (
+from aiagentsforce_community.tools.databricks._execution import (
     DEFAULT_EXECUTE_FUNCTION_ARGS,
     EXECUTE_FUNCTION_ARG_NAME,
     execute_function,

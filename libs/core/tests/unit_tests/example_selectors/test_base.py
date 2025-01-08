@@ -1,6 +1,6 @@
 from typing import Optional
 
-from langchain_core.example_selectors import BaseExampleSelector
+from aiagentsforce_core.example_selectors import BaseExampleSelector
 
 
 class DummyExampleSelector(BaseExampleSelector):

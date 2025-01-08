@@ -4,9 +4,9 @@ from typing import Any, Dict
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from langchain_core.outputs import Generation
+from aiagentsforce_core.outputs import Generation
 
-from langchain_community.cache import AzureCosmosDBNoSqlSemanticCache
+from aiagentsforce_community.cache import AzureCosmosDBNoSqlSemanticCache
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 from tests.unit_tests.llms.fake_llm import FakeLLM
 

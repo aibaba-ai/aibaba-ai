@@ -1,6 +1,6 @@
 # Remembrall
 
-This page covers how to use the [Remembrall](https://remembrall.dev) ecosystem within LangChain.
+This page covers how to use the [Remembrall](https://remembrall.dev) ecosystem within AI Agents Force.
 
 ## What is Remembrall?
 

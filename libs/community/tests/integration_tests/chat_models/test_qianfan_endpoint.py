@@ -2,20 +2,20 @@
 
 from typing import Any, cast
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     BaseMessageChunk,
     FunctionMessage,
     HumanMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.chat_models.baidu_qianfan_endpoint import (
+from aiagentsforce_community.chat_models.baidu_qianfan_endpoint import (
     QianfanChatEndpoint,
 )
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

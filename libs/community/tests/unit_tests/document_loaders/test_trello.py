@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 
-from langchain_community.document_loaders.trello import TrelloLoader
+from aiagentsforce_community.document_loaders.trello import TrelloLoader
 
 
 def list_to_objects(dict_list: list) -> list:

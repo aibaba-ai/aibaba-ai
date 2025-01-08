@@ -2,10 +2,10 @@ from pathlib import Path
 from typing import Any
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
-from langchain_community.vectorstores.inmemory import InMemoryVectorStore
+from aiagentsforce_community.vectorstores.inmemory import InMemoryVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

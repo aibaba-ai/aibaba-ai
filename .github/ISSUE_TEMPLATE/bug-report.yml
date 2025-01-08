@@ -1,5 +1,5 @@
 name: "\U0001F41B Bug Report"
-description: Report a bug in LangChain. To report a security issue, please instead use the security option below. For questions, please use the GitHub Discussions.
+description: Report a bug in AI Agents Force. To report a security issue, please instead use the security option below. For questions, please use the GitHub Discussions.
 labels: ["02 Bug Report"]
 body:
   - type: markdown
@@ -7,20 +7,20 @@ body:
       value: >
         Thank you for taking the time to file a bug report. 
         
-        Use this to report bugs in LangChain. 
+        Use this to report bugs in AI Agents Force. 
         
-        If you're not certain that your issue is due to a bug in LangChain, please use [GitHub Discussions](https://github.com/langchain-ai/langchain/discussions)
+        If you're not certain that your issue is due to a bug in AI Agents Force, please use [GitHub Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions)
         to ask for help with your issue.
         
         Relevant links to check before filing a bug report to see if your issue has already been reported, fixed or
         if there's another way to solve your problem:
         
-        [LangChain documentation with the integrated search](https://python.langchain.com/docs/get_started/introduction),
-        [API Reference](https://python.langchain.com/api_reference/),
-        [GitHub search](https://github.com/langchain-ai/langchain),
-        [LangChain Github Discussions](https://github.com/langchain-ai/langchain/discussions),
-        [LangChain Github Issues](https://github.com/langchain-ai/langchain/issues?q=is%3Aissue),
-        [LangChain ChatBot](https://chat.langchain.com/)
+        [AI Agents Force documentation with the integrated search](https://https://docs.aiagentsforce.com//get_started/introduction),
+        [API Reference](https://docs.aiagentsforce.com/api_reference/),
+        [GitHub search](https://github.com/AI-Agents-Force-SDK/langchain),
+        [AI Agents Force Github Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions),
+        [AI Agents Force Github Issues](https://github.com/AI-Agents-Force-SDK/langchain/issues?q=is%3Aissue),
+        [AI Agents Force ChatBot](https://chat.langchain.com/)
   - type: checkboxes
     id: checks
     attributes:
@@ -29,13 +29,13 @@ body:
       options:
         - label: I added a very descriptive title to this issue.
           required: true
-        - label: I searched the LangChain documentation with the integrated search.
+        - label: I searched the AI Agents Force documentation with the integrated search.
           required: true
         - label: I used the GitHub search to find a similar question and didn't find it.
           required: true
-        - label: I am sure that this is a bug in LangChain rather than my code.
+        - label: I am sure that this is a bug in AI Agents Force rather than my code.
           required: true
-        - label: The bug is not resolved by updating to the latest stable version of LangChain (or the specific integration package).
+        - label: The bug is not resolved by updating to the latest stable version of AI Agents Force (or the specific integration package).
           required: true
   - type: textarea
     id: reproduction
@@ -59,7 +59,7 @@ body:
         The following code: 
         
         ```python
-        from langchain_core.runnables import RunnableLambda
+        from aiagentsforce_core.runnables import RunnableLambda
 
         def bad_code(inputs) -> int:
           raise NotImplementedError('For demo purpose')
@@ -102,15 +102,15 @@ body:
         
         Run the following command in your terminal and paste the output here:
         
-        python -m langchain_core.sys_info
+        python -m aiagentsforce_core.sys_info
         
         or if you have an existing python interpreter running:
         
-        from langchain_core import sys_info
+        from aiagentsforce_core import sys_info
         sys_info.print_sys_info()
         
         alternatively, put the entire output of `pip freeze` here.
       placeholder: |
-        python -m langchain_core.sys_info
+        python -m aiagentsforce_core.sys_info
     validations:
       required: true

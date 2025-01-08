@@ -8,10 +8,10 @@ from langchain.prompts.chat import (
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_core.messages import AIMessage, HumanMessage
-from langchain_core.runnables.base import RunnableSerializable
+from aiagentsforce_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.runnables.base import RunnableSerializable
 
-from langchain_community.chat_models.hunyuan import ChatHunyuan
+from aiagentsforce_community.chat_models.hunyuan import ChatHunyuan
 
 
 @pytest.mark.requires("tencentcloud-sdk-python")

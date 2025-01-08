@@ -4,19 +4,19 @@ from typing import Any
 import pytest
 from pydantic import BaseModel, Field
 
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     ToolCallChunk,
 )
-from langchain_core.output_parsers.openai_tools import (
+from aiagentsforce_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     JsonOutputToolsParser,
     PydanticToolsParser,
 )
-from langchain_core.outputs import ChatGeneration
-from langchain_core.utils.pydantic import PYDANTIC_MAJOR_VERSION
+from aiagentsforce_core.outputs import ChatGeneration
+from aiagentsforce_core.utils.pydantic import PYDANTIC_MAJOR_VERSION
 
 STREAMED_MESSAGES: list = [
     AIMessageChunk(content=""),

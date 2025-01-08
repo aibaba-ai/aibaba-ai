@@ -2,14 +2,14 @@
 
 from typing import Optional as Optional
 
-from langchain_core.exceptions import OutputParserException
-from langchain_core.language_models import GenericFakeChatModel
-from langchain_core.messages import AIMessage
-from langchain_core.output_parsers import (
+from aiagentsforce_core.exceptions import OutputParserException
+from aiagentsforce_core.language_models import GenericFakeChatModel
+from aiagentsforce_core.messages import AIMessage
+from aiagentsforce_core.output_parsers import (
     BaseGenerationOutputParser,
     BaseTransformOutputParser,
 )
-from langchain_core.outputs import ChatGeneration, Generation
+from aiagentsforce_core.outputs import ChatGeneration, Generation
 
 
 def test_base_generation_parser() -> None:

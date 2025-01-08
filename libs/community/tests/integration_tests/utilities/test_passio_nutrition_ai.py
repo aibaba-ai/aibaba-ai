@@ -1,8 +1,8 @@
 """Integration test for Bing Search API Wrapper."""
 
-from langchain_core.utils import get_from_env
+from aiagentsforce_core.utils import get_from_env
 
-from langchain_community.utilities.passio_nutrition_ai import (
+from aiagentsforce_community.utilities.passio_nutrition_ai import (
     ManagedPassioLifeAuth,
     NutritionAIAPI,
 )

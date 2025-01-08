@@ -1201,7 +1201,7 @@ files = [
 [[package]]
 name = "langchain-tests"
 version = "0.3.7"
-description = "Standard tests for LangChain implementations"
+description = "Standard tests for AI Agents Force implementations"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -1226,7 +1226,7 @@ url = "../standard-tests"
 [[package]]
 name = "langchain-text-splitters"
 version = "0.3.4"
-description = "LangChain text splitting utilities"
+description = "AI Agents Force text splitting utilities"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []

@@ -3,8 +3,8 @@
 All functionality related to [Google Cloud Platform](https://cloud.google.com/) and other `Google` products.
 
 Integration packages for Gemini models and the VertexAI platform are maintained in
-the [langchain-google](https://github.com/langchain-ai/langchain-google) repository.
-You can find a host of LangChain integrations with other Google APIs in the
+the [langchain-google](https://github.com/AI-Agents-Force-SDK/langchain-google) repository.
+You can find a host of AI Agents Force integrations with other Google APIs in the
 [googleapis](https://github.com/googleapis?q=langchain-&type=all&language=&sort=)
 Github organization.
 
@@ -31,13 +31,13 @@ export GOOGLE_API_KEY=your-api-key
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
-llm.invoke("Sing a ballad of LangChain.")
+llm.invoke("Sing a ballad of AI Agents Force.")
 ```
 
 Gemini vision model supports image inputs when providing a single chat message.
 
 ```python
-from langchain_core.messages import HumanMessage
+from aiagentsforce_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro-vision")
@@ -337,7 +337,7 @@ pip install langchain-community
 ```
 
 ```python
-from langchain_community.embeddings.google_palm import GooglePalmEmbeddings
+from aiagentsforce_community.embeddings.google_palm import GooglePalmEmbeddings
 ```
 
 ## Document Loaders
@@ -611,7 +611,7 @@ pip install langchain-google-community[docai]
 See a [usage example](/docs/integrations/document_transformers/google_docai).
 
 ```python
-from langchain_core.document_loaders.blob_loaders import Blob
+from aiagentsforce_core.document_loaders.blob_loaders import Blob
 from langchain_google_community import DocAIParser
 ```
 
@@ -661,7 +661,7 @@ from langchain_google_alloydb_pg import AlloyDBEngine, AlloyDBVectorStore
 > [Google Cloud BigQuery Vector Search](https://cloud.google.com/bigquery/docs/vector-search-intro)
 > BigQuery vector search lets you use GoogleSQL to do semantic search, using vector indexes for fast but approximate results, or using brute force for exact results.
 
-> It can calculate Euclidean or Cosine distance. With LangChain, we default to use Euclidean distance.
+> It can calculate Euclidean or Cosine distance. With AI Agents Force, we default to use Euclidean distance.
 
 We need to install several python packages.
 
@@ -842,7 +842,7 @@ pip install scann
 See a [usage example](/docs/integrations/vectorstores/scann).
 
 ```python
-from langchain_community.vectorstores import ScaNN
+from aiagentsforce_community.vectorstores import ScaNN
 ```
 
 ## Retrievers
@@ -880,7 +880,7 @@ pip install google-cloud-discoveryengine
 ```
 
 ```python
-from langchain_community.retrievers import GoogleVertexAISearchRetriever
+from aiagentsforce_community.retrievers import GoogleVertexAISearchRetriever
 ```
 
 #### VertexAIMultiTurnSearchRetriever
@@ -970,8 +970,8 @@ pip install google-search-results
 See a [usage example and authorization instructions](/docs/integrations/tools/google_finance).
 
 ```python
-from langchain_community.tools.google_finance import GoogleFinanceQueryRun
-from langchain_community.utilities.google_finance import GoogleFinanceAPIWrapper
+from aiagentsforce_community.tools.google_finance import GoogleFinanceQueryRun
+from aiagentsforce_community.utilities.google_finance import GoogleFinanceAPIWrapper
 ```
 
 ### Google Jobs
@@ -985,8 +985,8 @@ pip install google-search-results
 See a [usage example and authorization instructions](/docs/integrations/tools/google_jobs).
 
 ```python
-from langchain_community.tools.google_jobs import GoogleJobsQueryRun
-from langchain_community.utilities.google_finance import GoogleFinanceAPIWrapper
+from aiagentsforce_community.tools.google_jobs import GoogleJobsQueryRun
+from aiagentsforce_community.utilities.google_finance import GoogleFinanceAPIWrapper
 ```
 
 ### Google Lens
@@ -994,8 +994,8 @@ from langchain_community.utilities.google_finance import GoogleFinanceAPIWrapper
 See a [usage example and authorization instructions](/docs/integrations/tools/google_lens).
 
 ```python
-from langchain_community.tools.google_lens import GoogleLensQueryRun
-from langchain_community.utilities.google_lens import GoogleLensAPIWrapper
+from aiagentsforce_community.tools.google_lens import GoogleLensQueryRun
+from aiagentsforce_community.utilities.google_lens import GoogleLensAPIWrapper
 ```
 
 ### Google Places
@@ -1023,8 +1023,8 @@ pip install google-search-results
 See a [usage example and authorization instructions](/docs/integrations/tools/google_scholar).
 
 ```python
-from langchain_community.tools.google_scholar import GoogleScholarQueryRun
-from langchain_community.utilities.google_scholar import GoogleScholarAPIWrapper
+from aiagentsforce_community.tools.google_scholar import GoogleScholarQueryRun
+from aiagentsforce_community.utilities.google_scholar import GoogleScholarAPIWrapper
 ```
 
 ### Google Search
@@ -1051,7 +1051,7 @@ tools = load_tools(["google-search"])
 Tool that queries the `Google Search` API (via `GoogleSearchAPIWrapper`) and gets back JSON.
 
 ```python
-from langchain_community.tools import GoogleSearchResults
+from aiagentsforce_community.tools import GoogleSearchResults
 ```
 
 #### GoogleSearchRun
@@ -1059,7 +1059,7 @@ from langchain_community.tools import GoogleSearchResults
 Tool that queries the `Google Search` API (via `GoogleSearchAPIWrapper`).
 
 ```python
-from langchain_community.tools import GoogleSearchRun
+from aiagentsforce_community.tools import GoogleSearchRun
 ```
 
 
@@ -1074,8 +1074,8 @@ pip install google-search-results
 See a [usage example and authorization instructions](/docs/integrations/tools/google_trends).
 
 ```python
-from langchain_community.tools.google_trends import GoogleTrendsQueryRun
-from langchain_community.utilities.google_trends import GoogleTrendsAPIWrapper
+from aiagentsforce_community.tools.google_trends import GoogleTrendsQueryRun
+from aiagentsforce_community.utilities.google_trends import GoogleTrendsAPIWrapper
 ```
 
 ## Toolkits
@@ -1341,7 +1341,7 @@ from langchain_google_vertexai.evaluators.evaluation import VertexPairWiseString
 See [usage examples and authorization instructions](/docs/integrations/tools/searchapi).
 
 ```python
-from langchain_community.utilities import SearchApiAPIWrapper
+from aiagentsforce_community.utilities import SearchApiAPIWrapper
 ```
 
 ### SerpApi
@@ -1351,7 +1351,7 @@ from langchain_community.utilities import SearchApiAPIWrapper
 See a [usage example and authorization instructions](/docs/integrations/tools/serpapi).
 
 ```python
-from langchain_community.utilities import SerpAPIWrapper
+from aiagentsforce_community.utilities import SerpAPIWrapper
 ```
 
 ### Serper.dev
@@ -1359,7 +1359,7 @@ from langchain_community.utilities import SerpAPIWrapper
 See a [usage example and authorization instructions](/docs/integrations/tools/google_serper).
 
 ```python
-from langchain_community.utilities import GoogleSerperAPIWrapper
+from aiagentsforce_community.utilities import GoogleSerperAPIWrapper
 ```
 
 ### YouTube
@@ -1397,8 +1397,8 @@ pip install yt_dlp pydub librosa
 See a [usage example and authorization instructions](/docs/integrations/document_loaders/youtube_audio).
 
 ```python
-from langchain_community.document_loaders.blob_loaders.youtube_audio import YoutubeAudioLoader
-from langchain_community.document_loaders.parsers import OpenAIWhisperParser, OpenAIWhisperParserLocal
+from aiagentsforce_community.document_loaders.blob_loaders.youtube_audio import YoutubeAudioLoader
+from aiagentsforce_community.document_loaders.parsers import OpenAIWhisperParser, OpenAIWhisperParserLocal
 ```
 
 ### YouTube transcripts
@@ -1414,5 +1414,5 @@ pip install youtube-transcript-api
 See a [usage example](/docs/integrations/document_loaders/youtube_transcript).
 
 ```python
-from langchain_community.document_loaders import YoutubeLoader
+from aiagentsforce_community.document_loaders import YoutubeLoader
 ```

@@ -7,7 +7,7 @@
 
 [![Apify Actors](/img/ApifyActors.png)](https://apify.com/store)
 
-This integration enables you run Actors on the `Apify` platform and load their results into LangChain to feed your vector
+This integration enables you run Actors on the `Apify` platform and load their results into AI Agents Force to feed your vector
 indexes with documents and data from the web, e.g. to generate answers from websites with documentation,
 blogs, or knowledge bases.
 
@@ -24,10 +24,10 @@ blogs, or knowledge bases.
 You can use the `ApifyWrapper` to run Actors on the Apify platform.
 
 ```python
-from langchain_community.utilities import ApifyWrapper
+from aiagentsforce_community.utilities import ApifyWrapper
 ```
 
-For more information on this wrapper, see [the API reference](https://python.langchain.com/api_reference/community/utilities/langchain_community.utilities.apify.ApifyWrapper.html).
+For more information on this wrapper, see [the API reference](https://docs.aiagentsforce.com/api_reference/community/utilities/aiagentsforce_community.utilities.apify.ApifyWrapper.html).
 
 
 ## Document loader
@@ -35,7 +35,7 @@ For more information on this wrapper, see [the API reference](https://python.lan
 You can also use our `ApifyDatasetLoader` to get data from Apify dataset.
 
 ```python
-from langchain_community.document_loaders import ApifyDatasetLoader
+from aiagentsforce_community.document_loaders import ApifyDatasetLoader
 ```
 
 For a more detailed walkthrough of this loader, see [this notebook](/docs/integrations/document_loaders/apify_dataset).

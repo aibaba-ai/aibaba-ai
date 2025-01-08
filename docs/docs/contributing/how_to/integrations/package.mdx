@@ -4,31 +4,31 @@ pagination_prev: contributing/how_to/integrations/index
 ---
 # How to implement an integration package
 
-This guide walks through the process of implementing a LangChain integration 
+This guide walks through the process of implementing a AI Agents Force integration 
 package.
 
 Integration packages are just Python packages that can be installed with `pip install <your-package>`,
-which contain classes that are compatible with LangChain's core interfaces.
+which contain classes that are compatible with AI Agents Force's core interfaces.
 
 We will cover:
 
 1. (Optional) How to bootstrap a new integration package
 2. How to implement components, such as [chat models](/docs/concepts/chat_models/) and [vector stores](/docs/concepts/vectorstores/), that adhere
-to the LangChain interface;  
+to the AI Agents Force interface;  
 
 ## (Optional) bootstrapping a new integration package
 
 In this section, we will outline 2 options for bootstrapping a new integration package, 
 and you're welcome to use other tools if you prefer!
 
-1. **langchain-cli**: This is a command-line tool that can be used to bootstrap a new integration package with a template for LangChain components and Poetry for dependency management.
-2. **Poetry**: This is a Python dependency management tool that can be used to bootstrap a new Python package with dependencies. You can then add LangChain components to this package.
+1. **langchain-cli**: This is a command-line tool that can be used to bootstrap a new integration package with a template for AI Agents Force components and Poetry for dependency management.
+2. **Poetry**: This is a Python dependency management tool that can be used to bootstrap a new Python package with dependencies. You can then add AI Agents Force components to this package.
 
 <details>
     <summary>Option 1: langchain-cli (recommended)</summary>
 
 In this guide, we will be using the `langchain-cli` to create a new integration package
-from a template, which can be edited to implement your LangChain components.
+from a template, which can be edited to implement your AI Agents Force components.
 
 ### **Prerequisites**
 
@@ -77,7 +77,7 @@ as your integration package:
 poetry install --with lint,typing,test,test_integration
 ```
 
-You now have a new Python package with a template for LangChain components! This
+You now have a new Python package with a template for AI Agents Force components! This
 template comes with files for each integration type, and you're welcome to duplicate or
 delete any of these files as needed (including the associated test files).
 
@@ -153,7 +153,7 @@ You're now ready to start writing your integration package!
 ### Writing your integration
 
 Let's say you're building a simple integration package that provides a `ChatParrotLink`
-chat model integration for LangChain. Here's a simple example of what your project
+chat model integration for AI Agents Force. Here's a simple example of what your project
 structure might look like:
 
 ```plaintext
@@ -179,15 +179,15 @@ For `chat_models.py`, simply paste the contents of the chat model implementation
 
 ### Push your package to a public Github repository
 
-This is only required if you want to publish your integration in the LangChain documentation.
+This is only required if you want to publish your integration in the AI Agents Force documentation.
 
 1. Create a new repository on GitHub.
 2. Push your code to the repository.
 3. Confirm that your repository is viewable by the public (e.g. in a private browsing window, where you're not logged into Github).
 
-## Implementing LangChain components
+## Implementing AI Agents Force components
 
-LangChain components are subclasses of base classes in [langchain-core](/docs/concepts/architecture/#langchain-core).
+AI Agents Force components are subclasses of base classes in [langchain-core](/docs/concepts/architecture/#langchain-core).
 Examples include [chat models](/docs/concepts/chat_models/),
 [vector stores](/docs/concepts/vectorstores/), [tools](/docs/concepts/tools/),
 [embedding models](/docs/concepts/embedding_models/) and [retrievers](/docs/concepts/retrievers/).
@@ -237,16 +237,16 @@ import ChatModelSource from '../../../../src/theme/integration_template/integrat
 
         Your vector store implementation will depend on your chosen database technology.
         `langchain-core` includes a minimal
-        [in-memory vector store](https://python.langchain.com/api_reference/core/vectorstores/langchain_core.vectorstores.in_memory.InMemoryVectorStore.html)
-        that we can use as a guide. You can access the code [here](https://github.com/langchain-ai/langchain/blob/master/libs/core/langchain_core/vectorstores/in_memory.py).
+        [in-memory vector store](https://docs.aiagentsforce.com/api_reference/core/vectorstores/aiagentsforce_core.vectorstores.in_memory.InMemoryVectorStore.html)
+        that we can use as a guide. You can access the code [here](https://github.com/AI-Agents-Force-SDK/langchain/blob/master/libs/core/aiagentsforce_core/vectorstores/in_memory.py).
 
-        All vector stores must inherit from the [VectorStore](https://python.langchain.com/api_reference/core/vectorstores/langchain_core.vectorstores.base.VectorStore.html)
+        All vector stores must inherit from the [VectorStore](https://docs.aiagentsforce.com/api_reference/core/vectorstores/aiagentsforce_core.vectorstores.base.VectorStore.html)
         base class. This interface consists of methods for writing, deleting and searching
         for documents in the vector store.
 
         `VectorStore` supports a variety of synchronous and asynchronous search types (e.g., 
         nearest-neighbor or maximum marginal relevance), as well as interfaces for adding
-        documents to the store. See the [API Reference](https://python.langchain.com/api_reference/core/vectorstores/langchain_core.vectorstores.base.VectorStore.html)
+        documents to the store. See the [API Reference](https://docs.aiagentsforce.com/api_reference/core/vectorstores/aiagentsforce_core.vectorstores.base.VectorStore.html)
         for all supported methods. The required methods are tabulated below:
 
         | Method/Property         | Description                                          |
@@ -264,8 +264,8 @@ import ChatModelSource from '../../../../src/theme/integration_template/integrat
 
         :::tip
 
-        The [in-memory vector store](https://github.com/langchain-ai/langchain/blob/master/libs/core/langchain_core/vectorstores/in_memory.py)
-        is tested against the standard tests in the LangChain Github repository.
+        The [in-memory vector store](https://github.com/AI-Agents-Force-SDK/langchain/blob/master/libs/core/aiagentsforce_core/vectorstores/in_memory.py)
+        is tested against the standard tests in the AI Agents Force Github repository.
 
         :::
 
@@ -331,7 +331,7 @@ or parameters to call the tool with.
 2. To take a "tool call" as generated above, and take some action and return a response
 that can be passed back to the chat model as a ToolMessage.
 
-The `Tools` class must inherit from the [BaseTool](https://python.langchain.com/api_reference/core/tools/langchain_core.tools.base.BaseTool.html#langchain_core.tools.base.BaseTool) base class. This interface has 3 properties and 2 methods that should be implemented in a 
+The `Tools` class must inherit from the [BaseTool](https://docs.aiagentsforce.com/api_reference/core/tools/aiagentsforce_core.tools.base.BaseTool.html#aiagentsforce_core.tools.base.BaseTool) base class. This interface has 3 properties and 2 methods that should be implemented in a 
 subclass.
 
 | Method/Property         | Description                                          |
@@ -401,7 +401,7 @@ import ToolSource from '/src/theme/integration_template/integration_template/too
     <TabItem value="retrievers" label="Retrievers">
 
 Retrievers are used to retrieve documents from APIs, databases, or other sources
-based on a query. The `Retriever` class must inherit from the [BaseRetriever](https://python.langchain.com/api_reference/core/retrievers/langchain_core.retrievers.BaseRetriever.html) base class. This interface has 1 attribute and 2 methods that should be implemented in a subclass.
+based on a query. The `Retriever` class must inherit from the [BaseRetriever](https://docs.aiagentsforce.com/api_reference/core/retrievers/aiagentsforce_core.retrievers.BaseRetriever.html) base class. This interface has 1 attribute and 2 methods that should be implemented in a subclass.
 
 | Method/Property         | Description                                          |
 |------------------------ |------------------------------------------------------|

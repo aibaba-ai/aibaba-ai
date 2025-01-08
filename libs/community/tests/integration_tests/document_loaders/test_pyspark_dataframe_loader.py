@@ -1,9 +1,9 @@
 import random
 import string
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.pyspark_dataframe import (
+from aiagentsforce_community.document_loaders.pyspark_dataframe import (
     PySparkDataFrameLoader,
 )
 

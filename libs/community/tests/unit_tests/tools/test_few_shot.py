@@ -1,12 +1,12 @@
 from typing import Type
 
-from langchain_core.embeddings.fake import DeterministicFakeEmbedding
-from langchain_core.example_selectors import SemanticSimilarityExampleSelector
-from langchain_core.vectorstores import InMemoryVectorStore
+from aiagentsforce_core.embeddings.fake import DeterministicFakeEmbedding
+from aiagentsforce_core.example_selectors import SemanticSimilarityExampleSelector
+from aiagentsforce_core.vectorstores import InMemoryVectorStore
 from langchain_tests.integration_tests import ToolsIntegrationTests
 from langchain_tests.unit_tests import ToolsUnitTests
 
-from langchain_community.tools.few_shot.tool import FewShotSQLTool
+from aiagentsforce_community.tools.few_shot.tool import FewShotSQLTool
 
 EXAMPLES = [
     {

@@ -1,7 +1,7 @@
 from typing import Type, cast
 
 import pytest
-from langchain_core.load import dumpd
+from aiagentsforce_core.load import dumpd
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 

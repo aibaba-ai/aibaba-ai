@@ -2,7 +2,7 @@
 
 import json
 
-from langchain_community.utilities.golden_query import GoldenQueryAPIWrapper
+from aiagentsforce_community.utilities.golden_query import GoldenQueryAPIWrapper
 
 
 def test_call() -> None:

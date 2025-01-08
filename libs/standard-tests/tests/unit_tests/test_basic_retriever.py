@@ -1,7 +1,7 @@
 from typing import Any, Type
 
-from langchain_core.documents import Document
-from langchain_core.retrievers import BaseRetriever
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.retrievers import BaseRetriever
 
 from langchain_tests.integration_tests import RetrieversIntegrationTests
 

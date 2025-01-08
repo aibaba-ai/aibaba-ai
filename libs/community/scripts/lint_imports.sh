@@ -19,7 +19,7 @@ result=$(git -C "$repository_path" grep -En '^import langchain_experimental|^fro
 if [ -n "$result" ]; then
   echo "ERROR: The following lines need to be updated:"
   echo "$result"
-  echo "langchain_community should import from langchain_experimental."
+  echo "aiagentsforce_community should import from langchain_experimental."
   exit 1
 fi
 

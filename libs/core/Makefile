@@ -25,7 +25,7 @@ test_watch:
 test_profile:
 	poetry run pytest -vv tests/unit_tests/ --profile-svg
 
-check_imports: $(shell find langchain_core -name '*.py')
+check_imports: $(shell find aiagentsforce_core -name '*.py')
 	poetry run python ./scripts/check_imports.py $^
 
 extended_tests:
@@ -41,7 +41,7 @@ PYTHON_FILES=.
 MYPY_CACHE=.mypy_cache
 lint format: PYTHON_FILES=.
 lint_diff format_diff: PYTHON_FILES=$(shell git diff --relative=libs/core --name-only --diff-filter=d master | grep -E '\.py$$|\.ipynb$$')
-lint_package: PYTHON_FILES=langchain_core
+lint_package: PYTHON_FILES=aiagentsforce_core
 lint_tests: PYTHON_FILES=tests
 lint_tests: MYPY_CACHE=.mypy_cache_test
 

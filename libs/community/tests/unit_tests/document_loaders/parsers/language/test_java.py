@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from langchain_community.document_loaders.parsers.language.java import JavaSegmenter
+from aiagentsforce_community.document_loaders.parsers.language.java import JavaSegmenter
 
 
 @pytest.mark.requires("tree_sitter", "tree_sitter_languages")

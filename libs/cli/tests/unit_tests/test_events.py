@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_cli.utils.events import EventDict, create_events
+from aiagentsforce_cli.utils.events import EventDict, create_events
 
 
 @pytest.mark.xfail(reason="Unknown reason")

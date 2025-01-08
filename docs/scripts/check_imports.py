@@ -84,8 +84,8 @@ def _is_relevant_import(module: str) -> bool:
     # Ignore things like langchain_{bla}, where bla is unrecognized.
     recognized_packages = [
         "langchain",
-        "langchain_core",
-        "langchain_community",
+        "aiagentsforce_core",
+        "aiagentsforce_community",
         "langchain_experimental",
         "langchain_text_splitters",
     ]

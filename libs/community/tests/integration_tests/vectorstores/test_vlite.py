@@ -1,9 +1,9 @@
 """Test VLite functionality."""
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.embeddings import FakeEmbeddings
-from langchain_community.vectorstores import VLite
+from aiagentsforce_community.embeddings import FakeEmbeddings
+from aiagentsforce_community.vectorstores import VLite
 
 
 def test_vlite() -> None:

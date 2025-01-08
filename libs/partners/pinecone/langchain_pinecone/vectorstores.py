@@ -15,11 +15,11 @@ from typing import (
 )
 
 import numpy as np
-from langchain_core._api.deprecation import deprecated
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.utils.iter import batch_iterate
-from langchain_core.vectorstores import VectorStore
+from aiagentsforce_core._api.deprecation import deprecated
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
+from aiagentsforce_core.utils.iter import batch_iterate
+from aiagentsforce_core.vectorstores import VectorStore
 from pinecone import Pinecone as PineconeClient  # type: ignore
 
 from langchain_pinecone._utilities import DistanceStrategy, maximal_marginal_relevance
@@ -85,7 +85,7 @@ class PineconeVectorStore(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from langchain_core.documents import Document
+            from aiagentsforce_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

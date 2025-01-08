@@ -1,6 +1,6 @@
 # Layerup Security
 
-The [Layerup Security](https://uselayerup.com) integration allows you to secure your calls to any LangChain LLM, LLM chain or LLM agent. The LLM object wraps around any existing LLM object, allowing for a secure layer between your users and your LLMs.
+The [Layerup Security](https://uselayerup.com) integration allows you to secure your calls to any AI Agents Force LLM, LLM chain or LLM agent. The LLM object wraps around any existing LLM object, allowing for a secure layer between your users and your LLMs.
 
 While the Layerup Security object is designed as an LLM, it is not actually an LLM itself, it simply wraps around an LLM, allowing it to adapt the same functionality as the underlying LLM.
 
@@ -14,7 +14,7 @@ Install the Layerup Security SDK:
 pip install LayerupSecurity
 ```
 
-And install LangChain Community:
+And install AI Agents Force Community:
 ```bash
 pip install langchain-community
 ```
@@ -22,7 +22,7 @@ pip install langchain-community
 And now you're ready to start protecting your LLM calls with Layerup Security!
 
 ```python
-from langchain_community.llms.layerup_security import LayerupSecurity
+from aiagentsforce_community.llms.layerup_security import LayerupSecurity
 from langchain_openai import OpenAI
 
 # Create an instance of your favorite LLM

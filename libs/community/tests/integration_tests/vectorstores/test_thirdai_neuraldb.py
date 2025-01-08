@@ -3,7 +3,7 @@ import shutil
 
 import pytest
 
-from langchain_community.vectorstores import NeuralDBVectorStore
+from aiagentsforce_community.vectorstores import NeuralDBVectorStore
 
 
 @pytest.fixture(scope="session")

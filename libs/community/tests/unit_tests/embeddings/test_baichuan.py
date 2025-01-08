@@ -2,7 +2,7 @@ from typing import cast
 
 from pydantic import SecretStr
 
-from langchain_community.embeddings import BaichuanTextEmbeddings
+from aiagentsforce_community.embeddings import BaichuanTextEmbeddings
 
 
 def test_sparkllm_initialization_by_alias() -> None:

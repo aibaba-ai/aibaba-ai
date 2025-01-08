@@ -1,4 +1,4 @@
-from langchain_community.document_loaders import __all__, _module_lookup
+from aiagentsforce_community.document_loaders import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "AcreomLoader",

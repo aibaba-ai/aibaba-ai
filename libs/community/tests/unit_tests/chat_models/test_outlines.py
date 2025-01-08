@@ -2,7 +2,7 @@ import pytest
 from _pytest.monkeypatch import MonkeyPatch
 from pydantic import BaseModel, Field
 
-from langchain_community.chat_models.outlines import ChatOutlines
+from aiagentsforce_community.chat_models.outlines import ChatOutlines
 
 
 def test_chat_outlines_initialization(monkeypatch: MonkeyPatch) -> None:

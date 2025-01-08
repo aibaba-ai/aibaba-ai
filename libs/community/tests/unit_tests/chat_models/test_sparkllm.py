@@ -1,14 +1,14 @@
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.output_parsers.openai_tools import (
+from aiagentsforce_core.output_parsers.openai_tools import (
     parse_tool_call,
 )
 
-from langchain_community.chat_models.sparkllm import (
+from aiagentsforce_community.chat_models.sparkllm import (
     ChatSparkLLM,
     convert_dict_to_message,
     convert_message_to_dict,

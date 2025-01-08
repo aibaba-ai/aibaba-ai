@@ -3,9 +3,9 @@ import time
 from typing import Any, Optional
 
 from langchain.memory import ConversationBufferMemory
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_message_histories.cassandra import (
+from aiagentsforce_community.chat_message_histories.cassandra import (
     CassandraChatMessageHistory,
 )
 

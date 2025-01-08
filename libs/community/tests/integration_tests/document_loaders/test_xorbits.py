@@ -1,7 +1,7 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import XorbitsLoader
+from aiagentsforce_community.document_loaders import XorbitsLoader
 
 try:
     import xorbits  # noqa: F401

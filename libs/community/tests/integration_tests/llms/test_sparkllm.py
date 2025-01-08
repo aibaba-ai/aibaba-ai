@@ -1,8 +1,8 @@
 """Test SparkLLM."""
 
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 
-from langchain_community.llms.sparkllm import SparkLLM
+from aiagentsforce_community.llms.sparkllm import SparkLLM
 
 
 def test_call() -> None:

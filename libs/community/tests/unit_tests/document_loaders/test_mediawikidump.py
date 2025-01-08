@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from langchain_community.document_loaders.mediawikidump import MWDumpLoader
+from aiagentsforce_community.document_loaders.mediawikidump import MWDumpLoader
 
 PARENT_DIR = Path(__file__).parent / "sample_documents"
 

@@ -1,4 +1,4 @@
-from langchain_core.structured_query import (
+from aiagentsforce_core.structured_query import (
     Comparator,
     Comparison,
     Operation,
@@ -6,7 +6,7 @@ from langchain_core.structured_query import (
     StructuredQuery,
 )
 
-from langchain_community.query_constructors.tencentvectordb import (
+from aiagentsforce_community.query_constructors.tencentvectordb import (
     TencentVectorDBTranslator,
 )
 

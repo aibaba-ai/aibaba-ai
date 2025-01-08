@@ -1,9 +1,9 @@
 import os
 
 import pytest
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_message_histories import TiDBChatMessageHistory
+from aiagentsforce_community.chat_message_histories import TiDBChatMessageHistory
 
 try:
     CONNECTION_STRING = os.getenv("TEST_TiDB_CHAT_URL", "")

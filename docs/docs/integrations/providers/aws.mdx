@@ -1,6 +1,6 @@
 # AWS
 
-The `LangChain` integrations related to [Amazon AWS](https://aws.amazon.com/) platform.
+The `AI Agents Force` integrations related to [Amazon AWS](https://aws.amazon.com/) platform.
 
 First-party AWS integrations are available in the `langchain_aws` package.
 
@@ -8,7 +8,7 @@ First-party AWS integrations are available in the `langchain_aws` package.
 pip install langchain-aws
 ```
 
-And there are also some community integrations available in the `langchain_community` package with the `boto3` optional dependency.
+And there are also some community integrations available in the `aiagentsforce_community` package with the `boto3` optional dependency.
 
 ```bash
 pip install langchain-community boto3
@@ -35,9 +35,9 @@ from langchain_aws import ChatBedrock
 ```
 
 ### Bedrock Converse
-AWS has recently released the Bedrock Converse API which provides a unified conversational interface for Bedrock models. This API does not yet support custom models. You can see a list of all [models that are supported here](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html). To improve reliability the ChatBedrock integration will switch to using the Bedrock Converse API as soon as it has feature parity with the existing Bedrock API. Until then a separate [ChatBedrockConverse](https://python.langchain.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock_converse.ChatBedrockConverse.html) integration has been released.
+AWS has recently released the Bedrock Converse API which provides a unified conversational interface for Bedrock models. This API does not yet support custom models. You can see a list of all [models that are supported here](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html). To improve reliability the ChatBedrock integration will switch to using the Bedrock Converse API as soon as it has feature parity with the existing Bedrock API. Until then a separate [ChatBedrockConverse](https://docs.aiagentsforce.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock_converse.ChatBedrockConverse.html) integration has been released.
 
-We recommend using `ChatBedrockConverse` for users who do not need to use custom models. See the [docs](/docs/integrations/chat/bedrock/#bedrock-converse-api) and [API reference](https://python.langchain.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock_converse.ChatBedrockConverse.html) for more detail.
+We recommend using `ChatBedrockConverse` for users who do not need to use custom models. See the [docs](/docs/integrations/chat/bedrock/#bedrock-converse-api) and [API reference](https://docs.aiagentsforce.com/api_reference/aws/chat_models/langchain_aws.chat_models.bedrock_converse.ChatBedrockConverse.html) for more detail.
 
 ```python
 from langchain_aws import ChatBedrockConverse
@@ -70,7 +70,7 @@ from langchain_aws import BedrockLLM
 See a [usage example](/docs/integrations/llms/amazon_api_gateway).
 
 ```python
-from langchain_community.llms import AmazonAPIGateway
+from aiagentsforce_community.llms import AmazonAPIGateway
 ```
 
 ### SageMaker Endpoint
@@ -92,15 +92,15 @@ from langchain_aws import SagemakerEndpoint
 
 See a [usage example](/docs/integrations/text_embedding/bedrock).
 ```python
-from langchain_community.embeddings import BedrockEmbeddings
+from aiagentsforce_community.embeddings import BedrockEmbeddings
 ```
 
 ### SageMaker Endpoint
 
 See a [usage example](/docs/integrations/text_embedding/sagemaker-endpoint).
 ```python
-from langchain_community.embeddings import SagemakerEndpointEmbeddings
-from langchain_community.llms.sagemaker_endpoint import ContentHandlerBase
+from aiagentsforce_community.embeddings import SagemakerEndpointEmbeddings
+from aiagentsforce_community.llms.sagemaker_endpoint import ContentHandlerBase
 ```
 
 ## Document loaders
@@ -117,7 +117,7 @@ See a [usage example for S3DirectoryLoader](/docs/integrations/document_loaders/
 See a [usage example for S3FileLoader](/docs/integrations/document_loaders/aws_s3_file).
 
 ```python
-from langchain_community.document_loaders import S3DirectoryLoader, S3FileLoader
+from aiagentsforce_community.document_loaders import S3DirectoryLoader, S3FileLoader
 ```
 
 ### Amazon Textract
@@ -128,7 +128,7 @@ from langchain_community.document_loaders import S3DirectoryLoader, S3FileLoader
 See a [usage example](/docs/integrations/document_loaders/amazon_textract).
 
 ```python
-from langchain_community.document_loaders import AmazonTextractPDFLoader
+from aiagentsforce_community.document_loaders import AmazonTextractPDFLoader
 ```
 
 ### Amazon Athena
@@ -139,7 +139,7 @@ from langchain_community.document_loaders import AmazonTextractPDFLoader
 See a [usage example](/docs/integrations/document_loaders/athena).
 
 ```python
-from langchain_community.document_loaders.athena import AthenaLoader
+from aiagentsforce_community.document_loaders.athena import AthenaLoader
 ```
 
 ### AWS Glue
@@ -153,7 +153,7 @@ from langchain_community.document_loaders.athena import AthenaLoader
 See a [usage example](/docs/integrations/document_loaders/glue_catalog).
 
 ```python
-from langchain_community.document_loaders.glue_catalog import GlueCatalogLoader
+from aiagentsforce_community.document_loaders.glue_catalog import GlueCatalogLoader
 ```
 
 ## Vector stores
@@ -176,7 +176,7 @@ pip install boto3 requests requests-aws4auth
 See a [usage example](/docs/integrations/vectorstores/opensearch#using-aos-amazon-opensearch-service).
 
 ```python
-from langchain_community.vectorstores import OpenSearchVectorSearch
+from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
 ```
 
 ### Amazon DocumentDB Vector Search
@@ -204,7 +204,7 @@ AWS offers services for computing, databases, storage, analytics, and other func
 See a [usage example](/docs/integrations/vectorstores/documentdb).
 
 ```python
-from langchain_community.vectorstores import DocumentDBVectorSearch
+from aiagentsforce_community.vectorstores import DocumentDBVectorSearch
 ```
 ### Amazon MemoryDB 
 [Amazon MemoryDB](https://aws.amazon.com/memorydb/) is a durable, in-memory database service that delivers ultra-fast performance. MemoryDB is compatible with Redis OSS, a popular open source data store, 
@@ -305,7 +305,7 @@ pip install boto3
 See a [usage example](/docs/integrations/memory/aws_dynamodb).
 
 ```python
-from langchain_community.chat_message_histories import DynamoDBChatMessageHistory
+from aiagentsforce_community.chat_message_histories import DynamoDBChatMessageHistory
 ```
 
 ## Graphs
@@ -315,9 +315,9 @@ from langchain_community.chat_message_histories import DynamoDBChatMessageHistor
 See a [usage example](/docs/integrations/graphs/amazon_neptune_open_cypher).
 
 ```python
-from langchain_community.graphs import NeptuneGraph
-from langchain_community.graphs import NeptuneAnalyticsGraph
-from langchain_community.chains.graph_qa.neptune_cypher import NeptuneOpenCypherQAChain
+from aiagentsforce_community.graphs import NeptuneGraph
+from aiagentsforce_community.graphs import NeptuneAnalyticsGraph
+from aiagentsforce_community.chains.graph_qa.neptune_cypher import NeptuneOpenCypherQAChain
 ```
 
 ### Amazon Neptune with SPARQL
@@ -325,8 +325,8 @@ from langchain_community.chains.graph_qa.neptune_cypher import NeptuneOpenCypher
 See a [usage example](/docs/integrations/graphs/amazon_neptune_sparql).
 
 ```python
-from langchain_community.graphs import NeptuneRdfGraph
-from langchain_community.chains.graph_qa.neptune_sparql import NeptuneSparqlQAChain
+from aiagentsforce_community.graphs import NeptuneRdfGraph
+from aiagentsforce_community.chains.graph_qa.neptune_sparql import NeptuneSparqlQAChain
 ```
 
 
@@ -336,7 +336,7 @@ from langchain_community.chains.graph_qa.neptune_sparql import NeptuneSparqlQACh
 ### Bedrock token usage
 
 ```python
-from langchain_community.callbacks.bedrock_anthropic_callback import BedrockAnthropicTokenUsageCallbackHandler
+from aiagentsforce_community.callbacks.bedrock_anthropic_callback import BedrockAnthropicTokenUsageCallbackHandler
 ```
 
 ### SageMaker Tracking
@@ -357,7 +357,7 @@ pip install google-search-results sagemaker
 See a [usage example](/docs/integrations/callbacks/sagemaker_tracking).
 
 ```python
-from langchain_community.callbacks import SageMakerCallbackHandler
+from aiagentsforce_community.callbacks import SageMakerCallbackHandler
 ```
 
 ## Chains
@@ -374,7 +374,7 @@ We need to install the `boto3` and `nltk` libraries.
 pip install boto3 nltk
 ```
 
-See a [usage example](https://python.langchain.com/v0.1/docs/guides/productionization/safety/amazon_comprehend_chain/).
+See a [usage example](https://docs.aiagentsforce.com/v0.1/docs/guides/productionization/safety/amazon_comprehend_chain/).
 
 ```python
 from langchain_experimental.comprehend_moderation import AmazonComprehendModerationChain

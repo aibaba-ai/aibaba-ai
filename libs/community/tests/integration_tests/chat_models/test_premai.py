@@ -6,10 +6,10 @@ For this we need to have a project setup in PremAI's platform: https://app.prema
 """
 
 import pytest
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models import ChatPremAI
+from aiagentsforce_community.chat_models import ChatPremAI
 
 
 @pytest.fixture

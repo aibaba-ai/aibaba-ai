@@ -2,7 +2,7 @@
 
 import os
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 from langchain_voyageai.rerank import VoyageAIRerank
 

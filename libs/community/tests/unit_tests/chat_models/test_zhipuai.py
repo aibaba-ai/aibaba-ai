@@ -1,9 +1,9 @@
 """Test ZhipuAI Chat API wrapper"""
 
 import pytest
-from langchain_core.messages import ToolMessage
+from aiagentsforce_core.messages import ToolMessage
 
-from langchain_community.chat_models.zhipuai import (
+from aiagentsforce_community.chat_models.zhipuai import (
     ChatZhipuAI,
     _convert_message_to_dict,
 )

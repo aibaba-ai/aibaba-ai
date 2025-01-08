@@ -3,7 +3,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_community.llms.cerebriumai import CerebriumAI
+from aiagentsforce_community.llms.cerebriumai import CerebriumAI
 
 
 def test_api_key_is_secret_string() -> None:

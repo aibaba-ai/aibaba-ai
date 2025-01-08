@@ -2844,7 +2844,7 @@ url = "libs/langchain"
 [[package]]
 name = "langchain-anthropic"
 version = "0.3.0"
-description = "An integration package connecting AnthropicMessages and LangChain"
+description = "An integration package connecting AnthropicMessages and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -2862,7 +2862,7 @@ url = "libs/partners/anthropic"
 [[package]]
 name = "langchain-aws"
 version = "0.2.2"
-description = "An integration package connecting AWS and LangChain"
+description = "An integration package connecting AWS and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -2879,7 +2879,7 @@ pydantic = ">=2,<3"
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langchain-aws.git"
+url = "https://github.com/AI-Agents-Force-SDK/langchain-aws.git"
 reference = "HEAD"
 resolved_reference = "09eef1665c93c9ef8643dd058ae122818374c967"
 subdirectory = "libs/aws"
@@ -2887,7 +2887,7 @@ subdirectory = "libs/aws"
 [[package]]
 name = "langchain-chroma"
 version = "0.2.0"
-description = "An integration package connecting Chroma and LangChain"
+description = "An integration package connecting Chroma and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4"
 files = []
@@ -2908,7 +2908,7 @@ url = "libs/partners/chroma"
 [[package]]
 name = "langchain-community"
 version = "0.3.11"
-description = "Community contributed LangChain integrations."
+description = "Community contributed AI Agents Force integrations."
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -2975,7 +2975,7 @@ langchain-core = "^0.3.6"
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langchain-experimental.git"
+url = "https://github.com/AI-Agents-Force-SDK/langchain-experimental.git"
 reference = "HEAD"
 resolved_reference = "ebd1933cb3945a82a8acfc0071176b82dce92705"
 subdirectory = "libs/experimental"
@@ -2983,7 +2983,7 @@ subdirectory = "libs/experimental"
 [[package]]
 name = "langchain-fireworks"
 version = "0.2.5"
-description = "An integration package connecting Fireworks and LangChain"
+description = "An integration package connecting Fireworks and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3003,7 +3003,7 @@ url = "libs/partners/fireworks"
 [[package]]
 name = "langchain-google-vertexai"
 version = "2.0.5"
-description = "An integration package connecting Google VertexAI and LangChain"
+description = "An integration package connecting Google VertexAI and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3023,7 +3023,7 @@ mistral = ["langchain-mistralai (>=0.2.0,<1)"]
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langchain-google.git"
+url = "https://github.com/AI-Agents-Force-SDK/langchain-google.git"
 reference = "HEAD"
 resolved_reference = "9e90ad28167046ccd170464c96a99daac320dcaf"
 subdirectory = "libs/vertexai"
@@ -3031,7 +3031,7 @@ subdirectory = "libs/vertexai"
 [[package]]
 name = "langchain-groq"
 version = "0.2.1"
-description = "An integration package connecting Groq and LangChain"
+description = "An integration package connecting Groq and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3048,7 +3048,7 @@ url = "libs/partners/groq"
 [[package]]
 name = "langchain-mistralai"
 version = "0.2.3"
-description = "An integration package connecting Mistral and LangChain"
+description = "An integration package connecting Mistral and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3068,7 +3068,7 @@ url = "libs/partners/mistralai"
 [[package]]
 name = "langchain-openai"
 version = "0.2.12"
-description = "An integration package connecting OpenAI and LangChain"
+description = "An integration package connecting OpenAI and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3086,7 +3086,7 @@ url = "libs/partners/openai"
 [[package]]
 name = "langchain-text-splitters"
 version = "0.3.2"
-description = "LangChain text splitting utilities"
+description = "AI Agents Force text splitting utilities"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3102,7 +3102,7 @@ url = "libs/text-splitters"
 [[package]]
 name = "langchain-together"
 version = "0.2.0"
-description = "An integration package connecting Together AI and LangChain"
+description = "An integration package connecting Together AI and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3116,7 +3116,7 @@ requests = "^2"
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langchain-together.git"
+url = "https://github.com/AI-Agents-Force-SDK/langchain-together.git"
 reference = "HEAD"
 resolved_reference = "96d41eed4447cc435e7b2203270c2556107c10ee"
 subdirectory = "libs/together"
@@ -3124,7 +3124,7 @@ subdirectory = "libs/together"
 [[package]]
 name = "langchain-unstructured"
 version = "0.1.5"
-description = "An integration package connecting Unstructured and LangChain"
+description = "An integration package connecting Unstructured and AI Agents Force"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -3139,7 +3139,7 @@ local = ["unstructured[all-docs] (>=0.15.7,<0.16.0)"]
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langchain-unstructured.git"
+url = "https://github.com/AI-Agents-Force-SDK/langchain-unstructured.git"
 reference = "HEAD"
 resolved_reference = "63eb15027efe234652d40665cedeaf7d88a419e9"
 subdirectory = "libs/unstructured"
@@ -3174,7 +3174,7 @@ langgraph-sdk = "^0.1.32"
 
 [package.source]
 type = "git"
-url = "https://github.com/langchain-ai/langgraph.git"
+url = "https://github.com/AI-Agents-Force-SDK/langgraph.git"
 reference = "HEAD"
 resolved_reference = "7090d7e9a89f62be7c4bc188667436f3baa3ed3b"
 subdirectory = "libs/langgraph"

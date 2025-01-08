@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_core.utils.env import get_from_dict_or_env
+from aiagentsforce_core.utils.env import get_from_dict_or_env
 
 
 def test_get_from_dict_or_env() -> None:

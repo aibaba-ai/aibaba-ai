@@ -1,4 +1,4 @@
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
 
 def test_str() -> None:

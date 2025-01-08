@@ -1,5 +1,5 @@
-import langchain_core.tracers.schemas as schemas
-from langchain_core.tracers.schemas import __all__ as schemas_all
+import aiagentsforce_core.tracers.schemas as schemas
+from aiagentsforce_core.tracers.schemas import __all__ as schemas_all
 
 
 def test_public_api() -> None:

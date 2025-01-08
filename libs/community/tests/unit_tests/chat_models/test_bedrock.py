@@ -4,15 +4,15 @@ from typing import List
 from unittest.mock import MagicMock
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
 
-from langchain_community.chat_models import BedrockChat
-from langchain_community.chat_models.meta import convert_messages_to_prompt_llama
+from aiagentsforce_community.chat_models import BedrockChat
+from aiagentsforce_community.chat_models.meta import convert_messages_to_prompt_llama
 
 
 @pytest.mark.parametrize(

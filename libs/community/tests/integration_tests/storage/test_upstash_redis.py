@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 
-from langchain_community.storage.upstash_redis import UpstashRedisByteStore
+from aiagentsforce_community.storage.upstash_redis import UpstashRedisByteStore
 
 if TYPE_CHECKING:
     from upstash_redis import Redis

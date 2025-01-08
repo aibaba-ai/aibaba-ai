@@ -1,7 +1,7 @@
 import pytest
 from pydantic import SecretStr, ValidationError
 
-from langchain_community.chat_models.octoai import ChatOctoAI
+from aiagentsforce_community.chat_models.octoai import ChatOctoAI
 
 DEFAULT_API_BASE = "https://text.octoai.run/v1/"
 DEFAULT_MODEL = "llama-2-13b-chat"

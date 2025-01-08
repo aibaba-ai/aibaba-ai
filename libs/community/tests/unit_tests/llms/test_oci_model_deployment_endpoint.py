@@ -9,7 +9,7 @@ from unittest import mock
 import pytest
 from requests.exceptions import HTTPError
 
-from langchain_community.llms.oci_data_science_model_deployment_endpoint import (
+from aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint import (
     OCIModelDeploymentTGI,
     OCIModelDeploymentVLLM,
 )
@@ -157,7 +157,7 @@ def test_generate_tgi(*args: Any) -> None:
     "ads.common.auth.default_signer", return_value=dict(signer=mock.MagicMock())
 )
 @mock.patch(
-    "langchain_community.utilities.requests.Requests.apost",
+    "aiagentsforce_community.utilities.requests.Requests.apost",
     mock.MagicMock(),
 )
 async def test_stream_async(*args: Any) -> None:

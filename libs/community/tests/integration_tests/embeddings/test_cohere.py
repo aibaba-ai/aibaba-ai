@@ -1,6 +1,6 @@
 """Test cohere embeddings."""
 
-from langchain_community.embeddings.cohere import CohereEmbeddings
+from aiagentsforce_community.embeddings.cohere import CohereEmbeddings
 
 
 def test_cohere_embedding_documents() -> None:

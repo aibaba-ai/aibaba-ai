@@ -1,7 +1,7 @@
 # flake8: noqa
 
-from langchain_core.documents import Document
-from langchain_community.vectorstores.vearch import Vearch
+from aiagentsforce_core.documents import Document
+from aiagentsforce_community.vectorstores.vearch import Vearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 
@@ -11,7 +11,7 @@ def test_vearch() -> None:
     """
     texts = [
         "Vearch 是一款存储大语言模型数据的向量数据库，用于存储和快速搜索模型embedding后的向量，可用于基于个人知识库的大模型应用",
-        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库",
+        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库",
         "vearch 是基于C语言,go语言开发的，并提供python接口，可以直接通过pip安装",
     ]
     metadatas = [
@@ -39,11 +39,11 @@ def test_vearch() -> None:
         metadata_path="./",
     )
     result = vearch_db.similarity_search(
-        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库", 1
+        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库", 1
     )
     assert result == [
         Document(
-            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库",
+            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库",
             metadata={
                 "source": (
                     "/data/zhx/zhx/langchain-ChatGLM_new/knowledge_base/santi/"
@@ -61,7 +61,7 @@ def test_vearch_add_texts() -> None:
             "Vearch 是一款存储大语言模型数据的向量数据库，用于存储和快速搜索模型embedding后的向量，"
             "可用于基于个人知识库的大模型应用"
         ),
-        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库",
+        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库",
         "vearch 是基于C语言,go语言开发的，并提供python接口，可以直接通过pip安装",
     ]
 
@@ -88,7 +88,7 @@ def test_vearch_add_texts() -> None:
     )
 
     vearch_db.add_texts(
-        texts=["Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库"],
+        texts=["Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库"],
         metadatas=[
             {
                 "source": "/data/zhx/zhx/langchain-ChatGLM_new/knowledge_base/santi/three_body.txt"
@@ -96,18 +96,18 @@ def test_vearch_add_texts() -> None:
         ],
     )
     result = vearch_db.similarity_search(
-        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库", 2
+        "Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库", 2
     )
 
     assert result == [
         Document(
-            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库",
+            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库",
             metadata={
                 "source": "/data/zhx/zhx/langchain-ChatGLM_new/knowledge_base/santi/three_body.txt"
             },
         ),
         Document(
-            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及LangChain库",
+            page_content="Vearch 支持OpenAI, Llama, ChatGLM等模型，以及AI Agents Force库",
             metadata={
                 "source": "/data/zhx/zhx/langchain-ChatGLM_new/knowledge_base/santi/three_body.txt"
             },

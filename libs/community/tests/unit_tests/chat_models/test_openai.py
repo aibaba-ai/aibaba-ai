@@ -5,15 +5,15 @@ from typing import Any, List
 from unittest.mock import MagicMock, patch
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,
     SystemMessage,
 )
 
-from langchain_community.adapters.openai import convert_dict_to_message
-from langchain_community.chat_models.openai import ChatOpenAI
+from aiagentsforce_community.adapters.openai import convert_dict_to_message
+from aiagentsforce_community.chat_models.openai import ChatOpenAI
 
 
 @pytest.mark.requires("openai")

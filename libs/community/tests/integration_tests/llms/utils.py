@@ -1,7 +1,7 @@
 """Utils for LLM Tests."""
 
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.utils.pydantic import get_fields
+from aiagentsforce_core.language_models.llms import BaseLLM
+from aiagentsforce_core.utils.pydantic import get_fields
 
 
 def assert_llm_equality(llm: BaseLLM, loaded_llm: BaseLLM) -> None:

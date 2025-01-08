@@ -2,7 +2,7 @@
 
 >[DataForSeo](https://dataforseo.com/) provides comprehensive SEO and digital marketing data solutions via API.
 
-This page provides instructions on how to use the DataForSEO search APIs within LangChain.
+This page provides instructions on how to use the DataForSEO search APIs within AI Agents Force.
 
 ## Installation and Setup
 
@@ -22,7 +22,7 @@ os.environ["DATAFORSEO_PASSWORD"] = "your_password"
 The `DataForSEO` utility wraps the API. To import this utility, use:
 
 ```python
-from langchain_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
+from aiagentsforce_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
 ```
 
 For a detailed walkthrough of this wrapper, see [this notebook](/docs/integrations/tools/dataforseo).
@@ -39,8 +39,8 @@ tools = load_tools(["dataforseo-api-search"])
 This will load the following tools:
 
 ```python
-from langchain_community.tools import DataForSeoAPISearchRun
-from langchain_community.tools import DataForSeoAPISearchResults
+from aiagentsforce_community.tools import DataForSeoAPISearchRun
+from aiagentsforce_community.tools import DataForSeoAPISearchResults
 ```
 
 ## Example usage

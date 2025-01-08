@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import BaseModel
 
-from langchain_core._api.beta_decorator import beta, warn_beta
+from aiagentsforce_core._api.beta_decorator import beta, warn_beta
 
 
 @pytest.mark.parametrize(

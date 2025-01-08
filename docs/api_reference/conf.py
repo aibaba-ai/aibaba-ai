@@ -103,9 +103,9 @@ def skip_private_members(app, what, name, obj, skip, options):
 
 # -- Project information -----------------------------------------------------
 
-project = "🦜🔗 LangChain"
-copyright = "2023, LangChain Inc"
-author = "LangChain, Inc"
+project = "🦜🔗 AI Agents Force"
+copyright = "2023, AI Agents Force Inc"
+author = "AI Agents Force, Inc"
 
 html_favicon = "_static/img/brand/favicon.png"
 html_last_updated_fmt = "%b %d, %Y"
@@ -222,7 +222,7 @@ html_theme_options = {
             # Label for this link
             "name": "GitHub",
             # URL where the link will redirect
-            "url": "https://github.com/langchain-ai/langchain",  # required
+            "url": "https://github.com/AI-Agents-Force-SDK/langchain",  # required
             # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
             "icon": "fa-brands fa-square-github",
             # The type of image to be used (see below for details)

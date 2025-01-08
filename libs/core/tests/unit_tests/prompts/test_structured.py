@@ -4,13 +4,13 @@ from typing import Any, Union, cast
 
 from pydantic import BaseModel
 
-from langchain_core.language_models import FakeListChatModel
-from langchain_core.load.dump import dumps
-from langchain_core.load.load import loads
-from langchain_core.messages import HumanMessage
-from langchain_core.prompts.structured import StructuredPrompt
-from langchain_core.runnables.base import Runnable, RunnableLambda
-from langchain_core.utils.pydantic import is_basemodel_subclass
+from aiagentsforce_core.language_models import FakeListChatModel
+from aiagentsforce_core.load.dump import dumps
+from aiagentsforce_core.load.load import loads
+from aiagentsforce_core.messages import HumanMessage
+from aiagentsforce_core.prompts.structured import StructuredPrompt
+from aiagentsforce_core.runnables.base import Runnable, RunnableLambda
+from aiagentsforce_core.utils.pydantic import is_basemodel_subclass
 
 
 def _fake_runnable(

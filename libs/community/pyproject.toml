@@ -3,13 +3,13 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "langchain-community"
+name = "aiagentsforce-community"
 version = "0.3.14"
-description = "Community contributed LangChain integrations."
+description = "Community contributed AI Agents Force integrations."
 authors = []
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/langchain-ai/langchain"
+repository = "https://github.com/AI-Agents-Force-SDK/aiagentsforce"
 
 [tool.ruff]
 exclude = [
@@ -28,13 +28,13 @@ ignore-regex = ".*(Stati Uniti|Tense=Pres).*"
 ignore-words-list = "momento,collison,ned,foor,reworkd,parth,whats,aapply,mysogyny,unsecure,damon,crate,aadd,symbl,precesses,accademia,nin,cann"
 
 [tool.poetry.urls]
-"Source Code" = "https://github.com/langchain-ai/langchain/tree/master/libs/community"
-"Release Notes" = "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain-community%3D%3D0%22&expanded=true"
+"Source Code" = "https://github.com/AI-Agents-Force-SDK/aiagentsforce/tree/master/libs/community"
+"Release Notes" = "https://github.com/AI-Agents-Force-SDK/aiagentsforce/releases?q=tag%3A%22aiagentsforce-community%3D%3D0%22&expanded=true"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-langchain-core = "^0.3.29"
-langchain = "^0.3.14"
+aiagentsforce-core = "^0.3.29"
+aiagentsforce = "^0.3.14"
 SQLAlchemy = ">=1.4,<3"
 requests = "^2"
 PyYAML = ">=5.3"
@@ -67,9 +67,9 @@ markers = [
 ]
 asyncio_mode = "auto"
 filterwarnings = [
-    "ignore::langchain_core._api.beta_decorator.LangChainBetaWarning",
-    "ignore::langchain_core._api.deprecation.LangChainDeprecationWarning:test",
-    "ignore::langchain_core._api.deprecation.LangChainPendingDeprecationWarning:test",
+    "ignore::aiagentsforce_core._api.beta_decorator.AI Agents ForceBetaWarning",
+    "ignore::aiagentsforce_core._api.deprecation.AI Agents ForceDeprecationWarning:test",
+    "ignore::aiagentsforce_core._api.deprecation.AI Agents ForcePendingDeprecationWarning:test",
 ]
 
 [tool.poetry.group.test]
@@ -142,30 +142,30 @@ types-chardet = "^5.0.4.6"
 types-redis = "^4.3.21.6"
 mypy-protobuf = "^3.0.0"
 
-[tool.poetry.group.test.dependencies.langchain-core]
+[tool.poetry.group.test.dependencies.aiagentsforce-core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.test.dependencies.langchain]
-path = "../langchain"
+[tool.poetry.group.test.dependencies.aiagentsforce]
+path = "../aiagentsforce"
 develop = true
 
-[tool.poetry.group.test.dependencies.langchain-tests]
+[tool.poetry.group.test.dependencies.aiagentsforce-tests]
 path = "../standard-tests"
 develop = true
 
-[tool.poetry.group.dev.dependencies.langchain-core]
+[tool.poetry.group.dev.dependencies.aiagentsforce-core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain-core]
+[tool.poetry.group.typing.dependencies.aiagentsforce-core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain-text-splitters]
+[tool.poetry.group.typing.dependencies.aiagentsforce-text-splitters]
 path = "../text-splitters"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain]
-path = "../langchain"
+[tool.poetry.group.typing.dependencies.aiagentsforce]
+path = "../aiagentsforce"
 develop = true

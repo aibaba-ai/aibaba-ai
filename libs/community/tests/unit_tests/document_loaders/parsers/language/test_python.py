@@ -1,6 +1,6 @@
 import unittest
 
-from langchain_community.document_loaders.parsers.language.python import PythonSegmenter
+from aiagentsforce_community.document_loaders.parsers.language.python import PythonSegmenter
 
 
 class TestPythonSegmenter(unittest.TestCase):

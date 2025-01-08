@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders import DataFrameLoader
+from aiagentsforce_community.document_loaders import DataFrameLoader
 
 
 @pytest.fixture

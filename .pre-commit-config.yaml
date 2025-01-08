@@ -13,11 +13,11 @@ repos:
       entry: make -C libs/community format
       files: ^libs/community/
       pass_filenames: false
-    - id: langchain
-      name: format langchain
+    - id: aiagentsforce
+      name: format aiagentsforce
       language: system
-      entry: make -C libs/langchain format
-      files: ^libs/langchain/
+      entry: make -C libs/aiagentsforce format
+      files: ^libs/aiagentsforce/
       pass_filenames: false
     - id: standard-tests
       name: format standard-tests

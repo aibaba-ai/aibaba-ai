@@ -1,6 +1,6 @@
-from langchain_core.messages import AIMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, HumanMessage
 
-from langchain_community.chat_models.coze import ChatCoze
+from aiagentsforce_community.chat_models.coze import ChatCoze
 
 # For testing, run:
 # TEST_FILE=tests/integration_tests/chat_models/test_coze.py make test

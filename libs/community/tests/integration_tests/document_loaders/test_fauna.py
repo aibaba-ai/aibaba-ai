@@ -1,6 +1,6 @@
 import unittest
 
-from langchain_community.document_loaders.fauna import FaunaLoader
+from aiagentsforce_community.document_loaders.fauna import FaunaLoader
 
 try:
     import fauna  # noqa: F401

@@ -5,9 +5,9 @@ localhost default port (11211) and pymemcache
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from langchain_core.outputs import Generation, LLMResult
+from aiagentsforce_core.outputs import Generation, LLMResult
 
-from langchain_community.cache import MemcachedCache
+from aiagentsforce_community.cache import MemcachedCache
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 DEFAULT_MEMCACHED_URL = "localhost"

@@ -3,7 +3,7 @@
 from langchain_fireworks.embeddings import FireworksEmbeddings
 
 
-def test_langchain_fireworks_embedding_documents() -> None:
+def test_aiagentforce_fireworks_embedding_documents() -> None:
     """Test Fireworks hosted embeddings."""
     documents = ["foo bar"]
     embedding = FireworksEmbeddings(model="nomic-ai/nomic-embed-text-v1.5")
@@ -12,7 +12,7 @@ def test_langchain_fireworks_embedding_documents() -> None:
     assert len(output[0]) > 0
 
 
-def test_langchain_fireworks_embedding_query() -> None:
+def test_aiagentforce_fireworks_embedding_query() -> None:
     """Test Fireworks hosted embeddings."""
     document = "foo bar"
     embedding = FireworksEmbeddings(model="nomic-ai/nomic-embed-text-v1.5")

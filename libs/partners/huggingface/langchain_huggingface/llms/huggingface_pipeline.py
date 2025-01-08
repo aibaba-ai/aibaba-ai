@@ -4,9 +4,9 @@ import importlib.util
 import logging
 from typing import Any, Dict, Iterator, List, Mapping, Optional
 
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
+from aiagentsforce_core.language_models.llms import BaseLLM
+from aiagentsforce_core.outputs import Generation, GenerationChunk, LLMResult
 from pydantic import ConfigDict, model_validator
 
 DEFAULT_MODEL_ID = "gpt2"

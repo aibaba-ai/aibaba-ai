@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Literal, Optional, Type, Union
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     FunctionMessage,
@@ -16,7 +16,7 @@ from langchain_core.messages import (
     ToolCall,
     ToolMessage,
 )
-from langchain_core.messages.ai import UsageMetadata
+from aiagentsforce_core.messages.ai import UsageMetadata
 from pydantic import BaseModel, Field
 from typing_extensions import TypedDict
 

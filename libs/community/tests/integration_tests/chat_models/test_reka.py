@@ -4,16 +4,16 @@ import logging
 from typing import List
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
     ToolMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models.reka import ChatReka
+from aiagentsforce_community.chat_models.reka import ChatReka
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 logging.basicConfig(level=logging.DEBUG)

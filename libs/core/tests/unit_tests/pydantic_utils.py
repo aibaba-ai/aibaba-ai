@@ -2,7 +2,7 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from langchain_core.utils.pydantic import is_basemodel_subclass
+from aiagentsforce_core.utils.pydantic import is_basemodel_subclass
 
 
 # Function to replace allOf with $ref

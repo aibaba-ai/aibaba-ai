@@ -1,6 +1,6 @@
 from typing import Dict, Tuple
 
-from langchain_core.structured_query import (
+from aiagentsforce_core.structured_query import (
     Comparator,
     Comparison,
     Operation,
@@ -8,7 +8,7 @@ from langchain_core.structured_query import (
     StructuredQuery,
 )
 
-from langchain_community.query_constructors.weaviate import WeaviateTranslator
+from aiagentsforce_community.query_constructors.weaviate import WeaviateTranslator
 
 DEFAULT_TRANSLATOR = WeaviateTranslator()
 

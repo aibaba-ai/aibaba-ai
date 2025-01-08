@@ -1,10 +1,10 @@
 from pathlib import Path
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.csv_loader import CSVLoader
-from langchain_community.document_loaders.directory import DirectoryLoader
+from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
+from aiagentsforce_community.document_loaders.directory import DirectoryLoader
 
 
 class TestDirectoryLoader:

@@ -4,8 +4,8 @@ import json
 from typing import List, Optional
 
 import pytest
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import CallbackManager
+from aiagentsforce_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -14,9 +14,9 @@ from langchain_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.tools import tool
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.prompts import ChatPromptTemplate
+from aiagentsforce_core.tools import tool
 from pydantic import BaseModel, Field
 
 from langchain_anthropic import ChatAnthropic, ChatAnthropicMessages

@@ -3,7 +3,7 @@
 import math
 from typing import List
 
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.embeddings import Embeddings
 
 fake_texts = ["foo", "bar", "baz"]
 

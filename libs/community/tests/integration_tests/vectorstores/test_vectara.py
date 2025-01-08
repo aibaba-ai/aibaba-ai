@@ -3,10 +3,10 @@ import urllib.request
 from typing import Generator, Iterable
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import Vectara
-from langchain_community.vectorstores.vectara import (
+from aiagentsforce_community.vectorstores import Vectara
+from aiagentsforce_community.vectorstores.vectara import (
     MMRConfig,
     RerankConfig,
     SummaryConfig,
@@ -268,7 +268,7 @@ def vectara3() -> Iterable[Vectara]:
     vectara3.delete(doc_ids)
 
 
-def test_vectara_with_langchain_mmr(vectara3: Vectara) -> None:  # type: ignore[no-untyped-def]
+def test_vectara_with_aiagentforce_mmr(vectara3: Vectara) -> None:  # type: ignore[no-untyped-def]
     # test max marginal relevance
     output1 = vectara3.max_marginal_relevance_search(
         "generative AI",

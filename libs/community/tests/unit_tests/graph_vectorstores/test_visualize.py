@@ -1,8 +1,8 @@
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
-from langchain_community.graph_vectorstores.visualize import render_graphviz
+from aiagentsforce_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
+from aiagentsforce_community.graph_vectorstores.visualize import render_graphviz
 
 
 @pytest.mark.requires("graphviz")

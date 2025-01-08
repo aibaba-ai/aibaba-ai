@@ -1,10 +1,10 @@
 import os
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.graphs import MemgraphGraph
-from langchain_community.graphs.graph_document import GraphDocument, Node, Relationship
-from langchain_community.graphs.memgraph_graph import NODE_PROPERTIES_QUERY, REL_QUERY
+from aiagentsforce_community.graphs import MemgraphGraph
+from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship
+from aiagentsforce_community.graphs.memgraph_graph import NODE_PROPERTIES_QUERY, REL_QUERY
 
 test_data = [
     GraphDocument(

@@ -5,8 +5,8 @@ from typing import Any
 
 import pytest
 
-from langchain_community.embeddings import TitanTakeoffEmbed
-from langchain_community.embeddings.titan_takeoff import (
+from aiagentsforce_community.embeddings import TitanTakeoffEmbed
+from aiagentsforce_community.embeddings.titan_takeoff import (
     Device,
     MissingConsumerGroup,
     ReaderConfig,

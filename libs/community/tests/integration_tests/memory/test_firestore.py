@@ -1,9 +1,9 @@
 import json
 
 from langchain.memory import ConversationBufferMemory
-from langchain_core.messages import message_to_dict
+from aiagentsforce_core.messages import message_to_dict
 
-from langchain_community.chat_message_histories import FirestoreChatMessageHistory
+from aiagentsforce_community.chat_message_histories import FirestoreChatMessageHistory
 
 
 def test_memory_with_message_store() -> None:

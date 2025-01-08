@@ -1,8 +1,8 @@
 """Test ChatNaver chat model."""
 
-from langchain_core.messages import AIMessage, AIMessageChunk
+from aiagentsforce_core.messages import AIMessage, AIMessageChunk
 
-from langchain_community.chat_models import ChatClovaX
+from aiagentsforce_community.chat_models import ChatClovaX
 
 
 def test_stream() -> None:

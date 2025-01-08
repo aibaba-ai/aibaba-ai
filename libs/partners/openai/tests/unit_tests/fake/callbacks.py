@@ -4,8 +4,8 @@ from itertools import chain
 from typing import Any, Dict, List, Optional, Union
 from uuid import UUID
 
-from langchain_core.callbacks.base import AsyncCallbackHandler, BaseCallbackHandler
-from langchain_core.messages import BaseMessage
+from aiagentsforce_core.callbacks.base import AsyncCallbackHandler, BaseCallbackHandler
+from aiagentsforce_core.messages import BaseMessage
 from pydantic import BaseModel
 
 

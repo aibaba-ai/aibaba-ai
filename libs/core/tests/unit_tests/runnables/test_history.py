@@ -4,19 +4,19 @@ from typing import Any, Callable, Optional, Union
 import pytest
 from pydantic import BaseModel
 
-from langchain_core.callbacks import (
+from aiagentsforce_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from langchain_core.chat_history import InMemoryChatMessageHistory
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, ChatResult
-from langchain_core.runnables import Runnable
-from langchain_core.runnables.base import RunnableBinding, RunnableLambda
-from langchain_core.runnables.config import RunnableConfig
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.runnables.utils import ConfigurableFieldSpec, Input, Output
-from langchain_core.tracers import Run
+from aiagentsforce_core.chat_history import InMemoryChatMessageHistory
+from aiagentsforce_core.language_models.chat_models import BaseChatModel
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aiagentsforce_core.outputs import ChatGeneration, ChatResult
+from aiagentsforce_core.runnables import Runnable
+from aiagentsforce_core.runnables.base import RunnableBinding, RunnableLambda
+from aiagentsforce_core.runnables.config import RunnableConfig
+from aiagentsforce_core.runnables.history import RunnableWithMessageHistory
+from aiagentsforce_core.runnables.utils import ConfigurableFieldSpec, Input, Output
+from aiagentsforce_core.tracers import Run
 from tests.unit_tests.pydantic_utils import _schema
 
 
@@ -768,7 +768,7 @@ def test_ignore_session_id() -> None:
 
 
 class _RunnableLambdaWithRaiseError(RunnableLambda):
-    from langchain_core.tracers.root_listeners import AsyncListener
+    from aiagentsforce_core.tracers.root_listeners import AsyncListener
 
     def with_listeners(
         self,
@@ -783,7 +783,7 @@ class _RunnableLambdaWithRaiseError(RunnableLambda):
             Union[Callable[[Run], None], Callable[[Run, RunnableConfig], None]]
         ] = None,
     ) -> Runnable[Input, Output]:
-        from langchain_core.tracers.root_listeners import RootListenersTracer
+        from aiagentsforce_core.tracers.root_listeners import RootListenersTracer
 
         def create_tracer(config: RunnableConfig) -> RunnableConfig:
             tracer = RootListenersTracer(
@@ -809,7 +809,7 @@ class _RunnableLambdaWithRaiseError(RunnableLambda):
         on_end: Optional[AsyncListener] = None,
         on_error: Optional[AsyncListener] = None,
     ) -> Runnable[Input, Output]:
-        from langchain_core.tracers.root_listeners import AsyncRootListenersTracer
+        from aiagentsforce_core.tracers.root_listeners import AsyncRootListenersTracer
 
         def create_tracer(config: RunnableConfig) -> RunnableConfig:
             tracer = AsyncRootListenersTracer(

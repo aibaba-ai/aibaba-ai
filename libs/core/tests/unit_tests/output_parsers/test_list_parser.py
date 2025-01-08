@@ -1,12 +1,12 @@
 from collections.abc import AsyncIterator, Iterable
 from typing import TypeVar, cast
 
-from langchain_core.output_parsers.list import (
+from aiagentsforce_core.output_parsers.list import (
     CommaSeparatedListOutputParser,
     MarkdownListOutputParser,
     NumberedListOutputParser,
 )
-from langchain_core.runnables.utils import aadd, add
+from aiagentsforce_core.runnables.utils import aadd, add
 
 
 def test_single_item() -> None:

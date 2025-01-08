@@ -2,11 +2,11 @@
 
 from typing import Generator
 
-from langchain_core.outputs import LLMResult
+from aiagentsforce_core.outputs import LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from langchain_community.llms.volcengine_maas import (
+from aiagentsforce_community.llms.volcengine_maas import (
     VolcEngineMaasBase,
     VolcEngineMaasLLM,
 )

@@ -1,6 +1,6 @@
 """Test BananaDev API wrapper."""
 
-from langchain_community.llms.bananadev import Banana
+from aiagentsforce_community.llms.bananadev import Banana
 
 
 def test_banana_call() -> None:

@@ -6,7 +6,7 @@ from typing import List
 import numpy as np
 import pytest
 
-from langchain_community.utils.math import cosine_similarity, cosine_similarity_top_k
+from aiagentsforce_community.utils.math import cosine_similarity, cosine_similarity_top_k
 
 
 @pytest.fixture

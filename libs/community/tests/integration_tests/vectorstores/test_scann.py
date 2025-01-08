@@ -5,15 +5,15 @@ import tempfile
 
 import numpy as np
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.docstore.in_memory import InMemoryDocstore
-from langchain_community.vectorstores.scann import (
+from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
+from aiagentsforce_community.vectorstores.scann import (
     ScaNN,
     dependable_scann_import,
     normalize,
 )
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

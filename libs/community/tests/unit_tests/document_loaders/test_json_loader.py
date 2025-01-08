@@ -3,11 +3,11 @@ from pathlib import Path
 from typing import Any, Dict
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 from pytest import raises
 from pytest_mock import MockerFixture
 
-from langchain_community.document_loaders.json_loader import JSONLoader
+from aiagentsforce_community.document_loaders.json_loader import JSONLoader
 
 pytestmark = pytest.mark.requires("jq")
 

@@ -2,7 +2,7 @@
 
 import pytest
 
-from langchain_community.utilities.alpha_vantage import AlphaVantageAPIWrapper
+from aiagentsforce_community.utilities.alpha_vantage import AlphaVantageAPIWrapper
 
 
 @pytest.fixture

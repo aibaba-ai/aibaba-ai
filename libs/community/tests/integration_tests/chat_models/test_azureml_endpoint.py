@@ -1,9 +1,9 @@
 """Test AzureML Chat Endpoint wrapper."""
 
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.outputs import ChatGeneration, LLMResult
 
-from langchain_community.chat_models.azureml_endpoint import (
+from aiagentsforce_community.chat_models.azureml_endpoint import (
     AzureMLChatOnlineEndpoint,
     CustomOpenAIChatContentFormatter,
 )

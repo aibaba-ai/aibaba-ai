@@ -6,16 +6,16 @@ from typing import Any, AsyncGenerator, Generator, cast
 from unittest.mock import patch
 
 import pytest
-from langchain_core.callbacks import BaseCallbackHandler
-from langchain_core.messages import (
+from aiagentsforce_core.callbacks import BaseCallbackHandler
+from aiagentsforce_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,
 )
 from pydantic import SecretStr
 
-from langchain_community.chat_models import ChatClovaX
-from langchain_community.chat_models.naver import (
+from aiagentsforce_community.chat_models import ChatClovaX
+from aiagentsforce_community.chat_models.naver import (
     _convert_message_to_naver_chat_message,
     _convert_naver_chat_message_to_message,
 )
@@ -174,7 +174,7 @@ class MyCustomHandler(BaseCallbackHandler):
 
 
 @patch(
-    "langchain_community.chat_models.ChatClovaX._completion_with_retry",
+    "aiagentsforce_community.chat_models.ChatClovaX._completion_with_retry",
     new=mock_chat_stream,
 )
 @pytest.mark.requires("httpx_sse")
@@ -186,7 +186,7 @@ def test_stream_with_callback() -> None:
 
 
 @patch(
-    "langchain_community.chat_models.ChatClovaX._acompletion_with_retry",
+    "aiagentsforce_community.chat_models.ChatClovaX._acompletion_with_retry",
     new=mock_chat_astream,
 )
 @pytest.mark.requires("httpx_sse")

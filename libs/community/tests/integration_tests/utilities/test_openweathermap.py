@@ -1,4 +1,4 @@
-from langchain_community.utilities.openweathermap import OpenWeatherMapAPIWrapper
+from aiagentsforce_community.utilities.openweathermap import OpenWeatherMapAPIWrapper
 
 
 def test_openweathermap_api_wrapper() -> None:

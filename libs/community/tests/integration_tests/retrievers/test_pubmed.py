@@ -3,9 +3,9 @@
 from typing import List
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers import PubMedRetriever
+from aiagentsforce_community.retrievers import PubMedRetriever
 
 
 @pytest.fixture

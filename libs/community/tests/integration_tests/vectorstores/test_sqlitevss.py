@@ -1,9 +1,9 @@
 from typing import List, Optional
 
 import pytest
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.vectorstores import SQLiteVSS
+from aiagentsforce_community.vectorstores import SQLiteVSS
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

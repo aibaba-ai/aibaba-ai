@@ -11,7 +11,7 @@ You'll then need to set EDENAI_API_KEY environment variable to your api key.
 
 from pydantic import SecretStr
 
-from langchain_community.llms import EdenAI
+from aiagentsforce_community.llms import EdenAI
 
 
 def test_edenai_call() -> None:

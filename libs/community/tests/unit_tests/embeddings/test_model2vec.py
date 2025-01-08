@@ -1,4 +1,4 @@
-from langchain_community.embeddings.model2vec import Model2vecEmbeddings
+from aiagentsforce_community.embeddings.model2vec import Model2vecEmbeddings
 
 
 def test_hugginggface_inferenceapi_embedding_documents_init() -> None:

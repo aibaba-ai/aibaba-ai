@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_core.utils.function_calling import _rm_titles
+from aiagentsforce_core.utils.function_calling import _rm_titles
 
 output1 = {
     "type": "object",

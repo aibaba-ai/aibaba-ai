@@ -5,23 +5,23 @@ from typing import Any, cast
 
 import pytest
 
-from langchain_core.callbacks.manager import (
+from aiagentsforce_core.callbacks.manager import (
     AsyncCallbackManager,
     CallbackManager,
     atrace_as_chain_group,
     trace_as_chain_group,
 )
-from langchain_core.callbacks.stdout import StdOutCallbackHandler
-from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain_core.runnables import RunnableBinding, RunnablePassthrough
-from langchain_core.runnables.config import (
+from aiagentsforce_core.callbacks.stdout import StdOutCallbackHandler
+from aiagentsforce_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from aiagentsforce_core.runnables import RunnableBinding, RunnablePassthrough
+from aiagentsforce_core.runnables.config import (
     RunnableConfig,
     _set_config_context,
     ensure_config,
     merge_configs,
     run_in_executor,
 )
-from langchain_core.tracers.stdout import ConsoleCallbackHandler
+from aiagentsforce_core.tracers.stdout import ConsoleCallbackHandler
 
 
 def test_ensure_config() -> None:

@@ -6,9 +6,9 @@ import zipfile
 from typing import Sequence
 
 import pytest
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
 
-from langchain_community.chat_loaders import telegram, utils
+from aiagentsforce_community.chat_loaders import telegram, utils
 
 
 def _assert_messages_are_equal(

@@ -2,9 +2,9 @@
 
 import os
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.retrievers import GoogleDocumentAIWarehouseRetriever
+from aiagentsforce_community.retrievers import GoogleDocumentAIWarehouseRetriever
 
 
 def test_google_documentai_warehoure_retriever() -> None:

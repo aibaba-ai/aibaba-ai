@@ -7,11 +7,11 @@ from unittest.mock import patch
 
 import pytest
 from langchain.chains.llm import LLMChain
-from langchain_core.load.dump import dumps
-from langchain_core.load.serializable import Serializable
-from langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.tracers.langchain import LangChainTracer
+from aiagentsforce_core.load.dump import dumps
+from aiagentsforce_core.load.serializable import Serializable
+from aiagentsforce_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from aiagentsforce_core.prompts.prompt import PromptTemplate
+from aiagentsforce_core.tracers.langchain import AI Agents ForceTracer
 from pydantic import ConfigDict, Field, model_validator
 
 
@@ -75,7 +75,7 @@ def test_typeerror() -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_openai_llm(snapshot: Any) -> None:
-    from langchain_community.llms.openai import OpenAI
+    from aiagentsforce_community.llms.openai import OpenAI
 
     with patch.dict(os.environ, {"LANGCHAIN_API_KEY": "test-api-key"}):
         llm = OpenAI(  # type: ignore[call-arg]
@@ -83,7 +83,7 @@ def test_serialize_openai_llm(snapshot: Any) -> None:
             temperature=0.5,
             openai_api_key="hello",
             # This is excluded from serialization
-            callbacks=[LangChainTracer()],
+            callbacks=[AI Agents ForceTracer()],
         )
         llm.temperature = 0.7  # this is reflected in serialization
         assert dumps(llm, pretty=True) == snapshot
@@ -91,7 +91,7 @@ def test_serialize_openai_llm(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain(snapshot: Any) -> None:
-    from langchain_community.llms.openai import OpenAI
+    from aiagentsforce_community.llms.openai import OpenAI
 
     llm = OpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = PromptTemplate.from_template("hello {name}!")
@@ -101,7 +101,7 @@ def test_serialize_llmchain(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_env() -> None:
-    from langchain_community.llms.openai import OpenAI
+    from aiagentsforce_community.llms.openai import OpenAI
 
     llm = OpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = PromptTemplate.from_template("hello {name}!")
@@ -125,7 +125,7 @@ def test_serialize_llmchain_env() -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_chat(snapshot: Any) -> None:
-    from langchain_community.chat_models.openai import ChatOpenAI
+    from aiagentsforce_community.chat_models.openai import ChatOpenAI
 
     llm = ChatOpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = ChatPromptTemplate.from_messages(
@@ -154,7 +154,7 @@ def test_serialize_llmchain_chat(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_with_non_serializable_arg(snapshot: Any) -> None:
-    from langchain_community.llms.openai import OpenAI
+    from aiagentsforce_community.llms.openai import OpenAI
 
     llm = OpenAI(  # type: ignore[call-arg]
         model="davinci",

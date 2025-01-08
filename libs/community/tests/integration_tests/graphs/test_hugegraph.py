@@ -2,7 +2,7 @@ import unittest
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from langchain_community.graphs import HugeGraph
+from aiagentsforce_community.graphs import HugeGraph
 
 
 class TestHugeGraph(unittest.TestCase):

@@ -1,6 +1,6 @@
 # langchain-exa
 
-This package contains the LangChain integrations for Exa Cloud generative models.
+This package contains the AI Agents Force integrations for Exa Cloud generative models.
 
 ## Installation
 

@@ -3,14 +3,14 @@
 from typing import List
 
 import pytest
-from langchain_core.messages import (
+from aiagentsforce_core.messages import (
     BaseMessage,
     HumanMessage,
     SystemMessage,
     ToolMessage,
 )
 
-from langchain_community.chat_models.edenai import (
+from aiagentsforce_community.chat_models.edenai import (
     _extract_edenai_tool_results_from_messages,
     _format_edenai_messages,
     _message_role,

@@ -2,7 +2,7 @@
 
 from typing import Any, Union
 
-from langchain_core.callbacks import BaseCallbackHandler
+from aiagentsforce_core.callbacks import BaseCallbackHandler
 from pydantic import BaseModel
 
 

@@ -3,12 +3,12 @@
 import pytest
 
 # Import the internal StreamlitCallbackHandler from its module - and not from
-# the `langchain_community.callbacks.streamlit` package - so that we don't end up using
+# the `aiagentsforce_community.callbacks.streamlit` package - so that we don't end up using
 # Streamlit's externally-provided callback handler.
-from langchain_community.callbacks.streamlit.streamlit_callback_handler import (
+from aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler import (
     StreamlitCallbackHandler,
 )
-from langchain_community.llms import OpenAI
+from aiagentsforce_community.llms import OpenAI
 
 
 @pytest.mark.requires("streamlit")

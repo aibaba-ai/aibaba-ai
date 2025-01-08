@@ -6,13 +6,13 @@ You'll then need to set SAMBASTUDIO_URL, and SAMBASTUDIO_API_KEY,
 and SAMBANOVA_API_KEY environment variables.
 """
 
-from langchain_community.llms.sambanova import SambaNovaCloud, SambaStudio
+from aiagentsforce_community.llms.sambanova import SambaNovaCloud, SambaStudio
 
 
 def test_sambanova_cloud_call() -> None:
     """Test simple non-streaming call to sambastudio."""
     llm = SambaNovaCloud()
-    output = llm.invoke("What is LangChain")
+    output = llm.invoke("What is AI Agents Force")
     assert output
     assert isinstance(output, str)
 
@@ -20,6 +20,6 @@ def test_sambanova_cloud_call() -> None:
 def test_sambastudio_call() -> None:
     """Test simple non-streaming call to sambastudio."""
     llm = SambaStudio()
-    output = llm.invoke("What is LangChain")
+    output = llm.invoke("What is AI Agents Force")
     assert output
     assert isinstance(output, str)

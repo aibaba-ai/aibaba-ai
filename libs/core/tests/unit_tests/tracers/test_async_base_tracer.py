@@ -9,12 +9,12 @@ from uuid import uuid4
 import pytest
 from freezegun import freeze_time
 
-from langchain_core.callbacks import AsyncCallbackManager
-from langchain_core.exceptions import TracerException
-from langchain_core.messages import HumanMessage
-from langchain_core.outputs import LLMResult
-from langchain_core.tracers.base import AsyncBaseTracer
-from langchain_core.tracers.schemas import Run
+from aiagentsforce_core.callbacks import AsyncCallbackManager
+from aiagentsforce_core.exceptions import TracerException
+from aiagentsforce_core.messages import HumanMessage
+from aiagentsforce_core.outputs import LLMResult
+from aiagentsforce_core.tracers.base import AsyncBaseTracer
+from aiagentsforce_core.tracers.schemas import Run
 
 SERIALIZED = {"id": ["llm"]}
 SERIALIZED_CHAT = {"id": ["chat_model"]}

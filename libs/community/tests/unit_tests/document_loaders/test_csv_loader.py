@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.document_loaders.csv_loader import CSVLoader
+from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
 
 
 class TestCSVLoader:

@@ -1,12 +1,12 @@
 """Test Friendli chat API."""
 
 import pytest
-from langchain_core.messages.ai import AIMessage
-from langchain_core.messages.human import HumanMessage
-from langchain_core.outputs.generation import Generation
-from langchain_core.outputs.llm_result import LLMResult
+from aiagentsforce_core.messages.ai import AIMessage
+from aiagentsforce_core.messages.human import HumanMessage
+from aiagentsforce_core.outputs.generation import Generation
+from aiagentsforce_core.outputs.llm_result import LLMResult
 
-from langchain_community.chat_models.friendli import ChatFriendli
+from aiagentsforce_community.chat_models.friendli import ChatFriendli
 
 
 @pytest.fixture

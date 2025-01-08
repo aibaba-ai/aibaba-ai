@@ -1,6 +1,6 @@
 """Test WatsonxLLM API wrapper."""
 
-from langchain_community.llms import WatsonxLLM
+from aiagentsforce_community.llms import WatsonxLLM
 
 
 def test_initialize_watsonxllm_bad_path_without_url() -> None:

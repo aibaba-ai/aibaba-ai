@@ -7,11 +7,11 @@ from typing import List, cast
 
 import numpy as np
 import pytest
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
+from aiagentsforce_core.documents import Document
+from aiagentsforce_core.embeddings import Embeddings
 
-from langchain_community.vectorstores.singlestoredb import SingleStoreDB
-from langchain_community.vectorstores.utils import DistanceStrategy
+from aiagentsforce_community.vectorstores.singlestoredb import SingleStoreDB
+from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 TEST_SINGLESTOREDB_URL = "root:pass@localhost:3306/db"

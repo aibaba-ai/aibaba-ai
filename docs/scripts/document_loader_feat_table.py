@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
 
-from langchain_community import document_loaders
-from langchain_core.document_loaders.base import BaseLoader
+from aiagentsforce_community import document_loaders
+from aiagentsforce_core.document_loaders.base import BaseLoader
 
 DOCUMENT_LOADER_TEMPLATE = """\
 ---

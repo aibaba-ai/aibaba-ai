@@ -5,7 +5,7 @@
 
 ## ChatPremAI
 
-This example goes over how to use LangChain to interact with different chat models with `ChatPremAI`
+This example goes over how to use AI Agents Force to interact with different chat models with `ChatPremAI`
 
 ### Installation and setup
 
@@ -18,11 +18,11 @@ pip install premai langchain
 Before proceeding further, please make sure that you have made an account on PremAI and already created a project. If not, please refer to the [quick start](https://docs.premai.io/introduction) guide to get started with the PremAI platform. Create your first project and grab your API key.
 
 ```python
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_community.chat_models import ChatPremAI
+from aiagentsforce_core.messages import HumanMessage, SystemMessage
+from aiagentsforce_community.chat_models import ChatPremAI
 ```
 
-### Setup PremAI client in LangChain
+### Setup PremAI client in AI Agents Force
 
 Once we imported our required modules, let's setup our client. For now let's assume that our `project_id` is `8`. But make sure you use your project-id, otherwise it will throw error.
 
@@ -172,7 +172,7 @@ Writing Prompt Templates can be super messy. Prompt templates are long, hard to 
 
 With **Prem**, writing and managing prompts can be super easy. The **_Templates_** tab inside the [launchpad](https://docs.premai.io/get-started/launchpad) helps you write as many prompts you need and use it inside the SDK to make your application running using those prompts. You can read more about Prompt Templates [here](https://docs.premai.io/get-started/prem-templates). 
 
-To use Prem Templates natively with LangChain, you need to pass an id the `HumanMessage`. This id should be the name the variable of your prompt template. the `content` in `HumanMessage` should be the value of that variable. 
+To use Prem Templates natively with AI Agents Force, you need to pass an id the `HumanMessage`. This id should be the name the variable of your prompt template. the `content` in `HumanMessage` should be the value of that variable. 
 
 let's say for example, if your prompt template was this:
 
@@ -202,12 +202,12 @@ Prem Templates are also available for Streaming too.
 
 ## Prem Embeddings
 
-In this section we cover how we can get access to different embedding models using `PremEmbeddings` with LangChain. Let's start by importing our modules and setting our API Key.
+In this section we cover how we can get access to different embedding models using `PremEmbeddings` with AI Agents Force. Let's start by importing our modules and setting our API Key.
 
 ```python
 import os
 import getpass
-from langchain_community.embeddings import PremEmbeddings
+from aiagentsforce_community.embeddings import PremEmbeddings
 
 
 if os.environ.get("PREMAI_API_KEY") is None:
@@ -269,14 +269,14 @@ doc_result[:5]
 
 ## Tool/Function Calling
 
-LangChain PremAI supports tool/function calling. Tool/function calling allows a model to respond to a given prompt by generating output that matches a user-defined schema. 
+AI Agents Force PremAI supports tool/function calling. Tool/function calling allows a model to respond to a given prompt by generating output that matches a user-defined schema. 
 
 - You can learn all about tool calling in details [in our documentation here](https://docs.premai.io/get-started/function-calling).
-- You can learn more about langchain tool calling in [this part of the docs](https://python.langchain.com/v0.1/docs/modules/model_io/chat/function_calling).
+- You can learn more about langchain tool calling in [this part of the docs](https://docs.aiagentsforce.com/v0.1/docs/modules/model_io/chat/function_calling).
 
 **NOTE:**
 
-> The current version of LangChain ChatPremAI do not support function/tool calling with streaming support. Streaming support along with function calling will come soon. 
+> The current version of AI Agents Force ChatPremAI do not support function/tool calling with streaming support. Streaming support along with function calling will come soon. 
 
 ### Passing tools to model
 
@@ -286,7 +286,7 @@ In order to pass tools and let the LLM choose the tool it needs to call, we need
 > When defining function/tool schema, do not forget to add information around the function arguments, otherwise it would throw error.
 
 ```python
-from langchain_core.tools import tool
+from aiagentsforce_core.tools import tool
 from pydantic import BaseModel, Field 
 
 # Define the schema for function arguments
@@ -365,7 +365,7 @@ Since tool calling happens into two phases, where:
 2. in our second call, we will parse those set of tools decided by LLM and run them (in our case it will be the functions we defined, with the LLM's extracted arguments) and pass this result to the LLM
 
 ```python
-from langchain_core.messages import ToolMessage
+from aiagentsforce_core.messages import ToolMessage
 
 for tool_call in ai_msg.tool_calls:
     selected_tool = {"add": add, "multiply": multiply}[tool_call["name"].lower()]
@@ -393,7 +393,7 @@ The final answers are:
 Above we have shown how to define schema using `tool` decorator, however we can equivalently define the schema using Pydantic. Pydantic is useful when your tool inputs are more complex:
 
 ```python
-from langchain_core.output_parsers.openai_tools import PydanticToolsParser
+from aiagentsforce_core.output_parsers.openai_tools import PydanticToolsParser
 
 class add(BaseModel):
     """Add two integers together."""

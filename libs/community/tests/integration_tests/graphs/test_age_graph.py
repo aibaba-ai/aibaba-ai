@@ -3,10 +3,10 @@ import re
 import unittest
 from typing import Any, Dict
 
-from langchain_core.documents import Document
+from aiagentsforce_core.documents import Document
 
-from langchain_community.graphs.age_graph import AGEGraph
-from langchain_community.graphs.graph_document import GraphDocument, Node, Relationship
+from aiagentsforce_community.graphs.age_graph import AGEGraph
+from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship
 
 test_data = [
     GraphDocument(

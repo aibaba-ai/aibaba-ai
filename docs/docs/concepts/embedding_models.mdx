@@ -3,14 +3,14 @@
 
 :::info[Prerequisites]
 
-* [Documents](https://python.langchain.com/api_reference/core/documents/langchain_core.documents.base.Document.html)
+* [Documents](https://docs.aiagentsforce.com/api_reference/core/documents/aiagentsforce_core.documents.base.Document.html)
 
 :::
 
 :::info[Note]
 This conceptual overview focuses on text-based embedding models.
 
-Embedding models can also be [multimodal](/docs/concepts/multimodality) though such models are not currently supported by LangChain.
+Embedding models can also be [multimodal](/docs/concepts/multimodality) though such models are not currently supported by AI Agents Force.
 :::
 
 Imagine being able to capture the essence of any text - a tweet, document, or book - in a single, compact representation.
@@ -49,14 +49,14 @@ To navigate this variety, researchers and practitioners often turn to benchmarks
 
 ### Interface
 
-LangChain provides a universal interface for working with them, providing standard methods for common operations.
+AI Agents Force provides a universal interface for working with them, providing standard methods for common operations.
 This common interface simplifies interaction with various embedding providers through two central methods:
 
 - `embed_documents`: For embedding multiple texts (documents)
 - `embed_query`: For embedding a single text (query)
 
 This distinction is important, as some providers employ different embedding strategies for documents (which are to be searched) versus queries (the search input itself).
-To illustrate, here's a practical example using LangChain's `.embed_documents` method to embed a list of strings:
+To illustrate, here's a practical example using AI Agents Force's `.embed_documents` method to embed a list of strings:
 
 ```python
 from langchain_openai import OpenAIEmbeddings
@@ -82,14 +82,14 @@ query_embedding = embeddings_model.embed_query("What is the meaning of life?")
 
 :::info[Further reading]
 
-* See the full list of [LangChain embedding model integrations](/docs/integrations/text_embedding/).
+* See the full list of [AI Agents Force embedding model integrations](/docs/integrations/text_embedding/).
 * See these [how-to guides](/docs/how_to/embed_text) for working with embedding models.
 
 :::
 
 ### Integrations
 
-LangChain offers many embedding model integrations which you can find [on the embedding models](/docs/integrations/text_embedding/) integrations page.
+AI Agents Force offers many embedding model integrations which you can find [on the embedding models](/docs/integrations/text_embedding/) integrations page.
 
 ## Measure similarity
 

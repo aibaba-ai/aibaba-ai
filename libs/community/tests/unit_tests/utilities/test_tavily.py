@@ -1,4 +1,4 @@
-from langchain_community.utilities.tavily_search import TavilySearchAPIWrapper
+from aiagentsforce_community.utilities.tavily_search import TavilySearchAPIWrapper
 
 
 def test_api_wrapper_api_key_not_visible() -> None:

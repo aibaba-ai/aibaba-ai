@@ -1,6 +1,6 @@
 # langchain-chroma
 
-This package contains the LangChain integration with Chroma.
+This package contains the AI Agents Force integration with Chroma.
 
 ## Installation
 
@@ -15,7 +15,7 @@ The `Chroma` class exposes the connection to the Chroma vector store.
 ```python
 from langchain_chroma import Chroma
 
-embeddings = ... # use a LangChain Embeddings class
+embeddings = ... # use a AI Agents Force Embeddings class
 
 vectorstore = Chroma(embeddings=embeddings)
 ```
