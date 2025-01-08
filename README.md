@@ -83,4 +83,4 @@ As an open-source project in a rapidly developing field, we are extremely open t
 
 ## 🌟 Contributors
 
-[![AI Agents Force contributors](https://contrib.rocks/image?repo=langchain-ai/langchain&max=2000)](https://github.com/AI-Agents-Force-SDK/langchain/graphs/contributors)
+[![AI Agents Force contributors](https://contrib.rocks/image?repo=AI-Agents-Force-SDK/aiagentsforce&max=2000)](https://github.com/AI-Agents-Force-SDK/aiagentsforce/graphs/contributors)
