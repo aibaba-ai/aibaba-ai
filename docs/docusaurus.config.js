@@ -19,7 +19,7 @@ const config = {
   tagline: "AIAgentsForce Python Docs",
   favicon: "img/brand/favicon.png",
   // Set the production url of your site here
-  url: "https://python.aiagentsforce.com",
+  url: "https://docs.aiagentsforce.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: baseUrl,
@@ -86,7 +86,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          editUrl: "https://github.com/AI-Agents-Force-SDK/langchain/edit/master/docs/",
+          editUrl: "https://github.com/AI-Agents-Force-SDK/aiagentsforce/edit/main/docs/",
           sidebarPath: require.resolve("./sidebars.js"),
           remarkPlugins: [
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
@@ -191,22 +191,6 @@ const config = {
                 type: 'html',
                 value: '<hr class="dropdown-separator" style="margin-top: 0.5rem; margin-bottom: 0.5rem">',
               },
-              {
-                href: "https://docs.smith.langchain.com",
-                label: "LangSmith",
-              },
-              {
-                href: "https://langchain-ai.github.io/langgraph/",
-                label: "LangGraph",
-              },
-              {
-                href: "https://smith.langchain.com/hub",
-                label: "AI Agents Force Hub",
-              },
-              {
-                href: "https://js.langchain.com",
-                label: "AI Agents Force JS/TS",
-              },
             ]
           },
           {
@@ -218,14 +202,6 @@ const config = {
                 label: "v0.3",
                 href: "/docs/introduction"
               },
-              {
-                label: "v0.2",
-                href: "https://docs.aiagentsforce.com/v0.2/docs/introduction"
-              },
-              {
-                label: "v0.1",
-                href: "https://docs.aiagentsforce.com/v0.1/docs/get_started/introduction"
-              }
             ]
           },
           {
@@ -235,7 +211,7 @@ const config = {
           },
           // Please keep GitHub link to the right for consistency.
           {
-            href: "https://github.com/AI-Agents-Force-SDK/langchain",
+            href: "https://github.com/AI-Agents-Force-SDK/aiagentsforce",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",
@@ -250,7 +226,7 @@ const config = {
             items: [
               {
                 label: "Twitter",
-                href: "https://twitter.com/AI Agents ForceAI",
+                href: "https://x.com/aiagentsforce_",
               },
             ],
           },
@@ -263,11 +239,7 @@ const config = {
               },
               {
                 label: "Python",
-                href: "https://github.com/AI-Agents-Force-SDK/langchain",
-              },
-              {
-                label: "JS/TS",
-                href: "https://github.com/AI-Agents-Force-SDK/langchainjs",
+                href: "https://github.com/AI-Agents-Force-SDK/aiagentsforce",
               },
             ],
           },
@@ -276,15 +248,11 @@ const config = {
             items: [
               {
                 label: "Homepage",
-                href: "https://langchain.com",
+                href: "https://aiagentsforce.com/",
               },
               {
-                label: "Blog",
-                href: "https://blog.langchain.dev",
-              },
-              {
-                label: "YouTube",
-                href: "https://www.youtube.com/@AI Agents Force",
+                label: "AI Agents Directory",
+                href: "https://aiagentsdirectory.com/",
               },
             ],
           },
@@ -299,7 +267,7 @@ const config = {
         // this is linked to erick@langchain.dev currently
         apiKey: "6c01842d6a88772ed2236b9c85806441",
 
-        indexName: "python-langchain-latest",
+        indexName: "python-aiagentsforce-latest",
 
         contextualSearch: false,
       },

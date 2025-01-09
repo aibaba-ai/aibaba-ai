@@ -1,6 +1,6 @@
 # Why AI Agents Force?
 
-The goal of `langchain` the Python package and AI Agents Force the company is to make it as easy as possible for developers to build applications that reason.
+The goal of `aiagentsforce` the Python package and AI Agents Force the company is to make it as easy as possible for developers to build applications that reason.
 While AI Agents Force originally started as a single open source package, it has evolved into a company and a whole ecosystem.
 This page will talk about the AI Agents Force ecosystem as a whole.
 Most of the components within the AI Agents Force ecosystem can be used by themselves - so if you feel particularly drawn to certain components but not others, that is totally fine! Pick and choose whichever components you like best for your own use case!
@@ -68,33 +68,9 @@ While standardization for individual components is useful, we've increasingly se
 This motivates the need for [orchestration](https://en.wikipedia.org/wiki/Orchestration_(computing)).
 There are several common characteristics of LLM applications that this orchestration layer should support:
 
-* **Complex control flow:** The application requires complex patterns such as cycles (e.g., a loop that reiterates until a condition is met).
-* **[Persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/):** The application needs to maintain [short-term and / or long-term memory](https://langchain-ai.github.io/langgraph/concepts/memory/).
-* **[Human-in-the-loop](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/):** The application needs human interaction, e.g., pausing, reviewing, editing, approving certain steps.
-
-The recommended way to orchestrate components for complex applications is [LangGraph](https://langchain-ai.github.io/langgraph/concepts/high_level/).
-LangGraph is a library that gives developers a high degree of control by expressing the flow of the application as a set of nodes and edges.
-LangGraph comes with built-in support for [persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/), [human-in-the-loop](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/), [memory](https://langchain-ai.github.io/langgraph/concepts/memory/), and other features.
-It's particularly well suited for building [agents](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/) or [multi-agent](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) applications. 
-Importantly, individual AI Agents Force components can be used as LangGraph nodes, but you can also use LangGraph **without** using AI Agents Force components.
-
 :::info[Further reading]
 
 Have a look at our free course, [Introduction to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph), to learn more about how to use LangGraph to build complex applications.
-
-:::
-
-## Observability and evaluation
-
-The pace of AI application development is often rate-limited by high-quality evaluations because there is a paradox of choice. 
-Developers often wonder how to engineer their prompt or which LLM best balances accuracy, latency, and cost. 
-High quality tracing and evaluations can help you rapidly answer these types of questions with confidence.
-[LangSmith](https://docs.smith.langchain.com/) is our platform that supports observability and evaluation for AI applications.
-See our conceptual guides on [evaluations](https://docs.smith.langchain.com/concepts/evaluation) and [tracing](https://docs.smith.langchain.com/concepts/tracing) for more details.
-
-:::info[Further reading]
-
-See our video playlist on [LangSmith tracing and evaluations](https://youtube.com/playlist?list=PLfaIDFEXuae0um8Fj0V4dHG37fGFU8Q5S&feature=shared) for more details.
 
 :::
 
