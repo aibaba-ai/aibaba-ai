@@ -66,21 +66,9 @@ Agents are autonomous LLM-powered systems that can independently solve complex t
 5. Repeat until the goal is achieved
 
 
-## 📖 Using the SDK
+## 📖 Building and Deploying AI Agents
 
 ![Diagram outlining the process of building AI agent and using it within AI Agents Force orchestration platform.](docs/static/svg/build-and-use-ai-agent-flow.svg#gh-dark-mode-only "Build and use AI agent")
-
-
-
-## 💁 Contributing
-
-As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.
-
-## 🌟 Contributors
-
-[![AI Agents Force contributors](https://contrib.rocks/image?repo=AI-Agents-Force-SDK/aiagentsforce&max=2000)](https://github.com/AI-Agents-Force-SDK/aiagentsforce/graphs/contributors)
-
-## 🛠 Building and Deploying AI Agents
 
 ### 1. Build and Verify AI Agent Locally
 
@@ -103,7 +91,6 @@ Package your verified AI agent into a Docker container for consistent deployment
 **Key Steps:**
 - Create a Dockerfile with your agent's environment configuration
 - Include all dependencies and settings
-- Build using `docker build`
 
 **Benefits:**
 - **Automated Configuration:** AI Agents Force handles Dockerfile generation and dependency management
@@ -127,4 +114,11 @@ Deploy your Docker image to your preferred cloud provider and integrate it with 
 - **Cloud Scalability:** Leverage cloud infrastructure
 - **Centralized Management:** Monitor and manage through our platform
 - **Global Accessibility:** Serve users worldwide
-- **Team Collaboration:** Simplified access for team members
+
+## 💁 Contributing
+
+As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.
+
+## 🌟 Contributors
+
+[![AI Agents Force contributors](https://contrib.rocks/image?repo=AI-Agents-Force-SDK/aiagentsforce&max=2000)](https://github.com/AI-Agents-Force-SDK/aiagentsforce/graphs/contributors)
