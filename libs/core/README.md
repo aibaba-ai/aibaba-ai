@@ -1,4 +1,4 @@
-# 🦜🍎️ AI Agents Force Core Foundation
+# 🍎️ AI Agents Force Core Foundation
 
 [![Downloads](https://static.pepy.tech/badge/aiagentsforce_core/month)](https://pepy.tech/project/aiagentsforce_core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -52,8 +52,6 @@ AI Agents Force Expression Language (LCEL) is a declarative approach for combini
 LCEL sequences are automatically optimized for execution, featuring parallel processing, streaming capabilities, tracing, and asynchronous operations.
 
 Explore more in the [LCEL documentation](https://docs.aiagentsforce.com/docs/expression_language/).
-
-![Framework architecture diagram showing the AI Agents Force system hierarchy and component relationships](https://raw.githubusercontent.com/AI-Agents-Force/AI-Agents-Force/master/docs/static/svg/aiagentsforce_stack_112024.svg "AI Agents Force Framework Overview")
 
 For complex workflows requiring cycles or recursion, consider [LangGraph](https://github.com/AI-Agents-Force-SDK/langgraph).
 
