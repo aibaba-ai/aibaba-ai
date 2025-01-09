@@ -1,6 +1,6 @@
 # 🔗 AI Agents Force
 
-This repository is based on [langchain](https://github.com/AI-Agents-Force-SDK/langchain) by [Harrison Chase].
+This repository is based on [langchain](https://github.com/langchain-ai/langchain) by [Harrison Chase].
 
 ## Quick Install
 
