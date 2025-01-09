@@ -13,7 +13,7 @@ pip install langchain-openai
 
 ## LLM
 
-See a [usage example](http://https://docs.aiagentsforce.com//integrations/llms/openai).
+See a [usage example](http://https://docs.aiagentsforce.com/integrations/llms/openai).
 
 ```python
 from langchain_openai import OpenAI
@@ -23,12 +23,12 @@ If you are using a model hosted on `Azure`, you should use different wrapper for
 ```python
 from langchain_openai import AzureOpenAI
 ```
-For a more detailed walkthrough of the `Azure` wrapper, see [here](http://https://docs.aiagentsforce.com//integrations/llms/azure_openai)
+For a more detailed walkthrough of the `Azure` wrapper, see [here](http://https://docs.aiagentsforce.com/integrations/llms/azure_openai)
 
 
 ## Chat model
 
-See a [usage example](http://https://docs.aiagentsforce.com//integrations/chat/openai).
+See a [usage example](http://https://docs.aiagentsforce.com/integrations/chat/openai).
 
 ```python
 from langchain_openai import ChatOpenAI
@@ -38,12 +38,12 @@ If you are using a model hosted on `Azure`, you should use different wrapper for
 ```python
 from langchain_openai import AzureChatOpenAI
 ```
-For a more detailed walkthrough of the `Azure` wrapper, see [here](http://https://docs.aiagentsforce.com//integrations/chat/azure_chat_openai)
+For a more detailed walkthrough of the `Azure` wrapper, see [here](http://https://docs.aiagentsforce.com/integrations/chat/azure_chat_openai)
 
 
 ## Text Embedding Model
 
-See a [usage example](http://https://docs.aiagentsforce.com//integrations/text_embedding/openai)
+See a [usage example](http://https://docs.aiagentsforce.com/integrations/text_embedding/openai)
 
 ```python
 from langchain_openai import OpenAIEmbeddings
