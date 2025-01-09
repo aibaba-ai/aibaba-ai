@@ -1,4 +1,4 @@
-from langchain_openai.chat_models import __all__
+from aiagentsforce_openai.chat_models import __all__
 
 EXPECTED_ALL = ["ChatOpenAI", "AzureChatOpenAI"]
 

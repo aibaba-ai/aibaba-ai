@@ -3,7 +3,7 @@
 import numpy as np
 import openai
 
-from langchain_openai.embeddings.base import OpenAIEmbeddings
+from aiagentsforce_openai.embeddings.base import OpenAIEmbeddings
 
 
 def test_aiagentforce_openai_embedding_documents() -> None:

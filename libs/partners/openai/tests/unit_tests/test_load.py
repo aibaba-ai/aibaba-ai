@@ -1,7 +1,7 @@
 from aiagentsforce_core.load.dump import dumpd, dumps
 from aiagentsforce_core.load.load import load, loads
 
-from langchain_openai import ChatOpenAI, OpenAI
+from aiagentsforce_openai import ChatOpenAI, OpenAI
 
 
 def test_loads_openai_llm() -> None:

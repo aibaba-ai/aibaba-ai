@@ -7,7 +7,7 @@ import numpy as np
 import openai
 import pytest
 
-from langchain_openai import AzureOpenAIEmbeddings
+from aiagentsforce_openai import AzureOpenAIEmbeddings
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")
 OPENAI_API_BASE = os.environ.get("AZURE_OPENAI_API_BASE", "")

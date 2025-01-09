@@ -1,7 +1,7 @@
 import os
 from unittest import mock
 
-from langchain_openai import AzureOpenAIEmbeddings
+from aiagentsforce_openai import AzureOpenAIEmbeddings
 
 
 def test_initialize_azure_openai() -> None:

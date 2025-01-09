@@ -9,7 +9,7 @@ from aiagentsforce_core.utils import from_env, secret_from_env
 from pydantic import Field, SecretStr, model_validator
 from typing_extensions import Self, cast
 
-from langchain_openai.embeddings.base import OpenAIEmbeddings
+from aiagentsforce_openai.embeddings.base import OpenAIEmbeddings
 
 
 class AzureOpenAIEmbeddings(OpenAIEmbeddings):  # type: ignore[override]

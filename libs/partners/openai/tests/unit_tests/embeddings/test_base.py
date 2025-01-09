@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from langchain_openai import OpenAIEmbeddings
+from aiagentsforce_openai import OpenAIEmbeddings
 
 os.environ["OPENAI_API_KEY"] = "foo"
 

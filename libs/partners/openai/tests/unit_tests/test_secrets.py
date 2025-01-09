@@ -5,7 +5,7 @@ from aiagentsforce_core.load import dumpd
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from langchain_openai import (
+from aiagentsforce_openai import (
     AzureChatOpenAI,
     AzureOpenAI,
     AzureOpenAIEmbeddings,

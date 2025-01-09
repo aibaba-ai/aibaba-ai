@@ -20,8 +20,8 @@ from aiagentsforce_core.messages.ai import UsageMetadata
 from pydantic import BaseModel, Field
 from typing_extensions import TypedDict
 
-from langchain_openai import ChatOpenAI
-from langchain_openai.chat_models.base import (
+from aiagentsforce_openai import ChatOpenAI
+from aiagentsforce_openai.chat_models.base import (
     _convert_dict_to_message,
     _convert_message_to_dict,
     _convert_to_openai_response_format,

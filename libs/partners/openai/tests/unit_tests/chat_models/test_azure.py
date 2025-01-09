@@ -3,7 +3,7 @@
 import os
 from unittest import mock
 
-from langchain_openai import AzureChatOpenAI
+from aiagentsforce_openai import AzureChatOpenAI
 
 
 def test_initialize_azure_openai() -> None:

@@ -1,4 +1,4 @@
-from langchain_openai.embeddings import __all__
+from aiagentsforce_openai.embeddings import __all__
 
 EXPECTED_ALL = ["OpenAIEmbeddings", "AzureOpenAIEmbeddings"]
 

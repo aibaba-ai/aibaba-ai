@@ -6,7 +6,7 @@ import pytest
 from aiagentsforce_core.callbacks import CallbackManager
 from aiagentsforce_core.outputs import LLMResult
 
-from langchain_openai import OpenAI
+from aiagentsforce_openai import OpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler
 
 

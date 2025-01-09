@@ -28,7 +28,7 @@ from langchain_tests.integration_tests.chat_models import (
 )
 from pydantic import BaseModel, Field
 
-from langchain_openai import ChatOpenAI
+from aiagentsforce_openai import ChatOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler
 
 

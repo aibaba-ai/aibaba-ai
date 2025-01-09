@@ -9,7 +9,7 @@ from aiagentsforce_core.utils import from_env, secret_from_env
 from pydantic import Field, SecretStr, model_validator
 from typing_extensions import Self, cast
 
-from langchain_openai.llms.base import BaseOpenAI
+from aiagentsforce_openai.llms.base import BaseOpenAI
 
 logger = logging.getLogger(__name__)
 

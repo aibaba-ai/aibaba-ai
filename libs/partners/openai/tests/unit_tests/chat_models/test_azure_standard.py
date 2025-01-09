@@ -7,7 +7,7 @@ from aiagentsforce_core.language_models import BaseChatModel
 from aiagentsforce_core.tools import BaseTool
 from langchain_tests.unit_tests import ChatModelUnitTests
 
-from langchain_openai import AzureChatOpenAI
+from aiagentsforce_openai import AzureChatOpenAI
 
 
 class TestOpenAIStandard(ChatModelUnitTests):

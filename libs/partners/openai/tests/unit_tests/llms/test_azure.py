@@ -1,6 +1,6 @@
 from typing import Any
 
-from langchain_openai import AzureOpenAI
+from aiagentsforce_openai import AzureOpenAI
 
 
 def test_azure_model_param(monkeypatch: Any) -> None:

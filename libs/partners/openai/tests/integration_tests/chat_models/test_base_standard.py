@@ -7,7 +7,7 @@ from aiagentsforce_core.language_models import BaseChatModel
 from aiagentsforce_core.messages import AIMessage
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
-from langchain_openai import ChatOpenAI
+from aiagentsforce_openai import ChatOpenAI
 
 REPO_ROOT_DIR = Path(__file__).parents[6]
 

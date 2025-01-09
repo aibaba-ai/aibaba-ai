@@ -1,4 +1,4 @@
-from langchain_openai.llms import __all__
+from aiagentsforce_openai.llms import __all__
 
 EXPECTED_ALL = ["OpenAI", "AzureOpenAI"]
 

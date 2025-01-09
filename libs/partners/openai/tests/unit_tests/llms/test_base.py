@@ -3,7 +3,7 @@ from typing import List
 
 import pytest
 
-from langchain_openai import OpenAI
+from aiagentsforce_openai import OpenAI
 
 os.environ["OPENAI_API_KEY"] = "foo"
 

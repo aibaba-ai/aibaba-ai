@@ -7,7 +7,7 @@ import pytest
 from aiagentsforce_core.callbacks import CallbackManager
 from aiagentsforce_core.outputs import LLMResult
 
-from langchain_openai import AzureOpenAI
+from aiagentsforce_openai import AzureOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")

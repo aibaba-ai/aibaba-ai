@@ -14,7 +14,7 @@ from aiagentsforce_core.messages import (
 )
 from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
 
-from langchain_openai import AzureChatOpenAI
+from aiagentsforce_openai import AzureChatOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")

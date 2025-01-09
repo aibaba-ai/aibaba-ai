@@ -5,7 +5,7 @@ from typing import Type
 from aiagentsforce_core.embeddings import Embeddings
 from langchain_tests.integration_tests.embeddings import EmbeddingsIntegrationTests
 
-from langchain_openai import OpenAIEmbeddings
+from aiagentsforce_openai import OpenAIEmbeddings
 
 
 class TestOpenAIStandard(EmbeddingsIntegrationTests):

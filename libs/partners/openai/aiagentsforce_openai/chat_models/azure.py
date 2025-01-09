@@ -26,7 +26,7 @@ from aiagentsforce_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel, Field, SecretStr, model_validator
 from typing_extensions import Self
 
-from langchain_openai.chat_models.base import BaseChatOpenAI
+from aiagentsforce_openai.chat_models.base import BaseChatOpenAI
 
 logger = logging.getLogger(__name__)
 

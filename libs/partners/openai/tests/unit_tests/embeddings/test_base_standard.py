@@ -5,7 +5,7 @@ from typing import Tuple, Type
 from aiagentsforce_core.embeddings import Embeddings
 from langchain_tests.unit_tests.embeddings import EmbeddingsUnitTests
 
-from langchain_openai import OpenAIEmbeddings
+from aiagentsforce_openai import OpenAIEmbeddings
 
 
 class TestOpenAIStandard(EmbeddingsUnitTests):

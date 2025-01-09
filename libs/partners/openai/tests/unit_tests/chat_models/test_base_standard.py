@@ -5,7 +5,7 @@ from typing import Tuple, Type
 from aiagentsforce_core.language_models import BaseChatModel
 from langchain_tests.unit_tests import ChatModelUnitTests
 
-from langchain_openai import ChatOpenAI
+from aiagentsforce_openai import ChatOpenAI
 
 
 class TestOpenAIStandard(ChatModelUnitTests):

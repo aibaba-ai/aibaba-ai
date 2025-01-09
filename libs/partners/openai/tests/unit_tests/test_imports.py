@@ -1,4 +1,4 @@
-from langchain_openai import __all__
+from aiagentsforce_openai import __all__
 
 EXPECTED_ALL = [
     "OpenAI",

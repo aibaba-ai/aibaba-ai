@@ -1,6 +1,6 @@
 import pytest
 
-from langchain_openai import ChatOpenAI, OpenAI
+from aiagentsforce_openai import ChatOpenAI, OpenAI
 
 _EXPECTED_NUM_TOKENS = {
     "ada": 17,
