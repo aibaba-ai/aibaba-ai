@@ -65,17 +65,12 @@ Agents are autonomous LLM-powered systems that can independently solve complex t
 4. Evaluate the results
 5. Repeat until the goal is achieved
 
-[LangGraph](https://langchain-ai.github.io/langgraph/) provides a powerful framework to create both [custom](https://langchain-ai.github.io/langgraph/tutorials/) and [pre-built](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/) AI agents using AI Agents Force components.
 
-## 📖 Documentation
+## 📖 Using the SDK
 
-Please see [here](https://dev.aiagentsforce.com) for full documentation, which includes:
+![Diagram outlining the process of building AI agent and using it within AI Agents Force orchestration platform.](docs/static/svg/build-and-use-ai-agent-flow.svg#gh-dark-mode-only "Build and use AI agent")
 
-- [Introduction](https://docs.aiagentsforce.com/introduction/): Overview of the framework and the structure of the docs.
-- [Tutorials](https://docs.aiagentsforce.com/tutorials/): If you're looking to build something specific or are more of a hands-on learner, check out our tutorials. This is the best place to get started.
-- [How-to guides](https://docs.aiagentsforce.com/how_to/): Answers to “How do I….?” type questions. These guides are goal-oriented and concrete; they're meant to help you complete a specific task.
-- [Conceptual guide](https://docs.aiagentsforce.com/concepts/): Conceptual explanations of the key parts of the framework.
-- [API Reference](https://docs.aiagentsforce.com/api_reference/): Thorough documentation of every class and method.
+
 
 ## 💁 Contributing
 
@@ -84,3 +79,52 @@ As an open-source project in a rapidly developing field, we are extremely open t
 ## 🌟 Contributors
 
 [![AI Agents Force contributors](https://contrib.rocks/image?repo=AI-Agents-Force-SDK/aiagentsforce&max=2000)](https://github.com/AI-Agents-Force-SDK/aiagentsforce/graphs/contributors)
+
+## 🛠 Building and Deploying AI Agents
+
+### 1. Build and Verify AI Agent Locally
+
+Use the aiagentsforce library to create and test your AI agent in your local development environment. The library provides comprehensive tools including prebuilt templates, NLP capabilities, and integration utilities.
+
+**Key Steps:**
+- Define the agent's functionality, purpose, and environment
+- Implement logic, train models, and integrate external services
+- Test agent responses locally
+
+**Benefits:**
+- Rapid iteration and debugging without cloud costs
+- Familiar development environment
+- Local optimization capabilities
+
+### 2. Build Docker Image
+
+Package your verified AI agent into a Docker container for consistent deployment across environments.
+
+**Key Steps:**
+- Create a Dockerfile with your agent's environment configuration
+- Include all dependencies and settings
+- Build using `docker build`
+
+**Benefits:**
+- **Automated Configuration:** AI Agents Force handles Dockerfile generation and dependency management
+- **Smart Defaults:** Pre-configured settings optimized for AI agent deployment
+- **Simplified Building:** Built-in commands to streamline the Docker build process
+- **Version Compatibility:** Automatic handling of compatible package versions
+- **Best Practices:** Docker configurations following industry standards
+- **Resource Optimization:** Intelligent layer caching and image size optimization
+- **Integration Ready:** Pre-configured for AI Agents Force platform integration
+
+### 3. Cloud Deployment and Platform Integration
+
+Deploy your Docker image to your preferred cloud provider and integrate it with the AI Agents Force platform.
+
+**Key Steps:**
+- Push Docker image to a container registry (Docker Hub, AWS ECR, etc.)
+- Configure cloud service (Kubernetes, AWS ECS, etc.)
+- Integrate with AI Agents Force platform via API endpoints
+
+**Benefits:**
+- **Cloud Scalability:** Leverage cloud infrastructure
+- **Centralized Management:** Monitor and manage through our platform
+- **Global Accessibility:** Serve users worldwide
+- **Team Collaboration:** Simplified access for team members
