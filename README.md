@@ -68,7 +68,7 @@ Agents are autonomous LLM-powered systems that can independently solve complex t
 
 ## 📖 Building and Deploying AI Agents
 
-![Diagram outlining the process of building AI agent and using it within AI Agents Force orchestration platform.](https://github.com/AI-Agents-Force-SDK/aiagentsforce/blob/main/docs/static/svg/build-and-use-ai-agent-flow.svg "Build and use AI agent")
+![Diagram outlining the process of building AI agent and using it within AI Agents Force orchestration platform.](https://github.com/AI-Agents-Force-SDK/aiagentsforce/blob/main/docs/static/svg/build-and-use-ai-agent-flow.svg "Build and use AI Agent")
 
 ### 1. Build and Verify AI Agent Locally
 
