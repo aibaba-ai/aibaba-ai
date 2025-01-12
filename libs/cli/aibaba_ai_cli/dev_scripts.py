@@ -8,7 +8,7 @@ from typing import Sequence
 from fastapi import FastAPI
 from aiagentsforceapi import add_routes
 
-from aiagentsforce_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
 
 
 def create_demo_server(

@@ -3,12 +3,12 @@ from typing import Optional
 import typer
 from typing_extensions import Annotated
 
-from aiagentsforce_cli._version import __version__
-from aiagentsforce_cli.namespaces import app as app_namespace
-from aiagentsforce_cli.namespaces import integration as integration_namespace
-from aiagentsforce_cli.namespaces import template as template_namespace
-from aiagentsforce_cli.namespaces.migrate import main as migrate_namespace
-from aiagentsforce_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli._version import __version__
+from aibaba_ai_cli.namespaces import app as app_namespace
+from aibaba_ai_cli.namespaces import integration as integration_namespace
+from aibaba_ai_cli.namespaces import template as template_namespace
+from aibaba_ai_cli.namespaces.migrate import main as migrate_namespace
+from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
 app.add_typer(

@@ -11,7 +11,7 @@ from typing import Optional
 import typer
 from typing_extensions import Annotated
 
-from aiagentsforce_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
 
 package_cli = typer.Typer(no_args_is_help=True, add_completion=False)
 
@@ -147,7 +147,7 @@ def list(contains: Annotated[Optional[str], typer.Argument()] = None) -> None:
     """
     List all or search for available templates.
     """
-    from aiagentsforce_cli.utils.github import list_packages
+    from aibaba_ai_cli.utils.github import list_packages
 
     packages = list_packages(contains=contains)
     for package in packages:

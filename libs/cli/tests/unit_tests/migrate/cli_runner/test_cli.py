@@ -10,7 +10,7 @@ from pathlib import Path
 
 from typer.testing import CliRunner
 
-from aiagentsforce_cli.cli import app
+from aibaba_ai_cli.cli import app
 from tests.unit_tests.migrate.cli_runner.cases import before, expected
 from tests.unit_tests.migrate.cli_runner.folder import Folder
 

@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_cli.namespaces.migrate.generate.partner import (
+from aibaba_ai_cli.namespaces.migrate.generate.partner import (
     get_migrations_for_partner_package,
 )
 

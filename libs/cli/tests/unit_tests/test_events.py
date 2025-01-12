@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_cli.utils.events import EventDict, create_events
+from aibaba_ai_cli.utils.events import EventDict, create_events
 
 
 @pytest.mark.xfail(reason="Unknown reason")

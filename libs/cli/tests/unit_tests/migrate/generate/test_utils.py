@@ -1,4 +1,4 @@
-from aiagentsforce_cli.namespaces.migrate.generate.utils import PKGS_ROOT
+from aibaba_ai_cli.namespaces.migrate.generate.utils import PKGS_ROOT
 
 
 def test_root() -> None:

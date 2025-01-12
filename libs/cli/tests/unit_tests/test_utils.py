@@ -2,12 +2,12 @@ from typing import Dict, Optional
 
 import pytest
 
-from aiagentsforce_cli.constants import (
+from aibaba_ai_cli.constants import (
     DEFAULT_GIT_REF,
     DEFAULT_GIT_REPO,
     DEFAULT_GIT_SUBDIRECTORY,
 )
-from aiagentsforce_cli.utils.git import DependencySource, parse_dependency_string
+from aibaba_ai_cli.utils.git import DependencySource, parse_dependency_string
 
 
 def _assert_dependency_equals(

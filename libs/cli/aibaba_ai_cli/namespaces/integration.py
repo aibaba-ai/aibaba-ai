@@ -11,7 +11,7 @@ from typing import Dict, Optional, cast
 import typer
 from typing_extensions import Annotated, TypedDict
 
-from aiagentsforce_cli.utils.find_replace import replace_file, replace_glob
+from aibaba_ai_cli.utils.find_replace import replace_file, replace_glob
 
 integration_cli = typer.Typer(no_args_is_help=True, add_completion=False)
 

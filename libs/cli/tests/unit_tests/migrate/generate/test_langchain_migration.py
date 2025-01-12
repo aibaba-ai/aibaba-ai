@@ -2,7 +2,7 @@ import pytest
 from langchain._api import suppress_aiagentforce_deprecation_warning as sup2
 from aibaba_ai_core._api import suppress_aiagentforce_deprecation_warning as sup1
 
-from aiagentsforce_cli.namespaces.migrate.generate.generic import (
+from aibaba_ai_cli.namespaces.migrate.generate.generic import (
     generate_simplified_migrations,
 )
 

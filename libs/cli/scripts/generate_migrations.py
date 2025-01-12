@@ -7,13 +7,13 @@ import pkgutil
 
 import click
 
-from aiagentsforce_cli.namespaces.migrate.generate.generic import (
+from aibaba_ai_cli.namespaces.migrate.generate.generic import (
     generate_simplified_migrations,
 )
-from aiagentsforce_cli.namespaces.migrate.generate.grit import (
+from aibaba_ai_cli.namespaces.migrate.generate.grit import (
     dump_migrations_as_grit,
 )
-from aiagentsforce_cli.namespaces.migrate.generate.partner import (
+from aibaba_ai_cli.namespaces.migrate.generate.partner import (
     get_migrations_for_partner_package,
 )
 

@@ -29,7 +29,7 @@ ignore-words-list = "momento,collison,ned,foor,reworkd,parth,whats,aapply,mysogy
 "Release Notes" = "https://github.com/aibaba-ai/aibaba-ai/releases?q=tag%3A%22aiagentsforce%3D%3D0%22&expanded=true"
 
 [tool.poetry.scripts]
-aibaba_ai_server = "aibaba-ai.server:main"
+aibaba_ai_server = "aibaba_ai.server:main"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"

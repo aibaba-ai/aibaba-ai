@@ -9,7 +9,7 @@ from aibaba_ai_core.language_models import BaseLanguageModel
 from aibaba_ai_core.retrievers import BaseRetriever
 from aibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_cli.namespaces.migrate.generate.utils import (
+from aibaba_ai_cli.namespaces.migrate.generate.utils import (
     COMMUNITY_PKG,
     find_subclasses_in_module,
     list_classes_by_package,

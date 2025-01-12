@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Sequence, TypedDict
 
 from git import Repo
 
-from aiagentsforce_cli.constants import (
+from aibaba_ai_cli.constants import (
     DEFAULT_GIT_REF,
     DEFAULT_GIT_REPO,
     DEFAULT_GIT_SUBDIRECTORY,

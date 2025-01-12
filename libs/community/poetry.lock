@@ -89,7 +89,7 @@ files = []
 develop = true
 
 [package.dependencies]
-aibaba_ai_core = "^0.3.29"
+aibaba_ai_core = "^0.3.30"
 
 [package.source]
 type = "directory"

@@ -12,19 +12,19 @@ from typing import Dict, List, Optional, Tuple
 import typer
 from typing_extensions import Annotated
 
-from aiagentsforce_cli.utils.events import create_events
-from aiagentsforce_cli.utils.git import (
+from aibaba_ai_cli.utils.events import create_events
+from aibaba_ai_cli.utils.git import (
     DependencySource,
     copy_repo,
     parse_dependencies,
     update_repo,
 )
-from aiagentsforce_cli.utils.packages import (
+from aibaba_ai_cli.utils.packages import (
     aiagentsforceapiExport,
     get_aiagentsforceapi_export,
     get_package_root,
 )
-from aiagentsforce_cli.utils.pyproject import (
+from aibaba_ai_cli.utils.pyproject import (
     add_dependencies_to_pyproject_toml,
     remove_dependencies_from_pyproject_toml,
 )
