@@ -1,8 +1,8 @@
 Thank you for contributing to Aibaba AI!
 
 - [ ] **PR title**: "package: description"
-  - Where "package" is whichever of langchain, community, core, etc. is being modified. Use "docs: ..." for purely docs changes, "infra: ..." for CI changes.
-  - Example: "community: add foobar LLM"
+  - Where "package" is whichever of aibaba_ai, cli, etc. is being modified. Use "docs: ..." for purely docs changes, "infra: ..." for CI changes.
+  - Example: "cli: add foobar LLM"
 
 
 - [ ] **PR message**: ***Delete this entire checklist*** and replace with
