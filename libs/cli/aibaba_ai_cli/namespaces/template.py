@@ -11,7 +11,7 @@ from typing import Optional
 import typer
 from typing_extensions import Annotated
 
-from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli.utils.packages import get_aibaba_ai_export, get_package_root
 
 package_cli = typer.Typer(no_args_is_help=True, add_completion=False)
 
@@ -116,8 +116,8 @@ def serve(
     project_dir = get_package_root()
     pyproject = project_dir / "pyproject.toml"
 
-    # get aiagentsforceapi export - throws KeyError if invalid
-    get_aiagentsforceapi_export(pyproject)
+    # get aibaba_ai export - throws KeyError if invalid
+    get_aibaba_ai_export(pyproject)
 
     host_str = host if host is not None else "127.0.0.1"
 

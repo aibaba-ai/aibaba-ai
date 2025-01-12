@@ -9,7 +9,7 @@ description = ""
 authors = []
 readme = "README.md"
 
-[tool.aiagentsforceapi]
+[tool.aibaba_ai]
 export_module = "__module_name__"
 export_attr = "chain"
 
