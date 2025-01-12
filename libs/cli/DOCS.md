@@ -207,5 +207,5 @@ $ aibaba_ai template image [OPTIONS]
 **Example**:
 
 ```console
-$ aibaba_ai_cli image --tag myapp-v1 --port 8080
+$ aibaba_ai image --tag myapp-v1 --port 8080
 ```
