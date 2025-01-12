@@ -1,7 +1,7 @@
 from typing import Optional, Tuple, Union
 
 from langchain.agents import AgentOutputParser
-from aiagentsforce_core.agents import AgentAction, AgentFinish
+from aibaba-ai-core.agents import AgentAction, AgentFinish
 
 
 def extract_action_details(text: str) -> Tuple[Optional[str], Optional[str]]:

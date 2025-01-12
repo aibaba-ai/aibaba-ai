@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 import pandas as pd
 from langchain.chains.graph_qa.prompts import CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT
 from langchain.memory import ConversationBufferMemory, ReadOnlySharedMemory
-from aiagentsforce_core.prompts import PromptTemplate
+from aibaba-ai-core.prompts import PromptTemplate
 
 from aiagentsforce_community.chains.graph_qa.cypher import (
     GraphCypherQAChain,

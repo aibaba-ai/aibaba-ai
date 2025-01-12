@@ -5,7 +5,7 @@ from typing import Any, List
 from unittest.mock import MagicMock, patch
 
 import pytest
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,

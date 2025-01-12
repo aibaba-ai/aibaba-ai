@@ -1,6 +1,6 @@
 # langchain-prompty
 
-This package contains the AI Agents Force integration with Microsoft Prompty.
+This package contains the Aibaba AI integration with Microsoft Prompty.
 
 ## Installation
 

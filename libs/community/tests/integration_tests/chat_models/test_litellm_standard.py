@@ -1,9 +1,9 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Type
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
+from aibaba-ai-core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from aiagentsforce_community.chat_models.litellm import ChatLiteLLM

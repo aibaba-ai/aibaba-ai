@@ -12,19 +12,19 @@ from typing import (
 )
 
 import anthropic
-from aiagentsforce_core._api.deprecation import deprecated
-from aiagentsforce_core.callbacks import (
+from aibaba-ai-core._api.deprecation import deprecated
+from aibaba-ai-core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aiagentsforce_core.language_models import BaseLanguageModel, LangSmithParams
-from aiagentsforce_core.language_models.llms import LLM
-from aiagentsforce_core.outputs import GenerationChunk
-from aiagentsforce_core.prompt_values import PromptValue
-from aiagentsforce_core.utils import (
+from aibaba-ai-core.language_models import BaseLanguageModel, LangSmithParams
+from aibaba-ai-core.language_models.llms import LLM
+from aibaba-ai-core.outputs import GenerationChunk
+from aibaba-ai-core.prompt_values import PromptValue
+from aibaba-ai-core.utils import (
     get_pydantic_field_names,
 )
-from aiagentsforce_core.utils.utils import (
+from aibaba-ai-core.utils.utils import (
     _build_model_kwargs,
     from_env,
     secret_from_env,

@@ -3,7 +3,7 @@
 from typing import Type, cast
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
+from aibaba-ai-core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 from pydantic import SecretStr
 

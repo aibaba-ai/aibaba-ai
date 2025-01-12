@@ -1,7 +1,7 @@
 from typing import Dict, List
 from unittest.mock import MagicMock, patch
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_loaders.oracleadb_loader import (
     OracleAutonomousDatabaseLoader,

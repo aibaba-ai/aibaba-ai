@@ -3,7 +3,7 @@ from typing import Any
 from unittest.mock import create_autospec
 
 import pytest
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_community.callbacks import UpstashRatelimitError, UpstashRatelimitHandler
 

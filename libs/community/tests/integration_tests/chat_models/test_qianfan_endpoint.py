@@ -2,16 +2,16 @@
 
 from typing import Any, cast
 
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.messages import (
     AIMessage,
     BaseMessage,
     BaseMessageChunk,
     FunctionMessage,
     HumanMessage,
 )
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
-from aiagentsforce_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 

@@ -4,7 +4,7 @@ import copy
 import json
 from typing import Any, Dict, List, Optional
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 
 class RecursiveJsonSplitter:

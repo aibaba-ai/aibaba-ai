@@ -5,8 +5,8 @@ from typing import Any
 from unittest.mock import Mock, patch
 
 import pytest
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.documents.base import Blob
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.documents.base import Blob
 
 from aiagentsforce_community.document_loaders.parsers.audio import AzureOpenAIWhisperParser
 

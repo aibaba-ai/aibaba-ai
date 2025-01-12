@@ -4,9 +4,9 @@ from typing import List, Tuple
 
 from langchain.agents.format_scratchpad import format_to_openai_function_messages
 from langchain.tools import tool
-from aiagentsforce_core.language_models import FakeListLLM
-from aiagentsforce_core.messages import AIMessage, HumanMessage
-from aiagentsforce_core.utils.function_calling import convert_to_openai_function
+from aibaba-ai-core.language_models import FakeListLLM
+from aibaba-ai-core.messages import AIMessage, HumanMessage
+from aibaba-ai-core.utils.function_calling import convert_to_openai_function
 from pydantic import BaseModel, Field
 
 import langchain_prompty

@@ -1,4 +1,4 @@
-from aiagentsforce_core.language_models.llms import BaseLLM
+from aibaba-ai-core.language_models.llms import BaseLLM
 
 from aiagentsforce_community import llms
 

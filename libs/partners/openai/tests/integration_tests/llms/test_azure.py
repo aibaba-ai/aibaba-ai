@@ -4,8 +4,8 @@ import os
 from typing import Any, Generator
 
 import pytest
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_openai import AzureOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler

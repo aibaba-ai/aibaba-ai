@@ -4,14 +4,14 @@ import logging
 from typing import List
 
 import pytest
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
     ToolMessage,
 )
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
 
 from aiagentsforce_community.chat_models.reka import ChatReka
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

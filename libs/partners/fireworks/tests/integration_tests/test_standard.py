@@ -1,10 +1,10 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Type
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.tools import BaseTool
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.tools import BaseTool
 from langchain_tests.integration_tests import (  # type: ignore[import-not-found]
     ChatModelIntegrationTests,  # type: ignore[import-not-found]
 )

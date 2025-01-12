@@ -1,6 +1,6 @@
 # Adapted from https://github.com/tiangolo/fastapi/blob/master/.github/actions/people/action.yml
-name: "Generate AI Agents Force People"
-description: "Generate the data for the AI Agents Force People page"
+name: "Generate Aibaba AI People"
+description: "Generate the data for the Aibaba AI People page"
 author: "Jacob Lee <jacob@langchain.dev>"
 inputs:
   token:

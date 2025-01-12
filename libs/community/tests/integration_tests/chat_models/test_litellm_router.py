@@ -17,8 +17,8 @@ from typing import (
 )
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
 
 from aiagentsforce_community.chat_models.litellm_router import ChatLiteLLMRouter
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

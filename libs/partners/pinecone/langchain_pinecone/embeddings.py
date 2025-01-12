@@ -2,8 +2,8 @@ import logging
 from typing import Any, Dict, Iterable, List, Optional
 
 import aiohttp
-from aiagentsforce_core.embeddings import Embeddings
-from aiagentsforce_core.utils import secret_from_env
+from aibaba-ai-core.embeddings import Embeddings
+from aibaba-ai-core.utils import secret_from_env
 from pinecone import Pinecone as PineconeClient  # type: ignore[import-untyped]
 from pydantic import (
     BaseModel,

@@ -25,10 +25,10 @@ from typing import (
 import chromadb
 import chromadb.config
 import numpy as np
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.embeddings import Embeddings
-from aiagentsforce_core.utils import xor_args
-from aiagentsforce_core.vectorstores import VectorStore
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.embeddings import Embeddings
+from aibaba-ai-core.utils import xor_args
+from aibaba-ai-core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
     from chromadb.api.types import ID, OneOrMany, Where, WhereDocument
@@ -185,7 +185,7 @@ class Chroma(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from aiagentsforce_core.documents import Document
+            from aibaba-ai-core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

@@ -12,12 +12,12 @@ from typing import (
     Union,
 )
 
-from aiagentsforce_core.callbacks import (
+from aibaba-ai-core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aiagentsforce_core.language_models import BaseLLM, LangSmithParams
-from aiagentsforce_core.outputs import GenerationChunk, LLMResult
+from aibaba-ai-core.language_models import BaseLLM, LangSmithParams
+from aibaba-ai-core.outputs import GenerationChunk, LLMResult
 from ollama import AsyncClient, Client, Options
 from pydantic import PrivateAttr, model_validator
 from typing_extensions import Self

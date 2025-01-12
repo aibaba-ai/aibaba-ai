@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_loaders import DataFrameLoader
 

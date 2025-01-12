@@ -19,7 +19,7 @@ def test_filter_docusaurus_sitemap() -> None:
         DOCS_URL,
         is_local=True,
         filter_urls=[
-            "https://docs.aiagentsforce.com/docs/integrations/document_loaders/sitemap"
+            "https://docs.aibaba.world/docs/integrations/document_loaders/sitemap"
         ],
     )
     documents = loader.load()

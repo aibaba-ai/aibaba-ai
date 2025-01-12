@@ -1,7 +1,7 @@
 """Test Google PaLM Chat API wrapper."""
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage
 
 from aiagentsforce_community.chat_models.google_palm import (
     ChatGooglePalm,

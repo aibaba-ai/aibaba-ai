@@ -6,7 +6,7 @@ from time import sleep
 from typing import Any, Generator, Optional, Union
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.embeddings import AzureOpenAIEmbeddings
 from aiagentsforce_community.vectorstores.azure_cosmos_db import (

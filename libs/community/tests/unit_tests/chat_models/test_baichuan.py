@@ -1,7 +1,7 @@
 from typing import cast
 
 import pytest
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     AIMessageChunk,
     FunctionMessage,

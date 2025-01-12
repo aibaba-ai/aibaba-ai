@@ -28,10 +28,10 @@ IGNORE_CORE_DEPENDENTS = False
 IGNORED_PARTNERS = [
     # remove huggingface from dependents because of CI instability
     # specifically in huggingface jobs
-    # https://github.com/AI-Agents-Force-SDK/langchain/issues/25558
+    # https://github.com/aibaba-ai/aibaba-ai/issues/25558
     "huggingface",
     # prompty exhibiting issues with numpy for Python 3.13
-    # https://github.com/AI-Agents-Force-SDK/langchain/actions/runs/12651104685/job/35251034969?pr=29065
+    # https://github.com/aibaba-ai/aibaba-ai/actions/runs/12651104685/job/35251034969?pr=29065
     "prompty",
 ]
 

@@ -1,4 +1,4 @@
-from aiagentsforce_core.output_parsers.openai_tools import (
+from aibaba-ai-core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     JsonOutputToolsParser,
     PydanticToolsParser,

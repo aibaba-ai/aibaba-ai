@@ -3,7 +3,7 @@ import time
 from typing import Any, Optional
 
 from langchain.memory import ConversationBufferMemory
-from aiagentsforce_core.messages import AIMessage, HumanMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage
 
 from aiagentsforce_community.chat_message_histories.cassandra import (
     CassandraChatMessageHistory,

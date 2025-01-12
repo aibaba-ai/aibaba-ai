@@ -14,8 +14,8 @@ from abc import ABC, abstractmethod
 from typing import AsyncGenerator, Generator
 
 import pytest
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.indexing.base import DocumentIndex
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.indexing.base import DocumentIndex
 
 
 class DocumentIndexerTestSuite(ABC):

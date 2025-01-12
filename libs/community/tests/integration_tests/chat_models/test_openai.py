@@ -3,14 +3,14 @@
 from typing import Any, Optional
 
 import pytest
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from aiagentsforce_core.outputs import (
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.outputs import (
     ChatGeneration,
     ChatResult,
     LLMResult,
 )
-from aiagentsforce_core.prompts import ChatPromptTemplate
+from aibaba-ai-core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
 from aiagentsforce_community.chat_models.openai import ChatOpenAI

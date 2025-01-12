@@ -1,5 +1,5 @@
-from aiagentsforce_core.messages import ToolCall
-from aiagentsforce_core.tools import BaseTool
+from aibaba-ai-core.messages import ToolCall
+from aibaba-ai-core.tools import BaseTool
 
 from langchain_tests.unit_tests.tools import ToolsTests
 
@@ -13,9 +13,9 @@ class ToolsIntegrationTests(ToolsTests):
         """
         If invoked with a ToolCall, the tool should return a valid ToolMessage content.
 
-        If you have followed the `custom tool guide <https://docs.aiagentsforce.com/docs/how_to/custom_tools/>`_,
+        If you have followed the `custom tool guide <https://docs.aibaba.world/docs/how_to/custom_tools/>`_,
         this test should always pass because ToolCall inputs are handled by the
-        :class:`aiagentsforce_core.tools.BaseTool` class.
+        :class:`aibaba-ai-core.tools.BaseTool` class.
 
         If you have not followed this guide, you should ensure that your tool's
         `invoke` method returns a valid ToolMessage content when it receives

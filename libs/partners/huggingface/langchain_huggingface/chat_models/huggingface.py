@@ -15,13 +15,13 @@ from typing import (
     cast,
 )
 
-from aiagentsforce_core.callbacks.manager import (
+from aibaba-ai-core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aiagentsforce_core.language_models import LanguageModelInput
-from aiagentsforce_core.language_models.chat_models import BaseChatModel
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.language_models import LanguageModelInput
+from aibaba-ai-core.language_models.chat_models import BaseChatModel
+from aibaba-ai-core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -29,10 +29,10 @@ from aiagentsforce_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
-from aiagentsforce_core.runnables import Runnable
-from aiagentsforce_core.tools import BaseTool
-from aiagentsforce_core.utils.function_calling import convert_to_openai_tool
+from aibaba-ai-core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba-ai-core.runnables import Runnable
+from aibaba-ai-core.tools import BaseTool
+from aibaba-ai-core.utils.function_calling import convert_to_openai_tool
 from pydantic import model_validator
 from typing_extensions import Self
 
@@ -414,7 +414,7 @@ class ChatHuggingFace(BaseChatModel):
         )
 
     def _to_chatml_format(self, message: BaseMessage) -> dict:
-        """Convert AI Agents Force message to ChatML format."""
+        """Convert Aibaba AI message to ChatML format."""
 
         if isinstance(message, SystemMessage):
             role = "system"
@@ -486,7 +486,7 @@ class ChatHuggingFace(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`aiagentsforce_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aibaba-ai-core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call.
                 Must be the name of the single provided function or
                 "auto" to automatically determine which function to call

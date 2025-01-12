@@ -6,8 +6,8 @@ from typing import Any, AsyncGenerator, Generator, cast
 from unittest.mock import patch
 
 import pytest
-from aiagentsforce_core.callbacks import BaseCallbackHandler
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.callbacks import BaseCallbackHandler
+from aibaba-ai-core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,

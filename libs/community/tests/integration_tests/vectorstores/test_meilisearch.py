@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Any, Dict, Generator
 
 import pytest
 import requests
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import Meilisearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

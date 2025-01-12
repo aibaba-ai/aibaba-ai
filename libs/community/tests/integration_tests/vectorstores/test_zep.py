@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 from uuid import uuid4
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.vectorstores import ZepVectorStore

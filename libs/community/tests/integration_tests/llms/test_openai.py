@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Generator
 
 import pytest
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_community.chat_models.openai import ChatOpenAI
 from aiagentsforce_community.llms.loading import load_llm

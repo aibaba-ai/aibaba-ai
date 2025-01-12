@@ -1,10 +1,10 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from pathlib import Path
 from typing import Dict, List, Literal, Type, cast
 
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.messages import AIMessage
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.messages import AIMessage
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from aiagentsforce_openai import ChatOpenAI

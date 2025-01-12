@@ -1,6 +1,6 @@
 """Test tair functionality."""
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores.tair import Tair
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

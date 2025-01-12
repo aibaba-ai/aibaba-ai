@@ -1,5 +1,5 @@
 import pytest
-from aiagentsforce_core.vectorstores import (
+from aibaba-ai-core.vectorstores import (
     InMemoryVectorStore,
     VectorStore,
 )

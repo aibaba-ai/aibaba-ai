@@ -1,6 +1,6 @@
 # Security Policy
 
-AI Agents Force has a large ecosystem of integrations with various external resources like local and remote file systems, APIs and databases. These integrations allow developers to create versatile applications that combine the power of LLMs with the ability to access, interact with and manipulate external resources.
+Aibaba AI has a large ecosystem of integrations with various external resources like local and remote file systems, APIs and databases. These integrations allow developers to create versatile applications that combine the power of LLMs with the ability to access, interact with and manipulate external resources.
 
 ## Best practices
 
@@ -27,10 +27,10 @@ design and secure your applications.
 
 ## Reporting OSS Vulnerabilities
 
-AI Agents Force is partnered with [huntr by Protect AI](https://huntr.com/) to provide 
+Aibaba AI is partnered with [huntr by Protect AI](https://huntr.com/) to provide 
 a bounty program for our open source projects. 
 
-Please report security vulnerabilities associated with the AI Agents Force 
+Please report security vulnerabilities associated with the Aibaba AI 
 open source projects by visiting the following link:
 
 [https://huntr.com/bounties/disclose/](https://huntr.com/bounties/disclose/?target=https%3A%2F%2Fgithub.com%2FAIAgentsForce%2FAIAgentsForce&validSearch=true)
@@ -38,7 +38,7 @@ open source projects by visiting the following link:
 Before reporting a vulnerability, please review:
 
 1) In-Scope Targets and Out-of-Scope Targets below.
-2) The [AI-Agents-Force/AI-Agents-Force](https://docs.aiagentsforce.com/docs/contributing/repo_structure) monorepo structure.
+2) The [AI-Agents-Force/AI-Agents-Force](https://docs.aibaba.world/docs/contributing/repo_structure) monorepo structure.
 3) The [Best practices](#best-practices) above to
    understand what we consider to be a security vulnerability vs. developer
    responsibility.
@@ -72,15 +72,15 @@ All out of scope targets defined by huntr as well as:
   case basis, but likely will not be eligible for a bounty as the code is already
   documented with guidelines for developers that should be followed for making their
   application secure.
-- Any AI Agents Force Cloud related repositories or APIs (see [Reporting Cloud Vulnerabilities](#reporting-cloud-vulnerabilities)).
+- Any Aibaba AI Cloud related repositories or APIs (see [Reporting Cloud Vulnerabilities](#reporting-cloud-vulnerabilities)).
 
 ## Reporting Cloud Vulnerabilities
 
-Please report security vulnerabilities associated with AI Agents Force by email to `security@aiagentsforce.com`.
+Please report security vulnerabilities associated with Aibaba AI by email to `security@aibaba.world`.
 
-- AI Agents Force site: https://www.aiagentsforce.com
-- SDK client: https://github.com/AI-Agents-Force-SDK
+- Aibaba AI site: https://www.aibaba.world
+- SDK client: https://github.com/aibaba-ai
 
 ### Other Security Concerns
 
-For any other security concerns, please contact us at `security@aiagentsforce.com`.
+For any other security concerns, please contact us at `security@aibaba.world`.

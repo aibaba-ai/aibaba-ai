@@ -1,16 +1,16 @@
 from typing import Any, Dict, Iterator, List, Optional
 
-from aiagentsforce_core.callbacks import (
+from aibaba-ai-core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
 )
-from aiagentsforce_core.messages.ai import UsageMetadata
-from aiagentsforce_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba-ai-core.messages.ai import UsageMetadata
+from aibaba-ai-core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from pydantic import Field
 
 
@@ -18,7 +18,7 @@ class ChatParrotLink(BaseChatModel):
     """A custom chat model that echoes the first `parrot_buffer_length` characters
     of the input.
 
-    When contributing an implementation to AI Agents Force, carefully document
+    When contributing an implementation to Aibaba AI, carefully document
     the model including the initialization parameters, include
     an example of how to initialize the model and include any relevant
     links to the underlying models documentation or API.
@@ -130,7 +130,7 @@ class ChatParrotLink(BaseChatModel):
             )
 
             if run_manager:
-                # This is optional in newer versions of AI Agents Force
+                # This is optional in newer versions of Aibaba AI
                 # The on_llm_new_token will be called automatically
                 run_manager.on_llm_new_token(token, chunk=chunk)
 
@@ -141,7 +141,7 @@ class ChatParrotLink(BaseChatModel):
             message=AIMessageChunk(content="", response_metadata={"time_in_sec": 3})
         )
         if run_manager:
-            # This is optional in newer versions of AI Agents Force
+            # This is optional in newer versions of Aibaba AI
             # The on_llm_new_token will be called automatically
             run_manager.on_llm_new_token(token, chunk=chunk)
         yield chunk
@@ -155,7 +155,7 @@ class ChatParrotLink(BaseChatModel):
     def _identifying_params(self) -> Dict[str, Any]:
         """Return a dictionary of identifying parameters.
 
-        This information is used by the AI Agents Force callback system, which
+        This information is used by the Aibaba AI callback system, which
         is used for tracing purposes make it possible to monitor LLMs.
         """
         return {

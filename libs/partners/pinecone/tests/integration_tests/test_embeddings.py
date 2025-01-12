@@ -2,7 +2,7 @@ import time
 from typing import AsyncGenerator
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 from pinecone import Pinecone, ServerlessSpec  # type: ignore
 
 from langchain_pinecone import PineconeEmbeddings, PineconeVectorStore

@@ -1,6 +1,6 @@
 """Test Tongyi API wrapper."""
 
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_community.llms.tongyi import Tongyi
 

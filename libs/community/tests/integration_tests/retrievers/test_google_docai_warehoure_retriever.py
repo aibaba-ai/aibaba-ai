@@ -2,7 +2,7 @@
 
 import os
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.retrievers import GoogleDocumentAIWarehouseRetriever
 

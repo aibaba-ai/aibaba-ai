@@ -3,7 +3,7 @@ from unittest.mock import patch
 
 import aiohttp
 import pytest
-from aiagentsforce_core.utils import convert_to_secret_str
+from aibaba-ai-core.utils import convert_to_secret_str
 from langchain_tests.unit_tests.embeddings import EmbeddingsTests
 
 from langchain_pinecone import PineconeEmbeddings
@@ -20,7 +20,7 @@ def mock_pinecone() -> Any:
 
 
 class TestPineconeEmbeddingsStandard(EmbeddingsTests):
-    """Standard AI Agents Force embeddings tests."""
+    """Standard Aibaba AI embeddings tests."""
 
     @property
     def embeddings_class(self) -> Type[PineconeEmbeddings]:

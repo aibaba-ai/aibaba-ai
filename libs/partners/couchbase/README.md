@@ -1,6 +1,6 @@
 # langchain-couchbase
 
-This package contains the AI Agents Force integration with Couchbase
+This package contains the Aibaba AI integration with Couchbase
 
 ## Installation
 

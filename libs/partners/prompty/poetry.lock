@@ -692,7 +692,7 @@ url = "../../core"
 [[package]]
 name = "langchain-text-splitters"
 version = "0.3.1"
-description = "AI Agents Force text splitting utilities"
+description = "Aibaba AI text splitting utilities"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []

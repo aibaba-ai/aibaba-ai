@@ -4,7 +4,7 @@ from typing import List
 
 import pytest
 import responses
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.utilities import OutlineAPIWrapper
 

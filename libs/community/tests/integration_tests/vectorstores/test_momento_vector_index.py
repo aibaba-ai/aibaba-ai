@@ -4,7 +4,7 @@ import uuid
 from typing import Generator, Iterator, List
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_loaders import TextLoader
 from aiagentsforce_community.embeddings import OpenAIEmbeddings

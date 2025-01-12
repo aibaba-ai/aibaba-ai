@@ -18,8 +18,8 @@ from typing import (
 )
 
 import requests
-from aiagentsforce_core._api import beta
-from aiagentsforce_core.documents import BaseDocumentTransformer, Document
+from aibaba-ai-core._api import beta
+from aibaba-ai-core.documents import BaseDocumentTransformer, Document
 
 from langchain_text_splitters.character import RecursiveCharacterTextSplitter
 

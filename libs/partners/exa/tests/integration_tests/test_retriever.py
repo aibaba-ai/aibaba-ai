@@ -1,4 +1,4 @@
-from aiagentsforce_core.documents import (
+from aibaba-ai-core.documents import (
     Document,  # type: ignore[import-not-found, import-not-found]
 )
 

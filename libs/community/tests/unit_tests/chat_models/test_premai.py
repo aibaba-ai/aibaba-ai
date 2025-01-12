@@ -3,7 +3,7 @@
 from typing import cast
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from pydantic import SecretStr
 from pytest import CaptureFixture
 

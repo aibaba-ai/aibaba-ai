@@ -1,8 +1,8 @@
 """Test Friendli API."""
 
 import pytest
-from aiagentsforce_core.outputs.generation import Generation
-from aiagentsforce_core.outputs.llm_result import LLMResult
+from aibaba-ai-core.outputs.generation import Generation
+from aibaba-ai-core.outputs.llm_result import LLMResult
 
 from aiagentsforce_community.llms.friendli import Friendli
 

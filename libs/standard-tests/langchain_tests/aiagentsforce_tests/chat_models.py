@@ -4,8 +4,8 @@ from typing import List, Optional, cast
 
 import httpx
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel, GenericFakeChatModel
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.language_models import BaseChatModel, GenericFakeChatModel
+from aibaba-ai-core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -14,10 +14,10 @@ from aiagentsforce_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from aiagentsforce_core.output_parsers import StrOutputParser
-from aiagentsforce_core.prompts import ChatPromptTemplate
-from aiagentsforce_core.tools import BaseTool, tool
-from aiagentsforce_core.utils.function_calling import tool_example_to_messages
+from aibaba-ai-core.output_parsers import StrOutputParser
+from aibaba-ai-core.prompts import ChatPromptTemplate
+from aibaba-ai-core.tools import BaseTool, tool
+from aibaba-ai-core.utils.function_calling import tool_example_to_messages
 from pydantic import BaseModel, Field
 from pydantic.v1 import BaseModel as BaseModelV1
 from pydantic.v1 import Field as FieldV1
@@ -181,7 +181,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         ``with_structured_output`` method is overridden. If the base implementation is
         intended to be used, this method should be overridden.
 
-        See: https://docs.aiagentsforce.com/docs/concepts/structured_outputs/
+        See: https://docs.aibaba.world/docs/concepts/structured_outputs/
 
         Example:
 
@@ -196,7 +196,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         Boolean property indicating whether the chat model supports JSON mode in
         ``with_structured_output``.
 
-        See: https://docs.aiagentsforce.com/docs/concepts/structured_outputs/#json-mode
+        See: https://docs.aibaba.world/docs/concepts/structured_outputs/#json-mode
 
         Example:
 
@@ -224,7 +224,7 @@ class ChatModelIntegrationTests(ChatModelTests):
                 },
             ]
 
-        See https://docs.aiagentsforce.com/docs/concepts/multimodality/
+        See https://docs.aibaba.world/docs/concepts/multimodality/
 
         Example:
 
@@ -245,7 +245,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         on invoke and streaming responses.
 
         ``usage_metadata`` is an optional dict attribute on AIMessages that track input
-        and output tokens: https://docs.aiagentsforce.com/api_reference/core/messages/aiagentsforce_core.messages.ai.UsageMetadata.html
+        and output tokens: https://docs.aibaba.world/api_reference/core/messages/aibaba-ai-core.messages.ai.UsageMetadata.html
 
         Example:
 
@@ -320,7 +320,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         and stream.
 
         ``usage_metadata`` is an optional dict attribute on AIMessages that track input
-        and output tokens: https://docs.aiagentsforce.com/api_reference/core/messages/aiagentsforce_core.messages.ai.UsageMetadata.html
+        and output tokens: https://docs.aibaba.world/api_reference/core/messages/aibaba-ai-core.messages.ai.UsageMetadata.html
 
         It includes optional keys ``input_token_details`` and ``output_token_details``
         that can track usage details associated with special types of tokens, such as
@@ -343,7 +343,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If this test fails, you should make sure your _generate method
             does not raise any exceptions, and that it returns a valid
-            :class:`~aiagentsforce_core.outputs.chat_result.ChatResult` like so:
+            :class:`~aibaba-ai-core.outputs.chat_result.ChatResult` like so:
 
             .. code-block:: python
 
@@ -375,7 +375,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If that test passes but not this one, you should make sure your _agenerate
             method does not raise any exceptions, and that it returns a valid
-            :class:`~aiagentsforce_core.outputs.chat_result.ChatResult` like so:
+            :class:`~aibaba-ai-core.outputs.chat_result.ChatResult` like so:
 
             .. code-block:: python
 
@@ -407,7 +407,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If that test passes but not this one, you should make sure your _stream
             method does not raise any exceptions, and that it yields valid
-            :class:`~aiagentsforce_core.outputs.chat_generation.ChatGenerationChunk`
+            :class:`~aibaba-ai-core.outputs.chat_generation.ChatGenerationChunk`
             objects like so:
 
             .. code-block:: python
@@ -442,7 +442,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If those tests pass but not this one, you should make sure your _astream
             method does not raise any exceptions, and that it yields valid
-            :class:`~aiagentsforce_core.outputs.chat_generation.ChatGenerationChunk`
+            :class:`~aibaba-ai-core.outputs.chat_generation.ChatGenerationChunk`
             objects like so:
 
             .. code-block:: python
@@ -473,7 +473,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If that test passes but not this one, you should make sure your `batch`
             method does not raise any exceptions, and that it returns a list of valid
-            :class:`~aiagentsforce_core.messages.AIMessage` objects.
+            :class:`~aibaba-ai-core.messages.AIMessage` objects.
         """
         batch_results = model.batch(["Hello", "Hey"])
         assert batch_results is not None
@@ -502,7 +502,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If those tests pass but not this one, you should make sure your `abatch`
             method does not raise any exceptions, and that it returns a list of valid
-            :class:`~aiagentsforce_core.messages.AIMessage` objects.
+            :class:`~aibaba-ai-core.messages.AIMessage` objects.
         """
         batch_results = await model.abatch(["Hello", "Hey"])
         assert batch_results is not None
@@ -530,7 +530,7 @@ class ChatModelIntegrationTests(ChatModelTests):
             If that test passes but not this one, you should verify that:
             1. Your model correctly processes the message history
             2. The model maintains appropriate context from previous messages
-            3. The response is a valid :class:`~aiagentsforce_core.messages.AIMessage`
+            3. The response is a valid :class:`~aibaba-ai-core.messages.AIMessage`
         """
         messages = [
             HumanMessage("hello"),
@@ -593,7 +593,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, first verify that your model returns
-            :class:`~aiagentsforce_core.messages.ai.UsageMetadata` dicts
+            :class:`~aibaba-ai-core.messages.ai.UsageMetadata` dicts
             attached to the returned AIMessage object in `_generate`:
 
             .. code-block:: python
@@ -732,7 +732,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, first verify that your model yields
-            :class:`~aiagentsforce_core.messages.ai.UsageMetadata` dicts
+            :class:`~aibaba-ai-core.messages.ai.UsageMetadata` dicts
             attached to the returned AIMessage object in `_stream`
             that sum up to the total usage metadata.
 
@@ -824,7 +824,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         """Test that model does not fail when invoked with the ``stop`` parameter,
         which is a standard parameter for stopping generation at a certain token.
 
-        More on standard parameters here: https://docs.aiagentsforce.com/docs/concepts/chat_models/#standard-parameters
+        More on standard parameters here: https://docs.aibaba.world/docs/concepts/chat_models/#standard-parameters
 
         This should pass for all integrations.
 
@@ -874,7 +874,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, check that ``bind_tools`` is implemented to correctly
-            translate AI Agents Force tool objects into the appropriate schema for your
+            translate Aibaba AI tool objects into the appropriate schema for your
             chat model.
 
             This test may fail if the chat model does not support a ``tool_choice``
@@ -933,7 +933,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, check that ``bind_tools`` is implemented to correctly
-            translate AI Agents Force tool objects into the appropriate schema for your
+            translate Aibaba AI tool objects into the appropriate schema for your
             chat model.
 
             This test may fail if the chat model does not support a ``tool_choice``
@@ -993,7 +993,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, check that ``bind_tools`` is implemented to correctly
-            translate AI Agents Force tool objects into the appropriate schema for your
+            translate Aibaba AI tool objects into the appropriate schema for your
             chat model. It should correctly handle the case where a tool has no
             arguments.
 
@@ -1033,7 +1033,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
     def test_bind_runnables_as_tools(self, model: BaseChatModel) -> None:
         """Test that the model generates tool calls for tools that are derived from
-        AI Agents Force runnables. This test is skipped if the ``has_tool_calling`` property
+        Aibaba AI runnables. This test is skipped if the ``has_tool_calling`` property
         on the test class is set to False.
 
         This test is optional and should be skipped if the model does not support
@@ -1054,7 +1054,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, check that ``bind_tools`` is implemented to correctly
-            translate AI Agents Force tool objects into the appropriate schema for your
+            translate Aibaba AI tool objects into the appropriate schema for your
             chat model.
 
             This test may fail if the chat model does not support a ``tool_choice``
@@ -1118,10 +1118,10 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If this test fails, ensure that the model's ``bind_tools`` method
             properly handles both JSON Schema and Pydantic V2 models.
-            ``aiagentsforce_core`` implements a utility function that will accommodate
-            most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            ``aibaba-ai-core`` implements a utility function that will accommodate
+            most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """  # noqa: E501
         if not self.has_tool_calling:
             pytest.skip("Test requires tool calling.")
@@ -1171,10 +1171,10 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If this test fails, ensure that the model's ``bind_tools`` method
             properly handles both JSON Schema and Pydantic V2 models.
-            ``aiagentsforce_core`` implements a utility function that will accommodate
-            most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            ``aibaba-ai-core`` implements a utility function that will accommodate
+            most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """  # noqa: E501
         if not self.has_tool_calling:
             pytest.skip("Test requires tool calling.")
@@ -1229,15 +1229,15 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If this test fails, ensure that the model's ``bind_tools`` method
             properly handles both JSON Schema and Pydantic V1 models.
-            ``aiagentsforce_core`` implements a utility function that will accommodate
-            most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            ``aibaba-ai-core`` implements a utility function that will accommodate
+            most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """
         if not self.has_tool_calling:
             pytest.skip("Test requires tool calling.")
 
-        class Joke(BaseModelV1):  # Uses aiagentsforce_core.pydantic_v1.BaseModel
+        class Joke(BaseModelV1):  # Uses aibaba-ai-core.pydantic_v1.BaseModel
             """Joke to tell user."""
 
             setup: str = FieldV1(description="question to set up a joke")
@@ -1285,10 +1285,10 @@ class ChatModelIntegrationTests(ChatModelTests):
 
             If this test fails, ensure that the model's ``bind_tools`` method
             properly handles Pydantic V2 models with optional parameters.
-            ``aiagentsforce_core`` implements a utility function that will accommodate
-            most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            ``aibaba-ai-core`` implements a utility function that will accommodate
+            most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """
         if not self.has_tool_calling:
             pytest.skip("Test requires tool calling.")
@@ -1311,7 +1311,7 @@ class ChatModelIntegrationTests(ChatModelTests):
         assert isinstance(joke_result, Joke)
 
     def test_json_mode(self, model: BaseChatModel) -> None:
-        """Test structured output via `JSON mode. <https://docs.aiagentsforce.com/docs/concepts/structured_outputs/#json-mode>`_
+        """Test structured output via `JSON mode. <https://docs.aibaba.world/docs/concepts/structured_outputs/#json-mode>`_
 
         This test is optional and should be skipped if the model does not support
         the JSON mode feature (see Configuration below).
@@ -1330,7 +1330,7 @@ class ChatModelIntegrationTests(ChatModelTests):
 
         .. dropdown:: Troubleshooting
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """  # noqa: E501
         if not self.supports_json_mode:
             pytest.skip("Test requires json mode support.")
@@ -1562,8 +1562,8 @@ class ChatModelIntegrationTests(ChatModelTests):
 
         .. dropdown:: Troubleshooting
 
-            This test uses a utility function in ``aiagentsforce_core`` to generate a
-            sequence of messages representing "few-shot" examples: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.tool_example_to_messages.html
+            This test uses a utility function in ``aibaba-ai-core`` to generate a
+            sequence of messages representing "few-shot" examples: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.tool_example_to_messages.html
 
             If this test fails, check that the model can correctly handle this
             sequence of messages.
@@ -1612,7 +1612,7 @@ class ChatModelIntegrationTests(ChatModelTests):
                 },
             ]
 
-        See https://docs.aiagentsforce.com/docs/concepts/multimodality/
+        See https://docs.aibaba.world/docs/concepts/multimodality/
 
         .. dropdown:: Configuration
 

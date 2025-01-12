@@ -3,7 +3,7 @@
 from typing import List
 
 import pytest
-from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.messages import BaseMessage, HumanMessage, SystemMessage
 
 from aiagentsforce_community.chat_models.dappier import _format_dappier_messages
 

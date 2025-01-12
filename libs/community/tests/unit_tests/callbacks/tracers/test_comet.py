@@ -2,7 +2,7 @@ import uuid
 from types import SimpleNamespace
 from unittest import mock
 
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_community.callbacks.tracers import comet
 

@@ -2,7 +2,7 @@ import uuid
 from typing import Callable, Optional
 
 import pytest
-from aiagentsforce_core.embeddings import Embeddings
+from aibaba-ai-core.embeddings import Embeddings
 
 from aiagentsforce_community.vectorstores import Qdrant
 from tests.integration_tests.vectorstores.fake_embeddings import (

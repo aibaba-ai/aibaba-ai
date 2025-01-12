@@ -1,9 +1,9 @@
 from typing import Any, List, Optional, Type, Union, cast
 
-from aiagentsforce_core.messages import AIMessage, ToolCall
-from aiagentsforce_core.messages.tool import tool_call
-from aiagentsforce_core.output_parsers import BaseGenerationOutputParser
-from aiagentsforce_core.outputs import ChatGeneration, Generation
+from aibaba-ai-core.messages import AIMessage, ToolCall
+from aibaba-ai-core.messages.tool import tool_call
+from aibaba-ai-core.output_parsers import BaseGenerationOutputParser
+from aibaba-ai-core.outputs import ChatGeneration, Generation
 from pydantic import BaseModel, ConfigDict
 
 

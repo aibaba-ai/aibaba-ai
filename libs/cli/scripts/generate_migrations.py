@@ -82,7 +82,7 @@ def handle_partner(pkg: str, output: str = None):
     if migrations:
         with open(output_name, "w") as f:
             f.write(data)
-        click.secho(f"AI Agents Force migration script saved to {output_name}")
+        click.secho(f"Aibaba AI migration script saved to {output_name}")
     else:
         click.secho(f"No migrations found for {pkg}", fg="yellow")
 
@@ -91,8 +91,8 @@ def handle_partner(pkg: str, output: str = None):
 @click.argument("pkg")
 @click.option("--output", default=None, help="Output file for the migration script.")
 def partner(pkg: str, output: str) -> None:
-    """Generate migration scripts specifically for AI Agents Force modules."""
-    click.echo("Migration script for AI Agents Force generated.")
+    """Generate migration scripts specifically for Aibaba AI modules."""
+    click.echo("Migration script for Aibaba AI generated.")
     handle_partner(pkg, output)
 
 
@@ -112,7 +112,7 @@ def json_to_grit(json_file: str) -> None:
 
 @cli.command()
 def all_installed_partner_pkgs() -> None:
-    """Generate migration scripts for all AI Agents Force modules."""
+    """Generate migration scripts for all Aibaba AI modules."""
     # Will generate migrations for all partner packages.
     # Define as "langchain_<partner_name>".
     # First let's determine which packages are installed in the environment
@@ -121,7 +121,7 @@ def all_installed_partner_pkgs() -> None:
         name
         for _, name, _ in pkgutil.iter_modules()
         if name.startswith("langchain_")
-        and name not in {"aiagentsforce_core", "langchain_cli", "aiagentsforce_community"}
+        and name not in {"aibaba-ai-core", "langchain_cli", "aiagentsforce_community"}
     ]
     for pkg in langchain_pkgs:
         handle_partner(pkg)

@@ -6,7 +6,7 @@ import uuid
 from typing import Generator, List, Union
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.embeddings import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.elastic_vector_search import ElasticVectorSearch

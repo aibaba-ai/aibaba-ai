@@ -13,7 +13,7 @@ TEST_MODEL_LANG = "meta/meta-llama-3-8b-instruct"
 def test_replicate_call() -> None:
     """Test simple non-streaming call to Replicate."""
     llm = Replicate(model=TEST_MODEL_HELLO)
-    output = llm.invoke("What is AI Agents Force")
+    output = llm.invoke("What is Aibaba AI")
     assert output
     assert isinstance(output, str)
 
@@ -25,7 +25,7 @@ def test_replicate_streaming_call() -> None:
     llm = Replicate(
         streaming=True, callbacks=[callback_handler], model=TEST_MODEL_HELLO
     )
-    output = llm.invoke("What is AI Agents Force")
+    output = llm.invoke("What is Aibaba AI")
     assert output
     assert isinstance(output, str)
 
@@ -35,11 +35,11 @@ def test_replicate_model_kwargs() -> None:
     llm = Replicate(  # type: ignore[call-arg]
         model=TEST_MODEL_LANG, model_kwargs={"max_new_tokens": 10, "temperature": 0.01}
     )
-    long_output = llm.invoke("What is AI Agents Force")
+    long_output = llm.invoke("What is Aibaba AI")
     llm = Replicate(  # type: ignore[call-arg]
         model=TEST_MODEL_LANG, model_kwargs={"max_new_tokens": 5, "temperature": 0.01}
     )
-    short_output = llm.invoke("What is AI Agents Force")
+    short_output = llm.invoke("What is Aibaba AI")
     assert len(short_output) < len(long_output)
     assert llm.model_kwargs == {"max_new_tokens": 5, "temperature": 0.01}
 

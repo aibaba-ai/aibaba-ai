@@ -1,8 +1,8 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Tuple, Type
 
-from aiagentsforce_core.language_models import BaseChatModel
+from aibaba-ai-core.language_models import BaseChatModel
 from langchain_tests.unit_tests import ChatModelUnitTests
 
 from aiagentsforce_openai import ChatOpenAI

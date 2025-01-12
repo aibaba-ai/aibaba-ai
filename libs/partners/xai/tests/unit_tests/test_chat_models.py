@@ -1,7 +1,7 @@
 import json
 
 import pytest  # type: ignore[import-not-found]
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,

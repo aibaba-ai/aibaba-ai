@@ -1,7 +1,7 @@
 import os
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, HumanMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage
 
 from aiagentsforce_community.chat_message_histories import TiDBChatMessageHistory
 

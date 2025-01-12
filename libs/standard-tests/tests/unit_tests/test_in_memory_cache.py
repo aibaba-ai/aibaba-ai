@@ -1,5 +1,5 @@
 import pytest
-from aiagentsforce_core.caches import InMemoryCache
+from aibaba-ai-core.caches import InMemoryCache
 
 from langchain_tests.integration_tests.cache import (
     AsyncCacheTestSuite,

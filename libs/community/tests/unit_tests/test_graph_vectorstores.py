@@ -1,5 +1,5 @@
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.graph_vectorstores.base import (
     Node,

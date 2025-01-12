@@ -3,7 +3,7 @@ from typing import List
 
 import numpy as np
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores.docarray import DocArrayInMemorySearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

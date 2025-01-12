@@ -1,22 +1,22 @@
 name: 🔒 Privileged
-description: You are a AI Agents Force maintainer, or was asked directly by a maintainer to create an issue here. If not, check the other options.
+description: You are a Aibaba AI maintainer, or was asked directly by a maintainer to create an issue here. If not, check the other options.
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in AI Agents Force! 🚀
+        Thanks for your interest in Aibaba AI! 🚀
         
-        If you are not a AI Agents Force maintainer or were not asked directly by a maintainer to create an issue, then please start the conversation in a [Question in GitHub Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions/categories/q-a) instead.
+        If you are not a Aibaba AI maintainer or were not asked directly by a maintainer to create an issue, then please start the conversation in a [Question in GitHub Discussions](https://github.com/aibaba-ai/aibaba-ai/discussions/categories/q-a) instead.
         
-        You are a AI Agents Force maintainer if you maintain any of the packages inside of the AI Agents Force repository 
-        or are a regular contributor to AI Agents Force with previous merged pull requests.
+        You are a Aibaba AI maintainer if you maintain any of the packages inside of the Aibaba AI repository 
+        or are a regular contributor to Aibaba AI with previous merged pull requests.
   - type: checkboxes
     id: privileged
     attributes:
       label: Privileged issue
       description: Confirm that you are allowed to create an issue here.
       options:
-        - label: I am a AI Agents Force maintainer, or was asked directly by a AI Agents Force maintainer to create an issue here.
+        - label: I am a Aibaba AI maintainer, or was asked directly by a Aibaba AI maintainer to create an issue here.
           required: true
   - type: textarea
     id: content

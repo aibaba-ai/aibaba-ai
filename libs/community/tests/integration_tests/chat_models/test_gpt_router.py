@@ -3,11 +3,11 @@
 from typing import List
 
 import pytest
-from aiagentsforce_core.callbacks import (
+from aibaba-ai-core.callbacks import (
     CallbackManager,
 )
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture
 

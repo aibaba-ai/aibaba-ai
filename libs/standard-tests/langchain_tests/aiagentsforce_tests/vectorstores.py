@@ -3,9 +3,9 @@
 from abc import abstractmethod
 
 import pytest
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.embeddings.fake import DeterministicFakeEmbedding, Embeddings
-from aiagentsforce_core.vectorstores import VectorStore
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.embeddings.fake import DeterministicFakeEmbedding, Embeddings
+from aibaba-ai-core.vectorstores import VectorStore
 
 from langchain_tests.base import BaseStandardTests
 
@@ -30,7 +30,7 @@ class VectorStoreIntegrationTests(BaseStandardTests):
         from typing import Generator
 
         import pytest
-        from aiagentsforce_core.vectorstores import VectorStore
+        from aibaba-ai-core.vectorstores import VectorStore
         from langchain_parrot_link.vectorstores import ParrotVectorStore
         from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
@@ -59,7 +59,7 @@ class VectorStoreIntegrationTests(BaseStandardTests):
         from typing import Generator
 
         import pytest
-        from aiagentsforce_core.vectorstores import VectorStore
+        from aibaba-ai-core.vectorstores import VectorStore
         from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
         from langchain_chroma import Chroma

@@ -3,7 +3,7 @@ from datetime import datetime
 from tempfile import TemporaryDirectory
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.retrievers.tfidf import TFIDFRetriever
 

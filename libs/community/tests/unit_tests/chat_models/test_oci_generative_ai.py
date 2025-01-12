@@ -3,7 +3,7 @@
 from unittest.mock import MagicMock
 
 import pytest
-from aiagentsforce_core.messages import HumanMessage
+from aibaba-ai-core.messages import HumanMessage
 from pytest import MonkeyPatch
 
 from aiagentsforce_community.chat_models.oci_generative_ai import ChatOCIGenAI

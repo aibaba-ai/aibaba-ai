@@ -7,8 +7,8 @@ import platform
 import pytest
 
 from aiagentsforce_community.chat_models.outlines import ChatOutlines
-from aiagentsforce_core.messages import AIMessage, HumanMessage, BaseMessage
-from aiagentsforce_core.messages import BaseMessageChunk
+from aibaba-ai-core.messages import AIMessage, HumanMessage, BaseMessage
+from aibaba-ai-core.messages import BaseMessageChunk
 from pydantic import BaseModel
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
@@ -104,7 +104,7 @@ def test_chat_outlines_json(chat_model: ChatOutlines) -> None:
         name: str
 
     chat_model.json_schema = Person
-    messages = [HumanMessage(content="Who are the main contributors to AI Agents Force?")]
+    messages = [HumanMessage(content="Who are the main contributors to Aibaba AI?")]
     output = chat_model.invoke(messages)
     person = Person.model_validate_json(str(output.content))
     assert isinstance(person, Person)

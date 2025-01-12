@@ -1,5 +1,5 @@
 import pytest  # type: ignore[import-not-found]
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 from qdrant_client import models
 
 from langchain_qdrant import QdrantVectorStore, RetrievalMode

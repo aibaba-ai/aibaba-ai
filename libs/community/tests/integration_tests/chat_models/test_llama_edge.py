@@ -1,5 +1,5 @@
 import pytest
-from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage
 
 from aiagentsforce_community.chat_models.llama_edge import LlamaEdgeChatService
 

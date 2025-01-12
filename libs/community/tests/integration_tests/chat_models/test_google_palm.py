@@ -4,8 +4,8 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
       valid API key.
 """
 
-from aiagentsforce_core.messages import BaseMessage, HumanMessage, SystemMessage
-from aiagentsforce_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba-ai-core.messages import BaseMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from aiagentsforce_community.chat_models import ChatGooglePalm
 

@@ -3,15 +3,15 @@
 from typing import Union
 
 from langchain.agents.react.base import ReActChain, ReActDocstoreAgent
-from aiagentsforce_core.agents import AgentAction
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.language_models import FakeListLLM
-from aiagentsforce_core.prompts.prompt import PromptTemplate
-from aiagentsforce_core.tools import Tool
+from aibaba-ai-core.agents import AgentAction
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.language_models import FakeListLLM
+from aibaba-ai-core.prompts.prompt import PromptTemplate
+from aibaba-ai-core.tools import Tool
 
 from aiagentsforce_community.docstore.base import Docstore
 
-_PAGE_CONTENT = """This is a page about AI Agents Force.
+_PAGE_CONTENT = """This is a page about Aibaba AI.
 
 It is a really cool framework.
 

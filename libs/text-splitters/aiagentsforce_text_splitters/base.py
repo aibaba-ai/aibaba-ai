@@ -20,7 +20,7 @@ from typing import (
     Union,
 )
 
-from aiagentsforce_core.documents import BaseDocumentTransformer, Document
+from aibaba-ai-core.documents import BaseDocumentTransformer, Document
 
 logger = logging.getLogger(__name__)
 

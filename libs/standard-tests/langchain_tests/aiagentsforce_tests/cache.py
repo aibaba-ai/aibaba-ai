@@ -9,8 +9,8 @@ We don't recommend implementing externally managed BaseCache abstractions at thi
 from abc import abstractmethod
 
 import pytest
-from aiagentsforce_core.caches import BaseCache
-from aiagentsforce_core.outputs import Generation
+from aibaba-ai-core.caches import BaseCache
+from aibaba-ai-core.outputs import Generation
 
 from langchain_tests.base import BaseStandardTests
 

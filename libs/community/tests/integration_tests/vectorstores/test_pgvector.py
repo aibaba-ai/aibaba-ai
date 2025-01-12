@@ -5,7 +5,7 @@ from typing import Any, Dict, Generator, List, Type, Union
 
 import pytest
 import sqlalchemy
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.orm import Session
 

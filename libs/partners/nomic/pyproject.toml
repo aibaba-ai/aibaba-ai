@@ -1,15 +1,15 @@
 [tool.poetry]
 name = "langchain-nomic"
 version = "0.1.4"
-description = "An integration package connecting Nomic and AI Agents Force"
+description = "An integration package connecting Nomic and Aibaba AI"
 authors = []
 readme = "README.md"
-repository = "https://github.com/AI-Agents-Force-SDK/langchain"
+repository = "https://github.com/aibaba-ai/aibaba-ai"
 license = "MIT"
 
 [tool.poetry.urls]
-"Source Code" = "https://github.com/AI-Agents-Force-SDK/langchain/tree/master/libs/partners/nomic"
-"Release Notes" = "https://github.com/AI-Agents-Force-SDK/langchain/releases?q=tag%3A%22langchain-nomic%3D%3D0%22&expanded=true"
+"Source Code" = "https://github.com/aibaba-ai/aibaba-ai/tree/master/libs/partners/nomic"
+"Release Notes" = "https://github.com/aibaba-ai/aibaba-ai/releases?q=tag%3A%22langchain-nomic%3D%3D0%22&expanded=true"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"

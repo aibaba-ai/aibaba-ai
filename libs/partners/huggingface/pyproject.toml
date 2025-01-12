@@ -5,18 +5,18 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "langchain-huggingface"
 version = "0.1.2"
-description = "An integration package connecting Hugging Face and AI Agents Force"
+description = "An integration package connecting Hugging Face and Aibaba AI"
 authors = []
 readme = "README.md"
-repository = "https://github.com/AI-Agents-Force-SDK/langchain"
+repository = "https://github.com/aibaba-ai/aibaba-ai"
 license = "MIT"
 
 [tool.mypy]
 disallow_untyped_defs = "True"
 
 [tool.poetry.urls]
-"Source Code" = "https://github.com/AI-Agents-Force-SDK/langchain/tree/master/libs/partners/huggingface"
-"Release Notes" = "https://github.com/AI-Agents-Force-SDK/langchain/releases?q=tag%3A%22langchain-huggingface%3D%3D0%22&expanded=true"
+"Source Code" = "https://github.com/aibaba-ai/aibaba-ai/tree/master/libs/partners/huggingface"
+"Release Notes" = "https://github.com/aibaba-ai/aibaba-ai/releases?q=tag%3A%22langchain-huggingface%3D%3D0%22&expanded=true"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"

@@ -3,7 +3,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in AI Agents Force 🦜️🔗!
+        Thanks for your interest in Aibaba AI 🦜️🔗!
 
         Please follow these instructions, fill every question, and do every step. 🙏
         
@@ -21,12 +21,12 @@ body:
         Relevant links to check before opening a question to see if your question has already been answered, fixed or
         if there's another way to solve your problem:
         
-        [AI Agents Force documentation with the integrated search](https://docs.aiagentsforce.com/get_started/introduction),
-        [API Reference](https://docs.aiagentsforce.com/api_reference/),
-        [GitHub search](https://github.com/AI-Agents-Force-SDK/langchain),
-        [AI Agents Force Github Discussions](https://github.com/AI-Agents-Force-SDK/langchain/discussions),
-        [AI Agents Force Github Issues](https://github.com/AI-Agents-Force-SDK/langchain/issues?q=is%3Aissue),
-        [AI Agents Force ChatBot](https://chat.langchain.com/)
+        [Aibaba AI documentation with the integrated search](https://docs.aibaba.world/get_started/introduction),
+        [API Reference](https://docs.aibaba.world/api_reference/),
+        [GitHub search](https://github.com/aibaba-ai/aibaba-ai),
+        [Aibaba AI Github Discussions](https://github.com/aibaba-ai/aibaba-ai/discussions),
+        [Aibaba AI Github Issues](https://github.com/aibaba-ai/aibaba-ai/issues?q=is%3Aissue),
+        [Aibaba AI ChatBot](https://chat.langchain.com/)
   - type: checkboxes
     id: checks
     attributes:
@@ -35,7 +35,7 @@ body:
       options:
         - label: I added a very descriptive title to this question.
           required: true
-        - label: I searched the AI Agents Force documentation with the integrated search.
+        - label: I searched the Aibaba AI documentation with the integrated search.
           required: true
         - label: I used the GitHub search to find a similar question and didn't find it.
           required: true
@@ -69,7 +69,7 @@ body:
         * Avoid screenshots when possible, as they are hard to read and (more importantly) don't allow others to copy-and-paste your code.
 
       placeholder: |
-        from aiagentsforce_core.runnables import RunnableLambda
+        from aibaba-ai-core.runnables import RunnableLambda
 
         def bad_code(inputs) -> int:
           raise NotImplementedError('For demo purpose')
@@ -106,7 +106,7 @@ body:
         
         OR if you're on a recent version of langchain-core you can paste the output of:
         
-        python -m aiagentsforce_core.sys_info
+        python -m aibaba-ai-core.sys_info
       placeholder: |
         "pip freeze | grep langchain"
         platform
@@ -114,9 +114,9 @@ body:
         
         Alternatively, if you're on a recent version of langchain-core you can paste the output of:
         
-        python -m aiagentsforce_core.sys_info
+        python -m aibaba-ai-core.sys_info
         
-        These will only surface AI Agents Force packages, don't forget to include any other relevant
+        These will only surface Aibaba AI packages, don't forget to include any other relevant
         packages you're using (if you're not sure what's relevant, you can paste the entire output of `pip freeze`).
     validations:
       required: true

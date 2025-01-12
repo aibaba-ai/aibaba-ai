@@ -7,8 +7,8 @@ from datetime import timedelta
 from typing import Any, Dict, List, Optional, Sequence
 
 from couchbase.cluster import Cluster
-from aiagentsforce_core.chat_history import BaseChatMessageHistory
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.chat_history import BaseChatMessageHistory
+from aibaba-ai-core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

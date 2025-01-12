@@ -1,4 +1,4 @@
-from aiagentsforce_core.vectorstores import VectorStore
+from aibaba-ai-core.vectorstores import VectorStore
 
 import aiagentsforce_community.vectorstores
 

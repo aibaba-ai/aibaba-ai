@@ -1,6 +1,6 @@
 # langchain-pinecone
 
-This package contains the AI Agents Force integration with Pinecone.
+This package contains the Aibaba AI integration with Pinecone.
 
 ## Installation
 
@@ -20,7 +20,7 @@ The `PineconeVectorStore` class exposes the connection to the Pinecone vector st
 ```python
 from langchain_pinecone import PineconeVectorStore
 
-embeddings = ... # use a AI Agents Force Embeddings class
+embeddings = ... # use a Aibaba AI Embeddings class
 
 vectorstore = PineconeVectorStore(embeddings=embeddings)
 ```

@@ -2,7 +2,7 @@ import uuid
 from typing import Optional
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import Qdrant
 from aiagentsforce_community.vectorstores.qdrant import QdrantException

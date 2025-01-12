@@ -3,7 +3,7 @@ import urllib.request
 from typing import Generator, Iterable
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import Vectara
 from aiagentsforce_community.vectorstores.vectara import (

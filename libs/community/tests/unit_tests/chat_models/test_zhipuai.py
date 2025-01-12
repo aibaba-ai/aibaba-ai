@@ -1,7 +1,7 @@
 """Test ZhipuAI Chat API wrapper"""
 
 import pytest
-from aiagentsforce_core.messages import ToolMessage
+from aibaba-ai-core.messages import ToolMessage
 
 from aiagentsforce_community.chat_models.zhipuai import (
     ChatZhipuAI,

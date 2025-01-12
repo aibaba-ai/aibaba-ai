@@ -1,4 +1,4 @@
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.docstore.arbitrary_fn import DocstoreFn
 

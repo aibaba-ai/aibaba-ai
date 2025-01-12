@@ -8,14 +8,14 @@ You can use the dev container configuration in this folder to build and run the 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/langchain)
 
 You may use the button above, or follow these steps to open this repo in a Codespace:
-1. Click the **Code** drop-down menu at the top of https://github.com/AI-Agents-Force-SDK/langchain.
+1. Click the **Code** drop-down menu at the top of https://github.com/aibaba-ai/aibaba-ai.
 1. Click on the **Codespaces** tab.
 1. Click **Create codespace on master**.
 
 For more info, check out the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace#creating-a-codespace).
   
 ## VS Code Dev Containers
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/AI-Agents-Force-SDK/langchain)
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/aibaba-ai/aibaba-ai)
 
 Note: If you click the link above you will open the main repo (langchain-ai/langchain) and not your local cloned repo. This is fine if you only want to run and test the library, but if you want to contribute you can use the  link below and replace with your username and cloned repo name: 
 ```

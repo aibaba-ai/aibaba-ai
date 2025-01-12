@@ -1,6 +1,6 @@
 from time import sleep
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import DashVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

@@ -1,7 +1,7 @@
 from typing import Dict, Tuple
 
 import pytest
-from aiagentsforce_core.structured_query import (
+from aibaba-ai-core.structured_query import (
     Comparator,
     Comparison,
     Operation,

@@ -5,9 +5,9 @@ import os
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
-import aiagentsforce_core.load as lc_load
+import aibaba-ai-core.load as lc_load
 import pytest
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,
@@ -112,7 +112,7 @@ def test__convert_dict_to_message_tool_call() -> None:
                 name="GenerateUsername",
                 args="oops",
                 id="call_wm0JY6CdwOMZ4eTxHWUThDNz",
-                error="Function GenerateUsername arguments:\n\noops\n\nare not valid JSON. Received JSONDecodeError Expecting value: line 1 column 1 (char 0)\nFor troubleshooting, visit: https://docs.aiagentsforce.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE ",  # noqa: E501
+                error="Function GenerateUsername arguments:\n\noops\n\nare not valid JSON. Received JSONDecodeError Expecting value: line 1 column 1 (char 0)\nFor troubleshooting, visit: https://docs.aibaba.world/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE ",  # noqa: E501
                 type="invalid_tool_call",
             ),
         ],

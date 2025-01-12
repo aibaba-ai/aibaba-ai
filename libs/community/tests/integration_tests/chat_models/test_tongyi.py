@@ -2,12 +2,12 @@
 
 from typing import Any, List, cast
 
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage
-from aiagentsforce_core.messages.ai import AIMessageChunk
-from aiagentsforce_core.messages.tool import ToolCall, ToolMessage
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
-from aiagentsforce_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
+from aibaba-ai-core.messages.ai import AIMessageChunk
+from aibaba-ai-core.messages.tool import ToolCall, ToolMessage
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from pydantic import BaseModel, SecretStr
 from pytest import CaptureFixture
 
@@ -85,7 +85,7 @@ def test_vision_model() -> None:
             HumanMessage(
                 content=[
                     {
-                        "image": "https://docs.aiagentsforce.com/v0.1/assets/images/run_details-806f6581cd382d4887a5bc3e8ac62569.png"
+                        "image": "https://docs.aibaba.world/v0.1/assets/images/run_details-806f6581cd382d4887a5bc3e8ac62569.png"
                     },
                     {"text": "Summarize the image"},
                 ]

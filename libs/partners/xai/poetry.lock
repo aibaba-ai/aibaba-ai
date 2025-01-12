@@ -734,7 +734,7 @@ url = "../../core"
 [[package]]
 name = "langchain-openai"
 version = "0.2.13"
-description = "An integration package connecting OpenAI and AI Agents Force"
+description = "An integration package connecting OpenAI and Aibaba AI"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []
@@ -752,7 +752,7 @@ url = "../openai"
 [[package]]
 name = "langchain-tests"
 version = "0.3.7"
-description = "Standard tests for AI Agents Force implementations"
+description = "Standard tests for Aibaba AI implementations"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []

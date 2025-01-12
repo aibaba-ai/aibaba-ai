@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, List, Tuple, TypedDict, Union
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from langchain_text_splitters.base import Language
 from langchain_text_splitters.character import RecursiveCharacterTextSplitter

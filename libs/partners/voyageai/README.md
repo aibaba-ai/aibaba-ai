@@ -1,10 +1,10 @@
 # langchain-voyageai
 
-This package contains the AI Agents Force integrations for VoyageAI through their `voyageai` client package.
+This package contains the Aibaba AI integrations for VoyageAI through their `voyageai` client package.
 
 ## Installation and Setup
 
-- Install the AI Agents Force partner package
+- Install the Aibaba AI partner package
 ```bash
 pip install langchain-voyageai
 ```
@@ -14,7 +14,7 @@ pip install langchain-voyageai
 
 ## Text Embedding Model
 
-See a [usage example](https://docs.aiagentsforce.com/docs/integrations/text_embedding/voyageai)
+See a [usage example](https://docs.aibaba.world/docs/integrations/text_embedding/voyageai)
 
 ```python
 from langchain_voyageai import VoyageAIEmbeddings

@@ -8,10 +8,10 @@ from typing import Any, Dict, List, Literal, Optional, Tuple, Type
 from unittest import mock
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.load import dumpd, load
-from aiagentsforce_core.runnables import RunnableBinding
-from aiagentsforce_core.tools import BaseTool, tool
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.load import dumpd, load
+from aibaba-ai-core.runnables import RunnableBinding
+from aibaba-ai-core.tools import BaseTool, tool
 from pydantic import BaseModel, Field, SecretStr
 from pydantic.v1 import (
     BaseModel as BaseModelV1,
@@ -289,7 +289,7 @@ class ChatModelUnitTests(ChatModelTests):
         ``with_structured_output`` method is overridden. If the base implementation is
         intended to be used, this method should be overridden.
 
-        See: https://docs.aiagentsforce.com/docs/concepts/structured_outputs/
+        See: https://docs.aibaba.world/docs/concepts/structured_outputs/
 
         Example:
 
@@ -304,7 +304,7 @@ class ChatModelUnitTests(ChatModelTests):
         Boolean property indicating whether the chat model supports JSON mode in
         ``with_structured_output``.
 
-        See: https://docs.aiagentsforce.com/docs/concepts/structured_outputs/#json-mode
+        See: https://docs.aibaba.world/docs/concepts/structured_outputs/#json-mode
 
         Example:
 
@@ -332,7 +332,7 @@ class ChatModelUnitTests(ChatModelTests):
                 },
             ]
 
-        See https://docs.aiagentsforce.com/docs/concepts/multimodality/
+        See https://docs.aibaba.world/docs/concepts/multimodality/
 
         Example:
 
@@ -353,7 +353,7 @@ class ChatModelUnitTests(ChatModelTests):
         on invoke and streaming responses.
 
         ``usage_metadata`` is an optional dict attribute on AIMessages that track input
-        and output tokens: https://docs.aiagentsforce.com/api_reference/core/messages/aiagentsforce_core.messages.ai.UsageMetadata.html
+        and output tokens: https://docs.aibaba.world/api_reference/core/messages/aibaba-ai-core.messages.ai.UsageMetadata.html
 
         Example:
 
@@ -428,7 +428,7 @@ class ChatModelUnitTests(ChatModelTests):
         and stream.
 
         ``usage_metadata`` is an optional dict attribute on AIMessages that track input
-        and output tokens: https://docs.aiagentsforce.com/api_reference/core/messages/aiagentsforce_core.messages.ai.UsageMetadata.html
+        and output tokens: https://docs.aibaba.world/api_reference/core/messages/aibaba-ai-core.messages.ai.UsageMetadata.html
 
         It includes optional keys ``input_token_details`` and ``output_token_details``
         that can track usage details associated with special types of tokens, such as
@@ -490,7 +490,7 @@ class ChatModelUnitTests(ChatModelTests):
             If this test fails, ensure that:
 
             1. ``chat_model_params`` is specified and the model can be initialized from those params;
-            2. The model accommodates standard parameters: https://docs.aiagentsforce.com/docs/concepts/chat_models/#standard-parameters
+            2. The model accommodates standard parameters: https://docs.aibaba.world/docs/concepts/chat_models/#standard-parameters
         """  # noqa: E501
         model = self.chat_model_class(
             **{**self.standard_chat_model_params, **self.chat_model_params}
@@ -553,10 +553,10 @@ class ChatModelUnitTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, ensure that the model's ``bind_tools`` method
-            properly handles Pydantic V2 models. ``aiagentsforce_core`` implements
-            a utility function that will accommodate most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            properly handles Pydantic V2 models. ``aibaba-ai-core`` implements
+            a utility function that will accommodate most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``bind_tools`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.bind_tools
+            See example implementation of ``bind_tools`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.bind_tools
         """  # noqa: E501
         if not self.has_tool_calling:
             return
@@ -593,10 +593,10 @@ class ChatModelUnitTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, ensure that the model's ``bind_tools`` method
-            properly handles Pydantic V2 models. ``aiagentsforce_core`` implements
-            a utility function that will accommodate most formats: https://docs.aiagentsforce.com/api_reference/core/utils/aiagentsforce_core.utils.function_calling.convert_to_openai_tool.html
+            properly handles Pydantic V2 models. ``aibaba-ai-core`` implements
+            a utility function that will accommodate most formats: https://docs.aibaba.world/api_reference/core/utils/aibaba-ai-core.utils.function_calling.convert_to_openai_tool.html
 
-            See example implementation of ``with_structured_output`` here: https://docs.aiagentsforce.com/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
+            See example implementation of ``with_structured_output`` here: https://docs.aibaba.world/api_reference/_modules/langchain_openai/chat_models/base.html#BaseChatOpenAI.with_structured_output
         """  # noqa: E501
         if not self.has_structured_output:
             return
@@ -610,7 +610,7 @@ class ChatModelUnitTests(ChatModelTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, check that the model accommodates standard parameters:
-            https://docs.aiagentsforce.com/docs/concepts/chat_models/#standard-parameters
+            https://docs.aibaba.world/docs/concepts/chat_models/#standard-parameters
 
             Check also that the model class is named according to convention
             (e.g., ``ChatProviderName``).

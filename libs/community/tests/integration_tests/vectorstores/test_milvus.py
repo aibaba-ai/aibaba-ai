@@ -2,7 +2,7 @@
 
 from typing import Any, List, Optional
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import Milvus
 from tests.integration_tests.vectorstores.fake_embeddings import (

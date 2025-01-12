@@ -958,7 +958,7 @@ url = "../../core"
 [[package]]
 name = "langchain-tests"
 version = "0.3.4"
-description = "Standard tests for AI Agents Force implementations"
+description = "Standard tests for Aibaba AI implementations"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = []

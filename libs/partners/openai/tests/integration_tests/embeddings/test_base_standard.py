@@ -1,8 +1,8 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Type
 
-from aiagentsforce_core.embeddings import Embeddings
+from aibaba-ai-core.embeddings import Embeddings
 from langchain_tests.integration_tests.embeddings import EmbeddingsIntegrationTests
 
 from aiagentsforce_openai import OpenAIEmbeddings

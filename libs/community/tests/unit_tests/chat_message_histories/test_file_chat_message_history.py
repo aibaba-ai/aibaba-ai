@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Generator
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, HumanMessage
+from aibaba-ai-core.messages import AIMessage, HumanMessage
 
 from aiagentsforce_community.chat_message_histories import FileChatMessageHistory
 

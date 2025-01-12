@@ -1,10 +1,10 @@
 # langchain-xai
 
-This package contains the AI Agents Force integrations for [xAI](https://x.ai/) through their [APIs](https://console.x.ai).
+This package contains the Aibaba AI integrations for [xAI](https://x.ai/) through their [APIs](https://console.x.ai).
 
 ## Installation and Setup
 
-- Install the AI Agents Force partner package
+- Install the Aibaba AI partner package
 
 ```bash
 pip install -U langchain-xai

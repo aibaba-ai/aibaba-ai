@@ -1,9 +1,9 @@
 """Test ZhipuAI Chat Model."""
 
-from aiagentsforce_core.callbacks import CallbackManager
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
-from aiagentsforce_core.outputs import ChatGeneration, LLMResult
-from aiagentsforce_core.tools import tool
+from aibaba-ai-core.callbacks import CallbackManager
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
+from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from aibaba-ai-core.tools import tool
 
 from aiagentsforce_community.chat_models.zhipuai import ChatZhipuAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

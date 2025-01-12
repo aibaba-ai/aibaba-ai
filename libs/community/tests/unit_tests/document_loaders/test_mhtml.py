@@ -20,6 +20,6 @@ def test_mhtml_loader() -> None:
     metadata = docs[0].metadata
     content = docs[0].page_content
 
-    assert metadata["title"] == "AI Agents Force"
+    assert metadata["title"] == "Aibaba AI"
     assert metadata["source"] == str(file_path)
     assert "LANG CHAIN 🦜️🔗Official Home Page" in content

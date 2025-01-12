@@ -1,6 +1,6 @@
 import os
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.graphs import Neo4jGraph
 from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship

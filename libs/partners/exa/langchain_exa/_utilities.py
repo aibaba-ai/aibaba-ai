@@ -2,7 +2,7 @@ import os  # type: ignore[import-not-found]
 from typing import Dict
 
 from exa_py import Exa  # type: ignore
-from aiagentsforce_core.utils import convert_to_secret_str
+from aibaba-ai-core.utils import convert_to_secret_str
 
 
 def initialize_client(values: Dict) -> Dict:

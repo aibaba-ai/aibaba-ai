@@ -7,7 +7,7 @@ from typing import Any, AsyncGenerator, Dict, Generator
 from unittest import mock
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, AIMessageChunk
+from aibaba-ai-core.messages import AIMessage, AIMessageChunk
 from requests.exceptions import HTTPError
 
 from aiagentsforce_community.chat_models import (

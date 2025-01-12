@@ -3,23 +3,23 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "aiagentsforce-tests"
+name = "aibaba-ai-tests"
 version = "0.3.7"
-description = "Standard tests for AI Agents Force implementations"
+description = "Standard tests for Aibaba AI implementations"
 authors = ["Erick Friis <erick@langchain.dev>"]
 readme = "README.md"
-repository = "https://github.com/AI-Agents-Force-SDK/aiagentsforce"
+repository = "https://github.com/aibaba-ai/aibaba-ai"
 license = "MIT"
 
 [tool.mypy]
 disallow_untyped_defs = "True"
 
 [tool.poetry.urls]
-"Source Code" = "https://github.com/AI-Agents-Force-SDK/aiagentsforce/tree/master/libs/standard-tests"
+"Source Code" = "https://github.com/aibaba-ai/aibaba-ai/tree/master/libs/standard-tests"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aiagentsforce-core = "^0.3.22"
+aibaba-ai-core = "^0.3.22"
 pytest = ">=7,<9"
 pytest-asyncio = ">=0.20,<1"
 httpx = ">=0.25.0,<1"
@@ -74,10 +74,10 @@ ruff = ">=0.5"
 [tool.poetry.group.typing.dependencies]
 mypy = "^1"
 
-[tool.poetry.group.test.dependencies.aiagentsforce-core]
+[tool.poetry.group.test.dependencies.aibaba-ai-core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aiagentsforce-core]
+[tool.poetry.group.typing.dependencies.aibaba-ai-core]
 path = "../core"
 develop = true

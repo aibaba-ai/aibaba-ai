@@ -1,7 +1,7 @@
 from typing import Generator
 
 import pytest
-from aiagentsforce_core.vectorstores import VectorStore
+from aibaba-ai-core.vectorstores import VectorStore
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
 from langchain_chroma import Chroma

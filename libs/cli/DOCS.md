@@ -1,9 +1,9 @@
-# `aiagentsforce`
+# `aibaba-ai`
 
 **Usage**:
 
 ```console
-$ aiagentsforce [OPTIONS] COMMAND [ARGS]...
+$ aibaba-ai [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -13,13 +13,13 @@ $ aiagentsforce [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `app`: Manage AI Agents Force apps
+* `app`: Manage Aibaba AI apps
 * `serve`: Start the aiagentsforceapi app, whether it's a...
 * `template`: Develop installable templates.
 
-## `aiagentsforce app`
+## `aibaba-ai app`
 
-Manage AI Agents Force apps
+Manage Aibaba AI apps
 
 **Usage**:
 
@@ -64,7 +64,7 @@ $ aigentsforce app add [OPTIONS] [DEPENDENCIES]...
 * `--branch TEXT`: Install templates from a specific branch
 * `--help`: Show this message and exit.
 
-### `aiagentsforce app new`
+### `aibaba-ai app new`
 
 Create a new aiagentsforceapi application.
 
@@ -118,14 +118,14 @@ $ aigentsforce app serve [OPTIONS]
 * `--app TEXT`: The app to run, e.g. `app.server:app`
 * `--help`: Show this message and exit.
 
-## `aiagentsforce serve`
+## `aibaba-ai serve`
 
 Start the aiagentsforceapi app, whether it's a template or an app.
 
 **Usage**:
 
 ```console
-$ aiagentsforce serve [OPTIONS]
+$ aibaba-ai serve [OPTIONS]
 ```
 
 **Options**:
@@ -134,14 +134,14 @@ $ aiagentsforce serve [OPTIONS]
 * `--host TEXT`: The host to run the server on
 * `--help`: Show this message and exit.
 
-## `aiagentsforce template`
+## `aibaba-ai template`
 
 Develop installable templates.
 
 **Usage**:
 
 ```console
-$ aiagentsforce template [OPTIONS] COMMAND [ARGS]...
+$ aibaba-ai template [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -153,14 +153,14 @@ $ aiagentsforce template [OPTIONS] COMMAND [ARGS]...
 * `new`: Creates a new template package.
 * `serve`: Starts a demo app for this template.
 
-### `aiagentsforce template new`
+### `aibaba-ai template new`
 
 Creates a new template package.
 
 **Usage**:
 
 ```console
-$ aiagentsforce template new [OPTIONS] NAME
+$ aibaba-ai template new [OPTIONS] NAME
 ```
 
 **Arguments**:
@@ -172,14 +172,14 @@ $ aiagentsforce template new [OPTIONS] NAME
 * `--with-poetry / --no-poetry`: Don't run poetry install  [default: no-poetry]
 * `--help`: Show this message and exit.
 
-### `aiagentsforce template serve`
+### `aibaba-ai template serve`
 
 Starts a demo app for this template.
 
 **Usage**:
 
 ```console
-$ aiagentsforce template serve [OPTIONS]
+$ aibaba-ai template serve [OPTIONS]
 ```
 
 **Options**:

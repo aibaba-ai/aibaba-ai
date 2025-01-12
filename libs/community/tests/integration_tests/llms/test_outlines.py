@@ -93,7 +93,7 @@ def test_outlines_json(llm: Outlines) -> None:
         name: str
 
     llm.json_schema = Person
-    output = llm.invoke("Q: Who is the author of AI Agents Force?\n\nA: ")
+    output = llm.invoke("Q: Who is the author of Aibaba AI?\n\nA: ")
     person = Person.model_validate_json(output)
     assert isinstance(person, Person)
 

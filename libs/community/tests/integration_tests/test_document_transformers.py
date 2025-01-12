@@ -1,6 +1,6 @@
 """Integration test for embedding-based redundant doc filtering."""
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (
     EmbeddingsClusteringFilter,

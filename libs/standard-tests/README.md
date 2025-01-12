@@ -1,6 +1,6 @@
 # langchain-tests
 
-This is a testing library for AI Agents Force integrations. It contains the base classes for
+This is a testing library for Aibaba AI integrations. It contains the base classes for
 a standard set of tests.
 
 ## Installation
@@ -34,12 +34,12 @@ To add standard tests to an integration package's e.g. ChatModel, you need to cr
 `tests/unit_tests/test_standard.py`:
     
 ```python
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Type
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
+from aibaba-ai-core.language_models import BaseChatModel
 from langchain_tests.unit_tests import ChatModelUnitTests
 
 from langchain_parrot_chain import ChatParrotChain
@@ -54,12 +54,12 @@ class TestParrotChainStandard(ChatModelUnitTests):
 `tests/integration_tests/test_standard.py`:
     
 ```python
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Type
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
+from aibaba-ai-core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from langchain_parrot_chain import ChatParrotChain

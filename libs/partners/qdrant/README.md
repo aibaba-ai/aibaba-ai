@@ -1,6 +1,6 @@
 # langchain-qdrant
 
-This package contains the AI Agents Force integration with [Qdrant](https://qdrant.tech/).
+This package contains the Aibaba AI integration with [Qdrant](https://qdrant.tech/).
 
 ## Installation
 
@@ -15,7 +15,7 @@ The `Qdrant` class exposes the connection to the Qdrant vector store.
 ```python
 from langchain_qdrant import Qdrant
 
-embeddings = ... # use a AI Agents Force Embeddings class
+embeddings = ... # use a Aibaba AI Embeddings class
 
 vectorstore = Qdrant.from_existing_collection(
     embeddings=embeddings,

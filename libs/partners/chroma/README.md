@@ -1,6 +1,6 @@
 # langchain-chroma
 
-This package contains the AI Agents Force integration with Chroma.
+This package contains the Aibaba AI integration with Chroma.
 
 ## Installation
 
@@ -15,7 +15,7 @@ The `Chroma` class exposes the connection to the Chroma vector store.
 ```python
 from langchain_chroma import Chroma
 
-embeddings = ... # use a AI Agents Force Embeddings class
+embeddings = ... # use a Aibaba AI Embeddings class
 
 vectorstore = Chroma(embeddings=embeddings)
 ```

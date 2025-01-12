@@ -1,7 +1,7 @@
 """Integration test for llm-based relevant doc filtering."""
 
 from langchain.retrievers.document_compressors import LLMChainFilter
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.chat_models import ChatOpenAI
 

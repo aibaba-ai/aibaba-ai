@@ -4,9 +4,9 @@ from unittest import mock
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from aiagentsforce_core.callbacks.manager import CallbackManager
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aibaba-ai-core.callbacks.manager import CallbackManager
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from langchain_tests.unit_tests import ChatModelUnitTests
 from pydantic import SecretStr
 
@@ -225,28 +225,28 @@ class TestChatWriterCustom:
             assert chat.temperature == (0.5 if "temperature" in case else 0.7)
 
     def test_convert_writer_to_aiagentforce_human(self) -> None:
-        """Test converting a human message dict to a AI Agents Force message."""
+        """Test converting a human message dict to a Aibaba AI message."""
         message = {"role": "user", "content": "Hello"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, HumanMessage)
         assert result.content == "Hello"
 
     def test_convert_writer_to_aiagentforce_ai(self) -> None:
-        """Test converting an AI message dict to a AI Agents Force message."""
+        """Test converting an AI message dict to a Aibaba AI message."""
         message = {"role": "assistant", "content": "Hello"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, AIMessage)
         assert result.content == "Hello"
 
     def test_convert_writer_to_aiagentforce_system(self) -> None:
-        """Test converting a system message dict to a AI Agents Force message."""
+        """Test converting a system message dict to a Aibaba AI message."""
         message = {"role": "system", "content": "You are a helpful assistant"}
         result = ChatWriter._convert_writer_to_langchain(message)
         assert isinstance(result, SystemMessage)
         assert result.content == "You are a helpful assistant"
 
     def test_convert_writer_to_aiagentforce_tool_call(self) -> None:
-        """Test converting a tool call message dict to a AI Agents Force message."""
+        """Test converting a tool call message dict to a Aibaba AI message."""
         content = json.dumps({"result": 42})
         message = {
             "role": "tool",
@@ -428,7 +428,7 @@ class TestChatWriterCustom:
 
 @pytest.mark.requires("writerai")
 class TestChatWriterStandart(ChatModelUnitTests):
-    """Test case for ChatWriter that inherits from standard AI Agents Force tests."""
+    """Test case for ChatWriter that inherits from standard Aibaba AI tests."""
 
     @property
     def chat_model_class(self) -> Type[BaseChatModel]:

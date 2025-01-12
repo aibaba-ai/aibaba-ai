@@ -8,7 +8,7 @@ from typing import List, Tuple
 #
 # RuntimeError: asyncio.run() cannot be called from a running event loop
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (

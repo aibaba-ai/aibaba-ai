@@ -6,7 +6,7 @@ from unittest.mock import patch
 from urllib.error import HTTPError
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_loaders.arxiv import ArxivLoader
 

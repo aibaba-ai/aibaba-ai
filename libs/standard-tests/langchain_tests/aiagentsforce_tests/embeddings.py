@@ -1,6 +1,6 @@
 from typing import List
 
-from aiagentsforce_core.embeddings import Embeddings
+from aibaba-ai-core.embeddings import Embeddings
 
 from langchain_tests.unit_tests.embeddings import EmbeddingsTests
 

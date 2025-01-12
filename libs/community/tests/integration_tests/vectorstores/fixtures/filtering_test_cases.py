@@ -1,6 +1,6 @@
 """Module contains test cases for testing filtering of documents in vector stores."""
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 metadatas = [
     {

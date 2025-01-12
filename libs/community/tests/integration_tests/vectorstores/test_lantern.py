@@ -3,7 +3,7 @@
 import os
 from typing import List, Tuple
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.embeddings import FakeEmbeddings
 from aiagentsforce_community.vectorstores import Lantern

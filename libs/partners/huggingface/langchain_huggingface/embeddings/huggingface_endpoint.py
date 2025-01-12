@@ -2,8 +2,8 @@ import json
 import os
 from typing import Any, List, Optional
 
-from aiagentsforce_core.embeddings import Embeddings
-from aiagentsforce_core.utils import from_env
+from aibaba-ai-core.embeddings import Embeddings
+from aibaba-ai-core.utils import from_env
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 from typing_extensions import Self
 

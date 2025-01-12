@@ -1,5 +1,5 @@
 import pytest
-from aiagentsforce_core.utils import get_from_env
+from aibaba-ai-core.utils import get_from_env
 
 from aiagentsforce_community.agent_toolkits import PowerBIToolkit, create_pbi_agent
 from aiagentsforce_community.chat_models import ChatOpenAI

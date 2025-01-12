@@ -2,7 +2,7 @@
 # it relies on pytorch
 
 # import pytest
-# from aiagentsforce_core.documents import Document
+# from aibaba-ai-core.documents import Document
 # from pytest_mock import MockerFixture
 
 # from aiagentsforce_community.document_compressors import LLMLinguaCompressor

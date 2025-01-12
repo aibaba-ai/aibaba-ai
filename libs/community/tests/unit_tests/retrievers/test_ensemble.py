@@ -1,7 +1,7 @@
 import pytest
 from langchain.retrievers.ensemble import EnsembleRetriever
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.embeddings import FakeEmbeddings
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.embeddings import FakeEmbeddings
 
 
 @pytest.mark.requires("rank_bm25")

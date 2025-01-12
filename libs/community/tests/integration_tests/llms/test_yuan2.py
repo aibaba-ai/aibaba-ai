@@ -1,6 +1,6 @@
 """Test Yuan2.0 API wrapper."""
 
-from aiagentsforce_core.outputs import LLMResult
+from aibaba-ai-core.outputs import LLMResult
 
 from aiagentsforce_community.llms import Yuan2
 

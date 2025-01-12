@@ -12,7 +12,7 @@ from aiagentsforce_community.llms.sambanova import SambaNovaCloud, SambaStudio
 def test_sambanova_cloud_call() -> None:
     """Test simple non-streaming call to sambastudio."""
     llm = SambaNovaCloud()
-    output = llm.invoke("What is AI Agents Force")
+    output = llm.invoke("What is Aibaba AI")
     assert output
     assert isinstance(output, str)
 
@@ -20,6 +20,6 @@ def test_sambanova_cloud_call() -> None:
 def test_sambastudio_call() -> None:
     """Test simple non-streaming call to sambastudio."""
     llm = SambaStudio()
-    output = llm.invoke("What is AI Agents Force")
+    output = llm.invoke("What is Aibaba AI")
     assert output
     assert isinstance(output, str)

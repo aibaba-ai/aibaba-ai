@@ -1,4 +1,4 @@
-from aiagentsforce_core.utils import mustache
+from aibaba-ai-core.utils import mustache
 from pydantic import BaseModel
 
 from .core import Invoker, Prompty, SimpleModel

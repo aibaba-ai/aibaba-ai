@@ -1,6 +1,6 @@
 import pytest
 from langchain._api import suppress_aiagentforce_deprecation_warning as sup2
-from aiagentsforce_core._api import suppress_aiagentforce_deprecation_warning as sup1
+from aibaba-ai-core._api import suppress_aiagentforce_deprecation_warning as sup1
 
 from aiagentsforce_cli.namespaces.migrate.generate.generic import (
     generate_simplified_migrations,
@@ -38,11 +38,11 @@ def test_create_json_agent_migration() -> None:
 
 @pytest.mark.xfail(reason="Unknown reason")
 def test_create_single_store_retriever_db() -> None:
-    """Test migration from langchain to aiagentsforce_core"""
+    """Test migration from langchain to aibaba-ai-core"""
     with sup1():
         with sup2():
             raw_migrations = generate_simplified_migrations(
-                from_package="langchain", to_package="aiagentsforce_core"
+                from_package="langchain", to_package="aibaba-ai-core"
             )
             # SingleStore was an old name for VectorStoreRetriever
             single_store_migration = [
@@ -53,6 +53,6 @@ def test_create_single_store_retriever_db() -> None:
             assert single_store_migration == [
                 (
                     "langchain.vectorstores.singlestoredb.SingleStoreDBRetriever",
-                    "aiagentsforce_core.vectorstores.VectorStoreRetriever",
+                    "aibaba-ai-core.vectorstores.VectorStoreRetriever",
                 ),
             ]

@@ -12,7 +12,7 @@ import uuid
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from aiagentsforce_core.outputs import Generation
+from aibaba-ai-core.outputs import Generation
 
 from aiagentsforce_community.cache import AzureCosmosDBSemanticCache
 from aiagentsforce_community.vectorstores.azure_cosmos_db import (

@@ -1,7 +1,7 @@
 """Test OpenSearch functionality."""
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores.opensearch_vector_search import (
     HYBRID_SEARCH,

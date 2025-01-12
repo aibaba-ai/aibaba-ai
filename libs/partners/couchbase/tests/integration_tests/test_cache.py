@@ -8,8 +8,8 @@ import pytest
 from couchbase.auth import PasswordAuthenticator
 from couchbase.cluster import Cluster
 from couchbase.options import ClusterOptions
-from aiagentsforce_core.globals import get_llm_cache, set_llm_cache
-from aiagentsforce_core.outputs import Generation
+from aibaba-ai-core.globals import get_llm_cache, set_llm_cache
+from aibaba-ai-core.outputs import Generation
 
 from langchain_couchbase.cache import CouchbaseCache, CouchbaseSemanticCache
 from tests.utils import (

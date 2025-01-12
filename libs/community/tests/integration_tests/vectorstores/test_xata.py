@@ -2,12 +2,12 @@
 
 Before running this test, please create a Xata database by following
 the instructions from:
-https://docs.aiagentsforce.com/docs/integrations/vectorstores/xata
+https://docs.aibaba.world/docs/integrations/vectorstores/xata
 """
 
 import os
 
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.xata import XataVectorStore

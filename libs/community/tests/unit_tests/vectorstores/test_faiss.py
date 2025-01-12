@@ -6,7 +6,7 @@ import tempfile
 from typing import Union
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.docstore.base import Docstore
 from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
@@ -14,7 +14,7 @@ from aiagentsforce_community.vectorstores.faiss import FAISS
 from aiagentsforce_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
-_PAGE_CONTENT = """This is a page about AI Agents Force.
+_PAGE_CONTENT = """This is a page about Aibaba AI.
 
 It is a really cool framework.
 

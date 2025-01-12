@@ -1,10 +1,10 @@
-"""Standard AI Agents Force interface tests"""
+"""Standard Aibaba AI interface tests"""
 
 from typing import Tuple, Type
 
 import pytest
-from aiagentsforce_core.language_models import BaseChatModel
-from aiagentsforce_core.tools import BaseTool
+from aibaba-ai-core.language_models import BaseChatModel
+from aibaba-ai-core.tools import BaseTool
 from langchain_tests.unit_tests import ChatModelUnitTests
 
 from aiagentsforce_openai import AzureChatOpenAI

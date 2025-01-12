@@ -1,6 +1,6 @@
 # langchain-nomic
 
-This package contains the AI Agents Force integration with Nomic
+This package contains the Aibaba AI integration with Nomic
 
 ## Installation
 

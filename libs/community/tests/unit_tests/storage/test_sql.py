@@ -3,8 +3,8 @@ from typing import AsyncGenerator, Generator, cast
 import pytest
 import sqlalchemy as sa
 from langchain.storage._lc_store import create_kv_docstore, create_lc_store
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.stores import BaseStore
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.stores import BaseStore
 from packaging import version
 
 from aiagentsforce_community.storage.sql import SQLStore

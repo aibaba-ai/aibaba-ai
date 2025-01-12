@@ -27,7 +27,7 @@ export GROQ_API_KEY=gsk_...
 ```
 
 ## Chat Model
-See a [usage example](https://docs.aiagentsforce.com/docs/integrations/chat/groq).
+See a [usage example](https://docs.aibaba.world/docs/integrations/chat/groq).
 
 ## Development
 

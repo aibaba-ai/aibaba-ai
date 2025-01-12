@@ -19,8 +19,8 @@ from typing import (
 
 import openai
 import tiktoken
-from aiagentsforce_core.embeddings import Embeddings
-from aiagentsforce_core.utils import from_env, get_pydantic_field_names, secret_from_env
+from aibaba-ai-core.embeddings import Embeddings
+from aibaba-ai-core.utils import from_env, get_pydantic_field_names, secret_from_env
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 

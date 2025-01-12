@@ -4,7 +4,7 @@ from typing import Tuple, Type, Union
 from unittest import mock
 
 import pytest
-from aiagentsforce_core.tools import BaseTool
+from aibaba-ai-core.tools import BaseTool
 from pydantic import SecretStr
 
 from langchain_tests.base import BaseStandardTests
@@ -108,7 +108,7 @@ class ToolsUnitTests(ToolsTests):
         If this fails, add an `args_schema` to your tool.
 
         See
-        `this guide <https://docs.aiagentsforce.com/docs/how_to/custom_tools/#subclass-basetool>`_
+        `this guide <https://docs.aibaba.world/docs/how_to/custom_tools/#subclass-basetool>`_
         and see how `CalculatorInput` is configured in the
         `CustomCalculatorTool.args_schema` attribute
         """

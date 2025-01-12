@@ -2,7 +2,7 @@ from typing import Any, Dict, List, Optional, Union
 from unittest.mock import AsyncMock, patch
 
 import responses
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.utilities.you import YouSearchAPIWrapper
 

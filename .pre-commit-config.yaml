@@ -13,11 +13,11 @@ repos:
       entry: make -C libs/community format
       files: ^libs/community/
       pass_filenames: false
-    - id: aiagentsforce
-      name: format aiagentsforce
+    - id: aibaba-ai
+      name: format aibaba-ai
       language: system
-      entry: make -C libs/aiagentsforce format
-      files: ^libs/aiagentsforce/
+      entry: make -C libs/aibaba-ai format
+      files: ^libs/aibaba-ai/
       pass_filenames: false
     - id: standard-tests
       name: format standard-tests

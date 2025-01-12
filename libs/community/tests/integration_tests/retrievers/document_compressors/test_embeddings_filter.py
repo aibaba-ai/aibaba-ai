@@ -2,7 +2,7 @@
 
 import numpy as np
 from langchain.retrievers.document_compressors import EmbeddingsFilter
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (
     _DocumentWithState,

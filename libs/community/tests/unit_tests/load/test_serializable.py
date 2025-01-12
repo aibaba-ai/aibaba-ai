@@ -3,7 +3,7 @@ import inspect
 import pkgutil
 from types import ModuleType
 
-from aiagentsforce_core.load.mapping import SERIALIZABLE_MAPPING
+from aibaba-ai-core.load.mapping import SERIALIZABLE_MAPPING
 
 
 def import_all_modules(package_name: str) -> dict:
@@ -83,21 +83,21 @@ def test_serializable_mapping() -> None:
         # exported from the langchain module, but we keep for whoever has
         # already serialized it.
         ("langchain", "prompts", "image", "ImagePromptTemplate"): (
-            "aiagentsforce_core",
+            "aibaba-ai-core",
             "prompts",
             "image",
             "ImagePromptTemplate",
         ),
-        # This is not exported from langchain, only aiagentsforce_core
-        ("aiagentsforce_core", "prompts", "structured", "StructuredPrompt"): (
-            "aiagentsforce_core",
+        # This is not exported from langchain, only aibaba-ai-core
+        ("aibaba-ai-core", "prompts", "structured", "StructuredPrompt"): (
+            "aibaba-ai-core",
             "prompts",
             "structured",
             "StructuredPrompt",
         ),
-        # This is not exported from langchain, only aiagentsforce_core
+        # This is not exported from langchain, only aibaba-ai-core
         ("langchain", "schema", "messages", "RemoveMessage"): (
-            "aiagentsforce_core",
+            "aibaba-ai-core",
             "messages",
             "modifier",
             "RemoveMessage",

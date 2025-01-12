@@ -1,6 +1,6 @@
 # langchain-mistralai
 
-This package contains the AI Agents Force integrations for [MistralAI](https://docs.mistral.ai) through their [mistralai](https://pypi.org/project/mistralai/) SDK.
+This package contains the Aibaba AI integrations for [MistralAI](https://docs.mistral.ai) through their [mistralai](https://pypi.org/project/mistralai/) SDK.
 
 ## Installation
 
@@ -21,7 +21,7 @@ export MISTRAL_API_KEY=your-api-key
 Then initialize
 
 ```python
-from aiagentsforce_core.messages import HumanMessage
+from aibaba-ai-core.messages import HumanMessage
 from langchain_mistralai.chat_models import ChatMistralAI
 
 chat = ChatMistralAI(model="mistral-small")

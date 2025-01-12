@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any, Iterator, List
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.document_loaders import DirectoryLoader
 from aiagentsforce_community.document_loaders.text import TextLoader

@@ -1,3 +1,3 @@
 This package has moved!
 
-https://github.com/AI-Agents-Force-SDK/langchain-ai21/tree/main/libs/ai21
+https://github.com/aibaba-ai/aibaba-ai-ai21/tree/main/libs/ai21

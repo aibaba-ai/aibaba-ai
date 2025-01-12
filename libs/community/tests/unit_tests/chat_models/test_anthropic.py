@@ -4,7 +4,7 @@ import os
 from typing import List
 
 import pytest
-from aiagentsforce_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
 from aiagentsforce_community.chat_models import ChatAnthropic
 from aiagentsforce_community.chat_models.anthropic import (

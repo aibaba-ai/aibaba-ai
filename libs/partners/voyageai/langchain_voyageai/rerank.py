@@ -5,10 +5,10 @@ from copy import deepcopy
 from typing import Any, Dict, Optional, Sequence, Union
 
 import voyageai  # type: ignore
-from aiagentsforce_core.callbacks.manager import Callbacks
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.documents.compressor import BaseDocumentCompressor
-from aiagentsforce_core.utils import convert_to_secret_str
+from aibaba-ai-core.callbacks.manager import Callbacks
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.documents.compressor import BaseDocumentCompressor
+from aibaba-ai-core.utils import convert_to_secret_str
 from pydantic import ConfigDict, SecretStr, model_validator
 from voyageai.object import RerankingObject  # type: ignore
 

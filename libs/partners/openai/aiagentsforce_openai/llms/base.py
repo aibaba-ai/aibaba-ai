@@ -20,14 +20,14 @@ from typing import (
 
 import openai
 import tiktoken
-from aiagentsforce_core.callbacks import (
+from aibaba-ai-core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aiagentsforce_core.language_models.llms import BaseLLM
-from aiagentsforce_core.outputs import Generation, GenerationChunk, LLMResult
-from aiagentsforce_core.utils import get_pydantic_field_names
-from aiagentsforce_core.utils.utils import _build_model_kwargs, from_env, secret_from_env
+from aibaba-ai-core.language_models.llms import BaseLLM
+from aibaba-ai-core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba-ai-core.utils import get_pydantic_field_names
+from aibaba-ai-core.utils.utils import _build_model_kwargs, from_env, secret_from_env
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 

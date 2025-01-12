@@ -7,7 +7,7 @@ from typing import Generator, Union
 from uuid import uuid4
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.retrievers.weaviate_hybrid_search import (
     WeaviateHybridSearchRetriever,

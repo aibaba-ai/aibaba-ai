@@ -1,5 +1,5 @@
 """
-AI Agents Force Couchbase Caches
+Aibaba AI Couchbase Caches
 
 Functions "_hash", "_loads_generations" and "_dumps_generations"
 are duplicated in this utility from modules:
@@ -13,11 +13,11 @@ from datetime import timedelta
 from typing import Any, Dict, Optional, Union
 
 from couchbase.cluster import Cluster
-from aiagentsforce_core.caches import RETURN_VAL_TYPE, BaseCache
-from aiagentsforce_core.embeddings import Embeddings
-from aiagentsforce_core.load.dump import dumps
-from aiagentsforce_core.load.load import loads
-from aiagentsforce_core.outputs import Generation
+from aibaba-ai-core.caches import RETURN_VAL_TYPE, BaseCache
+from aibaba-ai-core.embeddings import Embeddings
+from aibaba-ai-core.load.dump import dumps
+from aibaba-ai-core.load.load import loads
+from aibaba-ai-core.outputs import Generation
 
 from langchain_couchbase.vectorstores import CouchbaseVectorStore
 

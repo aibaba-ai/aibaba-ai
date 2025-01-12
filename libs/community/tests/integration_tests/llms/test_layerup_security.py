@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
 import pytest
-from aiagentsforce_core.callbacks import CallbackManagerForLLMRun
-from aiagentsforce_core.language_models.llms import LLM
+from aibaba-ai-core.callbacks import CallbackManagerForLLMRun
+from aibaba-ai-core.language_models.llms import LLM
 
 from aiagentsforce_community.llms.layerup_security import LayerupSecurity
 

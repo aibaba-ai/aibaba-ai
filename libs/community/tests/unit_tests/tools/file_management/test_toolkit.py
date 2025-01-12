@@ -3,7 +3,7 @@
 from tempfile import TemporaryDirectory
 
 import pytest
-from aiagentsforce_core.tools import BaseTool
+from aibaba-ai-core.tools import BaseTool
 
 from aiagentsforce_community.agent_toolkits.file_management.toolkit import (
     FileManagementToolkit,

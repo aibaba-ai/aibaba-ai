@@ -6,7 +6,7 @@ from time import sleep
 from typing import Any, Optional
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.embeddings import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.documentdb import (
@@ -57,7 +57,7 @@ cd libs/community
 make test TEST_FILE=tests/integration_tests/vectorstores/test_documentdb.py
 
 NOTE: You will first need to follow the contributor setup steps:
-https://docs.aiagentsforce.com/docs/contributing/code. You will also need to install
+https://docs.aibaba.world/docs/contributing/code. You will also need to install
 `pymongo` via `poetry`. You can also run the test directly using `pytest`, but please
 make sure to install all dependencies.
 """

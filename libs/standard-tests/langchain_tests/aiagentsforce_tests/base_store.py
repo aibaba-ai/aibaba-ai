@@ -10,7 +10,7 @@ from abc import abstractmethod
 from typing import AsyncGenerator, Generator, Generic, Tuple, TypeVar
 
 import pytest
-from aiagentsforce_core.stores import BaseStore
+from aibaba-ai-core.stores import BaseStore
 
 from langchain_tests.base import BaseStandardTests
 

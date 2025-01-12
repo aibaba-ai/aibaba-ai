@@ -2,7 +2,7 @@
 
 from typing import Any, Union
 
-from aiagentsforce_core.callbacks import BaseCallbackHandler
+from aibaba-ai-core.callbacks import BaseCallbackHandler
 from pydantic import BaseModel
 
 

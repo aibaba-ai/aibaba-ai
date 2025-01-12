@@ -2,8 +2,8 @@ from abc import abstractmethod
 from typing import Type
 
 import pytest
-from aiagentsforce_core.documents import Document
-from aiagentsforce_core.retrievers import BaseRetriever
+from aibaba-ai-core.documents import Document
+from aibaba-ai-core.retrievers import BaseRetriever
 
 from langchain_tests.base import BaseStandardTests
 
@@ -112,7 +112,7 @@ class RetrieversIntegrationTests(BaseStandardTests):
         .. dropdown:: Troubleshooting
 
             If this test fails, the retriever's invoke method does not return a list of
-            `aiagentsforce_core.document.Document` objects. Please confirm that your
+            `aibaba-ai-core.document.Document` objects. Please confirm that your
             `_get_relevant_documents` method returns a list of `Document` objects.
         """
         result = retriever.invoke(self.retriever_query_example)

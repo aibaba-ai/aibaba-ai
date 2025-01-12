@@ -3,12 +3,12 @@ requires = [ "poetry-core>=1.0.0",]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "aiagentsforce-prompty"
+name = "aibaba-ai-prompty"
 version = "0.1.1"
-description = "An integration package connecting Prompty and AI Agents Force"
+description = "An integration package connecting Prompty and Aibaba AI"
 authors = []
 readme = "README.md"
-repository = "https://github.com/AI-Agents-Force-SDK/aiagentsforce"
+repository = "https://github.com/aibaba-ai/aibaba-ai"
 license = "MIT"
 
 [tool.ruff]
@@ -18,12 +18,12 @@ select = [ "E", "F", "I",]
 disallow_untyped_defs = "True"
 
 [tool.poetry.urls]
-"Source Code" = "https://github.com/AI-Agents-Force-SDK/aiagentsforce/tree/master/libs/partners/prompty"
-"Release Notes" = "https://github.com/AI-Agents-Force-SDK/aiagentsforce/releases?q=tag%3A%22aiagentsforce-prompty%3D%3D0%22&expanded=true"
+"Source Code" = "https://github.com/aibaba-ai/aibaba-ai/tree/master/libs/partners/prompty"
+"Release Notes" = "https://github.com/aibaba-ai/aibaba-ai/releases?q=tag%3A%22aiagentsforce-prompty%3D%3D0%22&expanded=true"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aiagentsforce-core = "^0.3.15"
+aibaba-ai-core = "^0.3.15"
 pyyaml = "^6.0.1"
 
 [tool.coverage.run]
@@ -72,22 +72,22 @@ types-pyyaml = "^6.0.12.20240311"
 mypy = "^0.991"
 types-pyyaml = "^6.0.12.20240311"
 
-[tool.poetry.group.test.dependencies.aiagentsforce-core]
+[tool.poetry.group.test.dependencies.aibaba-ai-core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.test.dependencies.aiagentsforce]
-path = "../../aiagentsforce"
+[tool.poetry.group.test.dependencies.aibaba-ai]
+path = "../../aibaba-ai"
 develop = true
 
-[tool.poetry.group.test.dependencies.aiagentsforce-text-splitters]
+[tool.poetry.group.test.dependencies.aibaba-ai-text-splitters]
 path = "../../text-splitters"
 develop = true
 
-[tool.poetry.group.dev.dependencies.aiagentsforce-core]
+[tool.poetry.group.dev.dependencies.aibaba-ai-core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aiagentsforce-core]
+[tool.poetry.group.typing.dependencies.aibaba-ai-core]
 path = "../../core"
 develop = true

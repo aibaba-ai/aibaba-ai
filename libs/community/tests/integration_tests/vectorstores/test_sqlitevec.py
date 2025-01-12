@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 import pytest
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 
 from aiagentsforce_community.vectorstores import SQLiteVec
 from tests.integration_tests.vectorstores.fake_embeddings import (

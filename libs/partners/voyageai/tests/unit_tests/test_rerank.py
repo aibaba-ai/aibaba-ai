@@ -2,7 +2,7 @@ from collections import namedtuple
 from typing import Any
 
 import pytest  # type: ignore
-from aiagentsforce_core.documents import Document
+from aibaba-ai-core.documents import Document
 from voyageai.api_resources import VoyageResponse  # type: ignore
 from voyageai.object import RerankingObject  # type: ignore
 

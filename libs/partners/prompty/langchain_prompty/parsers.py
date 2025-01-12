@@ -2,7 +2,7 @@ import base64
 import re
 from typing import Dict, List, Type, Union
 
-from aiagentsforce_core.messages import (
+from aibaba-ai-core.messages import (
     AIMessage,
     BaseMessage,
     FunctionMessage,

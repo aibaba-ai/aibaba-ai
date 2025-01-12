@@ -3,7 +3,7 @@
 import logging
 from typing import Any
 
-from aiagentsforce_core.messages import AIMessage
+from aibaba-ai-core.messages import AIMessage
 
 from aiagentsforce_community.chat_models.kinetica import ChatKinetica, KineticaUtil
 
