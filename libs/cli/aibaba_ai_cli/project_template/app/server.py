@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-from aiagentsforceapi import add_routes
+from aibaba_ai import add_routes
 
 app = FastAPI()
 

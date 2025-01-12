@@ -6,9 +6,9 @@ Development Scripts for template packages
 from typing import Sequence
 
 from fastapi import FastAPI
-from aiagentsforceapi import add_routes
+from aibaba_ai import add_routes
 
-from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli.utils.packages import get_aibaba_ai_export, get_package_root
 
 
 def create_demo_server(
@@ -23,7 +23,7 @@ def create_demo_server(
     package_root = get_package_root()
     pyproject = package_root / "pyproject.toml"
     try:
-        package = get_aiagentsforceapi_export(pyproject)
+        package = get_aibaba_ai_export(pyproject)
 
         mod = __import__(package["module"], fromlist=[package["attr"]])
 

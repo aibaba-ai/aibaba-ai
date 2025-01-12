@@ -18,13 +18,13 @@ def get_package_root(cwd: Optional[Path] = None) -> Path:
     raise FileNotFoundError("No pyproject.toml found")
 
 
-class aiagentsforceapiExport(TypedDict):
+class aibaba_aiExport(TypedDict):
     """
-    Fields from pyproject.toml that are relevant to aiagentsforceapi
+    Fields from pyproject.toml that are relevant to aibaba_ai
 
     Attributes:
-        module: The module to import from, tool.aiagentsforceapi.export_module
-        attr: The attribute to import from the module, tool.aiagentsforceapi.export_attr
+        module: The module to import from, tool.aibaba_ai.export_module
+        attr: The attribute to import from the module, tool.aibaba_ai.export_attr
         package_name: The name of the package, tool.poetry.name
     """
 
@@ -33,13 +33,13 @@ class aiagentsforceapiExport(TypedDict):
     package_name: str
 
 
-def get_aiagentsforceapi_export(filepath: Path) -> aiagentsforceapiExport:
+def get_aibaba_ai_export(filepath: Path) -> aibaba_aiExport:
     with open(filepath) as f:
         data: Dict[str, Any] = load(f)
     try:
-        module = data["tool"]["aiagentsforceapi"]["export_module"]
-        attr = data["tool"]["aiagentsforceapi"]["export_attr"]
+        module = data["tool"]["aibaba_ai"]["export_module"]
+        attr = data["tool"]["aibaba_ai"]["export_attr"]
         package_name = data["tool"]["poetry"]["name"]
     except KeyError as e:
-        raise KeyError("Invalid aiagentsforceapi PyProject.toml") from e
-    return aiagentsforceapiExport(module=module, attr=attr, package_name=package_name)
+        raise KeyError("Invalid aibaba_ai PyProject.toml") from e
+    return aibaba_aiExport(module=module, attr=attr, package_name=package_name)

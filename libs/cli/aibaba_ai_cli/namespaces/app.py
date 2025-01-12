@@ -20,8 +20,8 @@ from aibaba_ai_cli.utils.git import (
     update_repo,
 )
 from aibaba_ai_cli.utils.packages import (
-    aiagentsforceapiExport,
-    get_aiagentsforceapi_export,
+    aibaba_aiExport,
+    get_aibaba_ai_export,
     get_package_root,
 )
 from aibaba_ai_cli.utils.pyproject import (
@@ -65,7 +65,7 @@ def new(
     ] = False,
 ):
     """
-    Create a new aiagentsforceapi application.
+    Create a new aibaba_ai application.
     """
     has_packages = package is not None and len(package) > 0
 
@@ -157,7 +157,7 @@ def add(
     ],
 ):
     """
-    Adds the specified template to the current aiagentsforceapi app.
+    Adds the specified template to the current aibaba_ai app.
 
     e.g.:
     langchain app add extraction-openai-functions
@@ -190,7 +190,7 @@ def add(
 
     installed_destination_paths: List[Path] = []
     installed_destination_names: List[str] = []
-    installed_exports: List[aiagentsforceapiExport] = []
+    installed_exports: List[aibaba_aiExport] = []
 
     for (git, ref), group_deps in grouped.items():
         if len(group_deps) == 1:
@@ -209,10 +209,10 @@ def add(
             if not pyproject_path.exists():
                 typer.echo(f"Could not find {pyproject_path}")
                 continue
-            aiagentsforceapi_export = get_aiagentsforceapi_export(pyproject_path)
+            aibaba_ai_export = get_aibaba_ai_export(pyproject_path)
 
             # default path to package_name
-            inner_api_path = dep["api_path"] or aiagentsforceapi_export["package_name"]
+            inner_api_path = dep["api_path"] or aibaba_ai_export["package_name"]
 
             destination_path = package_dir / inner_api_path
             if destination_path.exists():
@@ -224,7 +224,7 @@ def add(
             typer.echo(f" - Downloaded {dep['subdirectory']} to {inner_api_path}")
             installed_destination_paths.append(destination_path)
             installed_destination_names.append(inner_api_path)
-            installed_exports.append(aiagentsforceapi_export)
+            installed_exports.append(aibaba_ai_export)
 
     if len(installed_destination_paths) == 0:
         typer.echo("No packages installed. Exiting.")
@@ -302,7 +302,7 @@ def remove(
     ] = None,
 ):
     """
-    Removes the specified package from the current aiagentsforceapi app.
+    Removes the specified package from the current aibaba_ai app.
     """
 
     project_root = get_package_root(project_dir)
@@ -320,8 +320,8 @@ def remove(
             continue
         try:
             pyproject = package_dir / "pyproject.toml"
-            aiagentsforceapi_export = get_aiagentsforceapi_export(pyproject)
-            typer.echo(f"Removing {aiagentsforceapi_export['package_name']}...")
+            aibaba_ai_export = get_aibaba_ai_export(pyproject)
+            typer.echo(f"Removing {aibaba_ai_export['package_name']}...")
 
             shutil.rmtree(package_dir)
             remove_deps.append(api_path)
@@ -349,7 +349,7 @@ def serve(
     ] = None,
 ) -> None:
     """
-    Starts the aiagentsforceapi app.
+    Starts the aibaba_ai app.
     """
 
     # add current dir as first entry of path

@@ -8,7 +8,8 @@ from aibaba_ai_cli.namespaces import app as app_namespace
 from aibaba_ai_cli.namespaces import integration as integration_namespace
 from aibaba_ai_cli.namespaces import template as template_namespace
 from aibaba_ai_cli.namespaces.migrate import main as migrate_namespace
-from aibaba_ai_cli.utils.packages import get_aiagentsforceapi_export, get_package_root
+from aibaba_ai_cli.utils.packages import get_aibaba_ai_export, get_package_root
+from aibaba_ai_cli.utils.docker import build_docker_image
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
 app.add_typer(
@@ -35,7 +36,7 @@ app.command(
 
 def version_callback(show_version: bool) -> None:
     if show_version:
-        typer.echo(f"aibaba-ai-cli {__version__}")
+        typer.echo(f"aibaba_ai_cli {__version__}")
         raise typer.Exit()
 
 
@@ -71,13 +72,32 @@ def serve(
     try:
         project_dir = get_package_root()
         pyproject = project_dir / "pyproject.toml"
-        get_aiagentsforceapi_export(pyproject)
+        get_aibaba_ai_export(pyproject)
     except KeyError:
         # not a template
         app_namespace.serve(port=port, host=host)
     else:
         # is a template
         template_namespace.serve(port=port, host=host)
+
+
+@app.command()
+def image(
+    *,
+    tag: Annotated[
+        Optional[str], 
+        typer.Option(help="The tag for the Docker image. Defaults to 'latest'")
+    ] = "latest",
+    port: Annotated[
+        Optional[int], 
+        typer.Option(help="The port to expose the REST API on. Defaults to 8000")
+    ] = 8000,
+) -> None:
+    """
+    Build a Docker image for the Python application with REST API exposed.
+    """
+    project_dir = get_package_root()
+    build_docker_image(project_dir, tag=tag, port=port)
 
 
 if __name__ == "__main__":

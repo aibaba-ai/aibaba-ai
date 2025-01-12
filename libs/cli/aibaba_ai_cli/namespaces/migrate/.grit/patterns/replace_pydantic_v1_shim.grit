@@ -8,7 +8,7 @@ pattern replace_pydantic_v1_shim() {
                 $IMPORT <: or {
                     "aibaba_ai_core.pydantic_v1",
                     "langchain.pydantic_v1",
-                    "aiagentsforceapi.pydantic_v1",
+                    "aibaba_ai.pydantic_v1",
                 },
                 $IMPORT => `pydantic`
             },
@@ -16,7 +16,7 @@ pattern replace_pydantic_v1_shim() {
                 $IMPORT <: or {
                     "aibaba_ai_core.pydantic_v1.data_classes",
                     "langchain.pydantic_v1.data_classes",
-                    "aiagentsforceapi.pydantic_v1.data_classes",
+                    "aibaba_ai.pydantic_v1.data_classes",
                 },
                 $IMPORT => `pydantic.data_classes`
             },
@@ -24,7 +24,7 @@ pattern replace_pydantic_v1_shim() {
                 $IMPORT <: or {
                     "aibaba_ai_core.pydantic_v1.main",
                     "langchain.pydantic_v1.main",
-                    "aiagentsforceapi.pydantic_v1.main",
+                    "aibaba_ai.pydantic_v1.main",
                 },
                 $IMPORT => `pydantic.main`
             },

@@ -13,5 +13,5 @@ _prompt = ChatPromptTemplate.from_messages(
 _model = ChatOpenAI()
 
 # if you update this, you MUST also update ../pyproject.toml
-# with the new `tool.aiagentsforceapi.export_attr`
+# with the new `tool.aibaba_ai.export_attr`
 chain = _prompt | _model

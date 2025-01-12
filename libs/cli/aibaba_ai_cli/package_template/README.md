@@ -43,7 +43,7 @@ export LANGCHAIN_API_KEY=<your-api-key>
 export LANGCHAIN_PROJECT=<your-project>  # if not specified, defaults to "default"
 ```
 
-If you are inside this directory, then you can spin up a aiagentsforceapi instance directly by:
+If you are inside this directory, then you can spin up a aibaba_ai instance directly by:
 
 ```shell
 langchain serve
@@ -58,7 +58,7 @@ We can access the playground at [http://127.0.0.1:8000/__package_name__/playgrou
 We can access the template from code with:
 
 ```python
-from aiagentsforceapi.client import RemoteRunnable
+from aibaba_ai.client import RemoteRunnable
 
 runnable = RemoteRunnable("http://localhost:8000/__package_name__")
 ```
