@@ -26,7 +26,7 @@ python = ">=3.9,<4"
 qdrant-client = "^1.10.1"
 fastembed = { version = "^0.3.3", python = ">=3.9,<3.13", optional = true }
 pydantic = "^2.7.4"
-langchain-core = ">=0.2.43,<0.4.0,!=0.3.0,!=0.3.1,!=0.3.2,!=0.3.3,!=0.3.4,!=0.3.5,!=0.3.6,!=0.3.7,!=0.3.8,!=0.3.9,!=0.3.10,!=0.3.11,!=0.3.12,!=0.3.13,!=0.3.14"
+aibaba_ai_core = ">=0.2.43,<0.4.0,!=0.3.0,!=0.3.1,!=0.3.2,!=0.3.3,!=0.3.4,!=0.3.5,!=0.3.6,!=0.3.7,!=0.3.8,!=0.3.9,!=0.3.10,!=0.3.11,!=0.3.12,!=0.3.13,!=0.3.14"
 
 
 [tool.poetry.extras]
@@ -67,23 +67,23 @@ pytest-watcher = "^0.3.4"
 pytest-asyncio = "^0.21.1"
 requests = "^2.31.0"
 pytest-socket = "^0.7.0"
-[[tool.poetry.group.test.dependencies.langchain-core]]
+[[tool.poetry.group.test.dependencies.aibaba_ai_core]]
 path = "../../core"
 develop = true
 python = ">=3.9"
 
-[[tool.poetry.group.test.dependencies.langchain-core]]
+[[tool.poetry.group.test.dependencies.aibaba_ai_core]]
 version = ">=0.1.40,<0.3"
 python = "<3.9"
 
 
 [tool.poetry.group.dev.dependencies]
-[[tool.poetry.group.dev.dependencies.langchain-core]]
+[[tool.poetry.group.dev.dependencies.aibaba_ai_core]]
 path = "../../core"
 develop = true
 python = ">=3.9"
 
-[[tool.poetry.group.dev.dependencies.langchain-core]]
+[[tool.poetry.group.dev.dependencies.aibaba_ai_core]]
 version = ">=0.1.52,<0.3"
 python = "<3.9"
 
@@ -98,11 +98,11 @@ ruff = "^0.5"
 [tool.poetry.group.typing.dependencies]
 mypy = "^1.10"
 simsimd = "^6.0.0"
-[[tool.poetry.group.typing.dependencies.langchain-core]]
+[[tool.poetry.group.typing.dependencies.aibaba_ai_core]]
 path = "../../core"
 develop = true
 python = ">=3.9"
 
-[[tool.poetry.group.typing.dependencies.langchain-core]]
+[[tool.poetry.group.typing.dependencies.aibaba_ai_core]]
 version = ">=0.1.52,<0.3"
 python = "<3.9"

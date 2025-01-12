@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 import pytest
-from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage
+from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.chat_message_histories import ZepChatMessageHistory

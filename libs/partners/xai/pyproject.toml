@@ -21,7 +21,7 @@ disallow_untyped_defs = "True"
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
 langchain-openai = ">=0.2,<0.3"
-langchain-core = "^0.3.27"
+aibaba_ai_core = "^0.3.27"
 requests = ">=2,<3"
 aiohttp = ">=3.9.1,<4"
 
@@ -73,8 +73,8 @@ pytest-watcher = "^0.3.4"
 pytest-asyncio = "^0.21.1"
 docarray = "^0.32.1"
 langchain-openai = { path = "../openai", develop = true }
-langchain-core = { path = "../../core", develop = true }
-langchain-tests = { path = "../../standard-tests", develop = true }
+aibaba_ai_core = { path = "../../core", develop = true }
+aibaba_ai_tests = { path = "../../standard-tests", develop = true }
 pytest-socket = "^0.7.0"
 
 
@@ -103,9 +103,9 @@ ruff = "^0.5"
 [tool.poetry.group.typing.dependencies]
 mypy = "^1.10"
 types-requests = "^2"
-langchain-core = { path = "../../core", develop = true }
+aibaba_ai_core = { path = "../../core", develop = true }
 
 
 
 [tool.poetry.group.dev.dependencies]
-langchain-core = { path = "../../core", develop = true }
+aibaba_ai_core = { path = "../../core", develop = true }

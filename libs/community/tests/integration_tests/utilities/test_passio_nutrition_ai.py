@@ -1,6 +1,6 @@
 """Integration test for Bing Search API Wrapper."""
 
-from aibaba-ai-core.utils import get_from_env
+from alibaba_ai_core.utils import get_from_env
 
 from aiagentsforce_community.utilities.passio_nutrition_ai import (
     ManagedPassioLifeAuth,

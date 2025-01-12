@@ -18,9 +18,9 @@ from couchbase.cluster import Cluster
 from couchbase.exceptions import DocumentExistsException, DocumentNotFoundException
 from couchbase.options import SearchOptions
 from couchbase.vector_search import VectorQuery, VectorSearch
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 
 class CouchbaseVectorStore(VectorStore):
@@ -90,7 +90,7 @@ class CouchbaseVectorStore(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from aibaba-ai-core.documents import Document
+            from aibaba_ai_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

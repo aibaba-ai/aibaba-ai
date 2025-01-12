@@ -4,9 +4,9 @@ import importlib.util
 import logging
 from typing import Any, Dict, Iterator, List, Mapping, Optional
 
-from aibaba-ai-core.callbacks import CallbackManagerForLLMRun
-from aibaba-ai-core.language_models.llms import BaseLLM
-from aibaba-ai-core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from pydantic import ConfigDict, model_validator
 
 DEFAULT_MODEL_ID = "gpt2"

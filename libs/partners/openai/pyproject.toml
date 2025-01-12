@@ -3,7 +3,7 @@ requires = [ "poetry-core>=1.0.0",]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "aibaba-ai-openai"
+name = "aibaba_ai_openai"
 version = "0.2.14"
 description = "An integration package connecting OpenAI and Aibaba AI"
 authors = []
@@ -23,7 +23,7 @@ ignore_missing_imports = true
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-langchain-core = "^0.3.27"
+aibaba_ai_core = "^0.3.27"
 openai = "^1.58.1"
 tiktoken = ">=0.7,<1"
 
@@ -41,7 +41,7 @@ omit = [ "tests/*",]
 addopts = "--snapshot-warn-unused --strict-markers --strict-config --durations=5 --cov=langchain_openai"
 markers = [ "requires: mark tests as requiring a specific library", "compile: mark placeholder test used to compile integration tests without running them", "scheduled: mark tests to run in scheduled testing",]
 asyncio_mode = "auto"
-filterwarnings = [ "ignore::aibaba-ai-core._api.beta_decorator.AI Agents ForceBetaWarning",]
+filterwarnings = [ "ignore::aibaba_ai_core._api.beta_decorator.AI Agents ForceBetaWarning",]
 
 [tool.poetry.group.test]
 optional = true
@@ -96,18 +96,18 @@ python = ">=3.12"
 mypy = "^1.10"
 types-tqdm = "^4.66.0.5"
 
-[tool.poetry.group.test.dependencies.langchain-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.test.dependencies.langchain-tests]
+[tool.poetry.group.test.dependencies.aibaba_ai_tests]
 path = "../../standard-tests"
 develop = true
 
-[tool.poetry.group.dev.dependencies.langchain-core]
+[tool.poetry.group.dev.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true

@@ -3,8 +3,8 @@
 from typing import Any, Dict, List, Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.language_models import BaseChatModel
+from alibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,

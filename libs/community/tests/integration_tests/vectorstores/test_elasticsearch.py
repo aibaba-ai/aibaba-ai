@@ -7,7 +7,7 @@ import uuid
 from typing import Any, Dict, Generator, List, Union
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.vectorstores.elasticsearch import ElasticsearchStore
 from tests.integration_tests.vectorstores.fake_embeddings import (

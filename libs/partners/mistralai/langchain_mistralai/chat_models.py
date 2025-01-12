@@ -26,19 +26,19 @@ from typing import (
 
 import httpx
 from httpx_sse import EventSource, aconnect_sse, connect_sse
-from aibaba-ai-core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aibaba-ai-core.language_models import LanguageModelInput
-from aibaba-ai-core.language_models.chat_models import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     LangSmithParams,
     agenerate_from_stream,
     generate_from_stream,
 )
-from aibaba-ai-core.language_models.llms import create_base_retry_decorator
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -53,24 +53,24 @@ from aibaba-ai-core.messages import (
     ToolCall,
     ToolMessage,
 )
-from aibaba-ai-core.messages.tool import tool_call_chunk
-from aibaba-ai-core.output_parsers import (
+from aibaba_ai_core.messages.tool import tool_call_chunk
+from aibaba_ai_core.output_parsers import (
     JsonOutputParser,
     PydanticOutputParser,
 )
-from aibaba-ai-core.output_parsers.base import OutputParserLike
-from aibaba-ai-core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
     make_invalid_tool_call,
     parse_tool_call,
 )
-from aibaba-ai-core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from aibaba-ai-core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from aibaba-ai-core.tools import BaseTool
-from aibaba-ai-core.utils import secret_from_env
-from aibaba-ai-core.utils.function_calling import convert_to_openai_tool
-from aibaba-ai-core.utils.pydantic import is_basemodel_subclass
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import secret_from_env
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import is_basemodel_subclass
 from pydantic import (
     BaseModel,
     ConfigDict,
@@ -669,7 +669,7 @@ class ChatMistralAI(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`aibaba-ai-core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call.
                 Must be the name of the single provided function or
                 "auto" to automatically determine which function to call
@@ -702,7 +702,7 @@ class ChatMistralAI(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`aibaba-ai-core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -726,7 +726,7 @@ class ChatMistralAI(BaseChatModel):
                 with keys "raw", "parsed", and "parsing_error".
 
         Returns:
-            A Runnable that takes same inputs as a :class:`aibaba-ai-core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aibaba_ai_core.language_models.chat.BaseChatModel`.
 
             If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs
             an instance of ``schema`` (i.e., a Pydantic object).

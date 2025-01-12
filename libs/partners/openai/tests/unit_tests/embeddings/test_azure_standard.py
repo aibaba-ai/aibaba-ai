@@ -1,6 +1,6 @@
 from typing import Tuple, Type
 
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from langchain_tests.unit_tests.embeddings import EmbeddingsUnitTests
 
 from aiagentsforce_openai import AzureOpenAIEmbeddings

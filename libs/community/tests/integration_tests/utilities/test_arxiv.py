@@ -3,8 +3,8 @@
 from typing import Any, List
 
 import pytest
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.tools import BaseTool
+from alibaba_ai_core.documents import Document
+from alibaba_ai_core.tools import BaseTool
 
 from aiagentsforce_community.tools import ArxivQueryRun
 from aiagentsforce_community.utilities import ArxivAPIWrapper

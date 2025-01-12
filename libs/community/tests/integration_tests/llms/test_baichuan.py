@@ -1,6 +1,6 @@
 """Test Baichuan LLM Endpoint."""
 
-from aibaba-ai-core.outputs import LLMResult
+from alibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_community.llms.baichuan import BaichuanLLM
 

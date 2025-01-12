@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
 from aiagentsforce_community.vectorstores.inmemory import InMemoryVectorStore

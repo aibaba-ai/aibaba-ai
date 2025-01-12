@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.document_loaders import GeoDataFrameLoader
 

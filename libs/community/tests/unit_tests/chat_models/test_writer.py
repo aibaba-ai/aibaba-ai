@@ -4,9 +4,9 @@ from unittest import mock
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from aibaba-ai-core.callbacks.manager import CallbackManager
-from aibaba-ai-core.language_models import BaseChatModel
-from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from alibaba_ai_core.callbacks.manager import CallbackManager
+from alibaba_ai_core.language_models import BaseChatModel
+from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 from langchain_tests.unit_tests import ChatModelUnitTests
 from pydantic import SecretStr
 

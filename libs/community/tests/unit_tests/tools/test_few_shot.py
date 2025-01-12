@@ -1,8 +1,8 @@
 from typing import Type
 
-from aibaba-ai-core.embeddings.fake import DeterministicFakeEmbedding
-from aibaba-ai-core.example_selectors import SemanticSimilarityExampleSelector
-from aibaba-ai-core.vectorstores import InMemoryVectorStore
+from alibaba_ai_core.embeddings.fake import DeterministicFakeEmbedding
+from alibaba_ai_core.example_selectors import SemanticSimilarityExampleSelector
+from alibaba_ai_core.vectorstores import InMemoryVectorStore
 from langchain_tests.integration_tests import ToolsIntegrationTests
 from langchain_tests.unit_tests import ToolsUnitTests
 

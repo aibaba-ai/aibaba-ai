@@ -80,7 +80,7 @@ def test_test_group_dependencies(poetry_conf: Mapping[str, Any]) -> None:
             "duckdb-engine",
             "freezegun",
             "langchain-core",
-            "langchain-tests",
+            "aibaba_ai_tests",
             "langchain",
             "lark",
             "pandas",
@@ -104,7 +104,7 @@ def test_test_group_dependencies(poetry_conf: Mapping[str, Any]) -> None:
 
 def test_imports() -> None:
     """Test that you can import all top level things okay."""
-    from aibaba-ai-core.prompts import BasePromptTemplate  # noqa: F401
+    from alibaba_ai_core.prompts import BasePromptTemplate  # noqa: F401
 
     from aiagentsforce_community.callbacks import OpenAICallbackHandler  # noqa: F401
     from aiagentsforce_community.chat_models import ChatOpenAI  # noqa: F401

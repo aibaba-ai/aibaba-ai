@@ -1,7 +1,7 @@
 """Utils for LLM Tests."""
 
-from aibaba-ai-core.language_models.llms import BaseLLM
-from aibaba-ai-core.utils.pydantic import get_fields
+from alibaba_ai_core.language_models.llms import BaseLLM
+from alibaba_ai_core.utils.pydantic import get_fields
 
 
 def assert_llm_equality(llm: BaseLLM, loaded_llm: BaseLLM) -> None:

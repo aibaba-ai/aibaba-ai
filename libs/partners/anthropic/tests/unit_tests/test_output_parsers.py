@@ -1,7 +1,7 @@
 from typing import Any, List, Literal
 
-from aibaba-ai-core.messages import AIMessage
-from aibaba-ai-core.outputs import ChatGeneration
+from aibaba_ai_core.messages import AIMessage
+from aibaba_ai_core.outputs import ChatGeneration
 from pydantic import BaseModel
 
 from langchain_anthropic.output_parsers import ToolsOutputParser

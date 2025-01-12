@@ -1,5 +1,5 @@
-from aibaba-ai-core.load.dump import dumpd, dumps
-from aibaba-ai-core.load.load import load, loads
+from aibaba_ai_core.load.dump import dumpd, dumps
+from aibaba_ai_core.load.load import load, loads
 
 from aiagentsforce_openai import ChatOpenAI, OpenAI
 

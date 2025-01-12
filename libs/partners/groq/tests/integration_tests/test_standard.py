@@ -3,9 +3,9 @@
 from typing import Optional, Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
-from aibaba-ai-core.rate_limiters import InMemoryRateLimiter
-from aibaba-ai-core.tools import BaseTool
+from aibaba_ai_core.language_models import BaseChatModel
+from aibaba_ai_core.rate_limiters import InMemoryRateLimiter
+from aibaba_ai_core.tools import BaseTool
 from langchain_tests.integration_tests import (
     ChatModelIntegrationTests,
 )

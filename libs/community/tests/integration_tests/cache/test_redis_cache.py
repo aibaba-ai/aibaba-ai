@@ -6,10 +6,10 @@ from typing import AsyncGenerator, Generator, List, Optional, cast
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.load.dump import dumps
-from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
-from aibaba-ai-core.outputs import ChatGeneration, Generation, LLMResult
+from alibaba_ai_core.embeddings import Embeddings
+from alibaba_ai_core.load.dump import dumps
+from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
+from alibaba_ai_core.outputs import ChatGeneration, Generation, LLMResult
 
 from aiagentsforce_community.cache import AsyncRedisCache, RedisCache, RedisSemanticCache
 from tests.integration_tests.cache.fake_embeddings import (

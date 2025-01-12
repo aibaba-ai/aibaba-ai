@@ -20,7 +20,7 @@ disallow_untyped_defs = "True"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-langchain-core = "^0.3.27"
+aibaba_ai_core = "^0.3.27"
 fireworks-ai = ">=0.13.0"
 openai = "^1.10.0"
 requests = "^2"
@@ -76,18 +76,18 @@ ruff = "^0.5"
 mypy = "^1.10"
 types-requests = "^2"
 
-[tool.poetry.group.test.dependencies.langchain-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.test.dependencies.langchain-tests]
+[tool.poetry.group.test.dependencies.aibaba_ai_tests]
 path = "../../standard-tests"
 develop = true
 
-[tool.poetry.group.dev.dependencies.langchain-core]
+[tool.poetry.group.dev.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true

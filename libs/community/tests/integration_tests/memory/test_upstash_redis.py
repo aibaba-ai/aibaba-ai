@@ -2,7 +2,7 @@ import json
 
 import pytest
 from langchain.memory import ConversationBufferMemory
-from aibaba-ai-core.messages import message_to_dict
+from alibaba_ai_core.messages import message_to_dict
 
 from aiagentsforce_community.chat_message_histories.upstash_redis import (
     UpstashRedisChatMessageHistory,

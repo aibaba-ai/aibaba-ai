@@ -3,8 +3,8 @@
 from pathlib import Path
 from typing import Dict, List, Literal, Type, cast
 
-from aibaba-ai-core.language_models import BaseChatModel
-from aibaba-ai-core.messages import AIMessage
+from aibaba_ai_core.language_models import BaseChatModel
+from aibaba_ai_core.messages import AIMessage
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from aiagentsforce_openai import ChatOpenAI

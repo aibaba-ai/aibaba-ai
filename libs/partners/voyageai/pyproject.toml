@@ -20,7 +20,7 @@ disallow_untyped_defs = "True"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
-langchain-core = "^0.3.29"
+aibaba_ai_core = "^0.3.29"
 voyageai = ">=0.3.2,<1"
 pydantic = ">=2,<3"
 
@@ -77,14 +77,14 @@ ruff = "^0.1.5"
 [tool.poetry.group.typing.dependencies]
 mypy = "^1.10"
 
-[tool.poetry.group.test.dependencies.langchain-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.dev.dependencies.langchain-core]
+[tool.poetry.group.dev.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.langchain-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true

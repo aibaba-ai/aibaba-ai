@@ -2,7 +2,7 @@ from pathlib import Path
 
 import numpy as np
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.vectorstores.tiledb import TileDB
 from tests.integration_tests.vectorstores.fake_embeddings import (

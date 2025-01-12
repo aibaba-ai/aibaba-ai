@@ -12,13 +12,13 @@ from typing import Optional
 from unittest.mock import MagicMock, Mock, patch
 
 import pytest
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     HumanMessage,
     SystemMessage,
 )
-from aibaba-ai-core.outputs import LLMResult
+from alibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_community.chat_models import ChatVertexAI
 from aiagentsforce_community.chat_models.vertexai import (

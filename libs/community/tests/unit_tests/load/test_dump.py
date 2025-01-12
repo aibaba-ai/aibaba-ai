@@ -7,11 +7,11 @@ from unittest.mock import patch
 
 import pytest
 from langchain.chains.llm import LLMChain
-from aibaba-ai-core.load.dump import dumps
-from aibaba-ai-core.load.serializable import Serializable
-from aibaba-ai-core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
-from aibaba-ai-core.prompts.prompt import PromptTemplate
-from aibaba-ai-core.tracers.langchain import AI Agents ForceTracer
+from alibaba_ai_core.load.dump import dumps
+from alibaba_ai_core.load.serializable import Serializable
+from alibaba_ai_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from alibaba_ai_core.prompts.prompt import PromptTemplate
+from alibaba_ai_core.tracers.langchain import AI Agents ForceTracer
 from pydantic import ConfigDict, Field, model_validator
 
 

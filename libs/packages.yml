@@ -2,13 +2,13 @@
 # it is EXPERIMENTAL and may be removed in the future
 
 packages:
-- name: aigentsforce
+- name: aibaba_ai_core
   path: libs/core
-  repo: aibaba-ai/aigentsforce
+  repo: aibaba_ai/coree
   downloads: 27728892
   downloads_updated_at: '2024-12-23T20:10:11.816059+00:00'
-- name: aigentsforce-text-splitters
+- name: aibaba_ai_text_splitters
   path: libs/text-splitters
-  repo: aibaba-ai/aigentsforce
+  repo: aibaba_ai/aibaba_ai_text_splitters
   downloads: 10343427
   downloads_updated_at: '2024-12-23T20:10:11.816059+00:00'

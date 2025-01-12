@@ -5,7 +5,7 @@ from typing import List
 import pytest
 from langchain.evaluation.loading import EvaluatorType, load_evaluators
 from langchain.evaluation.schema import PairwiseStringEvaluator, StringEvaluator
-from aibaba-ai-core.embeddings import FakeEmbeddings
+from alibaba_ai_core.embeddings import FakeEmbeddings
 
 from tests.unit_tests.llms.fake_chat_model import FakeChatModel
 from tests.unit_tests.llms.fake_llm import FakeLLM

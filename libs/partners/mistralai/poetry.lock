@@ -407,7 +407,7 @@ files = [
 ]
 
 [[package]]
-name = "langchain-core"
+name = "aibaba_ai_core"
 version = "0.3.27"
 description = "Building applications with LLMs through composability"
 optional = false
@@ -432,7 +432,7 @@ type = "directory"
 url = "../../core"
 
 [[package]]
-name = "langchain-tests"
+name = "aibaba_ai_tests"
 version = "0.3.7"
 description = "Standard tests for Aibaba AI implementations"
 optional = false
@@ -442,7 +442,7 @@ develop = true
 
 [package.dependencies]
 httpx = ">=0.25.0,<1"
-langchain-core = "^0.3.22"
+aibaba_ai_core = "^0.3.22"
 numpy = [
     {version = ">=1.24.0,<2.0.0", markers = "python_version < \"3.12\""},
     {version = ">=1.26.2,<3", markers = "python_version >= \"3.12\""},

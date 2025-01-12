@@ -1,6 +1,6 @@
 from typing import Type
 
-from aibaba-ai-core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 
 from langchain_tests.integration_tests import ToolsIntegrationTests
 from langchain_tests.unit_tests import ToolsUnitTests

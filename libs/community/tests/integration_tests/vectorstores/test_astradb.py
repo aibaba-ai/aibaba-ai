@@ -17,8 +17,8 @@ import os
 from typing import Iterable, List
 
 import pytest
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings import Embeddings
+from alibaba_ai_core.documents import Document
+from alibaba_ai_core.embeddings import Embeddings
 
 from aiagentsforce_community.vectorstores import AstraDB
 

@@ -3,7 +3,7 @@ import json
 from typing import Any
 from unittest import mock
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.document_transformers.nuclia_text_transform import (
     NucliaTextTransformer,

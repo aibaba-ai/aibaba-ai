@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 from langchain.agents import AgentExecutor, create_tool_calling_agent
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -18,8 +18,8 @@ from aibaba-ai-core.messages import (
     ToolCallChunk,
     ToolMessageChunk,
 )
-from aibaba-ai-core.prompts import ChatPromptTemplate
-from aibaba-ai-core.tools import StructuredTool
+from alibaba_ai_core.prompts import ChatPromptTemplate
+from alibaba_ai_core.tools import StructuredTool
 from pydantic import BaseModel
 
 from aiagentsforce_community.chat_models.mlflow import ChatMlflow

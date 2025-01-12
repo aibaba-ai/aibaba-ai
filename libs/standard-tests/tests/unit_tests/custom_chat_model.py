@@ -1,16 +1,16 @@
 from typing import Any, Dict, Iterator, List, Optional
 
-from aibaba-ai-core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from aibaba-ai-core.language_models import BaseChatModel
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.language_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
 )
-from aibaba-ai-core.messages.ai import UsageMetadata
-from aibaba-ai-core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.messages.ai import UsageMetadata
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from pydantic import Field
 
 

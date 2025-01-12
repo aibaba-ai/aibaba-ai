@@ -7,7 +7,7 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
 from pathlib import Path
 
 import pytest
-from aibaba-ai-core.outputs import LLMResult
+from alibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_community.llms.google_palm import GooglePalm
 from aiagentsforce_community.llms.loading import load_llm

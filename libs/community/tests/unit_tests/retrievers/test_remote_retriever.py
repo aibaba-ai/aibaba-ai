@@ -1,6 +1,6 @@
 from typing import Any, Dict
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.retrievers import RemoteAI Agents ForceRetriever

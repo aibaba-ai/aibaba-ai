@@ -1,7 +1,7 @@
 from typing import Any, Dict
 
-from aibaba-ai-core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from aibaba-ai-core.runnables import Runnable, RunnableLambda
+from aibaba_ai_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from aibaba_ai_core.runnables import Runnable, RunnableLambda
 
 from .parsers import RoleMap
 from .utils import load, prepare

@@ -3,7 +3,7 @@ import uuid
 from typing import List, Tuple
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.retrievers import QdrantSparseVectorRetriever
 from aiagentsforce_community.vectorstores.qdrant import QdrantException

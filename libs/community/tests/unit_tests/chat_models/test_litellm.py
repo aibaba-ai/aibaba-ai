@@ -3,7 +3,7 @@
 from typing import Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
+from alibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.unit_tests import ChatModelUnitTests
 
 from aiagentsforce_community.chat_models.litellm import ChatLiteLLM

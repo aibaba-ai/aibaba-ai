@@ -3,8 +3,8 @@
 from typing import Any, Dict, List, Optional
 
 from langchain.chains.natbot.base import NatBotChain
-from aibaba-ai-core.callbacks.manager import CallbackManagerForLLMRun
-from aibaba-ai-core.language_models.llms import LLM
+from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from alibaba_ai_core.language_models.llms import LLM
 
 
 class FakeLLM(LLM):

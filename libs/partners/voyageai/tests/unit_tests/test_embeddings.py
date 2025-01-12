@@ -1,6 +1,6 @@
 """Test embedding model integration."""
 
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 
 from langchain_voyageai import VoyageAIEmbeddings
 

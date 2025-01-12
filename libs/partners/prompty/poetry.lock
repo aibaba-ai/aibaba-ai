@@ -647,7 +647,7 @@ develop = true
 [package.dependencies]
 aiohttp = "^3.8.3"
 async-timeout = {version = "^4.0.0", markers = "python_version < \"3.11\""}
-langchain-core = "^0.3.15"
+aibaba_ai_core = "^0.3.15"
 langchain-text-splitters = "^0.3.0"
 langsmith = "^0.1.17"
 numpy = [
@@ -665,7 +665,7 @@ type = "directory"
 url = "../../langchain"
 
 [[package]]
-name = "langchain-core"
+name = "aibaba_ai_core"
 version = "0.3.15"
 description = "Building applications with LLMs through composability"
 optional = false
@@ -699,7 +699,7 @@ files = []
 develop = true
 
 [package.dependencies]
-langchain-core = "^0.3.15"
+aibaba_ai_core = "^0.3.15"
 
 [package.source]
 type = "directory"

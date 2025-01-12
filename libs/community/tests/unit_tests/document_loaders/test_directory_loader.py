@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
 from aiagentsforce_community.document_loaders.directory import DirectoryLoader

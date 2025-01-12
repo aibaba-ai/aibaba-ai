@@ -1,5 +1,5 @@
 import pytest
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,

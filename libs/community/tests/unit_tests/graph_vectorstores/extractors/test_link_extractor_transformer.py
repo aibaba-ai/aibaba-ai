@@ -1,6 +1,6 @@
 from typing import Set
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.graph_vectorstores.extractors import (
     LinkExtractor,

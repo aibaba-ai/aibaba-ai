@@ -1,4 +1,4 @@
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.document_compressors.dashscope_rerank import (
     DashScopeRerank,

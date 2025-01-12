@@ -3,7 +3,7 @@
 from typing import Tuple
 
 import pytest
-from aibaba-ai-core.stores import InMemoryStore
+from aibaba_ai_core.stores import InMemoryStore
 
 from langchain_tests.integration_tests.base_store import (
     BaseStoreAsyncTests,

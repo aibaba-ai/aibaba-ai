@@ -1,4 +1,4 @@
-# langchain-tests
+# aibaba_ai_tests
 
 This is a testing library for Aibaba AI integrations. It contains the base classes for
 a standard set of tests.
@@ -15,13 +15,13 @@ also break your CI if we introduce tests that your integration doesn't pass.
 Pip:
     
     ```bash
-    pip install -U langchain-tests
+    pip install -U aibaba_ai_tests
     ```
 
 Poetry:
     
     ```bash
-    poetry add langchain-tests
+    poetry add aibaba_ai_tests
     ```
 
 ## Usage
@@ -39,7 +39,7 @@ To add standard tests to an integration package's e.g. ChatModel, you need to cr
 from typing import Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
+from aibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.unit_tests import ChatModelUnitTests
 
 from langchain_parrot_chain import ChatParrotChain
@@ -59,7 +59,7 @@ class TestParrotChainStandard(ChatModelUnitTests):
 from typing import Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
+from aibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from langchain_parrot_chain import ChatParrotChain

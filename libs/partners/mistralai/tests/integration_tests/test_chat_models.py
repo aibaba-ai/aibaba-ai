@@ -3,7 +3,7 @@
 import json
 from typing import Any, Optional
 
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessageChunk,

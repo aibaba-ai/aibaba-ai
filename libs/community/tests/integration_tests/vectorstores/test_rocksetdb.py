@@ -2,7 +2,7 @@ import logging
 import os
 import uuid
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.vectorstores.rocksetdb import Rockset
 from tests.integration_tests.vectorstores.fake_embeddings import (

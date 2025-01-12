@@ -701,7 +701,7 @@ files = [
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
 async-timeout = {version = ">=4.0.0,<5.0.0", markers = "python_version < \"3.11\""}
-langchain-core = ">=0.3.21,<0.4.0"
+aibaba_ai_core = ">=0.3.21,<0.4.0"
 langchain-text-splitters = ">=0.3.0,<0.4.0"
 langsmith = ">=0.1.17,<0.2.0"
 numpy = [
@@ -715,7 +715,7 @@ SQLAlchemy = ">=1.4,<3"
 tenacity = ">=8.1.0,<8.4.0 || >8.4.0,<10"
 
 [[package]]
-name = "langchain-core"
+name = "aibaba_ai_core"
 version = "0.3.21"
 description = "Building applications with LLMs through composability"
 optional = false
@@ -751,7 +751,7 @@ files = [
 ]
 
 [package.dependencies]
-langchain-core = ">=0.3.15,<0.4.0"
+aibaba_ai_core = ">=0.3.15,<0.4.0"
 
 [[package]]
 name = "langsmith"

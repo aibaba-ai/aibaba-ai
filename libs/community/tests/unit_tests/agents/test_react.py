@@ -3,11 +3,11 @@
 from typing import Union
 
 from langchain.agents.react.base import ReActChain, ReActDocstoreAgent
-from aibaba-ai-core.agents import AgentAction
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.language_models import FakeListLLM
-from aibaba-ai-core.prompts.prompt import PromptTemplate
-from aibaba-ai-core.tools import Tool
+from alibaba_ai_core.agents import AgentAction
+from alibaba_ai_core.documents import Document
+from alibaba_ai_core.language_models import FakeListLLM
+from alibaba_ai_core.prompts.prompt import PromptTemplate
+from alibaba_ai_core.tools import Tool
 
 from aiagentsforce_community.docstore.base import Docstore
 

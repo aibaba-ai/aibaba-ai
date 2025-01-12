@@ -1,7 +1,7 @@
 from typing import Generator, Tuple
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 from langchain_tests.integration_tests.base_store import BaseStoreSyncTests
 
 from aiagentsforce_community.storage.mongodb import MongoDBByteStore, MongoDBStore

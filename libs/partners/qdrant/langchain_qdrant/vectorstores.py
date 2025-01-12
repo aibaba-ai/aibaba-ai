@@ -23,11 +23,11 @@ from typing import (
 )
 
 import numpy as np
-from aibaba-ai-core._api.deprecation import deprecated
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.runnables.config import run_in_executor
-from aibaba-ai-core.vectorstores import VectorStore
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core.vectorstores import VectorStore
 from qdrant_client import AsyncQdrantClient, QdrantClient
 from qdrant_client.http import models
 from qdrant_client.local.async_qdrant_local import AsyncQdrantLocal

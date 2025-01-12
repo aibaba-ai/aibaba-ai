@@ -5,12 +5,12 @@ from typing import TYPE_CHECKING, Generator
 
 import pandas as pd
 import pytest
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,
 )
-from aibaba-ai-core.prompts import ChatPromptTemplate
+from alibaba_ai_core.prompts import ChatPromptTemplate
 
 from aiagentsforce_community.chat_models.kinetica import (
     ChatKinetica,

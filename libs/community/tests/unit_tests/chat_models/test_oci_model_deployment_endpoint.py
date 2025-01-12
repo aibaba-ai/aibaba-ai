@@ -2,7 +2,7 @@
 
 import pytest
 import responses
-from aibaba-ai-core.messages import AIMessage, HumanMessage
+from alibaba_ai_core.messages import AIMessage, HumanMessage
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.chat_models import ChatOCIModelDeployment

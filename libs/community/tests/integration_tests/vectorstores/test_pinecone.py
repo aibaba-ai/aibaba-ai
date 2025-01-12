@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, List
 
 import numpy as np
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.embeddings import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.pinecone import Pinecone

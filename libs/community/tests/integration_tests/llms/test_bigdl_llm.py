@@ -3,7 +3,7 @@
 import os
 
 import pytest
-from aibaba-ai-core.outputs import LLMResult
+from alibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_community.llms.bigdl_llm import BigdlLLM
 

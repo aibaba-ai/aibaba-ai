@@ -4,8 +4,8 @@ from itertools import chain
 from typing import Any, Dict, List, Optional, Union
 from uuid import UUID
 
-from aibaba-ai-core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
-from aibaba-ai-core.messages import BaseMessage
+from aibaba_ai_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
+from aibaba_ai_core.messages import BaseMessage
 from pydantic import BaseModel
 
 

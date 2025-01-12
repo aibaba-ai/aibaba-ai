@@ -11,8 +11,8 @@ from contextlib import contextmanager
 from typing import Any, Generator, Iterable, Optional, Tuple, Union
 
 import pytest
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings import Embeddings
+from alibaba_ai_core.documents import Document
+from alibaba_ai_core.embeddings import Embeddings
 
 from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
 from aiagentsforce_community.utilities.cassandra import SetupMode

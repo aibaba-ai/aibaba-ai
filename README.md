@@ -7,13 +7,13 @@ This repository is based on [langchain](https://github.com/langchain-ai/langchai
 With pip:
 
 ```bash
-pip install aibaba-ai
+pip install aibaba_ai
 ```
 
 With conda:
 
 ```bash
-conda install aibaba-ai -c conda-forge
+conda install aibaba_ai -c conda-forge
 ```
 
 ## 🤔 What is Aibaba AI?
@@ -72,7 +72,7 @@ Agents are autonomous LLM-powered systems that can independently solve complex t
 
 ### 1. Build and Verify AI Agent Locally
 
-Use the aibaba-ai library to create and test your AI agent in your local development environment. The library provides comprehensive tools including prebuilt templates, NLP capabilities, and integration utilities.
+Use the aibaba_ai library to create and test your AI agent in your local development environment. The library provides comprehensive tools including prebuilt templates, NLP capabilities, and integration utilities.
 
 **Key Steps:**
 - Define the agent's functionality, purpose, and environment

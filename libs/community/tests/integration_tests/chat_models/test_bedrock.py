@@ -3,14 +3,14 @@
 from typing import Any, cast
 
 import pytest
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.callbacks import CallbackManager
+from alibaba_ai_core.messages import (
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
 from aiagentsforce_community.chat_models import BedrockChat
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

@@ -10,8 +10,8 @@ Note: This test must be run with the following environment variables set:
 """
 
 import pytest
-from aibaba-ai-core.messages import BaseMessage, HumanMessage, SystemMessage
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
+from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
 from aiagentsforce_community.chat_models import ChatSnowflakeCortex
 

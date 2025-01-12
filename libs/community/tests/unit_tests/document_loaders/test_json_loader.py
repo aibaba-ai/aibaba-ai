@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Any, Dict
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 from pytest import raises
 from pytest_mock import MockerFixture
 

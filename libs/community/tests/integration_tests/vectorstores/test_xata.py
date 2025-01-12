@@ -7,7 +7,7 @@ https://docs.aibaba.world/docs/integrations/vectorstores/xata
 
 import os
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.xata import XataVectorStore

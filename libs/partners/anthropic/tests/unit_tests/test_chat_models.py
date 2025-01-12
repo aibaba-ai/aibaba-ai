@@ -5,9 +5,9 @@ from typing import Any, Callable, Dict, Literal, Type, cast
 
 import pytest
 from anthropic.types import Message, TextBlock, Usage
-from aibaba-ai-core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
-from aibaba-ai-core.runnables import RunnableBinding
-from aibaba-ai-core.tools import BaseTool
+from aibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from aibaba_ai_core.runnables import RunnableBinding
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field, SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 

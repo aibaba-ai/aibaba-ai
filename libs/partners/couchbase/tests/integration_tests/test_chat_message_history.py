@@ -10,7 +10,7 @@ from couchbase.auth import PasswordAuthenticator
 from couchbase.cluster import Cluster
 from couchbase.options import ClusterOptions
 from langchain.memory import ConversationBufferMemory
-from aibaba-ai-core.messages import AIMessage, HumanMessage
+from aibaba_ai_core.messages import AIMessage, HumanMessage
 
 from langchain_couchbase.chat_message_histories import CouchbaseChatMessageHistory
 from tests.utils import fetch_document_expiry_time, get_document_keys

@@ -4,8 +4,8 @@ import json
 from typing import List, Optional
 
 import pytest
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -14,9 +14,9 @@ from aibaba-ai-core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
-from aibaba-ai-core.prompts import ChatPromptTemplate
-from aibaba-ai-core.tools import tool
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.prompts import ChatPromptTemplate
+from aibaba_ai_core.tools import tool
 from pydantic import BaseModel, Field
 
 from langchain_anthropic import ChatAnthropic, ChatAnthropicMessages

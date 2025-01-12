@@ -2,7 +2,7 @@ import os
 from typing import List, Literal, Optional, overload
 
 import nomic  # type: ignore[import]
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from nomic import embed
 
 

@@ -3,8 +3,8 @@
 from typing import Generator
 
 import pytest
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.outputs import LLMResult
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_openai import OpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler

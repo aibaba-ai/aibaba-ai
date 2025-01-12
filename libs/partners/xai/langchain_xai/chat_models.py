@@ -8,8 +8,8 @@ from typing import (
 )
 
 import openai
-from aibaba-ai-core.language_models.chat_models import LangSmithParams
-from aibaba-ai-core.utils import secret_from_env
+from aibaba_ai_core.language_models.chat_models import LangSmithParams
+from aibaba_ai_core.utils import secret_from_env
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self

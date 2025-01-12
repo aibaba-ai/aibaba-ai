@@ -1,7 +1,7 @@
 import time
 from typing import List
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.vectorstores.alibabacloud_opensearch import (
     AlibabaCloudOpenSearch,

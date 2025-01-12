@@ -1,8 +1,8 @@
 from typing import List
 
 import requests  # type: ignore
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
 
 from langchain_qdrant import SparseEmbeddings, SparseVector
 

@@ -23,7 +23,7 @@ disallow_untyped_defs = "True"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aibaba-ai-core = "^0.3.15"
+aibaba_ai_core = "^0.3.15"
 pyyaml = "^6.0.1"
 
 [tool.coverage.run]
@@ -72,7 +72,7 @@ types-pyyaml = "^6.0.12.20240311"
 mypy = "^0.991"
 types-pyyaml = "^6.0.12.20240311"
 
-[tool.poetry.group.test.dependencies.aibaba-ai-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
@@ -84,10 +84,10 @@ develop = true
 path = "../../text-splitters"
 develop = true
 
-[tool.poetry.group.dev.dependencies.aibaba-ai-core]
+[tool.poetry.group.dev.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aibaba-ai-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../../core"
 develop = true

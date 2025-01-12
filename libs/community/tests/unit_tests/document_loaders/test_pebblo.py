@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Dict
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.document_loaders import CSVLoader, PyPDFLoader

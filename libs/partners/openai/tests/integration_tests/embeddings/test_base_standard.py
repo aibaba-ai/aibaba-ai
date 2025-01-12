@@ -2,7 +2,7 @@
 
 from typing import Type
 
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from langchain_tests.integration_tests.embeddings import EmbeddingsIntegrationTests
 
 from aiagentsforce_openai import OpenAIEmbeddings

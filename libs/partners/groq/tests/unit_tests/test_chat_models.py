@@ -5,9 +5,9 @@ import os
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
-import aibaba-ai-core.load as lc_load
+import aibaba_ai_core.load as lc_load
 import pytest
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,

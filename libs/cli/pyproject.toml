@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aibaba-ai-cli"
+name = "aibaba_ai_cli"
 version = "0.0.35"
 description = "CLI for interacting with Aibaba AI"
 authors = ["Erick Friis <erick@langchain.dev>"]
@@ -15,14 +15,14 @@ license = "MIT"
 python = ">=3.9,<4.0"
 typer = { extras = ["all"], version = "^0.9.0" }
 gitpython = "^3"
-aiagentsforceapi = { extras = ["all"], version = ">=0.0.51" }
+aibaba_ai_api = { extras = ["all"], version = ">=0.3.1" }
 uvicorn = ">=0.23,<1.0"
 tomlkit = ">=0.12"
 gritql = "^0.2.0"
 
 [tool.poetry.scripts]
-aibaba-ai = "aiagentsforce_cli.cli:app"
-aibaba-ai-cli = "aiagentsforce_cli.cli:app"
+aibaba_ai = "aibaba_ai_cli.cli:app"
+aibaba_ai_cli = "aibaba_ai_cli.cli:app"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
@@ -33,15 +33,15 @@ ruff = "^0.5"
 mypy = "^1.13.0"
 
 [tool.poetry.group.test.dependencies]
-aibaba-ai = {path = "../aibaba-ai", develop = true}
+aibaba_ai = {path = "../aibaba_ai", develop = true}
 
 [tool.poetry.group.typing.dependencies]
-aibaba-ai = {path = "../aibaba-ai", develop = true}
+aibaba_ai = {path = "../aibaba_ai", develop = true}
 
 [tool.poetry.group.test_integration.dependencies]
 
 [tool.poetry.extras]
-# For aiagentsforceapi
+# For aibaba_ai_api
 serve = []
 
 [tool.ruff.lint]
@@ -54,8 +54,8 @@ select = [
 
 [tool.mypy]
 exclude = [
-  "aiagentsforce_cli/integration_template",
-  "aiagentsforce_cli/package_template",
+  "aibaba_ai_cli/integration_template",
+  "aibaba_ai_cli/package_template",
 ]
 
 [build-system]

@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any, List
 
 import pytest
-from aibaba-ai-core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from langchain_text_splitters import (
     Language,

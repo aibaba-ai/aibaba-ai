@@ -3,7 +3,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "aibaba-ai-community"
+name = "aibaba_ai_community"
 version = "0.3.14"
 description = "Community contributed Aibaba AI integrations."
 authors = []
@@ -33,8 +33,8 @@ ignore-words-list = "momento,collison,ned,foor,reworkd,parth,whats,aapply,mysogy
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aibaba-ai-core = "^0.3.29"
-aibaba-ai = "^0.3.14"
+aibaba_ai_core = {path = "../core"}
+aibaba_ai = {path = "../aibaba_ai"}
 SQLAlchemy = ">=1.4,<3"
 requests = "^2"
 PyYAML = ">=5.3"
@@ -67,9 +67,9 @@ markers = [
 ]
 asyncio_mode = "auto"
 filterwarnings = [
-    "ignore::aibaba-ai-core._api.beta_decorator.AI Agents ForceBetaWarning",
-    "ignore::aibaba-ai-core._api.deprecation.AI Agents ForceDeprecationWarning:test",
-    "ignore::aibaba-ai-core._api.deprecation.AI Agents ForcePendingDeprecationWarning:test",
+    "ignore::aibaba_ai_core._api.beta_decorator.AI Agents ForceBetaWarning",
+    "ignore::aibaba_ai_core._api.deprecation.AI Agents ForceDeprecationWarning:test",
+    "ignore::aibaba_ai_core._api.deprecation.AI Agents ForcePendingDeprecationWarning:test",
 ]
 
 [tool.poetry.group.test]
@@ -142,30 +142,30 @@ types-chardet = "^5.0.4.6"
 types-redis = "^4.3.21.6"
 mypy-protobuf = "^3.0.0"
 
-[tool.poetry.group.test.dependencies.aibaba-ai-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.test.dependencies.aibaba-ai]
-path = "../aibaba-ai"
+[tool.poetry.group.test.dependencies.aibaba_ai]
+path = "../aibaba_ai"
 develop = true
 
-[tool.poetry.group.test.dependencies.aibaba-ai-tests]
+[tool.poetry.group.test.dependencies.aibaba_ai_tests]
 path = "../standard-tests"
 develop = true
 
-[tool.poetry.group.dev.dependencies.aibaba-ai-core]
+[tool.poetry.group.dev.dependencies.aibaba_ai_core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aibaba-ai-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aibaba-ai-text-splitters]
+[tool.poetry.group.typing.dependencies.aibaba_ai_text_splitters]
 path = "../text-splitters"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aibaba-ai]
-path = "../aibaba-ai"
+[tool.poetry.group.typing.dependencies.aibaba_ai]
+path = "../aibaba_ai"
 develop = true

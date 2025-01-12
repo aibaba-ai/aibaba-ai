@@ -6,7 +6,7 @@ You will need FIREWORKS_API_KEY set in your environment to run these tests.
 import json
 from typing import Optional
 
-from aibaba-ai-core.messages import AIMessage, AIMessageChunk, BaseMessageChunk
+from aibaba_ai_core.messages import AIMessage, AIMessageChunk, BaseMessageChunk
 from pydantic import BaseModel
 
 from langchain_fireworks import ChatFireworks

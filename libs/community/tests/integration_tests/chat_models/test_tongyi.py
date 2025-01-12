@@ -2,12 +2,12 @@
 
 from typing import Any, List, cast
 
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
-from aibaba-ai-core.messages.ai import AIMessageChunk
-from aibaba-ai-core.messages.tool import ToolCall, ToolMessage
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
-from aibaba-ai-core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from alibaba_ai_core.callbacks import CallbackManager
+from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
+from alibaba_ai_core.messages.ai import AIMessageChunk
+from alibaba_ai_core.messages.tool import ToolCall, ToolMessage
+from alibaba_ai_core.outputs import ChatGeneration, LLMResult
+from alibaba_ai_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from pydantic import BaseModel, SecretStr
 from pytest import CaptureFixture
 

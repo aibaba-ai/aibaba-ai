@@ -3,7 +3,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "aibaba-ai-tests"
+name = "aibaba_ai_tests"
 version = "0.3.7"
 description = "Standard tests for Aibaba AI implementations"
 authors = ["Erick Friis <erick@langchain.dev>"]
@@ -19,7 +19,7 @@ disallow_untyped_defs = "True"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aibaba-ai-core = "^0.3.22"
+aibaba_ai_core = "^0.3.22"
 pytest = ">=7,<9"
 pytest-asyncio = ">=0.20,<1"
 httpx = ">=0.25.0,<1"
@@ -74,10 +74,10 @@ ruff = ">=0.5"
 [tool.poetry.group.typing.dependencies]
 mypy = "^1"
 
-[tool.poetry.group.test.dependencies.aibaba-ai-core]
+[tool.poetry.group.test.dependencies.aibaba_ai_core]
 path = "../core"
 develop = true
 
-[tool.poetry.group.typing.dependencies.aibaba-ai-core]
+[tool.poetry.group.typing.dependencies.aibaba_ai_core]
 path = "../core"
 develop = true

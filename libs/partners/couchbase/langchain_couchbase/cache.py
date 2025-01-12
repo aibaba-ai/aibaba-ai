@@ -13,11 +13,11 @@ from datetime import timedelta
 from typing import Any, Dict, Optional, Union
 
 from couchbase.cluster import Cluster
-from aibaba-ai-core.caches import RETURN_VAL_TYPE, BaseCache
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.load.dump import dumps
-from aibaba-ai-core.load.load import loads
-from aibaba-ai-core.outputs import Generation
+from aibaba_ai_core.caches import RETURN_VAL_TYPE, BaseCache
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.load.dump import dumps
+from aibaba_ai_core.load.load import loads
+from aibaba_ai_core.outputs import Generation
 
 from langchain_couchbase.vectorstores import CouchbaseVectorStore
 

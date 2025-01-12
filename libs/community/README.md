@@ -6,7 +6,7 @@
 ## Quick Install
 
 ```bash
-pip install aibaba-ai-community
+pip install aibaba_ai_community
 ```
 
 ## What is it?
@@ -17,7 +17,7 @@ For full documentation see the [API reference](https://docs.aibaba.world/api_ref
 
 ## 📕 Releases & Versioning
 
-`aibaba-ai-community` is currently on version `0.0.x`
+`aibaba_ai_community` is currently on version `0.0.x`
 
 All changes will be accompanied by a patch version increase.
 

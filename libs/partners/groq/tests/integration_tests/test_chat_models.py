@@ -4,7 +4,7 @@ import json
 from typing import Any, Optional
 
 import pytest
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -12,8 +12,8 @@ from aibaba-ai-core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
-from aibaba-ai-core.tools import tool
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.tools import tool
 from pydantic import BaseModel, Field
 
 from langchain_groq import ChatGroq

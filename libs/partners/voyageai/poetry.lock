@@ -675,7 +675,7 @@ files = [
 ]
 
 [[package]]
-name = "langchain-core"
+name = "aibaba_ai_core"
 version = "0.3.29"
 description = "Building applications with LLMs through composability"
 optional = false

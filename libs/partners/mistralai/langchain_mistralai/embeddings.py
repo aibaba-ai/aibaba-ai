@@ -5,8 +5,8 @@ from typing import Iterable, List
 
 import httpx
 from httpx import Response
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.utils import (
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import (
     secret_from_env,
 )
 from pydantic import (

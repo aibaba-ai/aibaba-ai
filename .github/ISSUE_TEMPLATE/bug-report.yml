@@ -59,7 +59,7 @@ body:
         The following code: 
         
         ```python
-        from aibaba-ai-core.runnables import RunnableLambda
+        from aibaba_ai_core.runnables import RunnableLambda
 
         def bad_code(inputs) -> int:
           raise NotImplementedError('For demo purpose')
@@ -102,15 +102,15 @@ body:
         
         Run the following command in your terminal and paste the output here:
         
-        python -m aibaba-ai-core.sys_info
+        python -m aibaba_ai_core.sys_info
         
         or if you have an existing python interpreter running:
         
-        from aibaba-ai-core import sys_info
+        from aibaba_ai_core import sys_info
         sys_info.print_sys_info()
         
         alternatively, put the entire output of `pip freeze` here.
       placeholder: |
-        python -m aibaba-ai-core.sys_info
+        python -m aibaba_ai_core.sys_info
     validations:
       required: true

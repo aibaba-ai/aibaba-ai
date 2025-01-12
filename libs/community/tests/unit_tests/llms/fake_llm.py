@@ -2,8 +2,8 @@
 
 from typing import Any, Dict, List, Mapping, Optional, cast
 
-from aibaba-ai-core.callbacks import CallbackManagerForLLMRun
-from aibaba-ai-core.language_models.llms import LLM
+from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from alibaba_ai_core.language_models.llms import LLM
 from pydantic import validator
 
 

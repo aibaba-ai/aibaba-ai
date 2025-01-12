@@ -8,7 +8,7 @@ import os
 from typing import Any
 
 import pytest
-from aibaba-ai-core.callbacks import AsyncCallbackHandler
+from alibaba_ai_core.callbacks import AsyncCallbackHandler
 
 from aiagentsforce_community.llms.bedrock import Bedrock
 

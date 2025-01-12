@@ -6,7 +6,7 @@ from typing import (
     Union,
 )
 
-from aibaba-ai-core._api import deprecated
+from aibaba_ai_core._api import deprecated
 from pydantic import PrivateAttr
 
 from langchain_anthropic.chat_models import ChatAnthropic

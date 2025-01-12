@@ -9,8 +9,8 @@ from typing import Any, AsyncIterator, List, Literal, Optional, cast
 import httpx
 import openai
 import pytest
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -20,8 +20,8 @@ from aibaba-ai-core.messages import (
     ToolCall,
     ToolMessage,
 )
-from aibaba-ai-core.outputs import ChatGeneration, ChatResult, LLMResult
-from aibaba-ai-core.prompts import ChatPromptTemplate
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba_ai_core.prompts import ChatPromptTemplate
 from langchain_tests.integration_tests.chat_models import _validate_tool_call_message
 from langchain_tests.integration_tests.chat_models import (
     magic_function as invalid_magic_function,

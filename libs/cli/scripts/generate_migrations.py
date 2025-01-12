@@ -121,7 +121,7 @@ def all_installed_partner_pkgs() -> None:
         name
         for _, name, _ in pkgutil.iter_modules()
         if name.startswith("langchain_")
-        and name not in {"aibaba-ai-core", "langchain_cli", "aiagentsforce_community"}
+        and name not in {"aibaba_ai_core", "langchain_cli", "aiagentsforce_community"}
     ]
     for pkg in langchain_pkgs:
         handle_partner(pkg)

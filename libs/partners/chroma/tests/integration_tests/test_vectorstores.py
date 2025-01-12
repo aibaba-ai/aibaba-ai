@@ -14,8 +14,8 @@ import requests
 from chromadb.api.client import SharedSystemClient
 from chromadb.api.segment import SegmentAPI
 from chromadb.api.types import Embeddable
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.embeddings.fake import FakeEmbeddings as Fak
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings.fake import FakeEmbeddings as Fak
 
 from langchain_chroma.vectorstores import Chroma
 from tests.integration_tests.fake_embeddings import (

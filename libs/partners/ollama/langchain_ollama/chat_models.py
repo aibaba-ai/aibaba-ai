@@ -19,14 +19,14 @@ from typing import (
 )
 from uuid import uuid4
 
-from aibaba-ai-core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from aibaba-ai-core.callbacks.manager import AsyncCallbackManagerForLLMRun
-from aibaba-ai-core.exceptions import OutputParserException
-from aibaba-ai-core.language_models import LanguageModelInput
-from aibaba-ai-core.language_models.chat_models import BaseChatModel, LangSmithParams
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.callbacks.manager import AsyncCallbackManagerForLLMRun
+from aibaba_ai_core.exceptions import OutputParserException
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import BaseChatModel, LangSmithParams
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -35,22 +35,22 @@ from aibaba-ai-core.messages import (
     ToolCall,
     ToolMessage,
 )
-from aibaba-ai-core.messages.ai import UsageMetadata
-from aibaba-ai-core.messages.tool import tool_call
-from aibaba-ai-core.output_parsers import (
+from aibaba_ai_core.messages.ai import UsageMetadata
+from aibaba_ai_core.messages.tool import tool_call
+from aibaba_ai_core.output_parsers import (
     JsonOutputKeyToolsParser,
     JsonOutputParser,
     PydanticOutputParser,
     PydanticToolsParser,
 )
-from aibaba-ai-core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from aibaba-ai-core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from aibaba-ai-core.tools import BaseTool
-from aibaba-ai-core.utils.function_calling import (
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import (
     _convert_any_typed_dicts_to_pydantic as convert_any_typed_dicts_to_pydantic,
 )
-from aibaba-ai-core.utils.function_calling import convert_to_openai_tool
-from aibaba-ai-core.utils.pydantic import TypeBaseModel, is_basemodel_subclass
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import TypeBaseModel, is_basemodel_subclass
 from ollama import AsyncClient, Client, Message, Options
 from pydantic import BaseModel, PrivateAttr, model_validator
 from pydantic.json_schema import JsonSchemaValue
@@ -818,7 +818,7 @@ class ChatOllama(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`aibaba-ai-core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: If provided, which tool for model to call. **This parameter
                 is currently ignored as it is not supported by Ollama.**
             kwargs: Any additional parameters are passed directly to
@@ -851,7 +851,7 @@ class ChatOllama(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`aibaba-ai-core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -877,7 +877,7 @@ class ChatOllama(BaseChatModel):
             kwargs: Additional keyword args aren't supported.
 
         Returns:
-            A Runnable that takes same inputs as a :class:`aibaba-ai-core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aibaba_ai_core.language_models.chat.BaseChatModel`.
 
             | If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs an instance of ``schema`` (i.e., a Pydantic object). Otherwise, if ``include_raw`` is False then Runnable outputs a dict.
 

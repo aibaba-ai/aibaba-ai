@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any, AsyncGenerator, Generator, List, Tuple
 
 import pytest
-from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
+from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 from sqlalchemy import Column, Integer, Text
 
 try:

@@ -3,7 +3,7 @@
 from enum import Enum
 from typing import List, Optional
 
-from aibaba-ai-core.prompts import ChatPromptTemplate
+from aibaba_ai_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
 from langchain_anthropic.experimental import ChatAnthropicTools

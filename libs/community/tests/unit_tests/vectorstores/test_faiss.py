@@ -6,7 +6,7 @@ import tempfile
 from typing import Union
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.docstore.base import Docstore
 from aiagentsforce_community.docstore.in_memory import InMemoryDocstore

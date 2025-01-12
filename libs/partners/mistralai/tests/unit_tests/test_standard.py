@@ -2,7 +2,7 @@
 
 from typing import Type
 
-from aibaba-ai-core.language_models import BaseChatModel
+from aibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.unit_tests import (  # type: ignore[import-not-found]
     ChatModelUnitTests,  # type: ignore[import-not-found]
 )

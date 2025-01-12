@@ -5,9 +5,9 @@ from exa_py.api import (
     HighlightsContentsOptions,  # type: ignore[untyped-import]
     TextContentsOptions,  # type: ignore[untyped-import]
 )
-from aibaba-ai-core.callbacks import CallbackManagerForRetrieverRun
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import Field, SecretStr, model_validator
 
 from langchain_exa._utilities import initialize_client

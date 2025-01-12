@@ -3066,7 +3066,7 @@ type = "directory"
 url = "libs/partners/mistralai"
 
 [[package]]
-name = "aibaba-ai-openai"
+name = "aibaba_ai_openai"
 version = "0.2.12"
 description = "An integration package connecting OpenAI and Aibaba AI"
 optional = false

@@ -20,7 +20,7 @@ cases = [
         expected=File(
             "app.py",
             content=[
-                "from aibaba-ai-core.runnables import RunnableMap",
+                "from aibaba_ai_core.runnables import RunnableMap",
                 "",
                 "chain = RunnableMap({})",
             ],

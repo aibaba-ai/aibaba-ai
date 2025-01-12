@@ -1,6 +1,6 @@
 from typing import Type
 
-from aibaba-ai-core.embeddings import DeterministicFakeEmbedding, Embeddings
+from aibaba_ai_core.embeddings import DeterministicFakeEmbedding, Embeddings
 
 from langchain_tests.integration_tests import EmbeddingsIntegrationTests
 from langchain_tests.unit_tests import EmbeddingsUnitTests

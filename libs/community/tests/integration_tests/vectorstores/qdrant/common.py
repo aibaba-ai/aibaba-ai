@@ -1,6 +1,6 @@
 from typing import List
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 
 def qdrant_is_not_running() -> bool:

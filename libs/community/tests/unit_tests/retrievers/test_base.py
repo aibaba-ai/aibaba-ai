@@ -5,11 +5,11 @@ from __future__ import annotations
 from typing import Dict, List, Optional
 
 import pytest
-from aibaba-ai-core.callbacks import (
+from alibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from aibaba-ai-core.retrievers import BaseRetriever, Document
+from alibaba_ai_core.retrievers import BaseRetriever, Document
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 

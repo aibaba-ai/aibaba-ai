@@ -1,6 +1,6 @@
 """Test MLX Chat Model."""
 
-from aibaba-ai-core.messages import AIMessage, BaseMessage, HumanMessage
+from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 
 from aiagentsforce_community.chat_models.mlx import ChatMLX
 from aiagentsforce_community.llms.mlx_pipeline import MLXPipeline

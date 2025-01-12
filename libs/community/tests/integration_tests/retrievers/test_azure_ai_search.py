@@ -1,6 +1,6 @@
 """Test Azure AI Search wrapper."""
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.retrievers.azure_ai_search import (
     AzureAISearchRetriever,

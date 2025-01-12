@@ -5,7 +5,7 @@ from typing import (
     Optional,
 )
 
-from aibaba-ai-core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from ollama import AsyncClient, Client
 from pydantic import (
     BaseModel,

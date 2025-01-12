@@ -6,7 +6,7 @@ from typing import List
 import numpy as np
 import pinecone  # type: ignore
 import pytest  # type: ignore[import-not-found]
-from aibaba-ai-core.documents import Document
+from aibaba_ai_core.documents import Document
 from langchain_openai import OpenAIEmbeddings  # type: ignore[import-not-found]
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 from pinecone import ServerlessSpec

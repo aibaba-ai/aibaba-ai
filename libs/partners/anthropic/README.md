@@ -16,7 +16,7 @@ To use, you should have an Anthropic API key configured. Initialize the model as
 
 ```
 from langchain_anthropic import ChatAnthropic
-from aibaba-ai-core.messages import AIMessage, HumanMessage
+from aibaba_ai_core.messages import AIMessage, HumanMessage
 
 model = ChatAnthropic(model="claude-3-opus-20240229", temperature=0, max_tokens=1024)
 ```

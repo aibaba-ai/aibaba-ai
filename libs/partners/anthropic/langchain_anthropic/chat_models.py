@@ -21,19 +21,19 @@ from typing import (
 )
 
 import anthropic
-from aibaba-ai-core._api import beta, deprecated
-from aibaba-ai-core.callbacks import (
+from aibaba_ai_core._api import beta, deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aibaba-ai-core.language_models import LanguageModelInput
-from aibaba-ai-core.language_models.chat_models import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     LangSmithParams,
     agenerate_from_stream,
     generate_from_stream,
 )
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -42,28 +42,28 @@ from aibaba-ai-core.messages import (
     ToolCall,
     ToolMessage,
 )
-from aibaba-ai-core.messages.ai import InputTokenDetails, UsageMetadata
-from aibaba-ai-core.messages.tool import tool_call_chunk as create_tool_call_chunk
-from aibaba-ai-core.output_parsers import (
+from aibaba_ai_core.messages.ai import InputTokenDetails, UsageMetadata
+from aibaba_ai_core.messages.tool import tool_call_chunk as create_tool_call_chunk
+from aibaba_ai_core.output_parsers import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
 )
-from aibaba-ai-core.output_parsers.base import OutputParserLike
-from aibaba-ai-core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from aibaba-ai-core.runnables import (
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import (
     Runnable,
     RunnableMap,
     RunnablePassthrough,
 )
-from aibaba-ai-core.tools import BaseTool
-from aibaba-ai-core.utils import (
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import (
     from_env,
     get_pydantic_field_names,
     secret_from_env,
 )
-from aibaba-ai-core.utils.function_calling import convert_to_openai_tool
-from aibaba-ai-core.utils.pydantic import is_basemodel_subclass
-from aibaba-ai-core.utils.utils import _build_model_kwargs
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import is_basemodel_subclass
+from aibaba_ai_core.utils.utils import _build_model_kwargs
 from pydantic import (
     BaseModel,
     ConfigDict,
@@ -472,7 +472,7 @@ class ChatAnthropic(BaseChatModel):
 
             import base64
             import httpx
-            from aibaba-ai-core.messages import HumanMessage
+            from aibaba_ai_core.messages import HumanMessage
 
             image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
             image_data = base64.b64encode(httpx.get(image_url).content).decode("utf-8")
@@ -826,7 +826,7 @@ class ChatAnthropic(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports Anthropic format tool schemas and any tool definition handled
-                by :meth:`~aibaba-ai-core.utils.function_calling.convert_to_openai_tool`.
+                by :meth:`~aibaba_ai_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call. Options are:
 
                 - name of the tool as a string or as dict ``{"type": "tool", "name": "<<tool_name>>"}``: calls corresponding tool;
@@ -991,7 +991,7 @@ class ChatAnthropic(BaseChatModel):
                 If ``schema`` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`~aibaba-ai-core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`~aibaba_ai_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
             include_raw:
@@ -1004,7 +1004,7 @@ class ChatAnthropic(BaseChatModel):
             kwargs: Additional keyword arguments are ignored.
 
         Returns:
-            A Runnable that takes same inputs as a :class:`~aibaba-ai-core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`~aibaba_ai_core.language_models.chat.BaseChatModel`.
 
             If ``include_raw`` is False and ``schema`` is a Pydantic class, Runnable outputs
             an instance of ``schema`` (i.e., a Pydantic object).
@@ -1132,7 +1132,7 @@ class ChatAnthropic(BaseChatModel):
             .. code-block:: python
 
                 from langchain_anthropic import ChatAnthropic
-                from aibaba-ai-core.messages import HumanMessage, SystemMessage
+                from aibaba_ai_core.messages import HumanMessage, SystemMessage
 
                 llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
 
@@ -1150,8 +1150,8 @@ class ChatAnthropic(BaseChatModel):
             .. code-block:: python
 
                 from langchain_anthropic import ChatAnthropic
-                from aibaba-ai-core.messages import HumanMessage
-                from aibaba-ai-core.tools import tool
+                from aibaba_ai_core.messages import HumanMessage
+                from aibaba_ai_core.tools import tool
 
                 llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
 

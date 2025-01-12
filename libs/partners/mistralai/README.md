@@ -21,7 +21,7 @@ export MISTRAL_API_KEY=your-api-key
 Then initialize
 
 ```python
-from aibaba-ai-core.messages import HumanMessage
+from aibaba_ai_core.messages import HumanMessage
 from langchain_mistralai.chat_models import ChatMistralAI
 
 chat = ChatMistralAI(model="mistral-small")

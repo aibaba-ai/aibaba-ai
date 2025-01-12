@@ -1,4 +1,4 @@
-from aibaba-ai-core.embeddings.fake import (
+from aibaba_ai_core.embeddings.fake import (
     FakeEmbeddings,
 )
 

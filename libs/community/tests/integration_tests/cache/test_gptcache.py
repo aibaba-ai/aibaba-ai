@@ -3,7 +3,7 @@ from typing import Any, Callable, Union
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from aibaba-ai-core.outputs import Generation
+from alibaba_ai_core.outputs import Generation
 
 from aiagentsforce_community.cache import GPTCache
 from tests.unit_tests.llms.fake_llm import FakeLLM

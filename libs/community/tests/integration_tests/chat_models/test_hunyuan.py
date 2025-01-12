@@ -8,8 +8,8 @@ from langchain.prompts.chat import (
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from aibaba-ai-core.messages import AIMessage, HumanMessage
-from aibaba-ai-core.runnables.base import RunnableSerializable
+from alibaba_ai_core.messages import AIMessage, HumanMessage
+from alibaba_ai_core.runnables.base import RunnableSerializable
 
 from aiagentsforce_community.chat_models.hunyuan import ChatHunyuan
 

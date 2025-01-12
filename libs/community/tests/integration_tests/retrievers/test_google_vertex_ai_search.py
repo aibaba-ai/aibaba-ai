@@ -14,7 +14,7 @@ export DATA_STORE_ID=... - the ID of the search engine to use for the test
 import os
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.retrievers.google_vertex_ai_search import (
     GoogleCloudEnterpriseSearchRetriever,

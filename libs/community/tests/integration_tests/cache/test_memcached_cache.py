@@ -5,7 +5,7 @@ localhost default port (11211) and pymemcache
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from aibaba-ai-core.outputs import Generation, LLMResult
+from alibaba_ai_core.outputs import Generation, LLMResult
 
 from aiagentsforce_community.cache import MemcachedCache
 from tests.unit_tests.llms.fake_llm import FakeLLM

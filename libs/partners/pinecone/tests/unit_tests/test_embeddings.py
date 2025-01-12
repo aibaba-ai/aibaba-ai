@@ -3,7 +3,7 @@ from unittest.mock import patch
 
 import aiohttp
 import pytest
-from aibaba-ai-core.utils import convert_to_secret_str
+from aibaba_ai_core.utils import convert_to_secret_str
 from langchain_tests.unit_tests.embeddings import EmbeddingsTests
 
 from langchain_pinecone import PineconeEmbeddings

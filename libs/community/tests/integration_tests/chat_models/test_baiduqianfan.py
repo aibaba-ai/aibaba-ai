@@ -1,6 +1,6 @@
-from aibaba-ai-core.messages import AIMessage, HumanMessage, ToolMessage
-from aibaba-ai-core.messages.tool import ToolCall
-from aibaba-ai-core.tools import tool
+from alibaba_ai_core.messages import AIMessage, HumanMessage, ToolMessage
+from alibaba_ai_core.messages.tool import ToolCall
+from alibaba_ai_core.tools import tool
 
 from aiagentsforce_community.chat_models import QianfanChatEndpoint
 

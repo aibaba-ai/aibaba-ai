@@ -1,6 +1,6 @@
 import os
 
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.graphs import MemgraphGraph
 from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship

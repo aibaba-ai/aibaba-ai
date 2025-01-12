@@ -1,7 +1,7 @@
 from typing import Any
 
 import pytest
-from aibaba-ai-core.messages import AIMessage, HumanMessage, messages_to_dict
+from alibaba_ai_core.messages import AIMessage, HumanMessage, messages_to_dict
 from pytest_mock import MockerFixture
 
 from aiagentsforce_community.chat_message_histories.dynamodb import (

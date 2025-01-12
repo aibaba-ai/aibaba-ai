@@ -4,8 +4,8 @@ from typing import Dict, List, Union
 
 import pytest
 from langchain.chains.llm import LLMChain
-from aibaba-ai-core.output_parsers import BaseOutputParser
-from aibaba-ai-core.prompts import PromptTemplate
+from alibaba_ai_core.output_parsers import BaseOutputParser
+from alibaba_ai_core.prompts import PromptTemplate
 
 from tests.unit_tests.llms.fake_llm import FakeLLM
 

@@ -4,13 +4,13 @@ import logging
 import os
 from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
-from aibaba-ai-core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from aibaba-ai-core.language_models.llms import LLM
-from aibaba-ai-core.outputs import GenerationChunk
-from aibaba-ai-core.utils import from_env, get_pydantic_field_names
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import from_env, get_pydantic_field_names
 from pydantic import ConfigDict, Field, model_validator
 from typing_extensions import Self
 
@@ -49,7 +49,7 @@ class HuggingFaceEndpoint(LLM):
             print(llm.invoke("What is Deep Learning?"))
 
             # Streaming response example
-            from aibaba-ai-core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+            from aibaba_ai_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
             callbacks = [StreamingStdOutCallbackHandler()]
             llm = HuggingFaceEndpoint(

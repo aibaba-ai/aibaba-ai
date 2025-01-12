@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Literal, Optional, Type, Union
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     FunctionMessage,
@@ -16,7 +16,7 @@ from aibaba-ai-core.messages import (
     ToolCall,
     ToolMessage,
 )
-from aibaba-ai-core.messages.ai import UsageMetadata
+from aibaba_ai_core.messages.ai import UsageMetadata
 from pydantic import BaseModel, Field
 from typing_extensions import TypedDict
 

@@ -2,7 +2,7 @@ import uuid
 from typing import List, Union
 
 import pytest
-from aibaba-ai-core.documents import Document
+from aibaba_ai_core.documents import Document
 from qdrant_client import QdrantClient, models
 
 from langchain_qdrant import QdrantVectorStore, RetrievalMode

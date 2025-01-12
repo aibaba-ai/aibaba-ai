@@ -2,8 +2,8 @@ import logging
 from typing import Any, Iterable, List, Literal, Optional, cast
 
 import voyageai  # type: ignore
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.utils import secret_from_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import secret_from_env
 from pydantic import (
     BaseModel,
     ConfigDict,

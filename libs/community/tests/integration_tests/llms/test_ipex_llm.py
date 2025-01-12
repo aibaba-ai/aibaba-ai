@@ -4,7 +4,7 @@ import os
 from typing import Any
 
 import pytest
-from aibaba-ai-core.outputs import LLMResult
+from alibaba_ai_core.outputs import LLMResult
 
 from aiagentsforce_community.llms import IpexLLM
 

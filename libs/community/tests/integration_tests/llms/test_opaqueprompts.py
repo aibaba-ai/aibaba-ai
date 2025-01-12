@@ -1,6 +1,6 @@
-from aibaba-ai-core.output_parsers import StrOutputParser
-from aibaba-ai-core.prompts import PromptTemplate
-from aibaba-ai-core.runnables import RunnableParallel
+from alibaba_ai_core.output_parsers import StrOutputParser
+from alibaba_ai_core.prompts import PromptTemplate
+from alibaba_ai_core.runnables import RunnableParallel
 
 import aiagentsforce_community.utilities.opaqueprompts as op
 from aiagentsforce_community.llms import OpenAI

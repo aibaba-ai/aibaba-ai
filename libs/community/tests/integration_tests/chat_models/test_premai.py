@@ -6,8 +6,8 @@ For this we need to have a project setup in PremAI's platform: https://app.prema
 """
 
 import pytest
-from aibaba-ai-core.messages import BaseMessage, HumanMessage, SystemMessage
-from aibaba-ai-core.outputs import ChatGeneration, LLMResult
+from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
+from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
 from aiagentsforce_community.chat_models import ChatPremAI
 

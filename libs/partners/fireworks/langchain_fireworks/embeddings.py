@@ -1,7 +1,7 @@
 from typing import List
 
-from aibaba-ai-core.embeddings import Embeddings
-from aibaba-ai-core.utils import secret_from_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import secret_from_env
 from openai import OpenAI
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self

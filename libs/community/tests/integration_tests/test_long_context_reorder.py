@@ -1,6 +1,6 @@
 """Integration test for doc reordering."""
 
-from aibaba-ai-core.vectorstores import InMemoryVectorStore
+from alibaba_ai_core.vectorstores import InMemoryVectorStore
 
 from aiagentsforce_community.document_transformers.long_context_reorder import (
     LongContextReorder,

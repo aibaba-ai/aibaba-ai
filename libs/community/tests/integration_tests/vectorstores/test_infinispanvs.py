@@ -5,7 +5,7 @@ from typing import Any, List, Optional
 
 import httpx
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.vectorstores.infinispanvs import InfinispanVS
 from tests.integration_tests.vectorstores.fake_embeddings import (

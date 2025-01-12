@@ -3,7 +3,7 @@
 from typing import List
 
 import pytest
-from aibaba-ai-core.messages import (
+from alibaba_ai_core.messages import (
     BaseMessage,
     HumanMessage,
     SystemMessage,

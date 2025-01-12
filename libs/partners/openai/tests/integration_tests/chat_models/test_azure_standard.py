@@ -4,7 +4,7 @@ import os
 from typing import Type
 
 import pytest
-from aibaba-ai-core.language_models import BaseChatModel
+from aibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 
 from aiagentsforce_openai import AzureChatOpenAI

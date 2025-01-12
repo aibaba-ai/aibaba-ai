@@ -3,7 +3,7 @@
 import tempfile
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
 from aiagentsforce_community.vectorstores.annoy import Annoy

@@ -1,7 +1,7 @@
 from typing import Any, Type
 
-from aibaba-ai-core.documents import Document
-from aibaba-ai-core.retrievers import BaseRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 
 from langchain_tests.integration_tests import RetrieversIntegrationTests
 

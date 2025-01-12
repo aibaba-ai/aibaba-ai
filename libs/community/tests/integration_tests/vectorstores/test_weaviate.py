@@ -6,7 +6,7 @@ import uuid
 from typing import Generator, Union
 
 import pytest
-from aibaba-ai-core.documents import Document
+from alibaba_ai_core.documents import Document
 
 from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
 from aiagentsforce_community.vectorstores.weaviate import Weaviate

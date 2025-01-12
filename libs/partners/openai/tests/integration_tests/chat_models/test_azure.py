@@ -5,14 +5,14 @@ import os
 from typing import Any, Optional
 
 import pytest
-from aibaba-ai-core.callbacks import CallbackManager
-from aibaba-ai-core.messages import (
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import (
     AIMessageChunk,
     BaseMessage,
     BaseMessageChunk,
     HumanMessage,
 )
-from aibaba-ai-core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from aiagentsforce_openai import AzureChatOpenAI
 from tests.unit_tests.fake.callbacks import FakeCallbackHandler

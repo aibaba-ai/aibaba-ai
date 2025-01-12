@@ -5,7 +5,7 @@ import time
 from typing import Any
 
 import pytest
-from aibaba-ai-core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from langchain_couchbase import CouchbaseVectorStore
 from tests.utils import (
