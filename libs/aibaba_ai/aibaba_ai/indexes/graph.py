@@ -5,16 +5,16 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.graphs.index_creator import GraphIndexCreator
-    from aiagentsforce_community.graphs.networkx_graph import NetworkxEntityGraph
+    from aibaba_ai_community.graphs.index_creator import GraphIndexCreator
+    from aibaba_ai_community.graphs.networkx_graph import NetworkxEntityGraph
 
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GraphIndexCreator": "aiagentsforce_community.graphs.index_creator",
-    "NetworkxEntityGraph": "aiagentsforce_community.graphs.networkx_graph",
+    "GraphIndexCreator": "aibaba_ai_community.graphs.index_creator",
+    "NetworkxEntityGraph": "aibaba_ai_community.graphs.networkx_graph",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

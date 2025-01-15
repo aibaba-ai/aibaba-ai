@@ -25,8 +25,8 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
-from aiagentsforce_community.llms.yandex import _BaseYandexGPT
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.yandex import _BaseYandexGPT
 
 logger = logging.getLogger(__name__)
 
@@ -66,7 +66,7 @@ class ChatYandexGPT(_BaseYandexGPT, BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatYandexGPT
+            from aibaba_ai_community.chat_models import ChatYandexGPT
             chat_model = ChatYandexGPT(iam_token="t1.9eu...")
 
     """

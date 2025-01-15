@@ -1,6 +1,6 @@
 """Zapier Tool."""
 
-from aiagentsforce_community.tools.zapier.tool import (
+from aibaba_ai_community.tools.zapier.tool import (
     ZapierNLAListActions,
     ZapierNLARunAction,
 )

@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         CopyFileTool,
         DeleteFileTool,
         FileSearchTool,
@@ -19,13 +19,13 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "CopyFileTool": "aiagentsforce_community.tools",
-    "DeleteFileTool": "aiagentsforce_community.tools",
-    "FileSearchTool": "aiagentsforce_community.tools",
-    "MoveFileTool": "aiagentsforce_community.tools",
-    "ReadFileTool": "aiagentsforce_community.tools",
-    "WriteFileTool": "aiagentsforce_community.tools",
-    "ListDirectoryTool": "aiagentsforce_community.tools",
+    "CopyFileTool": "aibaba_ai_community.tools",
+    "DeleteFileTool": "aibaba_ai_community.tools",
+    "FileSearchTool": "aibaba_ai_community.tools",
+    "MoveFileTool": "aibaba_ai_community.tools",
+    "ReadFileTool": "aibaba_ai_community.tools",
+    "WriteFileTool": "aibaba_ai_community.tools",
+    "ListDirectoryTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

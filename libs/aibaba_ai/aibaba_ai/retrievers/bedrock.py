@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import AmazonKnowledgeBasesRetriever
-    from aiagentsforce_community.retrievers.bedrock import (
+    from aibaba_ai_community.retrievers import AmazonKnowledgeBasesRetriever
+    from aibaba_ai_community.retrievers.bedrock import (
         RetrievalConfig,
         VectorSearchConfig,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "VectorSearchConfig": "aiagentsforce_community.retrievers.bedrock",
-    "RetrievalConfig": "aiagentsforce_community.retrievers.bedrock",
-    "AmazonKnowledgeBasesRetriever": "aiagentsforce_community.retrievers",
+    "VectorSearchConfig": "aibaba_ai_community.retrievers.bedrock",
+    "RetrievalConfig": "aibaba_ai_community.retrievers.bedrock",
+    "AmazonKnowledgeBasesRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

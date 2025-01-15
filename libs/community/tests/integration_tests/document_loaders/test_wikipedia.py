@@ -4,7 +4,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import WikipediaLoader
+from aibaba_ai_community.document_loaders import WikipediaLoader
 
 
 def assert_docs(docs: List[Document], all_meta: bool = False) -> None:

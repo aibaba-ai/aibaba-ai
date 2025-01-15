@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import LakeFSLoader
-    from aiagentsforce_community.document_loaders.lakefs import (
+    from aibaba_ai_community.document_loaders import LakeFSLoader
+    from aibaba_ai_community.document_loaders.lakefs import (
         LakeFSClient,
         UnstructuredLakeFSLoader,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LakeFSClient": "aiagentsforce_community.document_loaders.lakefs",
-    "LakeFSLoader": "aiagentsforce_community.document_loaders",
-    "UnstructuredLakeFSLoader": "aiagentsforce_community.document_loaders.lakefs",
+    "LakeFSClient": "aibaba_ai_community.document_loaders.lakefs",
+    "LakeFSLoader": "aibaba_ai_community.document_loaders",
+    "UnstructuredLakeFSLoader": "aibaba_ai_community.document_loaders.lakefs",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

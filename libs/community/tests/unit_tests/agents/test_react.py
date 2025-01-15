@@ -9,7 +9,7 @@ from alibaba_ai_core.language_models import FakeListLLM
 from alibaba_ai_core.prompts.prompt import PromptTemplate
 from alibaba_ai_core.tools import Tool
 
-from aiagentsforce_community.docstore.base import Docstore
+from aibaba_ai_community.docstore.base import Docstore
 
 _PAGE_CONTENT = """This is a page about Aibaba AI.
 

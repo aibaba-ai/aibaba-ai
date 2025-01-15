@@ -11,7 +11,7 @@ from langchain.prompts.chat import (
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 from alibaba_ai_core.runnables.base import RunnableSerializable
 
-from aiagentsforce_community.chat_models.hunyuan import ChatHunyuan
+from aibaba_ai_community.chat_models.hunyuan import ChatHunyuan
 
 
 @pytest.mark.requires("tencentcloud-sdk-python")

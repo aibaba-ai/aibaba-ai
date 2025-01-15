@@ -21,7 +21,7 @@ class MlflowEmbeddings(Embeddings, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import MlflowEmbeddings
+            from aibaba_ai_community.embeddings import MlflowEmbeddings
 
             embeddings = MlflowEmbeddings(
                 target_uri="http://localhost:5000",

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.redis import (
+    from aibaba_ai_community.utilities.redis import (
         TokenEscaper,
         check_redis_module_exist,
         get_client,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "TokenEscaper": "aiagentsforce_community.utilities.redis",
-    "check_redis_module_exist": "aiagentsforce_community.utilities.redis",
-    "get_client": "aiagentsforce_community.utilities.redis",
+    "TokenEscaper": "aibaba_ai_community.utilities.redis",
+    "check_redis_module_exist": "aibaba_ai_community.utilities.redis",
+    "get_client": "aibaba_ai_community.utilities.redis",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

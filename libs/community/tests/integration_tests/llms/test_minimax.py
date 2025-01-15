@@ -1,6 +1,6 @@
 """Test Minimax API wrapper."""
 
-from aiagentsforce_community.llms.minimax import Minimax
+from aibaba_ai_community.llms.minimax import Minimax
 
 
 def test_minimax_call() -> None:

@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import ListDirectoryTool
-    from aiagentsforce_community.tools.file_management.list_dir import DirectoryListingInput
+    from aibaba_ai_community.tools import ListDirectoryTool
+    from aibaba_ai_community.tools.file_management.list_dir import DirectoryListingInput
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "DirectoryListingInput": "aiagentsforce_community.tools.file_management.list_dir",
-    "ListDirectoryTool": "aiagentsforce_community.tools",
+    "DirectoryListingInput": "aibaba_ai_community.tools.file_management.list_dir",
+    "ListDirectoryTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

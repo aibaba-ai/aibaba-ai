@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.llms.openllm import OpenLLM
+from aibaba_ai_community.llms.openllm import OpenLLM
 
 
 @pytest.mark.scheduled

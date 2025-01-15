@@ -1,4 +1,4 @@
-from aiagentsforce_community.docstore import __all__, _module_lookup
+from aibaba_ai_community.docstore import __all__, _module_lookup
 
 EXPECTED_ALL = ["DocstoreFn", "InMemoryDocstore", "Wikipedia"]
 

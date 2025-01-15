@@ -7,7 +7,7 @@ from typing import Generator
 
 import pytest
 
-from aiagentsforce_community.document_loaders.blob_loaders import FileSystemBlobLoader
+from aibaba_ai_community.document_loaders.blob_loaders import FileSystemBlobLoader
 
 
 @pytest.fixture

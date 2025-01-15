@@ -3,10 +3,10 @@ from unittest.mock import MagicMock, patch
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.llms.arcee import Arcee
+from aibaba_ai_community.llms.arcee import Arcee
 
 
-@patch("aiagentsforce_community.utilities.arcee.requests.get")
+@patch("aibaba_ai_community.utilities.arcee.requests.get")
 def test_arcee_api_key_is_secret_string(mock_get: MagicMock) -> None:
     mock_response = mock_get.return_value
     mock_response.status_code = 200
@@ -24,7 +24,7 @@ def test_arcee_api_key_is_secret_string(mock_get: MagicMock) -> None:
     assert isinstance(arcee_without_env_var.arcee_api_key, SecretStr)
 
 
-@patch("aiagentsforce_community.utilities.arcee.requests.get")
+@patch("aibaba_ai_community.utilities.arcee.requests.get")
 def test_api_key_masked_when_passed_via_constructor(
     mock_get: MagicMock, capsys: CaptureFixture
 ) -> None:
@@ -47,7 +47,7 @@ def test_api_key_masked_when_passed_via_constructor(
     assert "**********" == captured.out
 
 
-@patch("aiagentsforce_community.utilities.arcee.requests.get")
+@patch("aibaba_ai_community.utilities.arcee.requests.get")
 def test_api_key_masked_when_passed_from_env(
     mock_get: MagicMock, capsys: CaptureFixture, monkeypatch: MonkeyPatch
 ) -> None:

@@ -1,4 +1,4 @@
-from aiagentsforce_community.embeddings import __all__, _module_lookup
+from aibaba_ai_community.embeddings import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "ClovaEmbeddings",

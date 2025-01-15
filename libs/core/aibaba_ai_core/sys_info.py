@@ -68,7 +68,7 @@ def print_sys_info(*, additional_pkgs: Sequence[str] = ()) -> None:
     )
 
     # Always surface these packages to the top
-    order_by = ["aibaba_ai_core", "langchain", "aiagentsforce_community", "langsmith"]
+    order_by = ["aibaba_ai_core", "langchain", "aibaba_ai_community", "langsmith"]
 
     for pkg in reversed(order_by):
         if pkg in all_packages:

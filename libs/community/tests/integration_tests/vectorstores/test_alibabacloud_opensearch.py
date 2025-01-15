@@ -3,7 +3,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.alibabacloud_opensearch import (
+from aibaba_ai_community.vectorstores.alibabacloud_opensearch import (
     AlibabaCloudOpenSearch,
     AlibabaCloudOpenSearchSettings,
 )

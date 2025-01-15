@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders import PyPDFLoader
+from aibaba_ai_community.document_loaders import PyPDFLoader
 
 path_to_simple_pdf = (
     Path(__file__).parent.parent.parent / "integration_tests/examples/hello.pdf"

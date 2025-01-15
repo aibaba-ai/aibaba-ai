@@ -16,7 +16,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 DEFAULT_NEBULA_SERVICE_URL = "https://api-nebula.symbl.ai"
 DEFAULT_NEBULA_SERVICE_PATH = "/v1/model/generate"
@@ -34,7 +34,7 @@ class Nebula(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Nebula
+            from aibaba_ai_community.llms import Nebula
 
             nebula = Nebula(
                 nebula_service_url="NEBULA_SERVICE_URL",

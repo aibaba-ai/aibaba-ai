@@ -9,7 +9,7 @@ from langchain.chains.base import Chain
 from alibaba_ai_core.callbacks import CallbackManagerForChainRun
 from pydantic import ConfigDict, Field, model_validator
 
-from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+from aibaba_ai_community.utilities.requests import TextRequestsWrapper
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"  # noqa: E501

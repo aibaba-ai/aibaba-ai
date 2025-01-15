@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.vectorstores.redis.schema import (
+from aibaba_ai_community.vectorstores.redis.schema import (
     FlatVectorField,
     HNSWVectorField,
     NumericFieldSchema,

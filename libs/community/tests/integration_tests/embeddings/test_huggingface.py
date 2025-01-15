@@ -1,6 +1,6 @@
 """Test huggingface embeddings."""
 
-from aiagentsforce_community.embeddings.huggingface import (
+from aibaba_ai_community.embeddings.huggingface import (
     HuggingFaceEmbeddings,
     HuggingFaceInstructEmbeddings,
 )

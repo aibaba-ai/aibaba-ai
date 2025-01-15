@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         VectorStoreQATool,
         VectorStoreQAWithSourcesTool,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "VectorStoreQATool": "aiagentsforce_community.tools",
-    "VectorStoreQAWithSourcesTool": "aiagentsforce_community.tools",
+    "VectorStoreQATool": "aibaba_ai_community.tools",
+    "VectorStoreQAWithSourcesTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

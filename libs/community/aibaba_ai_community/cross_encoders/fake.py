@@ -3,7 +3,7 @@ from typing import List, Tuple
 
 from pydantic import BaseModel
 
-from aiagentsforce_community.cross_encoders.base import BaseCrossEncoder
+from aibaba_ai_community.cross_encoders.base import BaseCrossEncoder
 
 
 class FakeCrossEncoder(BaseCrossEncoder, BaseModel):

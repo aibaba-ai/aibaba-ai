@@ -3,7 +3,7 @@
 import warnings
 from typing import Any
 
-from aiagentsforce_community.tools.human.tool import HumanInputRun
+from aibaba_ai_community.tools.human.tool import HumanInputRun
 
 
 def StdInInquireTool(*args: Any, **kwargs: Any) -> HumanInputRun:

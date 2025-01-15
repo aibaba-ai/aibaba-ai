@@ -6,9 +6,9 @@ from urllib.parse import unquote
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.directory import DirectoryLoader
-from aiagentsforce_community.document_loaders.pdf import PyPDFLoader
-from aiagentsforce_community.document_loaders.web_base import WebBaseLoader
+from aibaba_ai_community.document_loaders.directory import DirectoryLoader
+from aibaba_ai_community.document_loaders.pdf import PyPDFLoader
+from aibaba_ai_community.document_loaders.web_base import WebBaseLoader
 
 
 class BlackboardLoader(WebBaseLoader):
@@ -23,7 +23,7 @@ class BlackboardLoader(WebBaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import BlackboardLoader
+            from aibaba_ai_community.document_loaders import BlackboardLoader
 
             loader = BlackboardLoader(
                 blackboard_course_url="https://blackboard.example.com/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_123456_1",

@@ -7,7 +7,7 @@ from typing import List, Optional
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class BlockchainType(Enum):
@@ -37,7 +37,7 @@ class BlockchainType(Enum):
 class BlockchainDocumentLoader(BaseLoader):
     """Load elements from a blockchain smart contract.
 
-    See supported blockchains here: https://docs.aibaba.world/v0.2/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.blockchain.BlockchainType.html
+    See supported blockchains here: https://docs.aibaba.world/v0.2/api_reference/community/document_loaders/aibaba_ai_community.document_loaders.blockchain.BlockchainType.html
 
     If no BlockchainType is specified, the default is Ethereum mainnet.
 

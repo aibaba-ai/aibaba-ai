@@ -7,7 +7,7 @@ from alibaba_ai_core.language_models import BaseChatModel
 from langchain_tests.integration_tests import ChatModelIntegrationTests
 from pydantic import SecretStr
 
-from aiagentsforce_community.chat_models.moonshot import MoonshotChat
+from aibaba_ai_community.chat_models.moonshot import MoonshotChat
 
 
 class TestMoonshotChat(ChatModelIntegrationTests):

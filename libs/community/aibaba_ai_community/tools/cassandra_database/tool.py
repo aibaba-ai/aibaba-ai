@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.utilities.cassandra_database import CassandraDatabase
+from aibaba_ai_community.utilities.cassandra_database import CassandraDatabase
 
 if TYPE_CHECKING:
     from cassandra.cluster import ResultSet

@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.prompts import PromptTemplate
 
-from aiagentsforce_community.example_selectors import (
+from aibaba_ai_community.example_selectors import (
     NGramOverlapExampleSelector,
     ngram_overlap_score,
 )

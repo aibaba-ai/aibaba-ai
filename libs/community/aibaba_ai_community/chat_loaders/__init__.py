@@ -22,30 +22,30 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_loaders.base import (
+    from aibaba_ai_community.chat_loaders.base import (
         BaseChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.facebook_messenger import (
+    from aibaba_ai_community.chat_loaders.facebook_messenger import (
         FolderFacebookMessengerChatLoader,
         SingleFileFacebookMessengerChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.gmail import (
+    from aibaba_ai_community.chat_loaders.gmail import (
         GMailLoader,
     )
-    from aiagentsforce_community.chat_loaders.imessage import (
+    from aibaba_ai_community.chat_loaders.imessage import (
         IMessageChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.langsmith import (
+    from aibaba_ai_community.chat_loaders.langsmith import (
         LangSmithDatasetChatLoader,
         LangSmithRunChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.slack import (
+    from aibaba_ai_community.chat_loaders.slack import (
         SlackChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.telegram import (
+    from aibaba_ai_community.chat_loaders.telegram import (
         TelegramChatLoader,
     )
-    from aiagentsforce_community.chat_loaders.whatsapp import (
+    from aibaba_ai_community.chat_loaders.whatsapp import (
         WhatsAppChatLoader,
     )
 
@@ -64,15 +64,15 @@ __all__ = [
 
 _module_lookup = {
     "BaseChatLoader": "alibaba_ai_core.chat_loaders",
-    "FolderFacebookMessengerChatLoader": "aiagentsforce_community.chat_loaders.facebook_messenger",  # noqa: E501
-    "GMailLoader": "aiagentsforce_community.chat_loaders.gmail",
-    "IMessageChatLoader": "aiagentsforce_community.chat_loaders.imessage",
-    "LangSmithDatasetChatLoader": "aiagentsforce_community.chat_loaders.langsmith",
-    "LangSmithRunChatLoader": "aiagentsforce_community.chat_loaders.langsmith",
-    "SingleFileFacebookMessengerChatLoader": "aiagentsforce_community.chat_loaders.facebook_messenger",  # noqa: E501
-    "SlackChatLoader": "aiagentsforce_community.chat_loaders.slack",
-    "TelegramChatLoader": "aiagentsforce_community.chat_loaders.telegram",
-    "WhatsAppChatLoader": "aiagentsforce_community.chat_loaders.whatsapp",
+    "FolderFacebookMessengerChatLoader": "aibaba_ai_community.chat_loaders.facebook_messenger",  # noqa: E501
+    "GMailLoader": "aibaba_ai_community.chat_loaders.gmail",
+    "IMessageChatLoader": "aibaba_ai_community.chat_loaders.imessage",
+    "LangSmithDatasetChatLoader": "aibaba_ai_community.chat_loaders.langsmith",
+    "LangSmithRunChatLoader": "aibaba_ai_community.chat_loaders.langsmith",
+    "SingleFileFacebookMessengerChatLoader": "aibaba_ai_community.chat_loaders.facebook_messenger",  # noqa: E501
+    "SlackChatLoader": "aibaba_ai_community.chat_loaders.slack",
+    "TelegramChatLoader": "aibaba_ai_community.chat_loaders.telegram",
+    "WhatsAppChatLoader": "aibaba_ai_community.chat_loaders.whatsapp",
 }
 
 

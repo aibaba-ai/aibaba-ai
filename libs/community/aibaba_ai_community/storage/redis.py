@@ -2,7 +2,7 @@ from typing import Any, Iterator, List, Optional, Sequence, Tuple, cast
 
 from alibaba_ai_core.stores import ByteStore
 
-from aiagentsforce_community.utilities.redis import get_client
+from aibaba_ai_community.utilities.redis import get_client
 
 
 class RedisStore(ByteStore):
@@ -14,8 +14,8 @@ class RedisStore(ByteStore):
         .. code-block:: python
 
             # Instantiate the RedisStore with a Redis connection
-            from aiagentsforce_community.storage import RedisStore
-            from aiagentsforce_community.utilities.redis import get_client
+            from aibaba_ai_community.storage import RedisStore
+            from aibaba_ai_community.utilities.redis import get_client
 
             client = get_client('redis://localhost:6379')
             redis_store = RedisStore(client=client)

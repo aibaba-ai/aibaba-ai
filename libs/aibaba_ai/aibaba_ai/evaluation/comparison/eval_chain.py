@@ -159,7 +159,7 @@ class PairwiseStringEvalChain(PairwiseStringEvaluator, LLMEvalChain, LLMChain): 
         output_parser (BaseOutputParser): The output parser for the chain.
 
     Example:
-        >>> from aiagentsforce_community.chat_models import ChatOpenAI
+        >>> from aibaba_ai_community.chat_models import ChatOpenAI
         >>> from langchain.evaluation.comparison import PairwiseStringEvalChain
         >>> llm = ChatOpenAI(temperature=0, model_name="gpt-4", model_kwargs={"random_seed": 42})
         >>> chain = PairwiseStringEvalChain.from_llm(llm=llm)

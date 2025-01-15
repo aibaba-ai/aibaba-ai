@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import (
+    from aibaba_ai_community.retrievers import (
         GoogleCloudEnterpriseSearchRetriever,
         GoogleVertexAIMultiTurnSearchRetriever,
         GoogleVertexAISearchRetriever,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GoogleVertexAISearchRetriever": "aiagentsforce_community.retrievers",
-    "GoogleVertexAIMultiTurnSearchRetriever": "aiagentsforce_community.retrievers",
-    "GoogleCloudEnterpriseSearchRetriever": "aiagentsforce_community.retrievers",
+    "GoogleVertexAISearchRetriever": "aibaba_ai_community.retrievers",
+    "GoogleVertexAIMultiTurnSearchRetriever": "aibaba_ai_community.retrievers",
+    "GoogleCloudEnterpriseSearchRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

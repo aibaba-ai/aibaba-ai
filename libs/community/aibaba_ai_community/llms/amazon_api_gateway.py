@@ -5,7 +5,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class ContentHandlerAmazonAPIGateway:

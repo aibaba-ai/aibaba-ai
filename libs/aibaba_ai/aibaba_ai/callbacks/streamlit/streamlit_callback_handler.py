@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler import (
+    from aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler import (
         LLMThought,
         LLMThoughtLabeler,
         LLMThoughtState,
@@ -16,19 +16,19 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "LLMThoughtState": (
-        "aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler"
+        "aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler"
     ),
     "ToolRecord": (
-        "aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler"
+        "aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler"
     ),
     "LLMThoughtLabeler": (
-        "aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler"
+        "aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler"
     ),
     "LLMThought": (
-        "aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler"
+        "aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler"
     ),
     "StreamlitCallbackHandler": (
-        "aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler"
+        "aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler"
     ),
 }
 

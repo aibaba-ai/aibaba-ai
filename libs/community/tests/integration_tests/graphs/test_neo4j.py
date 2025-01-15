@@ -2,9 +2,9 @@ import os
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graphs import Neo4jGraph
-from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship
-from aiagentsforce_community.graphs.neo4j_graph import (
+from aibaba_ai_community.graphs import Neo4jGraph
+from aibaba_ai_community.graphs.graph_document import GraphDocument, Node, Relationship
+from aibaba_ai_community.graphs.neo4j_graph import (
     BASE_ENTITY_LABEL,
     node_properties_query,
     rel_properties_query,

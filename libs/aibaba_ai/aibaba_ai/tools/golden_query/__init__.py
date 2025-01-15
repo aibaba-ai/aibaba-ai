@@ -5,12 +5,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.golden_query.tool import GoldenQueryRun
+    from aibaba_ai_community.tools.golden_query.tool import GoldenQueryRun
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"GoldenQueryRun": "aiagentsforce_community.tools.golden_query.tool"}
+DEPRECATED_LOOKUP = {"GoldenQueryRun": "aibaba_ai_community.tools.golden_query.tool"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

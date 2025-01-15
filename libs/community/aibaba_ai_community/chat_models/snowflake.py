@@ -98,7 +98,7 @@ class ChatSnowflakeCortex(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatSnowflakeCortex
+            from aibaba_ai_community.chat_models import ChatSnowflakeCortex
             chat = ChatSnowflakeCortex()
     """
 

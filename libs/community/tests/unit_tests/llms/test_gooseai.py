@@ -4,8 +4,8 @@ import pytest
 from pydantic import SecretStr
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.llms.gooseai import GooseAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.llms.gooseai import GooseAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 
 def _openai_v1_installed() -> bool:

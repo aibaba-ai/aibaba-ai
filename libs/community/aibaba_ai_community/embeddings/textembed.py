@@ -37,7 +37,7 @@ class TextEmbedEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import TextEmbedEmbeddings
+            from aibaba_ai_community.embeddings import TextEmbedEmbeddings
 
             embeddings = TextEmbedEmbeddings(
                 model="sentence-transformers/clip-ViT-B-32",

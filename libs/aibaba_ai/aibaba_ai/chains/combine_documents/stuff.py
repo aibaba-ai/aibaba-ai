@@ -57,7 +57,7 @@ def create_stuff_documents_chain(
 
             # pip install -U langchain langchain-community
 
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.chat_models import ChatOpenAI
             from aibaba_ai_core.documents import Document
             from aibaba_ai_core.prompts import ChatPromptTemplate
             from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -119,7 +119,7 @@ class StuffDocumentsChain(BaseCombineDocumentsChain):
 
             from langchain.chains import StuffDocumentsChain, LLMChain
             from aibaba_ai_core.prompts import PromptTemplate
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,
             # it will be passed to `format_document` - see that function for more

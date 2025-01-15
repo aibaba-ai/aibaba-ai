@@ -4,7 +4,7 @@ from typing import cast
 
 from pydantic import SecretStr
 
-from aiagentsforce_community.embeddings.baidu_qianfan_endpoint import (
+from aibaba_ai_community.embeddings.baidu_qianfan_endpoint import (
     QianfanEmbeddingsEndpoint,
 )
 

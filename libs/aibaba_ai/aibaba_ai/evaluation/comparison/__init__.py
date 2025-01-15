@@ -6,7 +6,7 @@ preferences, measuring similarity / semantic equivalence between outputs,
 or any other comparison task.
 
 Example:
-    >>> from aiagentsforce_community.chat_models import ChatOpenAI
+    >>> from aibaba_ai_community.chat_models import ChatOpenAI
     >>> from langchain.evaluation.comparison import PairwiseStringEvalChain
     >>> llm = ChatOpenAI(temperature=0)
     >>> chain = PairwiseStringEvalChain.from_llm(llm=llm)

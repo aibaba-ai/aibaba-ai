@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.openapi.prompts import (
+    from aibaba_ai_community.chains.openapi.prompts import (
         REQUEST_TEMPLATE,
         RESPONSE_TEMPLATE,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "REQUEST_TEMPLATE": "aiagentsforce_community.chains.openapi.prompts",
-    "RESPONSE_TEMPLATE": "aiagentsforce_community.chains.openapi.prompts",
+    "REQUEST_TEMPLATE": "aibaba_ai_community.chains.openapi.prompts",
+    "RESPONSE_TEMPLATE": "aibaba_ai_community.chains.openapi.prompts",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

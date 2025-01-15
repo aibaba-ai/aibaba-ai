@@ -17,7 +17,7 @@ class ClarifaiEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import ClarifaiEmbeddings
+            from aibaba_ai_community.embeddings import ClarifaiEmbeddings
             clarifai = ClarifaiEmbeddings(user_id=USER_ID,
                                           app_id=APP_ID,
                                           model_id=MODEL_ID)

@@ -32,8 +32,8 @@ class ArgillaCallbackHandler(BaseCallbackHandler):
         FileNotFoundError: if the `FeedbackDataset` retrieval from Argilla fails.
 
     Examples:
-        >>> from aiagentsforce_community.llms import OpenAI
-        >>> from aiagentsforce_community.callbacks import ArgillaCallbackHandler
+        >>> from aibaba_ai_community.llms import OpenAI
+        >>> from aibaba_ai_community.callbacks import ArgillaCallbackHandler
         >>> argilla_callback = ArgillaCallbackHandler(
         ...     dataset_name="my-dataset",
         ...     workspace_name="my-workspace",

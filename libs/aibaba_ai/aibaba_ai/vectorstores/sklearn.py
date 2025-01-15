@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import SKLearnVectorStore
-    from aiagentsforce_community.vectorstores.sklearn import (
+    from aibaba_ai_community.vectorstores import SKLearnVectorStore
+    from aibaba_ai_community.vectorstores.sklearn import (
         BaseSerializer,
         BsonSerializer,
         JsonSerializer,
@@ -16,12 +16,12 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BaseSerializer": "aiagentsforce_community.vectorstores.sklearn",
-    "JsonSerializer": "aiagentsforce_community.vectorstores.sklearn",
-    "BsonSerializer": "aiagentsforce_community.vectorstores.sklearn",
-    "ParquetSerializer": "aiagentsforce_community.vectorstores.sklearn",
-    "SKLearnVectorStoreException": "aiagentsforce_community.vectorstores.sklearn",
-    "SKLearnVectorStore": "aiagentsforce_community.vectorstores",
+    "BaseSerializer": "aibaba_ai_community.vectorstores.sklearn",
+    "JsonSerializer": "aibaba_ai_community.vectorstores.sklearn",
+    "BsonSerializer": "aibaba_ai_community.vectorstores.sklearn",
+    "ParquetSerializer": "aibaba_ai_community.vectorstores.sklearn",
+    "SKLearnVectorStoreException": "aibaba_ai_community.vectorstores.sklearn",
+    "SKLearnVectorStore": "aibaba_ai_community.vectorstores",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

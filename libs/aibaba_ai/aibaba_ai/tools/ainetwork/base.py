@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.ainetwork.base import AINBaseTool, OperationType
+    from aibaba_ai_community.tools.ainetwork.base import AINBaseTool, OperationType
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "OperationType": "aiagentsforce_community.tools.ainetwork.base",
-    "AINBaseTool": "aiagentsforce_community.tools.ainetwork.base",
+    "OperationType": "aibaba_ai_community.tools.ainetwork.base",
+    "AINBaseTool": "aibaba_ai_community.tools.ainetwork.base",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

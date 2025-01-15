@@ -4,7 +4,7 @@ import pytest
 from sqlalchemy import Engine, create_engine, text
 from sqlalchemy.ext.asyncio import AsyncEngine, create_async_engine
 
-from aiagentsforce_community.storage import SQLStore
+from aibaba_ai_community.storage import SQLStore
 
 pytest.importorskip("sqlalchemy")
 

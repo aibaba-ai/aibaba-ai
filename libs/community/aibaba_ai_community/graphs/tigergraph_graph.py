@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional
 
-from aiagentsforce_community.graphs.graph_store import GraphStore
+from aibaba_ai_community.graphs.graph_store import GraphStore
 
 
 class TigerGraph(GraphStore):

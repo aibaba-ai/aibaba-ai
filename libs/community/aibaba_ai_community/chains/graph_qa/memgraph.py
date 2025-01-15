@@ -24,11 +24,11 @@ from alibaba_ai_core.prompts import (
 from alibaba_ai_core.runnables import Runnable
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     MEMGRAPH_GENERATION_PROMPT,
     MEMGRAPH_QA_PROMPT,
 )
-from aiagentsforce_community.graphs.memgraph_graph import MemgraphGraph
+from aibaba_ai_community.graphs.memgraph_graph import MemgraphGraph
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

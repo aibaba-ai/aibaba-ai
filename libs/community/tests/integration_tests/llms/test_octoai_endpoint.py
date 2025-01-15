@@ -1,6 +1,6 @@
 """Test OctoAI API wrapper."""
 
-from aiagentsforce_community.llms.octoai_endpoint import OctoAIEndpoint
+from aibaba_ai_community.llms.octoai_endpoint import OctoAIEndpoint
 
 
 def test_octoai_endpoint_call() -> None:

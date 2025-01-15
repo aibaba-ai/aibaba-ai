@@ -5,10 +5,10 @@ from unittest import mock
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_transformers.nuclia_text_transform import (
+from aibaba_ai_community.document_transformers.nuclia_text_transform import (
     NucliaTextTransformer,
 )
-from aiagentsforce_community.tools.nuclia.tool import NucliaUnderstandingAPI
+from aibaba_ai_community.tools.nuclia.tool import NucliaUnderstandingAPI
 
 
 def fakerun(**args: Any) -> Any:
@@ -36,7 +36,7 @@ def fakerun(**args: Any) -> Any:
 
 async def test_nuclia_loader() -> None:
     with mock.patch(
-        "aiagentsforce_community.tools.nuclia.tool.NucliaUnderstandingAPI._arun",
+        "aibaba_ai_community.tools.nuclia.tool.NucliaUnderstandingAPI._arun",
         new_callable=fakerun,
     ):
         with mock.patch("os.environ.get", return_value="_a_key_"):

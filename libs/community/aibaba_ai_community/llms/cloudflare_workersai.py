@@ -20,7 +20,7 @@ class CloudflareWorkersAI(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms.cloudflare_workersai import CloudflareWorkersAI
+            from aibaba_ai_community.llms.cloudflare_workersai import CloudflareWorkersAI
 
             my_account_id = "my_account_id"
             my_api_token = "my_secret_api_token"

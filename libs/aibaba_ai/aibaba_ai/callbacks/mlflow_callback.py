@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.mlflow_callback import (
+    from aibaba_ai_community.callbacks.mlflow_callback import (
         MlflowCallbackHandler,
         MlflowLogger,
         analyze_text,
@@ -14,12 +14,12 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "analyze_text": "aiagentsforce_community.callbacks.mlflow_callback",
+    "analyze_text": "aibaba_ai_community.callbacks.mlflow_callback",
     "construct_html_from_prompt_and_generation": (
-        "aiagentsforce_community.callbacks.mlflow_callback"
+        "aibaba_ai_community.callbacks.mlflow_callback"
     ),
-    "MlflowLogger": "aiagentsforce_community.callbacks.mlflow_callback",
-    "MlflowCallbackHandler": "aiagentsforce_community.callbacks.mlflow_callback",
+    "MlflowLogger": "aibaba_ai_community.callbacks.mlflow_callback",
+    "MlflowCallbackHandler": "aibaba_ai_community.callbacks.mlflow_callback",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

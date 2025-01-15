@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.utilities.alpha_vantage import AlphaVantageAPIWrapper
+from aibaba_ai_community.utilities.alpha_vantage import AlphaVantageAPIWrapper
 
 
 @pytest.fixture

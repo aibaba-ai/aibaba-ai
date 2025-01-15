@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.file_management.toolkit import (
+    from aibaba_ai_community.agent_toolkits.file_management.toolkit import (
         FileManagementToolkit,
     )
 
@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "FileManagementToolkit": (
-        "aiagentsforce_community.agent_toolkits.file_management.toolkit"
+        "aibaba_ai_community.agent_toolkits.file_management.toolkit"
     )
 }
 

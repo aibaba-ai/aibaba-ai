@@ -20,85 +20,85 @@ from typing import Any, Dict, List, Optional, Callable, Tuple
 
 from mypy_extensions import Arg, KwArg
 
-from aiagentsforce_community.tools.arxiv.tool import ArxivQueryRun
-from aiagentsforce_community.tools.bing_search.tool import BingSearchRun
-from aiagentsforce_community.tools.dataforseo_api_search import DataForSeoAPISearchResults
-from aiagentsforce_community.tools.dataforseo_api_search import DataForSeoAPISearchRun
-from aiagentsforce_community.tools.ddg_search.tool import DuckDuckGoSearchRun
-from aiagentsforce_community.tools.eleven_labs.text2speech import ElevenLabsText2SpeechTool
-from aiagentsforce_community.tools.file_management import ReadFileTool
-from aiagentsforce_community.tools.golden_query.tool import GoldenQueryRun
-from aiagentsforce_community.tools.google_cloud.texttospeech import (
+from aibaba_ai_community.tools.arxiv.tool import ArxivQueryRun
+from aibaba_ai_community.tools.bing_search.tool import BingSearchRun
+from aibaba_ai_community.tools.dataforseo_api_search import DataForSeoAPISearchResults
+from aibaba_ai_community.tools.dataforseo_api_search import DataForSeoAPISearchRun
+from aibaba_ai_community.tools.ddg_search.tool import DuckDuckGoSearchRun
+from aibaba_ai_community.tools.eleven_labs.text2speech import ElevenLabsText2SpeechTool
+from aibaba_ai_community.tools.file_management import ReadFileTool
+from aibaba_ai_community.tools.golden_query.tool import GoldenQueryRun
+from aibaba_ai_community.tools.google_cloud.texttospeech import (
     GoogleCloudTextToSpeechTool,
 )
-from aiagentsforce_community.tools.google_finance.tool import GoogleFinanceQueryRun
-from aiagentsforce_community.tools.google_jobs.tool import GoogleJobsQueryRun
-from aiagentsforce_community.tools.google_lens.tool import GoogleLensQueryRun
-from aiagentsforce_community.tools.google_scholar.tool import GoogleScholarQueryRun
-from aiagentsforce_community.tools.google_search.tool import (
+from aibaba_ai_community.tools.google_finance.tool import GoogleFinanceQueryRun
+from aibaba_ai_community.tools.google_jobs.tool import GoogleJobsQueryRun
+from aibaba_ai_community.tools.google_lens.tool import GoogleLensQueryRun
+from aibaba_ai_community.tools.google_scholar.tool import GoogleScholarQueryRun
+from aibaba_ai_community.tools.google_search.tool import (
     GoogleSearchResults,
     GoogleSearchRun,
 )
-from aiagentsforce_community.tools.google_serper.tool import (
+from aibaba_ai_community.tools.google_serper.tool import (
     GoogleSerperResults,
     GoogleSerperRun,
 )
-from aiagentsforce_community.tools.google_trends.tool import GoogleTrendsQueryRun
-from aiagentsforce_community.tools.graphql.tool import BaseGraphQLTool
-from aiagentsforce_community.tools.human.tool import HumanInputRun
-from aiagentsforce_community.tools.memorize.tool import Memorize
-from aiagentsforce_community.tools.merriam_webster.tool import MerriamWebsterQueryRun
-from aiagentsforce_community.tools.metaphor_search.tool import MetaphorSearchResults
-from aiagentsforce_community.tools.openweathermap.tool import OpenWeatherMapQueryRun
-from aiagentsforce_community.tools.pubmed.tool import PubmedQueryRun
-from aiagentsforce_community.tools.reddit_search.tool import RedditSearchRun
-from aiagentsforce_community.tools.requests.tool import (
+from aibaba_ai_community.tools.google_trends.tool import GoogleTrendsQueryRun
+from aibaba_ai_community.tools.graphql.tool import BaseGraphQLTool
+from aibaba_ai_community.tools.human.tool import HumanInputRun
+from aibaba_ai_community.tools.memorize.tool import Memorize
+from aibaba_ai_community.tools.merriam_webster.tool import MerriamWebsterQueryRun
+from aibaba_ai_community.tools.metaphor_search.tool import MetaphorSearchResults
+from aibaba_ai_community.tools.openweathermap.tool import OpenWeatherMapQueryRun
+from aibaba_ai_community.tools.pubmed.tool import PubmedQueryRun
+from aibaba_ai_community.tools.reddit_search.tool import RedditSearchRun
+from aibaba_ai_community.tools.requests.tool import (
     RequestsDeleteTool,
     RequestsGetTool,
     RequestsPatchTool,
     RequestsPostTool,
     RequestsPutTool,
 )
-from aiagentsforce_community.tools.scenexplain.tool import SceneXplainTool
-from aiagentsforce_community.tools.searchapi.tool import SearchAPIResults, SearchAPIRun
-from aiagentsforce_community.tools.searx_search.tool import (
+from aibaba_ai_community.tools.scenexplain.tool import SceneXplainTool
+from aibaba_ai_community.tools.searchapi.tool import SearchAPIResults, SearchAPIRun
+from aibaba_ai_community.tools.searx_search.tool import (
     SearxSearchResults,
     SearxSearchRun,
 )
-from aiagentsforce_community.tools.shell.tool import ShellTool
-from aiagentsforce_community.tools.sleep.tool import SleepTool
-from aiagentsforce_community.tools.stackexchange.tool import StackExchangeTool
-from aiagentsforce_community.tools.wikipedia.tool import WikipediaQueryRun
-from aiagentsforce_community.tools.wolfram_alpha.tool import WolframAlphaQueryRun
-from aiagentsforce_community.utilities.arxiv import ArxivAPIWrapper
-from aiagentsforce_community.utilities.awslambda import LambdaWrapper
-from aiagentsforce_community.utilities.bing_search import BingSearchAPIWrapper
-from aiagentsforce_community.utilities.dalle_image_generator import DallEAPIWrapper
-from aiagentsforce_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
-from aiagentsforce_community.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper
-from aiagentsforce_community.utilities.golden_query import GoldenQueryAPIWrapper
-from aiagentsforce_community.utilities.google_books import GoogleBooksAPIWrapper
-from aiagentsforce_community.utilities.google_finance import GoogleFinanceAPIWrapper
-from aiagentsforce_community.utilities.google_jobs import GoogleJobsAPIWrapper
-from aiagentsforce_community.utilities.google_lens import GoogleLensAPIWrapper
-from aiagentsforce_community.utilities.google_scholar import GoogleScholarAPIWrapper
-from aiagentsforce_community.utilities.google_search import GoogleSearchAPIWrapper
-from aiagentsforce_community.utilities.google_serper import GoogleSerperAPIWrapper
-from aiagentsforce_community.utilities.google_trends import GoogleTrendsAPIWrapper
-from aiagentsforce_community.utilities.graphql import GraphQLAPIWrapper
-from aiagentsforce_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
-from aiagentsforce_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
-from aiagentsforce_community.utilities.openweathermap import OpenWeatherMapAPIWrapper
-from aiagentsforce_community.utilities.pubmed import PubMedAPIWrapper
-from aiagentsforce_community.utilities.reddit_search import RedditSearchAPIWrapper
-from aiagentsforce_community.utilities.requests import TextRequestsWrapper
-from aiagentsforce_community.utilities.searchapi import SearchApiAPIWrapper
-from aiagentsforce_community.utilities.searx_search import SearxSearchWrapper
-from aiagentsforce_community.utilities.serpapi import SerpAPIWrapper
-from aiagentsforce_community.utilities.stackexchange import StackExchangeAPIWrapper
-from aiagentsforce_community.utilities.twilio import TwilioAPIWrapper
-from aiagentsforce_community.utilities.wikipedia import WikipediaAPIWrapper
-from aiagentsforce_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
+from aibaba_ai_community.tools.shell.tool import ShellTool
+from aibaba_ai_community.tools.sleep.tool import SleepTool
+from aibaba_ai_community.tools.stackexchange.tool import StackExchangeTool
+from aibaba_ai_community.tools.wikipedia.tool import WikipediaQueryRun
+from aibaba_ai_community.tools.wolfram_alpha.tool import WolframAlphaQueryRun
+from aibaba_ai_community.utilities.arxiv import ArxivAPIWrapper
+from aibaba_ai_community.utilities.awslambda import LambdaWrapper
+from aibaba_ai_community.utilities.bing_search import BingSearchAPIWrapper
+from aibaba_ai_community.utilities.dalle_image_generator import DallEAPIWrapper
+from aibaba_ai_community.utilities.dataforseo_api_search import DataForSeoAPIWrapper
+from aibaba_ai_community.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper
+from aibaba_ai_community.utilities.golden_query import GoldenQueryAPIWrapper
+from aibaba_ai_community.utilities.google_books import GoogleBooksAPIWrapper
+from aibaba_ai_community.utilities.google_finance import GoogleFinanceAPIWrapper
+from aibaba_ai_community.utilities.google_jobs import GoogleJobsAPIWrapper
+from aibaba_ai_community.utilities.google_lens import GoogleLensAPIWrapper
+from aibaba_ai_community.utilities.google_scholar import GoogleScholarAPIWrapper
+from aibaba_ai_community.utilities.google_search import GoogleSearchAPIWrapper
+from aibaba_ai_community.utilities.google_serper import GoogleSerperAPIWrapper
+from aibaba_ai_community.utilities.google_trends import GoogleTrendsAPIWrapper
+from aibaba_ai_community.utilities.graphql import GraphQLAPIWrapper
+from aibaba_ai_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
+from aibaba_ai_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
+from aibaba_ai_community.utilities.openweathermap import OpenWeatherMapAPIWrapper
+from aibaba_ai_community.utilities.pubmed import PubMedAPIWrapper
+from aibaba_ai_community.utilities.reddit_search import RedditSearchAPIWrapper
+from aibaba_ai_community.utilities.requests import TextRequestsWrapper
+from aibaba_ai_community.utilities.searchapi import SearchApiAPIWrapper
+from aibaba_ai_community.utilities.searx_search import SearxSearchWrapper
+from aibaba_ai_community.utilities.serpapi import SerpAPIWrapper
+from aibaba_ai_community.utilities.stackexchange import StackExchangeAPIWrapper
+from aibaba_ai_community.utilities.twilio import TwilioAPIWrapper
+from aibaba_ai_community.utilities.wikipedia import WikipediaAPIWrapper
+from aibaba_ai_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
 from alibaba_ai_core.callbacks import BaseCallbackManager
 from alibaba_ai_core.callbacks import Callbacks
 from alibaba_ai_core.language_models import BaseLanguageModel
@@ -335,7 +335,7 @@ def _get_pubmed(**kwargs: Any) -> BaseTool:
 
 
 def _get_google_books(**kwargs: Any) -> BaseTool:
-    from aiagentsforce_community.tools.google_books import GoogleBooksQueryRun
+    from aibaba_ai_community.tools.google_books import GoogleBooksQueryRun
 
     return GoogleBooksQueryRun(api_wrapper=GoogleBooksAPIWrapper(**kwargs))
 

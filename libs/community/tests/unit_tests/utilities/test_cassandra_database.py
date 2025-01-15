@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.utilities.cassandra_database import (
+from aibaba_ai_community.utilities.cassandra_database import (
     CassandraDatabase,
     DatabaseError,
     Table,
@@ -64,7 +64,7 @@ class TestCassandraDatabase(object):
             self.cassandra_db._validate_cql(query, "SELECT")
 
     @patch(
-        "aiagentsforce_community.utilities.cassandra_database.CassandraDatabase._resolve_schema"
+        "aibaba_ai_community.utilities.cassandra_database.CassandraDatabase._resolve_schema"
     )
     def test_format_schema_to_markdown(self, mock_resolve_schema: Any) -> None:
         mock_table1 = MagicMock(spec=Table)

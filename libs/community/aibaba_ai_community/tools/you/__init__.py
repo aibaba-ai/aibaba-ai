@@ -1,6 +1,6 @@
 """You.com API toolkit."""
 
-from aiagentsforce_community.tools.you.tool import YouSearchTool
+from aibaba_ai_community.tools.you.tool import YouSearchTool
 
 __all__ = [
     "YouSearchTool",

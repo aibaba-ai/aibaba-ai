@@ -7,12 +7,12 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional
 from alibaba_ai_core.callbacks import BaseCallbackManager
 from alibaba_ai_core.language_models.chat_models import BaseChatModel
 
-from aiagentsforce_community.agent_toolkits.powerbi.prompt import (
+from aibaba_ai_community.agent_toolkits.powerbi.prompt import (
     POWERBI_CHAT_PREFIX,
     POWERBI_CHAT_SUFFIX,
 )
-from aiagentsforce_community.agent_toolkits.powerbi.toolkit import PowerBIToolkit
-from aiagentsforce_community.utilities.powerbi import PowerBIDataset
+from aibaba_ai_community.agent_toolkits.powerbi.toolkit import PowerBIToolkit
+from aibaba_ai_community.utilities.powerbi import PowerBIDataset
 
 if TYPE_CHECKING:
     from langchain.agents import AgentExecutor

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.llmonitor_callback import (
+    from aibaba_ai_community.callbacks.llmonitor_callback import (
         LLMonitorCallbackHandler,
     )
 
@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LLMonitorCallbackHandler": "aiagentsforce_community.callbacks.llmonitor_callback"
+    "LLMonitorCallbackHandler": "aibaba_ai_community.callbacks.llmonitor_callback"
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

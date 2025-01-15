@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional, Type, Union
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.gmail.base import GmailBaseTool
+from aibaba_ai_community.tools.gmail.base import GmailBaseTool
 
 
 class SendMessageSchema(BaseModel):

@@ -1,10 +1,10 @@
 """Module includes a registry of default parser configurations."""
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.parsers.generic import MimeTypeBasedParser
-from aiagentsforce_community.document_loaders.parsers.msword import MsWordParser
-from aiagentsforce_community.document_loaders.parsers.pdf import PyMuPDFParser
-from aiagentsforce_community.document_loaders.parsers.txt import TextParser
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.parsers.generic import MimeTypeBasedParser
+from aibaba_ai_community.document_loaders.parsers.msword import MsWordParser
+from aibaba_ai_community.document_loaders.parsers.pdf import PyMuPDFParser
+from aibaba_ai_community.document_loaders.parsers.txt import TextParser
 
 
 def _get_default_parser() -> BaseBlobParser:

@@ -70,7 +70,7 @@ class MiniMaxEmbeddings(BaseModel, Embeddings):
 
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import MiniMaxEmbeddings
+            from aibaba_ai_community.embeddings import MiniMaxEmbeddings
 
             embed = MiniMaxEmbeddings(
                 model="embo-01",

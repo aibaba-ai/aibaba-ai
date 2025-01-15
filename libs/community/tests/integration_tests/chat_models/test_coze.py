@@ -1,6 +1,6 @@
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_models.coze import ChatCoze
+from aibaba_ai_community.chat_models.coze import ChatCoze
 
 # For testing, run:
 # TEST_FILE=tests/integration_tests/chat_models/test_coze.py make test

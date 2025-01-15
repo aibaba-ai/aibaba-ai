@@ -20,7 +20,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -400,8 +400,8 @@ class ElasticsearchStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticsearchStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticsearchStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             vectorstore = ElasticsearchStore(
                 embedding=OpenAIEmbeddings(),
@@ -435,8 +435,8 @@ class ElasticsearchStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticsearchStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticsearchStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             vectorstore = ElasticsearchStore(
                 embedding=OpenAIEmbeddings(),
@@ -452,8 +452,8 @@ class ElasticsearchStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticsearchStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticsearchStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             from elasticsearch import Elasticsearch
 
@@ -475,8 +475,8 @@ class ElasticsearchStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticsearchStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticsearchStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             vectorstore = ElasticsearchStore(
                 embedding=OpenAIEmbeddings(),
@@ -492,9 +492,9 @@ class ElasticsearchStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticsearchStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-            from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+            from aibaba_ai_community.vectorstores import ElasticsearchStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
             vectorstore = ElasticsearchStore(
                 "langchain-demo",
@@ -561,7 +561,7 @@ class ElasticsearchStore(VectorStore):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain-py-vs/{__version__}"
 
@@ -1115,8 +1115,8 @@ class ElasticsearchStore(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import ElasticsearchStore
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import ElasticsearchStore
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 db = ElasticsearchStore.from_texts(
                     texts,
@@ -1216,8 +1216,8 @@ class ElasticsearchStore(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import ElasticsearchStore
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import ElasticsearchStore
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 db = ElasticsearchStore.from_documents(
                     texts,

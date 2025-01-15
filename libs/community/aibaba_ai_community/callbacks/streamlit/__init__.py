@@ -4,10 +4,10 @@ from typing import TYPE_CHECKING, Optional
 
 from alibaba_ai_core.callbacks import BaseCallbackHandler
 
-from aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler import (
+from aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler import (
     LLMThoughtLabeler as LLMThoughtLabeler,
 )
-from aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler import (
+from aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler import (
     StreamlitCallbackHandler as _InternalStreamlitCallbackHandler,
 )
 

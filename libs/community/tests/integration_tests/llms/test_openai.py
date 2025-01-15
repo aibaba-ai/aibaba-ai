@@ -7,9 +7,9 @@ import pytest
 from alibaba_ai_core.callbacks import CallbackManager
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.chat_models.openai import ChatOpenAI
-from aiagentsforce_community.llms.loading import load_llm
-from aiagentsforce_community.llms.openai import OpenAI
+from aibaba_ai_community.chat_models.openai import ChatOpenAI
+from aibaba_ai_community.llms.loading import load_llm
+from aibaba_ai_community.llms.openai import OpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import (
     FakeCallbackHandler,
 )

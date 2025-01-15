@@ -4,7 +4,7 @@ from unittest import mock
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.callbacks.tracers import comet
+from aibaba_ai_community.callbacks.tracers import comet
 
 
 def test_comet_tracer__trace_chain_with_single_span__happyflow() -> None:

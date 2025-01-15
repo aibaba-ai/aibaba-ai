@@ -13,12 +13,12 @@ from langchain._api import create_importer
 from langchain.callbacks.tracers.logging import LoggingCallbackHandler
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.tracers.wandb import WandbTracer
+    from aibaba_ai_community.callbacks.tracers.wandb import WandbTracer
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"WandbTracer": "aiagentsforce_community.callbacks.tracers.wandb"}
+DEPRECATED_LOOKUP = {"WandbTracer": "aibaba_ai_community.callbacks.tracers.wandb"}
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)
 

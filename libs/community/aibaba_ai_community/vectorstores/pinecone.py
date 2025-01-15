@@ -14,7 +14,7 @@ from alibaba_ai_core.utils.iter import batch_iterate
 from alibaba_ai_core.vectorstores import VectorStore
 from packaging import version
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )

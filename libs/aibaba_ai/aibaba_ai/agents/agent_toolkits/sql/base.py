@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.sql.base import create_sql_agent
+    from aibaba_ai_community.agent_toolkits.sql.base import create_sql_agent
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"create_sql_agent": "aiagentsforce_community.agent_toolkits.sql.base"}
+DEPRECATED_LOOKUP = {"create_sql_agent": "aibaba_ai_community.agent_toolkits.sql.base"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

@@ -6,7 +6,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.document_loaders import CSVLoader, PyPDFLoader
+from aibaba_ai_community.document_loaders import CSVLoader, PyPDFLoader
 
 EXAMPLE_DOCS_DIRECTORY = str(Path(__file__).parent.parent.parent / "examples/")
 
@@ -22,18 +22,18 @@ class MockResponse:
 
 def test_pebblo_import() -> None:
     """Test that the Pebblo safe loader can be imported."""
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader  # noqa: F401
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader  # noqa: F401
 
 
 def test_pebblo_text_loader_import() -> None:
     """Test that the Pebblo text loader can be imported."""
-    from aiagentsforce_community.document_loaders import PebbloTextLoader  # noqa: F401
+    from aibaba_ai_community.document_loaders import PebbloTextLoader  # noqa: F401
 
 
 def test_empty_filebased_loader(mocker: MockerFixture) -> None:
     """Test basic file based csv loader."""
     # Setup
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader
 
     mocker.patch.multiple(
         "requests",
@@ -59,7 +59,7 @@ def test_empty_filebased_loader(mocker: MockerFixture) -> None:
 
 def test_csv_loader_load_valid_data(mocker: MockerFixture) -> None:
     # Setup
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader
 
     mocker.patch.multiple(
         "requests",
@@ -107,7 +107,7 @@ def test_csv_loader_load_valid_data(mocker: MockerFixture) -> None:
 @pytest.mark.requires("pypdf")
 def test_pdf_lazy_load(mocker: MockerFixture) -> None:
     # Setup
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader
 
     mocker.patch.multiple(
         "requests",
@@ -134,7 +134,7 @@ def test_pdf_lazy_load(mocker: MockerFixture) -> None:
 
 def test_pebblo_safe_loader_api_key() -> None:
     # Setup
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader
 
     file_path = os.path.join(EXAMPLE_DOCS_DIRECTORY, "test_empty.csv")
     api_key = "dummy_api_key"
@@ -158,7 +158,7 @@ def test_pebblo_text_loader(mocker: MockerFixture) -> None:
     Test loading in-memory text with PebbloTextLoader and PebbloSafeLoader.
     """
     # Setup
-    from aiagentsforce_community.document_loaders import PebbloSafeLoader, PebbloTextLoader
+    from aibaba_ai_community.document_loaders import PebbloSafeLoader, PebbloTextLoader
 
     mocker.patch.multiple(
         "requests",

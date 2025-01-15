@@ -1,6 +1,6 @@
 """Test rankllm reranker."""
 
-from aiagentsforce_community.document_compressors.rankllm_rerank import RankLLMRerank
+from aibaba_ai_community.document_compressors.rankllm_rerank import RankLLMRerank
 
 
 def test_rankllm_reranker_init() -> None:

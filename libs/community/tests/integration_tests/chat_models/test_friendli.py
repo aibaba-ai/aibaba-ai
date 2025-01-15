@@ -6,7 +6,7 @@ from alibaba_ai_core.messages.human import HumanMessage
 from alibaba_ai_core.outputs.generation import Generation
 from alibaba_ai_core.outputs.llm_result import LLMResult
 
-from aiagentsforce_community.chat_models.friendli import ChatFriendli
+from aibaba_ai_community.chat_models.friendli import ChatFriendli
 
 
 @pytest.fixture

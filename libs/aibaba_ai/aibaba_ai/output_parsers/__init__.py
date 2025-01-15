@@ -43,13 +43,13 @@ from langchain.output_parsers.structured import ResponseSchema, StructuredOutput
 from langchain.output_parsers.yaml import YamlOutputParser
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.output_parsers.rail_parser import GuardrailsOutputParser
+    from aibaba_ai_community.output_parsers.rail_parser import GuardrailsOutputParser
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GuardrailsOutputParser": "aiagentsforce_community.output_parsers.rail_parser"
+    "GuardrailsOutputParser": "aibaba_ai_community.output_parsers.rail_parser"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

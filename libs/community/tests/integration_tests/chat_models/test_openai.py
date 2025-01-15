@@ -13,7 +13,7 @@ from alibaba_ai_core.outputs import (
 from alibaba_ai_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.chat_models.openai import ChatOpenAI
+from aibaba_ai_community.chat_models.openai import ChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

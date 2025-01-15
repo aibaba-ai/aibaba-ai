@@ -2,8 +2,8 @@ from typing import Iterator, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.pubmed import PubMedAPIWrapper
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.pubmed import PubMedAPIWrapper
 
 
 class PubMedLoader(BaseLoader):

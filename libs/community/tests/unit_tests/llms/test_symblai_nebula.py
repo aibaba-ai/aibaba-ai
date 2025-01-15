@@ -3,7 +3,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.llms.symblai_nebula import Nebula
+from aibaba_ai_community.llms.symblai_nebula import Nebula
 
 
 def test_api_key_is_secret_string() -> None:

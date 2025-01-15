@@ -1,6 +1,6 @@
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.docstore.arbitrary_fn import DocstoreFn
+from aibaba_ai_community.docstore.arbitrary_fn import DocstoreFn
 
 
 def test_document_found() -> None:

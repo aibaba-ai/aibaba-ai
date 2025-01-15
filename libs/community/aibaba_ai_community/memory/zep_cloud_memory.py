@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, Optional
 
-from aiagentsforce_community.chat_message_histories import ZepCloudChatMessageHistory
+from aibaba_ai_community.chat_message_histories import ZepCloudChatMessageHistory
 
 try:
     from langchain.memory import ConversationBufferMemory

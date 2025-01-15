@@ -5,7 +5,7 @@ from aibaba_ai_core.document_loaders import Blob, BlobLoader
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         FileSystemBlobLoader,
         YoutubeAudioLoader,
     )
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BlobLoader": "aiagentsforce_community.document_loaders",
-    "Blob": "aiagentsforce_community.document_loaders",
-    "FileSystemBlobLoader": "aiagentsforce_community.document_loaders",
-    "YoutubeAudioLoader": "aiagentsforce_community.document_loaders",
+    "BlobLoader": "aibaba_ai_community.document_loaders",
+    "Blob": "aibaba_ai_community.document_loaders",
+    "FileSystemBlobLoader": "aibaba_ai_community.document_loaders",
+    "YoutubeAudioLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

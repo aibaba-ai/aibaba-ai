@@ -8,7 +8,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
-from aiagentsforce_community.chat_models.litellm import ChatLiteLLM
+from aibaba_ai_community.chat_models.litellm import ChatLiteLLM
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

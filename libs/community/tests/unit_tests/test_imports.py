@@ -4,7 +4,7 @@ import importlib
 from pathlib import Path
 from typing import List, Tuple
 
-COMMUNITY_ROOT = Path(__file__).parent.parent.parent / "aiagentsforce_community"
+COMMUNITY_ROOT = Path(__file__).parent.parent.parent / "aibaba_ai_community"
 ALL_COMMUNITY_GLOB = COMMUNITY_ROOT.as_posix() + "/**/*.py"
 HERE = Path(__file__).parent
 ROOT = HERE.parent.parent
@@ -21,7 +21,7 @@ def test_importable_all() -> None:
             module_name = str(relative_path.with_suffix("")).replace("/", ".")
 
         try:
-            module = importlib.import_module("aiagentsforce_community." + module_name)
+            module = importlib.import_module("aibaba_ai_community." + module_name)
         except ModuleNotFoundError as e:
             raise ModuleNotFoundError(
                 f"Could not import `{module_name}`. Defined in path: {path}"
@@ -92,7 +92,7 @@ def test_no_dynamic__all__() -> None:
 
 
 def _extract_type_checking_imports(code: str) -> List[Tuple[str, str]]:
-    """Extract all TYPE CHECKING imports that import from aiagentsforce_community."""
+    """Extract all TYPE CHECKING imports that import from aibaba_ai_community."""
     imports: List[Tuple[str, str]] = []
 
     tree = ast.parse(code)
@@ -146,7 +146,7 @@ def test_init_files_properly_defined() -> None:
             continue
 
         try:
-            module = importlib.import_module("aiagentsforce_community." + module_name)
+            module = importlib.import_module("aibaba_ai_community." + module_name)
         except ModuleNotFoundError as e:
             raise ModuleNotFoundError(
                 f"Could not import `{module_name}`. Defined in path: {path}"

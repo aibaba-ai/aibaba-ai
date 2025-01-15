@@ -17,7 +17,7 @@ class MarkdownifyTransformer(BaseDocumentTransformer):
 
     Example:
         .. code-block:: python
-            from aiagentsforce_community.document_transformers import MarkdownifyTransformer
+            from aibaba_ai_community.document_transformers import MarkdownifyTransformer
             markdownify = MarkdownifyTransformer()
             docs_transform = markdownify.transform_documents(docs)
 

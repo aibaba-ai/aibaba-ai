@@ -3,7 +3,7 @@ from typing import Dict, List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.clickup.prompt import (
+from aibaba_ai_community.tools.clickup.prompt import (
     CLICKUP_FOLDER_CREATE_PROMPT,
     CLICKUP_GET_ALL_TEAMS_PROMPT,
     CLICKUP_GET_FOLDERS_PROMPT,
@@ -16,8 +16,8 @@ from aiagentsforce_community.tools.clickup.prompt import (
     CLICKUP_UPDATE_TASK_ASSIGNEE_PROMPT,
     CLICKUP_UPDATE_TASK_PROMPT,
 )
-from aiagentsforce_community.tools.clickup.tool import ClickupAction
-from aiagentsforce_community.utilities.clickup import ClickupAPIWrapper
+from aibaba_ai_community.tools.clickup.tool import ClickupAction
+from aibaba_ai_community.utilities.clickup import ClickupAPIWrapper
 
 
 class ClickupToolkit(BaseToolkit):

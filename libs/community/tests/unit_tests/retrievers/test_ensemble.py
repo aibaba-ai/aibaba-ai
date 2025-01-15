@@ -12,7 +12,7 @@ def test_ensemble_retriever_get_relevant_docs() -> None:
         "Apples and oranges are fruits",
     ]
 
-    from aiagentsforce_community.retrievers import BM25Retriever
+    from aibaba_ai_community.retrievers import BM25Retriever
 
     dummy_retriever = BM25Retriever.from_texts(doc_list)
     dummy_retriever.k = 1
@@ -29,7 +29,7 @@ def test_weighted_reciprocal_rank() -> None:
     doc1 = Document(page_content="1")
     doc2 = Document(page_content="2")
 
-    from aiagentsforce_community.retrievers import BM25Retriever
+    from aibaba_ai_community.retrievers import BM25Retriever
 
     dummy_retriever = BM25Retriever.from_texts(["1", "2"])
     ensemble_retriever = EnsembleRetriever(
@@ -63,7 +63,7 @@ def test_ensemble_retriever_get_relevant_docs_with_multiple_retrievers() -> None
         "Avocados and strawberries are fruits",
     ]
 
-    from aiagentsforce_community.retrievers import (
+    from aibaba_ai_community.retrievers import (
         BM25Retriever,
         KNNRetriever,
         TFIDFRetriever,

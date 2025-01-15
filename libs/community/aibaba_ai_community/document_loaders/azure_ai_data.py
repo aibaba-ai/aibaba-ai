@@ -1,8 +1,8 @@
 from typing import Iterator, Optional
 
-from aiagentsforce_community.docstore.document import Document
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileIOLoader
+from aibaba_ai_community.docstore.document import Document
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileIOLoader
 
 
 class AzureAIDataLoader(BaseLoader):

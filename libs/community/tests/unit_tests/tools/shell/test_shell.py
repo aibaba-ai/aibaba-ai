@@ -2,7 +2,7 @@ import warnings
 from typing import List
 from unittest.mock import patch
 
-from aiagentsforce_community.tools.shell.tool import ShellInput, ShellTool
+from aibaba_ai_community.tools.shell.tool import ShellInput, ShellTool
 
 # Test data
 test_commands = ["echo 'Hello, World!'", "echo 'Another command'"]

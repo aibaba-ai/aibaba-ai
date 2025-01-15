@@ -3,8 +3,8 @@ from unittest.mock import MagicMock, Mock
 import pytest
 from langchain.chains import LLMChain
 
-from aiagentsforce_community.chains.graph_qa.ontotext_graphdb import OntotextGraphDBQAChain
-from aiagentsforce_community.graphs import OntotextGraphDBGraph
+from aibaba_ai_community.chains.graph_qa.ontotext_graphdb import OntotextGraphDBQAChain
+from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
 """
 cd libs/langchain/tests/integration_tests/chains/docker-compose-ontotext-graphdb

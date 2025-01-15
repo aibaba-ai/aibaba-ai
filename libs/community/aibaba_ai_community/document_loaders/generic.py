@@ -14,12 +14,12 @@ from typing import (
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser, BaseLoader
-from aiagentsforce_community.document_loaders.blob_loaders import (
+from aibaba_ai_community.document_loaders.base import BaseBlobParser, BaseLoader
+from aibaba_ai_community.document_loaders.blob_loaders import (
     BlobLoader,
     FileSystemBlobLoader,
 )
-from aiagentsforce_community.document_loaders.parsers.registry import get_parser
+from aibaba_ai_community.document_loaders.parsers.registry import get_parser
 
 if TYPE_CHECKING:
     from langchain_text_splitters import TextSplitter
@@ -41,8 +41,8 @@ class GenericLoader(BaseLoader):
 
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import GenericLoader
-            from aiagentsforce_community.document_loaders.parsers.pdf import PyPDFParser
+            from aibaba_ai_community.document_loaders import GenericLoader
+            from aibaba_ai_community.document_loaders.parsers.pdf import PyPDFParser
 
             # Recursively load all text files in a directory.
             loader = GenericLoader.from_filesystem(
@@ -52,8 +52,8 @@ class GenericLoader(BaseLoader):
 
        .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import GenericLoader
-            from aiagentsforce_community.document_loaders.blob_loaders import FileSystemBlobLoader
+            from aibaba_ai_community.document_loaders import GenericLoader
+            from aibaba_ai_community.document_loaders.blob_loaders import FileSystemBlobLoader
 
 
             loader = GenericLoader.from_filesystem(
@@ -83,7 +83,7 @@ class GenericLoader(BaseLoader):
 
     .. code-block:: python
 
-        from aiagentsforce_community.document_loaders.parsers.pdf import PyPDFParser
+        from aibaba_ai_community.document_loaders.parsers.pdf import PyPDFParser
 
         # Recursively load all text files in a directory.
         loader = GenericLoader.from_filesystem(

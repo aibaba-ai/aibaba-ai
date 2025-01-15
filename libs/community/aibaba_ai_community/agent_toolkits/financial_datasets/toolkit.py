@@ -6,14 +6,14 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.financial_datasets.balance_sheets import BalanceSheets
-from aiagentsforce_community.tools.financial_datasets.cash_flow_statements import (
+from aibaba_ai_community.tools.financial_datasets.balance_sheets import BalanceSheets
+from aibaba_ai_community.tools.financial_datasets.cash_flow_statements import (
     CashFlowStatements,
 )
-from aiagentsforce_community.tools.financial_datasets.income_statements import (
+from aibaba_ai_community.tools.financial_datasets.income_statements import (
     IncomeStatements,
 )
-from aiagentsforce_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper
+from aibaba_ai_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper
 
 
 class FinancialDatasetsToolkit(BaseToolkit):

@@ -38,7 +38,7 @@ class TavilySearchAPIRetriever(BaseRetriever):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import TavilySearchAPIRetriever
+            from aibaba_ai_community.retrievers import TavilySearchAPIRetriever
 
             retriever = TavilySearchAPIRetriever(k=3)
 

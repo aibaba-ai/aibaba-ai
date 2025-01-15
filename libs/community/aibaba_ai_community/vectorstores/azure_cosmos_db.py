@@ -18,7 +18,7 @@ import numpy as np
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from alibaba_ai_core.embeddings import Embeddings
@@ -63,9 +63,9 @@ class AzureCosmosDBVectorSearch(VectorStore):
     Example:
         . code-block:: python
 
-            from aiagentsforce_community.vectorstores import
+            from aibaba_ai_community.vectorstores import
             AzureCosmosDBVectorSearch
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             from pymongo import MongoClient
 
             mongo_client = MongoClient("<YOUR-CONNECTION-STRING>")

@@ -7,7 +7,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +25,7 @@ class CerebriumAI(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import CerebriumAI
+            from aibaba_ai_community.llms import CerebriumAI
             cerebrium = CerebriumAI(endpoint_url="", cerebriumai_api_key="my-api-key")
 
     """

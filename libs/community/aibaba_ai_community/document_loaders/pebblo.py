@@ -8,8 +8,8 @@ from typing import Any, Dict, Iterable, Iterator, List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.pebblo import (
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.pebblo import (
     BATCH_SIZE_BYTES,
     PLUGIN_VERSION,
     App,
@@ -180,8 +180,8 @@ class PebbloSafeLoader(BaseLoader):
             framework=framework,
             plugin_version=PLUGIN_VERSION,
             client_version=Framework(
-                name="aiagentsforce_community",
-                version=version("aiagentsforce_community"),
+                name="aibaba_ai_community",
+                version=version("aibaba_ai_community"),
             ),
         )
         return app

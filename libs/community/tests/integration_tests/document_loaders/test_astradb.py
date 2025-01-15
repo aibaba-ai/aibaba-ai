@@ -20,7 +20,7 @@ from typing import TYPE_CHECKING, AsyncIterator, Iterator
 
 import pytest
 
-from aiagentsforce_community.document_loaders.astradb import AstraDBLoader
+from aibaba_ai_community.document_loaders.astradb import AstraDBLoader
 
 if TYPE_CHECKING:
     from astrapy.db import (

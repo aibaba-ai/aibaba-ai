@@ -42,7 +42,7 @@ class AzureAISearchRetriever(BaseRetriever):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import AzureAISearchRetriever
+            from aibaba_ai_community.retrievers import AzureAISearchRetriever
 
             retriever = AzureAISearchRetriever(
                 content_key="content", top_k=1, index_name="langchain-vector-demo"

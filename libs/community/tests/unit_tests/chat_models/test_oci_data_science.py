@@ -10,7 +10,7 @@ import pytest
 from alibaba_ai_core.messages import AIMessage, AIMessageChunk
 from requests.exceptions import HTTPError
 
-from aiagentsforce_community.chat_models import (
+from aibaba_ai_community.chat_models import (
     ChatOCIModelDeploymentTGI,
     ChatOCIModelDeploymentVLLM,
 )
@@ -180,7 +180,7 @@ async def mocked_async_streaming_response(
     "ads.common.auth.default_signer", return_value=dict(signer=mock.MagicMock())
 )
 @mock.patch(
-    "aiagentsforce_community.utilities.requests.Requests.apost",
+    "aibaba_ai_community.utilities.requests.Requests.apost",
     mock.MagicMock(),
 )
 async def test_stream_async(*args: Any) -> None:

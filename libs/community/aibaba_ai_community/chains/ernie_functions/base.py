@@ -26,12 +26,12 @@ from alibaba_ai_core.runnables import Runnable
 from alibaba_ai_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel
 
-from aiagentsforce_community.output_parsers.ernie_functions import (
+from aibaba_ai_community.output_parsers.ernie_functions import (
     JsonOutputFunctionsParser,
     PydanticAttrOutputFunctionsParser,
     PydanticOutputFunctionsParser,
 )
-from aiagentsforce_community.utils.ernie_functions import convert_pydantic_to_ernie_function
+from aibaba_ai_community.utils.ernie_functions import convert_pydantic_to_ernie_function
 
 PYTHON_TO_JSON_TYPES = {
     "str": "string",
@@ -241,7 +241,7 @@ def create_ernie_fn_runnable(
                 from typing import Optional
 
                 from langchain.chains.ernie_functions import create_ernie_fn_chain
-                from aiagentsforce_community.chat_models import ErnieBotChat
+                from aibaba_ai_community.chat_models import ErnieBotChat
                 from alibaba_ai_core.prompts import ChatPromptTemplate
                 from pydantic import BaseModel, Field
 
@@ -315,7 +315,7 @@ def create_structured_output_runnable(
             from typing import Optional
 
             from langchain.chains.ernie_functions import create_structured_output_chain
-            from aiagentsforce_community.chat_models import ErnieBotChat
+            from aibaba_ai_community.chat_models import ErnieBotChat
             from alibaba_ai_core.prompts import ChatPromptTemplate
             from pydantic import BaseModel, Field
 
@@ -412,7 +412,7 @@ def create_ernie_fn_chain(
                 from typing import Optional
 
                 from langchain.chains.ernie_functions import create_ernie_fn_chain
-                from aiagentsforce_community.chat_models import ErnieBotChat
+                from aibaba_ai_community.chat_models import ErnieBotChat
                 from alibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field
@@ -499,7 +499,7 @@ def create_structured_output_chain(
                 from typing import Optional
 
                 from langchain.chains.ernie_functions import create_structured_output_chain
-                from aiagentsforce_community.chat_models import ErnieBotChat
+                from aibaba_ai_community.chat_models import ErnieBotChat
                 from alibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field

@@ -9,7 +9,7 @@ from alibaba_ai_core.agents import AgentAction, AgentFinish
 from alibaba_ai_core.callbacks import BaseCallbackHandler
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.callbacks.utils import (
+from aibaba_ai_community.callbacks.utils import (
     flatten_dict,
 )
 

@@ -2,7 +2,7 @@ from typing import Any
 
 from pydantic import Field
 
-from aiagentsforce_community.document_loaders import SharePointLoader
+from aibaba_ai_community.document_loaders import SharePointLoader
 
 
 class OneDriveLoader(SharePointLoader):

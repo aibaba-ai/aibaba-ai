@@ -35,7 +35,7 @@ class Epsilla(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Epsilla
+            from aibaba_ai_community.vectorstores import Epsilla
             from pyepsilla import vectordb
 
             client = vectordb.Client()

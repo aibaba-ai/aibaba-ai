@@ -12,8 +12,8 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.graphs import FalkorDBGraph
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.graphs import FalkorDBGraph
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -317,8 +317,8 @@ class FalkorDBVector(VectorStore):
     Example:
         .. code-block:: python
 
-        from aiagentsforce_community.vectorstores.falkordb_vector import FalkorDBVector
-        from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+        from aibaba_ai_community.vectorstores.falkordb_vector import FalkorDBVector
+        from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
         from langchain_text_splitters import CharacterTextSplitter
 
 
@@ -1317,9 +1317,9 @@ class FalkorDBVector(VectorStore):
         Example:
         .. code-block:: python
 
-        from aiagentsforce_community.vectorstores.falkordb_vector import (
+        from aibaba_ai_community.vectorstores.falkordb_vector import (
         FalkorDBVector )
-        from aiagentsforce_community.embeddings import OpenAIEmbeddings
+        from aibaba_ai_community.embeddings import OpenAIEmbeddings
         embeddings = OpenAIEmbeddings()
         text_embeddings = embeddings.embed_documents(texts)
         text_embedding_pairs = list(zip(texts, text_embeddings))

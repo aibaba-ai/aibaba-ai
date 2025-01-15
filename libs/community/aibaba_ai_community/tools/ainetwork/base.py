@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.tools.ainetwork.utils import authenticate
+from aibaba_ai_community.tools.ainetwork.utils import authenticate
 
 if TYPE_CHECKING:
     from ain.ain import Ain

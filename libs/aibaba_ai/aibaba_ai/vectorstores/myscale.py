@@ -3,16 +3,16 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import MyScale, MyScaleSettings
-    from aiagentsforce_community.vectorstores.myscale import MyScaleWithoutJSON
+    from aibaba_ai_community.vectorstores import MyScale, MyScaleSettings
+    from aibaba_ai_community.vectorstores.myscale import MyScaleWithoutJSON
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "MyScaleSettings": "aiagentsforce_community.vectorstores",
-    "MyScale": "aiagentsforce_community.vectorstores",
-    "MyScaleWithoutJSON": "aiagentsforce_community.vectorstores.myscale",
+    "MyScaleSettings": "aibaba_ai_community.vectorstores",
+    "MyScale": "aibaba_ai_community.vectorstores",
+    "MyScaleWithoutJSON": "aibaba_ai_community.vectorstores.myscale",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

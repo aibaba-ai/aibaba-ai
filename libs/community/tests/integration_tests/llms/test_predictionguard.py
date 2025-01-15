@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.llms.predictionguard import PredictionGuard
+from aibaba_ai_community.llms.predictionguard import PredictionGuard
 
 
 def test_predictionguard_invoke() -> None:

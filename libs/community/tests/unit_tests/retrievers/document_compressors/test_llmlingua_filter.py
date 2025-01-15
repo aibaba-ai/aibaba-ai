@@ -5,7 +5,7 @@
 # from alibaba_ai_core.documents import Document
 # from pytest_mock import MockerFixture
 
-# from aiagentsforce_community.document_compressors import LLMLinguaCompressor
+# from aibaba_ai_community.document_compressors import LLMLinguaCompressor
 
 # LLM_LINGUA_INSTRUCTION = "Given this documents, please answer the final question"
 

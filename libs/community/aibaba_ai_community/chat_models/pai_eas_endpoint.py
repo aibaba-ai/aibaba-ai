@@ -20,7 +20,7 @@ from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatRes
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -35,7 +35,7 @@ class PaiEasChatEndpoint(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import PaiEasChatEndpoint
+            from aibaba_ai_community.chat_models import PaiEasChatEndpoint
             eas_chat_endpoint = PaiEasChatEndpoint(
                 eas_service_url="your_service_url",
                 eas_service_token="your_service_token"

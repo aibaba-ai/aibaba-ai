@@ -6,11 +6,11 @@ from typing import Any, Callable, Iterator, List, Optional, Sequence, Tuple, Typ
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
-from aiagentsforce_community.document_loaders.html_bs import BSHTMLLoader
-from aiagentsforce_community.document_loaders.text import TextLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.csv_loader import CSVLoader
+from aibaba_ai_community.document_loaders.html_bs import BSHTMLLoader
+from aibaba_ai_community.document_loaders.text import TextLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 FILE_LOADER_TYPE = Union[
     Type[UnstructuredFileLoader], Type[TextLoader], Type[BSHTMLLoader], Type[CSVLoader]
@@ -72,7 +72,7 @@ class DirectoryLoader(BaseLoader):
         Examples:
 
             .. code-block:: python
-                from aiagentsforce_community.document_loaders import DirectoryLoader
+                from aibaba_ai_community.document_loaders import DirectoryLoader
 
                 # Load all non-hidden files in a directory.
                 loader = DirectoryLoader("/path/to/directory")

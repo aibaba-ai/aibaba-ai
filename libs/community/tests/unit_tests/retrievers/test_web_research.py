@@ -2,7 +2,7 @@ from typing import List
 
 import pytest
 
-from aiagentsforce_community.retrievers.web_research import QuestionListOutputParser
+from aibaba_ai_community.retrievers.web_research import QuestionListOutputParser
 
 
 @pytest.mark.parametrize(

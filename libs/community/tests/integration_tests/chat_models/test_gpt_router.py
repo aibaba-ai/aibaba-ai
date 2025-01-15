@@ -11,7 +11,7 @@ from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.chat_models.gpt_router import GPTRouter, GPTRouterModel
+from aibaba_ai_community.chat_models.gpt_router import GPTRouter, GPTRouterModel
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

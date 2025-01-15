@@ -1,6 +1,6 @@
 """Test Vertex AI embeddings API wrapper."""
 
-from aiagentsforce_community.embeddings import VertexAIEmbeddings
+from aibaba_ai_community.embeddings import VertexAIEmbeddings
 
 
 def test_split_by_punctuation() -> None:

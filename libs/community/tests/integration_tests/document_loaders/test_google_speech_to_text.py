@@ -9,7 +9,7 @@ to set up the app and configure authentication.
 
 import pytest
 
-from aiagentsforce_community.document_loaders.google_speech_to_text import (
+from aibaba_ai_community.document_loaders.google_speech_to_text import (
     GoogleSpeechToTextLoader,
 )
 

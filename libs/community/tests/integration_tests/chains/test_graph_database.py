@@ -4,9 +4,9 @@ import os
 
 from langchain.chains.loading import load_chain
 
-from aiagentsforce_community.chains.graph_qa.cypher import GraphCypherQAChain
-from aiagentsforce_community.graphs import Neo4jGraph
-from aiagentsforce_community.llms.openai import OpenAI
+from aibaba_ai_community.chains.graph_qa.cypher import GraphCypherQAChain
+from aibaba_ai_community.graphs import Neo4jGraph
+from aibaba_ai_community.llms.openai import OpenAI
 
 
 def test_connect_neo4j() -> None:

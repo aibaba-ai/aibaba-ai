@@ -10,7 +10,7 @@ from alibaba_ai_core.messages import (
     ToolMessage,
 )
 
-from aiagentsforce_community.chat_models.edenai import (
+from aibaba_ai_community.chat_models.edenai import (
     _extract_edenai_tool_results_from_messages,
     _format_edenai_messages,
     _message_role,

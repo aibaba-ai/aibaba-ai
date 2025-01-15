@@ -107,11 +107,11 @@ class Clickhouse(VectorStore):
     """ClickHouse vector store integration.
 
     Setup:
-        Install ``aiagentsforce_community`` and ``clickhouse-connect``:
+        Install ``aibaba_ai_community`` and ``clickhouse-connect``:
 
         .. code-block:: bash
 
-            pip install -qU aiagentsforce_community clickhouse-connect
+            pip install -qU aibaba_ai_community clickhouse-connect
 
     Key init args — indexing params:
         embedding: Embeddings
@@ -124,7 +124,7 @@ class Clickhouse(VectorStore):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Clickhouse, ClickhouseSettings
+            from aibaba_ai_community.vectorstores import Clickhouse, ClickhouseSettings
             from langchain_openai import OpenAIEmbeddings
 
             settings = ClickhouseSettings(table="clickhouse_example")

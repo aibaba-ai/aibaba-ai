@@ -1,6 +1,6 @@
 """Tavily Search API toolkit."""
 
-from aiagentsforce_community.tools.tavily_search.tool import (
+from aibaba_ai_community.tools.tavily_search.tool import (
     TavilyAnswer,
     TavilySearchResults,
 )

@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Any, List, Union
 
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     validate_unstructured_version,
 )
@@ -21,7 +21,7 @@ class UnstructuredXMLLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredXMLLoader
+    from aibaba_ai_community.document_loaders import UnstructuredXMLLoader
 
     loader = UnstructuredXMLLoader(
         "example.xml", mode="elements", strategy="fast",

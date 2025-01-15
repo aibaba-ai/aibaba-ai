@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from aiagentsforce_community.tools.json.tool import JsonSpec
+from aibaba_ai_community.tools.json.tool import JsonSpec
 
 
 def test_json_spec_from_file(tmp_path: Path) -> None:

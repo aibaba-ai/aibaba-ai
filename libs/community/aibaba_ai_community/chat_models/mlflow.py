@@ -63,7 +63,7 @@ class ChatMlflow(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatMlflow
+            from aibaba_ai_community.chat_models import ChatMlflow
 
             chat = ChatMlflow(
                 target_uri="http://localhost:5000",

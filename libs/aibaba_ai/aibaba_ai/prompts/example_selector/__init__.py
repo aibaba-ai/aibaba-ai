@@ -13,7 +13,7 @@ from aibaba_ai_core.example_selectors.semantic_similarity import (
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.example_selectors.ngram_overlap import (
+    from aibaba_ai_community.example_selectors.ngram_overlap import (
         NGramOverlapExampleSelector,
     )
 
@@ -21,7 +21,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUPS = {
-    "NGramOverlapExampleSelector": "aiagentsforce_community.example_selectors.ngram_overlap"
+    "NGramOverlapExampleSelector": "aibaba_ai_community.example_selectors.ngram_overlap"
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUPS)

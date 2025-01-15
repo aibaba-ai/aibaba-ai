@@ -1,6 +1,6 @@
 from typing import Any
 
-from aiagentsforce_community.document_loaders.dataframe import BaseDataFrameLoader
+from aibaba_ai_community.document_loaders.dataframe import BaseDataFrameLoader
 
 
 class XorbitsLoader(BaseDataFrameLoader):

@@ -22,7 +22,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import xor_args
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     import chromadb
@@ -59,8 +59,8 @@ class Chroma(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Chroma
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Chroma
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vectorstore = Chroma("langchain_store", embeddings)
@@ -227,7 +227,7 @@ class Chroma(VectorStore):
                     if "Expected metadata value to be" in str(e):
                         msg = (
                             "Try filtering complex metadata using "
-                            "aiagentsforce_community.vectorstores.utils.filter_complex_metadata."
+                            "aibaba_ai_community.vectorstores.utils.filter_complex_metadata."
                         )
                         raise ValueError(e.args[0] + "\n\n" + msg)
                     else:
@@ -306,7 +306,7 @@ class Chroma(VectorStore):
                     if "Expected metadata value to be" in str(e):
                         msg = (
                             "Try filtering complex metadata from the document using "
-                            "aiagentsforce_community.vectorstores.utils.filter_complex_metadata."
+                            "aibaba_ai_community.vectorstores.utils.filter_complex_metadata."
                         )
                         raise ValueError(e.args[0] + "\n\n" + msg)
                     else:

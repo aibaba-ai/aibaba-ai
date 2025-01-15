@@ -1,6 +1,6 @@
 """Test Pipeline Cloud API wrapper."""
 
-from aiagentsforce_community.llms.pipelineai import PipelineAI
+from aibaba_ai_community.llms.pipelineai import PipelineAI
 
 
 def test_pipelineai_call() -> None:

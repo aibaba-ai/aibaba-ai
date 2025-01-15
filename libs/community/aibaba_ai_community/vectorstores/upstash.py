@@ -10,7 +10,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils.iter import batch_iterate
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     maximal_marginal_relevance,
 )
 
@@ -35,7 +35,7 @@ class UpstashVectorStore(VectorStore):
         .. code-block:: python
 
             from langchain_openai import OpenAIEmbeddings
-            from aiagentsforce_community.vectorstores import UpstashVectorStore
+            from aibaba_ai_community.vectorstores import UpstashVectorStore
 
             embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
             vectorstore = UpstashVectorStore(
@@ -90,8 +90,8 @@ class UpstashVectorStore(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores.upstash import UpstashVectorStore
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vectorstore = UpstashVectorStore(
@@ -906,8 +906,8 @@ class UpstashVectorStore(VectorStore):
 
         Example:
             .. code-block:: python
-                from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores.upstash import UpstashVectorStore
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vector_store = UpstashVectorStore.from_texts(
@@ -958,8 +958,8 @@ class UpstashVectorStore(VectorStore):
 
         Example:
             .. code-block:: python
-                from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores.upstash import UpstashVectorStore
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vector_store = UpstashVectorStore.from_texts(

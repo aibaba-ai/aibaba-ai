@@ -1,7 +1,7 @@
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.retrievers.knn import KNNRetriever
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.retrievers.knn import KNNRetriever
 
 
 class TestKNNRetriever:

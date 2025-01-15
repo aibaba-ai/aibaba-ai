@@ -3,10 +3,10 @@ from typing import Any, Dict, Iterable, List, Optional, Set, Union
 from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 # TypeAlias is not available in Python 3.9, we can't use that or the newer `type`.
 GLiNERInput = Union[str, Document]
@@ -33,8 +33,8 @@ class GLiNERLinkExtractor(LinkExtractor[GLiNERInput]):
 
     .. seealso::
 
-            - :mod:`How to use a graph vector store <aiagentsforce_community.graph_vectorstores>`
-            - :class:`How to create links between documents <aiagentsforce_community.graph_vectorstores.links.Link>`
+            - :mod:`How to use a graph vector store <aibaba_ai_community.graph_vectorstores>`
+            - :class:`How to create links between documents <aibaba_ai_community.graph_vectorstores.links.Link>`
 
     How to link Documents on common named entities
     ==============================================
@@ -46,7 +46,7 @@ class GLiNERLinkExtractor(LinkExtractor[GLiNERInput]):
 
     .. code-block:: bash
 
-        pip install -q aiagentsforce_community gliner
+        pip install -q aibaba_ai_community gliner
 
     Usage
     -----
@@ -59,12 +59,12 @@ class GLiNERLinkExtractor(LinkExtractor[GLiNERInput]):
 
     We can use :meth:`extract_one` on a document to get the links and add the links
     to the document metadata with
-    :meth:`~aiagentsforce_community.graph_vectorstores.links.add_links`::
+    :meth:`~aibaba_ai_community.graph_vectorstores.links.add_links`::
 
-        from aiagentsforce_community.document_loaders import TextLoader
-        from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
-        from aiagentsforce_community.graph_vectorstores.extractors import GLiNERLinkExtractor
-        from aiagentsforce_community.graph_vectorstores.links import add_links
+        from aibaba_ai_community.document_loaders import TextLoader
+        from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
+        from aibaba_ai_community.graph_vectorstores.extractors import GLiNERLinkExtractor
+        from aibaba_ai_community.graph_vectorstores.links import add_links
         from langchain_text_splitters import CharacterTextSplitter
 
         loader = TextLoader("state_of_the_union.txt")
@@ -87,11 +87,11 @@ class GLiNERLinkExtractor(LinkExtractor[GLiNERInput]):
     Using LinkExtractorTransformer
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Using the :class:`~aiagentsforce_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
+    Using the :class:`~aibaba_ai_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
     we can simplify the link extraction::
 
-        from aiagentsforce_community.document_loaders import TextLoader
-        from aiagentsforce_community.graph_vectorstores.extractors import (
+        from aibaba_ai_community.document_loaders import TextLoader
+        from aibaba_ai_community.graph_vectorstores.extractors import (
             GLiNERLinkExtractor,
             LinkExtractorTransformer,
         )
@@ -113,9 +113,9 @@ class GLiNERLinkExtractor(LinkExtractor[GLiNERInput]):
 
         {'source': 'state_of_the_union.txt', 'links': [Link(kind='entity:Person', direction='bidir', tag='President Zelenskyy'), Link(kind='entity:Person', direction='bidir', tag='Vladimir Putin')]}
 
-    The documents with named entity links can then be added to a :class:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore`::
+    The documents with named entity links can then be added to a :class:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore`::
 
-        from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+        from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
 
         store = CassandraGraphVectorStore.from_documents(documents=documents, embedding=...)
 

@@ -53,7 +53,7 @@ def _check_in_allowed_domain(url: str, limit_to_domains: Sequence[str]) -> bool:
 
 
 try:
-    from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+    from aibaba_ai_community.utilities.requests import TextRequestsWrapper
 
     @deprecated(
         since="0.2.13",
@@ -101,8 +101,8 @@ try:
             from typing_extensions import TypedDict
 
             from langchain.chains.api.prompt import API_URL_PROMPT
-            from aiagentsforce_community.agent_toolkits.openapi.toolkit import RequestsToolkit
-            from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+            from aibaba_ai_community.agent_toolkits.openapi.toolkit import RequestsToolkit
+            from aibaba_ai_community.utilities.requests import TextRequestsWrapper
             from aibaba_ai_core.messages import BaseMessage
             from aibaba_ai_core.prompts import ChatPromptTemplate
             from langchain_openai import ChatOpenAI
@@ -375,6 +375,6 @@ except ImportError:
     class APIChain:  # type: ignore[no-redef]
         def __init__(self, *args: Any, **kwargs: Any) -> None:
             raise ImportError(
-                "To use the APIChain, you must install the aiagentsforce_community package."
-                "pip install aiagentsforce_community"
+                "To use the APIChain, you must install the aibaba_ai_community package."
+                "pip install aibaba_ai_community"
             )

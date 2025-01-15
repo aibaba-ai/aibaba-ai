@@ -3,7 +3,7 @@ from typing import Any, Optional, Sequence
 from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import BaseDocumentTransformer, Document
 
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 
 @deprecated(

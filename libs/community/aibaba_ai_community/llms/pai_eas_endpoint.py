@@ -8,7 +8,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.outputs import GenerationChunk
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +23,7 @@ class PaiEasEndpoint(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms.pai_eas_endpoint import PaiEasEndpoint
+            from aibaba_ai_community.llms.pai_eas_endpoint import PaiEasEndpoint
             eas_chat_endpoint = PaiEasChatEndpoint(
                 eas_service_url="your_service_url",
                 eas_service_token="your_service_token"

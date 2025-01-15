@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.blob_loaders import __all__
+from aibaba_ai_community.document_loaders.blob_loaders import __all__
 
 
 def test_public_api() -> None:

@@ -1,7 +1,7 @@
 from langchain.retrievers.merger_retriever import MergerRetriever
 from alibaba_ai_core.vectorstores import InMemoryVectorStore
 
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
 
 def test_merger_retriever_get_relevant_docs() -> None:

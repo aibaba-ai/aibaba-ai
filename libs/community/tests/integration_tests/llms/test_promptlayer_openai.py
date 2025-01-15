@@ -5,8 +5,8 @@ from typing import Generator
 
 import pytest
 
-from aiagentsforce_community.llms.loading import load_llm
-from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAI
+from aibaba_ai_community.llms.loading import load_llm
+from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAI
 
 
 def test_promptlayer_openai_call() -> None:

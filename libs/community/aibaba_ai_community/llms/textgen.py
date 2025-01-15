@@ -29,7 +29,7 @@ class TextGen(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import TextGen
+            from aibaba_ai_community.llms import TextGen
             llm = TextGen(model_url="http://localhost:8500")
     """
 
@@ -197,7 +197,7 @@ class TextGen(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import TextGen
+                from aibaba_ai_community.llms import TextGen
                 llm = TextGen(model_url="http://localhost:5000")
                 llm.invoke("Write a story about llamas.")
         """
@@ -243,7 +243,7 @@ class TextGen(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import TextGen
+                from aibaba_ai_community.llms import TextGen
                 llm = TextGen(model_url="http://localhost:5000")
                 llm.invoke("Write a story about llamas.")
         """
@@ -296,7 +296,7 @@ class TextGen(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import TextGen
+                from aibaba_ai_community.llms import TextGen
                 llm = TextGen(
                     model_url = "ws://localhost:5005"
                     streaming=True
@@ -368,7 +368,7 @@ class TextGen(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import TextGen
+                from aibaba_ai_community.llms import TextGen
                 llm = TextGen(
                     model_url = "ws://localhost:5005"
                     streaming=True

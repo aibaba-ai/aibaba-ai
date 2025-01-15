@@ -5,8 +5,8 @@ import os
 
 from aiohttp import ClientSession
 
-from aiagentsforce_community.callbacks import wandb_tracing_enabled
-from aiagentsforce_community.llms import OpenAI
+from aibaba_ai_community.callbacks import wandb_tracing_enabled
+from aibaba_ai_community.llms import OpenAI
 
 questions = [
     (

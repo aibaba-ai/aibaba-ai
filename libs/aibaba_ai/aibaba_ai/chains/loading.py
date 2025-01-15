@@ -31,19 +31,19 @@ from langchain.chains.qa_with_sources.vector_db import VectorDBQAWithSourcesChai
 from langchain.chains.retrieval_qa.base import RetrievalQA, VectorDBQA
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.cypher import GraphCypherQAChain
+    from aibaba_ai_community.chains.graph_qa.cypher import GraphCypherQAChain
 
     from langchain.chains.llm_requests import LLMRequestsChain
 
 try:
-    from aiagentsforce_community.llms.loading import load_llm, load_llm_from_config
+    from aibaba_ai_community.llms.loading import load_llm, load_llm_from_config
 except ImportError:
 
     def load_llm(*args: Any, **kwargs: Any) -> None:  # type: ignore
         raise ImportError(
             "To use this load_llm functionality you must install the "
-            "aiagentsforce_community package. "
-            "You can install it with `pip install aiagentsforce_community`"
+            "aibaba_ai_community package. "
+            "You can install it with `pip install aibaba_ai_community`"
         )
 
     def load_llm_from_config(  # type: ignore
@@ -51,8 +51,8 @@ except ImportError:
     ) -> None:
         raise ImportError(
             "To use this load_llm_from_config functionality you must install the "
-            "aiagentsforce_community package. "
-            "You can install it with `pip install aiagentsforce_community`"
+            "aibaba_ai_community package. "
+            "You can install it with `pip install aibaba_ai_community`"
         )
 
 
@@ -554,12 +554,12 @@ def _load_graph_cypher_chain(config: dict, **kwargs: Any) -> GraphCypherQAChain:
         raise ValueError("`qa_chain` must be present.")
 
     try:
-        from aiagentsforce_community.chains.graph_qa.cypher import GraphCypherQAChain
+        from aibaba_ai_community.chains.graph_qa.cypher import GraphCypherQAChain
     except ImportError:
         raise ImportError(
             "To use this GraphCypherQAChain functionality you must install the "
-            "aiagentsforce_community package. "
-            "You can install it with `pip install aiagentsforce_community`"
+            "aibaba_ai_community package. "
+            "You can install it with `pip install aibaba_ai_community`"
         )
     return GraphCypherQAChain(
         graph=graph,

@@ -1,6 +1,6 @@
 """Integration test for Stack Exchange."""
 
-from aiagentsforce_community.utilities import StackExchangeAPIWrapper
+from aibaba_ai_community.utilities import StackExchangeAPIWrapper
 
 
 def test_call() -> None:

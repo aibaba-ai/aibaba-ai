@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import NotebookLoader
-    from aiagentsforce_community.document_loaders.notebook import (
+    from aibaba_ai_community.document_loaders import NotebookLoader
+    from aibaba_ai_community.document_loaders.notebook import (
         concatenate_cells,
         remove_newlines,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "concatenate_cells": "aiagentsforce_community.document_loaders.notebook",
-    "remove_newlines": "aiagentsforce_community.document_loaders.notebook",
-    "NotebookLoader": "aiagentsforce_community.document_loaders",
+    "concatenate_cells": "aibaba_ai_community.document_loaders.notebook",
+    "remove_newlines": "aibaba_ai_community.document_loaders.notebook",
+    "NotebookLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

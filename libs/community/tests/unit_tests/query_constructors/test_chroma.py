@@ -8,7 +8,7 @@ from alibaba_ai_core.structured_query import (
     StructuredQuery,
 )
 
-from aiagentsforce_community.query_constructors.chroma import ChromaTranslator
+from aibaba_ai_community.query_constructors.chroma import ChromaTranslator
 
 DEFAULT_TRANSLATOR = ChromaTranslator()
 

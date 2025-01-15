@@ -1,6 +1,6 @@
 """Test C Transformers wrapper."""
 
-from aiagentsforce_community.llms import CTransformers
+from aibaba_ai_community.llms import CTransformers
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

@@ -5,10 +5,10 @@ import pytest
 from langchain.memory import ConversationBufferMemory
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_message_histories.astradb import (
+from aibaba_ai_community.chat_message_histories.astradb import (
     AstraDBChatMessageHistory,
 )
-from aiagentsforce_community.utilities.astradb import SetupMode
+from aibaba_ai_community.utilities.astradb import SetupMode
 
 
 def _has_env_vars() -> bool:

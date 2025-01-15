@@ -11,7 +11,7 @@ from alibaba_ai_core.document_loaders import BaseLoader
 from alibaba_ai_core.documents import Document
 from pydantic import Field
 
-from aiagentsforce_community.document_loaders.base_o365 import (
+from aibaba_ai_community.document_loaders.base_o365 import (
     O365BaseLoader,
 )
 

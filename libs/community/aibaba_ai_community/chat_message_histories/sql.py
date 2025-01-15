@@ -125,7 +125,7 @@ class SQLChatMessageHistory(BaseChatMessageHistory):
 
             from alibaba_ai_core.messages import HumanMessage
 
-            from aiagentsforce_community.chat_message_histories import SQLChatMessageHistory
+            from aibaba_ai_community.chat_message_histories import SQLChatMessageHistory
 
             # create sync sql message history by connection_string
             message_history = SQLChatMessageHistory(

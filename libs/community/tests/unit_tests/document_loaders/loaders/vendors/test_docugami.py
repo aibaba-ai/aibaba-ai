@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders import DocugamiLoader
+from aibaba_ai_community.document_loaders import DocugamiLoader
 
 DOCUGAMI_XML_PATH = Path(__file__).parent / "test_data" / "docugami-example.xml"
 

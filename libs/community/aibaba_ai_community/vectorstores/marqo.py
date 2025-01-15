@@ -43,7 +43,7 @@ class Marqo(VectorStore):
         .. code-block:: python
 
             import marqo
-            from aiagentsforce_community.vectorstores import Marqo
+            from aibaba_ai_community.vectorstores import Marqo
             client = marqo.Client(url=os.environ["MARQO_URL"], ...)
             vectorstore = Marqo(client, index_name)
 
@@ -396,7 +396,7 @@ class Marqo(VectorStore):
         Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Marqo
+                from aibaba_ai_community.vectorstores import Marqo
 
                 datastore = Marqo(texts=['text'], index_name='my-first-index',
                 url='http://localhost:8882')

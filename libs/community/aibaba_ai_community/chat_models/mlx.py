@@ -36,7 +36,7 @@ from alibaba_ai_core.runnables import Runnable
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 
-from aiagentsforce_community.llms.mlx_pipeline import MLXPipeline
+from aibaba_ai_community.llms.mlx_pipeline import MLXPipeline
 
 DEFAULT_SYSTEM_PROMPT = """You are a helpful, respectful, and honest assistant."""
 
@@ -51,8 +51,8 @@ class ChatMLX(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import chatMLX
-            from aiagentsforce_community.llms import MLXPipeline
+            from aibaba_ai_community.chat_models import chatMLX
+            from aibaba_ai_community.llms import MLXPipeline
 
             llm = MLXPipeline.from_model_id(
                 model_id="mlx-community/quantized-gemma-2b-it",

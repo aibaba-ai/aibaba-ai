@@ -6,7 +6,7 @@ from unittest.mock import patch
 import pytest
 from pydantic import AnyHttpUrl
 
-from aiagentsforce_community.utilities.nvidia_riva import (
+from aibaba_ai_community.utilities.nvidia_riva import (
     AudioStream,
     RivaASR,
     RivaAudioEncoding,

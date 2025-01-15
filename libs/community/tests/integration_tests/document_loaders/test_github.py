@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.github import GitHubIssuesLoader
+from aibaba_ai_community.document_loaders.github import GitHubIssuesLoader
 
 
 def test_issues_load() -> None:

@@ -26,9 +26,9 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.runnables.config import run_in_executor
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.base import AddableMixin, Docstore
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.docstore.base import AddableMixin, Docstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -78,11 +78,11 @@ class FAISS(VectorStore):
     See [The FAISS Library](https://arxiv.org/pdf/2401.08281) paper.
 
     Setup:
-        Install ``aiagentsforce_community`` and ``faiss-cpu`` python packages.
+        Install ``aibaba_ai_community`` and ``faiss-cpu`` python packages.
 
         .. code-block:: bash
 
-            pip install -qU aiagentsforce_community faiss-cpu
+            pip install -qU aibaba_ai_community faiss-cpu
 
     Key init args — indexing params:
         embedding_function: Embeddings
@@ -100,8 +100,8 @@ class FAISS(VectorStore):
         .. code-block:: python
 
             import faiss
-            from aiagentsforce_community.vectorstores import FAISS
-            from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
+            from aibaba_ai_community.vectorstores import FAISS
+            from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
             from langchain_openai import OpenAIEmbeddings
 
             index = faiss.IndexFlatL2(len(OpenAIEmbeddings().embed_query("hello world")))
@@ -1034,8 +1034,8 @@ class FAISS(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import FAISS
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import FAISS
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 faiss = FAISS.from_texts(texts, embeddings)
@@ -1071,8 +1071,8 @@ class FAISS(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import FAISS
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import FAISS
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 faiss = await FAISS.afrom_texts(texts, embeddings)
@@ -1108,8 +1108,8 @@ class FAISS(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import FAISS
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import FAISS
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)

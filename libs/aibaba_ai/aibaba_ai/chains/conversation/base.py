@@ -98,7 +98,7 @@ class ConversationChain(LLMChain):  # type: ignore[override, override]
         .. code-block:: python
 
             from langchain.chains import ConversationChain
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
 
             conversation = ConversationChain(llm=OpenAI())
     """

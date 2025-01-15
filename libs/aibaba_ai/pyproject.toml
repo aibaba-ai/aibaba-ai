@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "aibaba_ai"
-version = "0.3.30"
+version = "0.3.31"
 description = "Framework for building and deploying LLM-powered applications."
 authors = []
 license = "MIT"
@@ -33,7 +33,7 @@ aibaba_ai_server = "aibaba_ai.server:main"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aibaba_ai_core = "^0.3.30"
+aibaba_ai_core = "^0.3.31"
 aibaba_ai_text_splitters = "^0.3.6"
 langsmith = ">=0.1.17,<0.3"
 pydantic = "^2.7.4"

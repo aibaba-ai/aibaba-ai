@@ -7,7 +7,7 @@ from unittest import mock
 
 import pytest
 
-from aiagentsforce_community.tools.nuclia.tool import NucliaUnderstandingAPI
+from aibaba_ai_community.tools.nuclia.tool import NucliaUnderstandingAPI
 
 README_PATH = Path(__file__).parents[4] / "README.md"
 

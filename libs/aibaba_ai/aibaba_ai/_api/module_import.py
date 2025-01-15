@@ -6,7 +6,7 @@ from aibaba_ai_core._api import internal, warn_deprecated
 from langchain._api.interactive_env import is_interactive_env
 
 ALLOWED_TOP_LEVEL_PKGS = {
-    "aiagentsforce_community",
+    "aibaba_ai_community",
     "aibaba_ai_core",
     "langchain",
 }
@@ -41,7 +41,7 @@ def create_importer(
             e.g.,
             {
                 "MyDocumentLoader": (
-                    "aiagentsforce_community.document_loaders.my_document_loader"
+                    "aibaba_ai_community.document_loaders.my_document_loader"
                 )
             }
         deprecated_lookups: same as module look up, but will raise
@@ -55,7 +55,7 @@ def create_importer(
     all_module_lookup = {**(deprecated_lookups or {}), **(module_lookup or {})}
 
     def import_by_name(name: str) -> Any:
-        """Import stores from aiagentsforce_community."""
+        """Import stores from aibaba_ai_community."""
         # If not in interactive env, raise warning.
         if all_module_lookup and name in all_module_lookup:
             new_module = all_module_lookup[name]
@@ -68,7 +68,7 @@ def create_importer(
             try:
                 module = importlib.import_module(new_module)
             except ModuleNotFoundError as e:
-                if new_module.startswith("aiagentsforce_community"):
+                if new_module.startswith("aibaba_ai_community"):
                     raise ModuleNotFoundError(
                         f"Module {new_module} not found. "
                         "Please install langchain-community to access this module. "

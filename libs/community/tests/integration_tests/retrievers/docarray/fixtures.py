@@ -18,7 +18,7 @@ if TYPE_CHECKING:
     from docarray.typing import NdArray
     from qdrant_client.http import models as rest
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.embeddings import FakeEmbeddings
 
 
 @pytest.fixture

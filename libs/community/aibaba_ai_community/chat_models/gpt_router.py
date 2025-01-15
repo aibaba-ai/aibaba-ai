@@ -34,11 +34,11 @@ from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import BaseModel, Field, SecretStr, model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.adapters.openai import (
+from aibaba_ai_community.adapters.openai import (
     convert_dict_to_message,
     convert_message_to_dict,
 )
-from aiagentsforce_community.chat_models.openai import _convert_delta_to_message_chunk
+from aibaba_ai_community.chat_models.openai import _convert_delta_to_message_chunk
 
 if TYPE_CHECKING:
     from gpt_router.models import ChunkedGenerationResponse, GenerationResponse

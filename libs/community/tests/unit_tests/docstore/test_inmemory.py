@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
 
 
 def test_document_found() -> None:

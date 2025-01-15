@@ -12,8 +12,8 @@ from alibaba_ai_core.messages import (
     SystemMessage,
 )
 
-from aiagentsforce_community.adapters.openai import convert_dict_to_message
-from aiagentsforce_community.chat_models.openai import ChatOpenAI
+from aibaba_ai_community.adapters.openai import convert_dict_to_message
+from aibaba_ai_community.chat_models.openai import ChatOpenAI
 
 
 @pytest.mark.requires("openai")

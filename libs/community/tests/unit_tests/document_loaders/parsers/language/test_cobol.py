@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.parsers.language.cobol import CobolSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.cobol import CobolSegmenter
 
 EXAMPLE_CODE = """
 IDENTIFICATION DIVISION.

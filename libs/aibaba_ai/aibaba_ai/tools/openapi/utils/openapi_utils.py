@@ -5,15 +5,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import OpenAPISpec
-    from aiagentsforce_community.utilities.openapi import HTTPVerb
+    from aibaba_ai_community.tools import OpenAPISpec
+    from aibaba_ai_community.utilities.openapi import HTTPVerb
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "HTTPVerb": "aiagentsforce_community.utilities.openapi",
-    "OpenAPISpec": "aiagentsforce_community.tools",
+    "HTTPVerb": "aibaba_ai_community.utilities.openapi",
+    "OpenAPISpec": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

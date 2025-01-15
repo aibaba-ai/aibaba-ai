@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import APIOperation
-    from aiagentsforce_community.tools.openapi.utils.api_models import (
+    from aibaba_ai_community.tools import APIOperation
+    from aibaba_ai_community.tools.openapi.utils.api_models import (
         INVALID_LOCATION_TEMPL,
         PRIMITIVE_TYPES,
         SCHEMA_TYPE,
@@ -20,16 +20,16 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "APIPropertyLocation": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "APIPropertyBase": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "APIProperty": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "APIRequestBodyProperty": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "APIRequestBody": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "APIOperation": "aiagentsforce_community.tools",
-    "INVALID_LOCATION_TEMPL": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "SCHEMA_TYPE": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "PRIMITIVE_TYPES": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "SUPPORTED_LOCATIONS": "aiagentsforce_community.tools.openapi.utils.api_models",
+    "APIPropertyLocation": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "APIPropertyBase": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "APIProperty": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "APIRequestBodyProperty": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "APIRequestBody": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "APIOperation": "aibaba_ai_community.tools",
+    "INVALID_LOCATION_TEMPL": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "SCHEMA_TYPE": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "PRIMITIVE_TYPES": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "SUPPORTED_LOCATIONS": "aibaba_ai_community.tools.openapi.utils.api_models",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

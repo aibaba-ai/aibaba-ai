@@ -5,8 +5,8 @@ from typing import Generator, Iterable
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import Vectara
-from aiagentsforce_community.vectorstores.vectara import (
+from aibaba_ai_community.vectorstores import Vectara
+from aibaba_ai_community.vectorstores.vectara import (
     MMRConfig,
     RerankConfig,
     SummaryConfig,

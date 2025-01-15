@@ -21,14 +21,14 @@ from langchain.indexes._sql_record_manager import SQLRecordManager
 from langchain.indexes.vectorstore import VectorstoreIndexCreator
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.graphs.index_creator import GraphIndexCreator
+    from aibaba_ai_community.graphs.index_creator import GraphIndexCreator
 
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GraphIndexCreator": "aiagentsforce_community.graphs.index_creator",
+    "GraphIndexCreator": "aibaba_ai_community.graphs.index_creator",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

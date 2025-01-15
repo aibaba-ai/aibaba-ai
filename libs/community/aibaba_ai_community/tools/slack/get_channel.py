@@ -4,7 +4,7 @@ from typing import Any, Optional
 
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 
-from aiagentsforce_community.tools.slack.base import SlackBaseTool
+from aibaba_ai_community.tools.slack.base import SlackBaseTool
 
 
 class SlackGetChannel(SlackBaseTool):  # type: ignore[override]

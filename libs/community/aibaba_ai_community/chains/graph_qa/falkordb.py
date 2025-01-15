@@ -12,11 +12,11 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     CYPHER_GENERATION_PROMPT,
     CYPHER_QA_PROMPT,
 )
-from aiagentsforce_community.graphs import FalkorDBGraph
+from aibaba_ai_community.graphs import FalkorDBGraph
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

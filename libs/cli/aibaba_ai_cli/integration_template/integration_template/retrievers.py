@@ -9,7 +9,7 @@ from aibaba_ai_core.retrievers import BaseRetriever
 
 class __ModuleName__Retriever(BaseRetriever):
     # TODO: Replace all TODOs in docstring. See example docstring:
-    # https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aiagentsforce_community/retrievers/tavily_search_api.py#L17
+    # https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aibaba_ai_community/retrievers/tavily_search_api.py#L17
     """__ModuleName__ retriever.
 
     # TODO: Replace with relevant packages, env vars, etc.

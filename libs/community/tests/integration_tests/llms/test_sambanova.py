@@ -6,7 +6,7 @@ You'll then need to set SAMBASTUDIO_URL, and SAMBASTUDIO_API_KEY,
 and SAMBANOVA_API_KEY environment variables.
 """
 
-from aiagentsforce_community.llms.sambanova import SambaNovaCloud, SambaStudio
+from aibaba_ai_community.llms.sambanova import SambaNovaCloud, SambaStudio
 
 
 def test_sambanova_cloud_call() -> None:

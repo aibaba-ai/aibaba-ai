@@ -29,7 +29,7 @@ class JavelinAIGateway(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import JavelinAIGateway
+            from aibaba_ai_community.llms import JavelinAIGateway
 
             completions = JavelinAIGateway(
                 gateway_uri="<your-javelin-ai-gateway-uri>",

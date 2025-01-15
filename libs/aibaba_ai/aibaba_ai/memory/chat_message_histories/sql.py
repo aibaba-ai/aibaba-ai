@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_message_histories import SQLChatMessageHistory
-    from aiagentsforce_community.chat_message_histories.sql import (
+    from aibaba_ai_community.chat_message_histories import SQLChatMessageHistory
+    from aibaba_ai_community.chat_message_histories.sql import (
         BaseMessageConverter,
         DefaultMessageConverter,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BaseMessageConverter": "aiagentsforce_community.chat_message_histories.sql",
-    "DefaultMessageConverter": "aiagentsforce_community.chat_message_histories.sql",
-    "SQLChatMessageHistory": "aiagentsforce_community.chat_message_histories",
+    "BaseMessageConverter": "aibaba_ai_community.chat_message_histories.sql",
+    "DefaultMessageConverter": "aibaba_ai_community.chat_message_histories.sql",
+    "SQLChatMessageHistory": "aibaba_ai_community.chat_message_histories",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

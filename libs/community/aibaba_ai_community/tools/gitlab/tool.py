@@ -14,7 +14,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.gitlab import GitLabAPIWrapper
+from aibaba_ai_community.utilities.gitlab import GitLabAPIWrapper
 
 
 class GitLabAction(BaseTool):  # type: ignore[override]

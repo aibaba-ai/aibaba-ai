@@ -57,7 +57,7 @@ class TiDBVectorStore(VectorStore):
         Examples:
             .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import TiDBVectorStore
+            from aibaba_ai_community.vectorstores import TiDBVectorStore
             from langchain_openai import OpenAIEmbeddings
 
             embeddingFunc = OpenAIEmbeddings()

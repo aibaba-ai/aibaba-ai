@@ -11,8 +11,8 @@ from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import Field, model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 
 @deprecated(

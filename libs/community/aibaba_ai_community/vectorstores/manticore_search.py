@@ -73,8 +73,8 @@ class ManticoreSearch(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Manticore
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Manticore
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vectorstore = ManticoreSearch(embeddings)

@@ -41,8 +41,8 @@ class ContextCallbackHandler(BaseCallbackHandler):
         ImportError: if the `context-python` package is not installed.
 
     Chat Example:
-        >>> from aiagentsforce_community.llms import ChatOpenAI
-        >>> from aiagentsforce_community.callbacks import ContextCallbackHandler
+        >>> from aibaba_ai_community.llms import ChatOpenAI
+        >>> from aibaba_ai_community.callbacks import ContextCallbackHandler
         >>> context_callback = ContextCallbackHandler(
         ...     token="<CONTEXT_TOKEN_HERE>",
         ... )
@@ -60,8 +60,8 @@ class ContextCallbackHandler(BaseCallbackHandler):
 
     Chain Example:
         >>> from langchain.chains import LLMChain
-        >>> from aiagentsforce_community.chat_models import ChatOpenAI
-        >>> from aiagentsforce_community.callbacks import ContextCallbackHandler
+        >>> from aibaba_ai_community.chat_models import ChatOpenAI
+        >>> from aibaba_ai_community.callbacks import ContextCallbackHandler
         >>> context_callback = ContextCallbackHandler(
         ...     token="<CONTEXT_TOKEN_HERE>",
         ... )

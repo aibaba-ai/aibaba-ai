@@ -8,8 +8,8 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import guard_import
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.base import AddableMixin, Docstore
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.docstore.base import AddableMixin, Docstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
 
 
 def dependable_usearch_import() -> Any:
@@ -150,8 +150,8 @@ class USearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import USearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import USearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 usearch = USearch.from_texts(texts, embeddings)

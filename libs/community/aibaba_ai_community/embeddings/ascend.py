@@ -13,7 +13,7 @@ class AscendEmbeddings(Embeddings, BaseModel):
 
     Example:
 
-    from aiagentsforce_community.embeddings import AscendEmbeddings
+    from aibaba_ai_community.embeddings import AscendEmbeddings
     model = AscendEmbeddings(model_path=<path_to_model>,
         device_id=0,
         query_instruction="Represent this sentence for searching relevant passages: "

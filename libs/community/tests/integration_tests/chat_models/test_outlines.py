@@ -6,7 +6,7 @@ import re
 import platform
 import pytest
 
-from aiagentsforce_community.chat_models.outlines import ChatOutlines
+from aibaba_ai_community.chat_models.outlines import ChatOutlines
 from alibaba_ai_core.messages import AIMessage, HumanMessage, BaseMessage
 from alibaba_ai_core.messages import BaseMessageChunk
 from pydantic import BaseModel

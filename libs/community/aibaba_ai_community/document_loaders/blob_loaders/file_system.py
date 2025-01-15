@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Callable, Iterable, Iterator, Optional, Sequence, TypeVar, Union
 
-from aiagentsforce_community.document_loaders.blob_loaders.schema import Blob, BlobLoader
+from aibaba_ai_community.document_loaders.blob_loaders.schema import Blob, BlobLoader
 
 T = TypeVar("T")
 
@@ -45,7 +45,7 @@ class FileSystemBlobLoader(BlobLoader):
 
     .. code-block:: python
 
-        from aiagentsforce_community.document_loaders.blob_loaders import FileSystemBlobLoader
+        from aibaba_ai_community.document_loaders.blob_loaders import FileSystemBlobLoader
         loader = FileSystemBlobLoader("/path/to/directory")
         for blob in loader.yield_blobs():
             print(blob)  # noqa: T201
@@ -78,7 +78,7 @@ class FileSystemBlobLoader(BlobLoader):
         Examples:
 
             .. code-block:: python
-                from aiagentsforce_community.document_loaders.blob_loaders import FileSystemBlobLoader
+                from aibaba_ai_community.document_loaders.blob_loaders import FileSystemBlobLoader
 
                 # Load a single file.
                 loader = FileSystemBlobLoader("/path/to/file.txt")

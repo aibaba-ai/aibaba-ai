@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.larksuite import (
+from aibaba_ai_community.document_loaders.larksuite import (
     LarkSuiteDocLoader,
     LarkSuiteWikiLoader,
 )

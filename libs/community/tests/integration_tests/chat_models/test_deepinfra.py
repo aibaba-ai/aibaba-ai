@@ -9,7 +9,7 @@ from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 from alibaba_ai_core.runnables.base import RunnableBinding
 from pydantic import BaseModel
 
-from aiagentsforce_community.chat_models.deepinfra import ChatDeepInfra
+from aibaba_ai_community.chat_models.deepinfra import ChatDeepInfra
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

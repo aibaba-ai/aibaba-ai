@@ -5,12 +5,12 @@ from typing import List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.steam.prompt import (
+from aibaba_ai_community.tools.steam.prompt import (
     STEAM_GET_GAMES_DETAILS,
     STEAM_GET_RECOMMENDED_GAMES,
 )
-from aiagentsforce_community.tools.steam.tool import SteamWebAPIQueryRun
-from aiagentsforce_community.utilities.steam import SteamWebAPIWrapper
+from aibaba_ai_community.tools.steam.tool import SteamWebAPIQueryRun
+from aibaba_ai_community.utilities.steam import SteamWebAPIWrapper
 
 
 class SteamToolkit(BaseToolkit):

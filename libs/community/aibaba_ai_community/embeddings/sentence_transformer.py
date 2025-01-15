@@ -1,5 +1,5 @@
 """HuggingFace sentence_transformer embedding models."""
 
-from aiagentsforce_community.embeddings.huggingface import HuggingFaceEmbeddings
+from aibaba_ai_community.embeddings.huggingface import HuggingFaceEmbeddings
 
 SentenceTransformerEmbeddings = HuggingFaceEmbeddings

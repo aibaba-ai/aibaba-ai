@@ -32,7 +32,7 @@ class ParentDocumentRetriever(MultiVectorRetriever):
         .. code-block:: python
 
             from langchain_chroma import Chroma
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
             from langchain_text_splitters import RecursiveCharacterTextSplitter
             from langchain.storage import InMemoryStore
 

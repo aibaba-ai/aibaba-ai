@@ -7,7 +7,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.retrievers import ZepRetriever
+from aibaba_ai_community.retrievers import ZepRetriever
 
 if TYPE_CHECKING:
     from zep_python import MemorySearchResult, ZepClient

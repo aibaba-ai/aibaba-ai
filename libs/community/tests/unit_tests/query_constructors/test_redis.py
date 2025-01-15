@@ -9,14 +9,14 @@ from alibaba_ai_core.structured_query import (
     StructuredQuery,
 )
 
-from aiagentsforce_community.query_constructors.redis import RedisTranslator
-from aiagentsforce_community.vectorstores.redis.filters import (
+from aibaba_ai_community.query_constructors.redis import RedisTranslator
+from aibaba_ai_community.vectorstores.redis.filters import (
     RedisFilterExpression,
     RedisNum,
     RedisTag,
     RedisText,
 )
-from aiagentsforce_community.vectorstores.redis.schema import (
+from aibaba_ai_community.vectorstores.redis.schema import (
     NumericFieldSchema,
     RedisModel,
     TagFieldSchema,

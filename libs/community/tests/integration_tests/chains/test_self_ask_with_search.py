@@ -2,8 +2,8 @@
 
 from langchain.agents.self_ask_with_search.base import SelfAskWithSearchChain
 
-from aiagentsforce_community.llms.openai import OpenAI
-from aiagentsforce_community.utilities.searchapi import SearchApiAPIWrapper
+from aibaba_ai_community.llms.openai import OpenAI
+from aibaba_ai_community.utilities.searchapi import SearchApiAPIWrapper
 
 
 def test_self_ask_with_search() -> None:

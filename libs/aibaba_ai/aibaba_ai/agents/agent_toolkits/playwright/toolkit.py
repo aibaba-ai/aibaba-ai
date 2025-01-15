@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.playwright.toolkit import (
+    from aibaba_ai_community.agent_toolkits.playwright.toolkit import (
         PlayWrightBrowserToolkit,
     )
 
@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "PlayWrightBrowserToolkit": "aiagentsforce_community.agent_toolkits.playwright.toolkit"
+    "PlayWrightBrowserToolkit": "aibaba_ai_community.agent_toolkits.playwright.toolkit"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

@@ -5,8 +5,8 @@ from typing import Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.slack.base import SlackBaseTool
-from aiagentsforce_community.tools.slack.utils import UTC_FORMAT
+from aibaba_ai_community.tools.slack.base import SlackBaseTool
+from aibaba_ai_community.tools.slack.utils import UTC_FORMAT
 
 logger = logging.getLogger(__name__)
 

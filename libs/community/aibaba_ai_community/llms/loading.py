@@ -8,7 +8,7 @@ import yaml
 from alibaba_ai_core.language_models.llms import BaseLLM
 from alibaba_ai_core.utils.pydantic import get_fields
 
-from aiagentsforce_community.llms import get_type_to_cls_dict
+from aibaba_ai_community.llms import get_type_to_cls_dict
 
 _ALLOW_DANGEROUS_DESERIALIZATION_ARG = "allow_dangerous_deserialization"
 

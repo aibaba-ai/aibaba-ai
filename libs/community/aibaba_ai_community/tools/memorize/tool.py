@@ -8,7 +8,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.llms.gradient_ai import TrainResult
+from aibaba_ai_community.llms.gradient_ai import TrainResult
 
 
 @runtime_checkable

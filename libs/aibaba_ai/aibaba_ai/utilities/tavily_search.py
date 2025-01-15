@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.tavily_search import TavilySearchAPIWrapper
+    from aibaba_ai_community.utilities.tavily_search import TavilySearchAPIWrapper
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "TavilySearchAPIWrapper": "aiagentsforce_community.utilities.tavily_search"
+    "TavilySearchAPIWrapper": "aibaba_ai_community.utilities.tavily_search"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

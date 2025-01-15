@@ -24,7 +24,7 @@ integration_tests:
 test_watch:
 	poetry run ptw --disable-socket --allow-unix-socket --snapshot-update --now . -- -vv tests/unit_tests
 
-check_imports: $(shell find aiagentsforce_community -name '*.py')
+check_imports: $(shell find aibaba_ai_community -name '*.py')
 	poetry run python ./scripts/check_imports.py $^
 
 extended_tests:
@@ -40,7 +40,7 @@ PYTHON_FILES=.
 MYPY_CACHE=.mypy_cache
 lint format: PYTHON_FILES=.
 lint_diff format_diff: PYTHON_FILES=$(shell git diff --relative=libs/community --name-only --diff-filter=d master | grep -E '\.py$$|\.ipynb$$')
-lint_package: PYTHON_FILES=aiagentsforce_community
+lint_package: PYTHON_FILES=aibaba_ai_community
 lint_tests: PYTHON_FILES=tests
 lint_tests: MYPY_CACHE=.mypy_cache_test
 

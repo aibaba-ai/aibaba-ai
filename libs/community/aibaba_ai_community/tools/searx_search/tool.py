@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.utilities.searx_search import SearxSearchWrapper
+from aibaba_ai_community.utilities.searx_search import SearxSearchWrapper
 
 
 class SearxSearchQueryInput(BaseModel):

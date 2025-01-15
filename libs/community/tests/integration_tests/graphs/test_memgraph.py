@@ -2,9 +2,9 @@ import os
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graphs import MemgraphGraph
-from aiagentsforce_community.graphs.graph_document import GraphDocument, Node, Relationship
-from aiagentsforce_community.graphs.memgraph_graph import NODE_PROPERTIES_QUERY, REL_QUERY
+from aibaba_ai_community.graphs import MemgraphGraph
+from aibaba_ai_community.graphs.graph_document import GraphDocument, Node, Relationship
+from aibaba_ai_community.graphs.memgraph_graph import NODE_PROPERTIES_QUERY, REL_QUERY
 
 test_data = [
     GraphDocument(

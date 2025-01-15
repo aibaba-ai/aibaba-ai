@@ -12,7 +12,7 @@ from typing import Optional
 import pytest
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms import VertexAI, VertexAIModelGarden
+from aibaba_ai_community.llms import VertexAI, VertexAIModelGarden
 
 model_names_to_test = ["text-bison@001", "gemini-pro"]
 model_names_to_test_with_default = [None] + model_names_to_test

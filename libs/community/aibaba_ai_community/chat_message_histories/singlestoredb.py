@@ -98,7 +98,7 @@ class SingleStoreDBChatMessageHistory(BaseChatMessageHistory):
 
             .. code-block:: python
 
-                from aiagentsforce_community.chat_message_histories import (
+                from aibaba_ai_community.chat_message_histories import (
                     SingleStoreDBChatMessageHistory
                 )
 
@@ -111,7 +111,7 @@ class SingleStoreDBChatMessageHistory(BaseChatMessageHistory):
 
             .. code-block:: python
 
-                from aiagentsforce_community.chat_message_histories import (
+                from aibaba_ai_community.chat_message_histories import (
                     SingleStoreDBChatMessageHistory
                 )
 
@@ -131,7 +131,7 @@ class SingleStoreDBChatMessageHistory(BaseChatMessageHistory):
 
             .. code-block:: python
 
-                from aiagentsforce_community.chat_message_histories import (
+                from aibaba_ai_community.chat_message_histories import (
                     SingleStoreDBChatMessageHistory
                 )
 

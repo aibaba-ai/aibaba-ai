@@ -14,12 +14,12 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts.base import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     GRAPHDB_QA_PROMPT,
     GRAPHDB_SPARQL_FIX_PROMPT,
     GRAPHDB_SPARQL_GENERATION_PROMPT,
 )
-from aiagentsforce_community.graphs import OntotextGraphDBGraph
+from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
 
 class OntotextGraphDBQAChain(Chain):

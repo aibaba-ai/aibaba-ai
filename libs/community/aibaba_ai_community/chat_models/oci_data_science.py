@@ -41,7 +41,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import BaseModel, Field, model_validator
 
-from aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint import (
+from aibaba_ai_community.llms.oci_data_science_model_deployment_endpoint import (
     DEFAULT_MODEL_NAME,
     BaseOCIModelDeployment,
 )
@@ -104,7 +104,7 @@ class ChatOCIModelDeployment(BaseChatModel, BaseOCIModelDeployment):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOCIModelDeployment
+            from aibaba_ai_community.chat_models import ChatOCIModelDeployment
 
             chat = ChatOCIModelDeployment(
                 endpoint="https://modeldeployment.<region>.oci.customer-oci.com/<ocid>/predict",
@@ -778,7 +778,7 @@ class ChatOCIModelDeploymentVLLM(ChatOCIModelDeployment):
 
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOCIModelDeploymentVLLM
+            from aibaba_ai_community.chat_models import ChatOCIModelDeploymentVLLM
 
             chat = ChatOCIModelDeploymentVLLM(
                 endpoint="https://modeldeployment.us-ashburn-1.oci.customer-oci.com/<ocid>/predict",
@@ -945,7 +945,7 @@ class ChatOCIModelDeploymentTGI(ChatOCIModelDeployment):
 
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOCIModelDeploymentTGI
+            from aibaba_ai_community.chat_models import ChatOCIModelDeploymentTGI
 
             chat = ChatOCIModelDeploymentTGI(
                 endpoint="https://modeldeployment.us-ashburn-1.oci.customer-oci.com/<ocid>/predict",

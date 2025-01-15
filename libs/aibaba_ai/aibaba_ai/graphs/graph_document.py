@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.graphs.graph_document import (
+    from aibaba_ai_community.graphs.graph_document import (
         GraphDocument,
         Node,
         Relationship,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "Node": "aiagentsforce_community.graphs.graph_document",
-    "Relationship": "aiagentsforce_community.graphs.graph_document",
-    "GraphDocument": "aiagentsforce_community.graphs.graph_document",
+    "Node": "aibaba_ai_community.graphs.graph_document",
+    "Relationship": "aibaba_ai_community.graphs.graph_document",
+    "GraphDocument": "aibaba_ai_community.graphs.graph_document",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

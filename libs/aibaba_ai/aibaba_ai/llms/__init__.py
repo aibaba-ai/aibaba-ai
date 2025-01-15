@@ -28,151 +28,151 @@ from langchain._api.interactive_env import is_interactive_env
 
 
 def _import_ai21() -> Any:
-    from aiagentsforce_community.llms.ai21 import AI21
+    from aibaba_ai_community.llms.ai21 import AI21
 
     return AI21
 
 
 def _import_aleph_alpha() -> Any:
-    from aiagentsforce_community.llms.aleph_alpha import AlephAlpha
+    from aibaba_ai_community.llms.aleph_alpha import AlephAlpha
 
     return AlephAlpha
 
 
 def _import_amazon_api_gateway() -> Any:
-    from aiagentsforce_community.llms.amazon_api_gateway import AmazonAPIGateway
+    from aibaba_ai_community.llms.amazon_api_gateway import AmazonAPIGateway
 
     return AmazonAPIGateway
 
 
 def _import_anthropic() -> Any:
-    from aiagentsforce_community.llms.anthropic import Anthropic
+    from aibaba_ai_community.llms.anthropic import Anthropic
 
     return Anthropic
 
 
 def _import_anyscale() -> Any:
-    from aiagentsforce_community.llms.anyscale import Anyscale
+    from aibaba_ai_community.llms.anyscale import Anyscale
 
     return Anyscale
 
 
 def _import_arcee() -> Any:
-    from aiagentsforce_community.llms.arcee import Arcee
+    from aibaba_ai_community.llms.arcee import Arcee
 
     return Arcee
 
 
 def _import_aviary() -> Any:
-    from aiagentsforce_community.llms.aviary import Aviary
+    from aibaba_ai_community.llms.aviary import Aviary
 
     return Aviary
 
 
 def _import_azureml_endpoint() -> Any:
-    from aiagentsforce_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
+    from aibaba_ai_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
 
     return AzureMLOnlineEndpoint
 
 
 def _import_baidu_qianfan_endpoint() -> Any:
-    from aiagentsforce_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
+    from aibaba_ai_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
 
     return QianfanLLMEndpoint
 
 
 def _import_bananadev() -> Any:
-    from aiagentsforce_community.llms.bananadev import Banana
+    from aibaba_ai_community.llms.bananadev import Banana
 
     return Banana
 
 
 def _import_baseten() -> Any:
-    from aiagentsforce_community.llms.baseten import Baseten
+    from aibaba_ai_community.llms.baseten import Baseten
 
     return Baseten
 
 
 def _import_beam() -> Any:
-    from aiagentsforce_community.llms.beam import Beam
+    from aibaba_ai_community.llms.beam import Beam
 
     return Beam
 
 
 def _import_bedrock() -> Any:
-    from aiagentsforce_community.llms.bedrock import Bedrock
+    from aibaba_ai_community.llms.bedrock import Bedrock
 
     return Bedrock
 
 
 def _import_bittensor() -> Any:
-    from aiagentsforce_community.llms.bittensor import NIBittensorLLM
+    from aibaba_ai_community.llms.bittensor import NIBittensorLLM
 
     return NIBittensorLLM
 
 
 def _import_cerebriumai() -> Any:
-    from aiagentsforce_community.llms.cerebriumai import CerebriumAI
+    from aibaba_ai_community.llms.cerebriumai import CerebriumAI
 
     return CerebriumAI
 
 
 def _import_chatglm() -> Any:
-    from aiagentsforce_community.llms.chatglm import ChatGLM
+    from aibaba_ai_community.llms.chatglm import ChatGLM
 
     return ChatGLM
 
 
 def _import_clarifai() -> Any:
-    from aiagentsforce_community.llms.clarifai import Clarifai
+    from aibaba_ai_community.llms.clarifai import Clarifai
 
     return Clarifai
 
 
 def _import_cohere() -> Any:
-    from aiagentsforce_community.llms.cohere import Cohere
+    from aibaba_ai_community.llms.cohere import Cohere
 
     return Cohere
 
 
 def _import_ctransformers() -> Any:
-    from aiagentsforce_community.llms.ctransformers import CTransformers
+    from aibaba_ai_community.llms.ctransformers import CTransformers
 
     return CTransformers
 
 
 def _import_ctranslate2() -> Any:
-    from aiagentsforce_community.llms.ctranslate2 import CTranslate2
+    from aibaba_ai_community.llms.ctranslate2 import CTranslate2
 
     return CTranslate2
 
 
 def _import_databricks() -> Any:
-    from aiagentsforce_community.llms.databricks import Databricks
+    from aibaba_ai_community.llms.databricks import Databricks
 
     return Databricks
 
 
 def _import_databricks_chat() -> Any:
-    from aiagentsforce_community.chat_models.databricks import ChatDatabricks
+    from aibaba_ai_community.chat_models.databricks import ChatDatabricks
 
     return ChatDatabricks
 
 
 def _import_deepinfra() -> Any:
-    from aiagentsforce_community.llms.deepinfra import DeepInfra
+    from aibaba_ai_community.llms.deepinfra import DeepInfra
 
     return DeepInfra
 
 
 def _import_deepsparse() -> Any:
-    from aiagentsforce_community.llms.deepsparse import DeepSparse
+    from aibaba_ai_community.llms.deepsparse import DeepSparse
 
     return DeepSparse
 
 
 def _import_edenai() -> Any:
-    from aiagentsforce_community.llms.edenai import EdenAI
+    from aibaba_ai_community.llms.edenai import EdenAI
 
     return EdenAI
 
@@ -184,67 +184,67 @@ def _import_fake() -> Any:
 
 
 def _import_fireworks() -> Any:
-    from aiagentsforce_community.llms.fireworks import Fireworks
+    from aibaba_ai_community.llms.fireworks import Fireworks
 
     return Fireworks
 
 
 def _import_forefrontai() -> Any:
-    from aiagentsforce_community.llms.forefrontai import ForefrontAI
+    from aibaba_ai_community.llms.forefrontai import ForefrontAI
 
     return ForefrontAI
 
 
 def _import_gigachat() -> Any:
-    from aiagentsforce_community.llms.gigachat import GigaChat
+    from aibaba_ai_community.llms.gigachat import GigaChat
 
     return GigaChat
 
 
 def _import_google_palm() -> Any:
-    from aiagentsforce_community.llms.google_palm import GooglePalm
+    from aibaba_ai_community.llms.google_palm import GooglePalm
 
     return GooglePalm
 
 
 def _import_gooseai() -> Any:
-    from aiagentsforce_community.llms.gooseai import GooseAI
+    from aibaba_ai_community.llms.gooseai import GooseAI
 
     return GooseAI
 
 
 def _import_gpt4all() -> Any:
-    from aiagentsforce_community.llms.gpt4all import GPT4All
+    from aibaba_ai_community.llms.gpt4all import GPT4All
 
     return GPT4All
 
 
 def _import_gradient_ai() -> Any:
-    from aiagentsforce_community.llms.gradient_ai import GradientLLM
+    from aibaba_ai_community.llms.gradient_ai import GradientLLM
 
     return GradientLLM
 
 
 def _import_huggingface_endpoint() -> Any:
-    from aiagentsforce_community.llms.huggingface_endpoint import HuggingFaceEndpoint
+    from aibaba_ai_community.llms.huggingface_endpoint import HuggingFaceEndpoint
 
     return HuggingFaceEndpoint
 
 
 def _import_huggingface_hub() -> Any:
-    from aiagentsforce_community.llms.huggingface_hub import HuggingFaceHub
+    from aibaba_ai_community.llms.huggingface_hub import HuggingFaceHub
 
     return HuggingFaceHub
 
 
 def _import_huggingface_pipeline() -> Any:
-    from aiagentsforce_community.llms.huggingface_pipeline import HuggingFacePipeline
+    from aibaba_ai_community.llms.huggingface_pipeline import HuggingFacePipeline
 
     return HuggingFacePipeline
 
 
 def _import_huggingface_text_gen_inference() -> Any:
-    from aiagentsforce_community.llms.huggingface_text_gen_inference import (
+    from aibaba_ai_community.llms.huggingface_text_gen_inference import (
         HuggingFaceTextGenInference,
     )
 
@@ -252,193 +252,193 @@ def _import_huggingface_text_gen_inference() -> Any:
 
 
 def _import_human() -> Any:
-    from aiagentsforce_community.llms.human import HumanInputLLM
+    from aibaba_ai_community.llms.human import HumanInputLLM
 
     return HumanInputLLM
 
 
 def _import_javelin_ai_gateway() -> Any:
-    from aiagentsforce_community.llms.javelin_ai_gateway import JavelinAIGateway
+    from aibaba_ai_community.llms.javelin_ai_gateway import JavelinAIGateway
 
     return JavelinAIGateway
 
 
 def _import_koboldai() -> Any:
-    from aiagentsforce_community.llms.koboldai import KoboldApiLLM
+    from aibaba_ai_community.llms.koboldai import KoboldApiLLM
 
     return KoboldApiLLM
 
 
 def _import_llamacpp() -> Any:
-    from aiagentsforce_community.llms.llamacpp import LlamaCpp
+    from aibaba_ai_community.llms.llamacpp import LlamaCpp
 
     return LlamaCpp
 
 
 def _import_manifest() -> Any:
-    from aiagentsforce_community.llms.manifest import ManifestWrapper
+    from aibaba_ai_community.llms.manifest import ManifestWrapper
 
     return ManifestWrapper
 
 
 def _import_minimax() -> Any:
-    from aiagentsforce_community.llms.minimax import Minimax
+    from aibaba_ai_community.llms.minimax import Minimax
 
     return Minimax
 
 
 def _import_mlflow() -> Any:
-    from aiagentsforce_community.llms.mlflow import Mlflow
+    from aibaba_ai_community.llms.mlflow import Mlflow
 
     return Mlflow
 
 
 def _import_mlflow_chat() -> Any:
-    from aiagentsforce_community.chat_models.mlflow import ChatMlflow
+    from aibaba_ai_community.chat_models.mlflow import ChatMlflow
 
     return ChatMlflow
 
 
 def _import_mlflow_ai_gateway() -> Any:
-    from aiagentsforce_community.llms.mlflow_ai_gateway import MlflowAIGateway
+    from aibaba_ai_community.llms.mlflow_ai_gateway import MlflowAIGateway
 
     return MlflowAIGateway
 
 
 def _import_modal() -> Any:
-    from aiagentsforce_community.llms.modal import Modal
+    from aibaba_ai_community.llms.modal import Modal
 
     return Modal
 
 
 def _import_mosaicml() -> Any:
-    from aiagentsforce_community.llms.mosaicml import MosaicML
+    from aibaba_ai_community.llms.mosaicml import MosaicML
 
     return MosaicML
 
 
 def _import_nlpcloud() -> Any:
-    from aiagentsforce_community.llms.nlpcloud import NLPCloud
+    from aibaba_ai_community.llms.nlpcloud import NLPCloud
 
     return NLPCloud
 
 
 def _import_octoai_endpoint() -> Any:
-    from aiagentsforce_community.llms.octoai_endpoint import OctoAIEndpoint
+    from aibaba_ai_community.llms.octoai_endpoint import OctoAIEndpoint
 
     return OctoAIEndpoint
 
 
 def _import_ollama() -> Any:
-    from aiagentsforce_community.llms.ollama import Ollama
+    from aibaba_ai_community.llms.ollama import Ollama
 
     return Ollama
 
 
 def _import_opaqueprompts() -> Any:
-    from aiagentsforce_community.llms.opaqueprompts import OpaquePrompts
+    from aibaba_ai_community.llms.opaqueprompts import OpaquePrompts
 
     return OpaquePrompts
 
 
 def _import_azure_openai() -> Any:
-    from aiagentsforce_community.llms.openai import AzureOpenAI
+    from aibaba_ai_community.llms.openai import AzureOpenAI
 
     return AzureOpenAI
 
 
 def _import_openai() -> Any:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     return OpenAI
 
 
 def _import_openai_chat() -> Any:
-    from aiagentsforce_community.llms.openai import OpenAIChat
+    from aibaba_ai_community.llms.openai import OpenAIChat
 
     return OpenAIChat
 
 
 def _import_openllm() -> Any:
-    from aiagentsforce_community.llms.openllm import OpenLLM
+    from aibaba_ai_community.llms.openllm import OpenLLM
 
     return OpenLLM
 
 
 def _import_openlm() -> Any:
-    from aiagentsforce_community.llms.openlm import OpenLM
+    from aibaba_ai_community.llms.openlm import OpenLM
 
     return OpenLM
 
 
 def _import_pai_eas_endpoint() -> Any:
-    from aiagentsforce_community.llms.pai_eas_endpoint import PaiEasEndpoint
+    from aibaba_ai_community.llms.pai_eas_endpoint import PaiEasEndpoint
 
     return PaiEasEndpoint
 
 
 def _import_petals() -> Any:
-    from aiagentsforce_community.llms.petals import Petals
+    from aibaba_ai_community.llms.petals import Petals
 
     return Petals
 
 
 def _import_pipelineai() -> Any:
-    from aiagentsforce_community.llms.pipelineai import PipelineAI
+    from aibaba_ai_community.llms.pipelineai import PipelineAI
 
     return PipelineAI
 
 
 def _import_predibase() -> Any:
-    from aiagentsforce_community.llms.predibase import Predibase
+    from aibaba_ai_community.llms.predibase import Predibase
 
     return Predibase
 
 
 def _import_predictionguard() -> Any:
-    from aiagentsforce_community.llms.predictionguard import PredictionGuard
+    from aibaba_ai_community.llms.predictionguard import PredictionGuard
 
     return PredictionGuard
 
 
 def _import_promptlayer() -> Any:
-    from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAI
+    from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAI
 
     return PromptLayerOpenAI
 
 
 def _import_promptlayer_chat() -> Any:
-    from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAIChat
+    from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAIChat
 
     return PromptLayerOpenAIChat
 
 
 def _import_replicate() -> Any:
-    from aiagentsforce_community.llms.replicate import Replicate
+    from aibaba_ai_community.llms.replicate import Replicate
 
     return Replicate
 
 
 def _import_rwkv() -> Any:
-    from aiagentsforce_community.llms.rwkv import RWKV
+    from aibaba_ai_community.llms.rwkv import RWKV
 
     return RWKV
 
 
 def _import_sagemaker_endpoint() -> Any:
-    from aiagentsforce_community.llms.sagemaker_endpoint import SagemakerEndpoint
+    from aibaba_ai_community.llms.sagemaker_endpoint import SagemakerEndpoint
 
     return SagemakerEndpoint
 
 
 def _import_self_hosted() -> Any:
-    from aiagentsforce_community.llms.self_hosted import SelfHostedPipeline
+    from aibaba_ai_community.llms.self_hosted import SelfHostedPipeline
 
     return SelfHostedPipeline
 
 
 def _import_self_hosted_hugging_face() -> Any:
-    from aiagentsforce_community.llms.self_hosted_hugging_face import (
+    from aibaba_ai_community.llms.self_hosted_hugging_face import (
         SelfHostedHuggingFaceLLM,
     )
 
@@ -446,103 +446,103 @@ def _import_self_hosted_hugging_face() -> Any:
 
 
 def _import_stochasticai() -> Any:
-    from aiagentsforce_community.llms.stochasticai import StochasticAI
+    from aibaba_ai_community.llms.stochasticai import StochasticAI
 
     return StochasticAI
 
 
 def _import_symblai_nebula() -> Any:
-    from aiagentsforce_community.llms.symblai_nebula import Nebula
+    from aibaba_ai_community.llms.symblai_nebula import Nebula
 
     return Nebula
 
 
 def _import_textgen() -> Any:
-    from aiagentsforce_community.llms.textgen import TextGen
+    from aibaba_ai_community.llms.textgen import TextGen
 
     return TextGen
 
 
 def _import_titan_takeoff() -> Any:
-    from aiagentsforce_community.llms.titan_takeoff import TitanTakeoff
+    from aibaba_ai_community.llms.titan_takeoff import TitanTakeoff
 
     return TitanTakeoff
 
 
 def _import_titan_takeoff_pro() -> Any:
-    from aiagentsforce_community.llms.titan_takeoff import TitanTakeoff
+    from aibaba_ai_community.llms.titan_takeoff import TitanTakeoff
 
     return TitanTakeoff
 
 
 def _import_together() -> Any:
-    from aiagentsforce_community.llms.together import Together
+    from aibaba_ai_community.llms.together import Together
 
     return Together
 
 
 def _import_tongyi() -> Any:
-    from aiagentsforce_community.llms.tongyi import Tongyi
+    from aibaba_ai_community.llms.tongyi import Tongyi
 
     return Tongyi
 
 
 def _import_vertex() -> Any:
-    from aiagentsforce_community.llms.vertexai import VertexAI
+    from aibaba_ai_community.llms.vertexai import VertexAI
 
     return VertexAI
 
 
 def _import_vertex_model_garden() -> Any:
-    from aiagentsforce_community.llms.vertexai import VertexAIModelGarden
+    from aibaba_ai_community.llms.vertexai import VertexAIModelGarden
 
     return VertexAIModelGarden
 
 
 def _import_vllm() -> Any:
-    from aiagentsforce_community.llms.vllm import VLLM
+    from aibaba_ai_community.llms.vllm import VLLM
 
     return VLLM
 
 
 def _import_vllm_openai() -> Any:
-    from aiagentsforce_community.llms.vllm import VLLMOpenAI
+    from aibaba_ai_community.llms.vllm import VLLMOpenAI
 
     return VLLMOpenAI
 
 
 def _import_watsonxllm() -> Any:
-    from aiagentsforce_community.llms.watsonxllm import WatsonxLLM
+    from aibaba_ai_community.llms.watsonxllm import WatsonxLLM
 
     return WatsonxLLM
 
 
 def _import_writer() -> Any:
-    from aiagentsforce_community.llms.writer import Writer
+    from aibaba_ai_community.llms.writer import Writer
 
     return Writer
 
 
 def _import_xinference() -> Any:
-    from aiagentsforce_community.llms.xinference import Xinference
+    from aibaba_ai_community.llms.xinference import Xinference
 
     return Xinference
 
 
 def _import_yandex_gpt() -> Any:
-    from aiagentsforce_community.llms.yandex import YandexGPT
+    from aibaba_ai_community.llms.yandex import YandexGPT
 
     return YandexGPT
 
 
 def _import_volcengine_maas() -> Any:
-    from aiagentsforce_community.llms.volcengine_maas import VolcEngineMaasLLM
+    from aibaba_ai_community.llms.volcengine_maas import VolcEngineMaasLLM
 
     return VolcEngineMaasLLM
 
 
 def __getattr__(name: str) -> Any:
-    from aiagentsforce_community import llms
+    from aibaba_ai_community import llms
 
     # If not in interactive env, raise warning.
     if not is_interactive_env():
@@ -550,7 +550,7 @@ def __getattr__(name: str) -> Any:
             "Importing LLMs from langchain is deprecated. Importing from "
             "langchain will no longer be supported as of langchain==0.2.0. "
             "Please import from langchain-community instead:\n\n"
-            f"`from aiagentsforce_community.llms import {name}`.\n\n"
+            f"`from aibaba_ai_community.llms import {name}`.\n\n"
             "To install langchain-community run `pip install -U langchain-community`.",
             category=AI Agents ForceDeprecationWarning,
         )

@@ -6,7 +6,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.github.prompt import (
+from aibaba_ai_community.tools.github.prompt import (
     COMMENT_ON_ISSUE_PROMPT,
     CREATE_BRANCH_PROMPT,
     CREATE_FILE_PROMPT,
@@ -28,8 +28,8 @@ from aiagentsforce_community.tools.github.prompt import (
     SET_ACTIVE_BRANCH_PROMPT,
     UPDATE_FILE_PROMPT,
 )
-from aiagentsforce_community.tools.github.tool import GitHubAction
-from aiagentsforce_community.utilities.github import GitHubAPIWrapper
+from aibaba_ai_community.tools.github.tool import GitHubAction
+from aibaba_ai_community.utilities.github import GitHubAPIWrapper
 
 
 class NoInput(BaseModel):
@@ -181,8 +181,8 @@ class GitHubToolkit(BaseToolkit):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.agent_toolkits.github.toolkit import GitHubToolkit
-            from aiagentsforce_community.utilities.github import GitHubAPIWrapper
+            from aibaba_ai_community.agent_toolkits.github.toolkit import GitHubToolkit
+            from aibaba_ai_community.utilities.github import GitHubAPIWrapper
 
             github = GitHubAPIWrapper()
             toolkit = GitHubToolkit.from_github_api_wrapper(github)

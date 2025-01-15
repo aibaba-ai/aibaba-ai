@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.messages import ToolMessage
 
-from aiagentsforce_community.chat_models.zhipuai import (
+from aibaba_ai_community.chat_models.zhipuai import (
     ChatZhipuAI,
     _convert_message_to_dict,
 )

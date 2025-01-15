@@ -17,7 +17,7 @@ class GoogleJobsAPIWrapper(BaseModel):
     to the constructor.
      Example:
         .. code-block:: python
-        from aiagentsforce_community.utilities import GoogleJobsAPIWrapper
+        from aibaba_ai_community.utilities import GoogleJobsAPIWrapper
         google_Jobs = GoogleJobsAPIWrapper()
         google_Jobs.run('langchain')
     """

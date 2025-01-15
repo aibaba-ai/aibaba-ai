@@ -8,7 +8,7 @@ from alibaba_ai_core.callbacks import CallbackManager
 from alibaba_ai_core.messages import BaseMessage, HumanMessage
 from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
-from aiagentsforce_community.chat_models import AzureChatOpenAI
+from aibaba_ai_community.chat_models import AzureChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")

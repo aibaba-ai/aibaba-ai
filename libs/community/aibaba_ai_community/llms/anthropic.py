@@ -163,7 +163,7 @@ class Anthropic(LLM, _AnthropicCommon):
         .. code-block:: python
 
             import anthropic
-            from aiagentsforce_community.llms import Anthropic
+            from aibaba_ai_community.llms import Anthropic
 
             model = Anthropic(model="<model_name>", anthropic_api_key="my-api-key")
 
@@ -188,7 +188,7 @@ class Anthropic(LLM, _AnthropicCommon):
         """Raise warning that this class is deprecated."""
         warnings.warn(
             "This Anthropic LLM is deprecated. "
-            "Please use `from aiagentsforce_community.chat_models import ChatAnthropic` "
+            "Please use `from aibaba_ai_community.chat_models import ChatAnthropic` "
             "instead"
         )
         return values

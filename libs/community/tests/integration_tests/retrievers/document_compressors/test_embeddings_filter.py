@@ -4,10 +4,10 @@ import numpy as np
 from langchain.retrievers.document_compressors import EmbeddingsFilter
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (
+from aibaba_ai_community.document_transformers.embeddings_redundant_filter import (
     _DocumentWithState,
 )
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
 
 def test_embeddings_filter() -> None:

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.azureml_endpoint import (
+    from aibaba_ai_community.chat_models.azureml_endpoint import (
         AzureMLChatOnlineEndpoint,
         LlamaContentFormatter,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LlamaContentFormatter": "aiagentsforce_community.chat_models.azureml_endpoint",
-    "AzureMLChatOnlineEndpoint": "aiagentsforce_community.chat_models.azureml_endpoint",
+    "LlamaContentFormatter": "aibaba_ai_community.chat_models.azureml_endpoint",
+    "AzureMLChatOnlineEndpoint": "aibaba_ai_community.chat_models.azureml_endpoint",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

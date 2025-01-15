@@ -23,7 +23,7 @@ class Clarifai(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Clarifai
+                from aibaba_ai_community.vectorstores import Clarifai
 
                 clarifai_vector_db = Clarifai(
                         user_id=USER_ID,

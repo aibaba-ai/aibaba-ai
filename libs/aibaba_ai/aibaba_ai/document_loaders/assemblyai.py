@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import AssemblyAIAudioTranscriptLoader
-    from aiagentsforce_community.document_loaders.assemblyai import TranscriptFormat
+    from aibaba_ai_community.document_loaders import AssemblyAIAudioTranscriptLoader
+    from aibaba_ai_community.document_loaders.assemblyai import TranscriptFormat
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "TranscriptFormat": "aiagentsforce_community.document_loaders.assemblyai",
-    "AssemblyAIAudioTranscriptLoader": "aiagentsforce_community.document_loaders",
+    "TranscriptFormat": "aibaba_ai_community.document_loaders.assemblyai",
+    "AssemblyAIAudioTranscriptLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

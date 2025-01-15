@@ -8,10 +8,10 @@ from typing import Union
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.docstore.base import Docstore
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
-from aiagentsforce_community.vectorstores.faiss import FAISS
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.docstore.base import Docstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.vectorstores.faiss import FAISS
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 _PAGE_CONTENT = """This is a page about Aibaba AI.

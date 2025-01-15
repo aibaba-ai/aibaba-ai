@@ -3,9 +3,9 @@ from typing import Any, Callable, Dict, Iterator, List, Optional, Sequence, Unio
 from sqlalchemy.engine import RowMapping
 from sqlalchemy.sql.expression import Select
 
-from aiagentsforce_community.docstore.document import Document
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.sql_database import SQLDatabase
+from aibaba_ai_community.docstore.document import Document
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.sql_database import SQLDatabase
 
 
 class SQLDatabaseLoader(BaseLoader):

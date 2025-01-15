@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores.redis.filters import (
+    from aibaba_ai_community.vectorstores.redis.filters import (
         RedisFilter,
         RedisFilterExpression,
         RedisFilterField,
@@ -18,14 +18,14 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "RedisFilterOperator": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisFilter": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisFilterField": "aiagentsforce_community.vectorstores.redis.filters",
-    "check_operator_misuse": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisTag": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisNum": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisText": "aiagentsforce_community.vectorstores.redis.filters",
-    "RedisFilterExpression": "aiagentsforce_community.vectorstores.redis.filters",
+    "RedisFilterOperator": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisFilter": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisFilterField": "aibaba_ai_community.vectorstores.redis.filters",
+    "check_operator_misuse": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisTag": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisNum": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisText": "aibaba_ai_community.vectorstores.redis.filters",
+    "RedisFilterExpression": "aibaba_ai_community.vectorstores.redis.filters",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

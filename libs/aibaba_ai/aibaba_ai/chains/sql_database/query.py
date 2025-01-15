@@ -10,7 +10,7 @@ from aibaba_ai_core.runnables import Runnable, RunnablePassthrough
 from langchain.chains.sql_database.prompt import PROMPT, SQL_PROMPTS
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.sql_database import SQLDatabase
+    from aibaba_ai_community.utilities.sql_database import SQLDatabase
 
 
 def _strip(text: str) -> str:
@@ -71,7 +71,7 @@ def create_sql_query_chain(
             # pip install -U langchain langchain-community langchain-openai
             from langchain_openai import ChatOpenAI
             from langchain.chains import create_sql_query_chain
-            from aiagentsforce_community.utilities import SQLDatabase
+            from aibaba_ai_community.utilities import SQLDatabase
 
             db = SQLDatabase.from_uri("sqlite:///Chinook.db")
             llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)

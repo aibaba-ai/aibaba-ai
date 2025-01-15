@@ -10,7 +10,7 @@ from alibaba_ai_core.outputs import (
     LLMResult,
 )
 
-from aiagentsforce_community.chat_models.yuan2 import ChatYuan2
+from aibaba_ai_community.chat_models.yuan2 import ChatYuan2
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

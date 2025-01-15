@@ -13,8 +13,8 @@ from langsmith import Client as Client
 from langsmith.evaluation import run_evaluator
 from langsmith.schemas import DataType, Example, Run
 
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.llms.openai import OpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.llms.openai import OpenAI
 
 
 def _check_all_feedback_passed(_project_name: str, client: Client) -> None:

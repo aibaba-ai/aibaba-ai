@@ -8,4 +8,4 @@ This test is intended to catch errors in the import process.
 
 def test_import_storage() -> None:
     """Attempt to import storage modules."""
-    from aiagentsforce_community.storage.mongodb import MongoDBStore  # noqa
+    from aibaba_ai_community.storage.mongodb import MongoDBStore  # noqa

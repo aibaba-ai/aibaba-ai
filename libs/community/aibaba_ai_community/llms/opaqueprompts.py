@@ -24,8 +24,8 @@ class OpaquePrompts(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OpaquePrompts
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.llms import OpaquePrompts
+            from aibaba_ai_community.chat_models import ChatOpenAI
 
             op_llm = OpaquePrompts(base_llm=ChatOpenAI())
     """

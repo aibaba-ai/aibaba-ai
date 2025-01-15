@@ -4,7 +4,7 @@
 import os
 from urllib.request import urlretrieve
 
-from aiagentsforce_community.llms import GPT4All
+from aibaba_ai_community.llms import GPT4All
 
 
 def _download_model() -> str:

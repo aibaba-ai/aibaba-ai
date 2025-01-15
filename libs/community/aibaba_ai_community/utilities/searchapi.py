@@ -17,7 +17,7 @@ class SearchApiAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import SearchApiAPIWrapper
+            from aibaba_ai_community.utilities import SearchApiAPIWrapper
             searchapi = SearchApiAPIWrapper()
     """
 

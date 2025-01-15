@@ -22,7 +22,7 @@ class FastEmbedEmbeddings(BaseModel, Embeddings):
 
     `pip install fastembed`
     Example:
-        from aiagentsforce_community.embeddings import FastEmbedEmbeddings
+        from aibaba_ai_community.embeddings import FastEmbedEmbeddings
         fastembed = FastEmbedEmbeddings()
     """
 

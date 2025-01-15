@@ -1,7 +1,7 @@
 import pytest
 
-from aiagentsforce_community.graph_vectorstores.extractors import GLiNERLinkExtractor
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.extractors import GLiNERLinkExtractor
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 PAGE_1 = """
 Cristiano Ronaldo dos Santos Aveiro (Portuguese pronunciation: [kɾiʃ'tjɐnu

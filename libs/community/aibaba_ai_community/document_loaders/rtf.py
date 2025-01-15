@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Any, List, Union
 
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     satisfies_min_unstructured_version,
 )
@@ -21,7 +21,7 @@ class UnstructuredRTFLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredRTFLoader
+    from aibaba_ai_community.document_loaders import UnstructuredRTFLoader
 
     loader = UnstructuredRTFLoader(
         "example.rtf", mode="elements", strategy="fast",

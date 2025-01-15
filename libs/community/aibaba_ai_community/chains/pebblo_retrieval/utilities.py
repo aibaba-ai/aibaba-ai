@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from requests import Response, request
 from requests.exceptions import RequestException
 
-from aiagentsforce_community.chains.pebblo_retrieval.models import (
+from aibaba_ai_community.chains.pebblo_retrieval.models import (
     App,
     AuthContext,
     Context,

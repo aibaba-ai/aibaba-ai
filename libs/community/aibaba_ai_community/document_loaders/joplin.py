@@ -6,7 +6,7 @@ from typing import Iterator, List, Optional
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 LINK_NOTE_TEMPLATE = "joplin://x-callback-url/openNote?id={id}"
 

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.parsers.language.language_parser import (
+    from aibaba_ai_community.document_loaders.parsers.language.language_parser import (
         LanguageParser,
     )
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "LanguageParser": (
-        "aiagentsforce_community.document_loaders.parsers.language.language_parser"
+        "aibaba_ai_community.document_loaders.parsers.language.language_parser"
     ),
 }
 

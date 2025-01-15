@@ -7,8 +7,8 @@ import pytest
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from pydantic import ValidationError
 
-from aiagentsforce_community.chat_models import ChatReka
-from aiagentsforce_community.chat_models.reka import (
+from aibaba_ai_community.chat_models import ChatReka
+from aibaba_ai_community.chat_models.reka import (
     convert_to_reka_messages,
     process_content,
 )

@@ -6,7 +6,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, SecretStr, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class ForefrontAI(LLM):
@@ -18,7 +18,7 @@ class ForefrontAI(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import ForefrontAI
+            from aibaba_ai_community.llms import ForefrontAI
             forefrontai = ForefrontAI(endpoint_url="")
     """
 

@@ -32,7 +32,7 @@ class TensorflowDatasets(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import TensorflowDatasets
+            from aibaba_ai_community.utilities import TensorflowDatasets
 
             def mlqaen_example_to_document(example: dict) -> Document:
                 return Document(

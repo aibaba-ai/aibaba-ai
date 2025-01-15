@@ -23,7 +23,7 @@ except ImportError:
 from langchain.globals import get_llm_cache, set_llm_cache
 from alibaba_ai_core.outputs import Generation, LLMResult
 
-from aiagentsforce_community.cache import SQLAlchemyCache
+from aibaba_ai_community.cache import SQLAlchemyCache
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 
@@ -235,7 +235,7 @@ def test_sql_alchemy_cache() -> None:
 
     engine = create_engine("sqlite://")
 
-    from aiagentsforce_community.cache import SQLAlchemyCache
+    from aibaba_ai_community.cache import SQLAlchemyCache
 
     set_llm_cache(SQLAlchemyCache(engine, FulltextLLMCache))
     llm = FakeLLM()

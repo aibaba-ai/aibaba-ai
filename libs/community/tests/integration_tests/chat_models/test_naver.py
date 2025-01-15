@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.messages import AIMessage, AIMessageChunk
 
-from aiagentsforce_community.chat_models import ChatClovaX
+from aibaba_ai_community.chat_models import ChatClovaX
 
 
 def test_stream() -> None:

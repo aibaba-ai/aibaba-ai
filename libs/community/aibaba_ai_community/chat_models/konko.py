@@ -26,15 +26,15 @@ from alibaba_ai_core.outputs import ChatGenerationChunk, ChatResult
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import Field, SecretStr
 
-from aiagentsforce_community.adapters.openai import (
+from aibaba_ai_community.adapters.openai import (
     convert_message_to_dict,
 )
-from aiagentsforce_community.chat_models.openai import (
+from aibaba_ai_community.chat_models.openai import (
     ChatOpenAI,
     _convert_delta_to_message_chunk,
     generate_from_stream,
 )
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 DEFAULT_API_BASE = "https://api.konko.ai/v1"
 DEFAULT_MODEL = "meta-llama/Llama-2-13b-chat-hf"
@@ -54,7 +54,7 @@ class ChatKonko(ChatOpenAI):  # type: ignore[override]
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatKonko
+            from aibaba_ai_community.chat_models import ChatKonko
             llm = ChatKonko(model="meta-llama/Llama-2-13b-chat-hf")
     """
 

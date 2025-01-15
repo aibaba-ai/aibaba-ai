@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.streamlit.mutable_expander import (
+    from aibaba_ai_community.callbacks.streamlit.mutable_expander import (
         ChildRecord,
         ChildType,
         MutableExpander,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ChildType": "aiagentsforce_community.callbacks.streamlit.mutable_expander",
-    "ChildRecord": "aiagentsforce_community.callbacks.streamlit.mutable_expander",
-    "MutableExpander": "aiagentsforce_community.callbacks.streamlit.mutable_expander",
+    "ChildType": "aibaba_ai_community.callbacks.streamlit.mutable_expander",
+    "ChildRecord": "aibaba_ai_community.callbacks.streamlit.mutable_expander",
+    "MutableExpander": "aibaba_ai_community.callbacks.streamlit.mutable_expander",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

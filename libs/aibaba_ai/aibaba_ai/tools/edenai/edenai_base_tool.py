@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import EdenaiTool
+    from aibaba_ai_community.tools import EdenaiTool
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"EdenaiTool": "aiagentsforce_community.tools"}
+DEPRECATED_LOOKUP = {"EdenaiTool": "aibaba_ai_community.tools"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

@@ -12,8 +12,8 @@ from alibaba_ai_core.outputs import ChatResult
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.chat_models.openai import ChatOpenAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.chat_models.openai import ChatOpenAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 logger = logging.getLogger(__name__)
 

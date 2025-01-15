@@ -5,8 +5,8 @@ from typing import Any
 
 import pytest
 
-from aiagentsforce_community.embeddings import TitanTakeoffEmbed
-from aiagentsforce_community.embeddings.titan_takeoff import (
+from aibaba_ai_community.embeddings import TitanTakeoffEmbed
+from aibaba_ai_community.embeddings.titan_takeoff import (
     Device,
     MissingConsumerGroup,
     ReaderConfig,

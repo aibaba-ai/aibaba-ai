@@ -1,5 +1,5 @@
-from aiagentsforce_community.agent_toolkits.load_tools import load_tools
-from aiagentsforce_community.tools.requests.tool import (
+from aibaba_ai_community.agent_toolkits.load_tools import load_tools
+from aibaba_ai_community.tools.requests.tool import (
     RequestsDeleteTool,
     RequestsGetTool,
     RequestsPatchTool,

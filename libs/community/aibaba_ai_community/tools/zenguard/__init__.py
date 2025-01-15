@@ -1,4 +1,4 @@
-from aiagentsforce_community.tools.zenguard.tool import (
+from aibaba_ai_community.tools.zenguard.tool import (
     Detector,
     ZenGuardInput,
     ZenGuardTool,

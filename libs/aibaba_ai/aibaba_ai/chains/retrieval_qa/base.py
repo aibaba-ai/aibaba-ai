@@ -250,9 +250,9 @@ class RetrievalQA(BaseRetrievalQA):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from langchain.chains import RetrievalQA
-            from aiagentsforce_community.vectorstores import FAISS
+            from aibaba_ai_community.vectorstores import FAISS
             from aibaba_ai_core.vectorstores import VectorStoreRetriever
             retriever = VectorStoreRetriever(vectorstore=FAISS(...))
             retrievalQA = RetrievalQA.from_llm(llm=OpenAI(), retriever=retriever)

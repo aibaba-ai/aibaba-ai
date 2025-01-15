@@ -11,7 +11,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict, SecretStr, model_validator
 
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 logger = logging.getLogger(__name__)
 
@@ -106,7 +106,7 @@ class Konko(LLM):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

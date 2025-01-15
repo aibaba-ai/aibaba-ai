@@ -6,9 +6,9 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts import BasePromptTemplate
 from alibaba_ai_core.prompts.prompt import PromptTemplate
 
-from aiagentsforce_community.graphs import NetworkxEntityGraph
-from aiagentsforce_community.graphs.networkx_graph import KG_TRIPLE_DELIMITER
-from aiagentsforce_community.graphs.networkx_graph import parse_triples
+from aibaba_ai_community.graphs import NetworkxEntityGraph
+from aibaba_ai_community.graphs.networkx_graph import KG_TRIPLE_DELIMITER
+from aibaba_ai_community.graphs.networkx_graph import parse_triples
 
 # flake8: noqa
 

@@ -28,9 +28,9 @@ from alibaba_ai_core.outputs import (
 from pydantic import model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.llms.huggingface_endpoint import HuggingFaceEndpoint
-from aiagentsforce_community.llms.huggingface_hub import HuggingFaceHub
-from aiagentsforce_community.llms.huggingface_text_gen_inference import (
+from aibaba_ai_community.llms.huggingface_endpoint import HuggingFaceEndpoint
+from aibaba_ai_community.llms.huggingface_hub import HuggingFaceHub
+from aibaba_ai_community.llms.huggingface_text_gen_inference import (
     HuggingFaceTextGenInference,
 )
 

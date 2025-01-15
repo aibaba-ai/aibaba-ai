@@ -38,7 +38,7 @@ class YandexGPTEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings.yandex import YandexGPTEmbeddings
+            from aibaba_ai_community.embeddings.yandex import YandexGPTEmbeddings
             embeddings = YandexGPTEmbeddings(iam_token="t1.9eu...", folder_id=<folder-id>)
     """  # noqa: E501
 

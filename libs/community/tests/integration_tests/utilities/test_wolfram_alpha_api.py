@@ -1,6 +1,6 @@
 """Integration test for Wolfram Alpha API Wrapper."""
 
-from aiagentsforce_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
+from aibaba_ai_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
 
 
 def test_call() -> None:

@@ -25,7 +25,7 @@ class LlamafileEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import LlamafileEmbeddings
+            from aibaba_ai_community.embeddings import LlamafileEmbeddings
             embedder = LlamafileEmbeddings()
             doc_embeddings = embedder.embed_documents(
                 [

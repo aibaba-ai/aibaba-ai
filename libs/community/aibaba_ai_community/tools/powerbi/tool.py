@@ -11,13 +11,13 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import ConfigDict, Field, model_validator
 
-from aiagentsforce_community.chat_models.openai import _import_tiktoken
-from aiagentsforce_community.tools.powerbi.prompt import (
+from aibaba_ai_community.chat_models.openai import _import_tiktoken
+from aibaba_ai_community.tools.powerbi.prompt import (
     BAD_REQUEST_RESPONSE,
     DEFAULT_FEWSHOT_EXAMPLES,
     RETRY_RESPONSE,
 )
-from aiagentsforce_community.utilities.powerbi import PowerBIDataset, json_to_md
+from aibaba_ai_community.utilities.powerbi import PowerBIDataset, json_to_md
 
 logger = logging.getLogger(__name__)
 

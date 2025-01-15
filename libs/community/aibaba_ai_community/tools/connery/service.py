@@ -5,8 +5,8 @@ import requests
 from alibaba_ai_core.utils.env import get_from_dict_or_env
 from pydantic import BaseModel, model_validator
 
-from aiagentsforce_community.tools.connery.models import Action
-from aiagentsforce_community.tools.connery.tool import ConneryAction
+from aibaba_ai_community.tools.connery.models import Action
+from aibaba_ai_community.tools.connery.tool import ConneryAction
 
 
 class ConneryService(BaseModel):

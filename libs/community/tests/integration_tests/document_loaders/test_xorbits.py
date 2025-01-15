@@ -1,7 +1,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import XorbitsLoader
+from aibaba_ai_community.document_loaders import XorbitsLoader
 
 try:
     import xorbits  # noqa: F401

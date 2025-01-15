@@ -14,9 +14,9 @@ from alibaba_ai_core.callbacks import (
     CallbackManagerForToolRun,
 )
 from alibaba_ai_core.prompts import PromptTemplate
-from aiagentsforce_community.utilities.sql_database import SQLDatabase
+from aibaba_ai_community.utilities.sql_database import SQLDatabase
 from alibaba_ai_core.tools import BaseTool
-from aiagentsforce_community.tools.sql_database.prompt import QUERY_CHECKER
+from aibaba_ai_community.tools.sql_database.prompt import QUERY_CHECKER
 
 
 class BaseSQLDatabaseTool(BaseModel):
@@ -62,7 +62,7 @@ class QuerySQLDatabaseTool(BaseSQLDatabaseTool, BaseTool):  # type: ignore[overr
 @deprecated(
     since="0.3.12",
     removal="1.0",
-    alternative_import="aiagentsforce_community.tools.QuerySQLDatabaseTool",
+    alternative_import="aibaba_ai_community.tools.QuerySQLDatabaseTool",
 )
 class QuerySQLDataBaseTool(QuerySQLDatabaseTool):  # type: ignore[override]
     """

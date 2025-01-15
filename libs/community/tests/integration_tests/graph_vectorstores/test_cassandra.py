@@ -10,9 +10,9 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
-from aiagentsforce_community.graph_vectorstores.base import Node
-from aiagentsforce_community.graph_vectorstores.links import (
+from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
+from aibaba_ai_community.graph_vectorstores.base import Node
+from aibaba_ai_community.graph_vectorstores.links import (
     METADATA_LINKS_KEY,
     Link,
     add_links,

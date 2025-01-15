@@ -6,8 +6,8 @@ import pytest
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings as Fak
-from aiagentsforce_community.vectorstores import Chroma
+from aibaba_ai_community.embeddings import FakeEmbeddings as Fak
+from aibaba_ai_community.vectorstores import Chroma
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

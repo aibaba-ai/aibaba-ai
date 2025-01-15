@@ -12,7 +12,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.vectorstores import VectorStore
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.llms.openai import OpenAI
+from aibaba_ai_community.llms.openai import OpenAI
 
 
 class BaseVectorStoreTool(BaseModel):

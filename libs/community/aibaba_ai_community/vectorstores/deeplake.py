@@ -19,7 +19,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 logger = logging.getLogger(__name__)
 
@@ -44,8 +44,8 @@ class DeepLake(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import DeepLake
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import DeepLake
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vectorstore = DeepLake("langchain_store", embeddings.embed_query)

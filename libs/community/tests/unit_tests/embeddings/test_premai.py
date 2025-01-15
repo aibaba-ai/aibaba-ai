@@ -4,7 +4,7 @@ import pytest
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.embeddings import PremAIEmbeddings
+from aibaba_ai_community.embeddings import PremAIEmbeddings
 
 
 @pytest.mark.requires("premai")

@@ -1,7 +1,7 @@
 from typing import Iterable, List
 
-from aiagentsforce_community.document_loaders.blob_loaders import FileSystemBlobLoader
-from aiagentsforce_community.document_loaders.blob_loaders.schema import Blob, BlobLoader
+from aibaba_ai_community.document_loaders.blob_loaders import FileSystemBlobLoader
+from aibaba_ai_community.document_loaders.blob_loaders.schema import Blob, BlobLoader
 
 
 class YoutubeAudioLoader(BlobLoader):

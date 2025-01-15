@@ -8,7 +8,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 TIMEOUT = 60
 
@@ -107,7 +107,7 @@ class Aviary(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Aviary
+            from aibaba_ai_community.llms import Aviary
             os.environ["AVIARY_URL"] = "<URL>"
             os.environ["AVIARY_TOKEN"] = "<TOKEN>"
             light = Aviary(model='amazon/LightGPT')

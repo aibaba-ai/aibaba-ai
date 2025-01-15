@@ -21,7 +21,7 @@ class MLXPipeline(LLM):
     Example using from_model_id:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import MLXPipeline
+            from aibaba_ai_community.llms import MLXPipeline
             pipe = MLXPipeline.from_model_id(
                 model_id="mlx-community/quantized-gemma-2b",
                 pipeline_kwargs={"max_tokens": 10, "temp": 0.7},
@@ -29,7 +29,7 @@ class MLXPipeline(LLM):
     Example passing model and tokenizer in directly:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import MLXPipeline
+            from aibaba_ai_community.llms import MLXPipeline
             from mlx_lm import load
             model_id="mlx-community/quantized-gemma-2b"
             model, tokenizer = load(model_id)

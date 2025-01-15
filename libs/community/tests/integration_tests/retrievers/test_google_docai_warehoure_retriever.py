@@ -4,7 +4,7 @@ import os
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers import GoogleDocumentAIWarehouseRetriever
+from aibaba_ai_community.retrievers import GoogleDocumentAIWarehouseRetriever
 
 
 def test_google_documentai_warehoure_retriever() -> None:

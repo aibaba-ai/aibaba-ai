@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest as pytest
 
-from aiagentsforce_community.document_loaders.web_base import WebBaseLoader
+from aibaba_ai_community.document_loaders.web_base import WebBaseLoader
 
 
 class TestWebBaseLoader:
@@ -26,7 +26,7 @@ class TestWebBaseLoader:
 
 
 @pytest.mark.requires("bs4")
-@patch("aiagentsforce_community.document_loaders.web_base.requests.Session.get")
+@patch("aibaba_ai_community.document_loaders.web_base.requests.Session.get")
 def test_lazy_load(mock_get: Any) -> None:
     import bs4
 

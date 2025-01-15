@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.tools.yahoo_finance_news import YahooFinanceNewsTool
+from aibaba_ai_community.tools.yahoo_finance_news import YahooFinanceNewsTool
 
 # skip all tests if yfinance is not installed
 yfinance = pytest.importorskip("yfinance")

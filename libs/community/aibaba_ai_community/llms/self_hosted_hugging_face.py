@@ -5,8 +5,8 @@ from typing import Any, Callable, List, Mapping, Optional
 from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.self_hosted import SelfHostedPipeline
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.self_hosted import SelfHostedPipeline
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 DEFAULT_MODEL_ID = "gpt2"
 DEFAULT_TASK = "text-generation"
@@ -125,7 +125,7 @@ class SelfHostedHuggingFaceLLM(SelfHostedPipeline):
     Example using from_model_id:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SelfHostedHuggingFaceLLM
+            from aibaba_ai_community.llms import SelfHostedHuggingFaceLLM
             import runhouse as rh
             gpu = rh.cluster(name="rh-a10x", instance_type="A100:1")
             hf = SelfHostedHuggingFaceLLM(
@@ -135,7 +135,7 @@ class SelfHostedHuggingFaceLLM(SelfHostedPipeline):
     Example passing fn that generates a pipeline (bc the pipeline is not serializable):
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SelfHostedHuggingFaceLLM
+            from aibaba_ai_community.llms import SelfHostedHuggingFaceLLM
             from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
             import runhouse as rh
 

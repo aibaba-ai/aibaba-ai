@@ -11,7 +11,7 @@ from alibaba_ai_core.outputs import GenerationChunk
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import ConfigDict
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 DEFAULT_MODEL_ID = "meta-llama/Meta-Llama-3-70B-Instruct"
 
@@ -28,7 +28,7 @@ class DeepInfra(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import DeepInfra
+            from aibaba_ai_community.llms import DeepInfra
             di = DeepInfra(model_id="google/flan-t5-xl",
                                 deepinfra_api_token="my-api-key")
     """

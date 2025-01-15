@@ -88,7 +88,7 @@ class DashScopeEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import DashScopeEmbeddings
+            from aibaba_ai_community.embeddings import DashScopeEmbeddings
             embeddings = DashScopeEmbeddings(dashscope_api_key="my-api-key")
 
     Example:
@@ -97,7 +97,7 @@ class DashScopeEmbeddings(BaseModel, Embeddings):
             import os
             os.environ["DASHSCOPE_API_KEY"] = "your DashScope API KEY"
 
-            from aiagentsforce_community.embeddings.dashscope import DashScopeEmbeddings
+            from aibaba_ai_community.embeddings.dashscope import DashScopeEmbeddings
             embeddings = DashScopeEmbeddings(
                 model="text-embedding-v1",
             )

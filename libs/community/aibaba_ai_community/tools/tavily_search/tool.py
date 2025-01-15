@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.tavily_search import TavilySearchAPIWrapper
+from aibaba_ai_community.utilities.tavily_search import TavilySearchAPIWrapper
 
 
 class TavilyInput(BaseModel):
@@ -33,7 +33,7 @@ class TavilySearchResults(BaseTool):  # type: ignore[override, override]
 
         .. code-block:: python
 
-            from aiagentsforce_community.tools import TavilySearchResults
+            from aibaba_ai_community.tools import TavilySearchResults
 
             tool = TavilySearchResults(
                 max_results=5,

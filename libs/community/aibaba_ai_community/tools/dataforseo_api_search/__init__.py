@@ -1,4 +1,4 @@
-from aiagentsforce_community.tools.dataforseo_api_search.tool import (
+from aibaba_ai_community.tools.dataforseo_api_search.tool import (
     DataForSeoAPISearchResults,
     DataForSeoAPISearchRun,
 )

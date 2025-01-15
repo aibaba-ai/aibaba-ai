@@ -25,11 +25,11 @@ from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 from typing_extensions import override
 
-from aiagentsforce_community.graph_vectorstores.base import GraphVectorStore, Node
-from aiagentsforce_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
-from aiagentsforce_community.graph_vectorstores.mmr_helper import MmrHelper
-from aiagentsforce_community.utilities.cassandra import SetupMode
-from aiagentsforce_community.vectorstores.cassandra import Cassandra as CassandraVectorStore
+from aibaba_ai_community.graph_vectorstores.base import GraphVectorStore, Node
+from aibaba_ai_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
+from aibaba_ai_community.graph_vectorstores.mmr_helper import MmrHelper
+from aibaba_ai_community.utilities.cassandra import SetupMode
+from aibaba_ai_community.vectorstores.cassandra import Cassandra as CassandraVectorStore
 
 CGVST = TypeVar("CGVST", bound="CassandraGraphVectorStore")
 
@@ -126,7 +126,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
         Example:
             .. code-block:: python
 
-                    from aiagentsforce_community.graph_vectorstores import
+                    from aibaba_ai_community.graph_vectorstores import
                         CassandraGraphVectorStore
                     from langchain_openai import OpenAIEmbeddings
 
@@ -158,7 +158,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
                 consider not indexing them for performance
                 (and to overcome max-length limitations).
                 Note: the `metadata_indexing` parameter from
-                aiagentsforce_community.utilities.cassandra.Cassandra is not
+                aibaba_ai_community.utilities.cassandra.Cassandra is not
                 exposed since CassandraGraphVectorStore only supports the
                 deny_list option.
         """
@@ -1056,7 +1056,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
                 consider not indexing them for performance
                 (and to overcome max-length limitations).
                 Note: the `metadata_indexing` parameter from
-                aiagentsforce_community.utilities.cassandra.Cassandra is not
+                aibaba_ai_community.utilities.cassandra.Cassandra is not
                 exposed since CassandraGraphVectorStore only supports the
                 deny_list option.
 
@@ -1118,7 +1118,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
                 consider not indexing them for performance
                 (and to overcome max-length limitations).
                 Note: the `metadata_indexing` parameter from
-                aiagentsforce_community.utilities.cassandra.Cassandra is not
+                aibaba_ai_community.utilities.cassandra.Cassandra is not
                 exposed since CassandraGraphVectorStore only supports the
                 deny_list option.
 
@@ -1188,7 +1188,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
                 consider not indexing them for performance
                 (and to overcome max-length limitations).
                 Note: the `metadata_indexing` parameter from
-                aiagentsforce_community.utilities.cassandra.Cassandra is not
+                aibaba_ai_community.utilities.cassandra.Cassandra is not
                 exposed since CassandraGraphVectorStore only supports the
                 deny_list option.
 
@@ -1243,7 +1243,7 @@ class CassandraGraphVectorStore(GraphVectorStore):
                 consider not indexing them for performance
                 (and to overcome max-length limitations).
                 Note: the `metadata_indexing` parameter from
-                aiagentsforce_community.utilities.cassandra.Cassandra is not
+                aibaba_ai_community.utilities.cassandra.Cassandra is not
                 exposed since CassandraGraphVectorStore only supports the
                 deny_list option.
 

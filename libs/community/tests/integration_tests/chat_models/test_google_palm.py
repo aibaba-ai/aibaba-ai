@@ -7,7 +7,7 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
 from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
 from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
-from aiagentsforce_community.chat_models import ChatGooglePalm
+from aibaba_ai_community.chat_models import ChatGooglePalm
 
 
 def test_chat_google_palm() -> None:

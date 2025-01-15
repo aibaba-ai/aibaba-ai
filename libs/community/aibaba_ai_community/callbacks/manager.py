@@ -10,12 +10,12 @@ from typing import (
 
 from alibaba_ai_core.tracers.context import register_configure_hook
 
-from aiagentsforce_community.callbacks.bedrock_anthropic_callback import (
+from aibaba_ai_community.callbacks.bedrock_anthropic_callback import (
     BedrockAnthropicTokenUsageCallbackHandler,
 )
-from aiagentsforce_community.callbacks.openai_info import OpenAICallbackHandler
-from aiagentsforce_community.callbacks.tracers.comet import CometTracer
-from aiagentsforce_community.callbacks.tracers.wandb import WandbTracer
+from aibaba_ai_community.callbacks.openai_info import OpenAICallbackHandler
+from aibaba_ai_community.callbacks.tracers.comet import CometTracer
+from aibaba_ai_community.callbacks.tracers.wandb import WandbTracer
 
 logger = logging.getLogger(__name__)
 

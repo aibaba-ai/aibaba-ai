@@ -1,6 +1,6 @@
 """Test modelscope embeddings."""
 
-from aiagentsforce_community.embeddings.modelscope_hub import ModelScopeEmbeddings
+from aibaba_ai_community.embeddings.modelscope_hub import ModelScopeEmbeddings
 
 
 def test_modelscope_embedding_documents() -> None:

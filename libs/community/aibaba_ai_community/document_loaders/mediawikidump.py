@@ -4,7 +4,7 @@ from typing import Iterator, Optional, Sequence, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +16,7 @@ class MWDumpLoader(BaseLoader):
         .. code-block:: python
 
             from langchain_text_splitters import RecursiveCharacterTextSplitter
-            from aiagentsforce_community.document_loaders import MWDumpLoader
+            from aibaba_ai_community.document_loaders import MWDumpLoader
 
             loader = MWDumpLoader(
                 file_path="myWiki.xml",

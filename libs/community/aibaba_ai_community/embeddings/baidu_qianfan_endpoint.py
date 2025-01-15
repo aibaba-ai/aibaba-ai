@@ -26,7 +26,7 @@ class QianfanEmbeddingsEndpoint(BaseModel, Embeddings):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import QianfanEmbeddingsEndpoint
+            from aibaba_ai_community.embeddings import QianfanEmbeddingsEndpoint
 
             embeddings = QianfanEmbeddingsEndpoint()
 

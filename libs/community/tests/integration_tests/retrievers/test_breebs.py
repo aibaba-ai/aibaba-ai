@@ -2,7 +2,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.breebs import BreebsRetriever
+from aibaba_ai_community.retrievers.breebs import BreebsRetriever
 
 
 class TestBreebsRetriever:

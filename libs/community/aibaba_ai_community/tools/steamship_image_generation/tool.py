@@ -22,7 +22,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import model_validator
 
-from aiagentsforce_community.tools.steamship_image_generation.utils import make_image_public
+from aibaba_ai_community.tools.steamship_image_generation.utils import make_image_public
 
 if TYPE_CHECKING:
     from steamship import Steamship

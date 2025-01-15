@@ -32,77 +32,77 @@ if TYPE_CHECKING:
     )
     from alibaba_ai_core.tools.convert import tool as tool
 
-    from aiagentsforce_community.tools.ainetwork.app import (
+    from aibaba_ai_community.tools.ainetwork.app import (
         AINAppOps,
     )
-    from aiagentsforce_community.tools.ainetwork.owner import (
+    from aibaba_ai_community.tools.ainetwork.owner import (
         AINOwnerOps,
     )
-    from aiagentsforce_community.tools.ainetwork.rule import (
+    from aibaba_ai_community.tools.ainetwork.rule import (
         AINRuleOps,
     )
-    from aiagentsforce_community.tools.ainetwork.transfer import (
+    from aibaba_ai_community.tools.ainetwork.transfer import (
         AINTransfer,
     )
-    from aiagentsforce_community.tools.ainetwork.value import (
+    from aibaba_ai_community.tools.ainetwork.value import (
         AINValueOps,
     )
-    from aiagentsforce_community.tools.arxiv.tool import (
+    from aibaba_ai_community.tools.arxiv.tool import (
         ArxivQueryRun,
     )
-    from aiagentsforce_community.tools.asknews.tool import (
+    from aibaba_ai_community.tools.asknews.tool import (
         AskNewsSearch,
     )
-    from aiagentsforce_community.tools.azure_ai_services import (
+    from aibaba_ai_community.tools.azure_ai_services import (
         AzureAiServicesDocumentIntelligenceTool,
         AzureAiServicesImageAnalysisTool,
         AzureAiServicesSpeechToTextTool,
         AzureAiServicesTextAnalyticsForHealthTool,
         AzureAiServicesTextToSpeechTool,
     )
-    from aiagentsforce_community.tools.azure_cognitive_services import (
+    from aibaba_ai_community.tools.azure_cognitive_services import (
         AzureCogsFormRecognizerTool,
         AzureCogsImageAnalysisTool,
         AzureCogsSpeech2TextTool,
         AzureCogsText2SpeechTool,
         AzureCogsTextAnalyticsHealthTool,
     )
-    from aiagentsforce_community.tools.bearly.tool import (
+    from aibaba_ai_community.tools.bearly.tool import (
         BearlyInterpreterTool,
     )
-    from aiagentsforce_community.tools.bing_search.tool import (
+    from aibaba_ai_community.tools.bing_search.tool import (
         BingSearchResults,
         BingSearchRun,
     )
-    from aiagentsforce_community.tools.brave_search.tool import (
+    from aibaba_ai_community.tools.brave_search.tool import (
         BraveSearch,
     )
-    from aiagentsforce_community.tools.cassandra_database.tool import (
+    from aibaba_ai_community.tools.cassandra_database.tool import (
         GetSchemaCassandraDatabaseTool,  # noqa: F401
         GetTableDataCassandraDatabaseTool,  # noqa: F401
         QueryCassandraDatabaseTool,  # noqa: F401
     )
-    from aiagentsforce_community.tools.cogniswitch.tool import (
+    from aibaba_ai_community.tools.cogniswitch.tool import (
         CogniswitchKnowledgeRequest,
         CogniswitchKnowledgeSourceFile,
         CogniswitchKnowledgeSourceURL,
         CogniswitchKnowledgeStatus,
     )
-    from aiagentsforce_community.tools.connery import (
+    from aibaba_ai_community.tools.connery import (
         ConneryAction,
     )
-    from aiagentsforce_community.tools.convert_to_openai import (
+    from aibaba_ai_community.tools.convert_to_openai import (
         format_tool_to_openai_function,
     )
-    from aiagentsforce_community.tools.dataherald import DataheraldTextToSQL
-    from aiagentsforce_community.tools.ddg_search.tool import (
+    from aibaba_ai_community.tools.dataherald import DataheraldTextToSQL
+    from aibaba_ai_community.tools.ddg_search.tool import (
         DuckDuckGoSearchResults,
         DuckDuckGoSearchRun,
     )
-    from aiagentsforce_community.tools.e2b_data_analysis.tool import (
+    from aibaba_ai_community.tools.e2b_data_analysis.tool import (
         E2BDataAnalysisTool,
     )
-    from aiagentsforce_community.tools.edenai import (
+    from aibaba_ai_community.tools.edenai import (
         EdenAiExplicitImageTool,
         EdenAiObjectDetectionTool,
         EdenAiParsingIDTool,
@@ -112,10 +112,10 @@ if TYPE_CHECKING:
         EdenAiTextToSpeechTool,
         EdenaiTool,
     )
-    from aiagentsforce_community.tools.eleven_labs.text2speech import (
+    from aibaba_ai_community.tools.eleven_labs.text2speech import (
         ElevenLabsText2SpeechTool,
     )
-    from aiagentsforce_community.tools.file_management import (
+    from aibaba_ai_community.tools.file_management import (
         CopyFileTool,
         DeleteFileTool,
         FileSearchTool,
@@ -124,99 +124,99 @@ if TYPE_CHECKING:
         ReadFileTool,
         WriteFileTool,
     )
-    from aiagentsforce_community.tools.financial_datasets.balance_sheets import (
+    from aibaba_ai_community.tools.financial_datasets.balance_sheets import (
         BalanceSheets,
     )
-    from aiagentsforce_community.tools.financial_datasets.cash_flow_statements import (
+    from aibaba_ai_community.tools.financial_datasets.cash_flow_statements import (
         CashFlowStatements,
     )
-    from aiagentsforce_community.tools.financial_datasets.income_statements import (
+    from aibaba_ai_community.tools.financial_datasets.income_statements import (
         IncomeStatements,
     )
-    from aiagentsforce_community.tools.gmail import (
+    from aibaba_ai_community.tools.gmail import (
         GmailCreateDraft,
         GmailGetMessage,
         GmailGetThread,
         GmailSearch,
         GmailSendMessage,
     )
-    from aiagentsforce_community.tools.google_books import (
+    from aibaba_ai_community.tools.google_books import (
         GoogleBooksQueryRun,
     )
-    from aiagentsforce_community.tools.google_cloud.texttospeech import (
+    from aibaba_ai_community.tools.google_cloud.texttospeech import (
         GoogleCloudTextToSpeechTool,
     )
-    from aiagentsforce_community.tools.google_places.tool import (
+    from aibaba_ai_community.tools.google_places.tool import (
         GooglePlacesTool,
     )
-    from aiagentsforce_community.tools.google_search.tool import (
+    from aibaba_ai_community.tools.google_search.tool import (
         GoogleSearchResults,
         GoogleSearchRun,
     )
-    from aiagentsforce_community.tools.google_serper.tool import (
+    from aibaba_ai_community.tools.google_serper.tool import (
         GoogleSerperResults,
         GoogleSerperRun,
     )
-    from aiagentsforce_community.tools.graphql.tool import (
+    from aibaba_ai_community.tools.graphql.tool import (
         BaseGraphQLTool,
     )
-    from aiagentsforce_community.tools.human.tool import (
+    from aibaba_ai_community.tools.human.tool import (
         HumanInputRun,
     )
-    from aiagentsforce_community.tools.ifttt import (
+    from aibaba_ai_community.tools.ifttt import (
         IFTTTWebhook,
     )
-    from aiagentsforce_community.tools.interaction.tool import (
+    from aibaba_ai_community.tools.interaction.tool import (
         StdInInquireTool,
     )
-    from aiagentsforce_community.tools.jina_search.tool import JinaSearch
-    from aiagentsforce_community.tools.jira.tool import (
+    from aibaba_ai_community.tools.jina_search.tool import JinaSearch
+    from aibaba_ai_community.tools.jira.tool import (
         JiraAction,
     )
-    from aiagentsforce_community.tools.json.tool import (
+    from aibaba_ai_community.tools.json.tool import (
         JsonGetValueTool,
         JsonListKeysTool,
     )
-    from aiagentsforce_community.tools.merriam_webster.tool import (
+    from aibaba_ai_community.tools.merriam_webster.tool import (
         MerriamWebsterQueryRun,
     )
-    from aiagentsforce_community.tools.metaphor_search import (
+    from aibaba_ai_community.tools.metaphor_search import (
         MetaphorSearchResults,
     )
-    from aiagentsforce_community.tools.mojeek_search.tool import (
+    from aibaba_ai_community.tools.mojeek_search.tool import (
         MojeekSearch,
     )
-    from aiagentsforce_community.tools.nasa.tool import (
+    from aibaba_ai_community.tools.nasa.tool import (
         NasaAction,
     )
-    from aiagentsforce_community.tools.office365.create_draft_message import (
+    from aibaba_ai_community.tools.office365.create_draft_message import (
         O365CreateDraftMessage,
     )
-    from aiagentsforce_community.tools.office365.events_search import (
+    from aibaba_ai_community.tools.office365.events_search import (
         O365SearchEvents,
     )
-    from aiagentsforce_community.tools.office365.messages_search import (
+    from aibaba_ai_community.tools.office365.messages_search import (
         O365SearchEmails,
     )
-    from aiagentsforce_community.tools.office365.send_event import (
+    from aibaba_ai_community.tools.office365.send_event import (
         O365SendEvent,
     )
-    from aiagentsforce_community.tools.office365.send_message import (
+    from aibaba_ai_community.tools.office365.send_message import (
         O365SendMessage,
     )
-    from aiagentsforce_community.tools.office365.utils import (
+    from aibaba_ai_community.tools.office365.utils import (
         authenticate,
     )
-    from aiagentsforce_community.tools.openapi.utils.api_models import (
+    from aibaba_ai_community.tools.openapi.utils.api_models import (
         APIOperation,
     )
-    from aiagentsforce_community.tools.openapi.utils.openapi_utils import (
+    from aibaba_ai_community.tools.openapi.utils.openapi_utils import (
         OpenAPISpec,
     )
-    from aiagentsforce_community.tools.openweathermap.tool import (
+    from aibaba_ai_community.tools.openweathermap.tool import (
         OpenWeatherMapQueryRun,
     )
-    from aiagentsforce_community.tools.playwright import (
+    from aibaba_ai_community.tools.playwright import (
         ClickTool,
         CurrentWebPageTool,
         ExtractHyperlinksTool,
@@ -225,34 +225,34 @@ if TYPE_CHECKING:
         NavigateBackTool,
         NavigateTool,
     )
-    from aiagentsforce_community.tools.plugin import (
+    from aibaba_ai_community.tools.plugin import (
         AIPluginTool,
     )
-    from aiagentsforce_community.tools.polygon.aggregates import (
+    from aibaba_ai_community.tools.polygon.aggregates import (
         PolygonAggregates,
     )
-    from aiagentsforce_community.tools.polygon.financials import (
+    from aibaba_ai_community.tools.polygon.financials import (
         PolygonFinancials,
     )
-    from aiagentsforce_community.tools.polygon.last_quote import (
+    from aibaba_ai_community.tools.polygon.last_quote import (
         PolygonLastQuote,
     )
-    from aiagentsforce_community.tools.polygon.ticker_news import (
+    from aibaba_ai_community.tools.polygon.ticker_news import (
         PolygonTickerNews,
     )
-    from aiagentsforce_community.tools.powerbi.tool import (
+    from aibaba_ai_community.tools.powerbi.tool import (
         InfoPowerBITool,
         ListPowerBITool,
         QueryPowerBITool,
     )
-    from aiagentsforce_community.tools.pubmed.tool import (
+    from aibaba_ai_community.tools.pubmed.tool import (
         PubmedQueryRun,
     )
-    from aiagentsforce_community.tools.reddit_search.tool import (
+    from aibaba_ai_community.tools.reddit_search.tool import (
         RedditSearchRun,
         RedditSearchSchema,
     )
-    from aiagentsforce_community.tools.requests.tool import (
+    from aibaba_ai_community.tools.requests.tool import (
         BaseRequestsTool,
         RequestsDeleteTool,
         RequestsGetTool,
@@ -260,43 +260,43 @@ if TYPE_CHECKING:
         RequestsPostTool,
         RequestsPutTool,
     )
-    from aiagentsforce_community.tools.scenexplain.tool import (
+    from aibaba_ai_community.tools.scenexplain.tool import (
         SceneXplainTool,
     )
-    from aiagentsforce_community.tools.searchapi.tool import (
+    from aibaba_ai_community.tools.searchapi.tool import (
         SearchAPIResults,
         SearchAPIRun,
     )
-    from aiagentsforce_community.tools.searx_search.tool import (
+    from aibaba_ai_community.tools.searx_search.tool import (
         SearxSearchResults,
         SearxSearchRun,
     )
-    from aiagentsforce_community.tools.shell.tool import (
+    from aibaba_ai_community.tools.shell.tool import (
         ShellTool,
     )
-    from aiagentsforce_community.tools.slack.get_channel import (
+    from aibaba_ai_community.tools.slack.get_channel import (
         SlackGetChannel,
     )
-    from aiagentsforce_community.tools.slack.get_message import (
+    from aibaba_ai_community.tools.slack.get_message import (
         SlackGetMessage,
     )
-    from aiagentsforce_community.tools.slack.schedule_message import (
+    from aibaba_ai_community.tools.slack.schedule_message import (
         SlackScheduleMessage,
     )
-    from aiagentsforce_community.tools.slack.send_message import (
+    from aibaba_ai_community.tools.slack.send_message import (
         SlackSendMessage,
     )
-    from aiagentsforce_community.tools.sleep.tool import (
+    from aibaba_ai_community.tools.sleep.tool import (
         SleepTool,
     )
-    from aiagentsforce_community.tools.spark_sql.tool import (
+    from aibaba_ai_community.tools.spark_sql.tool import (
         BaseSparkSQLTool,
         InfoSparkSQLTool,
         ListSparkSQLTool,
         QueryCheckerTool,
         QuerySparkSQLTool,
     )
-    from aiagentsforce_community.tools.sql_database.tool import (
+    from aibaba_ai_community.tools.sql_database.tool import (
         BaseSQLDatabaseTool,
         InfoSQLDatabaseTool,
         ListSQLDatabaseTool,
@@ -304,43 +304,43 @@ if TYPE_CHECKING:
         QuerySQLDataBaseTool,
         QuerySQLDatabaseTool,
     )
-    from aiagentsforce_community.tools.stackexchange.tool import (
+    from aibaba_ai_community.tools.stackexchange.tool import (
         StackExchangeTool,
     )
-    from aiagentsforce_community.tools.steam.tool import (
+    from aibaba_ai_community.tools.steam.tool import (
         SteamWebAPIQueryRun,
     )
-    from aiagentsforce_community.tools.steamship_image_generation import (
+    from aibaba_ai_community.tools.steamship_image_generation import (
         SteamshipImageGenerationTool,
     )
-    from aiagentsforce_community.tools.tavily_search import (
+    from aibaba_ai_community.tools.tavily_search import (
         TavilyAnswer,
         TavilySearchResults,
     )
-    from aiagentsforce_community.tools.vectorstore.tool import (
+    from aibaba_ai_community.tools.vectorstore.tool import (
         VectorStoreQATool,
         VectorStoreQAWithSourcesTool,
     )
-    from aiagentsforce_community.tools.wikipedia.tool import (
+    from aibaba_ai_community.tools.wikipedia.tool import (
         WikipediaQueryRun,
     )
-    from aiagentsforce_community.tools.wolfram_alpha.tool import (
+    from aibaba_ai_community.tools.wolfram_alpha.tool import (
         WolframAlphaQueryRun,
     )
-    from aiagentsforce_community.tools.yahoo_finance_news import (
+    from aibaba_ai_community.tools.yahoo_finance_news import (
         YahooFinanceNewsTool,
     )
-    from aiagentsforce_community.tools.you.tool import (
+    from aibaba_ai_community.tools.you.tool import (
         YouSearchTool,
     )
-    from aiagentsforce_community.tools.youtube.search import (
+    from aibaba_ai_community.tools.youtube.search import (
         YouTubeSearchTool,
     )
-    from aiagentsforce_community.tools.zapier.tool import (
+    from aibaba_ai_community.tools.zapier.tool import (
         ZapierNLAListActions,
         ZapierNLARunAction,
     )
-    from aiagentsforce_community.tools.zenguard.tool import (
+    from aibaba_ai_community.tools.zenguard.tool import (
         Detector,
         ZenGuardInput,
         ZenGuardTool,
@@ -503,156 +503,156 @@ __all__ = [
 _DEPRECATED_TOOLS = {"PythonAstREPLTool", "PythonREPLTool"}
 
 _module_lookup = {
-    "AINAppOps": "aiagentsforce_community.tools.ainetwork.app",
-    "AINOwnerOps": "aiagentsforce_community.tools.ainetwork.owner",
-    "AINRuleOps": "aiagentsforce_community.tools.ainetwork.rule",
-    "AINTransfer": "aiagentsforce_community.tools.ainetwork.transfer",
-    "AINValueOps": "aiagentsforce_community.tools.ainetwork.value",
-    "AIPluginTool": "aiagentsforce_community.tools.plugin",
-    "APIOperation": "aiagentsforce_community.tools.openapi.utils.api_models",
-    "ArxivQueryRun": "aiagentsforce_community.tools.arxiv.tool",
-    "AskNewsSearch": "aiagentsforce_community.tools.asknews.tool",
-    "AzureAiServicesDocumentIntelligenceTool": "aiagentsforce_community.tools.azure_ai_services",  # noqa: E501
-    "AzureAiServicesImageAnalysisTool": "aiagentsforce_community.tools.azure_ai_services",
-    "AzureAiServicesSpeechToTextTool": "aiagentsforce_community.tools.azure_ai_services",
-    "AzureAiServicesTextToSpeechTool": "aiagentsforce_community.tools.azure_ai_services",
-    "AzureAiServicesTextAnalyticsForHealthTool": "aiagentsforce_community.tools.azure_ai_services",  # noqa: E501
-    "AzureCogsFormRecognizerTool": "aiagentsforce_community.tools.azure_cognitive_services",
-    "AzureCogsImageAnalysisTool": "aiagentsforce_community.tools.azure_cognitive_services",
-    "AzureCogsSpeech2TextTool": "aiagentsforce_community.tools.azure_cognitive_services",
-    "AzureCogsText2SpeechTool": "aiagentsforce_community.tools.azure_cognitive_services",
-    "AzureCogsTextAnalyticsHealthTool": "aiagentsforce_community.tools.azure_cognitive_services",  # noqa: E501
-    "BalanceSheets": "aiagentsforce_community.tools.financial_datasets.balance_sheets",
-    "BaseGraphQLTool": "aiagentsforce_community.tools.graphql.tool",
-    "BaseRequestsTool": "aiagentsforce_community.tools.requests.tool",
-    "BaseSQLDatabaseTool": "aiagentsforce_community.tools.sql_database.tool",
-    "BaseSparkSQLTool": "aiagentsforce_community.tools.spark_sql.tool",
+    "AINAppOps": "aibaba_ai_community.tools.ainetwork.app",
+    "AINOwnerOps": "aibaba_ai_community.tools.ainetwork.owner",
+    "AINRuleOps": "aibaba_ai_community.tools.ainetwork.rule",
+    "AINTransfer": "aibaba_ai_community.tools.ainetwork.transfer",
+    "AINValueOps": "aibaba_ai_community.tools.ainetwork.value",
+    "AIPluginTool": "aibaba_ai_community.tools.plugin",
+    "APIOperation": "aibaba_ai_community.tools.openapi.utils.api_models",
+    "ArxivQueryRun": "aibaba_ai_community.tools.arxiv.tool",
+    "AskNewsSearch": "aibaba_ai_community.tools.asknews.tool",
+    "AzureAiServicesDocumentIntelligenceTool": "aibaba_ai_community.tools.azure_ai_services",  # noqa: E501
+    "AzureAiServicesImageAnalysisTool": "aibaba_ai_community.tools.azure_ai_services",
+    "AzureAiServicesSpeechToTextTool": "aibaba_ai_community.tools.azure_ai_services",
+    "AzureAiServicesTextToSpeechTool": "aibaba_ai_community.tools.azure_ai_services",
+    "AzureAiServicesTextAnalyticsForHealthTool": "aibaba_ai_community.tools.azure_ai_services",  # noqa: E501
+    "AzureCogsFormRecognizerTool": "aibaba_ai_community.tools.azure_cognitive_services",
+    "AzureCogsImageAnalysisTool": "aibaba_ai_community.tools.azure_cognitive_services",
+    "AzureCogsSpeech2TextTool": "aibaba_ai_community.tools.azure_cognitive_services",
+    "AzureCogsText2SpeechTool": "aibaba_ai_community.tools.azure_cognitive_services",
+    "AzureCogsTextAnalyticsHealthTool": "aibaba_ai_community.tools.azure_cognitive_services",  # noqa: E501
+    "BalanceSheets": "aibaba_ai_community.tools.financial_datasets.balance_sheets",
+    "BaseGraphQLTool": "aibaba_ai_community.tools.graphql.tool",
+    "BaseRequestsTool": "aibaba_ai_community.tools.requests.tool",
+    "BaseSQLDatabaseTool": "aibaba_ai_community.tools.sql_database.tool",
+    "BaseSparkSQLTool": "aibaba_ai_community.tools.spark_sql.tool",
     "BaseTool": "alibaba_ai_core.tools",
-    "BearlyInterpreterTool": "aiagentsforce_community.tools.bearly.tool",
-    "BingSearchResults": "aiagentsforce_community.tools.bing_search.tool",
-    "BingSearchRun": "aiagentsforce_community.tools.bing_search.tool",
-    "BraveSearch": "aiagentsforce_community.tools.brave_search.tool",
-    "CashFlowStatements": "aiagentsforce_community.tools.financial_datasets.cash_flow_statements",  # noqa: E501
-    "ClickTool": "aiagentsforce_community.tools.playwright",
-    "CogniswitchKnowledgeRequest": "aiagentsforce_community.tools.cogniswitch.tool",
-    "CogniswitchKnowledgeSourceFile": "aiagentsforce_community.tools.cogniswitch.tool",
-    "CogniswitchKnowledgeSourceURL": "aiagentsforce_community.tools.cogniswitch.tool",
-    "CogniswitchKnowledgeStatus": "aiagentsforce_community.tools.cogniswitch.tool",
-    "ConneryAction": "aiagentsforce_community.tools.connery",
-    "CopyFileTool": "aiagentsforce_community.tools.file_management",
-    "CurrentWebPageTool": "aiagentsforce_community.tools.playwright",
-    "DataheraldTextToSQL": "aiagentsforce_community.tools.dataherald.tool",
-    "DeleteFileTool": "aiagentsforce_community.tools.file_management",
-    "Detector": "aiagentsforce_community.tools.zenguard.tool",
-    "DuckDuckGoSearchResults": "aiagentsforce_community.tools.ddg_search.tool",
-    "DuckDuckGoSearchRun": "aiagentsforce_community.tools.ddg_search.tool",
-    "E2BDataAnalysisTool": "aiagentsforce_community.tools.e2b_data_analysis.tool",
-    "EdenAiExplicitImageTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiObjectDetectionTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiParsingIDTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiParsingInvoiceTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiSpeechToTextTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiTextModerationTool": "aiagentsforce_community.tools.edenai",
-    "EdenAiTextToSpeechTool": "aiagentsforce_community.tools.edenai",
-    "EdenaiTool": "aiagentsforce_community.tools.edenai",
-    "ElevenLabsText2SpeechTool": "aiagentsforce_community.tools.eleven_labs.text2speech",
-    "ExtractHyperlinksTool": "aiagentsforce_community.tools.playwright",
-    "ExtractTextTool": "aiagentsforce_community.tools.playwright",
-    "FileSearchTool": "aiagentsforce_community.tools.file_management",
-    "GetElementsTool": "aiagentsforce_community.tools.playwright",
-    "GmailCreateDraft": "aiagentsforce_community.tools.gmail",
-    "GmailGetMessage": "aiagentsforce_community.tools.gmail",
-    "GmailGetThread": "aiagentsforce_community.tools.gmail",
-    "GmailSearch": "aiagentsforce_community.tools.gmail",
-    "GmailSendMessage": "aiagentsforce_community.tools.gmail",
-    "GoogleBooksQueryRun": "aiagentsforce_community.tools.google_books",
-    "GoogleCloudTextToSpeechTool": "aiagentsforce_community.tools.google_cloud.texttospeech",  # noqa: E501
-    "GooglePlacesTool": "aiagentsforce_community.tools.google_places.tool",
-    "GoogleSearchResults": "aiagentsforce_community.tools.google_search.tool",
-    "GoogleSearchRun": "aiagentsforce_community.tools.google_search.tool",
-    "GoogleSerperResults": "aiagentsforce_community.tools.google_serper.tool",
-    "GoogleSerperRun": "aiagentsforce_community.tools.google_serper.tool",
-    "HumanInputRun": "aiagentsforce_community.tools.human.tool",
-    "IFTTTWebhook": "aiagentsforce_community.tools.ifttt",
-    "IncomeStatements": "aiagentsforce_community.tools.financial_datasets.income_statements",  # noqa: E501
-    "InfoPowerBITool": "aiagentsforce_community.tools.powerbi.tool",
-    "InfoSQLDatabaseTool": "aiagentsforce_community.tools.sql_database.tool",
-    "InfoSparkSQLTool": "aiagentsforce_community.tools.spark_sql.tool",
-    "JiraAction": "aiagentsforce_community.tools.jira.tool",
-    "JinaSearch": "aiagentsforce_community.tools.jina_search.tool",
-    "JsonGetValueTool": "aiagentsforce_community.tools.json.tool",
-    "JsonListKeysTool": "aiagentsforce_community.tools.json.tool",
-    "ListDirectoryTool": "aiagentsforce_community.tools.file_management",
-    "ListPowerBITool": "aiagentsforce_community.tools.powerbi.tool",
-    "ListSQLDatabaseTool": "aiagentsforce_community.tools.sql_database.tool",
-    "ListSparkSQLTool": "aiagentsforce_community.tools.spark_sql.tool",
-    "MerriamWebsterQueryRun": "aiagentsforce_community.tools.merriam_webster.tool",
-    "MetaphorSearchResults": "aiagentsforce_community.tools.metaphor_search",
-    "MojeekSearch": "aiagentsforce_community.tools.mojeek_search.tool",
-    "MoveFileTool": "aiagentsforce_community.tools.file_management",
-    "NasaAction": "aiagentsforce_community.tools.nasa.tool",
-    "NavigateBackTool": "aiagentsforce_community.tools.playwright",
-    "NavigateTool": "aiagentsforce_community.tools.playwright",
-    "O365CreateDraftMessage": "aiagentsforce_community.tools.office365.create_draft_message",  # noqa: E501
-    "O365SearchEmails": "aiagentsforce_community.tools.office365.messages_search",
-    "O365SearchEvents": "aiagentsforce_community.tools.office365.events_search",
-    "O365SendEvent": "aiagentsforce_community.tools.office365.send_event",
-    "O365SendMessage": "aiagentsforce_community.tools.office365.send_message",
-    "OpenAPISpec": "aiagentsforce_community.tools.openapi.utils.openapi_utils",
-    "OpenWeatherMapQueryRun": "aiagentsforce_community.tools.openweathermap.tool",
-    "PolygonAggregates": "aiagentsforce_community.tools.polygon.aggregates",
-    "PolygonFinancials": "aiagentsforce_community.tools.polygon.financials",
-    "PolygonLastQuote": "aiagentsforce_community.tools.polygon.last_quote",
-    "PolygonTickerNews": "aiagentsforce_community.tools.polygon.ticker_news",
-    "PubmedQueryRun": "aiagentsforce_community.tools.pubmed.tool",
-    "QueryCheckerTool": "aiagentsforce_community.tools.spark_sql.tool",
-    "QueryPowerBITool": "aiagentsforce_community.tools.powerbi.tool",
-    "QuerySQLCheckerTool": "aiagentsforce_community.tools.sql_database.tool",
-    "QuerySQLDatabaseTool": "aiagentsforce_community.tools.sql_database.tool",
+    "BearlyInterpreterTool": "aibaba_ai_community.tools.bearly.tool",
+    "BingSearchResults": "aibaba_ai_community.tools.bing_search.tool",
+    "BingSearchRun": "aibaba_ai_community.tools.bing_search.tool",
+    "BraveSearch": "aibaba_ai_community.tools.brave_search.tool",
+    "CashFlowStatements": "aibaba_ai_community.tools.financial_datasets.cash_flow_statements",  # noqa: E501
+    "ClickTool": "aibaba_ai_community.tools.playwright",
+    "CogniswitchKnowledgeRequest": "aibaba_ai_community.tools.cogniswitch.tool",
+    "CogniswitchKnowledgeSourceFile": "aibaba_ai_community.tools.cogniswitch.tool",
+    "CogniswitchKnowledgeSourceURL": "aibaba_ai_community.tools.cogniswitch.tool",
+    "CogniswitchKnowledgeStatus": "aibaba_ai_community.tools.cogniswitch.tool",
+    "ConneryAction": "aibaba_ai_community.tools.connery",
+    "CopyFileTool": "aibaba_ai_community.tools.file_management",
+    "CurrentWebPageTool": "aibaba_ai_community.tools.playwright",
+    "DataheraldTextToSQL": "aibaba_ai_community.tools.dataherald.tool",
+    "DeleteFileTool": "aibaba_ai_community.tools.file_management",
+    "Detector": "aibaba_ai_community.tools.zenguard.tool",
+    "DuckDuckGoSearchResults": "aibaba_ai_community.tools.ddg_search.tool",
+    "DuckDuckGoSearchRun": "aibaba_ai_community.tools.ddg_search.tool",
+    "E2BDataAnalysisTool": "aibaba_ai_community.tools.e2b_data_analysis.tool",
+    "EdenAiExplicitImageTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiObjectDetectionTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiParsingIDTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiParsingInvoiceTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiSpeechToTextTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiTextModerationTool": "aibaba_ai_community.tools.edenai",
+    "EdenAiTextToSpeechTool": "aibaba_ai_community.tools.edenai",
+    "EdenaiTool": "aibaba_ai_community.tools.edenai",
+    "ElevenLabsText2SpeechTool": "aibaba_ai_community.tools.eleven_labs.text2speech",
+    "ExtractHyperlinksTool": "aibaba_ai_community.tools.playwright",
+    "ExtractTextTool": "aibaba_ai_community.tools.playwright",
+    "FileSearchTool": "aibaba_ai_community.tools.file_management",
+    "GetElementsTool": "aibaba_ai_community.tools.playwright",
+    "GmailCreateDraft": "aibaba_ai_community.tools.gmail",
+    "GmailGetMessage": "aibaba_ai_community.tools.gmail",
+    "GmailGetThread": "aibaba_ai_community.tools.gmail",
+    "GmailSearch": "aibaba_ai_community.tools.gmail",
+    "GmailSendMessage": "aibaba_ai_community.tools.gmail",
+    "GoogleBooksQueryRun": "aibaba_ai_community.tools.google_books",
+    "GoogleCloudTextToSpeechTool": "aibaba_ai_community.tools.google_cloud.texttospeech",  # noqa: E501
+    "GooglePlacesTool": "aibaba_ai_community.tools.google_places.tool",
+    "GoogleSearchResults": "aibaba_ai_community.tools.google_search.tool",
+    "GoogleSearchRun": "aibaba_ai_community.tools.google_search.tool",
+    "GoogleSerperResults": "aibaba_ai_community.tools.google_serper.tool",
+    "GoogleSerperRun": "aibaba_ai_community.tools.google_serper.tool",
+    "HumanInputRun": "aibaba_ai_community.tools.human.tool",
+    "IFTTTWebhook": "aibaba_ai_community.tools.ifttt",
+    "IncomeStatements": "aibaba_ai_community.tools.financial_datasets.income_statements",  # noqa: E501
+    "InfoPowerBITool": "aibaba_ai_community.tools.powerbi.tool",
+    "InfoSQLDatabaseTool": "aibaba_ai_community.tools.sql_database.tool",
+    "InfoSparkSQLTool": "aibaba_ai_community.tools.spark_sql.tool",
+    "JiraAction": "aibaba_ai_community.tools.jira.tool",
+    "JinaSearch": "aibaba_ai_community.tools.jina_search.tool",
+    "JsonGetValueTool": "aibaba_ai_community.tools.json.tool",
+    "JsonListKeysTool": "aibaba_ai_community.tools.json.tool",
+    "ListDirectoryTool": "aibaba_ai_community.tools.file_management",
+    "ListPowerBITool": "aibaba_ai_community.tools.powerbi.tool",
+    "ListSQLDatabaseTool": "aibaba_ai_community.tools.sql_database.tool",
+    "ListSparkSQLTool": "aibaba_ai_community.tools.spark_sql.tool",
+    "MerriamWebsterQueryRun": "aibaba_ai_community.tools.merriam_webster.tool",
+    "MetaphorSearchResults": "aibaba_ai_community.tools.metaphor_search",
+    "MojeekSearch": "aibaba_ai_community.tools.mojeek_search.tool",
+    "MoveFileTool": "aibaba_ai_community.tools.file_management",
+    "NasaAction": "aibaba_ai_community.tools.nasa.tool",
+    "NavigateBackTool": "aibaba_ai_community.tools.playwright",
+    "NavigateTool": "aibaba_ai_community.tools.playwright",
+    "O365CreateDraftMessage": "aibaba_ai_community.tools.office365.create_draft_message",  # noqa: E501
+    "O365SearchEmails": "aibaba_ai_community.tools.office365.messages_search",
+    "O365SearchEvents": "aibaba_ai_community.tools.office365.events_search",
+    "O365SendEvent": "aibaba_ai_community.tools.office365.send_event",
+    "O365SendMessage": "aibaba_ai_community.tools.office365.send_message",
+    "OpenAPISpec": "aibaba_ai_community.tools.openapi.utils.openapi_utils",
+    "OpenWeatherMapQueryRun": "aibaba_ai_community.tools.openweathermap.tool",
+    "PolygonAggregates": "aibaba_ai_community.tools.polygon.aggregates",
+    "PolygonFinancials": "aibaba_ai_community.tools.polygon.financials",
+    "PolygonLastQuote": "aibaba_ai_community.tools.polygon.last_quote",
+    "PolygonTickerNews": "aibaba_ai_community.tools.polygon.ticker_news",
+    "PubmedQueryRun": "aibaba_ai_community.tools.pubmed.tool",
+    "QueryCheckerTool": "aibaba_ai_community.tools.spark_sql.tool",
+    "QueryPowerBITool": "aibaba_ai_community.tools.powerbi.tool",
+    "QuerySQLCheckerTool": "aibaba_ai_community.tools.sql_database.tool",
+    "QuerySQLDatabaseTool": "aibaba_ai_community.tools.sql_database.tool",
     # Legacy, kept for backwards compatibility.
-    "QuerySQLDataBaseTool": "aiagentsforce_community.tools.sql_database.tool",
-    "QuerySparkSQLTool": "aiagentsforce_community.tools.spark_sql.tool",
-    "ReadFileTool": "aiagentsforce_community.tools.file_management",
-    "RedditSearchRun": "aiagentsforce_community.tools.reddit_search.tool",
-    "RedditSearchSchema": "aiagentsforce_community.tools.reddit_search.tool",
-    "RequestsDeleteTool": "aiagentsforce_community.tools.requests.tool",
-    "RequestsGetTool": "aiagentsforce_community.tools.requests.tool",
-    "RequestsPatchTool": "aiagentsforce_community.tools.requests.tool",
-    "RequestsPostTool": "aiagentsforce_community.tools.requests.tool",
-    "RequestsPutTool": "aiagentsforce_community.tools.requests.tool",
-    "SceneXplainTool": "aiagentsforce_community.tools.scenexplain.tool",
-    "SearchAPIResults": "aiagentsforce_community.tools.searchapi.tool",
-    "SearchAPIRun": "aiagentsforce_community.tools.searchapi.tool",
-    "SearxSearchResults": "aiagentsforce_community.tools.searx_search.tool",
-    "SearxSearchRun": "aiagentsforce_community.tools.searx_search.tool",
-    "ShellTool": "aiagentsforce_community.tools.shell.tool",
-    "SlackGetChannel": "aiagentsforce_community.tools.slack.get_channel",
-    "SlackGetMessage": "aiagentsforce_community.tools.slack.get_message",
-    "SlackScheduleMessage": "aiagentsforce_community.tools.slack.schedule_message",
-    "SlackSendMessage": "aiagentsforce_community.tools.slack.send_message",
-    "SleepTool": "aiagentsforce_community.tools.sleep.tool",
-    "StackExchangeTool": "aiagentsforce_community.tools.stackexchange.tool",
-    "StdInInquireTool": "aiagentsforce_community.tools.interaction.tool",
-    "SteamWebAPIQueryRun": "aiagentsforce_community.tools.steam.tool",
-    "SteamshipImageGenerationTool": "aiagentsforce_community.tools.steamship_image_generation",  # noqa: E501
+    "QuerySQLDataBaseTool": "aibaba_ai_community.tools.sql_database.tool",
+    "QuerySparkSQLTool": "aibaba_ai_community.tools.spark_sql.tool",
+    "ReadFileTool": "aibaba_ai_community.tools.file_management",
+    "RedditSearchRun": "aibaba_ai_community.tools.reddit_search.tool",
+    "RedditSearchSchema": "aibaba_ai_community.tools.reddit_search.tool",
+    "RequestsDeleteTool": "aibaba_ai_community.tools.requests.tool",
+    "RequestsGetTool": "aibaba_ai_community.tools.requests.tool",
+    "RequestsPatchTool": "aibaba_ai_community.tools.requests.tool",
+    "RequestsPostTool": "aibaba_ai_community.tools.requests.tool",
+    "RequestsPutTool": "aibaba_ai_community.tools.requests.tool",
+    "SceneXplainTool": "aibaba_ai_community.tools.scenexplain.tool",
+    "SearchAPIResults": "aibaba_ai_community.tools.searchapi.tool",
+    "SearchAPIRun": "aibaba_ai_community.tools.searchapi.tool",
+    "SearxSearchResults": "aibaba_ai_community.tools.searx_search.tool",
+    "SearxSearchRun": "aibaba_ai_community.tools.searx_search.tool",
+    "ShellTool": "aibaba_ai_community.tools.shell.tool",
+    "SlackGetChannel": "aibaba_ai_community.tools.slack.get_channel",
+    "SlackGetMessage": "aibaba_ai_community.tools.slack.get_message",
+    "SlackScheduleMessage": "aibaba_ai_community.tools.slack.schedule_message",
+    "SlackSendMessage": "aibaba_ai_community.tools.slack.send_message",
+    "SleepTool": "aibaba_ai_community.tools.sleep.tool",
+    "StackExchangeTool": "aibaba_ai_community.tools.stackexchange.tool",
+    "StdInInquireTool": "aibaba_ai_community.tools.interaction.tool",
+    "SteamWebAPIQueryRun": "aibaba_ai_community.tools.steam.tool",
+    "SteamshipImageGenerationTool": "aibaba_ai_community.tools.steamship_image_generation",  # noqa: E501
     "StructuredTool": "alibaba_ai_core.tools",
-    "TavilyAnswer": "aiagentsforce_community.tools.tavily_search",
-    "TavilySearchResults": "aiagentsforce_community.tools.tavily_search",
+    "TavilyAnswer": "aibaba_ai_community.tools.tavily_search",
+    "TavilySearchResults": "aibaba_ai_community.tools.tavily_search",
     "Tool": "alibaba_ai_core.tools",
-    "VectorStoreQATool": "aiagentsforce_community.tools.vectorstore.tool",
-    "VectorStoreQAWithSourcesTool": "aiagentsforce_community.tools.vectorstore.tool",
-    "WikipediaQueryRun": "aiagentsforce_community.tools.wikipedia.tool",
-    "WolframAlphaQueryRun": "aiagentsforce_community.tools.wolfram_alpha.tool",
-    "WriteFileTool": "aiagentsforce_community.tools.file_management",
-    "YahooFinanceNewsTool": "aiagentsforce_community.tools.yahoo_finance_news",
-    "YouSearchTool": "aiagentsforce_community.tools.you.tool",
-    "YouTubeSearchTool": "aiagentsforce_community.tools.youtube.search",
-    "ZapierNLAListActions": "aiagentsforce_community.tools.zapier.tool",
-    "ZapierNLARunAction": "aiagentsforce_community.tools.zapier.tool",
-    "ZenGuardInput": "aiagentsforce_community.tools.zenguard.tool",
-    "ZenGuardTool": "aiagentsforce_community.tools.zenguard.tool",
-    "authenticate": "aiagentsforce_community.tools.office365.utils",
-    "format_tool_to_openai_function": "aiagentsforce_community.tools.convert_to_openai",
+    "VectorStoreQATool": "aibaba_ai_community.tools.vectorstore.tool",
+    "VectorStoreQAWithSourcesTool": "aibaba_ai_community.tools.vectorstore.tool",
+    "WikipediaQueryRun": "aibaba_ai_community.tools.wikipedia.tool",
+    "WolframAlphaQueryRun": "aibaba_ai_community.tools.wolfram_alpha.tool",
+    "WriteFileTool": "aibaba_ai_community.tools.file_management",
+    "YahooFinanceNewsTool": "aibaba_ai_community.tools.yahoo_finance_news",
+    "YouSearchTool": "aibaba_ai_community.tools.you.tool",
+    "YouTubeSearchTool": "aibaba_ai_community.tools.youtube.search",
+    "ZapierNLAListActions": "aibaba_ai_community.tools.zapier.tool",
+    "ZapierNLARunAction": "aibaba_ai_community.tools.zapier.tool",
+    "ZenGuardInput": "aibaba_ai_community.tools.zenguard.tool",
+    "ZenGuardTool": "aibaba_ai_community.tools.zenguard.tool",
+    "authenticate": "aibaba_ai_community.tools.office365.utils",
+    "format_tool_to_openai_function": "aibaba_ai_community.tools.convert_to_openai",
     "tool": "alibaba_ai_core.tools",
 }
 

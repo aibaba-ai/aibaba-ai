@@ -6,8 +6,8 @@ from typing import List
 import pytest
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
-from aiagentsforce_community.chat_models import ChatAnthropic
-from aiagentsforce_community.chat_models.anthropic import (
+from aibaba_ai_community.chat_models import ChatAnthropic
+from aibaba_ai_community.chat_models.anthropic import (
     convert_messages_to_prompt_anthropic,
 )
 

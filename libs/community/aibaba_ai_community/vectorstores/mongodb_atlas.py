@@ -21,7 +21,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from pymongo.collection import Collection
@@ -49,8 +49,8 @@ class MongoDBAtlasVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import MongoDBAtlasVectorSearch
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import MongoDBAtlasVectorSearch
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             from pymongo import MongoClient
 
             mongo_client = MongoClient("<YOUR-CONNECTION-STRING>")
@@ -356,8 +356,8 @@ class MongoDBAtlasVectorSearch(VectorStore):
             .. code-block:: python
                 from pymongo import MongoClient
 
-                from aiagentsforce_community.vectorstores import MongoDBAtlasVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import MongoDBAtlasVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 mongo_client = MongoClient("<YOUR-CONNECTION-STRING>")
                 collection = mongo_client["<db_name>"]["<collection_name>"]

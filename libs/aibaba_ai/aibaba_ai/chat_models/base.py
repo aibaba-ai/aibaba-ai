@@ -290,7 +290,7 @@ def init_chat_model(
         Support for ChatOllama via langchain-ollama package added
         (langchain_ollama.ChatOllama). Previously,
         the now-deprecated langchain-community version of Ollama was imported
-        (aiagentsforce_community.chat_models.ChatOllama).
+        (aibaba_ai_community.chat_models.ChatOllama).
 
         Support for langchain_aws.ChatBedrockConverse added
         (model_provider="bedrock_converse").
@@ -372,8 +372,8 @@ def _init_chat_model_helper(
         except ImportError:
             # For backwards compatibility
             try:
-                _check_pkg("aiagentsforce_community")
-                from aiagentsforce_community.chat_models import ChatOllama
+                _check_pkg("aibaba_ai_community")
+                from aibaba_ai_community.chat_models import ChatOllama
             except ImportError:
                 # If both langchain-ollama and langchain-community aren't available,
                 # raise an error related to langchain-ollama

@@ -9,8 +9,8 @@ import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
 from alibaba_ai_core.outputs import Generation, LLMResult
 
-from aiagentsforce_community.cache import CassandraCache, CassandraSemanticCache
-from aiagentsforce_community.utilities.cassandra import SetupMode
+from aibaba_ai_community.cache import CassandraCache, CassandraSemanticCache
+from aibaba_ai_community.utilities.cassandra import SetupMode
 from tests.integration_tests.cache.fake_embeddings import FakeEmbeddings
 from tests.unit_tests.llms.fake_llm import FakeLLM
 

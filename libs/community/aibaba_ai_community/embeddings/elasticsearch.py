@@ -72,7 +72,7 @@ class ElasticsearchEmbeddings(Embeddings):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.embeddings import ElasticsearchEmbeddings
+                from aibaba_ai_community.embeddings import ElasticsearchEmbeddings
 
                 # Define the model ID and input field name (if different from default)
                 model_id = "your_model_id"
@@ -145,7 +145,7 @@ class ElasticsearchEmbeddings(Embeddings):
 
                 from elasticsearch import Elasticsearch
 
-                from aiagentsforce_community.embeddings import ElasticsearchEmbeddings
+                from aibaba_ai_community.embeddings import ElasticsearchEmbeddings
 
                 # Define the model ID and input field name (if different from default)
                 model_id = "your_model_id"

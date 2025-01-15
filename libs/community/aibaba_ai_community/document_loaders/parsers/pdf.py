@@ -18,8 +18,8 @@ from urllib.parse import urlparse
 import numpy as np
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
 
 if TYPE_CHECKING:
     import fitz
@@ -522,7 +522,7 @@ class AmazonTextractPDFParser(BaseBlobParser):
     PDF formats.
 
     ```python
-    from aiagentsforce_community.document_loaders import AmazonTextractPDFLoader
+    from aibaba_ai_community.document_loaders import AmazonTextractPDFLoader
     loader=AmazonTextractPDFLoader("example_data/alejandro_rosalez_sample-small.jpeg")
     documents = loader.load()
     ```
@@ -531,7 +531,7 @@ class AmazonTextractPDFParser(BaseBlobParser):
     When using the features LAYOUT, FORMS or TABLES together with Textract
 
     ```python
-    from aiagentsforce_community.document_loaders import AmazonTextractPDFLoader
+    from aibaba_ai_community.document_loaders import AmazonTextractPDFLoader
     # you can mix and match each of the features
     loader=AmazonTextractPDFLoader(
         "example_data/alejandro_rosalez_sample-small.jpeg",
@@ -652,10 +652,10 @@ class DocumentIntelligenceParser(BaseBlobParser):
 
     def __init__(self, client: Any, model: str):
         warnings.warn(
-            "aiagentsforce_community.document_loaders.parsers.pdf.DocumentIntelligenceParser"
-            "and aiagentsforce_community.document_loaders.pdf.DocumentIntelligenceLoader"
+            "aibaba_ai_community.document_loaders.parsers.pdf.DocumentIntelligenceParser"
+            "and aibaba_ai_community.document_loaders.pdf.DocumentIntelligenceLoader"
             " are deprecated. Please upgrade to "
-            "aiagentsforce_community.document_loaders.DocumentIntelligenceLoader "
+            "aibaba_ai_community.document_loaders.DocumentIntelligenceLoader "
             "for any file parsing purpose using Azure Document Intelligence "
             "service."
         )

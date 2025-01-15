@@ -6,8 +6,8 @@ from alibaba_ai_core.outputs import Generation, LLMResult
 from alibaba_ai_core.utils import pre_init
 from pydantic import Field
 
-from aiagentsforce_community.llms.openai import BaseOpenAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.llms.openai import BaseOpenAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 
 class VLLM(BaseLLM):

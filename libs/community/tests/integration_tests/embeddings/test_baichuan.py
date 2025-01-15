@@ -1,6 +1,6 @@
 """Test Baichuan Text Embedding."""
 
-from aiagentsforce_community.embeddings.baichuan import BaichuanTextEmbeddings
+from aibaba_ai_community.embeddings.baichuan import BaichuanTextEmbeddings
 
 
 def test_baichuan_embedding_documents() -> None:

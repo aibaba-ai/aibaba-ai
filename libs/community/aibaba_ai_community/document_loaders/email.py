@@ -4,8 +4,8 @@ from typing import Any, Iterator, List, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     satisfies_min_unstructured_version,
 )
@@ -24,14 +24,14 @@ class UnstructuredEmailLoader(UnstructuredFileLoader):
 
     Example
     -------
-    from aiagentsforce_community.document_loaders import UnstructuredEmailLoader
+    from aibaba_ai_community.document_loaders import UnstructuredEmailLoader
 
     loader = UnstructuredEmailLoader("example_data/fake-email.eml", mode="elements")
     loader.load()
 
     Example
     -------
-    from aiagentsforce_community.document_loaders import UnstructuredEmailLoader
+    from aibaba_ai_community.document_loaders import UnstructuredEmailLoader
 
     loader = UnstructuredEmailLoader(
         "example_data/fake-email-attachment.eml",

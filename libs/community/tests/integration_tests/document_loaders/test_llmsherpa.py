@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.llmsherpa import LLMSherpaFileLoader
+from aibaba_ai_community.document_loaders.llmsherpa import LLMSherpaFileLoader
 
 file_path = "https://arxiv.org/pdf/2402.14207.pdf"
 

@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING, Dict, List, Union
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 if TYPE_CHECKING:
     from chm import chm
@@ -13,7 +13,7 @@ class UnstructuredCHMLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredCHMLoader
+    from aibaba_ai_community.document_loaders import UnstructuredCHMLoader
 
     loader = UnstructuredCHMLoader("example.chm")
     docs = loader.load()

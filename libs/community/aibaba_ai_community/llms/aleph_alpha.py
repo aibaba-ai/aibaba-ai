@@ -5,7 +5,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, SecretStr
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class AlephAlpha(LLM):
@@ -21,7 +21,7 @@ class AlephAlpha(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import AlephAlpha
+            from aibaba_ai_community.llms import AlephAlpha
             aleph_alpha = AlephAlpha(aleph_alpha_api_key="my-api-key")
     """
 

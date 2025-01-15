@@ -6,7 +6,7 @@ from alibaba_ai_core.callbacks import BaseCallbackHandler
 from alibaba_ai_core.outputs import LLMResult
 from alibaba_ai_core.utils import guard_import
 
-from aiagentsforce_community.callbacks.utils import import_pandas
+from aibaba_ai_community.callbacks.utils import import_pandas
 
 # Define constants
 

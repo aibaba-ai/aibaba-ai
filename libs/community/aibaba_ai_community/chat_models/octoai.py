@@ -19,8 +19,8 @@ from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, p
 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import Field, SecretStr
 
-from aiagentsforce_community.chat_models.openai import ChatOpenAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.chat_models.openai import ChatOpenAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 DEFAULT_API_BASE = "https://text.octoai.run/v1/"
 DEFAULT_MODEL = "llama-2-13b-chat"
@@ -41,7 +41,7 @@ class ChatOctoAI(ChatOpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOctoAI
+            from aibaba_ai_community.chat_models import ChatOctoAI
             chat = ChatOctoAI(model_name="mixtral-8x7b-instruct")
     """
 

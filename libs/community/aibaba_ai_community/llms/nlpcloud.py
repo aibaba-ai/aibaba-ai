@@ -15,7 +15,7 @@ class NLPCloud(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import NLPCloud
+            from aibaba_ai_community.llms import NLPCloud
             nlpcloud = NLPCloud(model="finetuned-gpt-neox-20b")
     """
 

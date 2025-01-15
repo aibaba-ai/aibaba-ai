@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.query_constructors.databricks_vector_search import (
+    from aibaba_ai_community.query_constructors.databricks_vector_search import (
         DatabricksVectorSearchTranslator,
     )
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "DatabricksVectorSearchTranslator": (
-        "aiagentsforce_community.query_constructors.databricks_vector_search"
+        "aibaba_ai_community.query_constructors.databricks_vector_search"
     ),
 }
 

@@ -1,6 +1,6 @@
 import importlib.util
 
-from aiagentsforce_community.vectorstores.tencentvectordb import translate_filter
+from aibaba_ai_community.vectorstores.tencentvectordb import translate_filter
 
 
 def test_translate_filter() -> None:

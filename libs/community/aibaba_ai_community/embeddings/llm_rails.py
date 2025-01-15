@@ -20,7 +20,7 @@ class LLMRailsEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import LLMRailsEmbeddings
+            from aibaba_ai_community.embeddings import LLMRailsEmbeddings
             cohere = LLMRailsEmbeddings(
                 model="embedding-english-v1", api_key="my-api-key"
             )

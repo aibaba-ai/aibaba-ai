@@ -5,7 +5,7 @@ from typing import cast
 
 from pydantic import SecretStr
 
-from aiagentsforce_community.embeddings import ClovaXEmbeddings
+from aibaba_ai_community.embeddings import ClovaXEmbeddings
 
 os.environ["NCP_CLOVASTUDIO_API_KEY"] = "test_api_key"
 os.environ["NCP_APIGW_API_KEY"] = "test_gw_key"

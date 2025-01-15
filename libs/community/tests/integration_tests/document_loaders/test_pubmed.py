@@ -5,7 +5,7 @@ from typing import List
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import PubMedLoader
+from aibaba_ai_community.document_loaders import PubMedLoader
 
 xmltodict = pytest.importorskip("xmltodict")
 

@@ -7,7 +7,7 @@ from alibaba_ai_core.callbacks import (
 )
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.openai import OpenAI, OpenAIChat
+from aibaba_ai_community.llms.openai import OpenAI, OpenAIChat
 
 
 class PromptLayerOpenAI(OpenAI):
@@ -30,7 +30,7 @@ class PromptLayerOpenAI(OpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import PromptLayerOpenAI
+            from aibaba_ai_community.llms import PromptLayerOpenAI
             openai = PromptLayerOpenAI(model_name="gpt-3.5-turbo-instruct")
     """
 
@@ -143,7 +143,7 @@ class PromptLayerOpenAIChat(OpenAIChat):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import PromptLayerOpenAIChat
+            from aibaba_ai_community.llms import PromptLayerOpenAIChat
             openaichat = PromptLayerOpenAIChat(model_name="gpt-3.5-turbo")
     """
 

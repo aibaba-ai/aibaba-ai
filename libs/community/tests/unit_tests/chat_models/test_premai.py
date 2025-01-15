@@ -7,8 +7,8 @@ from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage, Too
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.chat_models import ChatPremAI
-from aiagentsforce_community.chat_models.premai import (
+from aibaba_ai_community.chat_models import ChatPremAI
+from aibaba_ai_community.chat_models.premai import (
     SINGLE_TOOL_PROMPT_TEMPLATE,
     TOOL_PROMPT_HEADER,
     _messages_to_prompt_dict,

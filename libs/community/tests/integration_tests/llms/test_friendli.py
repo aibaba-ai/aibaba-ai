@@ -4,7 +4,7 @@ import pytest
 from alibaba_ai_core.outputs.generation import Generation
 from alibaba_ai_core.outputs.llm_result import LLMResult
 
-from aiagentsforce_community.llms.friendli import Friendli
+from aibaba_ai_community.llms.friendli import Friendli
 
 
 @pytest.fixture

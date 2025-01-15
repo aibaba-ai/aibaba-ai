@@ -6,11 +6,11 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.slack.get_channel import SlackGetChannel
-from aiagentsforce_community.tools.slack.get_message import SlackGetMessage
-from aiagentsforce_community.tools.slack.schedule_message import SlackScheduleMessage
-from aiagentsforce_community.tools.slack.send_message import SlackSendMessage
-from aiagentsforce_community.tools.slack.utils import login
+from aibaba_ai_community.tools.slack.get_channel import SlackGetChannel
+from aibaba_ai_community.tools.slack.get_message import SlackGetMessage
+from aibaba_ai_community.tools.slack.schedule_message import SlackScheduleMessage
+from aibaba_ai_community.tools.slack.send_message import SlackSendMessage
+from aibaba_ai_community.tools.slack.utils import login
 
 if TYPE_CHECKING:
     # This is for linting and IDE typehints
@@ -44,7 +44,7 @@ class SlackToolkit(BaseToolkit):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.agent_toolkits import SlackToolkit
+            from aibaba_ai_community.agent_toolkits import SlackToolkit
 
             toolkit = SlackToolkit()
 

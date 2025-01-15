@@ -54,11 +54,11 @@ from alibaba_ai_core.utils import (
 )
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-from aiagentsforce_community.adapters.openai import (
+from aibaba_ai_community.adapters.openai import (
     convert_dict_to_message,
     convert_message_to_dict,
 )
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 if TYPE_CHECKING:
     import tiktoken
@@ -190,7 +190,7 @@ class ChatOpenAI(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.chat_models import ChatOpenAI
             openai = ChatOpenAI(model="gpt-3.5-turbo")
     """
 

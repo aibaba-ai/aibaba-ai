@@ -2,8 +2,8 @@ from typing import Any, Iterator, List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.arxiv import ArxivAPIWrapper
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.arxiv import ArxivAPIWrapper
 
 
 class ArxivLoader(BaseLoader):
@@ -23,7 +23,7 @@ class ArxivLoader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import ArxivLoader
+            from aibaba_ai_community.document_loaders import ArxivLoader
 
             loader = ArxivLoader(
                 query="reasoning",
@@ -104,7 +104,7 @@ class ArxivLoader(BaseLoader):
     Use summaries of articles as docs:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import ArxivLoader
+            from aibaba_ai_community.document_loaders import ArxivLoader
 
             loader = ArxivLoader(
                 query="reasoning"

@@ -4,7 +4,7 @@ from unittest.mock import AsyncMock, patch
 import responses
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.utilities.you import YouSearchAPIWrapper
+from aibaba_ai_community.utilities.you import YouSearchAPIWrapper
 
 TEST_ENDPOINT = "https://api.ydc-index.io"
 

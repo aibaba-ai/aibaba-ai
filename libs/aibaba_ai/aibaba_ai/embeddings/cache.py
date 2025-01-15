@@ -69,7 +69,7 @@ class CacheBackedEmbeddings(Embeddings):
 
             from langchain.embeddings import CacheBackedEmbeddings
             from langchain.storage import LocalFileStore
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
             store = LocalFileStore('./my_cache')
 

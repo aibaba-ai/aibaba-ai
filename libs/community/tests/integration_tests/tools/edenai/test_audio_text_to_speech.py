@@ -11,7 +11,7 @@ You'll then need to set EDENAI_API_KEY environment variable to your api key.
 
 from urllib.parse import urlparse
 
-from aiagentsforce_community.tools.edenai import EdenAiTextToSpeechTool
+from aibaba_ai_community.tools.edenai import EdenAiTextToSpeechTool
 
 
 def test_edenai_call() -> None:

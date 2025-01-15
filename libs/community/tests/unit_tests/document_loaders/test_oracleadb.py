@@ -3,7 +3,7 @@ from unittest.mock import MagicMock, patch
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.oracleadb_loader import (
+from aibaba_ai_community.document_loaders.oracleadb_loader import (
     OracleAutonomousDatabaseLoader,
 )
 
@@ -37,7 +37,7 @@ def expected_documents() -> List[Document]:
 
 
 @patch(
-    "aiagentsforce_community.document_loaders.oracleadb_loader.OracleAutonomousDatabaseLoader._run_query"
+    "aibaba_ai_community.document_loaders.oracleadb_loader.OracleAutonomousDatabaseLoader._run_query"
 )
 def test_oracle_loader_load(mock_query: MagicMock) -> None:
     """Test oracleDB loader load function."""

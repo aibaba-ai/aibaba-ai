@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.document_loaders.parsers.html import BS4HTMLParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.document_loaders.parsers.html import BS4HTMLParser
 
 HERE = Path(__file__).parent
 EXAMPLES = HERE.parent.parent.parent / "integration_tests" / "examples"

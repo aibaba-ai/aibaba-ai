@@ -263,7 +263,7 @@ class ChatZhipuAI(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatZhipuAI
+            from aibaba_ai_community.chat_models import ChatZhipuAI
 
             zhipuai_chat = ChatZhipuAI(
                 temperature=0.5,
@@ -786,7 +786,7 @@ class ChatZhipuAI(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatZhipuAI
+                from aibaba_ai_community.chat_models import ChatZhipuAI
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -806,7 +806,7 @@ class ChatZhipuAI(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=True):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatZhipuAI
+                from aibaba_ai_community.chat_models import ChatZhipuAI
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -827,7 +827,7 @@ class ChatZhipuAI(BaseChatModel):
         Example: Function-calling, dict schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatZhipuAI
+                from aibaba_ai_community.chat_models import ChatZhipuAI
                 from pydantic import BaseModel
                 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 

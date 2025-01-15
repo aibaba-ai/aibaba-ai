@@ -2,7 +2,7 @@ from unittest.mock import AsyncMock, patch
 
 import responses
 
-from aiagentsforce_community.retrievers.you import YouRetriever
+from aibaba_ai_community.retrievers.you import YouRetriever
 
 from ..utilities.test_you import (
     LIMITED_PARSED_OUTPUT,

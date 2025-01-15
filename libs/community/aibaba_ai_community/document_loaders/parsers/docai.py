@@ -15,9 +15,9 @@ from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils.iter import batch_iterate
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.api_core.operation import Operation

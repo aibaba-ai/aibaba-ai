@@ -7,8 +7,8 @@ from langchain.retrievers.document_compressors import (
 from alibaba_ai_core.documents import Document
 from langchain_text_splitters.character import CharacterTextSplitter
 
-from aiagentsforce_community.document_transformers import EmbeddingsRedundantFilter
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.document_transformers import EmbeddingsRedundantFilter
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
 
 def test_document_compressor_pipeline() -> None:

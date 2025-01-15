@@ -13,7 +13,7 @@ from alibaba_ai_core.messages import (
 )
 from pydantic import Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 HEADERS = {"Content-Type": "application/json"}

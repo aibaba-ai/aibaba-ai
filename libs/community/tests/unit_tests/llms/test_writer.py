@@ -6,7 +6,7 @@ import pytest
 from alibaba_ai_core.callbacks import CallbackManager
 from pydantic import SecretStr
 
-from aiagentsforce_community.llms.writer import Writer
+from aibaba_ai_community.llms.writer import Writer
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 """Classes for mocking Writer responses."""

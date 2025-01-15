@@ -13,7 +13,7 @@ import pytest
 from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
-from aiagentsforce_community.chat_models import ChatSnowflakeCortex
+from aibaba_ai_community.chat_models import ChatSnowflakeCortex
 
 
 @pytest.fixture

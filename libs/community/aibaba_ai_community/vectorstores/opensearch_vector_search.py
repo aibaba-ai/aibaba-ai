@@ -10,7 +10,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_dict_or_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 IMPORT_OPENSEARCH_PY_ERROR = (
     "Could not import OpenSearch. Please install it with `pip install opensearch-py`."
@@ -438,7 +438,7 @@ class OpenSearchVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
+            from aibaba_ai_community.vectorstores import OpenSearchVectorSearch
             opensearch_vector_search = OpenSearchVectorSearch(
                 "http://localhost:9200",
                 "embeddings",
@@ -1310,8 +1310,8 @@ class OpenSearchVectorSearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import OpenSearchVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 opensearch_vector_search = OpenSearchVectorSearch.from_texts(
                     texts,
@@ -1376,8 +1376,8 @@ class OpenSearchVectorSearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import OpenSearchVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 opensearch_vector_search = await OpenSearchVectorSearch.afrom_texts(
                     texts,
@@ -1443,8 +1443,8 @@ class OpenSearchVectorSearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import OpenSearchVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embedder = OpenAIEmbeddings()
                 embeddings = embedder.embed_documents(["foo", "bar"])
                 opensearch_vector_search = OpenSearchVectorSearch.from_embeddings(
@@ -1575,8 +1575,8 @@ class OpenSearchVectorSearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import OpenSearchVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import OpenSearchVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embedder = OpenAIEmbeddings()
                 embeddings = await embedder.aembed_documents(["foo", "bar"])
                 opensearch_vector_search =

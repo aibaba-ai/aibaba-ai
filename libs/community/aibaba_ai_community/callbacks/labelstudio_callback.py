@@ -89,8 +89,8 @@ class LabelStudioCallbackHandler(BaseCallbackHandler):
         mode: Label Studio mode ("prompt" or "chat")
 
     Examples:
-        >>> from aiagentsforce_community.llms import OpenAI
-        >>> from aiagentsforce_community.callbacks import LabelStudioCallbackHandler
+        >>> from aibaba_ai_community.llms import OpenAI
+        >>> from aibaba_ai_community.callbacks import LabelStudioCallbackHandler
         >>> handler = LabelStudioCallbackHandler(
         ...             api_key='<your_key_here>',
         ...             url='http://localhost:8080',

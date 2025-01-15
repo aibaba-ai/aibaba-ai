@@ -5,7 +5,7 @@ from typing import Optional
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
+from aibaba_ai_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
 
 
 class WolframAlphaQueryRun(BaseTool):  # type: ignore[override]

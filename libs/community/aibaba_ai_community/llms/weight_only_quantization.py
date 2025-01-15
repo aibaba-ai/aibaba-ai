@@ -5,7 +5,7 @@ from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 DEFAULT_MODEL_ID = "google/flan-t5-large"
 DEFAULT_TASK = "text2text-generation"
@@ -23,7 +23,7 @@ class WeightOnlyQuantPipeline(LLM):
     Example using from_model_id:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import WeightOnlyQuantPipeline
+            from aibaba_ai_community.llms import WeightOnlyQuantPipeline
             from intel_extension_for_transformers.transformers import (
                 WeightOnlyQuantConfig
             )
@@ -37,7 +37,7 @@ class WeightOnlyQuantPipeline(LLM):
     Example passing pipeline in directly:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import WeightOnlyQuantPipeline
+            from aibaba_ai_community.llms import WeightOnlyQuantPipeline
             from intel_extension_for_transformers.transformers import (
                 AutoModelForSeq2SeqLM
             )
@@ -216,7 +216,7 @@ class WeightOnlyQuantPipeline(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import WeightOnlyQuantPipeline
+                from aibaba_ai_community.llms import WeightOnlyQuantPipeline
                 llm = WeightOnlyQuantPipeline.from_model_id(
                     model_id="google/flan-t5-large",
                     task="text2text-generation",

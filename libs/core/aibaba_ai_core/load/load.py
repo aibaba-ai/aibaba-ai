@@ -15,7 +15,7 @@ from aibaba_ai_core.load.serializable import Serializable
 DEFAULT_NAMESPACES = [
     "langchain",
     "aibaba_ai_core",
-    "aiagentsforce_community",
+    "aibaba_ai_community",
     "langchain_anthropic",
     "langchain_groq",
     "langchain_google_genai",
@@ -29,7 +29,7 @@ DEFAULT_NAMESPACES = [
 # Namespaces for which only deserializing via the SERIALIZABLE_MAPPING is allowed.
 # Load by path is not allowed.
 DISALLOW_LOAD_FROM_PATH = [
-    "aiagentsforce_community",
+    "aibaba_ai_community",
     "langchain",
 ]
 

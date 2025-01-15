@@ -32,7 +32,7 @@ class ExecPython(BaseTool):  # type: ignore[override, override]
     Instantiation:
         .. code-block:: python
 
-            from aiagentsforce_community.tools.riza.command import ExecPython
+            from aibaba_ai_community.tools.riza.command import ExecPython
 
             tool = ExecPython()
 

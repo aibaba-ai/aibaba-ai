@@ -11,11 +11,11 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     CYPHER_QA_PROMPT,
     NGQL_GENERATION_PROMPT,
 )
-from aiagentsforce_community.graphs.nebula_graph import NebulaGraph
+from aibaba_ai_community.graphs.nebula_graph import NebulaGraph
 
 
 class NebulaGraphQAChain(Chain):

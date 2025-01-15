@@ -31,11 +31,11 @@ class EmbaasEmbeddings(BaseModel, Embeddings):
         .. code-block:: python
 
             # initialize with default model and instruction
-            from aiagentsforce_community.embeddings import EmbaasEmbeddings
+            from aibaba_ai_community.embeddings import EmbaasEmbeddings
             emb = EmbaasEmbeddings()
 
             # initialize with custom model and instruction
-            from aiagentsforce_community.embeddings import EmbaasEmbeddings
+            from aibaba_ai_community.embeddings import EmbaasEmbeddings
             emb_model = "instructor-large"
             emb_inst = "Represent the Wikipedia document for retrieval"
             emb = EmbaasEmbeddings(

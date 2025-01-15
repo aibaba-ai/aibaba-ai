@@ -1,7 +1,7 @@
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
 
-from aiagentsforce_community.llms.outlines import Outlines
+from aibaba_ai_community.llms.outlines import Outlines
 
 
 def test_outlines_initialization(monkeypatch: MonkeyPatch) -> None:

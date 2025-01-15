@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import GmailGetMessage
-    from aiagentsforce_community.tools.gmail.get_message import SearchArgsSchema
+    from aibaba_ai_community.tools import GmailGetMessage
+    from aibaba_ai_community.tools.gmail.get_message import SearchArgsSchema
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SearchArgsSchema": "aiagentsforce_community.tools.gmail.get_message",
-    "GmailGetMessage": "aiagentsforce_community.tools",
+    "SearchArgsSchema": "aibaba_ai_community.tools.gmail.get_message",
+    "GmailGetMessage": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

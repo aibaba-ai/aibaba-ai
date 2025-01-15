@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 import pytest
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.embeddings import OCIGenAIEmbeddings
+from aibaba_ai_community.embeddings import OCIGenAIEmbeddings
 
 
 class MockResponseDict(dict):

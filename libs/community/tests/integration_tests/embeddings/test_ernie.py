@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.embeddings.ernie import ErnieEmbeddings
+from aibaba_ai_community.embeddings.ernie import ErnieEmbeddings
 
 
 def test_embedding_documents_1() -> None:

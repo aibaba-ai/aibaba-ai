@@ -2,7 +2,7 @@ import tokenize
 from pathlib import Path
 from typing import Union
 
-from aiagentsforce_community.document_loaders.text import TextLoader
+from aibaba_ai_community.document_loaders.text import TextLoader
 
 
 class PythonLoader(TextLoader):

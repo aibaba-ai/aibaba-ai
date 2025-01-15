@@ -18,21 +18,21 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.storage.astradb import (
+    from aibaba_ai_community.storage.astradb import (
         AstraDBByteStore,
         AstraDBStore,
     )
-    from aiagentsforce_community.storage.cassandra import (
+    from aibaba_ai_community.storage.cassandra import (
         CassandraByteStore,
     )
-    from aiagentsforce_community.storage.mongodb import MongoDBByteStore, MongoDBStore
-    from aiagentsforce_community.storage.redis import (
+    from aibaba_ai_community.storage.mongodb import MongoDBByteStore, MongoDBStore
+    from aibaba_ai_community.storage.redis import (
         RedisStore,
     )
-    from aiagentsforce_community.storage.sql import (
+    from aibaba_ai_community.storage.sql import (
         SQLStore,
     )
-    from aiagentsforce_community.storage.upstash_redis import (
+    from aibaba_ai_community.storage.upstash_redis import (
         UpstashRedisByteStore,
         UpstashRedisStore,
     )
@@ -50,15 +50,15 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "AstraDBByteStore": "aiagentsforce_community.storage.astradb",
-    "AstraDBStore": "aiagentsforce_community.storage.astradb",
-    "CassandraByteStore": "aiagentsforce_community.storage.cassandra",
-    "MongoDBStore": "aiagentsforce_community.storage.mongodb",
-    "MongoDBByteStore": "aiagentsforce_community.storage.mongodb",
-    "RedisStore": "aiagentsforce_community.storage.redis",
-    "SQLStore": "aiagentsforce_community.storage.sql",
-    "UpstashRedisByteStore": "aiagentsforce_community.storage.upstash_redis",
-    "UpstashRedisStore": "aiagentsforce_community.storage.upstash_redis",
+    "AstraDBByteStore": "aibaba_ai_community.storage.astradb",
+    "AstraDBStore": "aibaba_ai_community.storage.astradb",
+    "CassandraByteStore": "aibaba_ai_community.storage.cassandra",
+    "MongoDBStore": "aibaba_ai_community.storage.mongodb",
+    "MongoDBByteStore": "aibaba_ai_community.storage.mongodb",
+    "RedisStore": "aibaba_ai_community.storage.redis",
+    "SQLStore": "aibaba_ai_community.storage.sql",
+    "UpstashRedisByteStore": "aibaba_ai_community.storage.upstash_redis",
+    "UpstashRedisStore": "aibaba_ai_community.storage.upstash_redis",
 }
 
 

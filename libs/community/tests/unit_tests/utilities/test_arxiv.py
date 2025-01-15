@@ -1,6 +1,6 @@
 import pytest as pytest
 
-from aiagentsforce_community.utilities import ArxivAPIWrapper
+from aibaba_ai_community.utilities import ArxivAPIWrapper
 
 
 @pytest.mark.requires("arxiv")

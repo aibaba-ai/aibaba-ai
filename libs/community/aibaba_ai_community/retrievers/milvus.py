@@ -9,7 +9,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.retrievers import BaseRetriever
 from pydantic import model_validator
 
-from aiagentsforce_community.vectorstores.milvus import Milvus
+from aibaba_ai_community.vectorstores.milvus import Milvus
 
 # TODO: Update to MilvusClient + Hybrid Search when available
 

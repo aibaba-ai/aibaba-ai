@@ -2,8 +2,8 @@
 
 from alibaba_ai_core.messages import HumanMessage
 
-from aiagentsforce_community.chat_models.fake import FakeListChatModel
-from aiagentsforce_community.llms.fake import FakeListLLM
+from aibaba_ai_community.chat_models.fake import FakeListChatModel
+from aibaba_ai_community.llms.fake import FakeListLLM
 from tests.unit_tests.callbacks.fake_callback_handler import (
     FakeCallbackHandler,
     FakeCallbackHandlerWithChatStart,

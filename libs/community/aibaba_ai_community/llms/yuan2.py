@@ -7,7 +7,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 from pydantic import Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 

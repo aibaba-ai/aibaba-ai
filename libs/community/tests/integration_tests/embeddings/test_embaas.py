@@ -2,7 +2,7 @@
 
 import responses
 
-from aiagentsforce_community.embeddings.embaas import EMBAAS_API_URL, EmbaasEmbeddings
+from aibaba_ai_community.embeddings.embaas import EMBAAS_API_URL, EmbaasEmbeddings
 
 
 def test_embaas_embed_documents() -> None:

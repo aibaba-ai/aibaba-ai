@@ -6,7 +6,7 @@ import json
 import time
 from typing import TYPE_CHECKING, List, Optional, Sequence
 
-from aiagentsforce_community.utilities.astradb import (
+from aibaba_ai_community.utilities.astradb import (
     SetupMode,
     _AstraDBCollectionEnvironment,
 )

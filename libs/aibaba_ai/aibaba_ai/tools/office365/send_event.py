@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import O365SendEvent
-    from aiagentsforce_community.tools.office365.send_event import SendEventSchema
+    from aibaba_ai_community.tools import O365SendEvent
+    from aibaba_ai_community.tools.office365.send_event import SendEventSchema
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SendEventSchema": "aiagentsforce_community.tools.office365.send_event",
-    "O365SendEvent": "aiagentsforce_community.tools",
+    "SendEventSchema": "aibaba_ai_community.tools.office365.send_event",
+    "O365SendEvent": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

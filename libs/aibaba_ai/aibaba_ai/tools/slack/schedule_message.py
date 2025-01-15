@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import SlackScheduleMessage
-    from aiagentsforce_community.tools.slack.schedule_message import ScheduleMessageSchema
+    from aibaba_ai_community.tools import SlackScheduleMessage
+    from aibaba_ai_community.tools.slack.schedule_message import ScheduleMessageSchema
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ScheduleMessageSchema": "aiagentsforce_community.tools.slack.schedule_message",
-    "SlackScheduleMessage": "aiagentsforce_community.tools",
+    "ScheduleMessageSchema": "aibaba_ai_community.tools.slack.schedule_message",
+    "SlackScheduleMessage": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

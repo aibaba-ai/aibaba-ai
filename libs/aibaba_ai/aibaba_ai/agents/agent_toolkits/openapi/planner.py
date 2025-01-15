@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.openapi.planner import (
+    from aibaba_ai_community.agent_toolkits.openapi.planner import (
         RequestsDeleteToolWithParsing,
         RequestsGetToolWithParsing,
         RequestsPatchToolWithParsing,
@@ -17,21 +17,21 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "RequestsGetToolWithParsing": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner"
+        "aibaba_ai_community.agent_toolkits.openapi.planner"
     ),
     "RequestsPostToolWithParsing": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner"
+        "aibaba_ai_community.agent_toolkits.openapi.planner"
     ),
     "RequestsPatchToolWithParsing": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner"
+        "aibaba_ai_community.agent_toolkits.openapi.planner"
     ),
     "RequestsPutToolWithParsing": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner"
+        "aibaba_ai_community.agent_toolkits.openapi.planner"
     ),
     "RequestsDeleteToolWithParsing": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner"
+        "aibaba_ai_community.agent_toolkits.openapi.planner"
     ),
-    "create_openapi_agent": "aiagentsforce_community.agent_toolkits.openapi.planner",
+    "create_openapi_agent": "aibaba_ai_community.agent_toolkits.openapi.planner",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

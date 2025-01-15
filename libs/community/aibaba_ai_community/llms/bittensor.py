@@ -20,7 +20,7 @@ class NIBittensorLLM(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import NIBittensorLLM
+            from aibaba_ai_community.llms import NIBittensorLLM
             llm = NIBittensorLLM()
     """
 
@@ -58,7 +58,7 @@ class NIBittensorLLM(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import NIBittensorLLM
+                from aibaba_ai_community.llms import NIBittensorLLM
                 llm = NIBittensorLLM(system_prompt="Act like you are programmer with \
                 5+ years of experience.")
         """

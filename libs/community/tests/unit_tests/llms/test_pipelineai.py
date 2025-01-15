@@ -1,7 +1,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.llms.pipelineai import PipelineAI
+from aibaba_ai_community.llms.pipelineai import PipelineAI
 
 
 def test_api_key_is_string() -> None:

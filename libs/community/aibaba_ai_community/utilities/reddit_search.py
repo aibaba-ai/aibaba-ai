@@ -19,7 +19,7 @@ class RedditSearchAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import RedditSearchAPIWrapper
+            from aibaba_ai_community.utilities import RedditSearchAPIWrapper
             reddit_search = RedditSearchAPIWrapper()
     """
 

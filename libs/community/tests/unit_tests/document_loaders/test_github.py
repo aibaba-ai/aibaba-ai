@@ -4,7 +4,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.document_loaders.github import (
+from aibaba_ai_community.document_loaders.github import (
     GithubFileLoader,
     GitHubIssuesLoader,
 )

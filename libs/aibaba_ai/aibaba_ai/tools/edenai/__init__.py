@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         EdenAiExplicitImageTool,
         EdenAiObjectDetectionTool,
         EdenAiParsingIDTool,
@@ -20,14 +20,14 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "EdenAiExplicitImageTool": "aiagentsforce_community.tools",
-    "EdenAiObjectDetectionTool": "aiagentsforce_community.tools",
-    "EdenAiParsingIDTool": "aiagentsforce_community.tools",
-    "EdenAiParsingInvoiceTool": "aiagentsforce_community.tools",
-    "EdenAiTextToSpeechTool": "aiagentsforce_community.tools",
-    "EdenAiSpeechToTextTool": "aiagentsforce_community.tools",
-    "EdenAiTextModerationTool": "aiagentsforce_community.tools",
-    "EdenaiTool": "aiagentsforce_community.tools",
+    "EdenAiExplicitImageTool": "aibaba_ai_community.tools",
+    "EdenAiObjectDetectionTool": "aibaba_ai_community.tools",
+    "EdenAiParsingIDTool": "aibaba_ai_community.tools",
+    "EdenAiParsingInvoiceTool": "aibaba_ai_community.tools",
+    "EdenAiTextToSpeechTool": "aibaba_ai_community.tools",
+    "EdenAiSpeechToTextTool": "aibaba_ai_community.tools",
+    "EdenAiTextModerationTool": "aibaba_ai_community.tools",
+    "EdenaiTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

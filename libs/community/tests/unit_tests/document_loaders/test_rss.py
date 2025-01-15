@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.document_loaders import RSSFeedLoader
+from aibaba_ai_community.document_loaders import RSSFeedLoader
 
 
 @pytest.mark.requires("feedparser", "newspaper")

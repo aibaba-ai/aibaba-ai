@@ -2,13 +2,13 @@ from typing import Any
 
 import pytest
 
-from aiagentsforce_community.vectorstores.redis import (
+from aibaba_ai_community.vectorstores.redis import (
     RedisNum as Num,
 )
-from aiagentsforce_community.vectorstores.redis import (
+from aibaba_ai_community.vectorstores.redis import (
     RedisTag as Tag,
 )
-from aiagentsforce_community.vectorstores.redis import (
+from aibaba_ai_community.vectorstores.redis import (
     RedisText as Text,
 )
 

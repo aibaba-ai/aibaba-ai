@@ -7,7 +7,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.retrievers import BaseRetriever
 from pydantic import model_validator
 
-from aiagentsforce_community.vectorstores.zilliz import Zilliz
+from aibaba_ai_community.vectorstores.zilliz import Zilliz
 
 # TODO: Update to ZillizClient + Hybrid Search when available
 

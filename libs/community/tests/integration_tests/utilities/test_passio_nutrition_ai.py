@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.utilities.passio_nutrition_ai import (
+from aibaba_ai_community.utilities.passio_nutrition_ai import (
     ManagedPassioLifeAuth,
     NutritionAIAPI,
 )

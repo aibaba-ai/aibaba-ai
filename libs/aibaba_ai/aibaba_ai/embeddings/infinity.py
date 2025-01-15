@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.embeddings import InfinityEmbeddings
-    from aiagentsforce_community.embeddings.infinity import (
+    from aibaba_ai_community.embeddings import InfinityEmbeddings
+    from aibaba_ai_community.embeddings.infinity import (
         TinyAsyncOpenAIInfinityEmbeddingClient,
     )
 
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "InfinityEmbeddings": "aiagentsforce_community.embeddings",
-    "TinyAsyncOpenAIInfinityEmbeddingClient": "aiagentsforce_community.embeddings.infinity",
+    "InfinityEmbeddings": "aibaba_ai_community.embeddings",
+    "TinyAsyncOpenAIInfinityEmbeddingClient": "aibaba_ai_community.embeddings.infinity",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

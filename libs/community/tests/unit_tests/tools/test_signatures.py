@@ -7,11 +7,11 @@ from typing import List, Type
 import pytest
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.tools.amadeus.base import AmadeusBaseTool
-from aiagentsforce_community.tools.gmail.base import GmailBaseTool
-from aiagentsforce_community.tools.office365.base import O365BaseTool
-from aiagentsforce_community.tools.playwright.base import BaseBrowserTool
-from aiagentsforce_community.tools.slack.base import SlackBaseTool
+from aibaba_ai_community.tools.amadeus.base import AmadeusBaseTool
+from aibaba_ai_community.tools.gmail.base import GmailBaseTool
+from aibaba_ai_community.tools.office365.base import O365BaseTool
+from aibaba_ai_community.tools.playwright.base import BaseBrowserTool
+from aibaba_ai_community.tools.slack.base import SlackBaseTool
 
 
 def get_non_abstract_subclasses(cls: Type[BaseTool]) -> List[Type[BaseTool]]:

@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.embeddings.yandex import YandexGPTEmbeddings
+from aibaba_ai_community.embeddings.yandex import YandexGPTEmbeddings
 
 
 @pytest.mark.parametrize(

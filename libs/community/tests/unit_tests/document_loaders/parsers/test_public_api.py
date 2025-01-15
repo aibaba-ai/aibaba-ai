@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.parsers import __all__
+from aibaba_ai_community.document_loaders.parsers import __all__
 
 
 def test_parsers_public_api_correct() -> None:

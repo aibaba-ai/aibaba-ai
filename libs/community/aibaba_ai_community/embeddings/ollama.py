@@ -22,7 +22,7 @@ class OllamaEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import OllamaEmbeddings
+            from aibaba_ai_community.embeddings import OllamaEmbeddings
             ollama_emb = OllamaEmbeddings(
                 model="llama:7b",
             )

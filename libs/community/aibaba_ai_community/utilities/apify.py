@@ -5,7 +5,7 @@ from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, model_validator
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+    from aibaba_ai_community.document_loaders import ApifyDatasetLoader
 
 
 class ApifyWrapper(BaseModel):
@@ -79,7 +79,7 @@ class ApifyWrapper(BaseModel):
             ApifyDatasetLoader: A loader that will fetch the records from the
                 Actor run's default dataset.
         """
-        from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+        from aibaba_ai_community.document_loaders import ApifyDatasetLoader
 
         actor_call = self.apify_client.actor(actor_id).call(
             run_input=run_input,
@@ -119,7 +119,7 @@ class ApifyWrapper(BaseModel):
             ApifyDatasetLoader: A loader that will fetch the records from the
                 Actor run's default dataset.
         """
-        from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+        from aibaba_ai_community.document_loaders import ApifyDatasetLoader
 
         actor_call = await self.apify_client_async.actor(actor_id).call(
             run_input=run_input,
@@ -160,7 +160,7 @@ class ApifyWrapper(BaseModel):
             ApifyDatasetLoader: A loader that will fetch the records from the
                 task run's default dataset.
         """
-        from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+        from aibaba_ai_community.document_loaders import ApifyDatasetLoader
 
         task_call = self.apify_client.task(task_id).call(
             task_input=task_input,
@@ -201,7 +201,7 @@ class ApifyWrapper(BaseModel):
             ApifyDatasetLoader: A loader that will fetch the records from the
                 task run's default dataset.
         """
-        from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+        from aibaba_ai_community.document_loaders import ApifyDatasetLoader
 
         task_call = await self.apify_client_async.task(task_id).call(
             task_input=task_input,

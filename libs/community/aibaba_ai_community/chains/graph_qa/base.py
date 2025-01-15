@@ -11,11 +11,11 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     ENTITY_EXTRACTION_PROMPT,
     GRAPH_QA_PROMPT,
 )
-from aiagentsforce_community.graphs.networkx_graph import NetworkxEntityGraph, get_entities
+from aibaba_ai_community.graphs.networkx_graph import NetworkxEntityGraph, get_entities
 
 
 class GraphQAChain(Chain):

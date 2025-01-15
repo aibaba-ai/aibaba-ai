@@ -3,8 +3,8 @@ import time
 
 import pytest
 
-from aiagentsforce_community.document_loaders import BlockchainDocumentLoader
-from aiagentsforce_community.document_loaders.blockchain import BlockchainType
+from aibaba_ai_community.document_loaders import BlockchainDocumentLoader
+from aibaba_ai_community.document_loaders.blockchain import BlockchainType
 
 if "ALCHEMY_API_KEY" in os.environ:
     alchemyKeySet = True

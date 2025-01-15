@@ -3,13 +3,13 @@ from typing import List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.polygon import (
+from aibaba_ai_community.tools.polygon import (
     PolygonAggregates,
     PolygonFinancials,
     PolygonLastQuote,
     PolygonTickerNews,
 )
-from aiagentsforce_community.utilities.polygon import PolygonAPIWrapper
+from aibaba_ai_community.utilities.polygon import PolygonAPIWrapper
 
 
 class PolygonToolkit(BaseToolkit):

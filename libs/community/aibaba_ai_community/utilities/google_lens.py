@@ -22,7 +22,7 @@ class GoogleLensAPIWrapper(BaseModel):
      Example:
         .. code-block:: python
 
-        from aiagentsforce_community.utilities import GoogleLensAPIWrapper
+        from aibaba_ai_community.utilities import GoogleLensAPIWrapper
         google_lens = GoogleLensAPIWrapper()
         google_lens.run('langchain')
     """

@@ -8,7 +8,7 @@ from langchain.chains.api.base import APIChain
 from langchain.chains.api.prompt import API_RESPONSE_PROMPT, API_URL_PROMPT
 from langchain.chains.llm import LLMChain
 
-from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+from aibaba_ai_community.utilities.requests import TextRequestsWrapper
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

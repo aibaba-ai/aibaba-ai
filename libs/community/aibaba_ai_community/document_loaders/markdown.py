@@ -1,6 +1,6 @@
 from typing import List
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 
 class UnstructuredMarkdownLoader(UnstructuredFileLoader):
@@ -23,7 +23,7 @@ class UnstructuredMarkdownLoader(UnstructuredFileLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import UnstructuredMarkdownLoader
+            from aibaba_ai_community.document_loaders import UnstructuredMarkdownLoader
 
             loader = UnstructuredMarkdownLoader(
                 "./example_data/example.md",

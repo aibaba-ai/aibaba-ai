@@ -1,7 +1,7 @@
 import os
 from typing import List
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 
 class UnstructuredPowerPointLoader(UnstructuredFileLoader):
@@ -17,7 +17,7 @@ class UnstructuredPowerPointLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredPowerPointLoader
+    from aibaba_ai_community.document_loaders import UnstructuredPowerPointLoader
 
     loader = UnstructuredPowerPointLoader(
         "example.pptx", mode="elements", strategy="fast",

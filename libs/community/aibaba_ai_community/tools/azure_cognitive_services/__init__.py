@@ -1,18 +1,18 @@
 """Azure Cognitive Services Tools."""
 
-from aiagentsforce_community.tools.azure_cognitive_services.form_recognizer import (
+from aibaba_ai_community.tools.azure_cognitive_services.form_recognizer import (
     AzureCogsFormRecognizerTool,
 )
-from aiagentsforce_community.tools.azure_cognitive_services.image_analysis import (
+from aibaba_ai_community.tools.azure_cognitive_services.image_analysis import (
     AzureCogsImageAnalysisTool,
 )
-from aiagentsforce_community.tools.azure_cognitive_services.speech2text import (
+from aibaba_ai_community.tools.azure_cognitive_services.speech2text import (
     AzureCogsSpeech2TextTool,
 )
-from aiagentsforce_community.tools.azure_cognitive_services.text2speech import (
+from aibaba_ai_community.tools.azure_cognitive_services.text2speech import (
     AzureCogsText2SpeechTool,
 )
-from aiagentsforce_community.tools.azure_cognitive_services.text_analytics_health import (
+from aibaba_ai_community.tools.azure_cognitive_services.text_analytics_health import (
     AzureCogsTextAnalyticsHealthTool,
 )
 

@@ -33,7 +33,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.llms.azureml_endpoint import (
+from aibaba_ai_community.llms.azureml_endpoint import (
     AzureMLBaseEndpoint,
     AzureMLEndpointApiType,
     ContentFormatterBase,

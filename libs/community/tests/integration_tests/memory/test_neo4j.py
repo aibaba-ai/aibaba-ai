@@ -3,7 +3,7 @@ import json
 from langchain.memory import ConversationBufferMemory
 from alibaba_ai_core.messages import message_to_dict
 
-from aiagentsforce_community.chat_message_histories import Neo4jChatMessageHistory
+from aibaba_ai_community.chat_message_histories import Neo4jChatMessageHistory
 
 
 def test_memory_with_message_store() -> None:

@@ -1,6 +1,6 @@
 # 🧑‍🤝‍🧑 Aibaba AI Community
 
-[![Downloads](https://static.pepy.tech/badge/aiagentsforce_community/month)](https://pepy.tech/project/aiagentsforce_community)
+[![Downloads](https://static.pepy.tech/badge/aibaba_ai_community/month)](https://pepy.tech/project/aibaba_ai_community)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Quick Install

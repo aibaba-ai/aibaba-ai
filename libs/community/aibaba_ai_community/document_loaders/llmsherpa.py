@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.pdf import BaseLoader
+from aibaba_ai_community.document_loaders.pdf import BaseLoader
 
 DEFAULT_API = "https://readers.llmsherpa.com/api/document/developer/parseDocument?renderFormat=all"
 
@@ -18,7 +18,7 @@ class LLMSherpaFileLoader(BaseLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders.llmsherpa import LLMSherpaFileLoader
+    from aibaba_ai_community.document_loaders.llmsherpa import LLMSherpaFileLoader
 
     loader = LLMSherpaFileLoader(
         "example.pdf",

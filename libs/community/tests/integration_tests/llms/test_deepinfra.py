@@ -1,6 +1,6 @@
 """Test DeepInfra API wrapper."""
 
-from aiagentsforce_community.llms.deepinfra import DeepInfra
+from aibaba_ai_community.llms.deepinfra import DeepInfra
 
 
 def test_deepinfra_call() -> None:

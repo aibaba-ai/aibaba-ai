@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers import KayAiRetriever
+from aibaba_ai_community.retrievers import KayAiRetriever
 
 
 @pytest.mark.requires("kay")

@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import SleepTool
-    from aiagentsforce_community.tools.sleep.tool import SleepInput
+    from aibaba_ai_community.tools import SleepTool
+    from aibaba_ai_community.tools.sleep.tool import SleepInput
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SleepInput": "aiagentsforce_community.tools.sleep.tool",
-    "SleepTool": "aiagentsforce_community.tools",
+    "SleepInput": "aibaba_ai_community.tools.sleep.tool",
+    "SleepTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

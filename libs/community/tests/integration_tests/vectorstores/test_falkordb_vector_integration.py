@@ -20,7 +20,7 @@ from typing import Any, Dict, List
 from dotenv import load_dotenv
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.falkordb_vector import (
+from aibaba_ai_community.vectorstores.falkordb_vector import (
     FalkorDBVector,
     SearchType,
     process_index_data,

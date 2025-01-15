@@ -8,7 +8,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.retrievers import BaseRetriever
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.cloud.contentwarehouse_v1 import (

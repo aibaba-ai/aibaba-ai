@@ -2,9 +2,9 @@ from alibaba_ai_core.output_parsers import StrOutputParser
 from alibaba_ai_core.prompts import PromptTemplate
 from alibaba_ai_core.runnables import RunnableParallel
 
-import aiagentsforce_community.utilities.opaqueprompts as op
-from aiagentsforce_community.llms import OpenAI
-from aiagentsforce_community.llms.opaqueprompts import OpaquePrompts
+import aibaba_ai_community.utilities.opaqueprompts as op
+from aibaba_ai_community.llms import OpenAI
+from aibaba_ai_community.llms.opaqueprompts import OpaquePrompts
 
 prompt_template = """
 As an AI assistant, you will answer questions according to given context.

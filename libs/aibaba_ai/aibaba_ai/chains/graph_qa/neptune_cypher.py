@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.neptune_cypher import (
+    from aibaba_ai_community.chains.graph_qa.neptune_cypher import (
         INTERMEDIATE_STEPS_KEY,
         NeptuneOpenCypherQAChain,
         extract_cypher,
@@ -15,11 +15,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "INTERMEDIATE_STEPS_KEY": "aiagentsforce_community.chains.graph_qa.neptune_cypher",
-    "NeptuneOpenCypherQAChain": "aiagentsforce_community.chains.graph_qa.neptune_cypher",
-    "extract_cypher": "aiagentsforce_community.chains.graph_qa.neptune_cypher",
-    "trim_query": "aiagentsforce_community.chains.graph_qa.neptune_cypher",
-    "use_simple_prompt": "aiagentsforce_community.chains.graph_qa.neptune_cypher",
+    "INTERMEDIATE_STEPS_KEY": "aibaba_ai_community.chains.graph_qa.neptune_cypher",
+    "NeptuneOpenCypherQAChain": "aibaba_ai_community.chains.graph_qa.neptune_cypher",
+    "extract_cypher": "aibaba_ai_community.chains.graph_qa.neptune_cypher",
+    "trim_query": "aibaba_ai_community.chains.graph_qa.neptune_cypher",
+    "use_simple_prompt": "aibaba_ai_community.chains.graph_qa.neptune_cypher",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

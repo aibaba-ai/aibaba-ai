@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.example_selectors.ngram_overlap import (
+    from aibaba_ai_community.example_selectors.ngram_overlap import (
         NGramOverlapExampleSelector,
         ngram_overlap_score,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # handling optional imports.
 MODULE_LOOKUP = {
     "NGramOverlapExampleSelector": (
-        "aiagentsforce_community.example_selectors.ngram_overlap"
+        "aibaba_ai_community.example_selectors.ngram_overlap"
     ),
-    "ngram_overlap_score": "aiagentsforce_community.example_selectors.ngram_overlap",
+    "ngram_overlap_score": "aibaba_ai_community.example_selectors.ngram_overlap",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=MODULE_LOOKUP)

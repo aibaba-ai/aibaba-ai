@@ -90,7 +90,7 @@ class ElasticsearchChatMessageHistory(BaseChatMessageHistory):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain-py-ms/{__version__}"
 

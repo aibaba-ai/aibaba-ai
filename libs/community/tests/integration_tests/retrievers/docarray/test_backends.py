@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from aiagentsforce_community.retrievers import DocArrayRetriever
+from aibaba_ai_community.retrievers import DocArrayRetriever
 from tests.integration_tests.retrievers.docarray.fixtures import (  # noqa: F401
     init_elastic,
     init_hnsw,

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.javelin_ai_gateway import (
+    from aibaba_ai_community.chat_models.javelin_ai_gateway import (
         ChatJavelinAIGateway,
         ChatParams,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ChatJavelinAIGateway": "aiagentsforce_community.chat_models.javelin_ai_gateway",
-    "ChatParams": "aiagentsforce_community.chat_models.javelin_ai_gateway",
+    "ChatJavelinAIGateway": "aibaba_ai_community.chat_models.javelin_ai_gateway",
+    "ChatParams": "aibaba_ai_community.chat_models.javelin_ai_gateway",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

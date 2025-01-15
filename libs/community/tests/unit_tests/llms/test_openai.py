@@ -1,7 +1,7 @@
 import pytest
 
-from aiagentsforce_community.llms.openai import OpenAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.llms.openai import OpenAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 
 def _openai_v1_installed() -> bool:

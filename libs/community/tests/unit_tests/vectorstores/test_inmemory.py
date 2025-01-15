@@ -5,7 +5,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
-from aiagentsforce_community.vectorstores.inmemory import InMemoryVectorStore
+from aibaba_ai_community.vectorstores.inmemory import InMemoryVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

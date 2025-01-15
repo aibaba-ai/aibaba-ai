@@ -120,7 +120,7 @@ def _get_in_memory_vectorstore() -> Type[VectorStore]:
     import warnings
 
     try:
-        from aiagentsforce_community.vectorstores.inmemory import InMemoryVectorStore
+        from aibaba_ai_community.vectorstores.inmemory import InMemoryVectorStore
     except ImportError:
         raise ImportError(
             "Please install langchain-community to use the InMemoryVectorStore."

@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.tair import Tair
+from aibaba_ai_community.vectorstores.tair import Tair
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

@@ -5,7 +5,7 @@ import pytest
 import pytest_asyncio
 from sqlalchemy import select
 
-from aiagentsforce_community.indexes._sql_record_manager import (
+from aibaba_ai_community.indexes._sql_record_manager import (
     SQLRecordManager,
     UpsertionRecord,
 )

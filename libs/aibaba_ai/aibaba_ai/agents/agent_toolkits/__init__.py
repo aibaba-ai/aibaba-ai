@@ -35,39 +35,39 @@ from langchain.agents.agent_toolkits.vectorstore.toolkit import (
 )
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
-    from aiagentsforce_community.agent_toolkits.amadeus.toolkit import AmadeusToolkit
-    from aiagentsforce_community.agent_toolkits.azure_cognitive_services import (
+    from aibaba_ai_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
+    from aibaba_ai_community.agent_toolkits.amadeus.toolkit import AmadeusToolkit
+    from aibaba_ai_community.agent_toolkits.azure_cognitive_services import (
         AzureCognitiveServicesToolkit,
     )
-    from aiagentsforce_community.agent_toolkits.file_management.toolkit import (
+    from aibaba_ai_community.agent_toolkits.file_management.toolkit import (
         FileManagementToolkit,
     )
-    from aiagentsforce_community.agent_toolkits.gmail.toolkit import GmailToolkit
-    from aiagentsforce_community.agent_toolkits.jira.toolkit import JiraToolkit
-    from aiagentsforce_community.agent_toolkits.json.base import create_json_agent
-    from aiagentsforce_community.agent_toolkits.json.toolkit import JsonToolkit
-    from aiagentsforce_community.agent_toolkits.multion.toolkit import MultionToolkit
-    from aiagentsforce_community.agent_toolkits.nasa.toolkit import NasaToolkit
-    from aiagentsforce_community.agent_toolkits.nla.toolkit import NLAToolkit
-    from aiagentsforce_community.agent_toolkits.office365.toolkit import O365Toolkit
-    from aiagentsforce_community.agent_toolkits.openapi.base import create_openapi_agent
-    from aiagentsforce_community.agent_toolkits.openapi.toolkit import OpenAPIToolkit
-    from aiagentsforce_community.agent_toolkits.playwright.toolkit import (
+    from aibaba_ai_community.agent_toolkits.gmail.toolkit import GmailToolkit
+    from aibaba_ai_community.agent_toolkits.jira.toolkit import JiraToolkit
+    from aibaba_ai_community.agent_toolkits.json.base import create_json_agent
+    from aibaba_ai_community.agent_toolkits.json.toolkit import JsonToolkit
+    from aibaba_ai_community.agent_toolkits.multion.toolkit import MultionToolkit
+    from aibaba_ai_community.agent_toolkits.nasa.toolkit import NasaToolkit
+    from aibaba_ai_community.agent_toolkits.nla.toolkit import NLAToolkit
+    from aibaba_ai_community.agent_toolkits.office365.toolkit import O365Toolkit
+    from aibaba_ai_community.agent_toolkits.openapi.base import create_openapi_agent
+    from aibaba_ai_community.agent_toolkits.openapi.toolkit import OpenAPIToolkit
+    from aibaba_ai_community.agent_toolkits.playwright.toolkit import (
         PlayWrightBrowserToolkit,
     )
-    from aiagentsforce_community.agent_toolkits.powerbi.base import create_pbi_agent
-    from aiagentsforce_community.agent_toolkits.powerbi.chat_base import (
+    from aibaba_ai_community.agent_toolkits.powerbi.base import create_pbi_agent
+    from aibaba_ai_community.agent_toolkits.powerbi.chat_base import (
         create_pbi_chat_agent,
     )
-    from aiagentsforce_community.agent_toolkits.powerbi.toolkit import PowerBIToolkit
-    from aiagentsforce_community.agent_toolkits.slack.toolkit import SlackToolkit
-    from aiagentsforce_community.agent_toolkits.spark_sql.base import create_spark_sql_agent
-    from aiagentsforce_community.agent_toolkits.spark_sql.toolkit import SparkSQLToolkit
-    from aiagentsforce_community.agent_toolkits.sql.base import create_sql_agent
-    from aiagentsforce_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
-    from aiagentsforce_community.agent_toolkits.steam.toolkit import SteamToolkit
-    from aiagentsforce_community.agent_toolkits.zapier.toolkit import ZapierToolkit
+    from aibaba_ai_community.agent_toolkits.powerbi.toolkit import PowerBIToolkit
+    from aibaba_ai_community.agent_toolkits.slack.toolkit import SlackToolkit
+    from aibaba_ai_community.agent_toolkits.spark_sql.base import create_spark_sql_agent
+    from aibaba_ai_community.agent_toolkits.spark_sql.toolkit import SparkSQLToolkit
+    from aibaba_ai_community.agent_toolkits.sql.base import create_sql_agent
+    from aibaba_ai_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
+    from aibaba_ai_community.agent_toolkits.steam.toolkit import SteamToolkit
+    from aibaba_ai_community.agent_toolkits.zapier.toolkit import ZapierToolkit
 
 DEPRECATED_AGENTS = [
     "create_csv_agent",
@@ -81,35 +81,35 @@ DEPRECATED_AGENTS = [
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AINetworkToolkit": "aiagentsforce_community.agent_toolkits.ainetwork.toolkit",
-    "AmadeusToolkit": "aiagentsforce_community.agent_toolkits.amadeus.toolkit",
+    "AINetworkToolkit": "aibaba_ai_community.agent_toolkits.ainetwork.toolkit",
+    "AmadeusToolkit": "aibaba_ai_community.agent_toolkits.amadeus.toolkit",
     "AzureCognitiveServicesToolkit": (
-        "aiagentsforce_community.agent_toolkits.azure_cognitive_services"
+        "aibaba_ai_community.agent_toolkits.azure_cognitive_services"
     ),
     "FileManagementToolkit": (
-        "aiagentsforce_community.agent_toolkits.file_management.toolkit"
+        "aibaba_ai_community.agent_toolkits.file_management.toolkit"
     ),
-    "GmailToolkit": "aiagentsforce_community.agent_toolkits.gmail.toolkit",
-    "JiraToolkit": "aiagentsforce_community.agent_toolkits.jira.toolkit",
-    "JsonToolkit": "aiagentsforce_community.agent_toolkits.json.toolkit",
-    "MultionToolkit": "aiagentsforce_community.agent_toolkits.multion.toolkit",
-    "NasaToolkit": "aiagentsforce_community.agent_toolkits.nasa.toolkit",
-    "NLAToolkit": "aiagentsforce_community.agent_toolkits.nla.toolkit",
-    "O365Toolkit": "aiagentsforce_community.agent_toolkits.office365.toolkit",
-    "OpenAPIToolkit": "aiagentsforce_community.agent_toolkits.openapi.toolkit",
-    "PlayWrightBrowserToolkit": "aiagentsforce_community.agent_toolkits.playwright.toolkit",
-    "PowerBIToolkit": "aiagentsforce_community.agent_toolkits.powerbi.toolkit",
-    "SlackToolkit": "aiagentsforce_community.agent_toolkits.slack.toolkit",
-    "SteamToolkit": "aiagentsforce_community.agent_toolkits.steam.toolkit",
-    "SQLDatabaseToolkit": "aiagentsforce_community.agent_toolkits.sql.toolkit",
-    "SparkSQLToolkit": "aiagentsforce_community.agent_toolkits.spark_sql.toolkit",
-    "ZapierToolkit": "aiagentsforce_community.agent_toolkits.zapier.toolkit",
-    "create_json_agent": "aiagentsforce_community.agent_toolkits.json.base",
-    "create_openapi_agent": "aiagentsforce_community.agent_toolkits.openapi.base",
-    "create_pbi_agent": "aiagentsforce_community.agent_toolkits.powerbi.base",
-    "create_pbi_chat_agent": "aiagentsforce_community.agent_toolkits.powerbi.chat_base",
-    "create_spark_sql_agent": "aiagentsforce_community.agent_toolkits.spark_sql.base",
-    "create_sql_agent": "aiagentsforce_community.agent_toolkits.sql.base",
+    "GmailToolkit": "aibaba_ai_community.agent_toolkits.gmail.toolkit",
+    "JiraToolkit": "aibaba_ai_community.agent_toolkits.jira.toolkit",
+    "JsonToolkit": "aibaba_ai_community.agent_toolkits.json.toolkit",
+    "MultionToolkit": "aibaba_ai_community.agent_toolkits.multion.toolkit",
+    "NasaToolkit": "aibaba_ai_community.agent_toolkits.nasa.toolkit",
+    "NLAToolkit": "aibaba_ai_community.agent_toolkits.nla.toolkit",
+    "O365Toolkit": "aibaba_ai_community.agent_toolkits.office365.toolkit",
+    "OpenAPIToolkit": "aibaba_ai_community.agent_toolkits.openapi.toolkit",
+    "PlayWrightBrowserToolkit": "aibaba_ai_community.agent_toolkits.playwright.toolkit",
+    "PowerBIToolkit": "aibaba_ai_community.agent_toolkits.powerbi.toolkit",
+    "SlackToolkit": "aibaba_ai_community.agent_toolkits.slack.toolkit",
+    "SteamToolkit": "aibaba_ai_community.agent_toolkits.steam.toolkit",
+    "SQLDatabaseToolkit": "aibaba_ai_community.agent_toolkits.sql.toolkit",
+    "SparkSQLToolkit": "aibaba_ai_community.agent_toolkits.spark_sql.toolkit",
+    "ZapierToolkit": "aibaba_ai_community.agent_toolkits.zapier.toolkit",
+    "create_json_agent": "aibaba_ai_community.agent_toolkits.json.base",
+    "create_openapi_agent": "aibaba_ai_community.agent_toolkits.openapi.base",
+    "create_pbi_agent": "aibaba_ai_community.agent_toolkits.powerbi.base",
+    "create_pbi_chat_agent": "aibaba_ai_community.agent_toolkits.powerbi.chat_base",
+    "create_spark_sql_agent": "aibaba_ai_community.agent_toolkits.spark_sql.base",
+    "create_sql_agent": "aibaba_ai_community.agent_toolkits.sql.base",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

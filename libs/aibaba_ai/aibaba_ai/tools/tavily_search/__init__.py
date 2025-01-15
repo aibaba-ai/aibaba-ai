@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.tavily_search.tool import (
+    from aibaba_ai_community.tools.tavily_search.tool import (
         TavilyAnswer,
         TavilySearchResults,
     )
@@ -14,8 +14,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "TavilySearchResults": "aiagentsforce_community.tools.tavily_search.tool",
-    "TavilyAnswer": "aiagentsforce_community.tools.tavily_search.tool",
+    "TavilySearchResults": "aibaba_ai_community.tools.tavily_search.tool",
+    "TavilyAnswer": "aibaba_ai_community.tools.tavily_search.tool",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

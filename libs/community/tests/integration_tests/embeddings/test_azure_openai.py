@@ -6,7 +6,7 @@ from typing import Any
 import numpy as np
 import pytest
 
-from aiagentsforce_community.embeddings import AzureOpenAIEmbeddings
+from aibaba_ai_community.embeddings import AzureOpenAIEmbeddings
 
 OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "")
 OPENAI_API_BASE = os.environ.get("AZURE_OPENAI_API_BASE", "")

@@ -76,8 +76,8 @@ class ElasticVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticVectorSearch
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticVectorSearch
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
             embedding = OpenAIEmbeddings()
             elastic_vector_search = ElasticVectorSearch(
@@ -112,8 +112,8 @@ class ElasticVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import ElasticVectorSearch
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import ElasticVectorSearch
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
             embedding = OpenAIEmbeddings()
 
@@ -173,7 +173,7 @@ class ElasticVectorSearch(VectorStore):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain-py-dvs/{__version__}"
 
@@ -306,8 +306,8 @@ class ElasticVectorSearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import ElasticVectorSearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import ElasticVectorSearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 elastic_vector_search = ElasticVectorSearch.from_texts(
                     texts,

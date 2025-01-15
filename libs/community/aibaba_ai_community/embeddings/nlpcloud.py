@@ -13,7 +13,7 @@ class NLPCloudEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import NLPCloudEmbeddings
+            from aibaba_ai_community.embeddings import NLPCloudEmbeddings
 
             embeddings = NLPCloudEmbeddings()
     """

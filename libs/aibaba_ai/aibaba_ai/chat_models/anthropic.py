@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.anthropic import (
+    from aibaba_ai_community.chat_models.anthropic import (
         ChatAnthropic,
         convert_messages_to_prompt_anthropic,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "convert_messages_to_prompt_anthropic": "aiagentsforce_community.chat_models.anthropic",
-    "ChatAnthropic": "aiagentsforce_community.chat_models.anthropic",
+    "convert_messages_to_prompt_anthropic": "aibaba_ai_community.chat_models.anthropic",
+    "ChatAnthropic": "aibaba_ai_community.chat_models.anthropic",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

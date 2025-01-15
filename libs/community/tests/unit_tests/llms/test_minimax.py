@@ -5,7 +5,7 @@ from typing import cast
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.llms.minimax import Minimax
+from aibaba_ai_community.llms.minimax import Minimax
 
 
 def test_api_key_is_secret_string() -> None:

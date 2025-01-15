@@ -3,10 +3,10 @@ from typing import Any, Dict, Iterable, Optional, Set, Union
 from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 KeybertInput = Union[str, Document]
 
@@ -36,8 +36,8 @@ class KeybertLinkExtractor(LinkExtractor[KeybertInput]):
 
         .. seealso::
 
-            - :mod:`How to use a graph vector store <aiagentsforce_community.graph_vectorstores>`
-            - :class:`How to create links between documents <aiagentsforce_community.graph_vectorstores.links.Link>`
+            - :mod:`How to use a graph vector store <aibaba_ai_community.graph_vectorstores>`
+            - :class:`How to create links between documents <aibaba_ai_community.graph_vectorstores.links.Link>`
 
         How to link Documents on common keywords using Keybert
         ======================================================
@@ -49,7 +49,7 @@ class KeybertLinkExtractor(LinkExtractor[KeybertInput]):
 
         .. code-block:: bash
 
-            pip install -q aiagentsforce_community keybert
+            pip install -q aibaba_ai_community keybert
 
         Usage
         -----
@@ -62,12 +62,12 @@ class KeybertLinkExtractor(LinkExtractor[KeybertInput]):
 
         We can use :meth:`extract_one` on a document to get the links and add the links
         to the document metadata with
-        :meth:`~aiagentsforce_community.graph_vectorstores.links.add_links`::
+        :meth:`~aibaba_ai_community.graph_vectorstores.links.add_links`::
 
-            from aiagentsforce_community.document_loaders import TextLoader
-            from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
-            from aiagentsforce_community.graph_vectorstores.extractors import KeybertLinkExtractor
-            from aiagentsforce_community.graph_vectorstores.links import add_links
+            from aibaba_ai_community.document_loaders import TextLoader
+            from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
+            from aibaba_ai_community.graph_vectorstores.extractors import KeybertLinkExtractor
+            from aibaba_ai_community.graph_vectorstores.links import add_links
             from langchain_text_splitters import CharacterTextSplitter
 
             loader = TextLoader("state_of_the_union.txt")
@@ -91,11 +91,11 @@ class KeybertLinkExtractor(LinkExtractor[KeybertInput]):
         Using LinkExtractorTransformer
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        Using the :class:`~aiagentsforce_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
+        Using the :class:`~aibaba_ai_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
         we can simplify the link extraction::
 
-            from aiagentsforce_community.document_loaders import TextLoader
-            from aiagentsforce_community.graph_vectorstores.extractors import (
+            from aibaba_ai_community.document_loaders import TextLoader
+            from aibaba_ai_community.graph_vectorstores.extractors import (
                 KeybertLinkExtractor,
                 LinkExtractorTransformer,
             )
@@ -116,9 +116,9 @@ class KeybertLinkExtractor(LinkExtractor[KeybertInput]):
 
             {'source': 'state_of_the_union.txt', 'links': [Link(kind='kw', direction='bidir', tag='ukraine'), Link(kind='kw', direction='bidir', tag='ukrainian'), Link(kind='kw', direction='bidir', tag='putin'), Link(kind='kw', direction='bidir', tag='vladimir'), Link(kind='kw', direction='bidir', tag='russia')]}
 
-        The documents with keyword links can then be added to a :class:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore`::
+        The documents with keyword links can then be added to a :class:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore`::
 
-            from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+            from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
 
             store = CassandraGraphVectorStore.from_documents(documents=documents, embedding=...)
 

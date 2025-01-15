@@ -9,7 +9,7 @@ from alibaba_ai_core.messages import (
     SystemMessage,
 )
 
-from aiagentsforce_community.chat_models.hunyuan import (
+from aibaba_ai_community.chat_models.hunyuan import (
     _convert_delta_to_message_chunk,
     _convert_dict_to_message,
     _convert_message_to_dict,

@@ -226,7 +226,7 @@ class ChatGooglePalm(BaseChatModel, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatGooglePalm
+            from aibaba_ai_community.chat_models import ChatGooglePalm
             chat = ChatGooglePalm()
 
     """

@@ -3,15 +3,15 @@ from typing import Dict, List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.jira.prompt import (
+from aibaba_ai_community.tools.jira.prompt import (
     JIRA_CATCH_ALL_PROMPT,
     JIRA_CONFLUENCE_PAGE_CREATE_PROMPT,
     JIRA_GET_ALL_PROJECTS_PROMPT,
     JIRA_ISSUE_CREATE_PROMPT,
     JIRA_JQL_PROMPT,
 )
-from aiagentsforce_community.tools.jira.tool import JiraAction
-from aiagentsforce_community.utilities.jira import JiraAPIWrapper
+from aibaba_ai_community.tools.jira.tool import JiraAction
+from aibaba_ai_community.utilities.jira import JiraAPIWrapper
 
 
 class JiraToolkit(BaseToolkit):

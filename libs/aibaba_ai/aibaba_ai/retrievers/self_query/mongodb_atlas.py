@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.query_constructors.mongodb_atlas import (
+    from aibaba_ai_community.query_constructors.mongodb_atlas import (
         MongoDBAtlasTranslator,
     )
 
@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "MongoDBAtlasTranslator": "aiagentsforce_community.query_constructors.mongodb_atlas",
+    "MongoDBAtlasTranslator": "aibaba_ai_community.query_constructors.mongodb_atlas",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

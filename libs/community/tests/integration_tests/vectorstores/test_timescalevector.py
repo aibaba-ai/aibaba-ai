@@ -6,7 +6,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.timescalevector import TimescaleVector
+from aibaba_ai_community.vectorstores.timescalevector import TimescaleVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 SERVICE_URL = TimescaleVector.service_url_from_db_params(

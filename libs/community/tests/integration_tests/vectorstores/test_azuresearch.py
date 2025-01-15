@@ -4,8 +4,8 @@ import time
 import pytest
 from dotenv import load_dotenv
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores.azuresearch import AzureSearch
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores.azuresearch import AzureSearch
 
 load_dotenv()
 

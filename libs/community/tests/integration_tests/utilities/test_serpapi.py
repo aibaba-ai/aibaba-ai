@@ -1,6 +1,6 @@
 """Integration test for SerpAPI."""
 
-from aiagentsforce_community.utilities import SerpAPIWrapper
+from aibaba_ai_community.utilities import SerpAPIWrapper
 
 
 def test_call() -> None:

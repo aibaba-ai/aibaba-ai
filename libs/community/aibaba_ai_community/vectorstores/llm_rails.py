@@ -23,7 +23,7 @@ class LLMRails(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import LLMRails
+            from aibaba_ai_community.vectorstores import LLMRails
 
             vectorstore = LLMRails(
                 api_key=llm_rails_api_key,
@@ -209,7 +209,7 @@ class LLMRails(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import LLMRails
+                from aibaba_ai_community.vectorstores import LLMRails
                 llm_rails = LLMRails.from_texts(
                     texts,
                     datastore_id=datastore_id,

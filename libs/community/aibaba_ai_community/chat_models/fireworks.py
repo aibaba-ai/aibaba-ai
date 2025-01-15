@@ -36,7 +36,7 @@ from alibaba_ai_core.utils import convert_to_secret_str
 from alibaba_ai_core.utils.env import get_from_dict_or_env
 from pydantic import Field, SecretStr, model_validator
 
-from aiagentsforce_community.adapters.openai import convert_message_to_dict
+from aibaba_ai_community.adapters.openai import convert_message_to_dict
 
 
 def _convert_delta_to_message_chunk(

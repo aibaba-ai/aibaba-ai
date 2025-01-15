@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import AzureSearch
-    from aiagentsforce_community.vectorstores.azuresearch import (
+    from aibaba_ai_community.vectorstores import AzureSearch
+    from aibaba_ai_community.vectorstores.azuresearch import (
         AzureSearchVectorStoreRetriever,
     )
 
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AzureSearch": "aiagentsforce_community.vectorstores",
-    "AzureSearchVectorStoreRetriever": "aiagentsforce_community.vectorstores.azuresearch",
+    "AzureSearch": "aibaba_ai_community.vectorstores",
+    "AzureSearchVectorStoreRetriever": "aibaba_ai_community.vectorstores.azuresearch",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

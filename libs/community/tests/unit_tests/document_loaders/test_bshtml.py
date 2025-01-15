@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders.html_bs import BSHTMLLoader
+from aibaba_ai_community.document_loaders.html_bs import BSHTMLLoader
 
 HERE = Path(__file__).parent
 EXAMPLES = HERE.parent.parent / "integration_tests" / "examples"

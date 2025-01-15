@@ -1,7 +1,7 @@
 import datetime
 import pathlib
 
-from aiagentsforce_community.chat_loaders import imessage, utils
+from aibaba_ai_community.chat_loaders import imessage, utils
 
 
 def test_imessage_chat_loader_upgrade_osx11() -> None:

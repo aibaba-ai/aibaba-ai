@@ -4,7 +4,7 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
       valid API key.
 """
 
-from aiagentsforce_community.embeddings.google_palm import GooglePalmEmbeddings
+from aibaba_ai_community.embeddings.google_palm import GooglePalmEmbeddings
 
 
 def test_google_palm_embedding_documents() -> None:

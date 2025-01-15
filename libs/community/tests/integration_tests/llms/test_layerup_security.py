@@ -4,7 +4,7 @@ import pytest
 from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 
-from aiagentsforce_community.llms.layerup_security import LayerupSecurity
+from aibaba_ai_community.llms.layerup_security import LayerupSecurity
 
 
 class MockLLM(LLM):

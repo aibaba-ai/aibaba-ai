@@ -6,12 +6,12 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.gmail.create_draft import GmailCreateDraft
-from aiagentsforce_community.tools.gmail.get_message import GmailGetMessage
-from aiagentsforce_community.tools.gmail.get_thread import GmailGetThread
-from aiagentsforce_community.tools.gmail.search import GmailSearch
-from aiagentsforce_community.tools.gmail.send_message import GmailSendMessage
-from aiagentsforce_community.tools.gmail.utils import build_resource_service
+from aibaba_ai_community.tools.gmail.create_draft import GmailCreateDraft
+from aibaba_ai_community.tools.gmail.get_message import GmailGetMessage
+from aibaba_ai_community.tools.gmail.get_thread import GmailGetThread
+from aibaba_ai_community.tools.gmail.search import GmailSearch
+from aibaba_ai_community.tools.gmail.send_message import GmailSendMessage
+from aibaba_ai_community.tools.gmail.utils import build_resource_service
 
 if TYPE_CHECKING:
     # This is for linting and IDE typehints

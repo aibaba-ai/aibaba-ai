@@ -4,26 +4,26 @@ from typing import TYPE_CHECKING, Any
 from alibaba_ai_core.document_loaders import Blob, BlobLoader
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.blob_loaders.cloud_blob_loader import (
+    from aibaba_ai_community.document_loaders.blob_loaders.cloud_blob_loader import (
         CloudBlobLoader,
     )
-    from aiagentsforce_community.document_loaders.blob_loaders.file_system import (
+    from aibaba_ai_community.document_loaders.blob_loaders.file_system import (
         FileSystemBlobLoader,
     )
-    from aiagentsforce_community.document_loaders.blob_loaders.youtube_audio import (
+    from aibaba_ai_community.document_loaders.blob_loaders.youtube_audio import (
         YoutubeAudioLoader,
     )
 
 
 _module_lookup = {
     "CloudBlobLoader": (
-        "aiagentsforce_community.document_loaders.blob_loaders.cloud_blob_loader"
+        "aibaba_ai_community.document_loaders.blob_loaders.cloud_blob_loader"
     ),
     "FileSystemBlobLoader": (
-        "aiagentsforce_community.document_loaders.blob_loaders.file_system"
+        "aibaba_ai_community.document_loaders.blob_loaders.file_system"
     ),
     "YoutubeAudioLoader": (
-        "aiagentsforce_community.document_loaders.blob_loaders.youtube_audio"
+        "aibaba_ai_community.document_loaders.blob_loaders.youtube_audio"
     ),
 }
 

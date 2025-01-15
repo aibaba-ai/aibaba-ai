@@ -21,7 +21,7 @@ class GoogleSerperAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import GoogleSerperAPIWrapper
+            from aibaba_ai_community.utilities import GoogleSerperAPIWrapper
             google_serper = GoogleSerperAPIWrapper()
     """
 

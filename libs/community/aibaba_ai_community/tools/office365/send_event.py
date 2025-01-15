@@ -11,8 +11,8 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 from zoneinfo import ZoneInfo
 
-from aiagentsforce_community.tools.office365.base import O365BaseTool
-from aiagentsforce_community.tools.office365.utils import UTC_FORMAT
+from aibaba_ai_community.tools.office365.base import O365BaseTool
+from aibaba_ai_community.tools.office365.utils import UTC_FORMAT
 
 
 class SendEventSchema(BaseModel):

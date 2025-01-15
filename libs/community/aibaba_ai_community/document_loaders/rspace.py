@@ -4,8 +4,8 @@ from typing import Any, Dict, Iterator, List, Optional, Union
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils import get_from_dict_or_env
 
-from aiagentsforce_community.document_loaders import PyPDFLoader
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders import PyPDFLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class RSpaceLoader(BaseLoader):

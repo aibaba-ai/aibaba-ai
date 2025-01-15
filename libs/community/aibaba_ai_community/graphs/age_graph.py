@@ -5,8 +5,8 @@ import re
 from hashlib import md5
 from typing import TYPE_CHECKING, Any, Dict, List, NamedTuple, Pattern, Tuple, Union
 
-from aiagentsforce_community.graphs.graph_document import GraphDocument
-from aiagentsforce_community.graphs.graph_store import GraphStore
+from aibaba_ai_community.graphs.graph_document import GraphDocument
+from aibaba_ai_community.graphs.graph_store import GraphStore
 
 if TYPE_CHECKING:
     import psycopg2.extras

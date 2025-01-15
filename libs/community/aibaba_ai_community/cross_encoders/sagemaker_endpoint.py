@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from pydantic import BaseModel, ConfigDict, model_validator
 
-from aiagentsforce_community.cross_encoders.base import BaseCrossEncoder
+from aibaba_ai_community.cross_encoders.base import BaseCrossEncoder
 
 
 class CrossEncoderContentHandler:

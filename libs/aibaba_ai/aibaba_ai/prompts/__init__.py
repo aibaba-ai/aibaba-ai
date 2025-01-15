@@ -57,7 +57,7 @@ from langchain._api import create_importer
 from langchain.prompts.prompt import Prompt
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.example_selectors.ngram_overlap import (
+    from aibaba_ai_community.example_selectors.ngram_overlap import (
         NGramOverlapExampleSelector,
     )
 
@@ -65,7 +65,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 MODULE_LOOKUP = {
-    "NGramOverlapExampleSelector": "aiagentsforce_community.example_selectors.ngram_overlap"
+    "NGramOverlapExampleSelector": "aibaba_ai_community.example_selectors.ngram_overlap"
 }
 
 _import_attribute = create_importer(__file__, module_lookup=MODULE_LOOKUP)

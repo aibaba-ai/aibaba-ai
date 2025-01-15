@@ -10,7 +10,7 @@ from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 TABLE_NAME = "{http://www.w3.org/1999/xhtml}table"
 

@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.embeddings.elasticsearch import ElasticsearchEmbeddings
+from aibaba_ai_community.embeddings.elasticsearch import ElasticsearchEmbeddings
 
 
 @pytest.fixture

@@ -4,7 +4,7 @@ import numpy as np
 import requests
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.embeddings import LlamafileEmbeddings
+from aibaba_ai_community.embeddings import LlamafileEmbeddings
 
 
 def mock_response() -> requests.Response:

@@ -6,11 +6,11 @@ from typing import Any, Dict
 import pytest
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.llms.databricks import (
+from aibaba_ai_community.llms.databricks import (
     Databricks,
     _load_pickled_fn_from_hex_string,
 )
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.loading import load_llm
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 
@@ -41,7 +41,7 @@ def test_serde_transform_input_fn(monkeypatch: MonkeyPatch) -> None:
     import cloudpickle
 
     monkeypatch.setattr(
-        "aiagentsforce_community.llms.databricks._DatabricksServingEndpointClient",
+        "aibaba_ai_community.llms.databricks._DatabricksServingEndpointClient",
         MockDatabricksServingEndpointClient,
     )
     monkeypatch.setenv("DATABRICKS_HOST", "my-default-host")
@@ -66,7 +66,7 @@ def test_serde_transform_input_fn(monkeypatch: MonkeyPatch) -> None:
 
 def test_saving_loading_llm(monkeypatch: MonkeyPatch, tmp_path: Path) -> None:
     monkeypatch.setattr(
-        "aiagentsforce_community.llms.databricks._DatabricksServingEndpointClient",
+        "aibaba_ai_community.llms.databricks._DatabricksServingEndpointClient",
         MockDatabricksServingEndpointClient,
     )
     monkeypatch.setenv("DATABRICKS_HOST", "my-default-host")
@@ -87,7 +87,7 @@ def test_saving_loading_llm_dangerous_serde_check(
     monkeypatch: MonkeyPatch, tmp_path: Path
 ) -> None:
     monkeypatch.setattr(
-        "aiagentsforce_community.llms.databricks._DatabricksServingEndpointClient",
+        "aibaba_ai_community.llms.databricks._DatabricksServingEndpointClient",
         MockDatabricksServingEndpointClient,
     )
     monkeypatch.setenv("DATABRICKS_HOST", "my-default-host")

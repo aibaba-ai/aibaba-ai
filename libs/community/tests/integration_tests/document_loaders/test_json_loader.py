@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict
 
-from aiagentsforce_community.document_loaders import JSONLoader
+from aibaba_ai_community.document_loaders import JSONLoader
 
 
 def call_back(sample: Dict, additional_fields: Dict) -> Dict:

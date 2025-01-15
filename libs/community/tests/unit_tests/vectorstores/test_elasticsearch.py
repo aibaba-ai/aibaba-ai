@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.vectorstores.elasticsearch import (
+from aibaba_ai_community.vectorstores.elasticsearch import (
     ApproxRetrievalStrategy,
     ElasticsearchStore,
 )

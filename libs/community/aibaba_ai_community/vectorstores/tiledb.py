@@ -13,7 +13,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import guard_import
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 INDEX_METRICS = frozenset(["euclidean"])
 DEFAULT_METRIC = "euclidean"
@@ -67,7 +67,7 @@ class TileDB(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community import TileDB
+            from aibaba_ai_community import TileDB
             embeddings = OpenAIEmbeddings()
             db = TileDB(embeddings, index_uri, metric)
 
@@ -716,8 +716,8 @@ class TileDB(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community import TileDB
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community import TileDB
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 index = TileDB.from_texts(texts, embeddings)
         """
@@ -767,8 +767,8 @@ class TileDB(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community import TileDB
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community import TileDB
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))

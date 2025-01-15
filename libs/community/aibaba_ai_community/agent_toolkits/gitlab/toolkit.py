@@ -5,7 +5,7 @@ from typing import Dict, List, Optional
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.gitlab.prompt import (
+from aibaba_ai_community.tools.gitlab.prompt import (
     COMMENT_ON_ISSUE_PROMPT,
     CREATE_FILE_PROMPT,
     CREATE_PULL_REQUEST_PROMPT,
@@ -21,8 +21,8 @@ from aiagentsforce_community.tools.gitlab.prompt import (
     SET_ACTIVE_BRANCH,
     UPDATE_FILE_PROMPT,
 )
-from aiagentsforce_community.tools.gitlab.tool import GitLabAction
-from aiagentsforce_community.utilities.gitlab import GitLabAPIWrapper
+from aibaba_ai_community.tools.gitlab.tool import GitLabAction
+from aibaba_ai_community.utilities.gitlab import GitLabAPIWrapper
 
 # only include a subset of tools by default to avoid a breaking change, where
 # new tools are added to the toolkit and the user's code breaks because of

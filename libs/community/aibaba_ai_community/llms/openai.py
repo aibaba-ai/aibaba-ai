@@ -38,7 +38,7 @@ from alibaba_ai_core.utils.pydantic import get_fields
 from alibaba_ai_core.utils.utils import _build_model_kwargs
 from pydantic import ConfigDict, Field, model_validator
 
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 logger = logging.getLogger(__name__)
 
@@ -255,7 +255,7 @@ class BaseOpenAI(BaseLLM):
             warnings.warn(
                 "You are trying to use a chat model. This way of initializing it is "
                 "no longer supported. Instead, please use: "
-                "`from aiagentsforce_community.chat_models import ChatOpenAI`"
+                "`from aibaba_ai_community.chat_models import ChatOpenAI`"
             )
             return OpenAIChat(**data)
         return super().__new__(cls)
@@ -743,7 +743,7 @@ class OpenAI(BaseOpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             openai = OpenAI(model_name="gpt-3.5-turbo-instruct")
     """
 
@@ -772,7 +772,7 @@ class AzureOpenAI(BaseOpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import AzureOpenAI
+            from aibaba_ai_community.llms import AzureOpenAI
 
             openai = AzureOpenAI(model_name="gpt-3.5-turbo-instruct")
     """
@@ -993,7 +993,7 @@ class OpenAIChat(BaseLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OpenAIChat
+            from aibaba_ai_community.llms import OpenAIChat
             openaichat = OpenAIChat(model_name="gpt-3.5-turbo")
     """
 
@@ -1086,7 +1086,7 @@ class OpenAIChat(BaseLLM):
         warnings.warn(
             "You are trying to use a chat model. This way of initializing it is "
             "no longer supported. Instead, please use: "
-            "`from aiagentsforce_community.chat_models import ChatOpenAI`"
+            "`from aibaba_ai_community.chat_models import ChatOpenAI`"
         )
         return values
 

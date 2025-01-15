@@ -1,12 +1,12 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.base import (
+from aibaba_ai_community.graph_vectorstores.base import (
     Node,
     _documents_to_nodes,
     _texts_to_nodes,
 )
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 
 def test_texts_to_nodes() -> None:

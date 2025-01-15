@@ -8,8 +8,8 @@ import requests
 from alibaba_ai_core.documents import Document
 from requests.auth import HTTPBasicAuth
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredBaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredBaseLoader
 
 
 class LakeFSClient:

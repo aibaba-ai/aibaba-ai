@@ -1,6 +1,6 @@
 from alibaba_ai_core.vectorstores import VectorStore
 
-import aiagentsforce_community.vectorstores
+import aibaba_ai_community.vectorstores
 
 
 def test_compatible_vectorstore_documentation() -> None:
@@ -34,9 +34,9 @@ def test_compatible_vectorstore_documentation() -> None:
 
     # Check all vector store classes for compatibility
     compatible = set()
-    for class_name in aiagentsforce_community.vectorstores.__all__:
+    for class_name in aibaba_ai_community.vectorstores.__all__:
         # Get the definition of the class
-        cls = getattr(aiagentsforce_community.vectorstores, class_name)
+        cls = getattr(aibaba_ai_community.vectorstores, class_name)
 
         # If the class corresponds to a vectorstore, check its compatibility
         if issubclass(cls, VectorStore):

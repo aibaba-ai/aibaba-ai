@@ -3,7 +3,7 @@ import os
 import py
 import pytest
 
-from aiagentsforce_community.document_loaders import GitLoader
+from aibaba_ai_community.document_loaders import GitLoader
 
 
 def init_repo(tmpdir: py.path.local, dir_name: str) -> str:

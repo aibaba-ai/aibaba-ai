@@ -19,13 +19,13 @@ from langchain.chat_models import ChatOpenAI
 After:
 
 ```python
-from aiagentsforce_community.chat_models import ChatOpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
 ```
 
 ## Community to partner
 
 ```python
-from aiagentsforce_community.chat_models import ChatOpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
 ```
 
 ```python
@@ -43,11 +43,11 @@ from foo import ChatOpenAI
 ## Mixed imports
 
 ```python
-from aiagentsforce_community.chat_models import ChatOpenAI, ChatAnthropic, foo
+from aibaba_ai_community.chat_models import ChatOpenAI, ChatAnthropic, foo
 ```
 
 ```python
-from aiagentsforce_community.chat_models import foo
+from aibaba_ai_community.chat_models import foo
 
 from langchain_openai import ChatOpenAI
 

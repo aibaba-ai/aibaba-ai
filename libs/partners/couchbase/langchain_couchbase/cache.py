@@ -3,7 +3,7 @@ Aibaba AI Couchbase Caches
 
 Functions "_hash", "_loads_generations" and "_dumps_generations"
 are duplicated in this utility from modules:
-    - "libs/community/aiagentsforce_community/cache.py"
+    - "libs/community/aibaba_ai_community/cache.py"
 """
 
 import hashlib

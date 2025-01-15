@@ -3,7 +3,7 @@ import shutil
 
 import pytest
 
-from aiagentsforce_community.vectorstores import NeuralDBVectorStore
+from aibaba_ai_community.vectorstores import NeuralDBVectorStore
 
 
 @pytest.fixture(scope="session")

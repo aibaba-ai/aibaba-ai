@@ -3,12 +3,12 @@
 from pathlib import Path
 from unittest.mock import patch
 
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.loading import load_llm
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 
 @patch(
-    "aiagentsforce_community.llms.loading.get_type_to_cls_dict",
+    "aibaba_ai_community.llms.loading.get_type_to_cls_dict",
     lambda: {"fake": lambda: FakeLLM},
 )
 def test_saving_loading_round_trip(tmp_path: Path) -> None:

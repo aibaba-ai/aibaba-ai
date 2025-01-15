@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import AINRuleOps
-    from aiagentsforce_community.tools.ainetwork.rule import RuleSchema
+    from aibaba_ai_community.tools import AINRuleOps
+    from aibaba_ai_community.tools.ainetwork.rule import RuleSchema
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "RuleSchema": "aiagentsforce_community.tools.ainetwork.rule",
-    "AINRuleOps": "aiagentsforce_community.tools",
+    "RuleSchema": "aibaba_ai_community.tools.ainetwork.rule",
+    "AINRuleOps": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

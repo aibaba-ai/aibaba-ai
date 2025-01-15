@@ -20,7 +20,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.vectorstores import AstraDB
+from aibaba_ai_community.vectorstores import AstraDB
 
 # Ad-hoc embedding classes:
 

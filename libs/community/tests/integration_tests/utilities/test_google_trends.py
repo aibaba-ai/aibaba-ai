@@ -3,7 +3,7 @@
 import os
 from unittest.mock import patch
 
-from aiagentsforce_community.utilities.google_trends import GoogleTrendsAPIWrapper
+from aibaba_ai_community.utilities.google_trends import GoogleTrendsAPIWrapper
 
 
 @patch("serpapi.SerpApiClient.get_json")

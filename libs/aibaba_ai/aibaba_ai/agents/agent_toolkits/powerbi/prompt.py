@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.powerbi.prompt import (
+    from aibaba_ai_community.agent_toolkits.powerbi.prompt import (
         POWERBI_CHAT_PREFIX,
         POWERBI_CHAT_SUFFIX,
         POWERBI_PREFIX,
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "POWERBI_CHAT_PREFIX": "aiagentsforce_community.agent_toolkits.powerbi.prompt",
-    "POWERBI_CHAT_SUFFIX": "aiagentsforce_community.agent_toolkits.powerbi.prompt",
-    "POWERBI_PREFIX": "aiagentsforce_community.agent_toolkits.powerbi.prompt",
-    "POWERBI_SUFFIX": "aiagentsforce_community.agent_toolkits.powerbi.prompt",
+    "POWERBI_CHAT_PREFIX": "aibaba_ai_community.agent_toolkits.powerbi.prompt",
+    "POWERBI_CHAT_SUFFIX": "aibaba_ai_community.agent_toolkits.powerbi.prompt",
+    "POWERBI_PREFIX": "aibaba_ai_community.agent_toolkits.powerbi.prompt",
+    "POWERBI_SUFFIX": "aibaba_ai_community.agent_toolkits.powerbi.prompt",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

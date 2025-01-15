@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
 
-from aiagentsforce_community.chat_models.snowflake import _convert_message_to_dict
+from aibaba_ai_community.chat_models.snowflake import _convert_message_to_dict
 
 
 def test_messages_to_prompt_dict_with_valid_messages() -> None:

@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.tools.office365.utils import authenticate
+from aibaba_ai_community.tools.office365.utils import authenticate
 
 if TYPE_CHECKING:
     from O365 import Account

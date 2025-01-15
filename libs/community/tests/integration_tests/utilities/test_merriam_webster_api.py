@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
+from aibaba_ai_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
 
 
 @pytest.fixture

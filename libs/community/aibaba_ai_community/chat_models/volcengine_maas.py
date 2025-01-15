@@ -14,7 +14,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.llms.volcengine_maas import VolcEngineMaasBase
+from aibaba_ai_community.llms.volcengine_maas import VolcEngineMaasBase
 
 
 def _convert_message_to_dict(message: BaseMessage) -> dict:
@@ -64,7 +64,7 @@ class VolcEngineMaasChat(BaseChatModel, VolcEngineMaasBase):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import VolcEngineMaasLLM
+            from aibaba_ai_community.llms import VolcEngineMaasLLM
             model = VolcEngineMaasChat(model="skylark-lite-public",
                                           volc_engine_maas_ak="your_ak",
                                           volc_engine_maas_sk="your_sk")

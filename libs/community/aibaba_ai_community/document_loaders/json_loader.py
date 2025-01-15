@@ -5,7 +5,7 @@ from typing import Any, Callable, Dict, Iterator, Optional, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class JSONLoader(BaseLoader):
@@ -20,7 +20,7 @@ class JSONLoader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import JSONLoader
+            from aibaba_ai_community.document_loaders import JSONLoader
             import json
             from pathlib import Path
 

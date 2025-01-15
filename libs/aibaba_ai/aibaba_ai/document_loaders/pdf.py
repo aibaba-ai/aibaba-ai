@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         AmazonTextractPDFLoader,
         MathpixPDFLoader,
         OnlinePDFLoader,
@@ -16,7 +16,7 @@ if TYPE_CHECKING:
         PyPDFium2Loader,
         UnstructuredPDFLoader,
     )
-    from aiagentsforce_community.document_loaders.pdf import (
+    from aibaba_ai_community.document_loaders.pdf import (
         BasePDFLoader,
         DocumentIntelligenceLoader,
     )
@@ -25,19 +25,19 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "UnstructuredPDFLoader": "aiagentsforce_community.document_loaders",
-    "BasePDFLoader": "aiagentsforce_community.document_loaders.pdf",
-    "OnlinePDFLoader": "aiagentsforce_community.document_loaders",
-    "PagedPDFSplitter": "aiagentsforce_community.document_loaders",
-    "PyPDFium2Loader": "aiagentsforce_community.document_loaders",
-    "PyPDFDirectoryLoader": "aiagentsforce_community.document_loaders",
-    "PDFMinerLoader": "aiagentsforce_community.document_loaders",
-    "PDFMinerPDFasHTMLLoader": "aiagentsforce_community.document_loaders",
-    "PyMuPDFLoader": "aiagentsforce_community.document_loaders",
-    "MathpixPDFLoader": "aiagentsforce_community.document_loaders",
-    "PDFPlumberLoader": "aiagentsforce_community.document_loaders",
-    "AmazonTextractPDFLoader": "aiagentsforce_community.document_loaders",
-    "DocumentIntelligenceLoader": "aiagentsforce_community.document_loaders.pdf",
+    "UnstructuredPDFLoader": "aibaba_ai_community.document_loaders",
+    "BasePDFLoader": "aibaba_ai_community.document_loaders.pdf",
+    "OnlinePDFLoader": "aibaba_ai_community.document_loaders",
+    "PagedPDFSplitter": "aibaba_ai_community.document_loaders",
+    "PyPDFium2Loader": "aibaba_ai_community.document_loaders",
+    "PyPDFDirectoryLoader": "aibaba_ai_community.document_loaders",
+    "PDFMinerLoader": "aibaba_ai_community.document_loaders",
+    "PDFMinerPDFasHTMLLoader": "aibaba_ai_community.document_loaders",
+    "PyMuPDFLoader": "aibaba_ai_community.document_loaders",
+    "MathpixPDFLoader": "aibaba_ai_community.document_loaders",
+    "PDFPlumberLoader": "aibaba_ai_community.document_loaders",
+    "AmazonTextractPDFLoader": "aibaba_ai_community.document_loaders",
+    "DocumentIntelligenceLoader": "aibaba_ai_community.document_loaders.pdf",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

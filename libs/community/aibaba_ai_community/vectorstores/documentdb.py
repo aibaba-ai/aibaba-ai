@@ -53,8 +53,8 @@ class DocumentDBVectorSearch(VectorStore):
     Example:
         . code-block:: python
 
-            from aiagentsforce_community.vectorstores import DocumentDBVectorSearch
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import DocumentDBVectorSearch
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             from pymongo import MongoClient
 
             mongo_client = MongoClient("<YOUR-CONNECTION-STRING>")

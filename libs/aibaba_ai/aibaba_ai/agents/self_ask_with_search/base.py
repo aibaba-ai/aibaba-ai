@@ -19,9 +19,9 @@ from langchain.agents.self_ask_with_search.prompt import PROMPT
 from langchain.agents.utils import validate_tools_single_input
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.google_serper import GoogleSerperAPIWrapper
-    from aiagentsforce_community.utilities.searchapi import SearchApiAPIWrapper
-    from aiagentsforce_community.utilities.serpapi import SerpAPIWrapper
+    from aibaba_ai_community.utilities.google_serper import GoogleSerperAPIWrapper
+    from aibaba_ai_community.utilities.searchapi import SearchApiAPIWrapper
+    from aibaba_ai_community.utilities.serpapi import SerpAPIWrapper
 
 
 @deprecated("0.1.0", alternative="create_self_ask_with_search", removal="1.0")
@@ -112,7 +112,7 @@ def create_self_ask_with_search_agent(
         .. code-block:: python
 
             from langchain import hub
-            from aiagentsforce_community.chat_models import ChatAnthropic
+            from aibaba_ai_community.chat_models import ChatAnthropic
             from langchain.agents import (
                 AgentExecutor, create_self_ask_with_search_agent
             )

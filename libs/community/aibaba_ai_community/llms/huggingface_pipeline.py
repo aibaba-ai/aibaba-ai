@@ -39,7 +39,7 @@ class HuggingFacePipeline(BaseLLM):
     Example using from_model_id:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import HuggingFacePipeline
+            from aibaba_ai_community.llms import HuggingFacePipeline
             hf = HuggingFacePipeline.from_model_id(
                 model_id="gpt2",
                 task="text-generation",
@@ -48,7 +48,7 @@ class HuggingFacePipeline(BaseLLM):
     Example passing pipeline in directly:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import HuggingFacePipeline
+            from aibaba_ai_community.llms import HuggingFacePipeline
             from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
             model_id = "gpt2"

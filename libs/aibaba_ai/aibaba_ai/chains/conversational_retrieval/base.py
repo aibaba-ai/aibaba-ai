@@ -339,7 +339,7 @@ class ConversationalRetrievalChain(BaseConversationalRetrievalChain):
                 StuffDocumentsChain, LLMChain, ConversationalRetrievalChain
             )
             from aibaba_ai_core.prompts import PromptTemplate
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
 
             combine_docs_chain = StuffDocumentsChain(...)
             vectorstore = ...

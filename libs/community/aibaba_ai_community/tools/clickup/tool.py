@@ -9,8 +9,8 @@ To use this tool, you must first set as environment variables:
 Below is a sample script that uses the Clickup tool:
 
 ```python
-from aiagentsforce_community.agent_toolkits.clickup.toolkit import ClickupToolkit
-from aiagentsforce_community.utilities.clickup import ClickupAPIWrapper
+from aibaba_ai_community.agent_toolkits.clickup.toolkit import ClickupToolkit
+from aibaba_ai_community.utilities.clickup import ClickupAPIWrapper
 
 clickup = ClickupAPIWrapper()
 toolkit = ClickupToolkit.from_clickup_api_wrapper(clickup)
@@ -23,7 +23,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.clickup import ClickupAPIWrapper
+from aibaba_ai_community.utilities.clickup import ClickupAPIWrapper
 
 
 class ClickupAction(BaseTool):  # type: ignore[override]

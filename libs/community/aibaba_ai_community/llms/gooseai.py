@@ -25,7 +25,7 @@ class GooseAI(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import GooseAI
+            from aibaba_ai_community.llms import GooseAI
             gooseai = GooseAI(model_name="gpt-neo-20b")
 
     """

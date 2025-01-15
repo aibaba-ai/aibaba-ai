@@ -2,7 +2,7 @@ from typing import Callable, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.docstore.base import Docstore
+from aibaba_ai_community.docstore.base import Docstore
 
 
 class DocstoreFn(Docstore):

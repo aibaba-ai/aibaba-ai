@@ -18,7 +18,7 @@ class BookendEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import BookendEmbeddings
+            from aibaba_ai_community.embeddings import BookendEmbeddings
 
             bookend = BookendEmbeddings(
                 domain={domain}

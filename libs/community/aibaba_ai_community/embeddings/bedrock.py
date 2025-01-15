@@ -34,7 +34,7 @@ class BedrockEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.bedrock_embeddings import BedrockEmbeddings
+            from aibaba_ai_community.bedrock_embeddings import BedrockEmbeddings
             
             region_name ="us-east-1"
             credentials_profile_name = "default"

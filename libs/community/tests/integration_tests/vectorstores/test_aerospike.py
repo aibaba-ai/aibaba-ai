@@ -9,10 +9,10 @@ from typing import Any, Generator
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.aerospike import (
+from aibaba_ai_community.vectorstores.aerospike import (
     Aerospike,
 )
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

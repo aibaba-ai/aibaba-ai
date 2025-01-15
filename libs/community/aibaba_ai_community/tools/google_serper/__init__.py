@@ -1,4 +1,4 @@
-from aiagentsforce_community.tools.google_serper.tool import (
+from aibaba_ai_community.tools.google_serper.tool import (
     GoogleSerperResults,
     GoogleSerperRun,
 )

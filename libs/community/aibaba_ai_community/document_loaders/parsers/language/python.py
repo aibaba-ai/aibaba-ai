@@ -1,7 +1,7 @@
 import ast
 from typing import Any, List, Tuple
 
-from aiagentsforce_community.document_loaders.parsers.language.code_segmenter import (
+from aibaba_ai_community.document_loaders.parsers.language.code_segmenter import (
     CodeSegmenter,
 )
 

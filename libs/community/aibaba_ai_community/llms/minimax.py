@@ -18,7 +18,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -128,7 +128,7 @@ class Minimax(MinimaxCommon, LLM):
     or pass them as a named parameter to the constructor.
     Example:
      . code-block:: python
-         from aiagentsforce_community.llms.minimax import Minimax
+         from aibaba_ai_community.llms.minimax import Minimax
          minimax = Minimax(model="<model_name>", minimax_api_key="my-api-key",
           minimax_group_id="my-group-id")
     """

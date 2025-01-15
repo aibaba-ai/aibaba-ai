@@ -5,8 +5,8 @@ from typing import TYPE_CHECKING, List, Optional
 from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.cloud.speech_v2 import RecognitionConfig

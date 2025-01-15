@@ -71,7 +71,7 @@ class SparkLLMTextEmbeddings(BaseModel, Embeddings):
 
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import SparkLLMTextEmbeddings
+            from aibaba_ai_community.embeddings import SparkLLMTextEmbeddings
 
             embed = SparkLLMTextEmbeddings(
                 api_key="...",

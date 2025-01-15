@@ -5,7 +5,7 @@ from typing import Dict, List, Literal, Optional, Tuple
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.bing_search import BingSearchAPIWrapper
+from aibaba_ai_community.utilities.bing_search import BingSearchAPIWrapper
 
 
 class BingSearchRun(BaseTool):  # type: ignore[override]
@@ -42,8 +42,8 @@ class BingSearchResults(BaseTool):  # type: ignore[override, override]
     Instantiation:
         .. code-block:: python
 
-            from aiagentsforce_community.tools.bing_search import BingSearchResults
-            from aiagentsforce_community.utilities import BingSearchAPIWrapper
+            from aibaba_ai_community.tools.bing_search import BingSearchResults
+            from aibaba_ai_community.utilities import BingSearchAPIWrapper
 
             api_wrapper = BingSearchAPIWrapper()
             tool = BingSearchResults(api_wrapper=api_wrapper)

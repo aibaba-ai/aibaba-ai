@@ -13,8 +13,8 @@ from typing import (
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.cassandra import aexecute_cql
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.cassandra import aexecute_cql
 
 _NOT_SET = object()
 

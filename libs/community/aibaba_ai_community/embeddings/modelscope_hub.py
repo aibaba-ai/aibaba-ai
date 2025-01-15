@@ -12,7 +12,7 @@ class ModelScopeEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import ModelScopeEmbeddings
+            from aibaba_ai_community.embeddings import ModelScopeEmbeddings
             model_id = "damo/nlp_corom_sentence-embedding_english-base"
             embed = ModelScopeEmbeddings(model_id=model_id, model_revision="v1.0.0")
     """

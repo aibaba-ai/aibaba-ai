@@ -5,7 +5,7 @@ from typing import Any, Union
 
 import pytest
 
-from aiagentsforce_community.llms import TitanTakeoff, TitanTakeoffPro
+from aibaba_ai_community.llms import TitanTakeoff, TitanTakeoffPro
 
 
 @pytest.mark.requires("takeoff_client")

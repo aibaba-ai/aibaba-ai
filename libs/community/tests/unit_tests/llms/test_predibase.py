@@ -1,7 +1,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.llms.predibase import Predibase
+from aibaba_ai_community.llms.predibase import Predibase
 
 
 def test_api_key_is_string() -> None:

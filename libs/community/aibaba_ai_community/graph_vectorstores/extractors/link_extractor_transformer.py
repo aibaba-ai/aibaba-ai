@@ -4,10 +4,10 @@ from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.documents.transformers import BaseDocumentTransformer
 
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
-from aiagentsforce_community.graph_vectorstores.links import copy_with_links
+from aibaba_ai_community.graph_vectorstores.links import copy_with_links
 
 
 @beta()

@@ -3,7 +3,7 @@ from typing import Any, Optional
 
 from alibaba_ai_core.language_models.llms import LLM
 
-from aiagentsforce_community.llms.ipex_llm import IpexLLM
+from aibaba_ai_community.llms.ipex_llm import IpexLLM
 
 logger = logging.getLogger(__name__)
 
@@ -14,7 +14,7 @@ class BigdlLLM(IpexLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import BigdlLLM
+            from aibaba_ai_community.llms import BigdlLLM
             llm = BigdlLLM.from_model_id(model_id="THUDM/chatglm-6b")
     """
 

@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from requests.exceptions import HTTPError, ReadTimeout
 from urllib3.exceptions import ConnectionError
 
-from aiagentsforce_community.document_loaders.web_base import WebBaseLoader
+from aibaba_ai_community.document_loaders.web_base import WebBaseLoader
 
 
 class YahooFinanceNewsInput(BaseModel):

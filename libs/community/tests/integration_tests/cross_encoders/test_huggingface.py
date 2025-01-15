@@ -1,6 +1,6 @@
 """Test huggingface cross encoders."""
 
-from aiagentsforce_community.cross_encoders import HuggingFaceCrossEncoder
+from aibaba_ai_community.cross_encoders import HuggingFaceCrossEncoder
 
 
 def _assert(encoder: HuggingFaceCrossEncoder) -> None:

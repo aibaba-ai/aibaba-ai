@@ -3,8 +3,8 @@ from pathlib import Path
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
-from aiagentsforce_community.document_loaders.directory import DirectoryLoader
+from aibaba_ai_community.document_loaders.csv_loader import CSVLoader
+from aibaba_ai_community.document_loaders.directory import DirectoryLoader
 
 
 class TestDirectoryLoader:

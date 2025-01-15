@@ -15,7 +15,7 @@ class Text2vecEmbeddings(Embeddings, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings.text2vec import Text2vecEmbeddings
+            from aibaba_ai_community.embeddings.text2vec import Text2vecEmbeddings
 
             embedding = Text2vecEmbeddings()
             embedding.embed_documents([

@@ -3,7 +3,7 @@ from typing import Any, Callable, Dict, List
 from alibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class ApifyDatasetLoader(BaseLoader, BaseModel):
@@ -14,7 +14,7 @@ class ApifyDatasetLoader(BaseLoader, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import ApifyDatasetLoader
+            from aibaba_ai_community.document_loaders import ApifyDatasetLoader
             from alibaba_ai_core.documents import Document
 
             loader = ApifyDatasetLoader(

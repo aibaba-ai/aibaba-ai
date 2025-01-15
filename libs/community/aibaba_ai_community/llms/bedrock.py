@@ -24,8 +24,8 @@ from alibaba_ai_core.outputs import GenerationChunk
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
-from aiagentsforce_community.utilities.anthropic import (
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.utilities.anthropic import (
     get_num_tokens_anthropic,
     get_token_ids_anthropic,
 )
@@ -751,7 +751,7 @@ class Bedrock(LLM, BedrockBase):
         if model_id.startswith("anthropic.claude-3"):
             raise ValueError(
                 "Claude v3 models are not supported by this LLM."
-                "Please use `from aiagentsforce_community.chat_models import BedrockChat` "
+                "Please use `from aibaba_ai_community.chat_models import BedrockChat` "
                 "instead."
             )
         return super().validate_environment(values)

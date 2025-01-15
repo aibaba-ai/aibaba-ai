@@ -10,7 +10,7 @@ from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage, Too
 from langchain_tests.unit_tests import ChatModelUnitTests
 from pydantic import SecretStr
 
-from aiagentsforce_community.chat_models.writer import ChatWriter
+from aibaba_ai_community.chat_models.writer import ChatWriter
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 """Classes for mocking Writer responses."""

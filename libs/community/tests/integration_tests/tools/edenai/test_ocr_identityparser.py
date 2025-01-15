@@ -9,7 +9,7 @@ clicking on the 'sandbox' toggle.
 You'll then need to set EDENAI_API_KEY environment variable to your api key.
 """
 
-from aiagentsforce_community.tools.edenai import EdenAiParsingIDTool
+from aibaba_ai_community.tools.edenai import EdenAiParsingIDTool
 
 
 def test_edenai_call() -> None:

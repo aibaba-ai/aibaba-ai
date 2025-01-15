@@ -38,8 +38,8 @@ class SQLiteVec(VectorStore):
     To use, you should have the ``sqlite-vec`` python package installed.
     Example:
         .. code-block:: python
-            from aiagentsforce_community.vectorstores import SQLiteVec
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import SQLiteVec
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             ...
     """
 

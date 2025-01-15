@@ -4,7 +4,7 @@ from typing import Optional, Type
 from alibaba_ai_core.callbacks import AsyncCallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.ainetwork.base import AINBaseTool
+from aibaba_ai_community.tools.ainetwork.base import AINBaseTool
 
 
 class TransferSchema(BaseModel):

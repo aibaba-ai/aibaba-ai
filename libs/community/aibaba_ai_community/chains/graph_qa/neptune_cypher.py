@@ -11,12 +11,12 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts.base import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     CYPHER_QA_PROMPT,
     NEPTUNE_OPENCYPHER_GENERATION_PROMPT,
     NEPTUNE_OPENCYPHER_GENERATION_SIMPLE_PROMPT,
 )
-from aiagentsforce_community.graphs import BaseNeptuneGraph
+from aibaba_ai_community.graphs import BaseNeptuneGraph
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

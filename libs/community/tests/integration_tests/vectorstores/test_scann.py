@@ -7,13 +7,13 @@ import numpy as np
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
-from aiagentsforce_community.vectorstores.scann import (
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.vectorstores.scann import (
     ScaNN,
     dependable_scann_import,
     normalize,
 )
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

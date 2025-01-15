@@ -5,7 +5,7 @@ from typing import Dict, Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.amadeus.base import AmadeusBaseTool
+from aibaba_ai_community.tools.amadeus.base import AmadeusBaseTool
 
 logger = logging.getLogger(__name__)
 

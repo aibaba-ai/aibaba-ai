@@ -1,5 +1,5 @@
-from aiagentsforce_community.agent_toolkits import SQLDatabaseToolkit, create_sql_agent
-from aiagentsforce_community.utilities.sql_database import SQLDatabase
+from aibaba_ai_community.agent_toolkits import SQLDatabaseToolkit, create_sql_agent
+from aibaba_ai_community.utilities.sql_database import SQLDatabase
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

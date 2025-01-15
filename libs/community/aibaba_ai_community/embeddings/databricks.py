@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 
 from alibaba_ai_core._api import deprecated
 
-from aiagentsforce_community.embeddings.mlflow import MlflowEmbeddings
+from aibaba_ai_community.embeddings.mlflow import MlflowEmbeddings
 
 
 def _chunk(texts: List[str], size: int) -> Iterator[List[str]]:
@@ -27,7 +27,7 @@ class DatabricksEmbeddings(MlflowEmbeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import DatabricksEmbeddings
+            from aibaba_ai_community.embeddings import DatabricksEmbeddings
 
             embeddings = DatabricksEmbeddings(
                 target_uri="databricks",

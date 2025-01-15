@@ -47,7 +47,7 @@ class RefineDocumentsChain(BaseCombineDocumentsChain):
 
             from langchain.chains import RefineDocumentsChain, LLMChain
             from aibaba_ai_core.prompts import PromptTemplate
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,
             # it will be passed to `format_document` - see that function for more

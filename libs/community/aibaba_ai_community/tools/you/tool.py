@@ -8,7 +8,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.you import YouSearchAPIWrapper
+from aibaba_ai_community.utilities.you import YouSearchAPIWrapper
 
 
 class YouInput(BaseModel):

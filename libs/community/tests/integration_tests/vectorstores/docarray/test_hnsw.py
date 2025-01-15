@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.docarray import DocArrayHnswSearch
+from aibaba_ai_community.vectorstores.docarray import DocArrayHnswSearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

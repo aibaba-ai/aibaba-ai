@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Literal, Optional
 
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.vectorstores.docarray.base import (
+from aibaba_ai_community.vectorstores.docarray.base import (
     DocArrayIndex,
     _check_docarray_import,
 )

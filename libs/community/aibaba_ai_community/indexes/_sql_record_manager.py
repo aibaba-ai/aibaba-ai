@@ -56,7 +56,7 @@ except ImportError:
     # dummy for sqlalchemy < 2
     async_sessionmaker = type("async_sessionmaker", (type,), {})  # type: ignore
 
-from aiagentsforce_community.indexes.base import RecordManager
+from aibaba_ai_community.indexes.base import RecordManager
 
 Base = declarative_base()
 

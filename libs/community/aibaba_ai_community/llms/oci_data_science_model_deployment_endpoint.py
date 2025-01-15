@@ -29,7 +29,7 @@ from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import Field, model_validator
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 logger = logging.getLogger(__name__)
 DEFAULT_INFERENCE_ENDPOINT = "/v1/completions"
@@ -382,7 +382,7 @@ class OCIModelDeploymentLLM(BaseLLM, BaseOCIModelDeployment):
 
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OCIModelDeploymentLLM
+            from aibaba_ai_community.llms import OCIModelDeploymentLLM
 
             llm = OCIModelDeploymentLLM(
                 endpoint="https://modeldeployment.us-ashburn-1.oci.customer-oci.com/<ocid>/predict",
@@ -403,7 +403,7 @@ class OCIModelDeploymentLLM(BaseLLM, BaseOCIModelDeployment):
 
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OCIModelDeploymentLLM
+            from aibaba_ai_community.llms import OCIModelDeploymentLLM
 
             class MyCutomizedModel(OCIModelDeploymentLLM):
                 def _process_stream_response(self, response_json:dict) -> GenerationChunk:
@@ -772,7 +772,7 @@ class OCIModelDeploymentTGI(OCIModelDeploymentLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OCIModelDeploymentTGI
+            from aibaba_ai_community.llms import OCIModelDeploymentTGI
 
             llm = OCIModelDeploymentTGI(
                 endpoint="https://modeldeployment.<region>.oci.customer-oci.com/<md_ocid>/predict",
@@ -904,7 +904,7 @@ class OCIModelDeploymentVLLM(OCIModelDeploymentLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OCIModelDeploymentVLLM
+            from aibaba_ai_community.llms import OCIModelDeploymentVLLM
 
             llm = OCIModelDeploymentVLLM(
                 endpoint="https://modeldeployment.<region>.oci.customer-oci.com/<md_ocid>/predict",

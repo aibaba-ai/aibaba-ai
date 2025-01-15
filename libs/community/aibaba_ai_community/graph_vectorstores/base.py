@@ -22,7 +22,7 @@ from alibaba_ai_core.runnables import run_in_executor
 from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from pydantic import Field
 
-from aiagentsforce_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
+from aibaba_ai_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
 
 logger = logging.getLogger(__name__)
 
@@ -143,7 +143,7 @@ def nodes_to_documents(nodes: Iterable[Node]) -> Iterator[Document]:
         )
 
 
-@beta(message="Added in version 0.3.1 of aiagentsforce_community. API subject to change.")
+@beta(message="Added in version 0.3.1 of aibaba_ai_community. API subject to change.")
 class GraphVectorStore(VectorStore):
     """A hybrid vector-and-graph graph store.
 
@@ -224,7 +224,7 @@ class GraphVectorStore(VectorStore):
             texts: Iterable of strings to add to the vector store.
             metadatas: Optional list of metadatas associated with the texts.
                 The metadata key `links` shall be an iterable of
-                :py:class:`~aiagentsforce_community.graph_vectorstores.links.Link`.
+                :py:class:`~aibaba_ai_community.graph_vectorstores.links.Link`.
             ids: Optional list of IDs associated with the texts.
             **kwargs: vector store specific parameters.
 
@@ -273,7 +273,7 @@ class GraphVectorStore(VectorStore):
             texts: Iterable of strings to add to the vector store.
             metadatas: Optional list of metadatas associated with the texts.
                 The metadata key `links` shall be an iterable of
-                :py:class:`~aiagentsforce_community.graph_vectorstores.links.Link`.
+                :py:class:`~aibaba_ai_community.graph_vectorstores.links.Link`.
             ids: Optional list of IDs associated with the texts.
             **kwargs: vector store specific parameters.
 
@@ -325,7 +325,7 @@ class GraphVectorStore(VectorStore):
         Args:
             documents: Documents to add to the vector store.
                 The document's metadata key `links` shall be an iterable of
-                :py:class:`~aiagentsforce_community.graph_vectorstores.links.Link`.
+                :py:class:`~aibaba_ai_community.graph_vectorstores.links.Link`.
 
         Returns:
             List of IDs of the added texts.
@@ -375,7 +375,7 @@ class GraphVectorStore(VectorStore):
         Args:
             documents: Documents to add to the vector store.
                 The document's metadata key `links` shall be an iterable of
-                :py:class:`~aiagentsforce_community.graph_vectorstores.links.Link`.
+                :py:class:`~aibaba_ai_community.graph_vectorstores.links.Link`.
 
         Returns:
             List of IDs of the added texts.
@@ -705,7 +705,7 @@ class GraphVectorStore(VectorStore):
         return GraphVectorStoreRetriever(vectorstore=self, **kwargs)
 
 
-@beta(message="Added in version 0.3.1 of aiagentsforce_community. API subject to change.")
+@beta(message="Added in version 0.3.1 of aibaba_ai_community. API subject to change.")
 class GraphVectorStoreRetriever(VectorStoreRetriever):
     """Retriever for GraphVectorStore.
 
@@ -724,7 +724,7 @@ class GraphVectorStoreRetriever(VectorStoreRetriever):
 
     .. seealso::
 
-        :mod:`How to use a graph vector store <aiagentsforce_community.graph_vectorstores>`
+        :mod:`How to use a graph vector store <aibaba_ai_community.graph_vectorstores>`
 
     How to use a graph vector store as a retriever
     ==============================================
@@ -733,17 +733,17 @@ class GraphVectorStoreRetriever(VectorStoreRetriever):
     ----------------------------------------------
 
     You can build a retriever from a graph vector store using its
-    :meth:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore.as_retriever`
+    :meth:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore.as_retriever`
     method.
 
     First we instantiate a graph vector store.
     We will use a store backed by Cassandra
-    :class:`~aiagentsforce_community.graph_vectorstores.cassandra.CassandraGraphVectorStore`
+    :class:`~aibaba_ai_community.graph_vectorstores.cassandra.CassandraGraphVectorStore`
     graph vector store::
 
-        from aiagentsforce_community.document_loaders import TextLoader
-        from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
-        from aiagentsforce_community.graph_vectorstores.extractors import (
+        from aibaba_ai_community.document_loaders import TextLoader
+        from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
+        from aibaba_ai_community.graph_vectorstores.extractors import (
             KeybertLinkExtractor,
             LinkExtractorTransformer,
         )

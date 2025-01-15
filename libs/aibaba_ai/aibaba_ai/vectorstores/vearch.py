@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import Vearch
+    from aibaba_ai_community.vectorstores import Vearch
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"Vearch": "aiagentsforce_community.vectorstores"}
+DEPRECATED_LOOKUP = {"Vearch": "aibaba_ai_community.vectorstores"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

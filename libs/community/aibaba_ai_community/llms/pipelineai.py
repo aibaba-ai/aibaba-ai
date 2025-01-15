@@ -12,7 +12,7 @@ from pydantic import (
     model_validator,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,7 @@ class PipelineAI(LLM, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import PipelineAI
+            from aibaba_ai_community.llms import PipelineAI
             pipeline = PipelineAI(pipeline_key="")
     """
 

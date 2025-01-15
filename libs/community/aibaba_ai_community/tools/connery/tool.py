@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks.manager import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field, create_model, model_validator
 
-from aiagentsforce_community.tools.connery.models import Action, Parameter
+from aibaba_ai_community.tools.connery.models import Action, Parameter
 
 
 class ConneryAction(BaseTool):  # type: ignore[override, override]

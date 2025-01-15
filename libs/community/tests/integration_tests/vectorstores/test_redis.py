@@ -6,13 +6,13 @@ from typing import Any, Dict, List, Optional
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.redis import (
+from aibaba_ai_community.vectorstores.redis import (
     Redis,
     RedisFilter,
     RedisNum,
     RedisText,
 )
-from aiagentsforce_community.vectorstores.redis.filters import RedisFilterExpression
+from aibaba_ai_community.vectorstores.redis.filters import RedisFilterExpression
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

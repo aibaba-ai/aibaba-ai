@@ -8,7 +8,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.documents.base import Blob
 
-from aiagentsforce_community.document_loaders.parsers.audio import AzureOpenAIWhisperParser
+from aibaba_ai_community.document_loaders.parsers.audio import AzureOpenAIWhisperParser
 
 _THIS_DIR = Path(__file__).parents[3]
 
@@ -55,7 +55,7 @@ def test_is_openai_v1_lazy_parse(mocker: Any) -> None:
         "Transcribed text"
     )
 
-    mocker.patch("aiagentsforce_community.utils.openai.is_openai_v1", return_value=True)
+    mocker.patch("aibaba_ai_community.utils.openai.is_openai_v1", return_value=True)
 
     parser = AzureOpenAIWhisperParser(
         api_key=key, azure_endpoint=endpoint, api_version=version, deployment_name=name
@@ -89,7 +89,7 @@ def test_is_not_openai_v1_lazy_parse(mocker: Any) -> None:
         "Transcribed text"
     )
 
-    mocker.patch("aiagentsforce_community.utils.openai.is_openai_v1", return_value=False)
+    mocker.patch("aibaba_ai_community.utils.openai.is_openai_v1", return_value=False)
 
     parser = AzureOpenAIWhisperParser(
         api_key=key, azure_endpoint=endpoint, api_version=version, deployment_name=name

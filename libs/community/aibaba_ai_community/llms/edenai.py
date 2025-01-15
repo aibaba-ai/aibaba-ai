@@ -13,8 +13,8 @@ from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from alibaba_ai_core.utils.pydantic import get_fields
 from pydantic import ConfigDict, Field, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.utilities.requests import Requests
 
 logger = logging.getLogger(__name__)
 
@@ -113,7 +113,7 @@ class EdenAI(LLM):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

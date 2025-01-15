@@ -11,8 +11,8 @@ from alibaba_ai_core.messages import (
     SystemMessage,
 )
 
-from aiagentsforce_community.chat_models import BedrockChat
-from aiagentsforce_community.chat_models.meta import convert_messages_to_prompt_llama
+from aibaba_ai_community.chat_models import BedrockChat
+from aibaba_ai_community.chat_models.meta import convert_messages_to_prompt_llama
 
 
 @pytest.mark.parametrize(

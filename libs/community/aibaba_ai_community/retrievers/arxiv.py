@@ -4,7 +4,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.retrievers import BaseRetriever
 
-from aiagentsforce_community.utilities.arxiv import ArxivAPIWrapper
+from aibaba_ai_community.utilities.arxiv import ArxivAPIWrapper
 
 
 class ArxivRetriever(BaseRetriever, ArxivAPIWrapper):
@@ -26,7 +26,7 @@ class ArxivRetriever(BaseRetriever, ArxivAPIWrapper):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import ArxivRetriever
+            from aibaba_ai_community.retrievers import ArxivRetriever
 
             retriever = ArxivRetriever(
                 load_max_docs=2,

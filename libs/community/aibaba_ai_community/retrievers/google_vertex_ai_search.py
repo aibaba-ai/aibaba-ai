@@ -11,7 +11,7 @@ from alibaba_ai_core.retrievers import BaseRetriever
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.api_core.client_options import ClientOptions

@@ -4,7 +4,7 @@
 import os
 from urllib.request import urlretrieve
 
-from aiagentsforce_community.embeddings.llamacpp import LlamaCppEmbeddings
+from aibaba_ai_community.embeddings.llamacpp import LlamaCppEmbeddings
 
 
 def get_model() -> str:

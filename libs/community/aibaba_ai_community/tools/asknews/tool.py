@@ -15,7 +15,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.asknews import AskNewsAPIWrapper
+from aibaba_ai_community.utilities.asknews import AskNewsAPIWrapper
 
 
 class SearchInput(BaseModel):

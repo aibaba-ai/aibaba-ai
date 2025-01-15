@@ -1,8 +1,8 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import YoutubeLoader
-from aiagentsforce_community.document_loaders.youtube import TranscriptFormat
+from aibaba_ai_community.document_loaders import YoutubeLoader
+from aibaba_ai_community.document_loaders.youtube import TranscriptFormat
 
 
 @pytest.mark.parametrize(

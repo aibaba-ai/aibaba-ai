@@ -7,7 +7,7 @@ from _pytest.monkeypatch import MonkeyPatch
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.document_loaders.onenote import OneNoteLoader
+from aibaba_ai_community.document_loaders.onenote import OneNoteLoader
 
 
 def test_initialization() -> None:
@@ -48,7 +48,7 @@ def test_load(mocker: MockerFixture) -> None:
     assert documents == []
 
     mocker.patch(
-        "aiagentsforce_community.document_loaders.onenote.OneNoteLoader._get_page_content",
+        "aibaba_ai_community.document_loaders.onenote.OneNoteLoader._get_page_content",
         return_value=(
             "<html><head><title>Test Title</title></head>"
             "<body><p>Test Content</p></body></html>"

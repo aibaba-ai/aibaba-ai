@@ -4,7 +4,7 @@ from uuid import uuid4
 import duckdb
 import pytest
 
-from aiagentsforce_community.vectorstores import DuckDB
+from aibaba_ai_community.vectorstores import DuckDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

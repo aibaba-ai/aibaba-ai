@@ -9,7 +9,7 @@ import pytest
 from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
-from aiagentsforce_community.chat_models import ChatPremAI
+from aibaba_ai_community.chat_models import ChatPremAI
 
 
 @pytest.fixture

@@ -2,7 +2,7 @@ from typing import Any, Iterator
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class BaiduBOSDirectoryLoader(BaseLoader):
@@ -41,7 +41,7 @@ class BaiduBOSDirectoryLoader(BaseLoader):
             if response.is_truncated or contents_len < int(str(response.max_keys)):
                 break
             marker = response.next_marker
-        from aiagentsforce_community.document_loaders.baiducloud_bos_file import (
+        from aibaba_ai_community.document_loaders.baiducloud_bos_file import (
             BaiduBOSFileLoader,
         )
 

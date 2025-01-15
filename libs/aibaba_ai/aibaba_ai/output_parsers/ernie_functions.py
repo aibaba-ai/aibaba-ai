@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.output_parsers.ernie_functions import (
+    from aibaba_ai_community.output_parsers.ernie_functions import (
         JsonKeyOutputFunctionsParser,
         JsonOutputFunctionsParser,
         OutputFunctionsParser,
@@ -16,15 +16,15 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "JsonKeyOutputFunctionsParser": (
-        "aiagentsforce_community.output_parsers.ernie_functions"
+        "aibaba_ai_community.output_parsers.ernie_functions"
     ),
-    "JsonOutputFunctionsParser": "aiagentsforce_community.output_parsers.ernie_functions",
-    "OutputFunctionsParser": "aiagentsforce_community.output_parsers.ernie_functions",
+    "JsonOutputFunctionsParser": "aibaba_ai_community.output_parsers.ernie_functions",
+    "OutputFunctionsParser": "aibaba_ai_community.output_parsers.ernie_functions",
     "PydanticAttrOutputFunctionsParser": (
-        "aiagentsforce_community.output_parsers.ernie_functions"
+        "aibaba_ai_community.output_parsers.ernie_functions"
     ),
     "PydanticOutputFunctionsParser": (
-        "aiagentsforce_community.output_parsers.ernie_functions"
+        "aibaba_ai_community.output_parsers.ernie_functions"
     ),
 }
 

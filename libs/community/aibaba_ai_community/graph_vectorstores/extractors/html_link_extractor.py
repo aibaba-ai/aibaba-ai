@@ -7,11 +7,11 @@ from urllib.parse import urldefrag, urljoin, urlparse
 from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores import Link
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores import Link
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor_adapter import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor_adapter import (
     LinkExtractorAdapter,
 )
 
@@ -76,8 +76,8 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
 
         .. seealso::
 
-            - :mod:`How to use a graph vector store <aiagentsforce_community.graph_vectorstores>`
-            - :class:`How to create links between documents <aiagentsforce_community.graph_vectorstores.links.Link>`
+            - :mod:`How to use a graph vector store <aibaba_ai_community.graph_vectorstores>`
+            - :class:`How to create links between documents <aibaba_ai_community.graph_vectorstores.links.Link>`
 
         How to link Documents on hyperlinks in HTML
         ===========================================
@@ -89,7 +89,7 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
 
         .. code-block:: bash
 
-            pip install -q aiagentsforce_community beautifulsoup4
+            pip install -q aibaba_ai_community beautifulsoup4
 
         Usage
         -----
@@ -103,14 +103,14 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
 
         We can use :meth:`extract_one` on a document to get the links and add the links
         to the document metadata with
-        :meth:`~aiagentsforce_community.graph_vectorstores.links.add_links`::
+        :meth:`~aibaba_ai_community.graph_vectorstores.links.add_links`::
 
-            from aiagentsforce_community.document_loaders import AsyncHtmlLoader
-            from aiagentsforce_community.graph_vectorstores.extractors import (
+            from aibaba_ai_community.document_loaders import AsyncHtmlLoader
+            from aibaba_ai_community.graph_vectorstores.extractors import (
                 HtmlInput,
                 HtmlLinkExtractor,
             )
-            from aiagentsforce_community.graph_vectorstores.links import add_links
+            from aibaba_ai_community.graph_vectorstores.links import add_links
             from alibaba_ai_core.documents import Document
 
             loader = AsyncHtmlLoader(
@@ -146,9 +146,9 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
         you can simplify by using :meth:`as_document_extractor` that takes directly a
         ``Document`` as input::
 
-            from aiagentsforce_community.document_loaders import AsyncHtmlLoader
-            from aiagentsforce_community.graph_vectorstores.extractors import HtmlLinkExtractor
-            from aiagentsforce_community.graph_vectorstores.links import add_links
+            from aibaba_ai_community.document_loaders import AsyncHtmlLoader
+            from aibaba_ai_community.graph_vectorstores.extractors import HtmlLinkExtractor
+            from aibaba_ai_community.graph_vectorstores.links import add_links
 
             loader = AsyncHtmlLoader(
                 [
@@ -176,15 +176,15 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
         Using LinkExtractorTransformer
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        Using the :class:`~aiagentsforce_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
+        Using the :class:`~aibaba_ai_community.graph_vectorstores.extractors.link_extractor_transformer.LinkExtractorTransformer`,
         we can simplify the link extraction::
 
-            from aiagentsforce_community.document_loaders import AsyncHtmlLoader
-            from aiagentsforce_community.graph_vectorstores.extractors import (
+            from aibaba_ai_community.document_loaders import AsyncHtmlLoader
+            from aibaba_ai_community.graph_vectorstores.extractors import (
                 HtmlLinkExtractor,
                 LinkExtractorTransformer,
             )
-            from aiagentsforce_community.graph_vectorstores.links import add_links
+            from aibaba_ai_community.graph_vectorstores.links import add_links
 
             loader = AsyncHtmlLoader(
                 [
@@ -227,9 +227,9 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
 
             Found link from https://docs.aibaba.world/docs/integrations/providers/astradb/ to https://docs.datastax.com/en/astra/home/astra.html.
 
-        The documents with URL links can then be added to a :class:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore`::
+        The documents with URL links can then be added to a :class:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore`::
 
-            from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+            from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
 
             store = CassandraGraphVectorStore.from_documents(documents=documents, embedding=...)
 

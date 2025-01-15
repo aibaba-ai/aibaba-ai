@@ -15,235 +15,235 @@ import logging
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.embeddings.aleph_alpha import (
+    from aibaba_ai_community.embeddings.aleph_alpha import (
         AlephAlphaAsymmetricSemanticEmbedding,
         AlephAlphaSymmetricSemanticEmbedding,
     )
-    from aiagentsforce_community.embeddings.anyscale import (
+    from aibaba_ai_community.embeddings.anyscale import (
         AnyscaleEmbeddings,
     )
-    from aiagentsforce_community.embeddings.ascend import (
+    from aibaba_ai_community.embeddings.ascend import (
         AscendEmbeddings,
     )
-    from aiagentsforce_community.embeddings.awa import (
+    from aibaba_ai_community.embeddings.awa import (
         AwaEmbeddings,
     )
-    from aiagentsforce_community.embeddings.azure_openai import (
+    from aibaba_ai_community.embeddings.azure_openai import (
         AzureOpenAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.baichuan import (
+    from aibaba_ai_community.embeddings.baichuan import (
         BaichuanTextEmbeddings,
     )
-    from aiagentsforce_community.embeddings.baidu_qianfan_endpoint import (
+    from aibaba_ai_community.embeddings.baidu_qianfan_endpoint import (
         QianfanEmbeddingsEndpoint,
     )
-    from aiagentsforce_community.embeddings.bedrock import (
+    from aibaba_ai_community.embeddings.bedrock import (
         BedrockEmbeddings,
     )
-    from aiagentsforce_community.embeddings.bookend import (
+    from aibaba_ai_community.embeddings.bookend import (
         BookendEmbeddings,
     )
-    from aiagentsforce_community.embeddings.clarifai import (
+    from aibaba_ai_community.embeddings.clarifai import (
         ClarifaiEmbeddings,
     )
-    from aiagentsforce_community.embeddings.clova import (
+    from aibaba_ai_community.embeddings.clova import (
         ClovaEmbeddings,
     )
-    from aiagentsforce_community.embeddings.cohere import (
+    from aibaba_ai_community.embeddings.cohere import (
         CohereEmbeddings,
     )
-    from aiagentsforce_community.embeddings.dashscope import (
+    from aibaba_ai_community.embeddings.dashscope import (
         DashScopeEmbeddings,
     )
-    from aiagentsforce_community.embeddings.databricks import (
+    from aibaba_ai_community.embeddings.databricks import (
         DatabricksEmbeddings,
     )
-    from aiagentsforce_community.embeddings.deepinfra import (
+    from aibaba_ai_community.embeddings.deepinfra import (
         DeepInfraEmbeddings,
     )
-    from aiagentsforce_community.embeddings.edenai import (
+    from aibaba_ai_community.embeddings.edenai import (
         EdenAiEmbeddings,
     )
-    from aiagentsforce_community.embeddings.elasticsearch import (
+    from aibaba_ai_community.embeddings.elasticsearch import (
         ElasticsearchEmbeddings,
     )
-    from aiagentsforce_community.embeddings.embaas import (
+    from aibaba_ai_community.embeddings.embaas import (
         EmbaasEmbeddings,
     )
-    from aiagentsforce_community.embeddings.ernie import (
+    from aibaba_ai_community.embeddings.ernie import (
         ErnieEmbeddings,
     )
-    from aiagentsforce_community.embeddings.fake import (
+    from aibaba_ai_community.embeddings.fake import (
         DeterministicFakeEmbedding,
         FakeEmbeddings,
     )
-    from aiagentsforce_community.embeddings.fastembed import (
+    from aibaba_ai_community.embeddings.fastembed import (
         FastEmbedEmbeddings,
     )
-    from aiagentsforce_community.embeddings.gigachat import (
+    from aibaba_ai_community.embeddings.gigachat import (
         GigaChatEmbeddings,
     )
-    from aiagentsforce_community.embeddings.google_palm import (
+    from aibaba_ai_community.embeddings.google_palm import (
         GooglePalmEmbeddings,
     )
-    from aiagentsforce_community.embeddings.gpt4all import (
+    from aibaba_ai_community.embeddings.gpt4all import (
         GPT4AllEmbeddings,
     )
-    from aiagentsforce_community.embeddings.gradient_ai import (
+    from aibaba_ai_community.embeddings.gradient_ai import (
         GradientEmbeddings,
     )
-    from aiagentsforce_community.embeddings.huggingface import (
+    from aibaba_ai_community.embeddings.huggingface import (
         HuggingFaceBgeEmbeddings,
         HuggingFaceEmbeddings,
         HuggingFaceInferenceAPIEmbeddings,
         HuggingFaceInstructEmbeddings,
     )
-    from aiagentsforce_community.embeddings.huggingface_hub import (
+    from aibaba_ai_community.embeddings.huggingface_hub import (
         HuggingFaceHubEmbeddings,
     )
-    from aiagentsforce_community.embeddings.hunyuan import (
+    from aibaba_ai_community.embeddings.hunyuan import (
         HunyuanEmbeddings,
     )
-    from aiagentsforce_community.embeddings.infinity import (
+    from aibaba_ai_community.embeddings.infinity import (
         InfinityEmbeddings,
     )
-    from aiagentsforce_community.embeddings.infinity_local import (
+    from aibaba_ai_community.embeddings.infinity_local import (
         InfinityEmbeddingsLocal,
     )
-    from aiagentsforce_community.embeddings.ipex_llm import IpexLLMBgeEmbeddings
-    from aiagentsforce_community.embeddings.itrex import (
+    from aibaba_ai_community.embeddings.ipex_llm import IpexLLMBgeEmbeddings
+    from aibaba_ai_community.embeddings.itrex import (
         QuantizedBgeEmbeddings,
     )
-    from aiagentsforce_community.embeddings.javelin_ai_gateway import (
+    from aibaba_ai_community.embeddings.javelin_ai_gateway import (
         JavelinAIGatewayEmbeddings,
     )
-    from aiagentsforce_community.embeddings.jina import (
+    from aibaba_ai_community.embeddings.jina import (
         JinaEmbeddings,
     )
-    from aiagentsforce_community.embeddings.johnsnowlabs import (
+    from aibaba_ai_community.embeddings.johnsnowlabs import (
         JohnSnowLabsEmbeddings,
     )
-    from aiagentsforce_community.embeddings.laser import (
+    from aibaba_ai_community.embeddings.laser import (
         LaserEmbeddings,
     )
-    from aiagentsforce_community.embeddings.llamacpp import (
+    from aibaba_ai_community.embeddings.llamacpp import (
         LlamaCppEmbeddings,
     )
-    from aiagentsforce_community.embeddings.llamafile import (
+    from aibaba_ai_community.embeddings.llamafile import (
         LlamafileEmbeddings,
     )
-    from aiagentsforce_community.embeddings.llm_rails import (
+    from aibaba_ai_community.embeddings.llm_rails import (
         LLMRailsEmbeddings,
     )
-    from aiagentsforce_community.embeddings.localai import (
+    from aibaba_ai_community.embeddings.localai import (
         LocalAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.minimax import (
+    from aibaba_ai_community.embeddings.minimax import (
         MiniMaxEmbeddings,
     )
-    from aiagentsforce_community.embeddings.mlflow import (
+    from aibaba_ai_community.embeddings.mlflow import (
         MlflowCohereEmbeddings,
         MlflowEmbeddings,
     )
-    from aiagentsforce_community.embeddings.mlflow_gateway import (
+    from aibaba_ai_community.embeddings.mlflow_gateway import (
         MlflowAIGatewayEmbeddings,
     )
-    from aiagentsforce_community.embeddings.model2vec import (
+    from aibaba_ai_community.embeddings.model2vec import (
         Model2vecEmbeddings,
     )
-    from aiagentsforce_community.embeddings.modelscope_hub import (
+    from aibaba_ai_community.embeddings.modelscope_hub import (
         ModelScopeEmbeddings,
     )
-    from aiagentsforce_community.embeddings.mosaicml import (
+    from aibaba_ai_community.embeddings.mosaicml import (
         MosaicMLInstructorEmbeddings,
     )
-    from aiagentsforce_community.embeddings.naver import (
+    from aibaba_ai_community.embeddings.naver import (
         ClovaXEmbeddings,
     )
-    from aiagentsforce_community.embeddings.nemo import (
+    from aibaba_ai_community.embeddings.nemo import (
         NeMoEmbeddings,
     )
-    from aiagentsforce_community.embeddings.nlpcloud import (
+    from aibaba_ai_community.embeddings.nlpcloud import (
         NLPCloudEmbeddings,
     )
-    from aiagentsforce_community.embeddings.oci_generative_ai import (
+    from aibaba_ai_community.embeddings.oci_generative_ai import (
         OCIGenAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.octoai_embeddings import (
+    from aibaba_ai_community.embeddings.octoai_embeddings import (
         OctoAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.ollama import (
+    from aibaba_ai_community.embeddings.ollama import (
         OllamaEmbeddings,
     )
-    from aiagentsforce_community.embeddings.openai import (
+    from aibaba_ai_community.embeddings.openai import (
         OpenAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.openvino import (
+    from aibaba_ai_community.embeddings.openvino import (
         OpenVINOBgeEmbeddings,
         OpenVINOEmbeddings,
     )
-    from aiagentsforce_community.embeddings.optimum_intel import (
+    from aibaba_ai_community.embeddings.optimum_intel import (
         QuantizedBiEncoderEmbeddings,
     )
-    from aiagentsforce_community.embeddings.oracleai import (
+    from aibaba_ai_community.embeddings.oracleai import (
         OracleEmbeddings,
     )
-    from aiagentsforce_community.embeddings.ovhcloud import (
+    from aibaba_ai_community.embeddings.ovhcloud import (
         OVHCloudEmbeddings,
     )
-    from aiagentsforce_community.embeddings.premai import (
+    from aibaba_ai_community.embeddings.premai import (
         PremAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.sagemaker_endpoint import (
+    from aibaba_ai_community.embeddings.sagemaker_endpoint import (
         SagemakerEndpointEmbeddings,
     )
-    from aiagentsforce_community.embeddings.sambanova import (
+    from aibaba_ai_community.embeddings.sambanova import (
         SambaStudioEmbeddings,
     )
-    from aiagentsforce_community.embeddings.self_hosted import (
+    from aibaba_ai_community.embeddings.self_hosted import (
         SelfHostedEmbeddings,
     )
-    from aiagentsforce_community.embeddings.self_hosted_hugging_face import (
+    from aibaba_ai_community.embeddings.self_hosted_hugging_face import (
         SelfHostedHuggingFaceEmbeddings,
         SelfHostedHuggingFaceInstructEmbeddings,
     )
-    from aiagentsforce_community.embeddings.sentence_transformer import (
+    from aibaba_ai_community.embeddings.sentence_transformer import (
         SentenceTransformerEmbeddings,
     )
-    from aiagentsforce_community.embeddings.solar import (
+    from aibaba_ai_community.embeddings.solar import (
         SolarEmbeddings,
     )
-    from aiagentsforce_community.embeddings.spacy_embeddings import (
+    from aibaba_ai_community.embeddings.spacy_embeddings import (
         SpacyEmbeddings,
     )
-    from aiagentsforce_community.embeddings.sparkllm import (
+    from aibaba_ai_community.embeddings.sparkllm import (
         SparkLLMTextEmbeddings,
     )
-    from aiagentsforce_community.embeddings.tensorflow_hub import (
+    from aibaba_ai_community.embeddings.tensorflow_hub import (
         TensorflowHubEmbeddings,
     )
-    from aiagentsforce_community.embeddings.textembed import (
+    from aibaba_ai_community.embeddings.textembed import (
         TextEmbedEmbeddings,
     )
-    from aiagentsforce_community.embeddings.titan_takeoff import (
+    from aibaba_ai_community.embeddings.titan_takeoff import (
         TitanTakeoffEmbed,
     )
-    from aiagentsforce_community.embeddings.vertexai import (
+    from aibaba_ai_community.embeddings.vertexai import (
         VertexAIEmbeddings,
     )
-    from aiagentsforce_community.embeddings.volcengine import (
+    from aibaba_ai_community.embeddings.volcengine import (
         VolcanoEmbeddings,
     )
-    from aiagentsforce_community.embeddings.voyageai import (
+    from aibaba_ai_community.embeddings.voyageai import (
         VoyageEmbeddings,
     )
-    from aiagentsforce_community.embeddings.xinference import (
+    from aibaba_ai_community.embeddings.xinference import (
         XinferenceEmbeddings,
     )
-    from aiagentsforce_community.embeddings.yandex import (
+    from aibaba_ai_community.embeddings.yandex import (
         YandexGPTEmbeddings,
     )
-    from aiagentsforce_community.embeddings.zhipuai import (
+    from aibaba_ai_community.embeddings.zhipuai import (
         ZhipuAIEmbeddings,
     )
 
@@ -334,89 +334,89 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "AlephAlphaAsymmetricSemanticEmbedding": "aiagentsforce_community.embeddings.aleph_alpha",  # noqa: E501
-    "AlephAlphaSymmetricSemanticEmbedding": "aiagentsforce_community.embeddings.aleph_alpha",  # noqa: E501
-    "AnyscaleEmbeddings": "aiagentsforce_community.embeddings.anyscale",
-    "AwaEmbeddings": "aiagentsforce_community.embeddings.awa",
-    "AzureOpenAIEmbeddings": "aiagentsforce_community.embeddings.azure_openai",
-    "BaichuanTextEmbeddings": "aiagentsforce_community.embeddings.baichuan",
-    "BedrockEmbeddings": "aiagentsforce_community.embeddings.bedrock",
-    "BookendEmbeddings": "aiagentsforce_community.embeddings.bookend",
-    "ClarifaiEmbeddings": "aiagentsforce_community.embeddings.clarifai",
-    "ClovaEmbeddings": "aiagentsforce_community.embeddings.clova",
-    "ClovaXEmbeddings": "aiagentsforce_community.embeddings.naver",
-    "CohereEmbeddings": "aiagentsforce_community.embeddings.cohere",
-    "DashScopeEmbeddings": "aiagentsforce_community.embeddings.dashscope",
-    "DatabricksEmbeddings": "aiagentsforce_community.embeddings.databricks",
-    "DeepInfraEmbeddings": "aiagentsforce_community.embeddings.deepinfra",
-    "DeterministicFakeEmbedding": "aiagentsforce_community.embeddings.fake",
-    "EdenAiEmbeddings": "aiagentsforce_community.embeddings.edenai",
-    "ElasticsearchEmbeddings": "aiagentsforce_community.embeddings.elasticsearch",
-    "EmbaasEmbeddings": "aiagentsforce_community.embeddings.embaas",
-    "ErnieEmbeddings": "aiagentsforce_community.embeddings.ernie",
-    "FakeEmbeddings": "aiagentsforce_community.embeddings.fake",
-    "FastEmbedEmbeddings": "aiagentsforce_community.embeddings.fastembed",
-    "GPT4AllEmbeddings": "aiagentsforce_community.embeddings.gpt4all",
-    "GooglePalmEmbeddings": "aiagentsforce_community.embeddings.google_palm",
-    "GradientEmbeddings": "aiagentsforce_community.embeddings.gradient_ai",
-    "GigaChatEmbeddings": "aiagentsforce_community.embeddings.gigachat",
-    "HuggingFaceBgeEmbeddings": "aiagentsforce_community.embeddings.huggingface",
-    "HuggingFaceEmbeddings": "aiagentsforce_community.embeddings.huggingface",
-    "HuggingFaceHubEmbeddings": "aiagentsforce_community.embeddings.huggingface_hub",
-    "HuggingFaceInferenceAPIEmbeddings": "aiagentsforce_community.embeddings.huggingface",
-    "HuggingFaceInstructEmbeddings": "aiagentsforce_community.embeddings.huggingface",
-    "InfinityEmbeddings": "aiagentsforce_community.embeddings.infinity",
-    "InfinityEmbeddingsLocal": "aiagentsforce_community.embeddings.infinity_local",
-    "IpexLLMBgeEmbeddings": "aiagentsforce_community.embeddings.ipex_llm",
-    "JavelinAIGatewayEmbeddings": "aiagentsforce_community.embeddings.javelin_ai_gateway",
-    "JinaEmbeddings": "aiagentsforce_community.embeddings.jina",
-    "JohnSnowLabsEmbeddings": "aiagentsforce_community.embeddings.johnsnowlabs",
-    "LLMRailsEmbeddings": "aiagentsforce_community.embeddings.llm_rails",
-    "LaserEmbeddings": "aiagentsforce_community.embeddings.laser",
-    "LlamaCppEmbeddings": "aiagentsforce_community.embeddings.llamacpp",
-    "LlamafileEmbeddings": "aiagentsforce_community.embeddings.llamafile",
-    "LocalAIEmbeddings": "aiagentsforce_community.embeddings.localai",
-    "MiniMaxEmbeddings": "aiagentsforce_community.embeddings.minimax",
-    "MlflowAIGatewayEmbeddings": "aiagentsforce_community.embeddings.mlflow_gateway",
-    "MlflowCohereEmbeddings": "aiagentsforce_community.embeddings.mlflow",
-    "MlflowEmbeddings": "aiagentsforce_community.embeddings.mlflow",
-    "Model2vecEmbeddings": "aiagentsforce_community.embeddings.model2vec",
-    "ModelScopeEmbeddings": "aiagentsforce_community.embeddings.modelscope_hub",
-    "MosaicMLInstructorEmbeddings": "aiagentsforce_community.embeddings.mosaicml",
-    "NLPCloudEmbeddings": "aiagentsforce_community.embeddings.nlpcloud",
-    "NeMoEmbeddings": "aiagentsforce_community.embeddings.nemo",
-    "OCIGenAIEmbeddings": "aiagentsforce_community.embeddings.oci_generative_ai",
-    "OctoAIEmbeddings": "aiagentsforce_community.embeddings.octoai_embeddings",
-    "OllamaEmbeddings": "aiagentsforce_community.embeddings.ollama",
-    "OpenAIEmbeddings": "aiagentsforce_community.embeddings.openai",
-    "OpenVINOEmbeddings": "aiagentsforce_community.embeddings.openvino",
-    "OpenVINOBgeEmbeddings": "aiagentsforce_community.embeddings.openvino",
-    "QianfanEmbeddingsEndpoint": "aiagentsforce_community.embeddings.baidu_qianfan_endpoint",  # noqa: E501
-    "QuantizedBgeEmbeddings": "aiagentsforce_community.embeddings.itrex",
-    "QuantizedBiEncoderEmbeddings": "aiagentsforce_community.embeddings.optimum_intel",
-    "OracleEmbeddings": "aiagentsforce_community.embeddings.oracleai",
-    "OVHCloudEmbeddings": "aiagentsforce_community.embeddings.ovhcloud",
-    "SagemakerEndpointEmbeddings": "aiagentsforce_community.embeddings.sagemaker_endpoint",
-    "SambaStudioEmbeddings": "aiagentsforce_community.embeddings.sambanova",
-    "SelfHostedEmbeddings": "aiagentsforce_community.embeddings.self_hosted",
-    "SelfHostedHuggingFaceEmbeddings": "aiagentsforce_community.embeddings.self_hosted_hugging_face",  # noqa: E501
-    "SelfHostedHuggingFaceInstructEmbeddings": "aiagentsforce_community.embeddings.self_hosted_hugging_face",  # noqa: E501
-    "SentenceTransformerEmbeddings": "aiagentsforce_community.embeddings.sentence_transformer",  # noqa: E501
-    "SolarEmbeddings": "aiagentsforce_community.embeddings.solar",
-    "SpacyEmbeddings": "aiagentsforce_community.embeddings.spacy_embeddings",
-    "SparkLLMTextEmbeddings": "aiagentsforce_community.embeddings.sparkllm",
-    "TensorflowHubEmbeddings": "aiagentsforce_community.embeddings.tensorflow_hub",
-    "VertexAIEmbeddings": "aiagentsforce_community.embeddings.vertexai",
-    "VolcanoEmbeddings": "aiagentsforce_community.embeddings.volcengine",
-    "VoyageEmbeddings": "aiagentsforce_community.embeddings.voyageai",
-    "XinferenceEmbeddings": "aiagentsforce_community.embeddings.xinference",
-    "TextEmbedEmbeddings": "aiagentsforce_community.embeddings.textembed",
-    "TitanTakeoffEmbed": "aiagentsforce_community.embeddings.titan_takeoff",
-    "PremAIEmbeddings": "aiagentsforce_community.embeddings.premai",
-    "YandexGPTEmbeddings": "aiagentsforce_community.embeddings.yandex",
-    "AscendEmbeddings": "aiagentsforce_community.embeddings.ascend",
-    "ZhipuAIEmbeddings": "aiagentsforce_community.embeddings.zhipuai",
-    "HunyuanEmbeddings": "aiagentsforce_community.embeddings.hunyuan",
+    "AlephAlphaAsymmetricSemanticEmbedding": "aibaba_ai_community.embeddings.aleph_alpha",  # noqa: E501
+    "AlephAlphaSymmetricSemanticEmbedding": "aibaba_ai_community.embeddings.aleph_alpha",  # noqa: E501
+    "AnyscaleEmbeddings": "aibaba_ai_community.embeddings.anyscale",
+    "AwaEmbeddings": "aibaba_ai_community.embeddings.awa",
+    "AzureOpenAIEmbeddings": "aibaba_ai_community.embeddings.azure_openai",
+    "BaichuanTextEmbeddings": "aibaba_ai_community.embeddings.baichuan",
+    "BedrockEmbeddings": "aibaba_ai_community.embeddings.bedrock",
+    "BookendEmbeddings": "aibaba_ai_community.embeddings.bookend",
+    "ClarifaiEmbeddings": "aibaba_ai_community.embeddings.clarifai",
+    "ClovaEmbeddings": "aibaba_ai_community.embeddings.clova",
+    "ClovaXEmbeddings": "aibaba_ai_community.embeddings.naver",
+    "CohereEmbeddings": "aibaba_ai_community.embeddings.cohere",
+    "DashScopeEmbeddings": "aibaba_ai_community.embeddings.dashscope",
+    "DatabricksEmbeddings": "aibaba_ai_community.embeddings.databricks",
+    "DeepInfraEmbeddings": "aibaba_ai_community.embeddings.deepinfra",
+    "DeterministicFakeEmbedding": "aibaba_ai_community.embeddings.fake",
+    "EdenAiEmbeddings": "aibaba_ai_community.embeddings.edenai",
+    "ElasticsearchEmbeddings": "aibaba_ai_community.embeddings.elasticsearch",
+    "EmbaasEmbeddings": "aibaba_ai_community.embeddings.embaas",
+    "ErnieEmbeddings": "aibaba_ai_community.embeddings.ernie",
+    "FakeEmbeddings": "aibaba_ai_community.embeddings.fake",
+    "FastEmbedEmbeddings": "aibaba_ai_community.embeddings.fastembed",
+    "GPT4AllEmbeddings": "aibaba_ai_community.embeddings.gpt4all",
+    "GooglePalmEmbeddings": "aibaba_ai_community.embeddings.google_palm",
+    "GradientEmbeddings": "aibaba_ai_community.embeddings.gradient_ai",
+    "GigaChatEmbeddings": "aibaba_ai_community.embeddings.gigachat",
+    "HuggingFaceBgeEmbeddings": "aibaba_ai_community.embeddings.huggingface",
+    "HuggingFaceEmbeddings": "aibaba_ai_community.embeddings.huggingface",
+    "HuggingFaceHubEmbeddings": "aibaba_ai_community.embeddings.huggingface_hub",
+    "HuggingFaceInferenceAPIEmbeddings": "aibaba_ai_community.embeddings.huggingface",
+    "HuggingFaceInstructEmbeddings": "aibaba_ai_community.embeddings.huggingface",
+    "InfinityEmbeddings": "aibaba_ai_community.embeddings.infinity",
+    "InfinityEmbeddingsLocal": "aibaba_ai_community.embeddings.infinity_local",
+    "IpexLLMBgeEmbeddings": "aibaba_ai_community.embeddings.ipex_llm",
+    "JavelinAIGatewayEmbeddings": "aibaba_ai_community.embeddings.javelin_ai_gateway",
+    "JinaEmbeddings": "aibaba_ai_community.embeddings.jina",
+    "JohnSnowLabsEmbeddings": "aibaba_ai_community.embeddings.johnsnowlabs",
+    "LLMRailsEmbeddings": "aibaba_ai_community.embeddings.llm_rails",
+    "LaserEmbeddings": "aibaba_ai_community.embeddings.laser",
+    "LlamaCppEmbeddings": "aibaba_ai_community.embeddings.llamacpp",
+    "LlamafileEmbeddings": "aibaba_ai_community.embeddings.llamafile",
+    "LocalAIEmbeddings": "aibaba_ai_community.embeddings.localai",
+    "MiniMaxEmbeddings": "aibaba_ai_community.embeddings.minimax",
+    "MlflowAIGatewayEmbeddings": "aibaba_ai_community.embeddings.mlflow_gateway",
+    "MlflowCohereEmbeddings": "aibaba_ai_community.embeddings.mlflow",
+    "MlflowEmbeddings": "aibaba_ai_community.embeddings.mlflow",
+    "Model2vecEmbeddings": "aibaba_ai_community.embeddings.model2vec",
+    "ModelScopeEmbeddings": "aibaba_ai_community.embeddings.modelscope_hub",
+    "MosaicMLInstructorEmbeddings": "aibaba_ai_community.embeddings.mosaicml",
+    "NLPCloudEmbeddings": "aibaba_ai_community.embeddings.nlpcloud",
+    "NeMoEmbeddings": "aibaba_ai_community.embeddings.nemo",
+    "OCIGenAIEmbeddings": "aibaba_ai_community.embeddings.oci_generative_ai",
+    "OctoAIEmbeddings": "aibaba_ai_community.embeddings.octoai_embeddings",
+    "OllamaEmbeddings": "aibaba_ai_community.embeddings.ollama",
+    "OpenAIEmbeddings": "aibaba_ai_community.embeddings.openai",
+    "OpenVINOEmbeddings": "aibaba_ai_community.embeddings.openvino",
+    "OpenVINOBgeEmbeddings": "aibaba_ai_community.embeddings.openvino",
+    "QianfanEmbeddingsEndpoint": "aibaba_ai_community.embeddings.baidu_qianfan_endpoint",  # noqa: E501
+    "QuantizedBgeEmbeddings": "aibaba_ai_community.embeddings.itrex",
+    "QuantizedBiEncoderEmbeddings": "aibaba_ai_community.embeddings.optimum_intel",
+    "OracleEmbeddings": "aibaba_ai_community.embeddings.oracleai",
+    "OVHCloudEmbeddings": "aibaba_ai_community.embeddings.ovhcloud",
+    "SagemakerEndpointEmbeddings": "aibaba_ai_community.embeddings.sagemaker_endpoint",
+    "SambaStudioEmbeddings": "aibaba_ai_community.embeddings.sambanova",
+    "SelfHostedEmbeddings": "aibaba_ai_community.embeddings.self_hosted",
+    "SelfHostedHuggingFaceEmbeddings": "aibaba_ai_community.embeddings.self_hosted_hugging_face",  # noqa: E501
+    "SelfHostedHuggingFaceInstructEmbeddings": "aibaba_ai_community.embeddings.self_hosted_hugging_face",  # noqa: E501
+    "SentenceTransformerEmbeddings": "aibaba_ai_community.embeddings.sentence_transformer",  # noqa: E501
+    "SolarEmbeddings": "aibaba_ai_community.embeddings.solar",
+    "SpacyEmbeddings": "aibaba_ai_community.embeddings.spacy_embeddings",
+    "SparkLLMTextEmbeddings": "aibaba_ai_community.embeddings.sparkllm",
+    "TensorflowHubEmbeddings": "aibaba_ai_community.embeddings.tensorflow_hub",
+    "VertexAIEmbeddings": "aibaba_ai_community.embeddings.vertexai",
+    "VolcanoEmbeddings": "aibaba_ai_community.embeddings.volcengine",
+    "VoyageEmbeddings": "aibaba_ai_community.embeddings.voyageai",
+    "XinferenceEmbeddings": "aibaba_ai_community.embeddings.xinference",
+    "TextEmbedEmbeddings": "aibaba_ai_community.embeddings.textembed",
+    "TitanTakeoffEmbed": "aibaba_ai_community.embeddings.titan_takeoff",
+    "PremAIEmbeddings": "aibaba_ai_community.embeddings.premai",
+    "YandexGPTEmbeddings": "aibaba_ai_community.embeddings.yandex",
+    "AscendEmbeddings": "aibaba_ai_community.embeddings.ascend",
+    "ZhipuAIEmbeddings": "aibaba_ai_community.embeddings.zhipuai",
+    "HunyuanEmbeddings": "aibaba_ai_community.embeddings.hunyuan",
 }
 
 

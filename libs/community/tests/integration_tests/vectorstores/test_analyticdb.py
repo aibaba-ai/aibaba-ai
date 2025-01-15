@@ -5,7 +5,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.analyticdb import AnalyticDB
+from aibaba_ai_community.vectorstores.analyticdb import AnalyticDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 CONNECTION_STRING = AnalyticDB.connection_string_from_db_params(

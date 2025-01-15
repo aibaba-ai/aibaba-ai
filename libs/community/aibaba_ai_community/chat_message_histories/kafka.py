@@ -96,7 +96,7 @@ class KafkaChatMessageHistory(BaseChatMessageHistory):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_message_histories import KafkaChatMessageHistory
+            from aibaba_ai_community.chat_message_histories import KafkaChatMessageHistory
 
             history = KafkaChatMessageHistory(
                 session_id="your_session_id",

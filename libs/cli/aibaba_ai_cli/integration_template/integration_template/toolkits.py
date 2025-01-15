@@ -7,7 +7,7 @@ from aibaba_ai_core.tools import BaseTool, BaseToolkit
 
 class __ModuleName__Toolkit(BaseToolkit):
     # TODO: Replace all TODOs in docstring. See example docstring:
-    # https://github.com/aibaba-ai/aibaba-ai/blob/c123cb2b304f52ab65db4714eeec46af69a861ec/libs/community/aiagentsforce_community/agent_toolkits/sql/toolkit.py#L19
+    # https://github.com/aibaba-ai/aibaba-ai/blob/c123cb2b304f52ab65db4714eeec46af69a861ec/libs/community/aibaba_ai_community/agent_toolkits/sql/toolkit.py#L19
     """__ModuleName__ toolkit.
 
     # TODO: Replace with relevant packages, env vars, etc.

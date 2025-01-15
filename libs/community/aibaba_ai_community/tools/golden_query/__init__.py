@@ -1,6 +1,6 @@
 """Golden API toolkit."""
 
-from aiagentsforce_community.tools.golden_query.tool import GoldenQueryRun
+from aibaba_ai_community.tools.golden_query.tool import GoldenQueryRun
 
 __all__ = [
     "GoldenQueryRun",

@@ -57,7 +57,7 @@ class SolarEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import SolarEmbeddings
+            from aibaba_ai_community.embeddings import SolarEmbeddings
             embeddings = SolarEmbeddings()
 
             query_text = "This is a test query."

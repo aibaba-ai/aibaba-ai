@@ -21,7 +21,7 @@ from alibaba_ai_core.messages import (
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.cohere import BaseCohere
+from aibaba_ai_community.llms.cohere import BaseCohere
 
 
 def get_role(message: BaseMessage) -> str:
@@ -109,7 +109,7 @@ class ChatCohere(BaseChatModel, BaseCohere):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatCohere
+            from aibaba_ai_community.chat_models import ChatCohere
             from alibaba_ai_core.messages import HumanMessage
 
             chat = ChatCohere(max_tokens=256, temperature=0.75)

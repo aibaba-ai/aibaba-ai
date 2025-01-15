@@ -5,7 +5,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
-from aiagentsforce_community.llms.cohere import _create_retry_decorator
+from aibaba_ai_community.llms.cohere import _create_retry_decorator
 
 
 @deprecated(
@@ -23,7 +23,7 @@ class CohereEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import CohereEmbeddings
+            from aibaba_ai_community.embeddings import CohereEmbeddings
             cohere = CohereEmbeddings(
                 model="embed-english-light-v3.0",
                 cohere_api_key="my-api-key"

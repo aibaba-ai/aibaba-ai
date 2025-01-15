@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 
 from pydantic import ConfigDict
 
-from aiagentsforce_community.tools.databricks._execution import execute_function
+from aibaba_ai_community.tools.databricks._execution import execute_function
 
 
 def _uc_type_to_pydantic_type(uc_type_json: Union[str, Dict[str, Any]]) -> Type:

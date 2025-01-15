@@ -13,7 +13,7 @@ class JohnSnowLabsEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings.johnsnowlabs import JohnSnowLabsEmbeddings
+            from aibaba_ai_community.embeddings.johnsnowlabs import JohnSnowLabsEmbeddings
 
             embedding = JohnSnowLabsEmbeddings(model='embed_sentence.bert')
             output = embedding.embed_query("foo bar")

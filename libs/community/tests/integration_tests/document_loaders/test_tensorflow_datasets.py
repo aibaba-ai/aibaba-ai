@@ -8,7 +8,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pydantic import ValidationError
 
-from aiagentsforce_community.document_loaders.tensorflow_datasets import (
+from aibaba_ai_community.document_loaders.tensorflow_datasets import (
     TensorflowDatasetLoader,
 )
 

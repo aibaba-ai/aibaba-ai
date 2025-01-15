@@ -11,7 +11,7 @@ from alibaba_ai_core.utils.pydantic import get_fields
 from pydantic import BaseModel, Field, field_validator, validator
 from typing_extensions import TYPE_CHECKING, Literal
 
-from aiagentsforce_community.vectorstores.redis.constants import REDIS_VECTOR_DTYPE_MAP
+from aibaba_ai_community.vectorstores.redis.constants import REDIS_VECTOR_DTYPE_MAP
 
 if TYPE_CHECKING:
     from redis.commands.search.field import (  # type: ignore

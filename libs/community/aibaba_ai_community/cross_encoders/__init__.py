@@ -14,16 +14,16 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.cross_encoders.base import (
+    from aibaba_ai_community.cross_encoders.base import (
         BaseCrossEncoder,
     )
-    from aiagentsforce_community.cross_encoders.fake import (
+    from aibaba_ai_community.cross_encoders.fake import (
         FakeCrossEncoder,
     )
-    from aiagentsforce_community.cross_encoders.huggingface import (
+    from aibaba_ai_community.cross_encoders.huggingface import (
         HuggingFaceCrossEncoder,
     )
-    from aiagentsforce_community.cross_encoders.sagemaker_endpoint import (
+    from aibaba_ai_community.cross_encoders.sagemaker_endpoint import (
         SagemakerEndpointCrossEncoder,
     )
 
@@ -35,10 +35,10 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "BaseCrossEncoder": "aiagentsforce_community.cross_encoders.base",
-    "FakeCrossEncoder": "aiagentsforce_community.cross_encoders.fake",
-    "HuggingFaceCrossEncoder": "aiagentsforce_community.cross_encoders.huggingface",
-    "SagemakerEndpointCrossEncoder": "aiagentsforce_community.cross_encoders.sagemaker_endpoint",  # noqa: E501
+    "BaseCrossEncoder": "aibaba_ai_community.cross_encoders.base",
+    "FakeCrossEncoder": "aibaba_ai_community.cross_encoders.fake",
+    "HuggingFaceCrossEncoder": "aibaba_ai_community.cross_encoders.huggingface",
+    "SagemakerEndpointCrossEncoder": "aibaba_ai_community.cross_encoders.sagemaker_endpoint",  # noqa: E501
 }
 
 

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores.redis.schema import (
+    from aibaba_ai_community.vectorstores.redis.schema import (
         FlatVectorField,
         HNSWVectorField,
         NumericFieldSchema,
@@ -20,16 +20,16 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "RedisDistanceMetric": "aiagentsforce_community.vectorstores.redis.schema",
-    "RedisField": "aiagentsforce_community.vectorstores.redis.schema",
-    "TextFieldSchema": "aiagentsforce_community.vectorstores.redis.schema",
-    "TagFieldSchema": "aiagentsforce_community.vectorstores.redis.schema",
-    "NumericFieldSchema": "aiagentsforce_community.vectorstores.redis.schema",
-    "RedisVectorField": "aiagentsforce_community.vectorstores.redis.schema",
-    "FlatVectorField": "aiagentsforce_community.vectorstores.redis.schema",
-    "HNSWVectorField": "aiagentsforce_community.vectorstores.redis.schema",
-    "RedisModel": "aiagentsforce_community.vectorstores.redis.schema",
-    "read_schema": "aiagentsforce_community.vectorstores.redis.schema",
+    "RedisDistanceMetric": "aibaba_ai_community.vectorstores.redis.schema",
+    "RedisField": "aibaba_ai_community.vectorstores.redis.schema",
+    "TextFieldSchema": "aibaba_ai_community.vectorstores.redis.schema",
+    "TagFieldSchema": "aibaba_ai_community.vectorstores.redis.schema",
+    "NumericFieldSchema": "aibaba_ai_community.vectorstores.redis.schema",
+    "RedisVectorField": "aibaba_ai_community.vectorstores.redis.schema",
+    "FlatVectorField": "aibaba_ai_community.vectorstores.redis.schema",
+    "HNSWVectorField": "aibaba_ai_community.vectorstores.redis.schema",
+    "RedisModel": "aibaba_ai_community.vectorstores.redis.schema",
+    "read_schema": "aibaba_ai_community.vectorstores.redis.schema",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

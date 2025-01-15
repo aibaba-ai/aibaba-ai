@@ -5,7 +5,7 @@ from typing import Generator
 import pytest
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.fireworks import Fireworks
+from aibaba_ai_community.llms.fireworks import Fireworks
 
 
 @pytest.fixture

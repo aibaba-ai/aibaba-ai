@@ -1,6 +1,6 @@
 """Integration test for NASA API Wrapper."""
 
-from aiagentsforce_community.utilities.nasa import NasaAPIWrapper
+from aibaba_ai_community.utilities.nasa import NasaAPIWrapper
 
 
 def test_media_search() -> None:

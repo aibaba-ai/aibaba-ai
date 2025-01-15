@@ -3,7 +3,7 @@ from typing import List, Optional
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import SQLiteVec
+from aibaba_ai_community.vectorstores import SQLiteVec
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

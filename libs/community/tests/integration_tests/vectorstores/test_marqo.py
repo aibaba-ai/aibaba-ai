@@ -5,7 +5,7 @@ from typing import Dict
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.marqo import Marqo
+from aibaba_ai_community.vectorstores.marqo import Marqo
 
 DEFAULT_MARQO_URL = "http://localhost:8882"
 DEFAULT_MARQO_API_KEY = ""

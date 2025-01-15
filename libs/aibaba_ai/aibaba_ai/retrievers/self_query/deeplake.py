@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.query_constructors.deeplake import (
+    from aibaba_ai_community.query_constructors.deeplake import (
         DeepLakeTranslator,
         can_cast_to_float,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "DeepLakeTranslator": "aiagentsforce_community.query_constructors.deeplake",
-    "can_cast_to_float": "aiagentsforce_community.query_constructors.deeplake",
+    "DeepLakeTranslator": "aibaba_ai_community.query_constructors.deeplake",
+    "can_cast_to_float": "aibaba_ai_community.query_constructors.deeplake",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

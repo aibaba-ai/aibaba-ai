@@ -9,7 +9,7 @@ from alibaba_ai_core.structured_query import (
     StructuredQuery,
 )
 
-from aiagentsforce_community.query_constructors.hanavector import HanaTranslator
+from aibaba_ai_community.query_constructors.hanavector import HanaTranslator
 
 DEFAULT_TRANSLATOR = HanaTranslator()
 

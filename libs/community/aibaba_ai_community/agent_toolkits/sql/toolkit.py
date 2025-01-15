@@ -9,16 +9,16 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.sql_database.tool import (
+from aibaba_ai_community.tools.sql_database.tool import (
     InfoSQLDatabaseTool,
     ListSQLDatabaseTool,
     QuerySQLCheckerTool,
     QuerySQLDatabaseTool,
 )
-from aiagentsforce_community.tools.sql_database.tool import (
+from aibaba_ai_community.tools.sql_database.tool import (
     QuerySQLDataBaseTool as QuerySQLDataBaseTool,  # keep import for backwards compat.
 )
-from aiagentsforce_community.utilities.sql_database import SQLDatabase
+from aibaba_ai_community.utilities.sql_database import SQLDatabase
 
 
 class SQLDatabaseToolkit(BaseToolkit):
@@ -40,8 +40,8 @@ class SQLDatabaseToolkit(BaseToolkit):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
-            from aiagentsforce_community.utilities.sql_database import SQLDatabase
+            from aibaba_ai_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
+            from aibaba_ai_community.utilities.sql_database import SQLDatabase
             from langchain_openai import ChatOpenAI
 
             db = SQLDatabase.from_uri("sqlite:///Chinook.db")

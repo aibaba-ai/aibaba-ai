@@ -1,7 +1,7 @@
 import re
 from typing import Callable, List, Pattern
 
-from aiagentsforce_community.document_loaders.parsers.language.code_segmenter import (
+from aibaba_ai_community.document_loaders.parsers.language.code_segmenter import (
     CodeSegmenter,
 )
 

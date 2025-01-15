@@ -6,7 +6,7 @@ test_script = """
     import json
     import streamlit as st
     from langchain.memory import ConversationBufferMemory
-    from aiagentsforce_community.chat_message_histories import StreamlitChatMessageHistory
+    from aibaba_ai_community.chat_message_histories import StreamlitChatMessageHistory
     from alibaba_ai_core.messages import message_to_dict, BaseMessage
 
     message_history = StreamlitChatMessageHistory()

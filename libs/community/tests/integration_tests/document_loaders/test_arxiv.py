@@ -8,7 +8,7 @@ from urllib.error import HTTPError
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.arxiv import ArxivLoader
+from aibaba_ai_community.document_loaders.arxiv import ArxivLoader
 
 EXAMPLE_HELLO_PDF_PATH = Path(__file__).parents[1] / "examples" / "hello.pdf"
 

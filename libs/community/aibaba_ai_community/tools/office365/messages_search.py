@@ -9,8 +9,8 @@ from typing import Any, Dict, List, Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.tools.office365.base import O365BaseTool
-from aiagentsforce_community.tools.office365.utils import UTC_FORMAT, clean_body
+from aibaba_ai_community.tools.office365.base import O365BaseTool
+from aibaba_ai_community.tools.office365.utils import UTC_FORMAT, clean_body
 
 
 class SearchEmailsInput(BaseModel):

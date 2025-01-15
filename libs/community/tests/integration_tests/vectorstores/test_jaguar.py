@@ -1,6 +1,6 @@
 import json
 
-from aiagentsforce_community.vectorstores.jaguar import Jaguar
+from aibaba_ai_community.vectorstores.jaguar import Jaguar
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

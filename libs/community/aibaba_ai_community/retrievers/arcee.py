@@ -6,7 +6,7 @@ from alibaba_ai_core.retrievers import BaseRetriever
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, SecretStr
 
-from aiagentsforce_community.utilities.arcee import ArceeWrapper, DALMFilter
+from aibaba_ai_community.utilities.arcee import ArceeWrapper, DALMFilter
 
 
 class ArceeRetriever(BaseRetriever):
@@ -18,7 +18,7 @@ class ArceeRetriever(BaseRetriever):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import ArceeRetriever
+            from aibaba_ai_community.retrievers import ArceeRetriever
 
             retriever = ArceeRetriever(
                 model="DALM-PubMed",

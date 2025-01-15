@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utils.openai import is_openai_v1
+    from aibaba_ai_community.utils.openai import is_openai_v1
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"is_openai_v1": "aiagentsforce_community.utils.openai"}
+DEPRECATED_LOOKUP = {"is_openai_v1": "aibaba_ai_community.utils.openai"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

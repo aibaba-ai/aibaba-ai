@@ -1,6 +1,6 @@
 """Tests for the Mastodon toots loader"""
 
-from aiagentsforce_community.document_loaders import MastodonTootsLoader
+from aibaba_ai_community.document_loaders import MastodonTootsLoader
 
 
 def test_mastodon_toots_loader() -> None:

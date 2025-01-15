@@ -7,7 +7,7 @@ from alibaba_ai_core.documents import BaseDocumentTransformer, Document
 from alibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.utils.math import cosine_similarity
+from aibaba_ai_community.utils.math import cosine_similarity
 
 
 class _DocumentWithState(Document):

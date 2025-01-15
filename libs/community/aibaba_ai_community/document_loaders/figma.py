@@ -5,7 +5,7 @@ from typing import Any, List
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils import stringify_dict
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class FigmaFileLoader(BaseLoader):

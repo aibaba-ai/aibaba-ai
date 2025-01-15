@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.google_palm import (
+    from aibaba_ai_community.chat_models.google_palm import (
         ChatGooglePalm,
         ChatGooglePalmError,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ChatGooglePalm": "aiagentsforce_community.chat_models.google_palm",
-    "ChatGooglePalmError": "aiagentsforce_community.chat_models.google_palm",
+    "ChatGooglePalm": "aibaba_ai_community.chat_models.google_palm",
+    "ChatGooglePalmError": "aibaba_ai_community.chat_models.google_palm",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

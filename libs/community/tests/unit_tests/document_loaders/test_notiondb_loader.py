@@ -2,7 +2,7 @@ from unittest.mock import Mock, patch
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import NotionDBLoader
+from aibaba_ai_community.document_loaders import NotionDBLoader
 
 
 class TestNotionDBLoader:
@@ -25,8 +25,8 @@ class TestNotionDBLoader:
         # Assert
         assert result == "Hello world!"
 
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._request")
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._request")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
     def test_load_page_with_rich_text(
         self, mock_load_blocks: Mock, mock_request: Mock
     ) -> None:
@@ -61,8 +61,8 @@ class TestNotionDBLoader:
         # Assert
         assert result == expected_doc
 
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._request")
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._request")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
     def test_load_page_with_code_in_rich_text(
         self, mock_load_blocks: Mock, mock_request: Mock
     ) -> None:
@@ -92,8 +92,8 @@ class TestNotionDBLoader:
         # Assert
         assert result == expected_doc
 
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._request")
-    @patch("aiagentsforce_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._request")
+    @patch("aibaba_ai_community.document_loaders.notiondb.NotionDBLoader._load_blocks")
     def test_load(self, mock_load_blocks: Mock, mock_request: Mock) -> None:
         # Setup
         mock_load_blocks.return_value = "Mocked block content"

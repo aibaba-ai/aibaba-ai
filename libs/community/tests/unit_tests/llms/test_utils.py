@@ -1,6 +1,6 @@
 """Test LLM utility functions."""
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 def test_enforce_stop_tokens() -> None:

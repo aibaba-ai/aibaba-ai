@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.parsers.pdf import (
+    from aibaba_ai_community.document_loaders.parsers.pdf import (
         AmazonTextractPDFParser,
         DocumentIntelligenceParser,
         PDFMinerParser,
@@ -19,15 +19,15 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "extract_from_images_with_rapidocr": (
-        "aiagentsforce_community.document_loaders.parsers.pdf"
+        "aibaba_ai_community.document_loaders.parsers.pdf"
     ),
-    "PyPDFParser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "PDFMinerParser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "PyMuPDFParser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "PyPDFium2Parser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "PDFPlumberParser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "AmazonTextractPDFParser": "aiagentsforce_community.document_loaders.parsers.pdf",
-    "DocumentIntelligenceParser": "aiagentsforce_community.document_loaders.parsers.pdf",
+    "PyPDFParser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "PDFMinerParser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "PyMuPDFParser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "PyPDFium2Parser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "PDFPlumberParser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "AmazonTextractPDFParser": "aibaba_ai_community.document_loaders.parsers.pdf",
+    "DocumentIntelligenceParser": "aibaba_ai_community.document_loaders.parsers.pdf",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

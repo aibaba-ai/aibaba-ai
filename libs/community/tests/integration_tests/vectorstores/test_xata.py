@@ -9,8 +9,8 @@ import os
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores.xata import XataVectorStore
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores.xata import XataVectorStore
 
 
 class TestXata:

@@ -22,8 +22,8 @@ from langchain.chains.natbot.prompt import PROMPT
     since="0.2.13",
     message=(
         "Importing NatBotChain from langchain is deprecated and will be removed in "
-        "langchain 1.0. Please import from aiagentsforce_community instead: "
-        "from aiagentsforce_community.chains.natbot import NatBotChain. "
+        "langchain 1.0. Please import from aibaba_ai_community instead: "
+        "from aibaba_ai_community.chains.natbot import NatBotChain. "
         "You may need to pip install -U langchain-community."
     ),
     removal="1.0",

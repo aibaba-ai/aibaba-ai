@@ -14,9 +14,9 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
-from aiagentsforce_community.utilities.cassandra import SetupMode
-from aiagentsforce_community.vectorstores import Cassandra
+from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
+from aibaba_ai_community.utilities.cassandra import SetupMode
+from aibaba_ai_community.vectorstores import Cassandra
 
 TEST_KEYSPACE = "graph_test_keyspace"
 

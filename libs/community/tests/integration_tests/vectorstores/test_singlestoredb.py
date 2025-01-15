@@ -10,8 +10,8 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.vectorstores.singlestoredb import SingleStoreDB
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.singlestoredb import SingleStoreDB
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 TEST_SINGLESTOREDB_URL = "root:pass@localhost:3306/db"

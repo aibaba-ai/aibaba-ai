@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders.readthedocs import ReadTheDocsLoader
+from aibaba_ai_community.document_loaders.readthedocs import ReadTheDocsLoader
 
 PARENT_DIR = Path(__file__).parent / "test_docs" / "readthedocs"
 

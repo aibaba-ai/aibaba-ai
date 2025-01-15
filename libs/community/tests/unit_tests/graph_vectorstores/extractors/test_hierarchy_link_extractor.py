@@ -1,5 +1,5 @@
-from aiagentsforce_community.graph_vectorstores.extractors import HierarchyLinkExtractor
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.extractors import HierarchyLinkExtractor
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 PATH_1 = ["Root", "H1", "h2"]
 

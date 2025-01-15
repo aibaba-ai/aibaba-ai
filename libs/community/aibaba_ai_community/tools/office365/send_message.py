@@ -3,7 +3,7 @@ from typing import List, Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.office365.base import O365BaseTool
+from aibaba_ai_community.tools.office365.base import O365BaseTool
 
 
 class SendMessageSchema(BaseModel):

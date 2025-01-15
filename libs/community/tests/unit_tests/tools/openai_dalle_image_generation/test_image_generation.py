@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from aiagentsforce_community.tools.openai_dalle_image_generation import (
+from aibaba_ai_community.tools.openai_dalle_image_generation import (
     OpenAIDALLEImageGenerationTool,
 )
 

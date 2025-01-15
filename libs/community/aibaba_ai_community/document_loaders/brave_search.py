@@ -2,8 +2,8 @@ from typing import Iterator, List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.brave_search import BraveSearchWrapper
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.brave_search import BraveSearchWrapper
 
 
 class BraveSearchLoader(BaseLoader):

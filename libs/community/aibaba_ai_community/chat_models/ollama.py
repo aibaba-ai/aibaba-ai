@@ -17,7 +17,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.llms.ollama import OllamaEndpointNotFoundError, _OllamaCommon
+from aibaba_ai_community.llms.ollama import OllamaEndpointNotFoundError, _OllamaCommon
 
 
 @deprecated("0.0.3", alternative="_chat_stream_response_to_chat_generation_chunk")
@@ -60,7 +60,7 @@ class ChatOllama(BaseChatModel, _OllamaCommon):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOllama
+            from aibaba_ai_community.chat_models import ChatOllama
             ollama = ChatOllama(model="llama2")
     """
 

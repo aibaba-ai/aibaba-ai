@@ -32,7 +32,7 @@ from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import BaseModel, Field, model_validator
 from typing_extensions import Literal
 
-from aiagentsforce_community.adapters.openai import convert_message_to_dict
+from aibaba_ai_community.adapters.openai import convert_message_to_dict
 
 _BM = TypeVar("_BM", bound=BaseModel)
 _DictOrPydanticClass = Union[Dict[str, Any], Type[_BM], Type]
@@ -61,7 +61,7 @@ class ChatOutlines(BaseChatModel):
     See full list of supported init args and their descriptions in the params section.
 
     Instantiate:
-      from aiagentsforce_community.chat_models import ChatOutlines
+      from aibaba_ai_community.chat_models import ChatOutlines
       chat = ChatOutlines(model="meta-llama/Llama-2-7b-chat-hf")
 
     Invoke:

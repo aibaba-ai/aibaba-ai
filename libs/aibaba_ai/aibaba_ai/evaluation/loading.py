@@ -135,11 +135,11 @@ def load_evaluator(
                 from langchain_openai import ChatOpenAI
             except ImportError:
                 try:
-                    from aiagentsforce_community.chat_models.openai import ChatOpenAI
+                    from aibaba_ai_community.chat_models.openai import ChatOpenAI
                 except ImportError:
                     raise ImportError(
                         "Could not import langchain_openai or fallback onto "
-                        "aiagentsforce_community. Please install langchain_openai "
+                        "aibaba_ai_community. Please install langchain_openai "
                         "or specify a language model explicitly. "
                         "It's recommended to install langchain_openai AND "
                         "specify a language model explicitly."

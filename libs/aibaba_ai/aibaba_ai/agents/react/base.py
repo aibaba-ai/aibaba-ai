@@ -20,7 +20,7 @@ from langchain.agents.react.wiki_prompt import WIKI_PROMPT
 from langchain.agents.utils import validate_tools_single_input
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.docstore.base import Docstore
+    from aibaba_ai_community.docstore.base import Docstore
 
 
 @deprecated(

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.human import (
+    from aibaba_ai_community.callbacks.human import (
         AsyncHumanApprovalCallbackHandler,
         HumanApprovalCallbackHandler,
         HumanRejectedException,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "HumanRejectedException": "aiagentsforce_community.callbacks.human",
-    "HumanApprovalCallbackHandler": "aiagentsforce_community.callbacks.human",
-    "AsyncHumanApprovalCallbackHandler": "aiagentsforce_community.callbacks.human",
+    "HumanRejectedException": "aibaba_ai_community.callbacks.human",
+    "HumanApprovalCallbackHandler": "aibaba_ai_community.callbacks.human",
+    "AsyncHumanApprovalCallbackHandler": "aibaba_ai_community.callbacks.human",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

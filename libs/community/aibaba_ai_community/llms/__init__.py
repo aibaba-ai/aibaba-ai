@@ -25,145 +25,145 @@ from alibaba_ai_core.language_models.llms import BaseLLM
 
 
 def _import_ai21() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.ai21 import AI21
+    from aibaba_ai_community.llms.ai21 import AI21
 
     return AI21
 
 
 def _import_aleph_alpha() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.aleph_alpha import AlephAlpha
+    from aibaba_ai_community.llms.aleph_alpha import AlephAlpha
 
     return AlephAlpha
 
 
 def _import_amazon_api_gateway() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.amazon_api_gateway import AmazonAPIGateway
+    from aibaba_ai_community.llms.amazon_api_gateway import AmazonAPIGateway
 
     return AmazonAPIGateway
 
 
 def _import_anthropic() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.anthropic import Anthropic
+    from aibaba_ai_community.llms.anthropic import Anthropic
 
     return Anthropic
 
 
 def _import_anyscale() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.anyscale import Anyscale
+    from aibaba_ai_community.llms.anyscale import Anyscale
 
     return Anyscale
 
 
 def _import_aphrodite() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.aphrodite import Aphrodite
+    from aibaba_ai_community.llms.aphrodite import Aphrodite
 
     return Aphrodite
 
 
 def _import_arcee() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.arcee import Arcee
+    from aibaba_ai_community.llms.arcee import Arcee
 
     return Arcee
 
 
 def _import_aviary() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.aviary import Aviary
+    from aibaba_ai_community.llms.aviary import Aviary
 
     return Aviary
 
 
 def _import_azureml_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
+    from aibaba_ai_community.llms.azureml_endpoint import AzureMLOnlineEndpoint
 
     return AzureMLOnlineEndpoint
 
 
 def _import_baichuan() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.baichuan import BaichuanLLM
+    from aibaba_ai_community.llms.baichuan import BaichuanLLM
 
     return BaichuanLLM
 
 
 def _import_baidu_qianfan_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
+    from aibaba_ai_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
 
     return QianfanLLMEndpoint
 
 
 def _import_bananadev() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.bananadev import Banana
+    from aibaba_ai_community.llms.bananadev import Banana
 
     return Banana
 
 
 def _import_baseten() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.baseten import Baseten
+    from aibaba_ai_community.llms.baseten import Baseten
 
     return Baseten
 
 
 def _import_beam() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.beam import Beam
+    from aibaba_ai_community.llms.beam import Beam
 
     return Beam
 
 
 def _import_bedrock() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.bedrock import Bedrock
+    from aibaba_ai_community.llms.bedrock import Bedrock
 
     return Bedrock
 
 
 def _import_bigdlllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.bigdl_llm import BigdlLLM
+    from aibaba_ai_community.llms.bigdl_llm import BigdlLLM
 
     return BigdlLLM
 
 
 def _import_bittensor() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.bittensor import NIBittensorLLM
+    from aibaba_ai_community.llms.bittensor import NIBittensorLLM
 
     return NIBittensorLLM
 
 
 def _import_cerebriumai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.cerebriumai import CerebriumAI
+    from aibaba_ai_community.llms.cerebriumai import CerebriumAI
 
     return CerebriumAI
 
 
 def _import_chatglm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.chatglm import ChatGLM
+    from aibaba_ai_community.llms.chatglm import ChatGLM
 
     return ChatGLM
 
 
 def _import_clarifai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.clarifai import Clarifai
+    from aibaba_ai_community.llms.clarifai import Clarifai
 
     return Clarifai
 
 
 def _import_cohere() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.cohere import Cohere
+    from aibaba_ai_community.llms.cohere import Cohere
 
     return Cohere
 
 
 def _import_ctransformers() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.ctransformers import CTransformers
+    from aibaba_ai_community.llms.ctransformers import CTransformers
 
     return CTransformers
 
 
 def _import_ctranslate2() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.ctranslate2 import CTranslate2
+    from aibaba_ai_community.llms.ctranslate2 import CTranslate2
 
     return CTranslate2
 
 
 def _import_databricks() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.databricks import Databricks
+    from aibaba_ai_community.llms.databricks import Databricks
 
     return Databricks
 
@@ -173,105 +173,105 @@ def _import_databricks_chat() -> Any:
     warn_deprecated(
         since="0.0.22",
         removal="1.0",
-        alternative_import="aiagentsforce_community.chat_models.ChatDatabricks",
+        alternative_import="aibaba_ai_community.chat_models.ChatDatabricks",
     )
-    from aiagentsforce_community.chat_models.databricks import ChatDatabricks
+    from aibaba_ai_community.chat_models.databricks import ChatDatabricks
 
     return ChatDatabricks
 
 
 def _import_deepinfra() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.deepinfra import DeepInfra
+    from aibaba_ai_community.llms.deepinfra import DeepInfra
 
     return DeepInfra
 
 
 def _import_deepsparse() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.deepsparse import DeepSparse
+    from aibaba_ai_community.llms.deepsparse import DeepSparse
 
     return DeepSparse
 
 
 def _import_edenai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.edenai import EdenAI
+    from aibaba_ai_community.llms.edenai import EdenAI
 
     return EdenAI
 
 
 def _import_fake() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.fake import FakeListLLM
+    from aibaba_ai_community.llms.fake import FakeListLLM
 
     return FakeListLLM
 
 
 def _import_fireworks() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.fireworks import Fireworks
+    from aibaba_ai_community.llms.fireworks import Fireworks
 
     return Fireworks
 
 
 def _import_forefrontai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.forefrontai import ForefrontAI
+    from aibaba_ai_community.llms.forefrontai import ForefrontAI
 
     return ForefrontAI
 
 
 def _import_friendli() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.friendli import Friendli
+    from aibaba_ai_community.llms.friendli import Friendli
 
     return Friendli
 
 
 def _import_gigachat() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.gigachat import GigaChat
+    from aibaba_ai_community.llms.gigachat import GigaChat
 
     return GigaChat
 
 
 def _import_google_palm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.google_palm import GooglePalm
+    from aibaba_ai_community.llms.google_palm import GooglePalm
 
     return GooglePalm
 
 
 def _import_gooseai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.gooseai import GooseAI
+    from aibaba_ai_community.llms.gooseai import GooseAI
 
     return GooseAI
 
 
 def _import_gpt4all() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.gpt4all import GPT4All
+    from aibaba_ai_community.llms.gpt4all import GPT4All
 
     return GPT4All
 
 
 def _import_gradient_ai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.gradient_ai import GradientLLM
+    from aibaba_ai_community.llms.gradient_ai import GradientLLM
 
     return GradientLLM
 
 
 def _import_huggingface_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.huggingface_endpoint import HuggingFaceEndpoint
+    from aibaba_ai_community.llms.huggingface_endpoint import HuggingFaceEndpoint
 
     return HuggingFaceEndpoint
 
 
 def _import_huggingface_hub() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.huggingface_hub import HuggingFaceHub
+    from aibaba_ai_community.llms.huggingface_hub import HuggingFaceHub
 
     return HuggingFaceHub
 
 
 def _import_huggingface_pipeline() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.huggingface_pipeline import HuggingFacePipeline
+    from aibaba_ai_community.llms.huggingface_pipeline import HuggingFacePipeline
 
     return HuggingFacePipeline
 
 
 def _import_huggingface_text_gen_inference() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.huggingface_text_gen_inference import (
+    from aibaba_ai_community.llms.huggingface_text_gen_inference import (
         HuggingFaceTextGenInference,
     )
 
@@ -279,61 +279,61 @@ def _import_huggingface_text_gen_inference() -> Type[BaseLLM]:
 
 
 def _import_human() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.human import HumanInputLLM
+    from aibaba_ai_community.llms.human import HumanInputLLM
 
     return HumanInputLLM
 
 
 def _import_ipex_llm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.ipex_llm import IpexLLM
+    from aibaba_ai_community.llms.ipex_llm import IpexLLM
 
     return IpexLLM
 
 
 def _import_javelin_ai_gateway() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.javelin_ai_gateway import JavelinAIGateway
+    from aibaba_ai_community.llms.javelin_ai_gateway import JavelinAIGateway
 
     return JavelinAIGateway
 
 
 def _import_koboldai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.koboldai import KoboldApiLLM
+    from aibaba_ai_community.llms.koboldai import KoboldApiLLM
 
     return KoboldApiLLM
 
 
 def _import_konko() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.konko import Konko
+    from aibaba_ai_community.llms.konko import Konko
 
     return Konko
 
 
 def _import_llamacpp() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.llamacpp import LlamaCpp
+    from aibaba_ai_community.llms.llamacpp import LlamaCpp
 
     return LlamaCpp
 
 
 def _import_llamafile() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.llamafile import Llamafile
+    from aibaba_ai_community.llms.llamafile import Llamafile
 
     return Llamafile
 
 
 def _import_manifest() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.manifest import ManifestWrapper
+    from aibaba_ai_community.llms.manifest import ManifestWrapper
 
     return ManifestWrapper
 
 
 def _import_minimax() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.minimax import Minimax
+    from aibaba_ai_community.llms.minimax import Minimax
 
     return Minimax
 
 
 def _import_mlflow() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.mlflow import Mlflow
+    from aibaba_ai_community.llms.mlflow import Mlflow
 
     return Mlflow
 
@@ -343,45 +343,45 @@ def _import_mlflow_chat() -> Any:
     warn_deprecated(
         since="0.0.22",
         removal="1.0",
-        alternative_import="aiagentsforce_community.chat_models.ChatMlflow",
+        alternative_import="aibaba_ai_community.chat_models.ChatMlflow",
     )
-    from aiagentsforce_community.chat_models.mlflow import ChatMlflow
+    from aibaba_ai_community.chat_models.mlflow import ChatMlflow
 
     return ChatMlflow
 
 
 def _import_mlflow_ai_gateway() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.mlflow_ai_gateway import MlflowAIGateway
+    from aibaba_ai_community.llms.mlflow_ai_gateway import MlflowAIGateway
 
     return MlflowAIGateway
 
 
 def _import_mlx_pipeline() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.mlx_pipeline import MLXPipeline
+    from aibaba_ai_community.llms.mlx_pipeline import MLXPipeline
 
     return MLXPipeline
 
 
 def _import_modal() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.modal import Modal
+    from aibaba_ai_community.llms.modal import Modal
 
     return Modal
 
 
 def _import_mosaicml() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.mosaicml import MosaicML
+    from aibaba_ai_community.llms.mosaicml import MosaicML
 
     return MosaicML
 
 
 def _import_nlpcloud() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.nlpcloud import NLPCloud
+    from aibaba_ai_community.llms.nlpcloud import NLPCloud
 
     return NLPCloud
 
 
 def _import_oci_md_tgi() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint import (
+    from aibaba_ai_community.llms.oci_data_science_model_deployment_endpoint import (
         OCIModelDeploymentTGI,
     )
 
@@ -389,7 +389,7 @@ def _import_oci_md_tgi() -> Type[BaseLLM]:
 
 
 def _import_oci_md_vllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint import (
+    from aibaba_ai_community.llms.oci_data_science_model_deployment_endpoint import (
         OCIModelDeploymentVLLM,
     )
 
@@ -397,7 +397,7 @@ def _import_oci_md_vllm() -> Type[BaseLLM]:
 
 
 def _import_oci_md() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.oci_data_science_model_deployment_endpoint import (
+    from aibaba_ai_community.llms.oci_data_science_model_deployment_endpoint import (
         OCIModelDeploymentLLM,
     )
 
@@ -405,145 +405,145 @@ def _import_oci_md() -> Type[BaseLLM]:
 
 
 def _import_oci_gen_ai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.oci_generative_ai import OCIGenAI
+    from aibaba_ai_community.llms.oci_generative_ai import OCIGenAI
 
     return OCIGenAI
 
 
 def _import_octoai_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.octoai_endpoint import OctoAIEndpoint
+    from aibaba_ai_community.llms.octoai_endpoint import OctoAIEndpoint
 
     return OctoAIEndpoint
 
 
 def _import_ollama() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.ollama import Ollama
+    from aibaba_ai_community.llms.ollama import Ollama
 
     return Ollama
 
 
 def _import_opaqueprompts() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.opaqueprompts import OpaquePrompts
+    from aibaba_ai_community.llms.opaqueprompts import OpaquePrompts
 
     return OpaquePrompts
 
 
 def _import_azure_openai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.openai import AzureOpenAI
+    from aibaba_ai_community.llms.openai import AzureOpenAI
 
     return AzureOpenAI
 
 
 def _import_openai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     return OpenAI
 
 
 def _import_openai_chat() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.openai import OpenAIChat
+    from aibaba_ai_community.llms.openai import OpenAIChat
 
     return OpenAIChat
 
 
 def _import_openllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.openllm import OpenLLM
+    from aibaba_ai_community.llms.openllm import OpenLLM
 
     return OpenLLM
 
 
 def _import_openlm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.openlm import OpenLM
+    from aibaba_ai_community.llms.openlm import OpenLM
 
     return OpenLM
 
 
 def _import_outlines() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.outlines import Outlines
+    from aibaba_ai_community.llms.outlines import Outlines
 
     return Outlines
 
 
 def _import_pai_eas_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.pai_eas_endpoint import PaiEasEndpoint
+    from aibaba_ai_community.llms.pai_eas_endpoint import PaiEasEndpoint
 
     return PaiEasEndpoint
 
 
 def _import_petals() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.petals import Petals
+    from aibaba_ai_community.llms.petals import Petals
 
     return Petals
 
 
 def _import_pipelineai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.pipelineai import PipelineAI
+    from aibaba_ai_community.llms.pipelineai import PipelineAI
 
     return PipelineAI
 
 
 def _import_predibase() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.predibase import Predibase
+    from aibaba_ai_community.llms.predibase import Predibase
 
     return Predibase
 
 
 def _import_predictionguard() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.predictionguard import PredictionGuard
+    from aibaba_ai_community.llms.predictionguard import PredictionGuard
 
     return PredictionGuard
 
 
 def _import_promptlayer() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAI
+    from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAI
 
     return PromptLayerOpenAI
 
 
 def _import_promptlayer_chat() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAIChat
+    from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAIChat
 
     return PromptLayerOpenAIChat
 
 
 def _import_replicate() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.replicate import Replicate
+    from aibaba_ai_community.llms.replicate import Replicate
 
     return Replicate
 
 
 def _import_rwkv() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.rwkv import RWKV
+    from aibaba_ai_community.llms.rwkv import RWKV
 
     return RWKV
 
 
 def _import_sagemaker_endpoint() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.sagemaker_endpoint import SagemakerEndpoint
+    from aibaba_ai_community.llms.sagemaker_endpoint import SagemakerEndpoint
 
     return SagemakerEndpoint
 
 
 def _import_sambanovacloud() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.sambanova import SambaNovaCloud
+    from aibaba_ai_community.llms.sambanova import SambaNovaCloud
 
     return SambaNovaCloud
 
 
 def _import_sambastudio() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.sambanova import SambaStudio
+    from aibaba_ai_community.llms.sambanova import SambaStudio
 
     return SambaStudio
 
 
 def _import_self_hosted() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.self_hosted import SelfHostedPipeline
+    from aibaba_ai_community.llms.self_hosted import SelfHostedPipeline
 
     return SelfHostedPipeline
 
 
 def _import_self_hosted_hugging_face() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.self_hosted_hugging_face import (
+    from aibaba_ai_community.llms.self_hosted_hugging_face import (
         SelfHostedHuggingFaceLLM,
     )
 
@@ -551,79 +551,79 @@ def _import_self_hosted_hugging_face() -> Type[BaseLLM]:
 
 
 def _import_stochasticai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.stochasticai import StochasticAI
+    from aibaba_ai_community.llms.stochasticai import StochasticAI
 
     return StochasticAI
 
 
 def _import_symblai_nebula() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.symblai_nebula import Nebula
+    from aibaba_ai_community.llms.symblai_nebula import Nebula
 
     return Nebula
 
 
 def _import_textgen() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.textgen import TextGen
+    from aibaba_ai_community.llms.textgen import TextGen
 
     return TextGen
 
 
 def _import_titan_takeoff() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.titan_takeoff import TitanTakeoff
+    from aibaba_ai_community.llms.titan_takeoff import TitanTakeoff
 
     return TitanTakeoff
 
 
 def _import_titan_takeoff_pro() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.titan_takeoff import TitanTakeoff
+    from aibaba_ai_community.llms.titan_takeoff import TitanTakeoff
 
     return TitanTakeoff
 
 
 def _import_together() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.together import Together
+    from aibaba_ai_community.llms.together import Together
 
     return Together
 
 
 def _import_tongyi() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.tongyi import Tongyi
+    from aibaba_ai_community.llms.tongyi import Tongyi
 
     return Tongyi
 
 
 def _import_vertex() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.vertexai import VertexAI
+    from aibaba_ai_community.llms.vertexai import VertexAI
 
     return VertexAI
 
 
 def _import_vertex_model_garden() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.vertexai import VertexAIModelGarden
+    from aibaba_ai_community.llms.vertexai import VertexAIModelGarden
 
     return VertexAIModelGarden
 
 
 def _import_vllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.vllm import VLLM
+    from aibaba_ai_community.llms.vllm import VLLM
 
     return VLLM
 
 
 def _import_vllm_openai() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.vllm import VLLMOpenAI
+    from aibaba_ai_community.llms.vllm import VLLMOpenAI
 
     return VLLMOpenAI
 
 
 def _import_watsonxllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.watsonxllm import WatsonxLLM
+    from aibaba_ai_community.llms.watsonxllm import WatsonxLLM
 
     return WatsonxLLM
 
 
 def _import_weight_only_quantization() -> Any:
-    from aiagentsforce_community.llms.weight_only_quantization import (
+    from aibaba_ai_community.llms.weight_only_quantization import (
         WeightOnlyQuantPipeline,
     )
 
@@ -631,49 +631,49 @@ def _import_weight_only_quantization() -> Any:
 
 
 def _import_writer() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.writer import Writer
+    from aibaba_ai_community.llms.writer import Writer
 
     return Writer
 
 
 def _import_xinference() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.xinference import Xinference
+    from aibaba_ai_community.llms.xinference import Xinference
 
     return Xinference
 
 
 def _import_yandex_gpt() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.yandex import YandexGPT
+    from aibaba_ai_community.llms.yandex import YandexGPT
 
     return YandexGPT
 
 
 def _import_yuan2() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.yuan2 import Yuan2
+    from aibaba_ai_community.llms.yuan2 import Yuan2
 
     return Yuan2
 
 
 def _import_volcengine_maas() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.volcengine_maas import VolcEngineMaasLLM
+    from aibaba_ai_community.llms.volcengine_maas import VolcEngineMaasLLM
 
     return VolcEngineMaasLLM
 
 
 def _import_sparkllm() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.sparkllm import SparkLLM
+    from aibaba_ai_community.llms.sparkllm import SparkLLM
 
     return SparkLLM
 
 
 def _import_you() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.you import You
+    from aibaba_ai_community.llms.you import You
 
     return You
 
 
 def _import_yi() -> Type[BaseLLM]:
-    from aiagentsforce_community.llms.yi import YiLLM
+    from aibaba_ai_community.llms.yi import YiLLM
 
     return YiLLM
 

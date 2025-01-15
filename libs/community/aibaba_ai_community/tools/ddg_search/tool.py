@@ -8,7 +8,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper
+from aibaba_ai_community.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper
 
 
 class DDGInput(BaseModel):
@@ -30,7 +30,7 @@ class DuckDuckGoSearchRun(BaseTool):  # type: ignore[override, override]
     Instantiation:
         .. code-block:: python
 
-            from aiagentsforce_community.tools import DuckDuckGoSearchResults
+            from aibaba_ai_community.tools import DuckDuckGoSearchResults
 
             tool = DuckDuckGoSearchResults()
 

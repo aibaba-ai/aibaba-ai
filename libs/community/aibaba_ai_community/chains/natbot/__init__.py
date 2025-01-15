@@ -3,6 +3,6 @@
 Heavily influenced from https://github.com/nat/natbot
 """
 
-from aiagentsforce_community.chains.natbot.base import NatBotChain
+from aibaba_ai_community.chains.natbot.base import NatBotChain
 
 __all__ = ["NatBotChain"]

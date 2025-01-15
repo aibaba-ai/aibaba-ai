@@ -22,13 +22,13 @@ from pydantic import (
 )
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser, BaseLoader
-from aiagentsforce_community.document_loaders.blob_loaders.file_system import (
+from aibaba_ai_community.document_loaders.base import BaseBlobParser, BaseLoader
+from aibaba_ai_community.document_loaders.blob_loaders.file_system import (
     FileSystemBlobLoader,
 )
-from aiagentsforce_community.document_loaders.blob_loaders.schema import Blob
-from aiagentsforce_community.document_loaders.parsers.generic import MimeTypeBasedParser
-from aiagentsforce_community.document_loaders.parsers.registry import get_parser
+from aibaba_ai_community.document_loaders.blob_loaders.schema import Blob
+from aibaba_ai_community.document_loaders.parsers.generic import MimeTypeBasedParser
+from aibaba_ai_community.document_loaders.parsers.registry import get_parser
 
 if TYPE_CHECKING:
     from O365 import Account

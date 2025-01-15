@@ -47,8 +47,8 @@ os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY", "")
 # get from https://nla.zapier.com/docs/authentication/
 os.environ["ZAPIER_NLA_API_KEY"] = os.environ.get("ZAPIER_NLA_API_KEY", "")
 
-from aiagentsforce_community.agent_toolkits import ZapierToolkit
-from aiagentsforce_community.utilities.zapier import ZapierNLAWrapper
+from aibaba_ai_community.agent_toolkits import ZapierToolkit
+from aibaba_ai_community.utilities.zapier import ZapierNLAWrapper
 
 ## step 0. expose gmail 'find email' and slack 'send channel message' actions
 
@@ -79,8 +79,8 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils import pre_init
 from pydantic import Field
 
-from aiagentsforce_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT
-from aiagentsforce_community.utilities.zapier import ZapierNLAWrapper
+from aibaba_ai_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT
+from aibaba_ai_community.utilities.zapier import ZapierNLAWrapper
 
 
 class ZapierNLARunAction(BaseTool):  # type: ignore[override]

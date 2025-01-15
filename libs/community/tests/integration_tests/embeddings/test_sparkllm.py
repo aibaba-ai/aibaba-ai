@@ -1,6 +1,6 @@
 """Test SparkLLM Text Embedding."""
 
-from aiagentsforce_community.embeddings.sparkllm import SparkLLMTextEmbeddings
+from aibaba_ai_community.embeddings.sparkllm import SparkLLMTextEmbeddings
 
 
 def test_baichuan_embedding_documents() -> None:

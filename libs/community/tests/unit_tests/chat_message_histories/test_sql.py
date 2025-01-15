@@ -16,8 +16,8 @@ except ImportError:
 
     Base = declarative_base()  # type:ignore
 
-from aiagentsforce_community.chat_message_histories import SQLChatMessageHistory
-from aiagentsforce_community.chat_message_histories.sql import DefaultMessageConverter
+from aibaba_ai_community.chat_message_histories import SQLChatMessageHistory
+from aibaba_ai_community.chat_message_histories.sql import DefaultMessageConverter
 
 
 @pytest.fixture()

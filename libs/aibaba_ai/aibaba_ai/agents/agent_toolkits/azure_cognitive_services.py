@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.azure_cognitive_services import (
+    from aibaba_ai_community.agent_toolkits.azure_cognitive_services import (
         AzureCognitiveServicesToolkit,
     )
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "AzureCognitiveServicesToolkit": (
-        "aiagentsforce_community.agent_toolkits.azure_cognitive_services"
+        "aibaba_ai_community.agent_toolkits.azure_cognitive_services"
     )
 }
 

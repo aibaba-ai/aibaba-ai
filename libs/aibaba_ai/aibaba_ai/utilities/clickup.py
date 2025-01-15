@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.clickup import (
+    from aibaba_ai_community.utilities.clickup import (
         ClickupAPIWrapper,
         Component,
         CUList,
@@ -17,13 +17,13 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "Component": "aiagentsforce_community.utilities.clickup",
-    "Task": "aiagentsforce_community.utilities.clickup",
-    "CUList": "aiagentsforce_community.utilities.clickup",
-    "Member": "aiagentsforce_community.utilities.clickup",
-    "Team": "aiagentsforce_community.utilities.clickup",
-    "Space": "aiagentsforce_community.utilities.clickup",
-    "ClickupAPIWrapper": "aiagentsforce_community.utilities.clickup",
+    "Component": "aibaba_ai_community.utilities.clickup",
+    "Task": "aibaba_ai_community.utilities.clickup",
+    "CUList": "aibaba_ai_community.utilities.clickup",
+    "Member": "aibaba_ai_community.utilities.clickup",
+    "Team": "aibaba_ai_community.utilities.clickup",
+    "Space": "aibaba_ai_community.utilities.clickup",
+    "ClickupAPIWrapper": "aibaba_ai_community.utilities.clickup",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

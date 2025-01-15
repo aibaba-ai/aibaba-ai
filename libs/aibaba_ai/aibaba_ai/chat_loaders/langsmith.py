@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_loaders.langsmith import (
+    from aibaba_ai_community.chat_loaders.langsmith import (
         LangSmithDatasetChatLoader,
         LangSmithRunChatLoader,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LangSmithRunChatLoader": "aiagentsforce_community.chat_loaders.langsmith",
-    "LangSmithDatasetChatLoader": "aiagentsforce_community.chat_loaders.langsmith",
+    "LangSmithRunChatLoader": "aibaba_ai_community.chat_loaders.langsmith",
+    "LangSmithDatasetChatLoader": "aibaba_ai_community.chat_loaders.langsmith",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

@@ -20,7 +20,7 @@ class Jaguar(VectorStore):
     Example:
        .. code-block:: python
 
-           from aiagentsforce_community.vectorstores.jaguar import Jaguar
+           from aibaba_ai_community.vectorstores.jaguar import Jaguar
 
            vectorstore = Jaguar(
                pod = 'vdb',

@@ -3,7 +3,7 @@ from typing import Optional
 
 import pytest
 
-from aiagentsforce_community.vectorstores import Qdrant
+from aibaba_ai_community.vectorstores import Qdrant
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

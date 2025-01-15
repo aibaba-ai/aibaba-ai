@@ -2,10 +2,10 @@
 
 from alibaba_ai_core.vectorstores import InMemoryVectorStore
 
-from aiagentsforce_community.document_transformers.long_context_reorder import (
+from aibaba_ai_community.document_transformers.long_context_reorder import (
     LongContextReorder,
 )
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
 
 def test_long_context_reorder() -> None:

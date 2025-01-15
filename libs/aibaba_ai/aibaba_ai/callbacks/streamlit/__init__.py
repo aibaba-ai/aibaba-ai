@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Optional
 from aibaba_ai_core.callbacks.base import BaseCallbackHandler
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks import LLMThoughtLabeler
+    from aibaba_ai_community.callbacks import LLMThoughtLabeler
     from streamlit.delta_generator import DeltaGenerator
 
 
@@ -67,7 +67,7 @@ def StreamlitCallbackHandler(
         )
     except ImportError:
         try:
-            from aiagentsforce_community.callbacks.streamlit.streamlit_callback_handler import (  # noqa: E501
+            from aibaba_ai_community.callbacks.streamlit.streamlit_callback_handler import (  # noqa: E501
                 StreamlitCallbackHandler as _InternalStreamlitCallbackHandler,
             )
         except ImportError:

@@ -1,4 +1,4 @@
-from aiagentsforce_community.tools.audio.huggingface_text_to_speech_inference import (
+from aibaba_ai_community.tools.audio.huggingface_text_to_speech_inference import (
     HuggingFaceTextToSpeechModelInference,
 )
 

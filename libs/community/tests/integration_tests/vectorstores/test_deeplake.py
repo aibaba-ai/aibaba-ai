@@ -4,7 +4,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pytest import FixtureRequest
 
-from aiagentsforce_community.vectorstores import DeepLake
+from aibaba_ai_community.vectorstores import DeepLake
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional
 
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.vectorstores.milvus import Milvus
+from aibaba_ai_community.vectorstores.milvus import Milvus
 
 logger = logging.getLogger(__name__)
 
@@ -70,8 +70,8 @@ class Zilliz(Milvus):
     Example:
         .. code-block:: python
 
-        from aiagentsforce_community.vectorstores import Zilliz
-        from aiagentsforce_community.embeddings import OpenAIEmbeddings
+        from aibaba_ai_community.vectorstores import Zilliz
+        from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
         embedding = OpenAIEmbeddings()
         # Connect to a Zilliz instance

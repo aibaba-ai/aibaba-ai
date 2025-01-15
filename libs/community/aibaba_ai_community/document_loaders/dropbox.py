@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional
 from alibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class DropboxLoader(BaseLoader, BaseModel):
@@ -123,7 +123,7 @@ class DropboxLoader(BaseLoader, BaseModel):
 
             if file_extension == ".pdf":
                 print(f"File {file_path} type detected as .pdf")  # noqa: T201
-                from aiagentsforce_community.document_loaders import UnstructuredPDFLoader
+                from aibaba_ai_community.document_loaders import UnstructuredPDFLoader
 
                 # Download it to a temporary file.
                 temp_dir = tempfile.TemporaryDirectory()

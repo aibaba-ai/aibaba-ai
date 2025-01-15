@@ -21,7 +21,7 @@ from urllib.parse import urlparse
 if TYPE_CHECKING:
     from cloudpathlib import AnyPath
 
-from aiagentsforce_community.document_loaders.blob_loaders.schema import (
+from aibaba_ai_community.document_loaders.blob_loaders.schema import (
     Blob,
     BlobLoader,
 )
@@ -168,7 +168,7 @@ class CloudBlobLoader(BlobLoader):
         Examples:
 
             .. code-block:: python
-                from aiagentsforce_community.document_loaders.blob_loaders import CloudBlobLoader
+                from aibaba_ai_community.document_loaders.blob_loaders import CloudBlobLoader
 
                 # Load a single file.
                 loader = CloudBlobLoader("s3://mybucket/id") # az://

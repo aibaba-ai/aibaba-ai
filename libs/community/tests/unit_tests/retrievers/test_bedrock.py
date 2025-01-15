@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers import AmazonKnowledgeBasesRetriever
+from aibaba_ai_community.retrievers import AmazonKnowledgeBasesRetriever
 
 
 @pytest.fixture

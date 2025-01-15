@@ -17,17 +17,17 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.powerbi.prompt import (
+from aibaba_ai_community.tools.powerbi.prompt import (
     QUESTION_TO_QUERY_BASE,
     SINGLE_QUESTION_TO_QUERY,
     USER_INPUT,
 )
-from aiagentsforce_community.tools.powerbi.tool import (
+from aibaba_ai_community.tools.powerbi.tool import (
     InfoPowerBITool,
     ListPowerBITool,
     QueryPowerBITool,
 )
-from aiagentsforce_community.utilities.powerbi import PowerBIDataset
+from aibaba_ai_community.utilities.powerbi import PowerBIDataset
 
 if TYPE_CHECKING:
     from langchain.chains.llm import LLMChain

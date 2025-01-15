@@ -5,8 +5,8 @@ import os
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.vectorstores.tablestore import TablestoreVectorStore
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.vectorstores.tablestore import TablestoreVectorStore
 
 
 def test_tablestore() -> None:

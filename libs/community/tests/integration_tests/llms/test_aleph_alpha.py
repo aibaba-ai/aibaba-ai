@@ -1,6 +1,6 @@
 """Test Aleph Alpha API wrapper."""
 
-from aiagentsforce_community.llms.aleph_alpha import AlephAlpha
+from aibaba_ai_community.llms.aleph_alpha import AlephAlpha
 
 
 def test_aleph_alpha_call() -> None:

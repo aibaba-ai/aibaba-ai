@@ -26,7 +26,7 @@ class GigaChatEmbeddings(BaseModel, Embeddings):
 
     Example:
         .. code-block:: python
-            from aiagentsforce_community.embeddings.gigachat import GigaChatEmbeddings
+            from aibaba_ai_community.embeddings.gigachat import GigaChatEmbeddings
 
             embeddings = GigaChatEmbeddings(
                 credentials=..., scope=..., verify_ssl_certs=False

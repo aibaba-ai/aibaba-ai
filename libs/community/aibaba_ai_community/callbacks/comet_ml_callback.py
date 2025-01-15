@@ -8,8 +8,8 @@ from alibaba_ai_core.callbacks import BaseCallbackHandler
 from alibaba_ai_core.outputs import Generation, LLMResult
 from alibaba_ai_core.utils import guard_import
 
-import aiagentsforce_community
-from aiagentsforce_community.callbacks.utils import (
+import aibaba_ai_community
+from aibaba_ai_community.callbacks.utils import (
     BaseMetadataCallbackHandler,
     flatten_dict,
     import_pandas,
@@ -498,7 +498,7 @@ class CometCallbackHandler(BaseMetadataCallbackHandler, BaseCallbackHandler):
             )
 
         try:
-            metadata = {"langchain_version": str(aiagentsforce_community.__version__)}
+            metadata = {"langchain_version": str(aibaba_ai_community.__version__)}
             # Log the langchain low-level records as a JSON file directly
             self.experiment.log_asset_data(
                 self.action_records, "langchain-action_records.json", metadata=metadata

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.cypher import (
+    from aibaba_ai_community.chains.graph_qa.cypher import (
         CYPHER_GENERATION_PROMPT,
         INTERMEDIATE_STEPS_KEY,
         GraphCypherQAChain,
@@ -15,11 +15,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GraphCypherQAChain": "aiagentsforce_community.chains.graph_qa.cypher",
-    "INTERMEDIATE_STEPS_KEY": "aiagentsforce_community.chains.graph_qa.cypher",
-    "construct_schema": "aiagentsforce_community.chains.graph_qa.cypher",
-    "extract_cypher": "aiagentsforce_community.chains.graph_qa.cypher",
-    "CYPHER_GENERATION_PROMPT": "aiagentsforce_community.chains.graph_qa.cypher",
+    "GraphCypherQAChain": "aibaba_ai_community.chains.graph_qa.cypher",
+    "INTERMEDIATE_STEPS_KEY": "aibaba_ai_community.chains.graph_qa.cypher",
+    "construct_schema": "aibaba_ai_community.chains.graph_qa.cypher",
+    "extract_cypher": "aibaba_ai_community.chains.graph_qa.cypher",
+    "CYPHER_GENERATION_PROMPT": "aibaba_ai_community.chains.graph_qa.cypher",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

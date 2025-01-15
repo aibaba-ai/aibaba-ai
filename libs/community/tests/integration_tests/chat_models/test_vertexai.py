@@ -20,8 +20,8 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.chat_models import ChatVertexAI
-from aiagentsforce_community.chat_models.vertexai import (
+from aibaba_ai_community.chat_models import ChatVertexAI
+from aibaba_ai_community.chat_models.vertexai import (
     _parse_chat_history,
     _parse_examples,
 )

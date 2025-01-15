@@ -47,7 +47,7 @@ def generate_raw_migrations(
                 # Check if it's a class or function
                 if inspect.isclass(obj) or inspect.isfunction(obj):
                     # Check if the module name of the obj starts with
-                    # 'aiagentsforce_community'
+                    # 'aibaba_ai_community'
                     if obj.__module__.startswith(to_package):
                         items.append(
                             (f"{modname}.{name}", f"{obj.__module__}.{obj.__name__}")
@@ -57,13 +57,13 @@ def generate_raw_migrations(
 
 
 def generate_top_level_imports(pkg: str) -> List[Tuple[str, str]]:
-    """This code will look at all the top level modules in aiagentsforce_community.
+    """This code will look at all the top level modules in aibaba_ai_community.
 
     It'll attempt to import everything from each __init__ file
 
     for example,
 
-    aiagentsforce_community/
+    aibaba_ai_community/
         chat_models/
             __init__.py # <-- import everything from here
         llm/
@@ -75,10 +75,10 @@ def generate_top_level_imports(pkg: str) -> List[Tuple[str, str]]:
 
     Each tuple will contain the fully qualified path of the class / function to where
     its logic is defined
-    (e.g., aiagentsforce_community.chat_models.xyz_implementation.ver2.XYZ)
+    (e.g., aibaba_ai_community.chat_models.xyz_implementation.ver2.XYZ)
     and the second tuple will contain the path
     to importing it from the top level namespaces
-    (e.g., aiagentsforce_community.chat_models.XYZ)
+    (e.g., aibaba_ai_community.chat_models.XYZ)
     """
     package = importlib.import_module(pkg)
 

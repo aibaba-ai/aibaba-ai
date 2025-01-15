@@ -28,7 +28,7 @@ class CouchbaseVectorStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import CouchbaseVectorStore
+            from aibaba_ai_community.vectorstores import CouchbaseVectorStore
             from langchain_openai import OpenAIEmbeddings
 
             from couchbase.cluster import Cluster
@@ -571,7 +571,7 @@ class CouchbaseVectorStore(VectorStore):
         Example:
             .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import CouchbaseVectorStore
+            from aibaba_ai_community.vectorstores import CouchbaseVectorStore
             from langchain_openai import OpenAIEmbeddings
 
             from couchbase.cluster import Cluster

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.parsers.language.javascript import (
+    from aibaba_ai_community.document_loaders.parsers.language.javascript import (
         JavaScriptSegmenter,
     )
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "JavaScriptSegmenter": (
-        "aiagentsforce_community.document_loaders.parsers.language.javascript"
+        "aibaba_ai_community.document_loaders.parsers.language.javascript"
     ),
 }
 

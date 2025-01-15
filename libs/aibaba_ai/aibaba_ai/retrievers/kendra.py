@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import AmazonKendraRetriever
-    from aiagentsforce_community.retrievers.kendra import (
+    from aibaba_ai_community.retrievers import AmazonKendraRetriever
+    from aibaba_ai_community.retrievers.kendra import (
         AdditionalResultAttribute,
         AdditionalResultAttributeValue,
         DocumentAttribute,
@@ -24,20 +24,20 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "clean_excerpt": "aiagentsforce_community.retrievers.kendra",
-    "combined_text": "aiagentsforce_community.retrievers.kendra",
-    "Highlight": "aiagentsforce_community.retrievers.kendra",
-    "TextWithHighLights": "aiagentsforce_community.retrievers.kendra",
-    "AdditionalResultAttributeValue": "aiagentsforce_community.retrievers.kendra",
-    "AdditionalResultAttribute": "aiagentsforce_community.retrievers.kendra",
-    "DocumentAttributeValue": "aiagentsforce_community.retrievers.kendra",
-    "DocumentAttribute": "aiagentsforce_community.retrievers.kendra",
-    "ResultItem": "aiagentsforce_community.retrievers.kendra",
-    "QueryResultItem": "aiagentsforce_community.retrievers.kendra",
-    "RetrieveResultItem": "aiagentsforce_community.retrievers.kendra",
-    "QueryResult": "aiagentsforce_community.retrievers.kendra",
-    "RetrieveResult": "aiagentsforce_community.retrievers.kendra",
-    "AmazonKendraRetriever": "aiagentsforce_community.retrievers",
+    "clean_excerpt": "aibaba_ai_community.retrievers.kendra",
+    "combined_text": "aibaba_ai_community.retrievers.kendra",
+    "Highlight": "aibaba_ai_community.retrievers.kendra",
+    "TextWithHighLights": "aibaba_ai_community.retrievers.kendra",
+    "AdditionalResultAttributeValue": "aibaba_ai_community.retrievers.kendra",
+    "AdditionalResultAttribute": "aibaba_ai_community.retrievers.kendra",
+    "DocumentAttributeValue": "aibaba_ai_community.retrievers.kendra",
+    "DocumentAttribute": "aibaba_ai_community.retrievers.kendra",
+    "ResultItem": "aibaba_ai_community.retrievers.kendra",
+    "QueryResultItem": "aibaba_ai_community.retrievers.kendra",
+    "RetrieveResultItem": "aibaba_ai_community.retrievers.kendra",
+    "QueryResult": "aibaba_ai_community.retrievers.kendra",
+    "RetrieveResult": "aibaba_ai_community.retrievers.kendra",
+    "AmazonKendraRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

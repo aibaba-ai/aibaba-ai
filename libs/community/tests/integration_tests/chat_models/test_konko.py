@@ -9,7 +9,7 @@ from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.chat_models.konko import ChatKonko
+from aibaba_ai_community.chat_models.konko import ChatKonko
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

@@ -45,7 +45,7 @@ class BaichuanTextEmbeddings(BaseModel, Embeddings):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import BaichuanTextEmbeddings
+            from aibaba_ai_community.embeddings import BaichuanTextEmbeddings
 
             embeddings = BaichuanTextEmbeddings()
 

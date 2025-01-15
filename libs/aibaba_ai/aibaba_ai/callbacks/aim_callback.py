@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.aim_callback import (
+    from aibaba_ai_community.callbacks.aim_callback import (
         AimCallbackHandler,
         BaseMetadataCallbackHandler,
         import_aim,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "import_aim": "aiagentsforce_community.callbacks.aim_callback",
-    "BaseMetadataCallbackHandler": "aiagentsforce_community.callbacks.aim_callback",
-    "AimCallbackHandler": "aiagentsforce_community.callbacks.aim_callback",
+    "import_aim": "aibaba_ai_community.callbacks.aim_callback",
+    "BaseMetadataCallbackHandler": "aibaba_ai_community.callbacks.aim_callback",
+    "AimCallbackHandler": "aibaba_ai_community.callbacks.aim_callback",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

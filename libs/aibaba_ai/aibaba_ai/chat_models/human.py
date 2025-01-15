@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.human import HumanInputChatModel
+    from aibaba_ai_community.chat_models.human import HumanInputChatModel
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"HumanInputChatModel": "aiagentsforce_community.chat_models.human"}
+DEPRECATED_LOOKUP = {"HumanInputChatModel": "aibaba_ai_community.chat_models.human"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

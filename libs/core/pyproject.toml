@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "aibaba_ai_core"
-version = "0.3.30"
+version = "0.3.31"
 description = "Aibaba AI Core library for building AI Agents"
 authors = []
 license = "MIT"

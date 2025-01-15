@@ -10,7 +10,7 @@ from typing import Any
 import pytest
 from alibaba_ai_core.callbacks import AsyncCallbackHandler
 
-from aiagentsforce_community.llms.bedrock import Bedrock
+from aibaba_ai_community.llms.bedrock import Bedrock
 
 # this is the guardrails id for the model you want to test
 GUARDRAILS_ID = os.environ.get("GUARDRAILS_ID", "7jarelix77")

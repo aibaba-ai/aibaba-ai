@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.chatglm import ChatGLM
+from aibaba_ai_community.llms.chatglm import ChatGLM
 
 
 def test_chatglm_call() -> None:

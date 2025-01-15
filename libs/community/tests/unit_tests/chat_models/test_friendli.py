@@ -6,8 +6,8 @@ import pytest
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.adapters.openai import aenumerate
-from aiagentsforce_community.chat_models import ChatFriendli
+from aibaba_ai_community.adapters.openai import aenumerate
+from aibaba_ai_community.chat_models import ChatFriendli
 
 
 @pytest.fixture

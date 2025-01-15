@@ -6,7 +6,7 @@ You'll then need to set KONKO_API_KEY environment variable to your api key.
 
 import pytest as pytest
 
-from aiagentsforce_community.llms import Konko
+from aibaba_ai_community.llms import Konko
 
 
 def test_konko_call() -> None:

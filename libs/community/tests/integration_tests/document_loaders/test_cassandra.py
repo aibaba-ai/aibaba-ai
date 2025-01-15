@@ -8,7 +8,7 @@ from typing import Any, Iterator
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.cassandra import CassandraLoader
+from aibaba_ai_community.document_loaders.cassandra import CassandraLoader
 
 CASSANDRA_DEFAULT_KEYSPACE = "docloader_test_keyspace"
 CASSANDRA_TABLE = "docloader_test_table"

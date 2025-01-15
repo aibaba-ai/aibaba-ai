@@ -1,7 +1,7 @@
 # flake8: noqa
 
 from alibaba_ai_core.documents import Document
-from aiagentsforce_community.vectorstores.vearch import Vearch
+from aibaba_ai_community.vectorstores.vearch import Vearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 
