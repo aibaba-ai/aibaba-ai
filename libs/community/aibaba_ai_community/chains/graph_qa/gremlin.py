@@ -12,12 +12,12 @@ from alibaba_ai_core.prompts import BasePromptTemplate
 from alibaba_ai_core.prompts.prompt import PromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     CYPHER_QA_PROMPT,
     GRAPHDB_SPARQL_FIX_TEMPLATE,
     GREMLIN_GENERATION_PROMPT,
 )
-from aiagentsforce_community.graphs import GremlinGraph
+from aibaba_ai_community.graphs import GremlinGraph
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

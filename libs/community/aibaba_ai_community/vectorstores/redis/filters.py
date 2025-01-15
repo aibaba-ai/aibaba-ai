@@ -2,7 +2,7 @@ from enum import Enum
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union
 
-from aiagentsforce_community.utilities.redis import TokenEscaper
+from aibaba_ai_community.utilities.redis import TokenEscaper
 
 # disable mypy error for dunder method overrides
 # mypy: disable-error-code="override"
@@ -153,7 +153,7 @@ class RedisTag(RedisFilterField):
                 The tag(s) to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisTag
+            >>> from aibaba_ai_community.vectorstores.redis import RedisTag
             >>> filter = RedisTag("brand") == "nike"
         """
         self._set_tag_value(other, RedisFilterOperator.EQ)
@@ -170,7 +170,7 @@ class RedisTag(RedisFilterField):
                 The tag(s) to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisTag
+            >>> from aibaba_ai_community.vectorstores.redis import RedisTag
             >>> filter = RedisTag("brand") != "nike"
         """
         self._set_tag_value(other, RedisFilterOperator.NE)
@@ -237,7 +237,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("zipcode") == 90210
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.EQ)  # type: ignore
@@ -251,7 +251,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("zipcode") != 90210
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.NE)  # type: ignore
@@ -264,7 +264,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("age") > 18
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.GT)  # type: ignore
@@ -277,7 +277,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("age") < 18
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.LT)  # type: ignore
@@ -290,7 +290,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("age") >= 18
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.GE)  # type: ignore
@@ -303,7 +303,7 @@ class RedisNum(RedisFilterField):
             other (Union[int, float]): The value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisNum
+            >>> from aibaba_ai_community.vectorstores.redis import RedisNum
             >>> filter = RedisNum("age") <= 18
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.LE)  # type: ignore
@@ -333,7 +333,7 @@ class RedisText(RedisFilterField):
             other (str): The text value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisText
+            >>> from aibaba_ai_community.vectorstores.redis import RedisText
             >>> filter = RedisText("job") == "engineer"
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.EQ)  # type: ignore
@@ -347,7 +347,7 @@ class RedisText(RedisFilterField):
             other (str): The text value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisText
+            >>> from aibaba_ai_community.vectorstores.redis import RedisText
             >>> filter = RedisText("job") != "engineer"
         """
         self._set_value(other, self.SUPPORTED_VAL_TYPES, RedisFilterOperator.NE)  # type: ignore
@@ -360,7 +360,7 @@ class RedisText(RedisFilterField):
             other (str): The text value to filter on.
 
         Example:
-            >>> from aiagentsforce_community.vectorstores.redis import RedisText
+            >>> from aibaba_ai_community.vectorstores.redis import RedisText
             >>> filter = RedisText("job") % "engine*"         # suffix wild card match
             >>> filter = RedisText("job") % "%%engine%%"      # fuzzy match w/ LD
             >>> filter = RedisText("job") % "engineer|doctor" # contains either term
@@ -394,7 +394,7 @@ class RedisFilterExpression:
 
     Examples:
 
-        >>> from aiagentsforce_community.vectorstores.redis import RedisTag, RedisNum
+        >>> from aibaba_ai_community.vectorstores.redis import RedisTag, RedisNum
         >>> brand_is_nike = RedisTag("brand") == "nike"
         >>> price_is_under_100 = RedisNum("price") < 100
         >>> filter = brand_is_nike & price_is_under_100

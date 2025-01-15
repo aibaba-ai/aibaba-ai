@@ -6,7 +6,7 @@ from typing import List, Tuple
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 # Pre-compile regular expressions for video ID extraction
 BV_PATTERN = re.compile(r"BV\w+")

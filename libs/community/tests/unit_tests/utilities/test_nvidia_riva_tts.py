@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 
-from aiagentsforce_community.utilities.nvidia_riva import RivaAudioEncoding, RivaTTS
+from aibaba_ai_community.utilities.nvidia_riva import RivaAudioEncoding, RivaTTS
 
 if TYPE_CHECKING:
     import riva.client

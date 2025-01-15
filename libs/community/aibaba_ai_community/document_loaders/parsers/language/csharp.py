@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 
-from aiagentsforce_community.document_loaders.parsers.language.tree_sitter_segmenter import (  # noqa: E501
+from aibaba_ai_community.document_loaders.parsers.language.tree_sitter_segmenter import (  # noqa: E501
     TreeSitterSegmenter,
 )
 

@@ -14,7 +14,7 @@ class Model2vecEmbeddings(Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import Model2vecEmbeddings
+            from aibaba_ai_community.embeddings import Model2vecEmbeddings
 
             embedding = Model2vecEmbeddings("minishlab/potion-base-8M")
             embedding.embed_documents([

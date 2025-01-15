@@ -18,7 +18,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from sqlalchemy.pool import QueuePool
 
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
 DEFAULT_DISTANCE_STRATEGY = DistanceStrategy.DOT_PRODUCT
 
@@ -189,7 +189,7 @@ class SingleStoreDB(VectorStore):
             .. code-block:: python
 
                 from langchain_openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
 
                 vectorstore = SingleStoreDB(
                     OpenAIEmbeddings(),
@@ -201,7 +201,7 @@ class SingleStoreDB(VectorStore):
             .. code-block:: python
 
                 from langchain_openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
 
                 vectorstore = SingleStoreDB(
                     OpenAIEmbeddings(),
@@ -221,7 +221,7 @@ class SingleStoreDB(VectorStore):
             .. code-block:: python
 
                 from langchain_openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
 
                 os.environ['SINGLESTOREDB_URL'] = 'me:p455w0rd@s2-host.com/my_db'
                 vectorstore = SingleStoreDB(OpenAIEmbeddings())
@@ -231,7 +231,7 @@ class SingleStoreDB(VectorStore):
             .. code-block:: python
 
                 from langchain_openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
 
                 os.environ['SINGLESTOREDB_URL'] = 'me:p455w0rd@s2-host.com/my_db'
                 vectorstore = SingleStoreDB(
@@ -243,7 +243,7 @@ class SingleStoreDB(VectorStore):
 
             .. code-block:: python
                 from langchain_openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
 
                 os.environ['SINGLESTOREDB_URL'] = 'me:p455w0rd@s2-host.com/my_db'
                 vectorstore = SingleStoreDB(
@@ -537,7 +537,7 @@ class SingleStoreDB(VectorStore):
             Basic Usage:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -551,7 +551,7 @@ class SingleStoreDB(VectorStore):
             Different Search Strategies:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -568,7 +568,7 @@ class SingleStoreDB(VectorStore):
             Weighted Sum Search Strategy:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -659,7 +659,7 @@ class SingleStoreDB(VectorStore):
             Basic Usage:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -674,7 +674,7 @@ class SingleStoreDB(VectorStore):
 
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -691,7 +691,7 @@ class SingleStoreDB(VectorStore):
             Weighted Sum Search Strategy:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_documents(
@@ -1006,7 +1006,7 @@ class SingleStoreDB(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import SingleStoreDB
+                from aibaba_ai_community.vectorstores import SingleStoreDB
                 from langchain_openai import OpenAIEmbeddings
 
                 s2 = SingleStoreDB.from_texts(

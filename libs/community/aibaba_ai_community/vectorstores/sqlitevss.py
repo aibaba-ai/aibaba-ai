@@ -29,8 +29,8 @@ class SQLiteVSS(VectorStore):
     To use, you should have the ``sqlite-vss`` python package installed.
     Example:
         .. code-block:: python
-            from aiagentsforce_community.vectorstores import SQLiteVSS
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import SQLiteVSS
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             ...
     """
 

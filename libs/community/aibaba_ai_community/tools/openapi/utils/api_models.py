@@ -18,7 +18,7 @@ from typing import (
 
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.openapi.utils.openapi_utils import HTTPVerb, OpenAPISpec
+from aibaba_ai_community.tools.openapi.utils.openapi_utils import HTTPVerb, OpenAPISpec
 
 logger = logging.getLogger(__name__)
 PRIMITIVE_TYPES = {

@@ -7,10 +7,10 @@ from typing import Any, Optional
 from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.tools import Tool
 
-from aiagentsforce_community.chains.openapi.chain import OpenAPIEndpointChain
-from aiagentsforce_community.tools.openapi.utils.api_models import APIOperation
-from aiagentsforce_community.tools.openapi.utils.openapi_utils import OpenAPISpec
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.chains.openapi.chain import OpenAPIEndpointChain
+from aibaba_ai_community.tools.openapi.utils.api_models import APIOperation
+from aibaba_ai_community.tools.openapi.utils.openapi_utils import OpenAPISpec
+from aibaba_ai_community.utilities.requests import Requests
 
 
 class NLATool(Tool):  # type: ignore[override]

@@ -1,6 +1,6 @@
 """Test HanaVector functionality."""
 
-from aiagentsforce_community.vectorstores import HanaDB
+from aibaba_ai_community.vectorstores import HanaDB
 
 
 def test_int_sanitation_with_illegal_value() -> None:

@@ -2,7 +2,7 @@ from time import sleep
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import DashVector
+from aibaba_ai_community.vectorstores import DashVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 texts = ["foo", "bar", "baz"]

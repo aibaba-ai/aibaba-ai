@@ -3,8 +3,8 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from aiagentsforce_community.tools.file_management.file_search import FileSearchTool
-from aiagentsforce_community.tools.file_management.utils import (
+from aibaba_ai_community.tools.file_management.file_search import FileSearchTool
+from aibaba_ai_community.tools.file_management.utils import (
     INVALID_PATH_TEMPLATE,
 )
 

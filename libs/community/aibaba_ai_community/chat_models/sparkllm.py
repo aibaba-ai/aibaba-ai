@@ -174,7 +174,7 @@ class ChatSparkLLM(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatSparkLLM
+            from aibaba_ai_community.chat_models import ChatSparkLLM
 
             chat = ChatSparkLLM(
                 api_key="your-api-key",

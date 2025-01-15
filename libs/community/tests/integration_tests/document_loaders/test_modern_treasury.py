@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.modern_treasury import ModernTreasuryLoader
+from aibaba_ai_community.document_loaders.modern_treasury import ModernTreasuryLoader
 
 
 def test_modern_treasury_loader() -> None:

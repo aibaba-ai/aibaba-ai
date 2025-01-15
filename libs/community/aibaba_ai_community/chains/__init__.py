@@ -1,5 +1,5 @@
 """
-Chains module for aiagentsforce_community
+Chains module for aibaba_ai_community
 
 This module contains the community chains.
 """
@@ -8,12 +8,12 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.pebblo_retrieval.base import PebbloRetrievalQA
+    from aibaba_ai_community.chains.pebblo_retrieval.base import PebbloRetrievalQA
 
 __all__ = ["PebbloRetrievalQA"]
 
 _module_lookup = {
-    "PebbloRetrievalQA": "aiagentsforce_community.chains.pebblo_retrieval.base"
+    "PebbloRetrievalQA": "aibaba_ai_community.chains.pebblo_retrieval.base"
 }
 
 

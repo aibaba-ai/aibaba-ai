@@ -5,4 +5,4 @@ import pytest
 
 @pytest.mark.requires("upstash_redis")
 def test_import_storage() -> None:
-    from aiagentsforce_community.storage.upstash_redis import UpstashRedisStore  # noqa
+    from aibaba_ai_community.storage.upstash_redis import UpstashRedisStore  # noqa

@@ -6,7 +6,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.outputs import GenerationChunk
 from pydantic import BaseModel, ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class Device(str, Enum):
@@ -58,7 +58,7 @@ class TitanTakeoff(LLM):
         .. code-block:: python
             # Import the TitanTakeoff class from community package
             import time
-            from aiagentsforce_community.llms import TitanTakeoff
+            from aibaba_ai_community.llms import TitanTakeoff
 
             # Specify the embedding reader you'd like to deploy
             reader_1 = {

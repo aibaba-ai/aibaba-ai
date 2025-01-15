@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
-from aiagentsforce_community.agents.openai_assistant import OpenAIAssistantV2Runnable
+from aibaba_ai_community.agents.openai_assistant import OpenAIAssistantV2Runnable
 
 
 def _create_mock_client(*args: Any, use_async: bool = False, **kwargs: Any) -> Any:

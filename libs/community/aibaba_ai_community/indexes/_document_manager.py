@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional, Sequence
 
-from aiagentsforce_community.indexes.base import RecordManager
+from aibaba_ai_community.indexes.base import RecordManager
 
 IMPORT_PYMONGO_ERROR = (
     "Could not import MongoClient. Please install it with `pip install pymongo`."

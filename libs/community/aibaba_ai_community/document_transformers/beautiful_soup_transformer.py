@@ -9,7 +9,7 @@ class BeautifulSoupTransformer(BaseDocumentTransformer):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_transformers import BeautifulSoupTransformer
+            from aibaba_ai_community.document_transformers import BeautifulSoupTransformer
 
             bs4_transformer = BeautifulSoupTransformer()
             docs_transformed = bs4_transformer.transform_documents(docs)

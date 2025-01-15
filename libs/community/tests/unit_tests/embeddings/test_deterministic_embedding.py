@@ -1,4 +1,4 @@
-from aiagentsforce_community.embeddings import DeterministicFakeEmbedding
+from aibaba_ai_community.embeddings import DeterministicFakeEmbedding
 
 
 def test_deterministic_fake_embeddings() -> None:

@@ -10,7 +10,7 @@ import pytest
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 
-from aiagentsforce_community.vectorstores.mongodb_atlas import MongoDBAtlasVectorSearch
+from aibaba_ai_community.vectorstores.mongodb_atlas import MongoDBAtlasVectorSearch
 
 INDEX_NAME = "langchain-test-index"
 NAMESPACE = "langchain_test_db.langchain_test_collection"

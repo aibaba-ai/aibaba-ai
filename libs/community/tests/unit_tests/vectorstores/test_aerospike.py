@@ -5,8 +5,8 @@ from unittest.mock import MagicMock, Mock, call
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.aerospike import Aerospike
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.aerospike import Aerospike
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 pytestmark = pytest.mark.requires("aerospike_vector_search") and pytest.mark.skipif(

@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from aiagentsforce_community.document_loaders.parsers.language.javascript import (
+from aibaba_ai_community.document_loaders.parsers.language.javascript import (
     JavaScriptSegmenter,
 )
 

@@ -1,8 +1,8 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
-from aiagentsforce_community.graph_vectorstores.networkx import documents_to_networkx
+from aibaba_ai_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
+from aibaba_ai_community.graph_vectorstores.networkx import documents_to_networkx
 
 
 @pytest.mark.requires("networkx")

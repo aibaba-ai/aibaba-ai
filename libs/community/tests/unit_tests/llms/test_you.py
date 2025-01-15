@@ -7,8 +7,8 @@ import requests_mock
 def test_invoke(
     endpoint: str, requests_mock: requests_mock.Mocker, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    from aiagentsforce_community.llms import You
-    from aiagentsforce_community.llms.you import RESEARCH_ENDPOINT, SMART_ENDPOINT
+    from aibaba_ai_community.llms import You
+    from aibaba_ai_community.llms.you import RESEARCH_ENDPOINT, SMART_ENDPOINT
 
     json = {
         "answer": (

@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms import Yuan2
+from aibaba_ai_community.llms import Yuan2
 
 
 def test_yuan2_call_method() -> None:

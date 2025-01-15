@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from requests import Response, request
 from requests.exceptions import RequestException
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -203,7 +203,7 @@ def get_loader_full_path(loader: BaseLoader) -> str:
     Args:
         loader (BaseLoader): Langchain document loader, derived from Baseloader.
     """
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         DataFrameLoader,
         GCSFileLoader,
         NotionDBLoader,

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.openapi.requests_chain import (
+    from aibaba_ai_community.chains.openapi.requests_chain import (
         REQUEST_TEMPLATE,
         APIRequesterChain,
         APIRequesterOutputParser,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "APIRequesterChain": "aiagentsforce_community.chains.openapi.requests_chain",
-    "APIRequesterOutputParser": "aiagentsforce_community.chains.openapi.requests_chain",
-    "REQUEST_TEMPLATE": "aiagentsforce_community.chains.openapi.requests_chain",
+    "APIRequesterChain": "aibaba_ai_community.chains.openapi.requests_chain",
+    "APIRequesterOutputParser": "aibaba_ai_community.chains.openapi.requests_chain",
+    "REQUEST_TEMPLATE": "aibaba_ai_community.chains.openapi.requests_chain",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

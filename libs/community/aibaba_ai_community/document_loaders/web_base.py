@@ -10,8 +10,8 @@ import requests
 from alibaba_ai_core._api import deprecated
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utils.user_agent import get_user_agent
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utils.user_agent import get_user_agent
 
 logger = logging.getLogger(__name__)
 
@@ -44,16 +44,16 @@ class WebBaseLoader(BaseLoader):
     WebBaseLoader document loader integration
 
     Setup:
-        Install ``aiagentsforce_community``.
+        Install ``aibaba_ai_community``.
 
         .. code-block:: bash
 
-            pip install -U aiagentsforce_community
+            pip install -U aibaba_ai_community
 
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import WebBaseLoader
+            from aibaba_ai_community.document_loaders import WebBaseLoader
 
             loader = WebBaseLoader(
                 web_path = "https://www.espn.com/"
@@ -393,7 +393,7 @@ class WebBaseLoader(BaseLoader):
         removal="1.0",
         message=(
             "See API reference for updated usage: "
-            "https://docs.aibaba.world/api_reference/community/document_loaders/aiagentsforce_community.document_loaders.web_base.WebBaseLoader.html"  # noqa: E501
+            "https://docs.aibaba.world/api_reference/community/document_loaders/aibaba_ai_community.document_loaders.web_base.WebBaseLoader.html"  # noqa: E501
         ),
     )
     def aload(self) -> List[Document]:  # type: ignore

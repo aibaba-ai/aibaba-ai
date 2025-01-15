@@ -7,7 +7,7 @@ from alibaba_ai_core.documents import Document
 from pytest import raises
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.document_loaders.json_loader import JSONLoader
+from aibaba_ai_community.document_loaders.json_loader import JSONLoader
 
 pytestmark = pytest.mark.requires("jq")
 

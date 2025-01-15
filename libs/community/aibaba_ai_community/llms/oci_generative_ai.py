@@ -11,7 +11,7 @@ from alibaba_ai_core.outputs import GenerationChunk
 from alibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 CUSTOM_ENDPOINT_PREFIX = "ocid1.generativeaiendpoint"
 
@@ -231,7 +231,7 @@ class OCIGenAI(LLM, OCIGenAIBase):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OCIGenAI
+            from aibaba_ai_community.llms import OCIGenAI
 
             llm = OCIGenAI(
                     model_id="MY_MODEL_ID",

@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import (
+from aibaba_ai_community.document_loaders import (
     DedocAPIFileLoader,
     DedocFileLoader,
     DedocPDFLoader,

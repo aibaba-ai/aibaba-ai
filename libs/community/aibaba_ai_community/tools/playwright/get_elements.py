@@ -9,8 +9,8 @@ from alibaba_ai_core.callbacks import (
 )
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.playwright.base import BaseBrowserTool
-from aiagentsforce_community.tools.playwright.utils import (
+from aibaba_ai_community.tools.playwright.base import BaseBrowserTool
+from aibaba_ai_community.tools.playwright.utils import (
     aget_current_page,
     get_current_page,
 )

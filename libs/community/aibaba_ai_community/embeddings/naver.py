@@ -54,7 +54,7 @@ class ClovaXEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community import ClovaXEmbeddings
+            from aibaba_ai_community import ClovaXEmbeddings
 
             model = ClovaXEmbeddings(model="clir-emb-dolphin")
             output = embedding.embed_documents(documents)

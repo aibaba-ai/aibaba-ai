@@ -27,7 +27,7 @@ class AI21(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import AI21
+            from aibaba_ai_community.llms import AI21
             ai21 = AI21(ai21_api_key="my-api-key", model="j2-jumbo-instruct")
     """
 

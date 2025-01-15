@@ -11,9 +11,9 @@ from alibaba_ai_core.callbacks import (
     CallbackManagerForToolRun,
 )
 from alibaba_ai_core.prompts import PromptTemplate
-from aiagentsforce_community.utilities.spark_sql import SparkSQL
+from aibaba_ai_community.utilities.spark_sql import SparkSQL
 from alibaba_ai_core.tools import BaseTool
-from aiagentsforce_community.tools.spark_sql.prompt import QUERY_CHECKER
+from aibaba_ai_community.tools.spark_sql.prompt import QUERY_CHECKER
 
 
 class BaseSparkSQLTool(BaseModel):

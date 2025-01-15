@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.labelstudio_callback import (
+    from aibaba_ai_community.callbacks.labelstudio_callback import (
         LabelStudioCallbackHandler,
         LabelStudioMode,
         get_default_label_configs,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LabelStudioMode": "aiagentsforce_community.callbacks.labelstudio_callback",
-    "get_default_label_configs": "aiagentsforce_community.callbacks.labelstudio_callback",
-    "LabelStudioCallbackHandler": "aiagentsforce_community.callbacks.labelstudio_callback",
+    "LabelStudioMode": "aibaba_ai_community.callbacks.labelstudio_callback",
+    "get_default_label_configs": "aibaba_ai_community.callbacks.labelstudio_callback",
+    "LabelStudioCallbackHandler": "aibaba_ai_community.callbacks.labelstudio_callback",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

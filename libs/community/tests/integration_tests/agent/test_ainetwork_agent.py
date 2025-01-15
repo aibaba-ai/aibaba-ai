@@ -10,9 +10,9 @@ from urllib.error import HTTPError
 import pytest
 from langchain.agents import AgentType, initialize_agent
 
-from aiagentsforce_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.tools.ainetwork.utils import authenticate
+from aibaba_ai_community.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.tools.ainetwork.utils import authenticate
 
 
 class Match(Enum):

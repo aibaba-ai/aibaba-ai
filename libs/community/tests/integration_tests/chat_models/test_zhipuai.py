@@ -5,7 +5,7 @@ from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage, ToolM
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 from alibaba_ai_core.tools import tool
 
-from aiagentsforce_community.chat_models.zhipuai import ChatZhipuAI
+from aibaba_ai_community.chat_models.zhipuai import ChatZhipuAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

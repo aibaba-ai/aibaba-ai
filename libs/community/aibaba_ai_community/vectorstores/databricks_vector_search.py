@@ -21,7 +21,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VST, VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from databricks.vector_search.client import VectorSearchIndex
@@ -42,7 +42,7 @@ class DatabricksVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import DatabricksVectorSearch
+            from aibaba_ai_community.vectorstores import DatabricksVectorSearch
             from databricks.vector_search.client import VectorSearchClient
 
             vs_client = VectorSearchClient()
@@ -75,9 +75,9 @@ class DatabricksVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import DatabricksVectorSearch
+            from aibaba_ai_community.vectorstores import DatabricksVectorSearch
             from databricks.vector_search.client import VectorSearchClient
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             vs_client = VectorSearchClient()
             vs_index = vs_client.get_index(
@@ -96,9 +96,9 @@ class DatabricksVectorSearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import DatabricksVectorSearch
+            from aibaba_ai_community.vectorstores import DatabricksVectorSearch
             from databricks.vector_search.client import VectorSearchClient
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             vs_client = VectorSearchClient()
             vs_index = vs_client.get_index(

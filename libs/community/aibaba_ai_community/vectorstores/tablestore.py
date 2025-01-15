@@ -28,7 +28,7 @@ class TablestoreVectorStore(VectorStore):
             import os
 
             from langchain_openai import OpenAIEmbeddings
-            from aiagentsforce_community.vectorstores import TablestoreVectorStore
+            from aibaba_ai_community.vectorstores import TablestoreVectorStore
             import tablestore
 
             embeddings = OpenAIEmbeddings()

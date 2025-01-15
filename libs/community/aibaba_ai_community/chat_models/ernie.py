@@ -33,7 +33,7 @@ def _convert_message_to_dict(message: BaseMessage) -> dict:
 
 @deprecated(
     since="0.0.13",
-    alternative="aiagentsforce_community.chat_models.QianfanChatEndpoint",
+    alternative="aibaba_ai_community.chat_models.QianfanChatEndpoint",
 )
 class ErnieBotChat(BaseChatModel):
     """`ERNIE-Bot` large language model.
@@ -55,7 +55,7 @@ class ErnieBotChat(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ErnieBotChat
+            from aibaba_ai_community.chat_models import ErnieBotChat
             chat = ErnieBotChat(model_name='ERNIE-Bot')
 
 
@@ -68,7 +68,7 @@ class ErnieBotChat(BaseChatModel):
     Example of `QianfanChatEndpoint`:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import QianfanChatEndpoint
+            from aibaba_ai_community.chat_models import QianfanChatEndpoint
             qianfan_chat = QianfanChatEndpoint(model="ERNIE-Bot",
                 endpoint="your_endpoint", qianfan_ak="your_ak", qianfan_sk="your_sk")
 

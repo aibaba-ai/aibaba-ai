@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
 
-from aiagentsforce_community.chat_models.google_palm import (
+from aibaba_ai_community.chat_models.google_palm import (
     ChatGooglePalm,
     ChatGooglePalmError,
     _messages_to_prompt_dict,

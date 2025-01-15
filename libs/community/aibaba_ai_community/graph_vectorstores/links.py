@@ -11,7 +11,7 @@ from alibaba_ai_core.documents import Document
 class Link:
     """A link to/from a tag of a given kind.
 
-    Documents in a :class:`graph vector store <aiagentsforce_community.graph_vectorstores.base.GraphVectorStore>`
+    Documents in a :class:`graph vector store <aibaba_ai_community.graph_vectorstores.base.GraphVectorStore>`
     are connected via "links".
     Links form a bipartite graph between documents and tags: documents are connected
     to tags, and tags are connected to other documents.
@@ -53,10 +53,10 @@ class Link:
 
     .. seealso::
 
-        - :mod:`How to use a graph vector store <aiagentsforce_community.graph_vectorstores>`
-        - :class:`How to link Documents on hyperlinks in HTML <aiagentsforce_community.graph_vectorstores.extractors.html_link_extractor.HtmlLinkExtractor>`
-        - :class:`How to link Documents on common keywords (using KeyBERT) <aiagentsforce_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor>`
-        - :class:`How to link Documents on common named entities (using GliNER) <aiagentsforce_community.graph_vectorstores.extractors.gliner_link_extractor.GLiNERLinkExtractor>`
+        - :mod:`How to use a graph vector store <aibaba_ai_community.graph_vectorstores>`
+        - :class:`How to link Documents on hyperlinks in HTML <aibaba_ai_community.graph_vectorstores.extractors.html_link_extractor.HtmlLinkExtractor>`
+        - :class:`How to link Documents on common keywords (using KeyBERT) <aibaba_ai_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor>`
+        - :class:`How to link Documents on common named entities (using GliNER) <aibaba_ai_community.graph_vectorstores.extractors.gliner_link_extractor.GLiNERLinkExtractor>`
 
     How to add links to a Document
     ==============================
@@ -67,7 +67,7 @@ class Link:
     You can create links using the Link class's constructors :meth:`incoming`,
     :meth:`outgoing`, and :meth:`bidir`::
 
-        from aiagentsforce_community.graph_vectorstores.links import Link
+        from aibaba_ai_community.graph_vectorstores.links import Link
 
         print(Link.bidir(kind="location", tag="Paris"))
 
@@ -85,8 +85,8 @@ class Link:
     First, we'll load some text and chunk it into smaller pieces.
     Then we'll add a link to each document to link them all together::
 
-        from aiagentsforce_community.document_loaders import TextLoader
-        from aiagentsforce_community.graph_vectorstores.links import add_links
+        from aibaba_ai_community.document_loaders import TextLoader
+        from aibaba_ai_community.graph_vectorstores.links import add_links
         from langchain_text_splitters import CharacterTextSplitter
 
         loader = TextLoader("state_of_the_union.txt")
@@ -109,7 +109,7 @@ class Link:
 
     The documents can then be added to a graph vector store::
 
-        from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+        from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
 
         graph_vectorstore = CassandraGraphVectorStore.from_documents(
             documents=documents, embeddings=...

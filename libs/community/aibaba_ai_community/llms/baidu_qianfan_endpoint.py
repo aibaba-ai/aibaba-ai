@@ -57,7 +57,7 @@ class QianfanLLMEndpoint(LLM):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import QianfanLLMEndpoint
+            from aibaba_ai_community.llms import QianfanLLMEndpoint
 
             llm = QianfanLLMEndpoint(
                 model="ERNIE-3.5-8K",

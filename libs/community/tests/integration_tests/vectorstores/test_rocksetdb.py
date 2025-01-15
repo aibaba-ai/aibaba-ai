@@ -4,7 +4,7 @@ import uuid
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.rocksetdb import Rockset
+from aibaba_ai_community.vectorstores.rocksetdb import Rockset
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     fake_texts,

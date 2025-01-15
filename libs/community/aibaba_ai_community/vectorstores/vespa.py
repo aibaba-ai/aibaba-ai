@@ -16,8 +16,8 @@ class VespaStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import VespaStore
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import VespaStore
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             from vespa.application import Vespa
 
             # Create a vespa client dependent upon your application,

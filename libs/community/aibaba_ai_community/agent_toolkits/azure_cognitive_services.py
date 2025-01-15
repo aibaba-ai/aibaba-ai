@@ -6,7 +6,7 @@ from typing import List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.azure_cognitive_services import (
+from aibaba_ai_community.tools.azure_cognitive_services import (
     AzureCogsFormRecognizerTool,
     AzureCogsImageAnalysisTool,
     AzureCogsSpeech2TextTool,

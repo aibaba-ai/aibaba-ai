@@ -7,7 +7,7 @@ from alibaba_ai_core.outputs import Generation, LLMResult
 from alibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +26,7 @@ class Clarifai(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Clarifai
+            from aibaba_ai_community.llms import Clarifai
             clarifai_llm = Clarifai(user_id=USER_ID, app_id=APP_ID, model_id=MODEL_ID)
                              (or)
             clarifai_llm = Clarifai(model_url=EXAMPLE_URL)

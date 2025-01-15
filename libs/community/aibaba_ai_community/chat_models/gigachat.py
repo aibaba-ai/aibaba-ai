@@ -39,7 +39,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.llms.gigachat import _BaseGigaChat
+from aibaba_ai_community.llms.gigachat import _BaseGigaChat
 
 if TYPE_CHECKING:
     import gigachat.models as gm
@@ -127,7 +127,7 @@ class GigaChat(_BaseGigaChat, BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import GigaChat
+            from aibaba_ai_community.chat_models import GigaChat
             giga = GigaChat(credentials=..., scope=..., verify_ssl_certs=False)
     """
 

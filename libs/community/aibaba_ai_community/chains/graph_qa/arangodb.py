@@ -12,12 +12,12 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     AQL_FIX_PROMPT,
     AQL_GENERATION_PROMPT,
     AQL_QA_PROMPT,
 )
-from aiagentsforce_community.graphs.arangodb_graph import ArangoGraph
+from aibaba_ai_community.graphs.arangodb_graph import ArangoGraph
 
 
 class ArangoGraphQAChain(Chain):

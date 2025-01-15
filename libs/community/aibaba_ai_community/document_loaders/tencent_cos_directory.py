@@ -2,8 +2,8 @@ from typing import Any, Iterator
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.tencent_cos_file import TencentCOSFileLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.tencent_cos_file import TencentCOSFileLoader
 
 
 class TencentCOSDirectoryLoader(BaseLoader):

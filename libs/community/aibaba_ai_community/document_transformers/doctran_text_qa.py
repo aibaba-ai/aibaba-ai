@@ -14,7 +14,7 @@ class DoctranQATransformer(BaseDocumentTransformer):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_transformers import DoctranQATransformer
+            from aibaba_ai_community.document_transformers import DoctranQATransformer
 
             # Pass in openai_api_key or set env var OPENAI_API_KEY
             qa_transformer = DoctranQATransformer()

@@ -20,11 +20,11 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.vectorstores import VectorStoreRetriever
 from pydantic import ConfigDict, Field, validator
 
-from aiagentsforce_community.chains.pebblo_retrieval.enforcement_filters import (
+from aibaba_ai_community.chains.pebblo_retrieval.enforcement_filters import (
     SUPPORTED_VECTORSTORES,
     set_enforcement_filters,
 )
-from aiagentsforce_community.chains.pebblo_retrieval.models import (
+from aibaba_ai_community.chains.pebblo_retrieval.models import (
     App,
     AuthContext,
     ChainInfo,
@@ -33,7 +33,7 @@ from aiagentsforce_community.chains.pebblo_retrieval.models import (
     SemanticContext,
     VectorDB,
 )
-from aiagentsforce_community.chains.pebblo_retrieval.utilities import (
+from aibaba_ai_community.chains.pebblo_retrieval.utilities import (
     PLUGIN_VERSION,
     PebbloRetrievalAPIWrapper,
     get_runtime,
@@ -331,8 +331,8 @@ class PebbloRetrievalQA(Chain):
             chains=chains,
             plugin_version=PLUGIN_VERSION,
             client_version=Framework(
-                name="aiagentsforce_community",
-                version=version("aiagentsforce_community"),
+                name="aibaba_ai_community",
+                version=version("aibaba_ai_community"),
             ),
         )
         return app

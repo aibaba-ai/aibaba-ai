@@ -5,7 +5,7 @@ from typing import Generic, Iterable, Set, TypeVar
 
 from alibaba_ai_core._api import beta
 
-from aiagentsforce_community.graph_vectorstores import Link
+from aibaba_ai_community.graph_vectorstores import Link
 
 InputT = TypeVar("InputT")
 

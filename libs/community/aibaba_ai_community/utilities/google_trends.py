@@ -21,7 +21,7 @@ class GoogleTrendsAPIWrapper(BaseModel):
      Example:
         .. code-block:: python
 
-        from aiagentsforce_community.utilities import GoogleTrendsAPIWrapper
+        from aibaba_ai_community.utilities import GoogleTrendsAPIWrapper
         google_trends = GoogleTrendsAPIWrapper()
         google_trends.run('langchain')
     """

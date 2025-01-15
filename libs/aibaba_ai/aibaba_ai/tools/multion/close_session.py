@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.multion.close_session import (
+    from aibaba_ai_community.tools.multion.close_session import (
         CloseSessionSchema,
         MultionCloseSession,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "CloseSessionSchema": "aiagentsforce_community.tools.multion.close_session",
-    "MultionCloseSession": "aiagentsforce_community.tools.multion.close_session",
+    "CloseSessionSchema": "aibaba_ai_community.tools.multion.close_session",
+    "MultionCloseSession": "aibaba_ai_community.tools.multion.close_session",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

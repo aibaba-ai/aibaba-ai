@@ -16,7 +16,7 @@ Each document identifies tags that link to and from it.
 For example, a paragraph of text may be linked to URLs based on the anchor tags in
 it's content and linked from the URL(s) it is published at.
 
-`Link extractors <aiagentsforce_community.graph_vectorstores.extractors.link_extractor.LinkExtractor>`
+`Link extractors <aibaba_ai_community.graph_vectorstores.extractors.link_extractor.LinkExtractor>`
 can be used to extract links from documents.
 
 Example::
@@ -29,18 +29,18 @@ Example::
 
 .. seealso::
 
-    - :class:`How to use a graph vector store as a retriever <aiagentsforce_community.graph_vectorstores.base.GraphVectorStoreRetriever>`
-    - :class:`How to create links between documents <aiagentsforce_community.graph_vectorstores.links.Link>`
-    - :class:`How to link Documents on hyperlinks in HTML <aiagentsforce_community.graph_vectorstores.extractors.html_link_extractor.HtmlLinkExtractor>`
-    - :class:`How to link Documents on common keywords (using KeyBERT) <aiagentsforce_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor>`
-    - :class:`How to link Documents on common named entities (using GliNER) <aiagentsforce_community.graph_vectorstores.extractors.gliner_link_extractor.GLiNERLinkExtractor>`
+    - :class:`How to use a graph vector store as a retriever <aibaba_ai_community.graph_vectorstores.base.GraphVectorStoreRetriever>`
+    - :class:`How to create links between documents <aibaba_ai_community.graph_vectorstores.links.Link>`
+    - :class:`How to link Documents on hyperlinks in HTML <aibaba_ai_community.graph_vectorstores.extractors.html_link_extractor.HtmlLinkExtractor>`
+    - :class:`How to link Documents on common keywords (using KeyBERT) <aibaba_ai_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor>`
+    - :class:`How to link Documents on common named entities (using GliNER) <aibaba_ai_community.graph_vectorstores.extractors.gliner_link_extractor.GLiNERLinkExtractor>`
 
 Get started
 -----------
 
 We chunk the State of the Union text and split it into documents::
 
-    from aiagentsforce_community.document_loaders import TextLoader
+    from aibaba_ai_community.document_loaders import TextLoader
     from langchain_text_splitters import CharacterTextSplitter
 
     raw_documents = TextLoader("state_of_the_union.txt").load()
@@ -48,15 +48,15 @@ We chunk the State of the Union text and split it into documents::
     documents = text_splitter.split_documents(raw_documents)
 
 Links can be added to documents manually but it's easier to use a
-:class:`~aiagentsforce_community.graph_vectorstores.extractors.link_extractor.LinkExtractor`.
+:class:`~aibaba_ai_community.graph_vectorstores.extractors.link_extractor.LinkExtractor`.
 Several common link extractors are available and you can build your own.
 For this guide, we'll use the
-:class:`~aiagentsforce_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor`
+:class:`~aibaba_ai_community.graph_vectorstores.extractors.keybert_link_extractor.KeybertLinkExtractor`
 which uses the KeyBERT model to tag documents with keywords and uses these keywords to
 create links between documents::
 
-    from aiagentsforce_community.graph_vectorstores.extractors import KeybertLinkExtractor
-    from aiagentsforce_community.graph_vectorstores.links import add_links
+    from aibaba_ai_community.graph_vectorstores.extractors import KeybertLinkExtractor
+    from aibaba_ai_community.graph_vectorstores.links import add_links
 
     extractor = KeybertLinkExtractor()
 
@@ -68,12 +68,12 @@ Create the graph vector store and add documents
 
 We'll use an Apache Cassandra or Astra DB database as an example.
 We create a
-:class:`~aiagentsforce_community.graph_vectorstores.cassandra.CassandraGraphVectorStore`
+:class:`~aibaba_ai_community.graph_vectorstores.cassandra.CassandraGraphVectorStore`
 from the documents and an :class:`~langchain_openai.embeddings.base.OpenAIEmbeddings`
 model::
 
     import cassio
-    from aiagentsforce_community.graph_vectorstores import CassandraGraphVectorStore
+    from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
     from langchain_openai import OpenAIEmbeddings
 
     # Initialize cassio and the Cassandra session from the environment variables
@@ -91,7 +91,7 @@ Similarity search
 If we don't traverse the graph, a graph vector store behaves like a regular vector
 store.
 So all methods available in a vector store are also available in a graph vector store.
-The :meth:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore.similarity_search`
+The :meth:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore.similarity_search`
 method returns documents similar to a query without considering
 the links between documents::
 
@@ -102,7 +102,7 @@ the links between documents::
 Traversal search
 ----------------
 
-The :meth:`~aiagentsforce_community.graph_vectorstores.base.GraphVectorStore.traversal_search`
+The :meth:`~aibaba_ai_community.graph_vectorstores.base.GraphVectorStore.traversal_search`
 method returns documents similar to a query considering the links
 between documents. It first does a similarity search and then traverses the graph to
 find linked documents::
@@ -135,16 +135,16 @@ such as ``traversal`` and ``mmr_traversal``::
 
 """  # noqa: E501
 
-from aiagentsforce_community.graph_vectorstores.base import (
+from aibaba_ai_community.graph_vectorstores.base import (
     GraphVectorStore,
     GraphVectorStoreRetriever,
     Node,
 )
-from aiagentsforce_community.graph_vectorstores.cassandra import CassandraGraphVectorStore
-from aiagentsforce_community.graph_vectorstores.links import (
+from aibaba_ai_community.graph_vectorstores.cassandra import CassandraGraphVectorStore
+from aibaba_ai_community.graph_vectorstores.links import (
     Link,
 )
-from aiagentsforce_community.graph_vectorstores.mmr_helper import MmrHelper
+from aibaba_ai_community.graph_vectorstores.mmr_helper import MmrHelper
 
 __all__ = [
     "GraphVectorStore",

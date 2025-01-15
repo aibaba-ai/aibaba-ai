@@ -5,9 +5,9 @@ from abc import ABC
 from pathlib import Path
 from typing import Iterator, List, Set, Tuple
 
-from aiagentsforce_community.docstore.document import Document
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.docstore.document import Document
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
 
 
 class VsdxParser(BaseBlobParser, ABC):

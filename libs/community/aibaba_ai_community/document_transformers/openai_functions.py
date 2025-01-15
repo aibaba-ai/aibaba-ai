@@ -14,8 +14,8 @@ class OpenAIMetadataTagger(BaseDocumentTransformer, BaseModel):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatOpenAI
-                from aiagentsforce_community.document_transformers import OpenAIMetadataTagger
+                from aibaba_ai_community.chat_models import ChatOpenAI
+                from aibaba_ai_community.document_transformers import OpenAIMetadataTagger
                 from alibaba_ai_core.documents import Document
 
                 schema = {
@@ -97,8 +97,8 @@ def create_metadata_tagger(
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatOpenAI
-                from aiagentsforce_community.document_transformers import create_metadata_tagger
+                from aibaba_ai_community.chat_models import ChatOpenAI
+                from aibaba_ai_community.document_transformers import create_metadata_tagger
                 from alibaba_ai_core.documents import Document
 
                 schema = {

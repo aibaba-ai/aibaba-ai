@@ -8,18 +8,18 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.tools import BaseTool, Tool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.agent_toolkits.json.base import create_json_agent
-from aiagentsforce_community.agent_toolkits.json.toolkit import JsonToolkit
-from aiagentsforce_community.agent_toolkits.openapi.prompt import DESCRIPTION
-from aiagentsforce_community.tools.json.tool import JsonSpec
-from aiagentsforce_community.tools.requests.tool import (
+from aibaba_ai_community.agent_toolkits.json.base import create_json_agent
+from aibaba_ai_community.agent_toolkits.json.toolkit import JsonToolkit
+from aibaba_ai_community.agent_toolkits.openapi.prompt import DESCRIPTION
+from aibaba_ai_community.tools.json.tool import JsonSpec
+from aibaba_ai_community.tools.requests.tool import (
     RequestsDeleteTool,
     RequestsGetTool,
     RequestsPatchTool,
     RequestsPostTool,
     RequestsPutTool,
 )
-from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+from aibaba_ai_community.utilities.requests import TextRequestsWrapper
 
 
 class RequestsToolkit(BaseToolkit):
@@ -47,7 +47,7 @@ class RequestsToolkit(BaseToolkit):
             pip install -U langchain-community
 
     Key init args:
-        requests_wrapper: aiagentsforce_community.utilities.requests.GenericRequestsWrapper
+        requests_wrapper: aibaba_ai_community.utilities.requests.GenericRequestsWrapper
             wrapper for executing requests.
         allow_dangerous_requests: bool
             Defaults to False. Must "opt-in" to using dangerous requests by setting to True.
@@ -55,8 +55,8 @@ class RequestsToolkit(BaseToolkit):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.agent_toolkits.openapi.toolkit import RequestsToolkit
-            from aiagentsforce_community.utilities.requests import TextRequestsWrapper
+            from aibaba_ai_community.agent_toolkits.openapi.toolkit import RequestsToolkit
+            from aibaba_ai_community.utilities.requests import TextRequestsWrapper
 
             toolkit = RequestsToolkit(
                 requests_wrapper=TextRequestsWrapper(headers={}),

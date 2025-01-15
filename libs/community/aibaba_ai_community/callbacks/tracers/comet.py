@@ -10,7 +10,7 @@ if TYPE_CHECKING:
     from comet_llm import Span
     from comet_llm.chains.chain import Chain
 
-    from aiagentsforce_community.callbacks.tracers.schemas import Run
+    from aibaba_ai_community.callbacks.tracers.schemas import Run
 
 
 def _get_run_type(run: "Run") -> str:

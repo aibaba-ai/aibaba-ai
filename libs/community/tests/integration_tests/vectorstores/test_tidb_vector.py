@@ -5,7 +5,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import TiDBVectorStore
+from aibaba_ai_community.vectorstores import TiDBVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 TiDB_CONNECT_URL = os.environ.get(

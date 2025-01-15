@@ -15,7 +15,7 @@ from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, Field, model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class TrainResult(TypedDict):
@@ -36,7 +36,7 @@ class GradientLLM(BaseLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import GradientLLM
+            from aibaba_ai_community.llms import GradientLLM
             GradientLLM(
                 model="99148c6d-c2a0-4fbe-a4a7-e7c05bdb8a09_base_ml_model",
                 model_kwargs={

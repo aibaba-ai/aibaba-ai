@@ -7,19 +7,19 @@ from typing import TYPE_CHECKING, Any, List, Optional, Type, cast
 from alibaba_ai_core.tools import BaseTool, BaseToolkit
 from pydantic import ConfigDict, model_validator
 
-from aiagentsforce_community.tools.playwright.base import (
+from aibaba_ai_community.tools.playwright.base import (
     BaseBrowserTool,
     lazy_import_playwright_browsers,
 )
-from aiagentsforce_community.tools.playwright.click import ClickTool
-from aiagentsforce_community.tools.playwright.current_page import CurrentWebPageTool
-from aiagentsforce_community.tools.playwright.extract_hyperlinks import (
+from aibaba_ai_community.tools.playwright.click import ClickTool
+from aibaba_ai_community.tools.playwright.current_page import CurrentWebPageTool
+from aibaba_ai_community.tools.playwright.extract_hyperlinks import (
     ExtractHyperlinksTool,
 )
-from aiagentsforce_community.tools.playwright.extract_text import ExtractTextTool
-from aiagentsforce_community.tools.playwright.get_elements import GetElementsTool
-from aiagentsforce_community.tools.playwright.navigate import NavigateTool
-from aiagentsforce_community.tools.playwright.navigate_back import NavigateBackTool
+from aibaba_ai_community.tools.playwright.extract_text import ExtractTextTool
+from aibaba_ai_community.tools.playwright.get_elements import GetElementsTool
+from aibaba_ai_community.tools.playwright.navigate import NavigateTool
+from aibaba_ai_community.tools.playwright.navigate_back import NavigateBackTool
 
 if TYPE_CHECKING:
     from playwright.async_api import Browser as AsyncBrowser

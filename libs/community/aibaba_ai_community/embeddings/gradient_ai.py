@@ -21,7 +21,7 @@ class GradientEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import GradientEmbeddings
+            from aibaba_ai_community.embeddings import GradientEmbeddings
             GradientEmbeddings(
                 model="bge-large",
                 gradient_workspace_id="12345614fc0_workspace",
@@ -165,7 +165,7 @@ class TinyAsyncGradientEmbeddingClient:  #: :meta private:
     """Deprecated, TinyAsyncGradientEmbeddingClient was removed.
 
     This class is just for backwards compatibility with older versions
-    of aiagentsforce_community.
+    of aibaba_ai_community.
     It might be entirely removed in the future.
     """
 

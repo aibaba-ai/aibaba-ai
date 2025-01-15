@@ -5,17 +5,17 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.multion.close_session import MultionCloseSession
-    from aiagentsforce_community.tools.multion.create_session import MultionCreateSession
-    from aiagentsforce_community.tools.multion.update_session import MultionUpdateSession
+    from aibaba_ai_community.tools.multion.close_session import MultionCloseSession
+    from aibaba_ai_community.tools.multion.create_session import MultionCreateSession
+    from aibaba_ai_community.tools.multion.update_session import MultionUpdateSession
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "MultionCreateSession": "aiagentsforce_community.tools.multion.create_session",
-    "MultionUpdateSession": "aiagentsforce_community.tools.multion.update_session",
-    "MultionCloseSession": "aiagentsforce_community.tools.multion.close_session",
+    "MultionCreateSession": "aibaba_ai_community.tools.multion.create_session",
+    "MultionUpdateSession": "aibaba_ai_community.tools.multion.update_session",
+    "MultionCloseSession": "aibaba_ai_community.tools.multion.close_session",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

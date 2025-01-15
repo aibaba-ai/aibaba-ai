@@ -20,12 +20,12 @@ from tempfile import TemporaryDirectory
 import pytest
 import sqlalchemy as sa
 
-from aiagentsforce_community.utilities.sql_database import SQLDatabase
+from aibaba_ai_community.utilities.sql_database import SQLDatabase
 
 if typing.TYPE_CHECKING:
     from _pytest.python import Metafunc
 
-from aiagentsforce_community.document_loaders.sql_database import SQLDatabaseLoader
+from aibaba_ai_community.document_loaders.sql_database import SQLDatabaseLoader
 from tests.data import MLB_TEAMS_2012_SQL
 
 logging.basicConfig(level=logging.DEBUG)

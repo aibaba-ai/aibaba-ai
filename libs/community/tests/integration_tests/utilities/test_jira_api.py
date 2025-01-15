@@ -1,6 +1,6 @@
 """Integration test for JIRA API Wrapper."""
 
-from aiagentsforce_community.utilities.jira import JiraAPIWrapper
+from aibaba_ai_community.utilities.jira import JiraAPIWrapper
 
 
 def test_search() -> None:

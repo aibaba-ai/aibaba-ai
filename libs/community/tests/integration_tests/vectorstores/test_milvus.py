@@ -4,7 +4,7 @@ from typing import Any, List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import Milvus
+from aibaba_ai_community.vectorstores import Milvus
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

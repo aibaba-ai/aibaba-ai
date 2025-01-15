@@ -7,9 +7,9 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.amadeus.closest_airport import AmadeusClosestAirport
-from aiagentsforce_community.tools.amadeus.flight_search import AmadeusFlightSearch
-from aiagentsforce_community.tools.amadeus.utils import authenticate
+from aibaba_ai_community.tools.amadeus.closest_airport import AmadeusClosestAirport
+from aibaba_ai_community.tools.amadeus.flight_search import AmadeusFlightSearch
+from aibaba_ai_community.tools.amadeus.utils import authenticate
 
 if TYPE_CHECKING:
     from amadeus import Client

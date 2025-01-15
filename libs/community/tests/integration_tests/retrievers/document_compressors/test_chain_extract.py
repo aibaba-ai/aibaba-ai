@@ -3,7 +3,7 @@
 from langchain.retrievers.document_compressors import LLMChainExtractor
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.chat_models import ChatOpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
 
 
 def test_llm_chain_extractor() -> None:

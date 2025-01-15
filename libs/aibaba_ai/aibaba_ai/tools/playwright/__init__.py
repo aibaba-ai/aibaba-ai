@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         ClickTool,
         CurrentWebPageTool,
         ExtractHyperlinksTool,
@@ -19,13 +19,13 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "NavigateTool": "aiagentsforce_community.tools",
-    "NavigateBackTool": "aiagentsforce_community.tools",
-    "ExtractTextTool": "aiagentsforce_community.tools",
-    "ExtractHyperlinksTool": "aiagentsforce_community.tools",
-    "GetElementsTool": "aiagentsforce_community.tools",
-    "ClickTool": "aiagentsforce_community.tools",
-    "CurrentWebPageTool": "aiagentsforce_community.tools",
+    "NavigateTool": "aibaba_ai_community.tools",
+    "NavigateBackTool": "aibaba_ai_community.tools",
+    "ExtractTextTool": "aibaba_ai_community.tools",
+    "ExtractHyperlinksTool": "aibaba_ai_community.tools",
+    "GetElementsTool": "aibaba_ai_community.tools",
+    "ClickTool": "aibaba_ai_community.tools",
+    "CurrentWebPageTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

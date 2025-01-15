@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.volcengine_maas import (
+    from aibaba_ai_community.chat_models.volcengine_maas import (
         VolcEngineMaasChat,
         convert_dict_to_message,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "convert_dict_to_message": "aiagentsforce_community.chat_models.volcengine_maas",
-    "VolcEngineMaasChat": "aiagentsforce_community.chat_models.volcengine_maas",
+    "convert_dict_to_message": "aibaba_ai_community.chat_models.volcengine_maas",
+    "VolcEngineMaasChat": "aibaba_ai_community.chat_models.volcengine_maas",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

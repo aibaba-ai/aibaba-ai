@@ -61,8 +61,8 @@ class Hippo(VectorStore):
     Example:
         .. code-block:: python
 
-        from aiagentsforce_community.vectorstores import Hippo
-        from aiagentsforce_community.embeddings import OpenAIEmbeddings
+        from aibaba_ai_community.vectorstores import Hippo
+        from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
         embedding = OpenAIEmbeddings()
         # Connect to a hippo instance on localhost

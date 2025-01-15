@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities import SearxSearchWrapper
-    from aiagentsforce_community.utilities.searx_search import SearxResults
+    from aibaba_ai_community.utilities import SearxSearchWrapper
+    from aibaba_ai_community.utilities.searx_search import SearxResults
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SearxResults": "aiagentsforce_community.utilities.searx_search",
-    "SearxSearchWrapper": "aiagentsforce_community.utilities",
+    "SearxResults": "aibaba_ai_community.utilities.searx_search",
+    "SearxSearchWrapper": "aibaba_ai_community.utilities",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

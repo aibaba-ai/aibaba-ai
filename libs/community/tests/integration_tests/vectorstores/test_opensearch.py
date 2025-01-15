@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.opensearch_vector_search import (
+from aibaba_ai_community.vectorstores.opensearch_vector_search import (
     HYBRID_SEARCH,
     PAINLESS_SCRIPTING_SEARCH,
     SCRIPT_SCORING_SEARCH,

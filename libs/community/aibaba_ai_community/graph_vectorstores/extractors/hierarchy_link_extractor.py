@@ -3,13 +3,13 @@ from typing import Callable, List, Set
 from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor_adapter import (
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor_adapter import (
     LinkExtractorAdapter,
 )
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 # TypeAlias is not available in Python 3.9, we can't use that or the newer `type`.
 HierarchyInput = List[str]

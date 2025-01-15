@@ -17,7 +17,7 @@ class GoogleFinanceAPIWrapper(BaseModel):
     to the constructor.
     Example:
         .. code-block:: python
-        from aiagentsforce_community.utilities import GoogleFinanceAPIWrapper
+        from aibaba_ai_community.utilities import GoogleFinanceAPIWrapper
         google_Finance = GoogleFinanceAPIWrapper()
         google_Finance.run('langchain')
     """

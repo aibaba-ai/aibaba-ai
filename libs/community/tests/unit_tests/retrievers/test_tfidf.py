@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.tfidf import TFIDFRetriever
+from aibaba_ai_community.retrievers.tfidf import TFIDFRetriever
 
 
 @pytest.mark.requires("sklearn")

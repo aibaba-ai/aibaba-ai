@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import DocusaurusLoader
+from aibaba_ai_community.document_loaders import DocusaurusLoader
 
 DOCS_URL = str(Path(__file__).parent.parent / "examples/docusaurus-sitemap.xml")
 

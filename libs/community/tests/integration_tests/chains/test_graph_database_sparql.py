@@ -6,8 +6,8 @@ from unittest.mock import MagicMock, Mock
 
 from langchain.chains import LLMChain
 
-from aiagentsforce_community.chains.graph_qa.sparql import GraphSparqlQAChain
-from aiagentsforce_community.graphs import RdfGraph
+from aibaba_ai_community.chains.graph_qa.sparql import GraphSparqlQAChain
+from aibaba_ai_community.graphs import RdfGraph
 
 """
 cd libs/langchain/tests/integration_tests/chains/docker-compose-ontotext-graphdb

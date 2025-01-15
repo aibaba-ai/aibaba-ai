@@ -19,7 +19,7 @@ class Writer(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Writer as WriterLLM
+            from aibaba_ai_community.llms import Writer as WriterLLM
             from writerai import Writer, AsyncWriter
 
             client = Writer()

@@ -7,10 +7,10 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import Field
 
-from aiagentsforce_community.agent_toolkits.nla.tool import NLATool
-from aiagentsforce_community.tools.openapi.utils.openapi_utils import OpenAPISpec
-from aiagentsforce_community.tools.plugin import AIPlugin
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.agent_toolkits.nla.tool import NLATool
+from aibaba_ai_community.tools.openapi.utils.openapi_utils import OpenAPISpec
+from aibaba_ai_community.tools.plugin import AIPlugin
+from aibaba_ai_community.utilities.requests import Requests
 
 
 class NLAToolkit(BaseToolkit):

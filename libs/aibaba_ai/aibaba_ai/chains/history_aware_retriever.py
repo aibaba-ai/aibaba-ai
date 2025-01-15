@@ -34,7 +34,7 @@ def create_history_aware_retriever(
 
             # pip install -U langchain langchain-community
 
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.chat_models import ChatOpenAI
             from langchain.chains import create_history_aware_retriever
             from langchain import hub
 

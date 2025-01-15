@@ -5,8 +5,8 @@ from typing import List, Tuple
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.vectorstores import Lantern
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.vectorstores import Lantern
 
 CONNECTION_STRING = Lantern.connection_string_from_db_params(
     driver=os.environ.get("TEST_LANTERN_DRIVER", "psycopg2"),

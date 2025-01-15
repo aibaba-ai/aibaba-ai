@@ -400,7 +400,7 @@ class Ollama(BaseLLM, _OllamaCommon):
     To use, follow the instructions at https://ollama.ai/.
     Example:
         .. code-block:: python
-            from aiagentsforce_community.llms import Ollama
+            from aibaba_ai_community.llms import Ollama
             ollama = Ollama(model="llama2")
     """
 

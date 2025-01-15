@@ -20,7 +20,7 @@ class ExLlamaV2(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Exllamav2
+            from aibaba_ai_community.llms import Exllamav2
 
             llm = Exllamav2(model_path="/path/to/llama/model")
 

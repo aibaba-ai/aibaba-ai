@@ -2,7 +2,7 @@ import os
 from contextlib import ExitStack
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import (
+from aibaba_ai_community.document_loaders import (
     UnstructuredAPIFileIOLoader,
     UnstructuredAPIFileLoader,
     UnstructuredFileLoader,

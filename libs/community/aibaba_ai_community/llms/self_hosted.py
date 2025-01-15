@@ -7,7 +7,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -76,7 +76,7 @@ class SelfHostedPipeline(LLM):
     Example for custom pipeline and inference functions:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SelfHostedPipeline
+            from aibaba_ai_community.llms import SelfHostedPipeline
             from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
             import runhouse as rh
 
@@ -99,7 +99,7 @@ class SelfHostedPipeline(LLM):
     Example for <2GB model (can be serialized and sent directly to the server):
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SelfHostedPipeline
+            from aibaba_ai_community.llms import SelfHostedPipeline
             import runhouse as rh
             gpu = rh.cluster(name="rh-a10x", instance_type="A100:1")
             my_model = ...
@@ -111,7 +111,7 @@ class SelfHostedPipeline(LLM):
     Example passing model path for larger models:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SelfHostedPipeline
+            from aibaba_ai_community.llms import SelfHostedPipeline
             import runhouse as rh
             import pickle
             from transformers import pipeline

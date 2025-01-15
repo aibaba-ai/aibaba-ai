@@ -5,7 +5,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import ConfigDict
 
-from aiagentsforce_community.utilities.graphql import GraphQLAPIWrapper
+from aibaba_ai_community.utilities.graphql import GraphQLAPIWrapper
 
 
 class BaseGraphQLTool(BaseTool):  # type: ignore[override]

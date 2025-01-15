@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.eleven_labs.models import ElevenLabsModel
+    from aibaba_ai_community.tools.eleven_labs.models import ElevenLabsModel
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"ElevenLabsModel": "aiagentsforce_community.tools.eleven_labs.models"}
+DEPRECATED_LOOKUP = {"ElevenLabsModel": "aibaba_ai_community.tools.eleven_labs.models"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

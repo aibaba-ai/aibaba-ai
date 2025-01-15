@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import GoogleDocumentAIWarehouseRetriever
+    from aibaba_ai_community.retrievers import GoogleDocumentAIWarehouseRetriever
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GoogleDocumentAIWarehouseRetriever": "aiagentsforce_community.retrievers"
+    "GoogleDocumentAIWarehouseRetriever": "aibaba_ai_community.retrievers"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

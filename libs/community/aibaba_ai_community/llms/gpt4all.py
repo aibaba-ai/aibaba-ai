@@ -6,7 +6,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class GPT4All(LLM):
@@ -18,7 +18,7 @@ class GPT4All(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import GPT4All
+            from aibaba_ai_community.llms import GPT4All
             model = GPT4All(model="./models/gpt4all-model.bin", n_threads=8)
 
             # Simplest invocation

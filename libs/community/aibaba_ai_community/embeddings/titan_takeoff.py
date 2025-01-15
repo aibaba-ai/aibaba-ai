@@ -50,7 +50,7 @@ class TitanTakeoffEmbed(Embeddings):
         .. code-block:: python
             # Import the TitanTakeoffEmbed class from community package
             import time
-            from aiagentsforce_community.embeddings import TitanTakeoffEmbed
+            from aibaba_ai_community.embeddings import TitanTakeoffEmbed
 
             # Specify the embedding reader you'd like to deploy
             reader_1 = {

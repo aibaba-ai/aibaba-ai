@@ -117,7 +117,7 @@ def _convert_TGI_message_to_LC_message(
 
 def _is_huggingface_hub(llm: Any) -> bool:
     try:
-        from aiagentsforce_community.llms.huggingface_hub import (  # type: ignore[import-not-found]
+        from aibaba_ai_community.llms.huggingface_hub import (  # type: ignore[import-not-found]
             HuggingFaceHub,
         )
 
@@ -129,7 +129,7 @@ def _is_huggingface_hub(llm: Any) -> bool:
 
 def _is_huggingface_textgen_inference(llm: Any) -> bool:
     try:
-        from aiagentsforce_community.llms.huggingface_text_gen_inference import (  # type: ignore[import-not-found]
+        from aibaba_ai_community.llms.huggingface_text_gen_inference import (  # type: ignore[import-not-found]
             HuggingFaceTextGenInference,
         )
 

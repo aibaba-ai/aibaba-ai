@@ -6,7 +6,7 @@ from alibaba_ai_core.vectorstores import InMemoryVectorStore
 from langchain_tests.integration_tests import ToolsIntegrationTests
 from langchain_tests.unit_tests import ToolsUnitTests
 
-from aiagentsforce_community.tools.few_shot.tool import FewShotSQLTool
+from aibaba_ai_community.tools.few_shot.tool import FewShotSQLTool
 
 EXAMPLES = [
     {

@@ -21,7 +21,7 @@ class DeepInfraEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import DeepInfraEmbeddings
+            from aibaba_ai_community.embeddings import DeepInfraEmbeddings
             deepinfra_emb = DeepInfraEmbeddings(
                 model_id="sentence-transformers/clip-ViT-B-32",
                 deepinfra_api_token="my-api-key"

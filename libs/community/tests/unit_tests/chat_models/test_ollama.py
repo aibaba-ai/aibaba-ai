@@ -3,7 +3,7 @@ from typing import List, Literal, Optional
 import pytest
 from pydantic import BaseModel, ValidationError
 
-from aiagentsforce_community.chat_models import ChatOllama
+from aibaba_ai_community.chat_models import ChatOllama
 
 
 def test_standard_params() -> None:

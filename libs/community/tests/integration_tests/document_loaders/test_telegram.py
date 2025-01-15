@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders import (
+from aibaba_ai_community.document_loaders import (
     TelegramChatApiLoader,
     TelegramChatFileLoader,
 )

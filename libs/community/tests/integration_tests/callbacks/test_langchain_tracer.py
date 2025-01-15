@@ -8,8 +8,8 @@ from alibaba_ai_core.callbacks.manager import atrace_as_chain_group, trace_as_ch
 from alibaba_ai_core.prompts import PromptTemplate
 from alibaba_ai_core.tracers.context import tracing_v2_enabled
 
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.llms import OpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.llms import OpenAI
 
 questions = [
     (

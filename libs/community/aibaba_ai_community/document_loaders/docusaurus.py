@@ -2,7 +2,7 @@
 
 from typing import Any, List, Optional
 
-from aiagentsforce_community.document_loaders.sitemap import SitemapLoader
+from aibaba_ai_community.document_loaders.sitemap import SitemapLoader
 
 
 class DocusaurusLoader(SitemapLoader):

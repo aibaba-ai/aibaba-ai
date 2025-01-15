@@ -16,7 +16,7 @@ import os
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.google_vertex_ai_search import (
+from aibaba_ai_community.retrievers.google_vertex_ai_search import (
     GoogleCloudEnterpriseSearchRetriever,
     GoogleVertexAIMultiTurnSearchRetriever,
     GoogleVertexAISearchRetriever,

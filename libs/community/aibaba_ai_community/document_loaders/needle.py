@@ -23,7 +23,7 @@ class NeedleLoader(BaseLoader):
     Usage:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders.needle import NeedleLoader
+            from aibaba_ai_community.document_loaders.needle import NeedleLoader
 
             loader = NeedleLoader(
                 needle_api_key="your-api-key",

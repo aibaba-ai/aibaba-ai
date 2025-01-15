@@ -22,7 +22,7 @@ from alibaba_ai_core.prompts import ChatPromptTemplate
 from alibaba_ai_core.tools import StructuredTool
 from pydantic import BaseModel
 
-from aiagentsforce_community.chat_models.mlflow import ChatMlflow
+from aibaba_ai_community.chat_models.mlflow import ChatMlflow
 
 
 @pytest.fixture

@@ -8,7 +8,7 @@ from typing import Sequence
 import pytest
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 
-from aiagentsforce_community.chat_loaders import telegram, utils
+from aibaba_ai_community.chat_loaders import telegram, utils
 
 
 def _assert_messages_are_equal(

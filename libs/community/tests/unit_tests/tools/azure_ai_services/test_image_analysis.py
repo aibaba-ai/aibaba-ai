@@ -5,7 +5,7 @@ from typing import Any
 
 import pytest
 
-from aiagentsforce_community.tools.azure_ai_services.image_analysis import (
+from aibaba_ai_community.tools.azure_ai_services.image_analysis import (
     AzureAiServicesImageAnalysisTool,
 )
 
@@ -38,7 +38,7 @@ def test_local_image_analysis(mocker: Any) -> None:
     mocker.patch("azure.ai.vision.imageanalysis.ImageAnalysisClient", autospec=True)
     mocker.patch("azure.core.credentials.AzureKeyCredential", autospec=True)
     mocker.patch(
-        "aiagentsforce_community.tools.azure_ai_services.utils.detect_file_src_type",
+        "aibaba_ai_community.tools.azure_ai_services.utils.detect_file_src_type",
         return_value="local",
     )
 
@@ -76,7 +76,7 @@ def test_local_image_different_features(mocker: Any) -> None:
     mocker.patch("azure.ai.vision.imageanalysis.ImageAnalysisClient", autospec=True)
     mocker.patch("azure.core.credentials.AzureKeyCredential", autospec=True)
     mocker.patch(
-        "aiagentsforce_community.tools.azure_ai_services.utils.detect_file_src_type",
+        "aibaba_ai_community.tools.azure_ai_services.utils.detect_file_src_type",
         return_value="local",
     )
 

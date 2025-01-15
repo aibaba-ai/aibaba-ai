@@ -10,7 +10,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 INPUT_TYPE = TypeVar("INPUT_TYPE", bound=Union[str, List[str]])
 OUTPUT_TYPE = TypeVar("OUTPUT_TYPE", bound=Union[str, List[List[float]], Iterator])
@@ -162,7 +162,7 @@ class SagemakerEndpoint(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SagemakerEndpoint
+            from aibaba_ai_community.llms import SagemakerEndpoint
             endpoint_name = (
                 "my-endpoint-name"
             )
@@ -221,7 +221,7 @@ class SagemakerEndpoint(LLM):
      Example:
         .. code-block:: python
 
-        from aiagentsforce_community.llms.sagemaker_endpoint import LLMContentHandler
+        from aibaba_ai_community.llms.sagemaker_endpoint import LLMContentHandler
 
         class ContentHandler(LLMContentHandler):
                 content_type = "application/json"

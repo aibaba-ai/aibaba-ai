@@ -4,7 +4,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.file_management.utils import (
+from aibaba_ai_community.tools.file_management.utils import (
     INVALID_PATH_TEMPLATE,
     BaseFileToolMixin,
     FileValidationError,

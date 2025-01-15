@@ -6,7 +6,7 @@ from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.google_search import GoogleSearchAPIWrapper
+from aibaba_ai_community.utilities.google_search import GoogleSearchAPIWrapper
 
 
 @deprecated(

@@ -5,9 +5,9 @@ from typing import Any, Dict, Iterator, List, Optional, Sequence, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.helpers import detect_file_encodings
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.helpers import detect_file_encodings
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     validate_unstructured_version,
 )
@@ -37,7 +37,7 @@ class CSVLoader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import CSVLoader
+            from aibaba_ai_community.document_loaders import CSVLoader
 
             loader = CSVLoader(file_path='./hw_200.csv',
                 csv_args={
@@ -196,7 +196,7 @@ class UnstructuredCSVLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders.csv_loader import UnstructuredCSVLoader
+    from aibaba_ai_community.document_loaders.csv_loader import UnstructuredCSVLoader
 
     loader = UnstructuredCSVLoader("stanley-cups.csv", mode="elements")
     docs = loader.load()

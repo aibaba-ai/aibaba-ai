@@ -5,8 +5,8 @@ from typing import List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import TencentVectorDB
-from aiagentsforce_community.vectorstores.tencentvectordb import ConnectionParams
+from aibaba_ai_community.vectorstores import TencentVectorDB
+from aibaba_ai_community.vectorstores.tencentvectordb import ConnectionParams
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

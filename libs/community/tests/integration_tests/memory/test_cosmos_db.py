@@ -4,7 +4,7 @@ import os
 from langchain.memory import ConversationBufferMemory
 from alibaba_ai_core.messages import message_to_dict
 
-from aiagentsforce_community.chat_message_histories import CosmosDBChatMessageHistory
+from aibaba_ai_community.chat_message_histories import CosmosDBChatMessageHistory
 
 # Replace these with your Azure Cosmos DB endpoint and key
 endpoint = os.environ.get("COSMOS_DB_ENDPOINT", "")

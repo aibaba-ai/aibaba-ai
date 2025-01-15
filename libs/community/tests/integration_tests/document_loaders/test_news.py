@@ -3,7 +3,7 @@ import random
 import pytest
 import requests
 
-from aiagentsforce_community.document_loaders import NewsURLLoader
+from aibaba_ai_community.document_loaders import NewsURLLoader
 
 
 def get_random_news_url() -> str:

@@ -20,7 +20,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     import supabase
@@ -46,9 +46,9 @@ class SupabaseVectorStore(VectorStore):
 
     .. code-block:: python
 
-        from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+        from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
         from alibaba_ai_core.documents import Document
-        from aiagentsforce_community.vectorstores import SupabaseVectorStore
+        from aibaba_ai_community.vectorstores import SupabaseVectorStore
         from supabase.client import create_client
 
         docs = [
@@ -69,8 +69,8 @@ class SupabaseVectorStore(VectorStore):
 
     .. code-block:: python
 
-        from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-        from aiagentsforce_community.vectorstores import SupabaseVectorStore
+        from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+        from aibaba_ai_community.vectorstores import SupabaseVectorStore
         from supabase.client import create_client
 
 

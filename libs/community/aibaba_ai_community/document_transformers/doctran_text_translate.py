@@ -19,7 +19,7 @@ class DoctranTextTranslator(BaseDocumentTransformer):
     Example:
         .. code-block:: python
 
-        from aiagentsforce_community.document_transformers import DoctranTextTranslator
+        from aibaba_ai_community.document_transformers import DoctranTextTranslator
 
         # Pass in openai_api_key or set env var OPENAI_API_KEY
         qa_translator = DoctranTextTranslator(language="spanish")

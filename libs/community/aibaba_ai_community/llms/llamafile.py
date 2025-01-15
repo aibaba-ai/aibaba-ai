@@ -29,7 +29,7 @@ class Llamafile(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Llamafile
+            from aibaba_ai_community.llms import Llamafile
             llm = Llamafile()
             llm.invoke("Tell me a joke.")
     """
@@ -260,7 +260,7 @@ class Llamafile(LLM):
         Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Llamafile
+            from aibaba_ai_community.llms import Llamafile
             llm = Llamafile(
                 temperature = 0.0
             )

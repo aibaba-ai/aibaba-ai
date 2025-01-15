@@ -8,8 +8,8 @@ import pytest
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.vectorstores import ZepVectorStore
-from aiagentsforce_community.vectorstores.zep import CollectionConfig
+from aibaba_ai_community.vectorstores import ZepVectorStore
+from aibaba_ai_community.vectorstores.zep import CollectionConfig
 
 if TYPE_CHECKING:
     from zep_python.document import Document as ZepDocument

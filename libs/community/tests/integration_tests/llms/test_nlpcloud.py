@@ -6,8 +6,8 @@ from typing import cast
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.llms.loading import load_llm
-from aiagentsforce_community.llms.nlpcloud import NLPCloud
+from aibaba_ai_community.llms.loading import load_llm
+from aibaba_ai_community.llms.nlpcloud import NLPCloud
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 

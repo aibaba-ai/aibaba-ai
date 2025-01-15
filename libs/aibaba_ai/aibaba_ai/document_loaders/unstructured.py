@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         UnstructuredAPIFileIOLoader,
         UnstructuredAPIFileLoader,
         UnstructuredFileIOLoader,
         UnstructuredFileLoader,
     )
-    from aiagentsforce_community.document_loaders.unstructured import (
+    from aibaba_ai_community.document_loaders.unstructured import (
         UnstructuredBaseLoader,
         get_elements_from_api,
         satisfies_min_unstructured_version,
@@ -21,17 +21,17 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "satisfies_min_unstructured_version": (
-        "aiagentsforce_community.document_loaders.unstructured"
+        "aibaba_ai_community.document_loaders.unstructured"
     ),
     "validate_unstructured_version": (
-        "aiagentsforce_community.document_loaders.unstructured"
+        "aibaba_ai_community.document_loaders.unstructured"
     ),
-    "UnstructuredBaseLoader": "aiagentsforce_community.document_loaders.unstructured",
-    "UnstructuredFileLoader": "aiagentsforce_community.document_loaders",
-    "get_elements_from_api": "aiagentsforce_community.document_loaders.unstructured",
-    "UnstructuredAPIFileLoader": "aiagentsforce_community.document_loaders",
-    "UnstructuredFileIOLoader": "aiagentsforce_community.document_loaders",
-    "UnstructuredAPIFileIOLoader": "aiagentsforce_community.document_loaders",
+    "UnstructuredBaseLoader": "aibaba_ai_community.document_loaders.unstructured",
+    "UnstructuredFileLoader": "aibaba_ai_community.document_loaders",
+    "get_elements_from_api": "aibaba_ai_community.document_loaders.unstructured",
+    "UnstructuredAPIFileLoader": "aibaba_ai_community.document_loaders",
+    "UnstructuredFileIOLoader": "aibaba_ai_community.document_loaders",
+    "UnstructuredAPIFileIOLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

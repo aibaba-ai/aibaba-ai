@@ -8,7 +8,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import model_validator
 
-from aiagentsforce_community.tools.azure_ai_services.utils import (
+from aibaba_ai_community.tools.azure_ai_services.utils import (
     detect_file_src_type,
 )
 

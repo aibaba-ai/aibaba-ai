@@ -20,7 +20,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_transformers import (
+    from aibaba_ai_community.document_transformers import (
         BeautifulSoupTransformer,
         DoctranPropertyExtractor,
         DoctranQATransformer,
@@ -39,18 +39,18 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BeautifulSoupTransformer": "aiagentsforce_community.document_transformers",
-    "DoctranQATransformer": "aiagentsforce_community.document_transformers",
-    "DoctranTextTranslator": "aiagentsforce_community.document_transformers",
-    "DoctranPropertyExtractor": "aiagentsforce_community.document_transformers",
-    "EmbeddingsClusteringFilter": "aiagentsforce_community.document_transformers",
-    "EmbeddingsRedundantFilter": "aiagentsforce_community.document_transformers",
-    "GoogleTranslateTransformer": "aiagentsforce_community.document_transformers",
-    "get_stateful_documents": "aiagentsforce_community.document_transformers",
-    "LongContextReorder": "aiagentsforce_community.document_transformers",
-    "NucliaTextTransformer": "aiagentsforce_community.document_transformers",
-    "OpenAIMetadataTagger": "aiagentsforce_community.document_transformers",
-    "Html2TextTransformer": "aiagentsforce_community.document_transformers",
+    "BeautifulSoupTransformer": "aibaba_ai_community.document_transformers",
+    "DoctranQATransformer": "aibaba_ai_community.document_transformers",
+    "DoctranTextTranslator": "aibaba_ai_community.document_transformers",
+    "DoctranPropertyExtractor": "aibaba_ai_community.document_transformers",
+    "EmbeddingsClusteringFilter": "aibaba_ai_community.document_transformers",
+    "EmbeddingsRedundantFilter": "aibaba_ai_community.document_transformers",
+    "GoogleTranslateTransformer": "aibaba_ai_community.document_transformers",
+    "get_stateful_documents": "aibaba_ai_community.document_transformers",
+    "LongContextReorder": "aibaba_ai_community.document_transformers",
+    "NucliaTextTransformer": "aibaba_ai_community.document_transformers",
+    "OpenAIMetadataTagger": "aibaba_ai_community.document_transformers",
+    "Html2TextTransformer": "aibaba_ai_community.document_transformers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

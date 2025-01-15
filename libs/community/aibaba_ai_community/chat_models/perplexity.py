@@ -56,7 +56,7 @@ class ChatPerplexity(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatPerplexity
+            from aibaba_ai_community.chat_models import ChatPerplexity
 
             chat = ChatPerplexity(
                 model="llama-3.1-sonar-small-128k-online",

@@ -3,7 +3,7 @@ import os
 import pytest
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_message_histories import TiDBChatMessageHistory
+from aibaba_ai_community.chat_message_histories import TiDBChatMessageHistory
 
 try:
     CONNECTION_STRING = os.getenv("TEST_TiDB_CHAT_URL", "")

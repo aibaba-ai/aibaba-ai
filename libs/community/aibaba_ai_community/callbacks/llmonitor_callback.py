@@ -198,8 +198,8 @@ class LLMonitorCallbackHandler(BaseCallbackHandler):
 
     #### Example:
     ```python
-    from aiagentsforce_community.llms import OpenAI
-    from aiagentsforce_community.callbacks import LLMonitorCallbackHandler
+    from aibaba_ai_community.llms import OpenAI
+    from aibaba_ai_community.callbacks import LLMonitorCallbackHandler
 
     llmonitor_callback = LLMonitorCallbackHandler()
     llm = OpenAI(callbacks=[llmonitor_callback],

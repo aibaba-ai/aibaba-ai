@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 def __getattr__(name: str) -> Any:
     if name in "PythonREPL":
         raise AssertionError(
-            "PythonREPL has been deprecated from aiagentsforce_community due to being "
+            "PythonREPL has been deprecated from aibaba_ai_community due to being "
             "flagged by security scanners. See: "
             "https://github.com/aibaba-ai/aibaba-ai/issues/14345 "
             "If you need to use it, please use the version "

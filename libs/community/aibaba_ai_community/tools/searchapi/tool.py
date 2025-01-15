@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.searchapi import SearchApiAPIWrapper
+from aibaba_ai_community.utilities.searchapi import SearchApiAPIWrapper
 
 
 class SearchAPIRun(BaseTool):  # type: ignore[override]

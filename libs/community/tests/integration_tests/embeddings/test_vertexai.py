@@ -8,7 +8,7 @@ Your end-user credentials would be used to make the calls (make sure you've run
 
 import pytest
 
-from aiagentsforce_community.embeddings import VertexAIEmbeddings
+from aibaba_ai_community.embeddings import VertexAIEmbeddings
 
 
 def test_embedding_documents() -> None:

@@ -14,7 +14,7 @@ from langchain.retrievers.document_compressors.base import (
 
 def _get_similarity_function() -> Callable:
     try:
-        from aiagentsforce_community.utils.math import cosine_similarity
+        from aibaba_ai_community.utils.math import cosine_similarity
     except ImportError:
         raise ImportError(
             "To use please install langchain-community "
@@ -60,7 +60,7 @@ class EmbeddingsFilter(BaseDocumentCompressor):
     ) -> Sequence[Document]:
         """Filter documents based on similarity of their embeddings to the query."""
         try:
-            from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (  # noqa: E501
+            from aibaba_ai_community.document_transformers.embeddings_redundant_filter import (  # noqa: E501
                 _get_embeddings_from_stateful_docs,
                 get_stateful_documents,
             )
@@ -95,7 +95,7 @@ class EmbeddingsFilter(BaseDocumentCompressor):
     ) -> Sequence[Document]:
         """Filter documents based on similarity of their embeddings to the query."""
         try:
-            from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (  # noqa: E501
+            from aibaba_ai_community.document_transformers.embeddings_redundant_filter import (  # noqa: E501
                 _aget_embeddings_from_stateful_docs,
                 get_stateful_documents,
             )

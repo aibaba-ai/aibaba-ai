@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.parsers.language.language_parser import (
+from aibaba_ai_community.document_loaders.parsers.language.language_parser import (
     LanguageParser,
 )
 

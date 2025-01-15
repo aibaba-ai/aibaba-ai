@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.tracers.comet import (
+    from aibaba_ai_community.callbacks.tracers.comet import (
         CometTracer,
         import_comet_llm_api,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "import_comet_llm_api": "aiagentsforce_community.callbacks.tracers.comet",
-    "CometTracer": "aiagentsforce_community.callbacks.tracers.comet",
+    "import_comet_llm_api": "aibaba_ai_community.callbacks.tracers.comet",
+    "CometTracer": "aibaba_ai_community.callbacks.tracers.comet",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

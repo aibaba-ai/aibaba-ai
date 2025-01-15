@@ -33,17 +33,17 @@ from alibaba_ai_core.utils import get_from_dict_or_env
 from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from pydantic import ConfigDict
 
-from aiagentsforce_community.utilities.redis import (
+from aibaba_ai_community.utilities.redis import (
     _array_to_buffer,
     _buffer_to_array,
     check_redis_module_exist,
     get_client,
 )
-from aiagentsforce_community.vectorstores.redis.constants import (
+from aibaba_ai_community.vectorstores.redis.constants import (
     REDIS_REQUIRED_MODULES,
     REDIS_TAG_SEPARATOR,
 )
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 logger = logging.getLogger(__name__)
 ListOfDict = List[Dict[str, str]]
@@ -52,8 +52,8 @@ if TYPE_CHECKING:
     from redis.client import Redis as RedisType
     from redis.commands.search.query import Query
 
-    from aiagentsforce_community.vectorstores.redis.filters import RedisFilterExpression
-    from aiagentsforce_community.vectorstores.redis.schema import RedisModel
+    from aibaba_ai_community.vectorstores.redis.filters import RedisFilterExpression
+    from aibaba_ai_community.vectorstores.redis.schema import RedisModel
 
 
 def _default_relevance_score(val: float) -> float:
@@ -109,7 +109,7 @@ class Redis(VectorStore):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores.redis import Redis
+            from aibaba_ai_community.vectorstores.redis import Redis
             from langchain_openai import OpenAIEmbeddings
 
             vector_store = Redis(
@@ -150,7 +150,7 @@ class Redis(VectorStore):
     Search with filter:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores.redis import RedisTag
+            from aibaba_ai_community.vectorstores.redis import RedisTag
 
             results = vector_store.similarity_search(query="thud",k=1,filter=(RedisTag("baz") != "bar"))
             for doc in results:
@@ -236,7 +236,7 @@ class Redis(VectorStore):
         - All strings are indexed as text fields
         - All numbers are indexed as numeric fields
         - All lists of strings are indexed as tag fields (joined by
-            aiagentsforce_community.vectorstores.redis.constants.REDIS_TAG_SEPARATOR)
+            aibaba_ai_community.vectorstores.redis.constants.REDIS_TAG_SEPARATOR)
         - All None values are not indexed but still stored in Redis these are
             not retrievable through the interface here, but the raw Redis client
             can be used to retrieve them.
@@ -356,8 +356,8 @@ class Redis(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Redis
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Redis
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 redis, keys = Redis.from_texts_return_keys(
                     texts,
@@ -391,7 +391,7 @@ class Redis(VectorStore):
             # TODO use importlib to check if redis is installed
             import redis  # noqa: F401
 
-            from aiagentsforce_community.vectorstores.redis.schema import read_schema
+            from aibaba_ai_community.vectorstores.redis.schema import read_schema
 
         except ImportError as e:
             raise ImportError(
@@ -492,8 +492,8 @@ class Redis(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Redis
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Redis
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 redisearch = RediSearch.from_texts(
                     texts,
@@ -549,8 +549,8 @@ class Redis(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Redis
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Redis
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
 
@@ -1197,7 +1197,7 @@ class Redis(VectorStore):
         vector_schema: Optional[Dict[str, Union[str, int]]] = None,
     ) -> "RedisModel":
         # should only be called after init of Redis (so Import handled)
-        from aiagentsforce_community.vectorstores.redis.schema import (
+        from aibaba_ai_community.vectorstores.redis.schema import (
             RedisModel,
             read_schema,
         )

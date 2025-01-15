@@ -1,7 +1,7 @@
 import pytest
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_models.ernie import ErnieBotChat
+from aibaba_ai_community.chat_models.ernie import ErnieBotChat
 
 
 def test_chat_ernie_bot() -> None:

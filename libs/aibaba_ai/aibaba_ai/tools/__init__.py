@@ -66,7 +66,7 @@ def __getattr__(name: str) -> Any:
     elif name == "PythonREPLTool":
         return _import_python_tool_PythonREPLTool()
     else:
-        from aiagentsforce_community import tools
+        from aibaba_ai_community import tools
 
         # If not in interactive env, raise warning.
         if not is_interactive_env():
@@ -74,7 +74,7 @@ def __getattr__(name: str) -> Any:
                 "Importing tools from langchain is deprecated. Importing from "
                 "langchain will no longer be supported as of langchain==0.2.0. "
                 "Please import from langchain-community instead:\n\n"
-                f"`from aiagentsforce_community.tools import {name}`.\n\n"
+                f"`from aibaba_ai_community.tools import {name}`.\n\n"
                 "To install langchain-community run "
                 "`pip install -U langchain-community`.",
                 category=AI Agents ForceDeprecationWarning,

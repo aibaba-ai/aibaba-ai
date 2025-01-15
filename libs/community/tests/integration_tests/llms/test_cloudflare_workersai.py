@@ -1,6 +1,6 @@
 import responses
 
-from aiagentsforce_community.llms.cloudflare_workersai import CloudflareWorkersAI
+from aibaba_ai_community.llms.cloudflare_workersai import CloudflareWorkersAI
 
 
 @responses.activate

@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import responses
 
-from aiagentsforce_community.utilities import RememberizerAPIWrapper
+from aibaba_ai_community.utilities import RememberizerAPIWrapper
 
 
 class TestRememberizerAPIWrapper(unittest.TestCase):
@@ -56,7 +56,7 @@ class TestRememberizerAPIWrapper(unittest.TestCase):
                 "API Error: {'detail': 'Incorrect authentication credentials.'}",
             )
 
-    @patch("aiagentsforce_community.utilities.rememberizer.RememberizerAPIWrapper.search")
+    @patch("aibaba_ai_community.utilities.rememberizer.RememberizerAPIWrapper.search")
     def test_load(self, mock_search: Any) -> None:
         mock_search.return_value = [
             {

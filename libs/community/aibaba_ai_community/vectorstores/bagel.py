@@ -49,7 +49,7 @@ class Bagel(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Bagel
+                from aibaba_ai_community.vectorstores import Bagel
                 vectorstore = Bagel(cluster_name="langchain_store")
     """
 

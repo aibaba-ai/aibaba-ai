@@ -3,7 +3,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.tools.edenai import EdenAiTextModerationTool
+from aibaba_ai_community.tools.edenai import EdenAiTextModerationTool
 
 tool = EdenAiTextModerationTool(  # type: ignore[call-arg]
     providers=["openai"],
@@ -15,7 +15,7 @@ tool = EdenAiTextModerationTool(  # type: ignore[call-arg]
 @pytest.fixture
 def mock_post() -> Generator:
     with patch(
-        "aiagentsforce_community.tools.edenai.edenai_base_tool.requests.post"
+        "aibaba_ai_community.tools.edenai.edenai_base_tool.requests.post"
     ) as mock:
         yield mock
 

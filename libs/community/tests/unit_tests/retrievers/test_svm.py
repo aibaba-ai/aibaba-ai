@@ -1,8 +1,8 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.retrievers.svm import SVMRetriever
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.retrievers.svm import SVMRetriever
 
 
 class TestSVMRetriever:

@@ -1,6 +1,6 @@
 """Playwright browser toolkit."""
 
-from aiagentsforce_community.agent_toolkits.playwright.toolkit import (
+from aibaba_ai_community.agent_toolkits.playwright.toolkit import (
     PlayWrightBrowserToolkit,
 )
 

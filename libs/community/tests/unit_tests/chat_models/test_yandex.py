@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from aiagentsforce_community.chat_models.yandex import ChatYandexGPT
+from aibaba_ai_community.chat_models.yandex import ChatYandexGPT
 
 
 def test_yandexgpt_initialization() -> None:

@@ -4,7 +4,7 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import model_validator
 
-from aiagentsforce_community.tools.connery import ConneryService
+from aibaba_ai_community.tools.connery import ConneryService
 
 
 class ConneryToolkit(BaseToolkit):

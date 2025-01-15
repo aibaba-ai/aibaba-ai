@@ -187,7 +187,7 @@ class Tongyi(BaseLLM):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Tongyi
+            from aibaba_ai_community.llms import Tongyi
 
             llm = Tongyi(
                 model="qwen-max",

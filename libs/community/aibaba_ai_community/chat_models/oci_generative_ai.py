@@ -49,8 +49,8 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils.function_calling import convert_to_openai_function
 from pydantic import BaseModel, ConfigDict
 
-from aiagentsforce_community.llms.oci_generative_ai import OCIGenAIBase
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.oci_generative_ai import OCIGenAIBase
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 CUSTOM_ENDPOINT_PREFIX = "ocid1.generativeaiendpoint"
 
@@ -546,7 +546,7 @@ class ChatOCIGenAI(BaseChatModel, OCIGenAIBase):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOCIGenAI
+            from aibaba_ai_community.chat_models import ChatOCIGenAI
 
             chat = ChatOCIGenAI(
                 model_id="cohere.command-r-16k",

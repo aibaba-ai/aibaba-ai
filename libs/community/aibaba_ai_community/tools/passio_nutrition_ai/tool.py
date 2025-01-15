@@ -6,7 +6,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.passio_nutrition_ai import NutritionAIAPI
+from aibaba_ai_community.utilities.passio_nutrition_ai import NutritionAIAPI
 
 
 class NutritionAIInputs(BaseModel):

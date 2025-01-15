@@ -73,7 +73,7 @@ class VoyageEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import VoyageEmbeddings
+            from aibaba_ai_community.embeddings import VoyageEmbeddings
 
             voyage = VoyageEmbeddings(voyage_api_key="your-api-key", model="voyage-2")
             text = "This is a test query."

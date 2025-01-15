@@ -2,7 +2,7 @@
 
 import os
 
-from aiagentsforce_community.llms.baseten import Baseten
+from aibaba_ai_community.llms.baseten import Baseten
 
 # This test requires valid BASETEN_MODEL_ID and BASETEN_API_KEY environment variables
 

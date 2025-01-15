@@ -36,7 +36,7 @@ class SerpAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import SerpAPIWrapper
+            from aibaba_ai_community.utilities import SerpAPIWrapper
             serpapi = SerpAPIWrapper()
     """
 

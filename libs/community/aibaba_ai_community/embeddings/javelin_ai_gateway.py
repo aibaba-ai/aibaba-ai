@@ -20,7 +20,7 @@ class JavelinAIGatewayEmbeddings(Embeddings, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import JavelinAIGatewayEmbeddings
+            from aibaba_ai_community.embeddings import JavelinAIGatewayEmbeddings
 
             embeddings = JavelinAIGatewayEmbeddings(
                 gateway_uri="<javelin-ai-gateway-uri>",

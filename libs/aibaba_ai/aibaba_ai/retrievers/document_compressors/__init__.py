@@ -20,7 +20,7 @@ from langchain.retrievers.document_compressors.listwise_rerank import (
 )
 
 _module_lookup = {
-    "FlashrankRerank": "aiagentsforce_community.document_compressors.flashrank_rerank",
+    "FlashrankRerank": "aibaba_ai_community.document_compressors.flashrank_rerank",
 }
 
 

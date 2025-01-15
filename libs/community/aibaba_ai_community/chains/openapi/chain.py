@@ -14,8 +14,8 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from pydantic import BaseModel, Field
 from requests import Response
 
-from aiagentsforce_community.tools.openapi.utils.api_models import APIOperation
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.tools.openapi.utils.api_models import APIOperation
+from aibaba_ai_community.utilities.requests import Requests
 
 
 class _ParamMapping(NamedTuple):

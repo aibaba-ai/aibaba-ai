@@ -5,7 +5,7 @@ from typing import Generator
 import pytest
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_message_histories import FileChatMessageHistory
+from aibaba_ai_community.chat_message_histories import FileChatMessageHistory
 
 
 @pytest.fixture

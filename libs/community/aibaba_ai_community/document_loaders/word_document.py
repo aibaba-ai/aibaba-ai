@@ -10,8 +10,8 @@ from urllib.parse import urlparse
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 
 class Docx2txtLoader(BaseLoader, ABC):
@@ -80,7 +80,7 @@ class UnstructuredWordDocumentLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredWordDocumentLoader
+    from aibaba_ai_community.document_loaders import UnstructuredWordDocumentLoader
 
     loader = UnstructuredWordDocumentLoader(
         "example.docx", mode="elements", strategy="fast",

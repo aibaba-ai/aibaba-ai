@@ -6,7 +6,7 @@ from typing import Any
 import pytest
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms import IpexLLM
+from aibaba_ai_community.llms import IpexLLM
 
 model_ids_to_test = os.getenv("TEST_IPEXLLM_MODEL_IDS") or ""
 skip_if_no_model_ids = pytest.mark.skipif(

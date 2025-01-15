@@ -20,7 +20,7 @@ from langchain.storage.encoder_backed import EncoderBackedStore
 from langchain.storage.file_system import LocalFileStore
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.storage import (
+    from aibaba_ai_community.storage import (
         RedisStore,
         UpstashRedisByteStore,
         UpstashRedisStore,
@@ -30,9 +30,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "RedisStore": "aiagentsforce_community.storage",
-    "UpstashRedisByteStore": "aiagentsforce_community.storage",
-    "UpstashRedisStore": "aiagentsforce_community.storage",
+    "RedisStore": "aibaba_ai_community.storage",
+    "UpstashRedisByteStore": "aibaba_ai_community.storage",
+    "UpstashRedisStore": "aibaba_ai_community.storage",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

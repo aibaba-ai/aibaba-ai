@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.zapier.toolkit import ZapierToolkit
+    from aibaba_ai_community.agent_toolkits.zapier.toolkit import ZapierToolkit
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ZapierToolkit": "aiagentsforce_community.agent_toolkits.zapier.toolkit"
+    "ZapierToolkit": "aibaba_ai_community.agent_toolkits.zapier.toolkit"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

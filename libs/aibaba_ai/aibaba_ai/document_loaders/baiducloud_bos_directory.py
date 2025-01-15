@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.baiducloud_bos_directory import (
+    from aibaba_ai_community.document_loaders.baiducloud_bos_directory import (
         BaiduBOSDirectoryLoader,
     )
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "BaiduBOSDirectoryLoader": (
-        "aiagentsforce_community.document_loaders.baiducloud_bos_directory"
+        "aibaba_ai_community.document_loaders.baiducloud_bos_directory"
     ),
 }
 

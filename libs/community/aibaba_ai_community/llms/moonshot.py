@@ -12,7 +12,7 @@ from pydantic import (
     model_validator,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 MOONSHOT_SERVICE_URL_BASE = "https://api.moonshot.cn/v1"
 
@@ -113,7 +113,7 @@ class Moonshot(MoonshotCommon, LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms.moonshot import Moonshot
+            from aibaba_ai_community.llms.moonshot import Moonshot
 
             moonshot = Moonshot(model="moonshot-v1-8k")
     """

@@ -17,12 +17,12 @@ from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import Field, SecretStr
 
-from aiagentsforce_community.llms.openai import (
+from aibaba_ai_community.llms.openai import (
     BaseOpenAI,
     acompletion_with_retry,
     completion_with_retry,
 )
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 DEFAULT_BASE_URL = "https://api.endpoints.anyscale.com/v1"
 DEFAULT_MODEL = "mistralai/Mixtral-8x7B-Instruct-v0.1"

@@ -3,15 +3,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import GitHubIssuesLoader
-    from aiagentsforce_community.document_loaders.github import BaseGitHubLoader
+    from aibaba_ai_community.document_loaders import GitHubIssuesLoader
+    from aibaba_ai_community.document_loaders.github import BaseGitHubLoader
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BaseGitHubLoader": "aiagentsforce_community.document_loaders.github",
-    "GitHubIssuesLoader": "aiagentsforce_community.document_loaders",
+    "BaseGitHubLoader": "aibaba_ai_community.document_loaders.github",
+    "GitHubIssuesLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

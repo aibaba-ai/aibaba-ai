@@ -1,6 +1,6 @@
 """Test Naver embeddings."""
 
-from aiagentsforce_community.embeddings import ClovaXEmbeddings
+from aibaba_ai_community.embeddings import ClovaXEmbeddings
 
 
 def test_embedding_documents() -> None:

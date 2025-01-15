@@ -3,7 +3,7 @@
 import pickle
 from typing import Any, List, Optional
 
-from aiagentsforce_community.llms import SelfHostedHuggingFaceLLM, SelfHostedPipeline
+from aibaba_ai_community.llms import SelfHostedHuggingFaceLLM, SelfHostedPipeline
 
 model_reqs = ["pip:./", "transformers", "torch"]
 

@@ -5,7 +5,7 @@ from typing import List
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.cross_encoders import FakeCrossEncoder
+from aibaba_ai_community.cross_encoders import FakeCrossEncoder
 
 pytest.importorskip("langchain")
 

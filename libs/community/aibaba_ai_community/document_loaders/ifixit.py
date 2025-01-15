@@ -3,8 +3,8 @@ from typing import List, Optional
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.web_base import WebBaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.web_base import WebBaseLoader
 
 IFIXIT_BASE_URL = "https://www.ifixit.com/api/2.0"
 

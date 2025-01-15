@@ -8,7 +8,7 @@ from aibaba_ai_core.documents import Document
 
 class __ModuleName__Loader(BaseLoader):
     # TODO: Replace all TODOs in docstring. See example docstring:
-    # https://github.com/aibaba-ai/aibaba-ai/blob/869523ad728e6b76d77f170cce13925b4ebc3c1e/libs/community/aiagentsforce_community/document_loaders/recursive_url_loader.py#L54
+    # https://github.com/aibaba-ai/aibaba-ai/blob/869523ad728e6b76d77f170cce13925b4ebc3c1e/libs/community/aibaba_ai_community/document_loaders/recursive_url_loader.py#L54
     """
     __ModuleName__ document loader integration
 
@@ -25,7 +25,7 @@ class __ModuleName__Loader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import __ModuleName__Loader
+            from aibaba_ai_community.document_loaders import __ModuleName__Loader
 
             loader = __ModuleName__Loader(
                 # required params = ...

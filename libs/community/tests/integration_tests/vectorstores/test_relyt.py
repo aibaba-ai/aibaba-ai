@@ -5,7 +5,7 @@ from typing import List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.relyt import Relyt
+from aibaba_ai_community.vectorstores.relyt import Relyt
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 CONNECTION_STRING = Relyt.connection_string_from_db_params(

@@ -7,7 +7,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.retrievers import BaseRetriever
 
-from aiagentsforce_community.utilities import YouSearchAPIWrapper
+from aibaba_ai_community.utilities import YouSearchAPIWrapper
 
 
 class YouRetriever(BaseRetriever, YouSearchAPIWrapper):

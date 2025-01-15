@@ -1,7 +1,7 @@
 from langchain.globals import get_llm_cache, set_llm_cache
 from alibaba_ai_core.outputs import Generation
 
-from aiagentsforce_community.cache import OpenSearchSemanticCache
+from aibaba_ai_community.cache import OpenSearchSemanticCache
 from tests.integration_tests.cache.fake_embeddings import (
     FakeEmbeddings,
 )

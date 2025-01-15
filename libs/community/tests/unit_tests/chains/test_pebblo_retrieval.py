@@ -17,13 +17,13 @@ from alibaba_ai_core.vectorstores import (
     VectorStoreRetriever,
 )
 
-from aiagentsforce_community.chains import PebbloRetrievalQA
-from aiagentsforce_community.chains.pebblo_retrieval.models import (
+from aibaba_ai_community.chains import PebbloRetrievalQA
+from aibaba_ai_community.chains.pebblo_retrieval.models import (
     AuthContext,
     ChainInput,
     SemanticContext,
 )
-from aiagentsforce_community.vectorstores.pinecone import Pinecone
+from aibaba_ai_community.vectorstores.pinecone import Pinecone
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

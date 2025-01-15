@@ -54,7 +54,7 @@ class NeuralDBRetriever(BaseRetriever):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.retrievers import NeuralDBRetriever
+                from aibaba_ai_community.retrievers import NeuralDBRetriever
 
                 retriever = NeuralDBRetriever.from_scratch(
                     thirdai_key="your-thirdai-key",
@@ -88,7 +88,7 @@ class NeuralDBRetriever(BaseRetriever):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.retrievers import NeuralDBRetriever
+                from aibaba_ai_community.retrievers import NeuralDBRetriever
 
                 retriever = NeuralDBRetriever.from_checkpoint(
                     checkpoint="/path/to/checkpoint.ndb",

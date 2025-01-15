@@ -81,7 +81,7 @@ class LLMSummarizationCheckerChain(Chain):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from langchain.chains import LLMSummarizationCheckerChain
             llm = OpenAI(temperature=0.0)
             checker_chain = LLMSummarizationCheckerChain.from_llm(llm)

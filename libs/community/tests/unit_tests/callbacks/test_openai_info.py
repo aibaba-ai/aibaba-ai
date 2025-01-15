@@ -7,8 +7,8 @@ from alibaba_ai_core.messages import AIMessage
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 from alibaba_ai_core.utils.pydantic import get_fields
 
-from aiagentsforce_community.callbacks import OpenAICallbackHandler
-from aiagentsforce_community.llms.openai import BaseOpenAI
+from aibaba_ai_community.callbacks import OpenAICallbackHandler
+from aibaba_ai_community.llms.openai import BaseOpenAI
 
 
 @pytest.fixture

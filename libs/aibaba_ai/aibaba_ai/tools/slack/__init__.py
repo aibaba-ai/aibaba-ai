@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         SlackGetChannel,
         SlackGetMessage,
         SlackScheduleMessage,
@@ -16,10 +16,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SlackGetChannel": "aiagentsforce_community.tools",
-    "SlackGetMessage": "aiagentsforce_community.tools",
-    "SlackScheduleMessage": "aiagentsforce_community.tools",
-    "SlackSendMessage": "aiagentsforce_community.tools",
+    "SlackGetChannel": "aibaba_ai_community.tools",
+    "SlackGetMessage": "aibaba_ai_community.tools",
+    "SlackScheduleMessage": "aibaba_ai_community.tools",
+    "SlackSendMessage": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

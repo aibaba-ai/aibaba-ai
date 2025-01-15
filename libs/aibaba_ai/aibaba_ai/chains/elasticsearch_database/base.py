@@ -29,7 +29,7 @@ class ElasticsearchDatabaseChain(Chain):
         .. code-block:: python
 
             from langchain.chains import ElasticsearchDatabaseChain
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from elasticsearch import Elasticsearch
 
             database = Elasticsearch("http://localhost:9200")

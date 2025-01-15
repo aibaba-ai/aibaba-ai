@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.tools.ddg_search.tool import (
+from aibaba_ai_community.tools.ddg_search.tool import (
     DuckDuckGoSearchResults,
     DuckDuckGoSearchRun,
 )

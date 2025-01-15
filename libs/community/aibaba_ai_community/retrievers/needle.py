@@ -27,7 +27,7 @@ class NeedleRetriever(BaseRetriever, BaseModel):
     Usage:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers.needle import NeedleRetriever
+            from aibaba_ai_community.retrievers.needle import NeedleRetriever
 
             retriever = NeedleRetriever(
                 needle_api_key="your-api-key",

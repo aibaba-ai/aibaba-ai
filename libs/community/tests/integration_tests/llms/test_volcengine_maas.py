@@ -6,7 +6,7 @@ from alibaba_ai_core.outputs import LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.llms.volcengine_maas import (
+from aibaba_ai_community.llms.volcengine_maas import (
     VolcEngineMaasBase,
     VolcEngineMaasLLM,
 )

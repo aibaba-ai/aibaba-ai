@@ -3,7 +3,7 @@ from typing import Any, Dict
 from alibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.retrievers import RemoteAI Agents ForceRetriever
+from aibaba_ai_community.retrievers import RemoteAI Agents ForceRetriever
 
 
 class MockResponse:

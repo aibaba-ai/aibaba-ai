@@ -32,7 +32,7 @@ class HuggingFaceEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceEmbeddings
+            from aibaba_ai_community.embeddings import HuggingFaceEmbeddings
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             model_kwargs = {'device': 'cpu'}
@@ -139,7 +139,7 @@ class HuggingFaceInstructEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceInstructEmbeddings
+            from aibaba_ai_community.embeddings import HuggingFaceInstructEmbeddings
 
             model_name = "hkunlp/instructor-large"
             model_kwargs = {'device': 'cpu'}
@@ -258,7 +258,7 @@ class HuggingFaceBgeEmbeddings(BaseModel, Embeddings):
     Bge Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceBgeEmbeddings
+            from aibaba_ai_community.embeddings import HuggingFaceBgeEmbeddings
 
             model_name = "BAAI/bge-large-en-v1.5"
             model_kwargs = {'device': 'cpu'}
@@ -271,7 +271,7 @@ class HuggingFaceBgeEmbeddings(BaseModel, Embeddings):
      Nomic Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceBgeEmbeddings
+            from aibaba_ai_community.embeddings import HuggingFaceBgeEmbeddings
 
             model_name = "nomic-ai/nomic-embed-text-v1"
             model_kwargs = {
@@ -450,7 +450,7 @@ class HuggingFaceInferenceAPIEmbeddings(BaseModel, Embeddings):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.embeddings import (
+                from aibaba_ai_community.embeddings import (
                     HuggingFaceInferenceAPIEmbeddings,
                 )
 

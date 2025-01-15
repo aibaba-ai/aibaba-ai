@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 @deprecated(
     since="0.0.13",
-    alternative="aiagentsforce_community.embeddings.QianfanEmbeddingsEndpoint",
+    alternative="aibaba_ai_community.embeddings.QianfanEmbeddingsEndpoint",
 )
 class ErnieEmbeddings(BaseModel, Embeddings):
     """`Ernie Embeddings V1` embedding models."""

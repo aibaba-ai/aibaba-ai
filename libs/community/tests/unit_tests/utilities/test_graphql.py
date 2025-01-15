@@ -3,7 +3,7 @@ import json
 import pytest
 import responses
 
-from aiagentsforce_community.utilities.graphql import GraphQLAPIWrapper
+from aibaba_ai_community.utilities.graphql import GraphQLAPIWrapper
 
 TEST_ENDPOINT = "http://testserver/graphql"
 

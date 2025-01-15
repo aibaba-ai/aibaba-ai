@@ -1,6 +1,6 @@
 from typing import List
 
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     satisfies_min_unstructured_version,
 )
@@ -18,7 +18,7 @@ class UnstructuredEPubLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredEPubLoader
+    from aibaba_ai_community.document_loaders import UnstructuredEPubLoader
 
     loader = UnstructuredEPubLoader(
         "example.epub", mode="elements", strategy="fast",

@@ -15,7 +15,7 @@ class DoctranPropertyExtractor(BaseDocumentTransformer):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_transformers import DoctranPropertyExtractor
+            from aibaba_ai_community.document_transformers import DoctranPropertyExtractor
 
             properties = [
                 {

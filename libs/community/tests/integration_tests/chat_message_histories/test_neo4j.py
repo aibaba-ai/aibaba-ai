@@ -2,8 +2,8 @@ import os
 
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_message_histories import Neo4jChatMessageHistory
-from aiagentsforce_community.graphs import Neo4jGraph
+from aibaba_ai_community.chat_message_histories import Neo4jChatMessageHistory
+from aibaba_ai_community.graphs import Neo4jGraph
 
 
 def test_add_messages() -> None:

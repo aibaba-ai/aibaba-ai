@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import TencentVectorDB
-    from aiagentsforce_community.vectorstores.tencentvectordb import (
+    from aibaba_ai_community.vectorstores import TencentVectorDB
+    from aibaba_ai_community.vectorstores.tencentvectordb import (
         ConnectionParams,
         IndexParams,
     )
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ConnectionParams": "aiagentsforce_community.vectorstores.tencentvectordb",
-    "IndexParams": "aiagentsforce_community.vectorstores.tencentvectordb",
-    "TencentVectorDB": "aiagentsforce_community.vectorstores",
+    "ConnectionParams": "aibaba_ai_community.vectorstores.tencentvectordb",
+    "IndexParams": "aibaba_ai_community.vectorstores.tencentvectordb",
+    "TencentVectorDB": "aibaba_ai_community.vectorstores",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

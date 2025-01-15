@@ -29,7 +29,7 @@ class GooglePlacesAPIWrapper(BaseModel):
         .. code-block:: python
 
 
-            from aiagentsforce_community.utilities import GooglePlacesAPIWrapper
+            from aibaba_ai_community.utilities import GooglePlacesAPIWrapper
             gplaceapi = GooglePlacesAPIWrapper()
     """
 

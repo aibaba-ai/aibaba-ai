@@ -13,7 +13,7 @@ from alibaba_ai_core.documents import Document
 from pydantic import model_validator
 from pydantic.dataclasses import dataclass
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +36,7 @@ class GoogleApiClient:
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import GoogleApiClient
+            from aibaba_ai_community.document_loaders import GoogleApiClient
             google_api_client = GoogleApiClient(
                 service_account_path=Path("path_to_your_sec_file.json")
             )
@@ -351,8 +351,8 @@ class GoogleApiYoutubeLoader(BaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import GoogleApiClient
-            from aiagentsforce_community.document_loaders import GoogleApiYoutubeLoader
+            from aibaba_ai_community.document_loaders import GoogleApiClient
+            from aibaba_ai_community.document_loaders import GoogleApiYoutubeLoader
             google_api_client = GoogleApiClient(
                 service_account_path=Path("path_to_your_sec_file.json")
             )

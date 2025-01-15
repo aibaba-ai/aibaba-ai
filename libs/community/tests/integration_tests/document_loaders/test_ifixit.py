@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.ifixit import IFixitLoader
+from aibaba_ai_community.document_loaders.ifixit import IFixitLoader
 
 
 def test_ifixit_loader() -> None:

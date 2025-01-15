@@ -5,8 +5,8 @@ from pathlib import Path
 from pydantic import SecretStr
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.llms.cohere import Cohere
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.cohere import Cohere
+from aibaba_ai_community.llms.loading import load_llm
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 

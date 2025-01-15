@@ -3,16 +3,16 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import ZepRetriever
-    from aiagentsforce_community.retrievers.zep import SearchScope, SearchType
+    from aibaba_ai_community.retrievers import ZepRetriever
+    from aibaba_ai_community.retrievers.zep import SearchScope, SearchType
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SearchScope": "aiagentsforce_community.retrievers.zep",
-    "SearchType": "aiagentsforce_community.retrievers.zep",
-    "ZepRetriever": "aiagentsforce_community.retrievers",
+    "SearchScope": "aibaba_ai_community.retrievers.zep",
+    "SearchType": "aibaba_ai_community.retrievers.zep",
+    "ZepRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

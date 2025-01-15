@@ -14,8 +14,8 @@ from alibaba_ai_core.prompts.base import BasePromptTemplate
 from alibaba_ai_core.prompts.prompt import PromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import SPARQL_QA_PROMPT
-from aiagentsforce_community.graphs import NeptuneRdfGraph
+from aibaba_ai_community.chains.graph_qa.prompts import SPARQL_QA_PROMPT
+from aibaba_ai_community.graphs import NeptuneRdfGraph
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

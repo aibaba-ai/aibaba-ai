@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.agent_toolkits.openapi.planner_prompt import (
+    from aibaba_ai_community.agent_toolkits.openapi.planner_prompt import (
         API_CONTROLLER_PROMPT,
         API_CONTROLLER_TOOL_DESCRIPTION,
         API_CONTROLLER_TOOL_NAME,
@@ -28,49 +28,49 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "API_CONTROLLER_PROMPT": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "API_CONTROLLER_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "API_CONTROLLER_TOOL_NAME": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "API_ORCHESTRATOR_PROMPT": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
-    "API_PLANNER_PROMPT": ("aiagentsforce_community.agent_toolkits.openapi.planner_prompt"),
+    "API_PLANNER_PROMPT": ("aibaba_ai_community.agent_toolkits.openapi.planner_prompt"),
     "API_PLANNER_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "API_PLANNER_TOOL_NAME": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "PARSING_DELETE_PROMPT": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
-    "PARSING_GET_PROMPT": ("aiagentsforce_community.agent_toolkits.openapi.planner_prompt"),
+    "PARSING_GET_PROMPT": ("aibaba_ai_community.agent_toolkits.openapi.planner_prompt"),
     "PARSING_PATCH_PROMPT": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "PARSING_POST_PROMPT": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
-    "PARSING_PUT_PROMPT": ("aiagentsforce_community.agent_toolkits.openapi.planner_prompt"),
+    "PARSING_PUT_PROMPT": ("aibaba_ai_community.agent_toolkits.openapi.planner_prompt"),
     "REQUESTS_DELETE_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "REQUESTS_GET_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "REQUESTS_PATCH_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "REQUESTS_POST_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
     "REQUESTS_PUT_TOOL_DESCRIPTION": (
-        "aiagentsforce_community.agent_toolkits.openapi.planner_prompt"
+        "aibaba_ai_community.agent_toolkits.openapi.planner_prompt"
     ),
 }
 

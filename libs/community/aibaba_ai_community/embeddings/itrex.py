@@ -33,7 +33,7 @@ class QuantizedBgeEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import QuantizedBgeEmbeddings
+            from aibaba_ai_community.embeddings import QuantizedBgeEmbeddings
 
             model_name = "Intel/bge-small-en-v1.5-sts-int8-static-inc"
             encode_kwargs = {'normalize_embeddings': True}

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders import HuggingFaceDatasetLoader
+from aibaba_ai_community.document_loaders import HuggingFaceDatasetLoader
 
 HUGGING_FACE_EXAMPLE_DATASET = str(
     Path(__file__).parent / "sample_documents" / "sample_hugging_face_dataset.py"

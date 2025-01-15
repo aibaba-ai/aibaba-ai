@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import (
+    from aibaba_ai_community.retrievers import (
         AzureAISearchRetriever,
         AzureCognitiveSearchRetriever,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AzureAISearchRetriever": "aiagentsforce_community.retrievers",
-    "AzureCognitiveSearchRetriever": "aiagentsforce_community.retrievers",
+    "AzureAISearchRetriever": "aibaba_ai_community.retrievers",
+    "AzureCognitiveSearchRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

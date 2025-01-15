@@ -19,20 +19,20 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.docstore.arbitrary_fn import (
+    from aibaba_ai_community.docstore.arbitrary_fn import (
         DocstoreFn,
     )
-    from aiagentsforce_community.docstore.in_memory import (
+    from aibaba_ai_community.docstore.in_memory import (
         InMemoryDocstore,
     )
-    from aiagentsforce_community.docstore.wikipedia import (
+    from aibaba_ai_community.docstore.wikipedia import (
         Wikipedia,
     )
 
 _module_lookup = {
-    "DocstoreFn": "aiagentsforce_community.docstore.arbitrary_fn",
-    "InMemoryDocstore": "aiagentsforce_community.docstore.in_memory",
-    "Wikipedia": "aiagentsforce_community.docstore.wikipedia",
+    "DocstoreFn": "aibaba_ai_community.docstore.arbitrary_fn",
+    "InMemoryDocstore": "aibaba_ai_community.docstore.in_memory",
+    "Wikipedia": "aibaba_ai_community.docstore.wikipedia",
 }
 
 

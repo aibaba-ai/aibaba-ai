@@ -45,7 +45,7 @@ class AmazonKnowledgeBasesRetriever(BaseRetriever):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import AmazonKnowledgeBasesRetriever
+            from aibaba_ai_community.retrievers import AmazonKnowledgeBasesRetriever
 
             retriever = AmazonKnowledgeBasesRetriever(
                 knowledge_base_id="<knowledge-base-id>",

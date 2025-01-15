@@ -13,7 +13,7 @@ from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from alibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.utilities.vertexai import (
+from aibaba_ai_community.utilities.vertexai import (
     create_retry_decorator,
     get_client_info,
     init_vertexai,

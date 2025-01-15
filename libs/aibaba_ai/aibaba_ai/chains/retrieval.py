@@ -39,7 +39,7 @@ def create_retrieval_chain(
 
             # pip install -U langchain langchain-community
 
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.chat_models import ChatOpenAI
             from langchain.chains.combine_documents import create_stuff_documents_chain
             from langchain.chains import create_retrieval_chain
             from langchain import hub

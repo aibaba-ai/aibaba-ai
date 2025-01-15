@@ -6,10 +6,10 @@ from langchain.chains import RetrievalQA
 from langchain.chains.loading import load_chain
 from langchain_text_splitters.character import CharacterTextSplitter
 
-from aiagentsforce_community.document_loaders import TextLoader
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.llms import OpenAI
-from aiagentsforce_community.vectorstores import FAISS
+from aibaba_ai_community.document_loaders import TextLoader
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.llms import OpenAI
+from aibaba_ai_community.vectorstores import FAISS
 
 
 def test_retrieval_qa_saving_loading(tmp_path: Path) -> None:

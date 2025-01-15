@@ -33,7 +33,7 @@ class ZhipuAIEmbeddings(BaseModel, Embeddings):
 
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import ZhipuAIEmbeddings
+            from aibaba_ai_community.embeddings import ZhipuAIEmbeddings
 
             embed = ZhipuAIEmbeddings(
                 model="embedding-2",

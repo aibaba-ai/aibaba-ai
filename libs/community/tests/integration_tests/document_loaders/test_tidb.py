@@ -3,7 +3,7 @@ import os
 import pytest
 from sqlalchemy import Column, Integer, MetaData, String, Table, create_engine
 
-from aiagentsforce_community.document_loaders import TiDBLoader
+from aibaba_ai_community.document_loaders import TiDBLoader
 
 try:
     CONNECTION_STRING = os.getenv("TEST_TiDB_CONNECTION_URL", "")

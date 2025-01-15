@@ -27,8 +27,8 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.runnables.config import run_in_executor
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.document import Document
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.docstore.document import Document
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from qdrant_client import grpc  # noqa
@@ -76,7 +76,7 @@ class Qdrant(VectorStore):
         .. code-block:: python
 
             from qdrant_client import QdrantClient
-            from aiagentsforce_community.vectorstores import Qdrant
+            from aibaba_ai_community.vectorstores import Qdrant
 
             client = QdrantClient()
             collection_name = "MyCollection"
@@ -1329,8 +1329,8 @@ class Qdrant(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Qdrant
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Qdrant
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 qdrant = Qdrant.from_texts(texts, embeddings, "localhost")
         """
@@ -1550,8 +1550,8 @@ class Qdrant(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Qdrant
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Qdrant
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 qdrant = await Qdrant.afrom_texts(texts, embeddings, "localhost")
         """

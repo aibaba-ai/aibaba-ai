@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities import ArceeWrapper
-    from aiagentsforce_community.utilities.arcee import (
+    from aibaba_ai_community.utilities import ArceeWrapper
+    from aibaba_ai_community.utilities.arcee import (
         ArceeDocument,
         ArceeDocumentAdapter,
         ArceeDocumentSource,
@@ -17,13 +17,13 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ArceeRoute": "aiagentsforce_community.utilities.arcee",
-    "DALMFilterType": "aiagentsforce_community.utilities.arcee",
-    "DALMFilter": "aiagentsforce_community.utilities.arcee",
-    "ArceeDocumentSource": "aiagentsforce_community.utilities.arcee",
-    "ArceeDocument": "aiagentsforce_community.utilities.arcee",
-    "ArceeDocumentAdapter": "aiagentsforce_community.utilities.arcee",
-    "ArceeWrapper": "aiagentsforce_community.utilities",
+    "ArceeRoute": "aibaba_ai_community.utilities.arcee",
+    "DALMFilterType": "aibaba_ai_community.utilities.arcee",
+    "DALMFilter": "aibaba_ai_community.utilities.arcee",
+    "ArceeDocumentSource": "aibaba_ai_community.utilities.arcee",
+    "ArceeDocument": "aibaba_ai_community.utilities.arcee",
+    "ArceeDocumentAdapter": "aibaba_ai_community.utilities.arcee",
+    "ArceeWrapper": "aibaba_ai_community.utilities",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

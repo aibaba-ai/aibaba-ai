@@ -8,9 +8,9 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict
 
-from aiagentsforce_community.tools.multion.close_session import MultionCloseSession
-from aiagentsforce_community.tools.multion.create_session import MultionCreateSession
-from aiagentsforce_community.tools.multion.update_session import MultionUpdateSession
+from aibaba_ai_community.tools.multion.close_session import MultionCloseSession
+from aibaba_ai_community.tools.multion.create_session import MultionCreateSession
+from aibaba_ai_community.tools.multion.update_session import MultionUpdateSession
 
 
 class MultionToolkit(BaseToolkit):

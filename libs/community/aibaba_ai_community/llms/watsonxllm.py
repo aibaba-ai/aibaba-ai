@@ -37,7 +37,7 @@ class WatsonxLLM(BaseLLM):
                 GenTextParamsMetaNames.TOP_P: 1,
             }
 
-            from aiagentsforce_community.llms import WatsonxLLM
+            from aibaba_ai_community.llms import WatsonxLLM
             watsonx_llm = WatsonxLLM(
                 model_id="google/flan-ul2",
                 url="https://us-south.ml.cloud.ibm.com",

@@ -36,7 +36,7 @@ class GoogleScholarAPIWrapper(BaseModel):
      Example:
         .. code-block:: python
 
-        from aiagentsforce_community.utilities import GoogleScholarAPIWrapper
+        from aibaba_ai_community.utilities import GoogleScholarAPIWrapper
         google_scholar = GoogleScholarAPIWrapper()
         google_scholar.run('langchain')
     """

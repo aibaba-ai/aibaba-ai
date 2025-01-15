@@ -1,6 +1,6 @@
 """Test Epsilla functionality."""
 
-from aiagentsforce_community.vectorstores import Epsilla
+from aibaba_ai_community.vectorstores import Epsilla
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,

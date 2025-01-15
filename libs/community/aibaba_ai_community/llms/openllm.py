@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Dict
 
-from aiagentsforce_community.llms.openai import BaseOpenAI
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.llms.openai import BaseOpenAI
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 
 class OpenLLM(BaseOpenAI):

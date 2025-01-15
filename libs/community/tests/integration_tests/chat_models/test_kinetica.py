@@ -12,7 +12,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.prompts import ChatPromptTemplate
 
-from aiagentsforce_community.chat_models.kinetica import (
+from aibaba_ai_community.chat_models.kinetica import (
     ChatKinetica,
     KineticaSqlOutputParser,
     KineticaSqlResponse,

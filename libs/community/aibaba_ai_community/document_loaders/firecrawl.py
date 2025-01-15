@@ -11,17 +11,17 @@ class FireCrawlLoader(BaseLoader):
     FireCrawlLoader document loader integration
 
     Setup:
-        Install ``firecrawl-py``,``aiagentsforce_community`` and set environment variable ``FIRECRAWL_API_KEY``.
+        Install ``firecrawl-py``,``aibaba_ai_community`` and set environment variable ``FIRECRAWL_API_KEY``.
 
         .. code-block:: bash
 
-            pip install -U firecrawl-py aiagentsforce_community
+            pip install -U firecrawl-py aibaba_ai_community
             export FIRECRAWL_API_KEY="your-api-key"
 
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import FireCrawlLoader
+            from aibaba_ai_community.document_loaders import FireCrawlLoader
 
             loader = FireCrawlLoader(
                 url = "https://firecrawl.dev",

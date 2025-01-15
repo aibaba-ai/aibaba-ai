@@ -9,7 +9,7 @@ from pydantic import (
     SecretStr,
 )
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 
 class EdenAiEmbeddings(BaseModel, Embeddings):
@@ -43,7 +43,7 @@ class EdenAiEmbeddings(BaseModel, Embeddings):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

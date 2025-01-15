@@ -9,7 +9,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 
 class Vald(VectorStore):
@@ -20,8 +20,8 @@ class Vald(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceEmbeddings
-            from aiagentsforce_community.vectorstores import Vald
+            from aibaba_ai_community.embeddings import HuggingFaceEmbeddings
+            from aibaba_ai_community.vectorstores import Vald
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             texts = ['foo', 'bar', 'baz']

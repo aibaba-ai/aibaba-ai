@@ -4,7 +4,7 @@ import re
 
 import pytest
 
-from aiagentsforce_community.llms.mosaicml import PROMPT_FOR_GENERATION_FORMAT, MosaicML
+from aibaba_ai_community.llms.mosaicml import PROMPT_FOR_GENERATION_FORMAT, MosaicML
 
 
 def test_mosaicml_llm_call() -> None:

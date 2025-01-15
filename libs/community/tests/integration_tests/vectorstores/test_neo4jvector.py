@@ -7,13 +7,13 @@ from typing import Any, Dict, List, cast
 from alibaba_ai_core.documents import Document
 from yaml import safe_load
 
-from aiagentsforce_community.graphs import Neo4jGraph
-from aiagentsforce_community.vectorstores.neo4j_vector import (
+from aibaba_ai_community.graphs import Neo4jGraph
+from aibaba_ai_community.vectorstores.neo4j_vector import (
     Neo4jVector,
     SearchType,
     _get_search_index_query,
 )
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 from tests.integration_tests.vectorstores.fake_embeddings import (
     AngularTwoDimensionalEmbeddings,
     FakeEmbeddings,

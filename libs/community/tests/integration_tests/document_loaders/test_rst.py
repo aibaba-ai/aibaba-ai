@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import UnstructuredRSTLoader
+from aibaba_ai_community.document_loaders import UnstructuredRSTLoader
 
 EXAMPLE_DIRECTORY = file_path = Path(__file__).parent.parent / "examples"
 

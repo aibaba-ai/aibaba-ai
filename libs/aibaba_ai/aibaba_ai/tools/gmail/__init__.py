@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         GmailCreateDraft,
         GmailGetMessage,
         GmailGetThread,
@@ -17,11 +17,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "GmailCreateDraft": "aiagentsforce_community.tools",
-    "GmailSendMessage": "aiagentsforce_community.tools",
-    "GmailSearch": "aiagentsforce_community.tools",
-    "GmailGetMessage": "aiagentsforce_community.tools",
-    "GmailGetThread": "aiagentsforce_community.tools",
+    "GmailCreateDraft": "aibaba_ai_community.tools",
+    "GmailSendMessage": "aibaba_ai_community.tools",
+    "GmailSearch": "aibaba_ai_community.tools",
+    "GmailGetMessage": "aibaba_ai_community.tools",
+    "GmailGetThread": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

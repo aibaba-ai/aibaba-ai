@@ -3,7 +3,7 @@ from typing import Any
 from langchain._api import create_importer
 
 _importer = create_importer(
-    __package__, fallback_module="aiagentsforce_community.agent_toolkits.load_tools"
+    __package__, fallback_module="aibaba_ai_community.agent_toolkits.load_tools"
 )
 
 

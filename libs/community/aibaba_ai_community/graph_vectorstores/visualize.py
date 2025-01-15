@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Dict, Iterable, Optional, Tuple
 from alibaba_ai_core._api import beta
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.links import get_links
+from aibaba_ai_community.graph_vectorstores.links import get_links
 
 if TYPE_CHECKING:
     import graphviz

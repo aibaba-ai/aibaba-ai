@@ -3,8 +3,8 @@ from typing import Dict, Optional
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import Field, SecretStr
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 DEFAULT_API_BASE = "https://text.octoai.run/v1/"
 DEFAULT_MODEL = "thenlper/gte-large"

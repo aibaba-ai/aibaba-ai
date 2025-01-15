@@ -1,6 +1,6 @@
 """Google Cloud Tools."""
 
-from aiagentsforce_community.tools.google_cloud.texttospeech import (
+from aibaba_ai_community.tools.google_cloud.texttospeech import (
     GoogleCloudTextToSpeechTool,
 )
 

@@ -1,5 +1,5 @@
 # This file is adapted from
-# https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aiagentsforce_community/embeddings/huggingface.py
+# https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aibaba_ai_community/embeddings/huggingface.py
 
 from typing import Any, Dict, List, Optional
 
@@ -25,7 +25,7 @@ class IpexLLMBgeEmbeddings(BaseModel, Embeddings):
     Example on Intel CPU:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import IpexLLMBgeEmbeddings
+            from aibaba_ai_community.embeddings import IpexLLMBgeEmbeddings
 
             embedding_model = IpexLLMBgeEmbeddings(
                 model_name="BAAI/bge-large-en-v1.5",
@@ -40,7 +40,7 @@ class IpexLLMBgeEmbeddings(BaseModel, Embeddings):
     Example on Intel GPU:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import IpexLLMBgeEmbeddings
+            from aibaba_ai_community.embeddings import IpexLLMBgeEmbeddings
 
             embedding_model = IpexLLMBgeEmbeddings(
                 model_name="BAAI/bge-large-en-v1.5",

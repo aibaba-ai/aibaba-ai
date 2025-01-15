@@ -1,6 +1,6 @@
 """Integration tests for SearchApi"""
 
-from aiagentsforce_community.utilities.searchapi import SearchApiAPIWrapper
+from aibaba_ai_community.utilities.searchapi import SearchApiAPIWrapper
 
 
 def test_call() -> None:

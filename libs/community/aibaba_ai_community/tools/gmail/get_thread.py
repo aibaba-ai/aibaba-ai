@@ -3,7 +3,7 @@ from typing import Dict, Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.gmail.base import GmailBaseTool
+from aibaba_ai_community.tools.gmail.base import GmailBaseTool
 
 
 class GetThreadSchema(BaseModel):

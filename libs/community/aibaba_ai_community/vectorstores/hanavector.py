@@ -24,7 +24,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.runnables.config import run_in_executor
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )

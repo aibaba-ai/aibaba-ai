@@ -3,7 +3,7 @@ import os
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import RocksetLoader
+from aibaba_ai_community.document_loaders import RocksetLoader
 
 logger = logging.getLogger(__name__)
 

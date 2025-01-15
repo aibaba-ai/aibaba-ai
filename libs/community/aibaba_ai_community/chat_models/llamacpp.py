@@ -433,7 +433,7 @@ class ChatLlamaCpp(BaseChatModel):
         Example: Pydantic schema (include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatLlamaCpp
+                from aibaba_ai_community.chat_models import ChatLlamaCpp
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -465,7 +465,7 @@ class ChatLlamaCpp(BaseChatModel):
         Example: Pydantic schema (include_raw=True):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatLlamaCpp
+                from aibaba_ai_community.chat_models import ChatLlamaCpp
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -497,7 +497,7 @@ class ChatLlamaCpp(BaseChatModel):
         Example: dict schema (include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import ChatLlamaCpp
+                from aibaba_ai_community.chat_models import ChatLlamaCpp
                 from pydantic import BaseModel
                 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 

@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.utilities.powerbi import PowerBIDataset
+from aibaba_ai_community.utilities.powerbi import PowerBIDataset
 
 
 def azure_installed() -> bool:

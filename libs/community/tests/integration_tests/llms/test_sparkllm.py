@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.sparkllm import SparkLLM
+from aibaba_ai_community.llms.sparkllm import SparkLLM
 
 
 def test_call() -> None:

@@ -26,7 +26,7 @@ class InfinityEmbeddingsLocal(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import InfinityEmbeddingsLocal
+            from aibaba_ai_community.embeddings import InfinityEmbeddingsLocal
             async with InfinityEmbeddingsLocal(
                 model="BAAI/bge-small-en-v1.5",
                 revision=None,

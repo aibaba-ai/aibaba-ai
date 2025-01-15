@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import (
 )
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
+from aibaba_ai_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
 
 
 @deprecated(

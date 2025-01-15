@@ -5,7 +5,7 @@ from alibaba_ai_core.chat_history import BaseChatMessageHistory
 from alibaba_ai_core.messages import BaseMessage, messages_from_dict
 from alibaba_ai_core.utils import get_from_dict_or_env
 
-from aiagentsforce_community.graphs import Neo4jGraph
+from aibaba_ai_community.graphs import Neo4jGraph
 
 
 @deprecated(

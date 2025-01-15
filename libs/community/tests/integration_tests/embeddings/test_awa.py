@@ -1,6 +1,6 @@
 """Test Awa Embedding"""
 
-from aiagentsforce_community.embeddings.awa import AwaEmbeddings
+from aibaba_ai_community.embeddings.awa import AwaEmbeddings
 
 
 def test_awa_embedding_documents() -> None:

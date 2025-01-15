@@ -14,7 +14,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.outputs import LLMResult
 from alibaba_ai_core.utils import get_from_dict_or_env, guard_import
 
-from aiagentsforce_community.callbacks.utils import (
+from aibaba_ai_community.callbacks.utils import (
     BaseMetadataCallbackHandler,
     flatten_dict,
     hash_string,

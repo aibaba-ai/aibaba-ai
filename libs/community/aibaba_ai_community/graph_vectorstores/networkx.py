@@ -4,7 +4,7 @@ import typing
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.links import get_links
+from aibaba_ai_community.graph_vectorstores.links import get_links
 
 if typing.TYPE_CHECKING:
     import networkx as nx

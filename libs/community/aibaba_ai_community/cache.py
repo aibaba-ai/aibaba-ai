@@ -53,12 +53,12 @@ from sqlalchemy.engine import Row
 from sqlalchemy.engine.base import Engine
 from sqlalchemy.orm import Session
 
-from aiagentsforce_community.utilities.cassandra import SetupMode as CassandraSetupMode
-from aiagentsforce_community.vectorstores.azure_cosmos_db import (
+from aibaba_ai_community.utilities.cassandra import SetupMode as CassandraSetupMode
+from aibaba_ai_community.vectorstores.azure_cosmos_db import (
     CosmosDBSimilarityType,
     CosmosDBVectorSearchType,
 )
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
 try:
     from sqlalchemy.orm import declarative_base
@@ -74,21 +74,21 @@ from alibaba_ai_core.load.load import loads
 from alibaba_ai_core.outputs import ChatGeneration, Generation
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.utilities.astradb import (
+from aibaba_ai_community.utilities.astradb import (
     SetupMode as AstraSetupMode,
 )
-from aiagentsforce_community.utilities.astradb import (
+from aibaba_ai_community.utilities.astradb import (
     _AstraDBCollectionEnvironment,
 )
-from aiagentsforce_community.vectorstores import (
+from aibaba_ai_community.vectorstores import (
     AzureCosmosDBNoSqlVectorSearch,
     AzureCosmosDBVectorSearch,
 )
-from aiagentsforce_community.vectorstores import (
+from aibaba_ai_community.vectorstores import (
     OpenSearchVectorSearch as OpenSearchVectorStore,
 )
-from aiagentsforce_community.vectorstores.redis import Redis as RedisVectorstore
-from aiagentsforce_community.vectorstores.singlestoredb import SingleStoreDB
+from aibaba_ai_community.vectorstores.redis import Redis as RedisVectorstore
+from aibaba_ai_community.vectorstores.singlestoredb import SingleStoreDB
 
 logger = logging.getLogger(__file__)
 
@@ -629,10 +629,10 @@ class RedisSemanticCache(BaseCache):
 
         .. code-block:: python
 
-            from aiagentsforce_community.globals import set_llm_cache
+            from aibaba_ai_community.globals import set_llm_cache
 
-            from aiagentsforce_community.cache import RedisSemanticCache
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.cache import RedisSemanticCache
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
             set_llm_cache(RedisSemanticCache(
                 redis_url="redis://localhost:6379",
@@ -754,7 +754,7 @@ class GPTCache(BaseCache):
             import gptcache
             from gptcache.processor.pre import get_prompt
             from gptcache.manager.factory import get_data_manager
-            from aiagentsforce_community.globals import set_llm_cache
+            from aibaba_ai_community.globals import set_llm_cache
 
             # Avoid multiple caches using the same file,
             causing different llm model caches to affect each other
@@ -1058,7 +1058,7 @@ class CassandraCache(BaseCache):
 
             import cassio
 
-            from aiagentsforce_community.cache import CassandraCache
+            from aibaba_ai_community.cache import CassandraCache
             from alibaba_ai_core.globals import set_llm_cache
 
             cassio.init(auto=True)  # Requires env. variables, see CassIO docs
@@ -1079,7 +1079,7 @@ class CassandraCache(BaseCache):
         table_name: name of the Cassandra table to use as cache
         ttl_seconds: time-to-live for cache entries
             (default: None, i.e. forever)
-        setup_mode: a value in aiagentsforce_community.utilities.cassandra.SetupMode.
+        setup_mode: a value in aibaba_ai_community.utilities.cassandra.SetupMode.
             Choose between SYNC, ASYNC and OFF - the latter if the Cassandra
             table is guaranteed to exist already, for a faster initialization.
 
@@ -1105,7 +1105,7 @@ class CassandraCache(BaseCache):
                 "0.0.33",
                 name="skip_provisioning",
                 alternative=(
-                    "setup_mode=aiagentsforce_community.utilities.cassandra.SetupMode.OFF"
+                    "setup_mode=aibaba_ai_community.utilities.cassandra.SetupMode.OFF"
                 ),
                 pending=True,
             )
@@ -1224,7 +1224,7 @@ class CassandraSemanticCache(BaseCache):
 
             import cassio
 
-            from aiagentsforce_community.cache import CassandraSemanticCache
+            from aibaba_ai_community.cache import CassandraSemanticCache
             from alibaba_ai_core.globals import set_llm_cache
 
             cassio.init(auto=True)  # Requires env. variables, see CassIO docs
@@ -1268,7 +1268,7 @@ class CassandraSemanticCache(BaseCache):
             is in fact a similarity (i.e. higher means closer).
             Note that at most one of the two parameters 'distance_metric'
             and 'similarity_measure' can be provided.
-        setup_mode: a value in aiagentsforce_community.utilities.cassandra.SetupMode.
+        setup_mode: a value in aibaba_ai_community.utilities.cassandra.SetupMode.
             Choose between SYNC, ASYNC and OFF - the latter if the Cassandra
             table is guaranteed to exist already, for a faster initialization.
 
@@ -1298,7 +1298,7 @@ class CassandraSemanticCache(BaseCache):
                 "0.0.33",
                 name="skip_provisioning",
                 alternative=(
-                    "setup_mode=aiagentsforce_community.utilities.cassandra.SetupMode.OFF"
+                    "setup_mode=aibaba_ai_community.utilities.cassandra.SetupMode.OFF"
                 ),
                 pending=True,
             )
@@ -2725,7 +2725,7 @@ class MemcachedCache(BaseCache):
             ifrom langchain.globals import set_llm_cache
             from langchain_openai import OpenAI
 
-            from aiagentsforce_community.cache import MemcachedCache
+            from aibaba_ai_community.cache import MemcachedCache
             from pymemcache.client.base import Client
 
             llm = OpenAI(model="gpt-3.5-turbo-instruct", n=2, best_of=2)

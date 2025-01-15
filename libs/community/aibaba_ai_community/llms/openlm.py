@@ -2,7 +2,7 @@ from typing import Any, Dict
 
 from alibaba_ai_core.utils import pre_init
 
-from aiagentsforce_community.llms.openai import BaseOpenAI
+from aibaba_ai_community.llms.openai import BaseOpenAI
 
 
 class OpenLM(BaseOpenAI):

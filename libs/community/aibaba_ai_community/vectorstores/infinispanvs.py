@@ -25,7 +25,7 @@ class InfinispanVS(VectorStore):
 
     Example:
         ... code-block:: python
-            from aiagentsforce_community.vectorstores import InfinispanVS
+            from aibaba_ai_community.vectorstores import InfinispanVS
             from mymodels import RGBEmbeddings
             ...
             vectorDb = InfinispanVS.from_documents(docs,
@@ -38,7 +38,7 @@ class InfinispanVS(VectorStore):
         is required before populating the store
 
         ... code-block:: python
-            from aiagentsforce_community.vectorstores import InfinispanVS
+            from aibaba_ai_community.vectorstores import InfinispanVS
             from mymodels import RGBEmbeddings
             ...
             ispnVS = InfinispanVS()

@@ -111,7 +111,7 @@ class TrajectoryEvalChain(AgentTrajectoryEvaluator, LLMEvalChain):
     .. code-block:: python
 
         from langchain.agents import AgentType, initialize_agent
-        from aiagentsforce_community.chat_models import ChatOpenAI
+        from aibaba_ai_community.chat_models import ChatOpenAI
         from langchain.evaluation import TrajectoryEvalChain
         from langchain.tools import tool
 

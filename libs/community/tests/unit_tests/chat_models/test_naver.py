@@ -14,8 +14,8 @@ from alibaba_ai_core.messages import (
 )
 from pydantic import SecretStr
 
-from aiagentsforce_community.chat_models import ChatClovaX
-from aiagentsforce_community.chat_models.naver import (
+from aibaba_ai_community.chat_models import ChatClovaX
+from aibaba_ai_community.chat_models.naver import (
     _convert_message_to_naver_chat_message,
     _convert_naver_chat_message_to_message,
 )
@@ -174,7 +174,7 @@ class MyCustomHandler(BaseCallbackHandler):
 
 
 @patch(
-    "aiagentsforce_community.chat_models.ChatClovaX._completion_with_retry",
+    "aibaba_ai_community.chat_models.ChatClovaX._completion_with_retry",
     new=mock_chat_stream,
 )
 @pytest.mark.requires("httpx_sse")
@@ -186,7 +186,7 @@ def test_stream_with_callback() -> None:
 
 
 @patch(
-    "aiagentsforce_community.chat_models.ChatClovaX._acompletion_with_retry",
+    "aibaba_ai_community.chat_models.ChatClovaX._acompletion_with_retry",
     new=mock_chat_astream,
 )
 @pytest.mark.requires("httpx_sse")

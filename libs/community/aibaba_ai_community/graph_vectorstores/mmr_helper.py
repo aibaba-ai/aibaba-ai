@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING, Iterable
 
 import numpy as np
 
-from aiagentsforce_community.utils.math import cosine_similarity
+from aibaba_ai_community.utils.math import cosine_similarity
 
 if TYPE_CHECKING:
     from numpy.typing import NDArray

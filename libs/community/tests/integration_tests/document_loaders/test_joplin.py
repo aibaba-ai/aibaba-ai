@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.joplin import JoplinLoader
+from aibaba_ai_community.document_loaders.joplin import JoplinLoader
 
 
 def test_joplin_loader() -> None:

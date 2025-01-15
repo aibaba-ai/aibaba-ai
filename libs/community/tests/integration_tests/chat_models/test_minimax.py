@@ -4,7 +4,7 @@ from alibaba_ai_core.messages import AIMessage, HumanMessage, ToolMessage
 from alibaba_ai_core.tools import tool
 from pydantic import BaseModel
 
-from aiagentsforce_community.chat_models import MiniMaxChat
+from aibaba_ai_community.chat_models import MiniMaxChat
 
 
 def test_chat_minimax_not_group_id() -> None:

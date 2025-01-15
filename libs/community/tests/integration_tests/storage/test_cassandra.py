@@ -6,8 +6,8 @@ from typing import TYPE_CHECKING
 
 import pytest
 
-from aiagentsforce_community.storage.cassandra import CassandraByteStore
-from aiagentsforce_community.utilities.cassandra import SetupMode
+from aibaba_ai_community.storage.cassandra import CassandraByteStore
+from aibaba_ai_community.utilities.cassandra import SetupMode
 
 if TYPE_CHECKING:
     from cassandra.cluster import Session

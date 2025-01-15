@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.adapters.openai import (
+    from aibaba_ai_community.adapters.openai import (
         Chat,
         ChatCompletion,
         ChatCompletionChunk,
@@ -23,19 +23,19 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 MODULE_LOOKUP = {
-    "IndexableBaseModel": "aiagentsforce_community.adapters.openai",
-    "Choice": "aiagentsforce_community.adapters.openai",
-    "ChatCompletions": "aiagentsforce_community.adapters.openai",
-    "ChoiceChunk": "aiagentsforce_community.adapters.openai",
-    "ChatCompletionChunk": "aiagentsforce_community.adapters.openai",
-    "convert_dict_to_message": "aiagentsforce_community.adapters.openai",
-    "convert_message_to_dict": "aiagentsforce_community.adapters.openai",
-    "convert_openai_messages": "aiagentsforce_community.adapters.openai",
-    "ChatCompletion": "aiagentsforce_community.adapters.openai",
-    "convert_messages_for_finetuning": "aiagentsforce_community.adapters.openai",
-    "Completions": "aiagentsforce_community.adapters.openai",
-    "Chat": "aiagentsforce_community.adapters.openai",
-    "chat": "aiagentsforce_community.adapters.openai",
+    "IndexableBaseModel": "aibaba_ai_community.adapters.openai",
+    "Choice": "aibaba_ai_community.adapters.openai",
+    "ChatCompletions": "aibaba_ai_community.adapters.openai",
+    "ChoiceChunk": "aibaba_ai_community.adapters.openai",
+    "ChatCompletionChunk": "aibaba_ai_community.adapters.openai",
+    "convert_dict_to_message": "aibaba_ai_community.adapters.openai",
+    "convert_message_to_dict": "aibaba_ai_community.adapters.openai",
+    "convert_openai_messages": "aibaba_ai_community.adapters.openai",
+    "ChatCompletion": "aibaba_ai_community.adapters.openai",
+    "convert_messages_for_finetuning": "aibaba_ai_community.adapters.openai",
+    "Completions": "aibaba_ai_community.adapters.openai",
+    "Chat": "aibaba_ai_community.adapters.openai",
+    "chat": "aibaba_ai_community.adapters.openai",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=MODULE_LOOKUP)

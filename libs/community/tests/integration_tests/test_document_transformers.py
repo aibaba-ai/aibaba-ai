@@ -2,12 +2,12 @@
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (
+from aibaba_ai_community.document_transformers.embeddings_redundant_filter import (
     EmbeddingsClusteringFilter,
     EmbeddingsRedundantFilter,
     _DocumentWithState,
 )
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
 
 
 def test_embeddings_redundant_filter() -> None:

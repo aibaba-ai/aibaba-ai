@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.llms.huggingface_hub import HuggingFaceHub
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.huggingface_hub import HuggingFaceHub
+from aibaba_ai_community.llms.loading import load_llm
 from tests.integration_tests.llms.utils import assert_llm_equality
 
 

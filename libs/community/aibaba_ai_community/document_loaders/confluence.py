@@ -12,7 +12,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -61,7 +61,7 @@ class ConfluenceLoader(BaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import ConfluenceLoader
+            from aibaba_ai_community.document_loaders import ConfluenceLoader
 
             loader = ConfluenceLoader(
                 url="https://yoursite.atlassian.com/wiki",

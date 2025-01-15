@@ -106,15 +106,15 @@ def test_imports() -> None:
     """Test that you can import all top level things okay."""
     from alibaba_ai_core.prompts import BasePromptTemplate  # noqa: F401
 
-    from aiagentsforce_community.callbacks import OpenAICallbackHandler  # noqa: F401
-    from aiagentsforce_community.chat_models import ChatOpenAI  # noqa: F401
-    from aiagentsforce_community.document_loaders import BSHTMLLoader  # noqa: F401
-    from aiagentsforce_community.embeddings import OpenAIEmbeddings  # noqa: F401
-    from aiagentsforce_community.llms import OpenAI  # noqa: F401
-    from aiagentsforce_community.retrievers import VespaRetriever  # noqa: F401
-    from aiagentsforce_community.tools import DuckDuckGoSearchResults  # noqa: F401
-    from aiagentsforce_community.utilities import (
+    from aibaba_ai_community.callbacks import OpenAICallbackHandler  # noqa: F401
+    from aibaba_ai_community.chat_models import ChatOpenAI  # noqa: F401
+    from aibaba_ai_community.document_loaders import BSHTMLLoader  # noqa: F401
+    from aibaba_ai_community.embeddings import OpenAIEmbeddings  # noqa: F401
+    from aibaba_ai_community.llms import OpenAI  # noqa: F401
+    from aibaba_ai_community.retrievers import VespaRetriever  # noqa: F401
+    from aibaba_ai_community.tools import DuckDuckGoSearchResults  # noqa: F401
+    from aibaba_ai_community.utilities import (
         SearchApiAPIWrapper,  # noqa: F401
         SerpAPIWrapper,  # noqa: F401
     )
-    from aiagentsforce_community.vectorstores import FAISS  # noqa: F401
+    from aibaba_ai_community.vectorstores import FAISS  # noqa: F401

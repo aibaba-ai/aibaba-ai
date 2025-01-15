@@ -16,7 +16,7 @@ from alibaba_ai_core.outputs import ChatGeneration, ChatResult
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 
 def _format_dappier_messages(
@@ -47,7 +47,7 @@ class ChatDappierAI(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatDappierAI
+            from aibaba_ai_community.chat_models import ChatDappierAI
             from alibaba_ai_core.messages import HumanMessage
 
             # Initialize `ChatDappierAI` with the desired configuration
@@ -85,7 +85,7 @@ class ChatDappierAI(BaseChatModel):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

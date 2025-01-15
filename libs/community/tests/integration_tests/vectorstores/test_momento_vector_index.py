@@ -6,9 +6,9 @@ from typing import Generator, Iterator, List
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import TextLoader
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores import MomentoVectorIndex
+from aibaba_ai_community.document_loaders import TextLoader
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores import MomentoVectorIndex
 
 API_KEY_ENV_VAR = "MOMENTO_API_KEY"
 

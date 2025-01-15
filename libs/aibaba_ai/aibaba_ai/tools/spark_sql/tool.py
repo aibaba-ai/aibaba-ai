@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         BaseSparkSQLTool,
         InfoSparkSQLTool,
         ListSparkSQLTool,
@@ -15,11 +15,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BaseSparkSQLTool": "aiagentsforce_community.tools",
-    "QuerySparkSQLTool": "aiagentsforce_community.tools",
-    "InfoSparkSQLTool": "aiagentsforce_community.tools",
-    "ListSparkSQLTool": "aiagentsforce_community.tools",
-    "QueryCheckerTool": "aiagentsforce_community.tools",
+    "BaseSparkSQLTool": "aibaba_ai_community.tools",
+    "QuerySparkSQLTool": "aibaba_ai_community.tools",
+    "InfoSparkSQLTool": "aibaba_ai_community.tools",
+    "ListSparkSQLTool": "aibaba_ai_community.tools",
+    "QueryCheckerTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

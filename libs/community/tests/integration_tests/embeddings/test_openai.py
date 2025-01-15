@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
 
 @pytest.mark.scheduled

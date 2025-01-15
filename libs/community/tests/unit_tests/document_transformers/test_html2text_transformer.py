@@ -3,7 +3,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_transformers import Html2TextTransformer
+from aibaba_ai_community.document_transformers import Html2TextTransformer
 
 
 @pytest.mark.requires("html2text")

@@ -1,6 +1,6 @@
 import pathlib
 
-from aiagentsforce_community.chat_loaders import utils, whatsapp
+from aibaba_ai_community.chat_loaders import utils, whatsapp
 
 
 def test_whatsapp_chat_loader() -> None:

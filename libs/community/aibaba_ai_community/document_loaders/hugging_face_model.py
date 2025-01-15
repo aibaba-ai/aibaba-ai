@@ -3,7 +3,7 @@ from typing import Iterator, List, Optional
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class HuggingFaceModelLoader(BaseLoader):
@@ -22,7 +22,7 @@ class HuggingFaceModelLoader(BaseLoader):
 
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import HuggingFaceModelLoader
+            from aibaba_ai_community.document_loaders import HuggingFaceModelLoader
 
             # Initialize the loader with search criteria
             loader = HuggingFaceModelLoader(search="bert", limit=10)

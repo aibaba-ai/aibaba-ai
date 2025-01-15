@@ -4,8 +4,8 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.language_models import BaseLanguageModel
 from pydantic import BaseModel, Field, model_validator
 
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.tools.amadeus.base import AmadeusBaseTool
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.tools.amadeus.base import AmadeusBaseTool
 
 
 class ClosestAirportSchema(BaseModel):

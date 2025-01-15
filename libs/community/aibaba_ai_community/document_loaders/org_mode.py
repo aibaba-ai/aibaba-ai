@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Any, List, Union
 
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     validate_unstructured_version,
 )
@@ -19,7 +19,7 @@ class UnstructuredOrgModeLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredOrgModeLoader
+    from aibaba_ai_community.document_loaders import UnstructuredOrgModeLoader
 
     loader = UnstructuredOrgModeLoader(
         "example.org", mode="elements", strategy="fast",

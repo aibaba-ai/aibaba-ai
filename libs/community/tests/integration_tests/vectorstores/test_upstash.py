@@ -10,7 +10,7 @@ from typing import List, Tuple
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.upstash import UpstashVectorStore
+from aibaba_ai_community.vectorstores.upstash import UpstashVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
 )

@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores.xata import XataVectorStore
+    from aibaba_ai_community.vectorstores.xata import XataVectorStore
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
-DEPRECATED_LOOKUP = {"XataVectorStore": "aiagentsforce_community.vectorstores.xata"}
+DEPRECATED_LOOKUP = {"XataVectorStore": "aibaba_ai_community.vectorstores.xata"}
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)
 

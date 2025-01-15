@@ -58,7 +58,7 @@ def create_react_agent(
         .. code-block:: python
 
             from langchain import hub
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from langchain.agents import AgentExecutor, create_react_agent
 
             prompt = hub.pull("hwchase17/react")

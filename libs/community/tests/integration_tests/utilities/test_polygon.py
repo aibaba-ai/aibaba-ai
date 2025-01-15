@@ -1,6 +1,6 @@
 """Integration test for Polygon API Wrapper."""
 
-from aiagentsforce_community.utilities.polygon import PolygonAPIWrapper
+from aibaba_ai_community.utilities.polygon import PolygonAPIWrapper
 
 
 def test_get_last_quote() -> None:

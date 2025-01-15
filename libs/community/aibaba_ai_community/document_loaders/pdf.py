@@ -24,10 +24,10 @@ import requests
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils import get_from_dict_or_env
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.document_loaders.dedoc import DedocBaseLoader
-from aiagentsforce_community.document_loaders.parsers.pdf import (
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.document_loaders.dedoc import DedocBaseLoader
+from aibaba_ai_community.document_loaders.parsers.pdf import (
     AmazonTextractPDFParser,
     DocumentIntelligenceParser,
     PDFMinerParser,
@@ -36,7 +36,7 @@ from aiagentsforce_community.document_loaders.parsers.pdf import (
     PyPDFium2Parser,
     PyPDFParser,
 )
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 if TYPE_CHECKING:
     from textractor.data.text_linearization_config import TextLinearizationConfig
@@ -56,7 +56,7 @@ class UnstructuredPDFLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredPDFLoader
+    from aibaba_ai_community.document_loaders import UnstructuredPDFLoader
 
     loader = UnstructuredPDFLoader(
         "example.pdf", mode="elements", strategy="fast",
@@ -176,7 +176,7 @@ class PyPDFLoader(BasePDFLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import PyPDFLoader
+            from aibaba_ai_community.document_loaders import PyPDFLoader
 
             loader = PyPDFLoader(
                 file_path = "./example_data/layout-parser-paper.pdf",
@@ -663,7 +663,7 @@ class AmazonTextractPDFLoader(BasePDFLoader):
 
     Example:
         .. code-block:: python
-            from aiagentsforce_community.document_loaders import AmazonTextractPDFLoader
+            from aibaba_ai_community.document_loaders import AmazonTextractPDFLoader
             loader = AmazonTextractPDFLoader(
                 file_path="s3://pdfs/myfile.pdf"
             )
@@ -818,7 +818,7 @@ class DedocPDFLoader(DedocBaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import DedocPDFLoader
+            from aibaba_ai_community.document_loaders import DedocPDFLoader
 
             loader = DedocPDFLoader(
                 file_path="example.pdf",

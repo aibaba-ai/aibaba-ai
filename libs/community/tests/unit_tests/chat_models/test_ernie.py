@@ -6,7 +6,7 @@ from alibaba_ai_core.messages import (
     SystemMessage,
 )
 
-from aiagentsforce_community.chat_models.ernie import _convert_message_to_dict
+from aibaba_ai_community.chat_models.ernie import _convert_message_to_dict
 
 
 def test__convert_dict_to_message_human() -> None:

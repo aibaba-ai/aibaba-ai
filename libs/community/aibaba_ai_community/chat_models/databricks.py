@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 from alibaba_ai_core._api import deprecated
 
-from aiagentsforce_community.chat_models.mlflow import ChatMlflow
+from aibaba_ai_community.chat_models.mlflow import ChatMlflow
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ class ChatDatabricks(ChatMlflow):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatDatabricks
+            from aibaba_ai_community.chat_models import ChatDatabricks
 
             chat_model = ChatDatabricks(
                 target_uri="databricks",

@@ -2,8 +2,8 @@
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.vectorstores import VLite
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.vectorstores import VLite
 
 
 def test_vlite() -> None:

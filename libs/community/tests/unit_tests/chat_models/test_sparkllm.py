@@ -8,7 +8,7 @@ from alibaba_ai_core.output_parsers.openai_tools import (
     parse_tool_call,
 )
 
-from aiagentsforce_community.chat_models.sparkllm import (
+from aibaba_ai_community.chat_models.sparkllm import (
     ChatSparkLLM,
     convert_dict_to_message,
     convert_message_to_dict,

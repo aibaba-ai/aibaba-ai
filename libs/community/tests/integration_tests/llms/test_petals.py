@@ -3,7 +3,7 @@
 from pydantic import SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.llms.petals import Petals
+from aibaba_ai_community.llms.petals import Petals
 
 
 def test_api_key_is_string() -> None:

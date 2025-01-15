@@ -11,7 +11,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.utils import pre_init
 from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import pre_init
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 from alibaba_ai_core.utils import pre_init
 from alibaba_ai_core.outputs import GenerationChunk
 
@@ -24,7 +24,7 @@ class DeepSparse(LLM):
     [SparseZoo](https://sparsezoo.neuralmagic.com/?useCase=text_generation)
     Example:
         .. code-block:: python
-            from aiagentsforce_community.llms import DeepSparse
+            from aibaba_ai_community.llms import DeepSparse
             llm = DeepSparse(model="zoo:nlg/text_generation/codegen_mono-350m/pytorch/huggingface/bigpython_bigquery_thepile/base_quant-none")
     """  # noqa: E501
 
@@ -96,7 +96,7 @@ class DeepSparse(LLM):
             The generated text.
         Example:
             .. code-block:: python
-                from aiagentsforce_community.llms import DeepSparse
+                from aibaba_ai_community.llms import DeepSparse
                 llm = DeepSparse(model="zoo:nlg/text_generation/codegen_mono-350m/pytorch/huggingface/bigpython_bigquery_thepile/base_quant-none")
                 llm.invoke("Tell me a joke.")
         """
@@ -134,7 +134,7 @@ class DeepSparse(LLM):
             The generated text.
         Example:
             .. code-block:: python
-                from aiagentsforce_community.llms import DeepSparse
+                from aibaba_ai_community.llms import DeepSparse
                 llm = DeepSparse(model="zoo:nlg/text_generation/codegen_mono-350m/pytorch/huggingface/bigpython_bigquery_thepile/base_quant-none")
                 llm.invoke("Tell me a joke.")
         """
@@ -176,7 +176,7 @@ class DeepSparse(LLM):
             A dictionary like object containing a string token.
         Example:
             .. code-block:: python
-                from aiagentsforce_community.llms import DeepSparse
+                from aibaba_ai_community.llms import DeepSparse
                 llm = DeepSparse(
                     model="zoo:nlg/text_generation/codegen_mono-350m/pytorch/huggingface/bigpython_bigquery_thepile/base_quant-none",
                     streaming=True
@@ -214,7 +214,7 @@ class DeepSparse(LLM):
             A dictionary like object containing a string token.
         Example:
             .. code-block:: python
-                from aiagentsforce_community.llms import DeepSparse
+                from aibaba_ai_community.llms import DeepSparse
                 llm = DeepSparse(
                     model="zoo:nlg/text_generation/codegen_mono-350m/pytorch/huggingface/bigpython_bigquery_thepile/base_quant-none",
                     streaming=True

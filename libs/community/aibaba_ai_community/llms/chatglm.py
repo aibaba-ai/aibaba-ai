@@ -5,7 +5,7 @@ import requests
 from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from alibaba_ai_core.language_models.llms import LLM
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +16,7 @@ class ChatGLM(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import ChatGLM
+            from aibaba_ai_community.llms import ChatGLM
             endpoint_url = (
                 "http://127.0.0.1:8000"
             )

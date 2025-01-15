@@ -144,7 +144,7 @@ class LLMMathChain(Chain):
         .. code-block:: python
 
             from langchain.chains import LLMMathChain
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             llm_math = LLMMathChain.from_llm(OpenAI())
     """  # noqa: E501
 

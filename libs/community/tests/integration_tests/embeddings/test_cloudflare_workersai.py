@@ -2,7 +2,7 @@
 
 import responses
 
-from aiagentsforce_community.embeddings.cloudflare_workersai import (
+from aibaba_ai_community.embeddings.cloudflare_workersai import (
     CloudflareWorkersAIEmbeddings,
 )
 

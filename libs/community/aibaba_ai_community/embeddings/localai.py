@@ -133,7 +133,7 @@ class LocalAIEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import LocalAIEmbeddings
+            from aibaba_ai_community.embeddings import LocalAIEmbeddings
             openai = LocalAIEmbeddings(
                 openai_api_key="random-string",
                 openai_api_base="http://localhost:8080"

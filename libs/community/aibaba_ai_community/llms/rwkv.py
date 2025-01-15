@@ -11,7 +11,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 class RWKV(LLM, BaseModel):
@@ -23,7 +23,7 @@ class RWKV(LLM, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import RWKV
+            from aibaba_ai_community.llms import RWKV
             model = RWKV(model="./models/rwkv-3b-fp16.bin", strategy="cpu fp32")
 
             # Simplest invocation

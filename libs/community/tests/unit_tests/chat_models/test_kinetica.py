@@ -5,7 +5,7 @@ from typing import Any
 
 from alibaba_ai_core.messages import AIMessage
 
-from aiagentsforce_community.chat_models.kinetica import ChatKinetica, KineticaUtil
+from aibaba_ai_community.chat_models.kinetica import ChatKinetica, KineticaUtil
 
 LOG = logging.getLogger(__name__)
 

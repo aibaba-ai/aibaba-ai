@@ -5,15 +5,15 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.amadeus.closest_airport import AmadeusClosestAirport
-    from aiagentsforce_community.tools.amadeus.flight_search import AmadeusFlightSearch
+    from aibaba_ai_community.tools.amadeus.closest_airport import AmadeusClosestAirport
+    from aibaba_ai_community.tools.amadeus.flight_search import AmadeusFlightSearch
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AmadeusClosestAirport": "aiagentsforce_community.tools.amadeus.closest_airport",
-    "AmadeusFlightSearch": "aiagentsforce_community.tools.amadeus.flight_search",
+    "AmadeusClosestAirport": "aibaba_ai_community.tools.amadeus.closest_airport",
+    "AmadeusFlightSearch": "aibaba_ai_community.tools.amadeus.flight_search",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

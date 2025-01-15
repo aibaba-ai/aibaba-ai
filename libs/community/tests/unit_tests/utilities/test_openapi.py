@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from langchain.chains.openai_functions.openapi import openapi_spec_to_openai_fn
 
-from aiagentsforce_community.utilities.openapi import (  # noqa: E402 # ignore: community-import
+from aibaba_ai_community.utilities.openapi import (  # noqa: E402 # ignore: community-import
     OpenAPISpec,
 )
 

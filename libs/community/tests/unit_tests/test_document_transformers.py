@@ -2,12 +2,12 @@
 
 import pytest
 
-pytest.importorskip("aiagentsforce_community")
+pytest.importorskip("aibaba_ai_community")
 
-from aiagentsforce_community.document_transformers.embeddings_redundant_filter import (  # noqa: E402
+from aibaba_ai_community.document_transformers.embeddings_redundant_filter import (  # noqa: E402
     _filter_similar_embeddings,
 )
-from aiagentsforce_community.utils.math import cosine_similarity  # noqa: E402
+from aibaba_ai_community.utils.math import cosine_similarity  # noqa: E402
 
 
 def test__filter_similar_embeddings() -> None:

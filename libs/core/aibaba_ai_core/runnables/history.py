@@ -139,7 +139,7 @@ class RunnableWithMessageHistory(RunnableBindingBase):
 
             from typing import Optional
 
-            from aiagentsforce_community.chat_models import ChatAnthropic
+            from aibaba_ai_community.chat_models import ChatAnthropic
             from aibaba_ai_core.prompts import ChatPromptTemplate, MessagesPlaceholder
             from aibaba_ai_core.runnables.history import RunnableWithMessageHistory
 

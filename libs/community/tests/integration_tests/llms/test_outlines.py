@@ -6,7 +6,7 @@ import re
 import platform
 import pytest
 
-from aiagentsforce_community.llms.outlines import Outlines
+from aibaba_ai_community.llms.outlines import Outlines
 from pydantic import BaseModel
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

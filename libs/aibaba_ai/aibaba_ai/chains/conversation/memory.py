@@ -14,13 +14,13 @@ from langchain.memory.summary import ConversationSummaryMemory
 from langchain.memory.summary_buffer import ConversationSummaryBufferMemory
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.memory.kg import ConversationKGMemory
+    from aibaba_ai_community.memory.kg import ConversationKGMemory
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ConversationKGMemory": "aiagentsforce_community.memory.kg",
+    "ConversationKGMemory": "aibaba_ai_community.memory.kg",
 }
 
 _importer = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

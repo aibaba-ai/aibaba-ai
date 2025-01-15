@@ -8,9 +8,9 @@ from aibaba_ai_core.prompts.prompt import PromptTemplate
 from langchain.chains.llm import LLMChain
 
 pytest.importorskip("langchain_openai", reason="langchain_openai not installed")
-pytest.importorskip("aiagentsforce_community", reason="aiagentsforce_community not installed")
+pytest.importorskip("aibaba_ai_community", reason="aibaba_ai_community not installed")
 
-from aiagentsforce_community.llms.openai import (  # noqa: E402 # ignore: community-import
+from aibaba_ai_community.llms.openai import (  # noqa: E402 # ignore: community-import
     OpenAI as CommunityOpenAI,
 )
 

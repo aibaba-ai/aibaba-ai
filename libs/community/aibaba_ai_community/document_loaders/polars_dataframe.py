@@ -2,7 +2,7 @@ from typing import Any, Iterator
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.dataframe import BaseDataFrameLoader
+from aibaba_ai_community.document_loaders.dataframe import BaseDataFrameLoader
 
 
 class PolarsDataFrameLoader(BaseDataFrameLoader):

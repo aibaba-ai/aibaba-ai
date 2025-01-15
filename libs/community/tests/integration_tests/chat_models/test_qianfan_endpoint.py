@@ -15,7 +15,7 @@ from alibaba_ai_core.prompts import ChatPromptTemplate, HumanMessagePromptTempla
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.chat_models.baidu_qianfan_endpoint import (
+from aibaba_ai_community.chat_models.baidu_qianfan_endpoint import (
     QianfanChatEndpoint,
 )
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

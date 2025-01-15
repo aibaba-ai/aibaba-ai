@@ -24,7 +24,7 @@ class LlamaCpp(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import LlamaCpp
+            from aibaba_ai_community.llms import LlamaCpp
             llm = LlamaCpp(model_path="/path/to/llama/model")
     """
 
@@ -274,7 +274,7 @@ class LlamaCpp(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import LlamaCpp
+                from aibaba_ai_community.llms import LlamaCpp
                 llm = LlamaCpp(model_path="/path/to/local/llama/model.bin")
                 llm.invoke("This is a prompt.")
         """
@@ -323,7 +323,7 @@ class LlamaCpp(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import LlamaCpp
+                from aibaba_ai_community.llms import LlamaCpp
                 llm = LlamaCpp(
                     model_path="/path/to/local/model.bin",
                     temperature = 0.5

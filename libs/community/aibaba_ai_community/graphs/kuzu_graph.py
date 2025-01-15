@@ -1,7 +1,7 @@
 from hashlib import md5
 from typing import Any, Dict, List, Tuple
 
-from aiagentsforce_community.graphs.graph_document import GraphDocument, Relationship
+from aibaba_ai_community.graphs.graph_document import GraphDocument, Relationship
 
 
 class KuzuGraph:

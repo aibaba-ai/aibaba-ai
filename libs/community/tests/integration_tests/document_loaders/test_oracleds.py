@@ -6,12 +6,12 @@
 # -----------------------------------------------------------------------------
 import sys
 
-from aiagentsforce_community.document_loaders.oracleai import (
+from aibaba_ai_community.document_loaders.oracleai import (
     OracleDocLoader,
     OracleTextSplitter,
 )
-from aiagentsforce_community.utilities.oracleai import OracleSummary
-from aiagentsforce_community.vectorstores.oraclevs import (
+from aibaba_ai_community.utilities.oracleai import OracleSummary
+from aibaba_ai_community.vectorstores.oraclevs import (
     _table_exists,
     drop_table_purge,
 )

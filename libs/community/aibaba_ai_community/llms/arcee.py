@@ -5,7 +5,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, SecretStr, model_validator
 
-from aiagentsforce_community.utilities.arcee import ArceeWrapper, DALMFilter
+from aibaba_ai_community.utilities.arcee import ArceeWrapper, DALMFilter
 
 
 class Arcee(LLM):
@@ -17,7 +17,7 @@ class Arcee(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Arcee
+            from aibaba_ai_community.llms import Arcee
 
             arcee = Arcee(
                 model="DALM-PubMed",

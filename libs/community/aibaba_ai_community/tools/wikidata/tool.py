@@ -5,7 +5,7 @@ from typing import Optional
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.wikidata import WikidataAPIWrapper
+from aibaba_ai_community.utilities.wikidata import WikidataAPIWrapper
 
 
 class WikidataQueryRun(BaseTool):  # type: ignore[override]

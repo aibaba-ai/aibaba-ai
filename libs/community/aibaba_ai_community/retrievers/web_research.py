@@ -17,10 +17,10 @@ from alibaba_ai_core.vectorstores import VectorStore
 from langchain_text_splitters import RecursiveCharacterTextSplitter, TextSplitter
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.document_loaders import AsyncHtmlLoader
-from aiagentsforce_community.document_transformers import Html2TextTransformer
-from aiagentsforce_community.llms import LlamaCpp
-from aiagentsforce_community.utilities import GoogleSearchAPIWrapper
+from aibaba_ai_community.document_loaders import AsyncHtmlLoader
+from aibaba_ai_community.document_transformers import Html2TextTransformer
+from aibaba_ai_community.llms import LlamaCpp
+from aibaba_ai_community.utilities import GoogleSearchAPIWrapper
 
 logger = logging.getLogger(__name__)
 

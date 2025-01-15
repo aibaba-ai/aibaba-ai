@@ -26,7 +26,7 @@ class SemanticScholarAPIWrapper(BaseModel):
     Example:
     .. code-block:: python
 
-    from aiagentsforce_community.utilities.semanticscholar import SemanticScholarAPIWrapper
+    from aibaba_ai_community.utilities.semanticscholar import SemanticScholarAPIWrapper
     ss = SemanticScholarAPIWrapper(
         top_k_results = 3,
         load_max_docs = 3

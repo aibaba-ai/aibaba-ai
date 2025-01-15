@@ -59,7 +59,7 @@ from pydantic import (
     SecretStr,
 )
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 
 def _result_to_chunked_message(generated_result: ChatResult) -> ChatGenerationChunk:
@@ -226,7 +226,7 @@ class ChatEdenAI(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatEdenAI
+            from aibaba_ai_community.chat_models import ChatEdenAI
             from alibaba_ai_core.messages import HumanMessage
 
             # Initialize `ChatEdenAI` with the desired configuration
@@ -311,7 +311,7 @@ class ChatEdenAI(BaseChatModel):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

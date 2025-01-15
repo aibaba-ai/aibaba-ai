@@ -17,7 +17,7 @@ class Mlflow(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Mlflow
+            from aibaba_ai_community.llms import Mlflow
 
             completions = Mlflow(
                 target_uri="http://localhost:5000",

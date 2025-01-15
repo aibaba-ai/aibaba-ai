@@ -9,7 +9,7 @@ from alibaba_ai_core.documents import Document
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.orm import Session
 
-from aiagentsforce_community.vectorstores.pgvector import (
+from aibaba_ai_community.vectorstores.pgvector import (
     SUPPORTED_OPERATORS,
     PGVector,
 )

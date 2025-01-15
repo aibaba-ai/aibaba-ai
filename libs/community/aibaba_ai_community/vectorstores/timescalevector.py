@@ -24,7 +24,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_dict_or_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
 if TYPE_CHECKING:
     from timescale_vector import Predicates
@@ -55,8 +55,8 @@ class TimescaleVector(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import TimescaleVector
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import TimescaleVector
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             SERVICE_URL = "postgres://tsdbadmin:<password>@<id>.tsdb.cloud.timescale.com:<port>/tsdb?sslmode=require"
             COLLECTION_NAME = "state_of_the_union_test"
@@ -660,8 +660,8 @@ class TimescaleVector(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import TimescaleVector
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import TimescaleVector
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))
@@ -705,8 +705,8 @@ class TimescaleVector(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import TimescaleVector
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import TimescaleVector
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))

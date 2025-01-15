@@ -16,7 +16,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 logger = logging.getLogger(__name__)
 
@@ -29,8 +29,8 @@ class DashVector(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import DashVector
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import DashVector
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             import dashvector
 
             client = dashvector.Client(api_key="***")
@@ -352,8 +352,8 @@ class DashVector(VectorStore):
         Example:
             .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import DashVector
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import DashVector
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
             import dashvector
 
             embeddings = OpenAIEmbeddings()

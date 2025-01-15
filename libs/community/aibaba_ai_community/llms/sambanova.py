@@ -22,7 +22,7 @@ class SambaStudio(LLM):
         read extra documentation in https://docs.sambanova.ai/sambastudio/latest/index.html
         Example:
         .. code-block:: python
-            from aiagentsforce_community.llms.sambanova  import SambaStudio
+            from aibaba_ai_community.llms.sambanova  import SambaStudio
             SambaStudio(
                 sambastudio_url="your-SambaStudio-environment-URL",
                 sambastudio_api_key="your-SambaStudio-API-key,
@@ -67,7 +67,7 @@ class SambaStudio(LLM):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SambaStudio
+            from aibaba_ai_community.llms import SambaStudio
 
             llm = SambaStudio=(
                 sambastudio_url = set with your SambaStudio deployed endpoint URL,
@@ -551,7 +551,7 @@ class SambaNovaCloud(LLM):
         ``SAMBANOVA_API_KEY`` set with your SambaNova Cloud API Key.
         Example:
         .. code-block:: python
-            from aiagentsforce_community.llms.sambanova  import SambaNovaCloud
+            from aibaba_ai_community.llms.sambanova  import SambaNovaCloud
             SambaNovaCloud(
                 sambanova_api_key="your-SambaNovaCloud-API-key,
                 model = model name,
@@ -582,7 +582,7 @@ class SambaNovaCloud(LLM):
             SambaNovaCloud api key
     Instantiate:
         .. code-block:: python
-            from aiagentsforce_community.llms.sambanova  import SambaNovaCloud
+            from aibaba_ai_community.llms.sambanova  import SambaNovaCloud
             SambaNovaCloud(
                 sambanova_api_key="your-SambaNovaCloud-API-key,
                 model = model name,

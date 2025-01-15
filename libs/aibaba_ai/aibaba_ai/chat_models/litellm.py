@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_models.litellm import (
+    from aibaba_ai_community.chat_models.litellm import (
         ChatLiteLLM,
         ChatLiteLLMException,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ChatLiteLLM": "aiagentsforce_community.chat_models.litellm",
-    "ChatLiteLLMException": "aiagentsforce_community.chat_models.litellm",
+    "ChatLiteLLM": "aibaba_ai_community.chat_models.litellm",
+    "ChatLiteLLMException": "aibaba_ai_community.chat_models.litellm",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

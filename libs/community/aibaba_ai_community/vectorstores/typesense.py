@@ -21,8 +21,8 @@ class Typesense(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embedding.openai import OpenAIEmbeddings
-            from aiagentsforce_community.vectorstores import Typesense
+            from aibaba_ai_community.embedding.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import Typesense
             import typesense
 
             node = {
@@ -212,8 +212,8 @@ class Typesense(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.embedding.openai import OpenAIEmbeddings
-                from aiagentsforce_community.vectorstores import Typesense
+                from aibaba_ai_community.embedding.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Typesense
 
                 # Pass in typesense_api_key as kwarg or set env var "TYPESENSE_API_KEY".
                 vectorstore = Typesense(

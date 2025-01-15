@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.amadeus.flight_search import (
+    from aibaba_ai_community.tools.amadeus.flight_search import (
         AmadeusFlightSearch,
         FlightSearchSchema,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "FlightSearchSchema": "aiagentsforce_community.tools.amadeus.flight_search",
-    "AmadeusFlightSearch": "aiagentsforce_community.tools.amadeus.flight_search",
+    "FlightSearchSchema": "aibaba_ai_community.tools.amadeus.flight_search",
+    "AmadeusFlightSearch": "aibaba_ai_community.tools.amadeus.flight_search",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

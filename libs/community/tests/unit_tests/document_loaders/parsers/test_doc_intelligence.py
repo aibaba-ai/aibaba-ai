@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.document_loaders.parsers import (
+from aibaba_ai_community.document_loaders.parsers import (
     AzureAIDocumentIntelligenceParser,
 )
 

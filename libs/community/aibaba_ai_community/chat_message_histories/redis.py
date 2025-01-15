@@ -9,7 +9,7 @@ from alibaba_ai_core.messages import (
     messages_from_dict,
 )
 
-from aiagentsforce_community.utilities.redis import get_client
+from aibaba_ai_community.utilities.redis import get_client
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +27,7 @@ class RedisChatMessageHistory(BaseChatMessageHistory):
     Instantiate:
         .. code-block:: python
 
-        from aiagentsforce_community.chat_message_histories import RedisChatMessageHistory
+        from aibaba_ai_community.chat_message_histories import RedisChatMessageHistory
 
         history = RedisChatMessageHistory(
             session_id = "your-session-id",

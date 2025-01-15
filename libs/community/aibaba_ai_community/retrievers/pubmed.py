@@ -4,7 +4,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.retrievers import BaseRetriever
 
-from aiagentsforce_community.utilities.pubmed import PubMedAPIWrapper
+from aibaba_ai_community.utilities.pubmed import PubMedAPIWrapper
 
 
 class PubMedRetriever(BaseRetriever, PubMedAPIWrapper):

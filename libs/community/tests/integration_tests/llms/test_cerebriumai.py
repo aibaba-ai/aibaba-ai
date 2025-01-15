@@ -1,6 +1,6 @@
 """Test CerebriumAI API wrapper."""
 
-from aiagentsforce_community.llms.cerebriumai import CerebriumAI
+from aibaba_ai_community.llms.cerebriumai import CerebriumAI
 
 
 def test_cerebriumai_call() -> None:

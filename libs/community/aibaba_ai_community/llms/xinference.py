@@ -61,7 +61,7 @@ class Xinference(LLM):
 
     .. code-block:: python
 
-        from aiagentsforce_community.llms import Xinference
+        from aibaba_ai_community.llms import Xinference
 
         llm = Xinference(
             server_url="http://0.0.0.0:9997",

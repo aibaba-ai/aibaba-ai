@@ -10,8 +10,8 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.language_models.llms import create_base_retry_decorator
 from alibaba_ai_core.utils import pre_init
 
-from aiagentsforce_community.llms.vertexai import _VertexAICommon
-from aiagentsforce_community.utilities.vertexai import raise_vertex_import_error
+from aibaba_ai_community.llms.vertexai import _VertexAICommon
+from aibaba_ai_community.utilities.vertexai import raise_vertex_import_error
 
 logger = logging.getLogger(__name__)
 

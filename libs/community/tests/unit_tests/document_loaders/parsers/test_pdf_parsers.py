@@ -5,9 +5,9 @@ from typing import Iterator
 
 import pytest
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.document_loaders.parsers.pdf import (
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.document_loaders.parsers.pdf import (
     PDFMinerParser,
     PyMuPDFParser,
     PyPDFium2Parser,

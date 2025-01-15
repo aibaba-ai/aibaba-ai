@@ -22,8 +22,8 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_dict_or_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.graphs import Neo4jGraph
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.graphs import Neo4jGraph
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -523,8 +523,8 @@ class Neo4jVector(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores.neo4j_vector import Neo4jVector
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores.neo4j_vector import Neo4jVector
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             url="bolt://localhost:7687"
             username="neo4j"
@@ -1294,8 +1294,8 @@ class Neo4jVector(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores.neo4j_vector import Neo4jVector
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores.neo4j_vector import Neo4jVector
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))

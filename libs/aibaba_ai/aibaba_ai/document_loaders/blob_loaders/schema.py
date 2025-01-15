@@ -11,8 +11,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "Blob": "aiagentsforce_community.document_loaders",
-    "BlobLoader": "aiagentsforce_community.document_loaders",
+    "Blob": "aibaba_ai_community.document_loaders",
+    "BlobLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

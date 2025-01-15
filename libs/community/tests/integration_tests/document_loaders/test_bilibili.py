@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders import BiliBiliLoader
+from aibaba_ai_community.document_loaders import BiliBiliLoader
 
 
 def test_bilibili_loader() -> None:

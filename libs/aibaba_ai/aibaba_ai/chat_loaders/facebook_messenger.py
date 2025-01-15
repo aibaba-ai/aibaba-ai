@@ -3,17 +3,17 @@ from typing import TYPE_CHECKING, Any
 from langchain._api.module_import import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chat_loaders.facebook_messenger import (
+    from aibaba_ai_community.chat_loaders.facebook_messenger import (
         FolderFacebookMessengerChatLoader,
         SingleFileFacebookMessengerChatLoader,
     )
 
 module_lookup = {
     "SingleFileFacebookMessengerChatLoader": (
-        "aiagentsforce_community.chat_loaders.facebook_messenger"
+        "aibaba_ai_community.chat_loaders.facebook_messenger"
     ),
     "FolderFacebookMessengerChatLoader": (
-        "aiagentsforce_community.chat_loaders.facebook_messenger"
+        "aibaba_ai_community.chat_loaders.facebook_messenger"
     ),
 }
 

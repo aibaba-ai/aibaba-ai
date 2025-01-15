@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_compressors import __all__, _module_lookup
+from aibaba_ai_community.document_compressors import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "LLMLinguaCompressor",

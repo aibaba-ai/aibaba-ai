@@ -1,6 +1,6 @@
 """Test octoai embeddings."""
 
-from aiagentsforce_community.embeddings.octoai_embeddings import (
+from aibaba_ai_community.embeddings.octoai_embeddings import (
     OctoAIEmbeddings,
 )
 

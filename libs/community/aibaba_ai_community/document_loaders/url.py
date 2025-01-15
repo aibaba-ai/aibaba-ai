@@ -5,7 +5,7 @@ from typing import Any, List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +25,7 @@ class UnstructuredURLLoader(BaseLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredURLLoader
+    from aibaba_ai_community.document_loaders import UnstructuredURLLoader
 
     loader = UnstructuredURLLoader(
         urls=["<url-1>", "<url-2>"], mode="elements", strategy="fast",

@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools.nuclia.tool import NUASchema, NucliaUnderstandingAPI
+    from aibaba_ai_community.tools.nuclia.tool import NUASchema, NucliaUnderstandingAPI
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "NUASchema": "aiagentsforce_community.tools.nuclia.tool",
-    "NucliaUnderstandingAPI": "aiagentsforce_community.tools.nuclia.tool",
+    "NUASchema": "aibaba_ai_community.tools.nuclia.tool",
+    "NucliaUnderstandingAPI": "aibaba_ai_community.tools.nuclia.tool",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

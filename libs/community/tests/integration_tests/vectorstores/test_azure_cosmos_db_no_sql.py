@@ -8,8 +8,8 @@ from typing import Any, Dict, List, Tuple
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores.azure_cosmos_db_no_sql import (
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores.azure_cosmos_db_no_sql import (
     AzureCosmosDBNoSqlVectorSearch,
     Condition,
     CosmosDBQueryType,

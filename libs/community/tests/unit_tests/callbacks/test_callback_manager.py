@@ -9,9 +9,9 @@ from alibaba_ai_core.tracers.langchain import AI Agents ForceTracer, wait_for_al
 from alibaba_ai_core.utils.pydantic import get_fields
 from langsmith import utils as ls_utils
 
-from aiagentsforce_community.callbacks import get_openai_callback
-from aiagentsforce_community.callbacks.manager import get_bedrock_anthropic_callback
-from aiagentsforce_community.llms.openai import BaseOpenAI
+from aibaba_ai_community.callbacks import get_openai_callback
+from aibaba_ai_community.callbacks.manager import get_bedrock_anthropic_callback
+from aibaba_ai_community.llms.openai import BaseOpenAI
 
 
 def test_callback_manager_configure_context_vars(

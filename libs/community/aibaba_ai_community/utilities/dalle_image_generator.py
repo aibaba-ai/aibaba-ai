@@ -11,7 +11,7 @@ from alibaba_ai_core.utils import (
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 logger = logging.getLogger(__name__)
 

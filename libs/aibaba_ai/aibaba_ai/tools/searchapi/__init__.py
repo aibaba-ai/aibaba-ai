@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import SearchAPIResults, SearchAPIRun
+    from aibaba_ai_community.tools import SearchAPIResults, SearchAPIRun
 
 """SearchApi.io API Toolkit."""
 """Tool for the SearchApi.io Google SERP API."""
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "SearchAPIResults": "aiagentsforce_community.tools",
-    "SearchAPIRun": "aiagentsforce_community.tools",
+    "SearchAPIResults": "aibaba_ai_community.tools",
+    "SearchAPIRun": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

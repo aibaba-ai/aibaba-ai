@@ -2,7 +2,7 @@ from typing import Any, Dict, List, Tuple
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.cross_encoders.base import BaseCrossEncoder
+from aibaba_ai_community.cross_encoders.base import BaseCrossEncoder
 
 DEFAULT_MODEL_NAME = "BAAI/bge-reranker-base"
 
@@ -13,7 +13,7 @@ class HuggingFaceCrossEncoder(BaseModel, BaseCrossEncoder):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.cross_encoders import HuggingFaceCrossEncoder
+            from aibaba_ai_community.cross_encoders import HuggingFaceCrossEncoder
 
             model_name = "BAAI/bge-reranker-base"
             model_kwargs = {'device': 'cpu'}

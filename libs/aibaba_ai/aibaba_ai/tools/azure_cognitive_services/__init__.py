@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         AzureCogsFormRecognizerTool,
         AzureCogsImageAnalysisTool,
         AzureCogsSpeech2TextTool,
@@ -17,11 +17,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AzureCogsImageAnalysisTool": "aiagentsforce_community.tools",
-    "AzureCogsFormRecognizerTool": "aiagentsforce_community.tools",
-    "AzureCogsSpeech2TextTool": "aiagentsforce_community.tools",
-    "AzureCogsText2SpeechTool": "aiagentsforce_community.tools",
-    "AzureCogsTextAnalyticsHealthTool": "aiagentsforce_community.tools",
+    "AzureCogsImageAnalysisTool": "aibaba_ai_community.tools",
+    "AzureCogsFormRecognizerTool": "aibaba_ai_community.tools",
+    "AzureCogsSpeech2TextTool": "aibaba_ai_community.tools",
+    "AzureCogsText2SpeechTool": "aibaba_ai_community.tools",
+    "AzureCogsTextAnalyticsHealthTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

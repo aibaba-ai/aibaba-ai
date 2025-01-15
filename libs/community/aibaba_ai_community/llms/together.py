@@ -13,7 +13,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, SecretStr, model_validator
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 logger = logging.getLogger(__name__)
 
@@ -89,7 +89,7 @@ class Together(LLM):
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

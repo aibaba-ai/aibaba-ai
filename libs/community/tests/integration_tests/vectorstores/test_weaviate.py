@@ -8,8 +8,8 @@ from typing import Generator, Union
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores.weaviate import Weaviate
+from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores.weaviate import Weaviate
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 logging.basicConfig(level=logging.DEBUG)

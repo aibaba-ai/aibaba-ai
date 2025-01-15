@@ -1,6 +1,6 @@
 import os
 
-from aiagentsforce_community.retrievers.you import YouRetriever
+from aibaba_ai_community.retrievers.you import YouRetriever
 
 
 class TestYouRetriever:

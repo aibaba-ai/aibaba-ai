@@ -58,8 +58,8 @@ class Meilisearch(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Meilisearch
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import Meilisearch
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             import meilisearch
 
             # api_key is optional; provide it if your meilisearch instance requires it
@@ -316,8 +316,8 @@ class Meilisearch(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Meilisearch
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Meilisearch
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 import meilisearch
 
                 # The environment should be the one specified next to the API key

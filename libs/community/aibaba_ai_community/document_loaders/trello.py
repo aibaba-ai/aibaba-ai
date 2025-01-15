@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any, Iterator, Literal, Optional, Tuple
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 if TYPE_CHECKING:
     from trello import Board, Card, TrelloClient

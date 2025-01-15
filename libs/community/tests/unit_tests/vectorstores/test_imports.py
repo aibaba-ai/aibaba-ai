@@ -1,7 +1,7 @@
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community import vectorstores
-from aiagentsforce_community.vectorstores import __all__, _module_lookup
+from aibaba_ai_community import vectorstores
+from aibaba_ai_community.vectorstores import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "Aerospike",

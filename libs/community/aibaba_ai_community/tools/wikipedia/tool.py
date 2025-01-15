@@ -6,7 +6,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.utilities.wikipedia import WikipediaAPIWrapper
+from aibaba_ai_community.utilities.wikipedia import WikipediaAPIWrapper
 
 
 class WikipediaQueryInput(BaseModel):

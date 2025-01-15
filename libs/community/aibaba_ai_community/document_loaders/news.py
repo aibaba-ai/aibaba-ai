@@ -5,7 +5,7 @@ from typing import Any, Iterator, List
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,7 @@ class NewsURLLoader(BaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import NewsURLLoader
+            from aibaba_ai_community.document_loaders import NewsURLLoader
 
             loader = NewsURLLoader(
                 urls=["<url-1>", "<url-2>"],

@@ -11,7 +11,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.runnables import run_in_executor
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 logger = logging.getLogger(__name__)
 
@@ -31,8 +31,8 @@ class Rockset(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Rockset
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import Rockset
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             import rockset
 
             # Make sure you use the right host (region) for your Rockset instance

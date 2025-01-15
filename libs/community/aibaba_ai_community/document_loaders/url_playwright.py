@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, AsyncIterator, Dict, Iterator, List, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 if TYPE_CHECKING:
     from playwright.async_api import Browser as AsyncBrowser
@@ -117,7 +117,7 @@ class PlaywrightURLLoader(BaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import PlaywrightURLLoader
+            from aibaba_ai_community.document_loaders import PlaywrightURLLoader
 
             urls = ["https://api.ipify.org/?format=json",]
             proxy={

@@ -20,7 +20,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -565,7 +565,7 @@ class Aerospike(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Aerospike
+                from aibaba_ai_community.vectorstores import Aerospike
                 from langchain_openai import OpenAIEmbeddings
                 from aerospike_vector_search import Client, HostPort
 

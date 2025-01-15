@@ -20,7 +20,7 @@ class SambaStudioEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import SambaStudioEmbeddings
+            from aibaba_ai_community.embeddings import SambaStudioEmbeddings
 
             embeddings = SambaStudioEmbeddings(sambastudio_embeddings_base_url=base_url,
                                           sambastudio_embeddings_base_uri=base_uri,

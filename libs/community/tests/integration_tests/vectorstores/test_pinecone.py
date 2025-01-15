@@ -8,8 +8,8 @@ import numpy as np
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import OpenAIEmbeddings
-from aiagentsforce_community.vectorstores.pinecone import Pinecone
+from aibaba_ai_community.embeddings import OpenAIEmbeddings
+from aibaba_ai_community.vectorstores.pinecone import Pinecone
 
 if TYPE_CHECKING:
     import pinecone

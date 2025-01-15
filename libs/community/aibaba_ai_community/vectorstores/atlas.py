@@ -22,8 +22,8 @@ class AtlasDB(VectorStore):
     Example:
         .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import AtlasDB
-                from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import AtlasDB
+                from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()
                 vectorstore = AtlasDB("my_project", embeddings.embed_query)

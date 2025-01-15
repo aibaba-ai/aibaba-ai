@@ -1,7 +1,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.bm25 import BM25Retriever
+from aibaba_ai_community.retrievers.bm25 import BM25Retriever
 
 
 @pytest.mark.requires("rank_bm25")

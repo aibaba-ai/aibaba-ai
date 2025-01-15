@@ -3,14 +3,14 @@ from typing import Dict, List
 from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 
-from aiagentsforce_community.tools.nasa.prompt import (
+from aibaba_ai_community.tools.nasa.prompt import (
     NASA_CAPTIONS_PROMPT,
     NASA_MANIFEST_PROMPT,
     NASA_METADATA_PROMPT,
     NASA_SEARCH_PROMPT,
 )
-from aiagentsforce_community.tools.nasa.tool import NasaAction
-from aiagentsforce_community.utilities.nasa import NasaAPIWrapper
+from aibaba_ai_community.tools.nasa.tool import NasaAction
+from aibaba_ai_community.utilities.nasa import NasaAPIWrapper
 
 
 class NasaToolkit(BaseToolkit):

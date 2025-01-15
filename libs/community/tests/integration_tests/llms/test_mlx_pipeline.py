@@ -1,6 +1,6 @@
 """Test MLX Pipeline wrapper."""
 
-from aiagentsforce_community.llms.mlx_pipeline import MLXPipeline
+from aibaba_ai_community.llms.mlx_pipeline import MLXPipeline
 
 
 def test_mlx_pipeline_text_generation() -> None:

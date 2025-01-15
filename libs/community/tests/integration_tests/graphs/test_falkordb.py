@@ -2,7 +2,7 @@ import unittest
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from aiagentsforce_community.graphs import FalkorDBGraph
+from aibaba_ai_community.graphs import FalkorDBGraph
 
 
 class TestFalkorDB(unittest.TestCase):

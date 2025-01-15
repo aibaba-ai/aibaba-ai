@@ -5,7 +5,7 @@ import uuid
 import pytest
 from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests
 
-from aiagentsforce_community.vectorstores import ApertureDB
+from aibaba_ai_community.vectorstores import ApertureDB
 
 
 class TestApertureStandard(VectorStoreIntegrationTests):

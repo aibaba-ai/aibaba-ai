@@ -12,7 +12,7 @@ class GPT4AllEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import GPT4AllEmbeddings
+            from aibaba_ai_community.embeddings import GPT4AllEmbeddings
 
             model_name = "all-MiniLM-L6-v2.gguf2.f16.gguf"
             gpt4all_kwargs = {'allow_download': 'True'}

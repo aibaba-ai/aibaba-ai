@@ -13,7 +13,7 @@ git grep '^from langchain\.' langchain/utils | grep -vE 'from langchain.(pydanti
 git grep '^from langchain\.' langchain/schema | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|env|_api)' && errors=$((errors+1))
 git grep '^from langchain\.' langchain/adapters | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|_api)' && errors=$((errors+1))
 git grep '^from langchain\.' langchain/callbacks | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|callbacks|env|_api)' && errors=$((errors+1))
-# TODO: it's probably not amazing so that so many other modules depend on `aiagentsforce_community.utilities`, because there can be a lot of imports there
+# TODO: it's probably not amazing so that so many other modules depend on `aibaba_ai_community.utilities`, because there can be a lot of imports there
 git grep '^from langchain\.' langchain/utilities | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|callbacks|env|utilities|_api)' && errors=$((errors+1))
 git grep '^from langchain\.' langchain/storage | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|callbacks|env|storage|utilities|_api)' && errors=$((errors+1))
 git grep '^from langchain\.' langchain/prompts | grep -vE 'from langchain.(pydantic_v1|utils|schema|load|callbacks|env|prompts|_api)' && errors=$((errors+1))
@@ -27,11 +27,11 @@ langchain.(pydantic_v1|utils|schema|load|callbacks|env|_api|storage|llms|docstor
 # make sure not importing from langchain_experimental
 git --no-pager grep '^from langchain_experimental\.' . && errors=$((errors+1))
 
-# Add a basic lint rule to prevent imports from the global namespaces of aiagentsforce_community
+# Add a basic lint rule to prevent imports from the global namespaces of aibaba_ai_community
 # This lint rule won't catch imports from local scope.
 # We can't add that rule without a more complex script to ignore imports from inside
 # a if TYPE_CHECKING block.
-git grep '^from aiagentsforce_community'  | grep -vE '# ignore: community-import' && errors=$((errors+1))
+git grep '^from aibaba_ai_community'  | grep -vE '# ignore: community-import' && errors=$((errors+1))
 
 # Decide on an exit status based on the errors
 if [ "$errors" -gt 0 ]; then

@@ -11,8 +11,8 @@ from alibaba_ai_core.structured_query import (
     Visitor,
 )
 
-from aiagentsforce_community.vectorstores.redis import Redis
-from aiagentsforce_community.vectorstores.redis.filters import (
+from aibaba_ai_community.vectorstores.redis import Redis
+from aibaba_ai_community.vectorstores.redis.filters import (
     RedisFilterExpression,
     RedisFilterField,
     RedisFilterOperator,
@@ -20,7 +20,7 @@ from aiagentsforce_community.vectorstores.redis.filters import (
     RedisTag,
     RedisText,
 )
-from aiagentsforce_community.vectorstores.redis.schema import RedisModel
+from aibaba_ai_community.vectorstores.redis.schema import RedisModel
 
 _COMPARATOR_TO_BUILTIN_METHOD = {
     Comparator.EQ: "__eq__",

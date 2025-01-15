@@ -8,8 +8,8 @@ from typing import Any, Generator, Optional, Union
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.embeddings import AzureOpenAIEmbeddings
-from aiagentsforce_community.vectorstores.azure_cosmos_db import (
+from aibaba_ai_community.embeddings import AzureOpenAIEmbeddings
+from aibaba_ai_community.vectorstores.azure_cosmos_db import (
     AzureCosmosDBVectorSearch,
     CosmosDBSimilarityType,
     CosmosDBVectorSearchType,

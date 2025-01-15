@@ -62,7 +62,7 @@ from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 from typing_extensions import Self
 
-from aiagentsforce_community.utilities.requests import Requests
+from aibaba_ai_community.utilities.requests import Requests
 
 logger = logging.getLogger(__name__)
 

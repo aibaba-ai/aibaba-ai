@@ -6,7 +6,7 @@ pattern langchain_migrate_astradb() {
   find_replace_imports(list=[
 
             [
-                `aiagentsforce_community.vectorstores.astradb`,
+                `aibaba_ai_community.vectorstores.astradb`,
                 `AstraDB`,
                 `langchain_astradb`,
                 `AstraDBVectorStore`
@@ -14,7 +14,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.storage.astradb`,
+                `aibaba_ai_community.storage.astradb`,
                 `AstraDBByteStore`,
                 `langchain_astradb`,
                 `AstraDBByteStore`
@@ -22,7 +22,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.storage.astradb`,
+                `aibaba_ai_community.storage.astradb`,
                 `AstraDBStore`,
                 `langchain_astradb`,
                 `AstraDBStore`
@@ -30,7 +30,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.cache`,
+                `aibaba_ai_community.cache`,
                 `AstraDBCache`,
                 `langchain_astradb`,
                 `AstraDBCache`
@@ -38,7 +38,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.cache`,
+                `aibaba_ai_community.cache`,
                 `AstraDBSemanticCache`,
                 `langchain_astradb`,
                 `AstraDBSemanticCache`
@@ -46,7 +46,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.chat_message_histories.astradb`,
+                `aibaba_ai_community.chat_message_histories.astradb`,
                 `AstraDBChatMessageHistory`,
                 `langchain_astradb`,
                 `AstraDBChatMessageHistory`
@@ -54,7 +54,7 @@ pattern langchain_migrate_astradb() {
             ,
 
             [
-                `aiagentsforce_community.document_loaders.astradb`,
+                `aibaba_ai_community.document_loaders.astradb`,
                 `AstraDBLoader`,
                 `langchain_astradb`,
                 `AstraDBLoader`

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.utils import (
+    from aibaba_ai_community.callbacks.utils import (
         BaseMetadataCallbackHandler,
         _flatten_dict,
         flatten_dict,
@@ -18,14 +18,14 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "import_spacy": "aiagentsforce_community.callbacks.utils",
-    "import_pandas": "aiagentsforce_community.callbacks.utils",
-    "import_textstat": "aiagentsforce_community.callbacks.utils",
-    "_flatten_dict": "aiagentsforce_community.callbacks.utils",
-    "flatten_dict": "aiagentsforce_community.callbacks.utils",
-    "hash_string": "aiagentsforce_community.callbacks.utils",
-    "load_json": "aiagentsforce_community.callbacks.utils",
-    "BaseMetadataCallbackHandler": "aiagentsforce_community.callbacks.utils",
+    "import_spacy": "aibaba_ai_community.callbacks.utils",
+    "import_pandas": "aibaba_ai_community.callbacks.utils",
+    "import_textstat": "aibaba_ai_community.callbacks.utils",
+    "_flatten_dict": "aibaba_ai_community.callbacks.utils",
+    "flatten_dict": "aibaba_ai_community.callbacks.utils",
+    "hash_string": "aibaba_ai_community.callbacks.utils",
+    "load_json": "aibaba_ai_community.callbacks.utils",
+    "BaseMetadataCallbackHandler": "aibaba_ai_community.callbacks.utils",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

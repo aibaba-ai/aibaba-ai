@@ -65,7 +65,7 @@ class LLMChain(Chain):
         .. code-block:: python
 
             from langchain.chains import LLMChain
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from aibaba_ai_core.prompts import PromptTemplate
             prompt_template = "Tell me a {adjective} joke"
             prompt = PromptTemplate(

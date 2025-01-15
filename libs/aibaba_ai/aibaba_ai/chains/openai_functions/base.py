@@ -90,7 +90,7 @@ def create_openai_fn_chain(
                 from typing import Optional
 
                 from langchain.chains.openai_functions import create_openai_fn_chain
-                from aiagentsforce_community.chat_models import ChatOpenAI
+                from aibaba_ai_community.chat_models import ChatOpenAI
                 from aibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field
@@ -180,7 +180,7 @@ def create_structured_output_chain(
                 from typing import Optional
 
                 from langchain.chains.openai_functions import create_structured_output_chain
-                from aiagentsforce_community.chat_models import ChatOpenAI
+                from aibaba_ai_community.chat_models import ChatOpenAI
                 from aibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field

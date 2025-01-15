@@ -17,7 +17,7 @@ class TwilioAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities.twilio import TwilioAPIWrapper
+            from aibaba_ai_community.utilities.twilio import TwilioAPIWrapper
             twilio = TwilioAPIWrapper(
                 account_sid="ACxxx",
                 auth_token="xxx",

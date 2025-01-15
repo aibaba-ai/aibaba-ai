@@ -7,7 +7,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 from pydantic import Field
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from docarray import BaseDoc

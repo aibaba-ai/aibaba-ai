@@ -3,7 +3,7 @@
 
 from alibaba_ai_core.vectorstores import InMemoryVectorStore
 
-from aiagentsforce_community.embeddings.sentence_transformer import (
+from aibaba_ai_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,
 )
 

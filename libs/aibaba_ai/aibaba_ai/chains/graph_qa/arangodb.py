@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.arangodb import ArangoGraphQAChain
+    from aibaba_ai_community.chains.graph_qa.arangodb import ArangoGraphQAChain
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ArangoGraphQAChain": "aiagentsforce_community.chains.graph_qa.arangodb",
+    "ArangoGraphQAChain": "aibaba_ai_community.chains.graph_qa.arangodb",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

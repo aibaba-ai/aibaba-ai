@@ -1,6 +1,6 @@
 """Integration test for Dataherald API Wrapper."""
 
-from aiagentsforce_community.utilities.dataherald import DataheraldAPIWrapper
+from aibaba_ai_community.utilities.dataherald import DataheraldAPIWrapper
 
 
 def test_call() -> None:

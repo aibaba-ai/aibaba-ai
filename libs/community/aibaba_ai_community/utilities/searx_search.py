@@ -24,7 +24,7 @@ Then create a searx search instance like this:
 
     .. code-block:: python
 
-        from aiagentsforce_community.utilities import SearxSearchWrapper
+        from aibaba_ai_community.utilities import SearxSearchWrapper
 
         # when the host starts with `http` SSL is disabled and the connection
         # is assumed to be on a private network
@@ -188,13 +188,13 @@ class SearxSearchWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import SearxSearchWrapper
+            from aibaba_ai_community.utilities import SearxSearchWrapper
             searx = SearxSearchWrapper(searx_host="http://localhost:8888")
 
     Example with SSL disabled:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities import SearxSearchWrapper
+            from aibaba_ai_community.utilities import SearxSearchWrapper
             # note the unsecure parameter is not needed if you pass the url scheme as
             # http
             searx = SearxSearchWrapper(searx_host="http://localhost:8888",
@@ -321,7 +321,7 @@ class SearxSearchWrapper(BaseModel):
 
             .. code-block:: python
 
-                from aiagentsforce_community.utilities import SearxSearchWrapper
+                from aibaba_ai_community.utilities import SearxSearchWrapper
                 searx = SearxSearchWrapper(searx_host="http://my.searx.host")
                 searx.run("what is the weather in France ?", engine="qwant")
 

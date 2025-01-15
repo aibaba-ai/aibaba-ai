@@ -2,11 +2,11 @@ from typing import Set
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.graph_vectorstores.extractors import (
+from aibaba_ai_community.graph_vectorstores.extractors import (
     LinkExtractor,
     LinkExtractorTransformer,
 )
-from aiagentsforce_community.graph_vectorstores.links import Link, get_links
+from aibaba_ai_community.graph_vectorstores.links import Link, get_links
 
 TEXT1 = "Text1"
 TEXT2 = "Text2"

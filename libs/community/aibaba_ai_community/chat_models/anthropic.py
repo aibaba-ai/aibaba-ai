@@ -22,7 +22,7 @@ from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatRes
 from alibaba_ai_core.prompt_values import PromptValue
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.anthropic import _AnthropicCommon
+from aibaba_ai_community.llms.anthropic import _AnthropicCommon
 
 
 def _convert_one_message_to_text(
@@ -88,7 +88,7 @@ class ChatAnthropic(BaseChatModel, _AnthropicCommon):
         .. code-block:: python
 
             import anthropic
-            from aiagentsforce_community.chat_models import ChatAnthropic
+            from aibaba_ai_community.chat_models import ChatAnthropic
             model = ChatAnthropic(model="<model_name>", anthropic_api_key="my-api-key")
     """
 

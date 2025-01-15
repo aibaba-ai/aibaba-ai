@@ -4,7 +4,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.retrievers import BaseRetriever
 
-from aiagentsforce_community.utilities.wikipedia import WikipediaAPIWrapper
+from aibaba_ai_community.utilities.wikipedia import WikipediaAPIWrapper
 
 
 class WikipediaRetriever(BaseRetriever, WikipediaAPIWrapper):
@@ -20,7 +20,7 @@ class WikipediaRetriever(BaseRetriever, WikipediaAPIWrapper):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.retrievers import WikipediaRetriever
+            from aibaba_ai_community.retrievers import WikipediaRetriever
 
             retriever = WikipediaRetriever()
 

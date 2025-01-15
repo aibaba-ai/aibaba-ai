@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import pytest
 
-from aiagentsforce_community.vectorstores.azuresearch import AzureSearch
+from aibaba_ai_community.vectorstores.azuresearch import AzureSearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 DEFAULT_VECTOR_DIMENSION = 4

@@ -1,4 +1,4 @@
-from aiagentsforce_community.llms.openlm import OpenLM
+from aibaba_ai_community.llms.openlm import OpenLM
 
 
 def test_openlm_call() -> None:

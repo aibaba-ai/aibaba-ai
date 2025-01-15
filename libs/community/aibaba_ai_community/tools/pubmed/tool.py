@@ -4,7 +4,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.pubmed import PubMedAPIWrapper
+from aibaba_ai_community.utilities.pubmed import PubMedAPIWrapper
 
 
 class PubmedQueryRun(BaseTool):  # type: ignore[override]

@@ -1,6 +1,6 @@
 """Integration test for Bing Search API Wrapper."""
 
-from aiagentsforce_community.utilities.bing_search import BingSearchAPIWrapper
+from aibaba_ai_community.utilities.bing_search import BingSearchAPIWrapper
 
 
 def test_call() -> None:

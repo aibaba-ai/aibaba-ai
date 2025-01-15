@@ -5,8 +5,8 @@ from alibaba_ai_core.messages import BaseMessage, SystemMessage, get_buffer_stri
 from alibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.graphs import NetworkxEntityGraph
-from aiagentsforce_community.graphs.networkx_graph import (
+from aibaba_ai_community.graphs import NetworkxEntityGraph
+from aibaba_ai_community.graphs.networkx_graph import (
     KnowledgeTriple,
     get_entities,
     parse_triples,

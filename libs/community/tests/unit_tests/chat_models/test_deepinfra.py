@@ -1,4 +1,4 @@
-from aiagentsforce_community.chat_models import ChatDeepInfra
+from aibaba_ai_community.chat_models import ChatDeepInfra
 
 
 def test_deepinfra_model_name_param() -> None:

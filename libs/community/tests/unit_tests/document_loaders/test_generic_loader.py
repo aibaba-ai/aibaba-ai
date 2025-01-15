@@ -8,10 +8,10 @@ from typing import Any, Generator, Iterator
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob, FileSystemBlobLoader
-from aiagentsforce_community.document_loaders.generic import GenericLoader
-from aiagentsforce_community.document_loaders.parsers.txt import TextParser
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob, FileSystemBlobLoader
+from aibaba_ai_community.document_loaders.generic import GenericLoader
+from aibaba_ai_community.document_loaders.parsers.txt import TextParser
 
 
 @pytest.fixture

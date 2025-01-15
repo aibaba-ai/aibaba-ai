@@ -7,13 +7,13 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.spark_sql.tool import (
+from aibaba_ai_community.tools.spark_sql.tool import (
     InfoSparkSQLTool,
     ListSparkSQLTool,
     QueryCheckerTool,
     QuerySparkSQLTool,
 )
-from aiagentsforce_community.utilities.spark_sql import SparkSQL
+from aibaba_ai_community.utilities.spark_sql import SparkSQL
 
 
 class SparkSQLToolkit(BaseToolkit):

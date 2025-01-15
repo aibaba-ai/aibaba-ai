@@ -19,7 +19,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -137,7 +137,7 @@ class YandexGPT(_BaseYandexGPT, LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import YandexGPT
+            from aibaba_ai_community.llms import YandexGPT
             yandex_gpt = YandexGPT(iam_token="t1.9eu...", folder_id="b1g...")
     """
 

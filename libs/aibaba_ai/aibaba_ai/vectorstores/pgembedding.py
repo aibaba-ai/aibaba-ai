@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.vectorstores import PGEmbedding
-    from aiagentsforce_community.vectorstores.pgembedding import (
+    from aibaba_ai_community.vectorstores import PGEmbedding
+    from aibaba_ai_community.vectorstores.pgembedding import (
         CollectionStore,
         EmbeddingStore,
         QueryResult,
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "CollectionStore": "aiagentsforce_community.vectorstores.pgembedding",
-    "EmbeddingStore": "aiagentsforce_community.vectorstores.pgembedding",
-    "QueryResult": "aiagentsforce_community.vectorstores.pgembedding",
-    "PGEmbedding": "aiagentsforce_community.vectorstores",
+    "CollectionStore": "aibaba_ai_community.vectorstores.pgembedding",
+    "EmbeddingStore": "aibaba_ai_community.vectorstores.pgembedding",
+    "QueryResult": "aibaba_ai_community.vectorstores.pgembedding",
+    "PGEmbedding": "aibaba_ai_community.vectorstores",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

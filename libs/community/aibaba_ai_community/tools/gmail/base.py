@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.tools.gmail.utils import build_resource_service
+from aibaba_ai_community.tools.gmail.utils import build_resource_service
 
 if TYPE_CHECKING:
     # This is for linting and IDE typehints

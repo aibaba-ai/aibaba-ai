@@ -19,8 +19,8 @@ class DeepEvalCallbackHandler(BaseCallbackHandler):
         ImportError: if the `deepeval` package is not installed.
 
     Examples:
-        >>> from aiagentsforce_community.llms import OpenAI
-        >>> from aiagentsforce_community.callbacks import DeepEvalCallbackHandler
+        >>> from aibaba_ai_community.llms import OpenAI
+        >>> from aibaba_ai_community.callbacks import DeepEvalCallbackHandler
         >>> from deepeval.metrics import AnswerRelevancy
         >>> metric = AnswerRelevancy(minimum_score=0.3)
         >>> deepeval_callback = DeepEvalCallbackHandler(

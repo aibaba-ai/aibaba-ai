@@ -95,7 +95,7 @@ class SQLStore(BaseStore[str, bytes]):
 
         .. code-block:: python
 
-            from aiagentsforce_community.storage import SQLStore
+            from aibaba_ai_community.storage import SQLStore
 
             # Instantiate the SQLStore with the root path
             sql_store = SQLStore(namespace="test", db_url="sqlite://:memory:")

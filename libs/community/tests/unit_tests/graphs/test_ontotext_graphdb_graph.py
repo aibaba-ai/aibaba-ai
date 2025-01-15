@@ -7,11 +7,11 @@ import pytest
 
 class TestOntotextGraphDBGraph(unittest.TestCase):
     def test_import(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph  # noqa: F401
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph  # noqa: F401
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_wrong_type(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(TypeError) as e:
             OntotextGraphDBGraph._validate_user_query(
@@ -26,7 +26,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_invalid_sparql_syntax(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph._validate_user_query(
@@ -41,7 +41,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_invalid_query_type_select(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph._validate_user_query("SELECT * { ?s ?p ?o }")
@@ -52,7 +52,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_invalid_query_type_ask(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph._validate_user_query("ASK { ?s ?p ?o }")
@@ -63,7 +63,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_invalid_query_type_describe(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph._validate_user_query(
@@ -78,7 +78,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_validate_user_query_construct(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         OntotextGraphDBGraph._validate_user_query(
             "CONSTRUCT {?s ?p ?o} FROM <https://swapi.co/ontology/> WHERE {?s ?p ?o}"
@@ -86,7 +86,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_check_connectivity(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph(
@@ -106,7 +106,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_local_file_does_not_exist(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         non_existing_file = os.path.join("non", "existing", "path", "to", "file.ttl")
         with self.assertRaises(FileNotFoundError) as e:
@@ -115,7 +115,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_local_file_no_access(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with tempfile.NamedTemporaryFile() as tmp_file:
             tmp_file_name = tmp_file.name
@@ -132,7 +132,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_local_file_bad_syntax(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with tempfile.TemporaryDirectory() as tempdir:
             tmp_file_path = os.path.join(tempdir, "starwars-ontology.trig")
@@ -150,7 +150,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_both_query_and_local_file_provided(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph(
@@ -165,7 +165,7 @@ class TestOntotextGraphDBGraph(unittest.TestCase):
 
     @pytest.mark.requires("rdflib")
     def test_nor_query_nor_local_file_provided(self) -> None:
-        from aiagentsforce_community.graphs import OntotextGraphDBGraph
+        from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
         with self.assertRaises(ValueError) as e:
             OntotextGraphDBGraph(

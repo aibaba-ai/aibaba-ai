@@ -8,7 +8,7 @@ from alibaba_ai_core.structured_query import (
     StructuredQuery,
 )
 
-from aiagentsforce_community.query_constructors.weaviate import WeaviateTranslator
+from aibaba_ai_community.query_constructors.weaviate import WeaviateTranslator
 
 DEFAULT_TRANSLATOR = WeaviateTranslator()
 

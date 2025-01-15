@@ -36,7 +36,7 @@ from aibaba_ai_core.utils.env import env_var_is_set
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.callbacks.manager import (
+    from aibaba_ai_community.callbacks.manager import (
         get_openai_callback,
         wandb_tracing_enabled,
     )
@@ -45,8 +45,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "get_openai_callback": "aiagentsforce_community.callbacks.manager",
-    "wandb_tracing_enabled": "aiagentsforce_community.callbacks.manager",
+    "get_openai_callback": "aibaba_ai_community.callbacks.manager",
+    "wandb_tracing_enabled": "aibaba_ai_community.callbacks.manager",
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)

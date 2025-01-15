@@ -6,7 +6,7 @@ import pytest
 import requests
 from pytest import MonkeyPatch
 
-from aiagentsforce_community.llms.llamafile import Llamafile
+from aibaba_ai_community.llms.llamafile import Llamafile
 
 
 def default_generation_params() -> Dict[str, Any]:

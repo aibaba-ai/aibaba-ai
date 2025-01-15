@@ -1,6 +1,6 @@
 """Test Bittensor Validator Endpoint wrapper."""
 
-from aiagentsforce_community.llms import NIBittensorLLM
+from aibaba_ai_community.llms import NIBittensorLLM
 
 
 def test_bittensor_call() -> None:

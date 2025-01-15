@@ -5,8 +5,8 @@ from typing import Optional
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import Qdrant
-from aiagentsforce_community.vectorstores.qdrant import QdrantException
+from aibaba_ai_community.vectorstores import Qdrant
+from aibaba_ai_community.vectorstores.qdrant import QdrantException
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
 )

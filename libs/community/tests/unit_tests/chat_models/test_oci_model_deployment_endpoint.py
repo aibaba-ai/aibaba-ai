@@ -5,7 +5,7 @@ import responses
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 from pytest_mock import MockerFixture
 
-from aiagentsforce_community.chat_models import ChatOCIModelDeployment
+from aibaba_ai_community.chat_models import ChatOCIModelDeployment
 
 
 @pytest.mark.requires("ads")

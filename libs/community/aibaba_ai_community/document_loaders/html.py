@@ -1,6 +1,6 @@
 from typing import List
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 
 class UnstructuredHTMLLoader(UnstructuredFileLoader):
@@ -15,7 +15,7 @@ class UnstructuredHTMLLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredHTMLLoader
+    from aibaba_ai_community.document_loaders import UnstructuredHTMLLoader
 
     loader = UnstructuredHTMLLoader(
         "example.html", mode="elements", strategy="fast",

@@ -5,7 +5,7 @@ from unittest.mock import create_autospec
 import pytest
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.callbacks import UpstashRatelimitError, UpstashRatelimitHandler
+from aibaba_ai_community.callbacks import UpstashRatelimitError, UpstashRatelimitHandler
 
 logger = logging.getLogger(__name__)
 

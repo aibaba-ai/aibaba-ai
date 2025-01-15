@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         GoogleApiClient,
         GoogleApiYoutubeLoader,
         YoutubeLoader,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "YoutubeLoader": "aiagentsforce_community.document_loaders",
-    "GoogleApiYoutubeLoader": "aiagentsforce_community.document_loaders",
-    "GoogleApiClient": "aiagentsforce_community.document_loaders",
+    "YoutubeLoader": "aibaba_ai_community.document_loaders",
+    "GoogleApiYoutubeLoader": "aibaba_ai_community.document_loaders",
+    "GoogleApiClient": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

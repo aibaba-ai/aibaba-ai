@@ -4,7 +4,7 @@ import pytest
 from pydantic import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
-from aiagentsforce_community.llms.aleph_alpha import AlephAlpha
+from aibaba_ai_community.llms.aleph_alpha import AlephAlpha
 
 
 @pytest.mark.requires("aleph_alpha_client")

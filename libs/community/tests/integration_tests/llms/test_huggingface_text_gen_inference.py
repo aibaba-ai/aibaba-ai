@@ -1,4 +1,4 @@
-from aiagentsforce_community.llms import HuggingFaceTextGenInference
+from aibaba_ai_community.llms import HuggingFaceTextGenInference
 
 
 def test_invocation_params_stop_sequences() -> None:

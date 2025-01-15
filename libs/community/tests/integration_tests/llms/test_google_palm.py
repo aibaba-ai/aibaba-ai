@@ -9,8 +9,8 @@ from pathlib import Path
 import pytest
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.google_palm import GooglePalm
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.google_palm import GooglePalm
+from aibaba_ai_community.llms.loading import load_llm
 
 model_names = [None, "models/text-bison-001", "gemini-pro"]
 

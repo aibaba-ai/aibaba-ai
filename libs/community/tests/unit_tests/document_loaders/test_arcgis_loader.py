@@ -2,7 +2,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.document_loaders import ArcGISLoader
+from aibaba_ai_community.document_loaders import ArcGISLoader
 
 
 @pytest.fixture

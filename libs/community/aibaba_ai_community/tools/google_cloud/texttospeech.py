@@ -7,7 +7,7 @@ from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.cloud import texttospeech  # type: ignore[attr-defined]

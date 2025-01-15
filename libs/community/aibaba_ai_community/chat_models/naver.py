@@ -169,7 +169,7 @@ class ChatClovaX(BaseChatModel):
 
             from alibaba_ai_core.messages import HumanMessage
 
-            from aiagentsforce_community import ChatClovaX
+            from aibaba_ai_community import ChatClovaX
 
             model = ChatClovaX()
             model.invoke([HumanMessage(content="Come up with 10 names for a song about parrots.")])

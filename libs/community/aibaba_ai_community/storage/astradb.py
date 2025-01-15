@@ -18,7 +18,7 @@ from typing import (
 from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.stores import BaseStore, ByteStore
 
-from aiagentsforce_community.utilities.astradb import (
+from aibaba_ai_community.utilities.astradb import (
     SetupMode,
     _AstraDBCollectionEnvironment,
 )

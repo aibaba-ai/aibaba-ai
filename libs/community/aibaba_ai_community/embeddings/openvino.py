@@ -19,7 +19,7 @@ class OpenVINOEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import OpenVINOEmbeddings
+            from aibaba_ai_community.embeddings import OpenVINOEmbeddings
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             model_kwargs = {'device': 'CPU'}
@@ -300,7 +300,7 @@ class OpenVINOBgeEmbeddings(OpenVINOEmbeddings):
     Bge Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import OpenVINOBgeEmbeddings
+            from aibaba_ai_community.embeddings import OpenVINOBgeEmbeddings
 
             model_name = "BAAI/bge-large-en-v1.5"
             model_kwargs = {'device': 'CPU'}

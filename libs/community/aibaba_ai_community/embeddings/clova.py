@@ -12,7 +12,7 @@ from pydantic import BaseModel, ConfigDict, SecretStr, model_validator
 @deprecated(
     since="0.3.4",
     removal="1.0.0",
-    alternative_import="aiagentsforce_community.ClovaXEmbeddings",
+    alternative_import="aibaba_ai_community.ClovaXEmbeddings",
 )
 class ClovaEmbeddings(BaseModel, Embeddings):
     """
@@ -31,7 +31,7 @@ class ClovaEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import ClovaEmbeddings
+            from aibaba_ai_community.embeddings import ClovaEmbeddings
             embeddings = ClovaEmbeddings(
                 clova_emb_api_key='your_clova_emb_api_key',
                 clova_emb_apigw_api_key='your_clova_emb_apigw_api_key',

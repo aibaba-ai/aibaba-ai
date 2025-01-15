@@ -11,7 +11,7 @@ from alibaba_ai_core.prompts import ChatPromptTemplate, HumanMessagePromptTempla
 from pydantic import BaseModel, SecretStr
 from pytest import CaptureFixture
 
-from aiagentsforce_community.chat_models.tongyi import ChatTongyi
+from aibaba_ai_community.chat_models.tongyi import ChatTongyi
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 _FUNCTIONS: Any = [

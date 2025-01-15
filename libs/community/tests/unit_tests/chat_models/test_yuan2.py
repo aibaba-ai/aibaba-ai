@@ -7,7 +7,7 @@ from alibaba_ai_core.messages import (
     SystemMessage,
 )
 
-from aiagentsforce_community.chat_models.yuan2 import (
+from aibaba_ai_community.chat_models.yuan2 import (
     ChatYuan2,
     _convert_dict_to_message,
     _convert_message_to_dict,

@@ -10,7 +10,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.messages import BaseMessage
 from alibaba_ai_core.outputs import ChatResult
 
-from aiagentsforce_community.chat_models import ChatOpenAI
+from aibaba_ai_community.chat_models import ChatOpenAI
 
 
 class PromptLayerChatOpenAI(ChatOpenAI):
@@ -33,7 +33,7 @@ class PromptLayerChatOpenAI(ChatOpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import PromptLayerChatOpenAI
+            from aibaba_ai_community.chat_models import PromptLayerChatOpenAI
             openai = PromptLayerChatOpenAI(model="gpt-3.5-turbo")
     """
 

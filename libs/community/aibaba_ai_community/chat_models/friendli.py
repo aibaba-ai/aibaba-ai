@@ -21,7 +21,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.llms.friendli import BaseFriendli
+from aibaba_ai_community.llms.friendli import BaseFriendli
 
 
 def get_role(message: BaseMessage) -> str:
@@ -72,7 +72,7 @@ class ChatFriendli(BaseChatModel, BaseFriendli):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import FriendliChat
+            from aibaba_ai_community.chat_models import FriendliChat
 
             chat = Friendli(
                 model="meta-llama-3.1-8b-instruct", friendli_token="YOUR FRIENDLI TOKEN"

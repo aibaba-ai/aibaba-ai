@@ -71,7 +71,7 @@ class ChatYuan2(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatYuan2
+            from aibaba_ai_community.chat_models import ChatYuan2
 
             chat = ChatYuan2()
     """

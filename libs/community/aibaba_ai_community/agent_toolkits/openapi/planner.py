@@ -12,7 +12,7 @@ from alibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
 from alibaba_ai_core.tools import BaseTool, Tool
 from pydantic import Field
 
-from aiagentsforce_community.agent_toolkits.openapi.planner_prompt import (
+from aibaba_ai_community.agent_toolkits.openapi.planner_prompt import (
     API_CONTROLLER_PROMPT,
     API_CONTROLLER_TOOL_DESCRIPTION,
     API_CONTROLLER_TOOL_NAME,
@@ -31,10 +31,10 @@ from aiagentsforce_community.agent_toolkits.openapi.planner_prompt import (
     REQUESTS_POST_TOOL_DESCRIPTION,
     REQUESTS_PUT_TOOL_DESCRIPTION,
 )
-from aiagentsforce_community.agent_toolkits.openapi.spec import ReducedOpenAPISpec
-from aiagentsforce_community.llms import OpenAI
-from aiagentsforce_community.tools.requests.tool import BaseRequestsTool
-from aiagentsforce_community.utilities.requests import RequestsWrapper
+from aibaba_ai_community.agent_toolkits.openapi.spec import ReducedOpenAPISpec
+from aibaba_ai_community.llms import OpenAI
+from aibaba_ai_community.tools.requests.tool import BaseRequestsTool
+from aibaba_ai_community.utilities.requests import RequestsWrapper
 
 #
 # Requests tools with LLM-instructed extraction of truncated responses.

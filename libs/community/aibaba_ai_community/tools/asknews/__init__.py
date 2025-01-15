@@ -1,6 +1,6 @@
 """AskNews API toolkit."""
 
-from aiagentsforce_community.tools.asknews.tool import (
+from aibaba_ai_community.tools.asknews.tool import (
     AskNewsSearch,
 )
 

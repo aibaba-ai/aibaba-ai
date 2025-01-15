@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import UnstructuredODTLoader
+from aibaba_ai_community.document_loaders import UnstructuredODTLoader
 
 
 def test_unstructured_odt_loader() -> None:

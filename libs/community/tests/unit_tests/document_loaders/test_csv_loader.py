@@ -2,7 +2,7 @@ from pathlib import Path
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.csv_loader import CSVLoader
+from aibaba_ai_community.document_loaders.csv_loader import CSVLoader
 
 
 class TestCSVLoader:

@@ -1,6 +1,6 @@
 """Test DeepSparse wrapper."""
 
-from aiagentsforce_community.llms import DeepSparse
+from aibaba_ai_community.llms import DeepSparse
 
 
 def test_deepsparse_call() -> None:

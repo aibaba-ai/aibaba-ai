@@ -13,7 +13,7 @@ from alibaba_ai_core.language_models.chat_models import (
 from alibaba_ai_core.messages import AIMessageChunk, BaseMessage
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
-from aiagentsforce_community.chat_models.litellm import (
+from aibaba_ai_community.chat_models.litellm import (
     ChatLiteLLM,
     _convert_delta_to_message_chunk,
     _convert_dict_to_message,
@@ -175,7 +175,7 @@ class ChatLiteLLMRouter(ChatLiteLLM):
         return self._create_chat_result(response, **params)
 
     # from
-    # https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aiagentsforce_community/chat_models/openai.py
+    # https://github.com/aibaba-ai/aibaba-ai/blob/master/libs/community/aibaba_ai_community/chat_models/openai.py
     # but modified to handle LiteLLM Usage class
     def _combine_llm_outputs(self, llm_outputs: List[Optional[dict]]) -> dict:
         overall_token_usage: dict = {}

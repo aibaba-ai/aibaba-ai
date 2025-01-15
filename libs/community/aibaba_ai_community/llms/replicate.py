@@ -29,7 +29,7 @@ class Replicate(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Replicate
+            from aibaba_ai_community.llms import Replicate
 
             replicate = Replicate(
                 model=(

@@ -10,7 +10,7 @@ from alibaba_ai_core.callbacks import (
     CallbackManagerForToolRun,
 )
 
-from aiagentsforce_community.utilities.requests import GenericRequestsWrapper
+from aibaba_ai_community.utilities.requests import GenericRequestsWrapper
 from alibaba_ai_core.tools import BaseTool
 
 

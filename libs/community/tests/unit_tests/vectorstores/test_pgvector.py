@@ -5,8 +5,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from aiagentsforce_community.embeddings import FakeEmbeddings
-from aiagentsforce_community.vectorstores import pgvector
+from aibaba_ai_community.embeddings import FakeEmbeddings
+from aibaba_ai_community.vectorstores import pgvector
 
 _CONNECTION_STRING = pgvector.PGVector.connection_string_from_db_params(
     driver="psycopg2",

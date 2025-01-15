@@ -6,7 +6,7 @@ import pytest
 import responses
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.utilities import OutlineAPIWrapper
+from aibaba_ai_community.utilities import OutlineAPIWrapper
 
 OUTLINE_INSTANCE_TEST_URL = "https://app.getoutline.com"
 OUTLINE_SUCCESS_RESPONSE = {

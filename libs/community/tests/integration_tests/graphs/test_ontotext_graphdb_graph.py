@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.graphs import OntotextGraphDBGraph
+from aibaba_ai_community.graphs import OntotextGraphDBGraph
 
 """
 cd libs/community/tests/integration_tests/graphs/docker-compose-ontotext-graphdb

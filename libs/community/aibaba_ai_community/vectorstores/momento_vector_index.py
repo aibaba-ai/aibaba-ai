@@ -18,7 +18,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     DistanceStrategy,
     maximal_marginal_relevance,
 )
@@ -40,8 +40,8 @@ class MomentoVectorIndex(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import OpenAIEmbeddings
-            from aiagentsforce_community.vectorstores import MomentoVectorIndex
+            from aibaba_ai_community.embeddings import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import MomentoVectorIndex
             from momento import (
                 CredentialProvider,
                 PreviewVectorIndexClient,

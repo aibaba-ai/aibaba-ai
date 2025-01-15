@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from typing import Any, Dict, List
 
-from aiagentsforce_community.graphs.graph_document import GraphDocument
+from aibaba_ai_community.graphs.graph_document import GraphDocument
 
 
 class GraphStore:

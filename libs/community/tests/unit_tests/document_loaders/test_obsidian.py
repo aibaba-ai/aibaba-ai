@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders.obsidian import ObsidianLoader
+from aibaba_ai_community.document_loaders.obsidian import ObsidianLoader
 
 OBSIDIAN_EXAMPLE_PATH = Path(__file__).parent / "sample_documents" / "obsidian"
 STANDARD_METADATA_FIELDS = {

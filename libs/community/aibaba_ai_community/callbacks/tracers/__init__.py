@@ -7,7 +7,7 @@ from alibaba_ai_core.tracers.stdout import (
     FunctionCallbackHandler,
 )
 
-from aiagentsforce_community.callbacks.tracers.wandb import WandbTracer
+from aibaba_ai_community.callbacks.tracers.wandb import WandbTracer
 
 __all__ = [
     "ConsoleCallbackHandler",

@@ -4,7 +4,7 @@ import os
 import tempfile
 from typing import TYPE_CHECKING, Any, Callable, List, Optional, Union
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredBaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredBaseLoader
 
 if TYPE_CHECKING:
     import botocore

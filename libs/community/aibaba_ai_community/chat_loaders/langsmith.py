@@ -144,7 +144,7 @@ class LangSmithDatasetChatLoader(BaseChatLoader):
 
         :return: Iterator of chat sessions containing messages.
         """
-        from aiagentsforce_community.adapters import openai as oai_adapter
+        from aibaba_ai_community.adapters import openai as oai_adapter
 
         data = self.client.read_dataset_openai_finetuning(
             dataset_name=self.dataset_name

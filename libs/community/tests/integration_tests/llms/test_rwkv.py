@@ -4,7 +4,7 @@
 import os
 from urllib.request import urlretrieve
 
-from aiagentsforce_community.llms import RWKV
+from aibaba_ai_community.llms import RWKV
 import warnings
 import pytest
 

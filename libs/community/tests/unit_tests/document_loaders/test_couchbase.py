@@ -3,4 +3,4 @@
 
 def test_couchbase_import() -> None:
     """Test that the Couchbase document loader can be imported."""
-    from aiagentsforce_community.document_loaders import CouchbaseLoader  # noqa: F401
+    from aibaba_ai_community.document_loaders import CouchbaseLoader  # noqa: F401

@@ -12,7 +12,7 @@ from alibaba_ai_core.messages import (
 )
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
-from aiagentsforce_community.chat_models import BedrockChat
+from aibaba_ai_community.chat_models import BedrockChat
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

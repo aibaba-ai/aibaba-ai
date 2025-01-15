@@ -7,11 +7,11 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional
 from alibaba_ai_core.callbacks import BaseCallbackManager
 from alibaba_ai_core.language_models import BaseLanguageModel
 
-from aiagentsforce_community.agent_toolkits.openapi.prompt import (
+from aibaba_ai_community.agent_toolkits.openapi.prompt import (
     OPENAPI_PREFIX,
     OPENAPI_SUFFIX,
 )
-from aiagentsforce_community.agent_toolkits.openapi.toolkit import OpenAPIToolkit
+from aibaba_ai_community.agent_toolkits.openapi.toolkit import OpenAPIToolkit
 
 if TYPE_CHECKING:
     from langchain.agents.agent import AgentExecutor

@@ -26,7 +26,7 @@ from langchain.chat_models.base import init_chat_model
 
 
 def __getattr__(name: str) -> None:
-    from aiagentsforce_community import chat_models
+    from aibaba_ai_community import chat_models
 
     # If not in interactive env, raise warning.
     if not is_interactive_env():
@@ -34,7 +34,7 @@ def __getattr__(name: str) -> None:
             "Importing chat models from langchain is deprecated. Importing from "
             "langchain will no longer be supported as of langchain==0.2.0. "
             "Please import from langchain-community instead:\n\n"
-            f"`from aiagentsforce_community.chat_models import {name}`.\n\n"
+            f"`from aibaba_ai_community.chat_models import {name}`.\n\n"
             "To install langchain-community run `pip install -U langchain-community`.",
             category=AI Agents ForceDeprecationWarning,
         )

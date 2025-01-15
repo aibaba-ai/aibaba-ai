@@ -8,95 +8,95 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.alpha_vantage import (
+    from aibaba_ai_community.utilities.alpha_vantage import (
         AlphaVantageAPIWrapper,
     )
-    from aiagentsforce_community.utilities.apify import (
+    from aibaba_ai_community.utilities.apify import (
         ApifyWrapper,
     )
-    from aiagentsforce_community.utilities.arcee import (
+    from aibaba_ai_community.utilities.arcee import (
         ArceeWrapper,
     )
-    from aiagentsforce_community.utilities.arxiv import (
+    from aibaba_ai_community.utilities.arxiv import (
         ArxivAPIWrapper,
     )
-    from aiagentsforce_community.utilities.asknews import (
+    from aibaba_ai_community.utilities.asknews import (
         AskNewsAPIWrapper,
     )
-    from aiagentsforce_community.utilities.awslambda import (
+    from aibaba_ai_community.utilities.awslambda import (
         LambdaWrapper,
     )
-    from aiagentsforce_community.utilities.bibtex import (
+    from aibaba_ai_community.utilities.bibtex import (
         BibtexparserWrapper,
     )
-    from aiagentsforce_community.utilities.bing_search import (
+    from aibaba_ai_community.utilities.bing_search import (
         BingSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.brave_search import (
+    from aibaba_ai_community.utilities.brave_search import (
         BraveSearchWrapper,
     )
-    from aiagentsforce_community.utilities.dataherald import DataheraldAPIWrapper
-    from aiagentsforce_community.utilities.dria_index import (
+    from aibaba_ai_community.utilities.dataherald import DataheraldAPIWrapper
+    from aibaba_ai_community.utilities.dria_index import (
         DriaAPIWrapper,
     )
-    from aiagentsforce_community.utilities.duckduckgo_search import (
+    from aibaba_ai_community.utilities.duckduckgo_search import (
         DuckDuckGoSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.golden_query import (
+    from aibaba_ai_community.utilities.golden_query import (
         GoldenQueryAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_books import (
+    from aibaba_ai_community.utilities.google_books import (
         GoogleBooksAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_finance import (
+    from aibaba_ai_community.utilities.google_finance import (
         GoogleFinanceAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_jobs import (
+    from aibaba_ai_community.utilities.google_jobs import (
         GoogleJobsAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_lens import (
+    from aibaba_ai_community.utilities.google_lens import (
         GoogleLensAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_places_api import (
+    from aibaba_ai_community.utilities.google_places_api import (
         GooglePlacesAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_scholar import (
+    from aibaba_ai_community.utilities.google_scholar import (
         GoogleScholarAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_search import (
+    from aibaba_ai_community.utilities.google_search import (
         GoogleSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_serper import (
+    from aibaba_ai_community.utilities.google_serper import (
         GoogleSerperAPIWrapper,
     )
-    from aiagentsforce_community.utilities.google_trends import (
+    from aibaba_ai_community.utilities.google_trends import (
         GoogleTrendsAPIWrapper,
     )
-    from aiagentsforce_community.utilities.graphql import (
+    from aibaba_ai_community.utilities.graphql import (
         GraphQLAPIWrapper,
     )
-    from aiagentsforce_community.utilities.infobip import (
+    from aibaba_ai_community.utilities.infobip import (
         InfobipAPIWrapper,
     )
-    from aiagentsforce_community.utilities.jira import (
+    from aibaba_ai_community.utilities.jira import (
         JiraAPIWrapper,
     )
-    from aiagentsforce_community.utilities.max_compute import (
+    from aibaba_ai_community.utilities.max_compute import (
         MaxComputeAPIWrapper,
     )
-    from aiagentsforce_community.utilities.merriam_webster import (
+    from aibaba_ai_community.utilities.merriam_webster import (
         MerriamWebsterAPIWrapper,
     )
-    from aiagentsforce_community.utilities.metaphor_search import (
+    from aibaba_ai_community.utilities.metaphor_search import (
         MetaphorSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.mojeek_search import (
+    from aibaba_ai_community.utilities.mojeek_search import (
         MojeekSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.nasa import (
+    from aibaba_ai_community.utilities.nasa import (
         NasaAPIWrapper,
     )
-    from aiagentsforce_community.utilities.nvidia_riva import (
+    from aibaba_ai_community.utilities.nvidia_riva import (
         AudioStream,
         NVIDIARivaASR,
         NVIDIARivaStream,
@@ -104,73 +104,73 @@ if TYPE_CHECKING:
         RivaASR,
         RivaTTS,
     )
-    from aiagentsforce_community.utilities.openweathermap import (
+    from aibaba_ai_community.utilities.openweathermap import (
         OpenWeatherMapAPIWrapper,
     )
-    from aiagentsforce_community.utilities.oracleai import (
+    from aibaba_ai_community.utilities.oracleai import (
         OracleSummary,
     )
-    from aiagentsforce_community.utilities.outline import (
+    from aibaba_ai_community.utilities.outline import (
         OutlineAPIWrapper,
     )
-    from aiagentsforce_community.utilities.passio_nutrition_ai import (
+    from aibaba_ai_community.utilities.passio_nutrition_ai import (
         NutritionAIAPI,
     )
-    from aiagentsforce_community.utilities.portkey import (
+    from aibaba_ai_community.utilities.portkey import (
         Portkey,
     )
-    from aiagentsforce_community.utilities.powerbi import (
+    from aibaba_ai_community.utilities.powerbi import (
         PowerBIDataset,
     )
-    from aiagentsforce_community.utilities.pubmed import (
+    from aibaba_ai_community.utilities.pubmed import (
         PubMedAPIWrapper,
     )
-    from aiagentsforce_community.utilities.rememberizer import RememberizerAPIWrapper
-    from aiagentsforce_community.utilities.requests import (
+    from aibaba_ai_community.utilities.rememberizer import RememberizerAPIWrapper
+    from aibaba_ai_community.utilities.requests import (
         Requests,
         RequestsWrapper,
         TextRequestsWrapper,
     )
-    from aiagentsforce_community.utilities.scenexplain import (
+    from aibaba_ai_community.utilities.scenexplain import (
         SceneXplainAPIWrapper,
     )
-    from aiagentsforce_community.utilities.searchapi import (
+    from aibaba_ai_community.utilities.searchapi import (
         SearchApiAPIWrapper,
     )
-    from aiagentsforce_community.utilities.searx_search import (
+    from aibaba_ai_community.utilities.searx_search import (
         SearxSearchWrapper,
     )
-    from aiagentsforce_community.utilities.serpapi import (
+    from aibaba_ai_community.utilities.serpapi import (
         SerpAPIWrapper,
     )
-    from aiagentsforce_community.utilities.spark_sql import (
+    from aibaba_ai_community.utilities.spark_sql import (
         SparkSQL,
     )
-    from aiagentsforce_community.utilities.sql_database import (
+    from aibaba_ai_community.utilities.sql_database import (
         SQLDatabase,
     )
-    from aiagentsforce_community.utilities.stackexchange import (
+    from aibaba_ai_community.utilities.stackexchange import (
         StackExchangeAPIWrapper,
     )
-    from aiagentsforce_community.utilities.steam import (
+    from aibaba_ai_community.utilities.steam import (
         SteamWebAPIWrapper,
     )
-    from aiagentsforce_community.utilities.tensorflow_datasets import (
+    from aibaba_ai_community.utilities.tensorflow_datasets import (
         TensorflowDatasets,
     )
-    from aiagentsforce_community.utilities.twilio import (
+    from aibaba_ai_community.utilities.twilio import (
         TwilioAPIWrapper,
     )
-    from aiagentsforce_community.utilities.wikipedia import (
+    from aibaba_ai_community.utilities.wikipedia import (
         WikipediaAPIWrapper,
     )
-    from aiagentsforce_community.utilities.wolfram_alpha import (
+    from aibaba_ai_community.utilities.wolfram_alpha import (
         WolframAlphaAPIWrapper,
     )
-    from aiagentsforce_community.utilities.you import (
+    from aibaba_ai_community.utilities.you import (
         YouSearchAPIWrapper,
     )
-    from aiagentsforce_community.utilities.zapier import (
+    from aibaba_ai_community.utilities.zapier import (
         ZapierNLAWrapper,
     )
 
@@ -239,72 +239,72 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "AlphaVantageAPIWrapper": "aiagentsforce_community.utilities.alpha_vantage",
-    "ApifyWrapper": "aiagentsforce_community.utilities.apify",
-    "ArceeWrapper": "aiagentsforce_community.utilities.arcee",
-    "ArxivAPIWrapper": "aiagentsforce_community.utilities.arxiv",
-    "AskNewsAPIWrapper": "aiagentsforce_community.utilities.asknews",
-    "AudioStream": "aiagentsforce_community.utilities.nvidia_riva",
-    "BibtexparserWrapper": "aiagentsforce_community.utilities.bibtex",
-    "BingSearchAPIWrapper": "aiagentsforce_community.utilities.bing_search",
-    "BraveSearchWrapper": "aiagentsforce_community.utilities.brave_search",
-    "DataheraldAPIWrapper": "aiagentsforce_community.utilities.dataherald",
-    "DriaAPIWrapper": "aiagentsforce_community.utilities.dria_index",
-    "DuckDuckGoSearchAPIWrapper": "aiagentsforce_community.utilities.duckduckgo_search",
-    "GoldenQueryAPIWrapper": "aiagentsforce_community.utilities.golden_query",
-    "GoogleBooksAPIWrapper": "aiagentsforce_community.utilities.google_books",
-    "GoogleFinanceAPIWrapper": "aiagentsforce_community.utilities.google_finance",
-    "GoogleJobsAPIWrapper": "aiagentsforce_community.utilities.google_jobs",
-    "GoogleLensAPIWrapper": "aiagentsforce_community.utilities.google_lens",
-    "GooglePlacesAPIWrapper": "aiagentsforce_community.utilities.google_places_api",
-    "GoogleScholarAPIWrapper": "aiagentsforce_community.utilities.google_scholar",
-    "GoogleSearchAPIWrapper": "aiagentsforce_community.utilities.google_search",
-    "GoogleSerperAPIWrapper": "aiagentsforce_community.utilities.google_serper",
-    "GoogleTrendsAPIWrapper": "aiagentsforce_community.utilities.google_trends",
-    "GraphQLAPIWrapper": "aiagentsforce_community.utilities.graphql",
-    "InfobipAPIWrapper": "aiagentsforce_community.utilities.infobip",
-    "JiraAPIWrapper": "aiagentsforce_community.utilities.jira",
-    "LambdaWrapper": "aiagentsforce_community.utilities.awslambda",
-    "MaxComputeAPIWrapper": "aiagentsforce_community.utilities.max_compute",
-    "MerriamWebsterAPIWrapper": "aiagentsforce_community.utilities.merriam_webster",
-    "MetaphorSearchAPIWrapper": "aiagentsforce_community.utilities.metaphor_search",
-    "MojeekSearchAPIWrapper": "aiagentsforce_community.utilities.mojeek_search",
-    "NVIDIARivaASR": "aiagentsforce_community.utilities.nvidia_riva",
-    "NVIDIARivaStream": "aiagentsforce_community.utilities.nvidia_riva",
-    "NVIDIARivaTTS": "aiagentsforce_community.utilities.nvidia_riva",
-    "NasaAPIWrapper": "aiagentsforce_community.utilities.nasa",
-    "NutritionAIAPI": "aiagentsforce_community.utilities.passio_nutrition_ai",
-    "OpenWeatherMapAPIWrapper": "aiagentsforce_community.utilities.openweathermap",
-    "OracleSummary": "aiagentsforce_community.utilities.oracleai",
-    "OutlineAPIWrapper": "aiagentsforce_community.utilities.outline",
-    "Portkey": "aiagentsforce_community.utilities.portkey",
-    "PowerBIDataset": "aiagentsforce_community.utilities.powerbi",
-    "PubMedAPIWrapper": "aiagentsforce_community.utilities.pubmed",
-    "RememberizerAPIWrapper": "aiagentsforce_community.utilities.rememberizer",
-    "Requests": "aiagentsforce_community.utilities.requests",
-    "RequestsWrapper": "aiagentsforce_community.utilities.requests",
-    "RivaASR": "aiagentsforce_community.utilities.nvidia_riva",
-    "RivaTTS": "aiagentsforce_community.utilities.nvidia_riva",
-    "SQLDatabase": "aiagentsforce_community.utilities.sql_database",
-    "SceneXplainAPIWrapper": "aiagentsforce_community.utilities.scenexplain",
-    "SearchApiAPIWrapper": "aiagentsforce_community.utilities.searchapi",
-    "SearxSearchWrapper": "aiagentsforce_community.utilities.searx_search",
-    "SerpAPIWrapper": "aiagentsforce_community.utilities.serpapi",
-    "SparkSQL": "aiagentsforce_community.utilities.spark_sql",
-    "StackExchangeAPIWrapper": "aiagentsforce_community.utilities.stackexchange",
-    "SteamWebAPIWrapper": "aiagentsforce_community.utilities.steam",
-    "TensorflowDatasets": "aiagentsforce_community.utilities.tensorflow_datasets",
-    "TextRequestsWrapper": "aiagentsforce_community.utilities.requests",
-    "TwilioAPIWrapper": "aiagentsforce_community.utilities.twilio",
-    "WikipediaAPIWrapper": "aiagentsforce_community.utilities.wikipedia",
-    "WolframAlphaAPIWrapper": "aiagentsforce_community.utilities.wolfram_alpha",
-    "YouSearchAPIWrapper": "aiagentsforce_community.utilities.you",
-    "ZapierNLAWrapper": "aiagentsforce_community.utilities.zapier",
+    "AlphaVantageAPIWrapper": "aibaba_ai_community.utilities.alpha_vantage",
+    "ApifyWrapper": "aibaba_ai_community.utilities.apify",
+    "ArceeWrapper": "aibaba_ai_community.utilities.arcee",
+    "ArxivAPIWrapper": "aibaba_ai_community.utilities.arxiv",
+    "AskNewsAPIWrapper": "aibaba_ai_community.utilities.asknews",
+    "AudioStream": "aibaba_ai_community.utilities.nvidia_riva",
+    "BibtexparserWrapper": "aibaba_ai_community.utilities.bibtex",
+    "BingSearchAPIWrapper": "aibaba_ai_community.utilities.bing_search",
+    "BraveSearchWrapper": "aibaba_ai_community.utilities.brave_search",
+    "DataheraldAPIWrapper": "aibaba_ai_community.utilities.dataherald",
+    "DriaAPIWrapper": "aibaba_ai_community.utilities.dria_index",
+    "DuckDuckGoSearchAPIWrapper": "aibaba_ai_community.utilities.duckduckgo_search",
+    "GoldenQueryAPIWrapper": "aibaba_ai_community.utilities.golden_query",
+    "GoogleBooksAPIWrapper": "aibaba_ai_community.utilities.google_books",
+    "GoogleFinanceAPIWrapper": "aibaba_ai_community.utilities.google_finance",
+    "GoogleJobsAPIWrapper": "aibaba_ai_community.utilities.google_jobs",
+    "GoogleLensAPIWrapper": "aibaba_ai_community.utilities.google_lens",
+    "GooglePlacesAPIWrapper": "aibaba_ai_community.utilities.google_places_api",
+    "GoogleScholarAPIWrapper": "aibaba_ai_community.utilities.google_scholar",
+    "GoogleSearchAPIWrapper": "aibaba_ai_community.utilities.google_search",
+    "GoogleSerperAPIWrapper": "aibaba_ai_community.utilities.google_serper",
+    "GoogleTrendsAPIWrapper": "aibaba_ai_community.utilities.google_trends",
+    "GraphQLAPIWrapper": "aibaba_ai_community.utilities.graphql",
+    "InfobipAPIWrapper": "aibaba_ai_community.utilities.infobip",
+    "JiraAPIWrapper": "aibaba_ai_community.utilities.jira",
+    "LambdaWrapper": "aibaba_ai_community.utilities.awslambda",
+    "MaxComputeAPIWrapper": "aibaba_ai_community.utilities.max_compute",
+    "MerriamWebsterAPIWrapper": "aibaba_ai_community.utilities.merriam_webster",
+    "MetaphorSearchAPIWrapper": "aibaba_ai_community.utilities.metaphor_search",
+    "MojeekSearchAPIWrapper": "aibaba_ai_community.utilities.mojeek_search",
+    "NVIDIARivaASR": "aibaba_ai_community.utilities.nvidia_riva",
+    "NVIDIARivaStream": "aibaba_ai_community.utilities.nvidia_riva",
+    "NVIDIARivaTTS": "aibaba_ai_community.utilities.nvidia_riva",
+    "NasaAPIWrapper": "aibaba_ai_community.utilities.nasa",
+    "NutritionAIAPI": "aibaba_ai_community.utilities.passio_nutrition_ai",
+    "OpenWeatherMapAPIWrapper": "aibaba_ai_community.utilities.openweathermap",
+    "OracleSummary": "aibaba_ai_community.utilities.oracleai",
+    "OutlineAPIWrapper": "aibaba_ai_community.utilities.outline",
+    "Portkey": "aibaba_ai_community.utilities.portkey",
+    "PowerBIDataset": "aibaba_ai_community.utilities.powerbi",
+    "PubMedAPIWrapper": "aibaba_ai_community.utilities.pubmed",
+    "RememberizerAPIWrapper": "aibaba_ai_community.utilities.rememberizer",
+    "Requests": "aibaba_ai_community.utilities.requests",
+    "RequestsWrapper": "aibaba_ai_community.utilities.requests",
+    "RivaASR": "aibaba_ai_community.utilities.nvidia_riva",
+    "RivaTTS": "aibaba_ai_community.utilities.nvidia_riva",
+    "SQLDatabase": "aibaba_ai_community.utilities.sql_database",
+    "SceneXplainAPIWrapper": "aibaba_ai_community.utilities.scenexplain",
+    "SearchApiAPIWrapper": "aibaba_ai_community.utilities.searchapi",
+    "SearxSearchWrapper": "aibaba_ai_community.utilities.searx_search",
+    "SerpAPIWrapper": "aibaba_ai_community.utilities.serpapi",
+    "SparkSQL": "aibaba_ai_community.utilities.spark_sql",
+    "StackExchangeAPIWrapper": "aibaba_ai_community.utilities.stackexchange",
+    "SteamWebAPIWrapper": "aibaba_ai_community.utilities.steam",
+    "TensorflowDatasets": "aibaba_ai_community.utilities.tensorflow_datasets",
+    "TextRequestsWrapper": "aibaba_ai_community.utilities.requests",
+    "TwilioAPIWrapper": "aibaba_ai_community.utilities.twilio",
+    "WikipediaAPIWrapper": "aibaba_ai_community.utilities.wikipedia",
+    "WolframAlphaAPIWrapper": "aibaba_ai_community.utilities.wolfram_alpha",
+    "YouSearchAPIWrapper": "aibaba_ai_community.utilities.you",
+    "ZapierNLAWrapper": "aibaba_ai_community.utilities.zapier",
 }
 
 REMOVED = {
     "PythonREPL": (
-        "PythonREPL has been deprecated from aiagentsforce_community "
+        "PythonREPL has been deprecated from aibaba_ai_community "
         "due to being flagged by security scanners. See: "
         "https://github.com/aibaba-ai/aibaba-ai/issues/14345 "
         "If you need to use it, please use the version "

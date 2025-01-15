@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from aiagentsforce_community.tools.gmail.send_message import GmailSendMessage
+from aibaba_ai_community.tools.gmail.send_message import GmailSendMessage
 
 
 def test_send() -> None:

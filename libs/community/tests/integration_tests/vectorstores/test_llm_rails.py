@@ -1,4 +1,4 @@
-from aiagentsforce_community.vectorstores.llm_rails import LLMRails
+from aibaba_ai_community.vectorstores.llm_rails import LLMRails
 
 #
 # For this test to run properly, please setup as follows:

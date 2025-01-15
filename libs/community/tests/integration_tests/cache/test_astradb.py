@@ -20,8 +20,8 @@ from alibaba_ai_core.caches import BaseCache
 from alibaba_ai_core.language_models import LLM
 from alibaba_ai_core.outputs import Generation, LLMResult
 
-from aiagentsforce_community.cache import AstraDBCache, AstraDBSemanticCache
-from aiagentsforce_community.utilities.astradb import SetupMode
+from aibaba_ai_community.cache import AstraDBCache, AstraDBSemanticCache
+from aibaba_ai_community.utilities.astradb import SetupMode
 from tests.integration_tests.cache.fake_embeddings import FakeEmbeddings
 from tests.unit_tests.llms.fake_llm import FakeLLM
 

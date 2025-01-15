@@ -1,7 +1,7 @@
 import pytest
 from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
 
-from aiagentsforce_community.chat_models.llama_edge import LlamaEdgeChatService
+from aibaba_ai_community.chat_models.llama_edge import LlamaEdgeChatService
 
 
 @pytest.mark.enable_socket

@@ -1,7 +1,7 @@
 import pytest
 
-from aiagentsforce_community.graph_vectorstores.extractors import KeybertLinkExtractor
-from aiagentsforce_community.graph_vectorstores.links import Link
+from aibaba_ai_community.graph_vectorstores.extractors import KeybertLinkExtractor
+from aibaba_ai_community.graph_vectorstores.links import Link
 
 PAGE_1 = """
 Supervised learning is the machine learning task of learning a function that

@@ -6,8 +6,8 @@ from typing import Any, Dict, List, Optional, Type
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.tools.gmail.base import GmailBaseTool
-from aiagentsforce_community.tools.gmail.utils import clean_email_body
+from aibaba_ai_community.tools.gmail.base import GmailBaseTool
+from aibaba_ai_community.tools.gmail.utils import clean_email_body
 
 
 class Resource(str, Enum):

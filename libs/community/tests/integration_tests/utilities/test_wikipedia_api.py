@@ -5,7 +5,7 @@ from typing import List
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.utilities import WikipediaAPIWrapper
+from aibaba_ai_community.utilities import WikipediaAPIWrapper
 
 
 @pytest.fixture

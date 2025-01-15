@@ -37,7 +37,7 @@ from alibaba_ai_core.utils import get_from_env
 from alibaba_ai_core.vectorstores import VectorStore
 from pydantic import ConfigDict, model_validator
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 logger = logging.getLogger()
 

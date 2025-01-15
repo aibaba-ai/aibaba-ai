@@ -6,7 +6,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.vectorstores import DatabricksVectorSearch
+from aibaba_ai_community.vectorstores import DatabricksVectorSearch
 from tests.integration_tests.vectorstores.fake_embeddings import (
     FakeEmbeddings,
     fake_texts,
@@ -624,7 +624,7 @@ def test_mmr_parameters(index_details: dict) -> None:
     filters = {"some filter": True}
 
     with patch(
-        "aiagentsforce_community.vectorstores.databricks_vector_search.maximal_marginal_relevance"
+        "aibaba_ai_community.vectorstores.databricks_vector_search.maximal_marginal_relevance"
     ) as mock_mmr:
         mock_mmr.return_value = [2]
         retriever = default_databricks_vector_search(index).as_retriever(

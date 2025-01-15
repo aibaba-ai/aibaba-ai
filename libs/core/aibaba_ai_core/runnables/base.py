@@ -691,7 +691,7 @@ class Runnable(Generic[Input, Output], ABC):
 
         .. code-block:: python
 
-            from aiagentsforce_community.llms.fake import FakeStreamingListLLM
+            from aibaba_ai_community.llms.fake import FakeStreamingListLLM
             from aibaba_ai_core.output_parsers import StrOutputParser
             from aibaba_ai_core.prompts import SystemMessagePromptTemplate
             from aibaba_ai_core.runnables import Runnable
@@ -1488,7 +1488,7 @@ class Runnable(Generic[Input, Output], ABC):
 
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatOllama
+            from aibaba_ai_community.chat_models import ChatOllama
             from aibaba_ai_core.output_parsers import StrOutputParser
 
             llm = ChatOllama(model='llama2')
@@ -5608,7 +5608,7 @@ class RunnableBinding(RunnableBindingBase[Input, Output]):
 
             # Create a Runnable binding that invokes the ChatModel with the
             # additional kwarg `stop=['-']` when running it.
-            from aiagentsforce_community.chat_models import ChatOpenAI
+            from aibaba_ai_community.chat_models import ChatOpenAI
             model = ChatOpenAI()
             model.invoke('Say "Parrot-MAGIC"', stop=['-']) # Should return `Parrot`
             # Using it the easy way via `bind` method which returns a new

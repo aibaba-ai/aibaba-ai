@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         O365CreateDraftMessage,
         O365SearchEmails,
         O365SearchEvents,
@@ -17,11 +17,11 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "O365SearchEmails": "aiagentsforce_community.tools",
-    "O365SearchEvents": "aiagentsforce_community.tools",
-    "O365CreateDraftMessage": "aiagentsforce_community.tools",
-    "O365SendMessage": "aiagentsforce_community.tools",
-    "O365SendEvent": "aiagentsforce_community.tools",
+    "O365SearchEmails": "aibaba_ai_community.tools",
+    "O365SearchEvents": "aibaba_ai_community.tools",
+    "O365CreateDraftMessage": "aibaba_ai_community.tools",
+    "O365SendMessage": "aibaba_ai_community.tools",
+    "O365SendEvent": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

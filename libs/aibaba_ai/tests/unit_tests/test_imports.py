@@ -7,7 +7,7 @@ from typing import Any, Dict, Optional
 # Attempt to recursively import all modules in langchain
 PKG_ROOT = Path(__file__).parent.parent.parent
 
-COMMUNITY_NOT_INSTALLED = importlib.util.find_spec("aiagentsforce_community") is None
+COMMUNITY_NOT_INSTALLED = importlib.util.find_spec("aibaba_ai_community") is None
 
 
 def test_import_all() -> None:
@@ -36,7 +36,7 @@ def test_import_all() -> None:
                 except ModuleNotFoundError as e:
                     # If the module is not installed, we suppress the error
                     if (
-                        "Module aiagentsforce_community" in str(e)
+                        "Module aibaba_ai_community" in str(e)
                         and COMMUNITY_NOT_INSTALLED
                     ):
                         pass
@@ -58,7 +58,7 @@ def test_import_all_using_dir() -> None:
             # Without init
             module_name = module_name.rsplit(".", 1)[0]
 
-        if module_name.startswith("aiagentsforce_community.") and COMMUNITY_NOT_INSTALLED:
+        if module_name.startswith("aibaba_ai_community.") and COMMUNITY_NOT_INSTALLED:
             continue
 
         try:
@@ -101,9 +101,9 @@ def test_no_more_changes_to_proxy_community() -> None:
     assert hash_ == evil_magic_number, (
         "If you're triggering this test, you're likely adding a new import "
         "to the langchain package that is importing something from "
-        "aiagentsforce_community. This test is meant to catch such such imports "
+        "aibaba_ai_community. This test is meant to catch such such imports "
         "as they are officially DEPRECATED. Please do not add any new imports "
-        "from aiagentsforce_community to the langchain package. "
+        "from aibaba_ai_community to the langchain package. "
     )
 
 

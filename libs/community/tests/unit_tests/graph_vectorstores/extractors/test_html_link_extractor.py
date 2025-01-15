@@ -1,7 +1,7 @@
 import pytest
 
-from aiagentsforce_community.graph_vectorstores import Link
-from aiagentsforce_community.graph_vectorstores.extractors import (
+from aibaba_ai_community.graph_vectorstores import Link
+from aibaba_ai_community.graph_vectorstores.extractors import (
     HtmlInput,
     HtmlLinkExtractor,
 )

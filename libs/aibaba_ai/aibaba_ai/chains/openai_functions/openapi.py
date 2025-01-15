@@ -19,7 +19,7 @@ from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SequentialChain
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.openapi import OpenAPISpec
+    from aibaba_ai_community.utilities.openapi import OpenAPISpec
     from openapi_pydantic import Parameter
 
 
@@ -101,10 +101,10 @@ def openapi_spec_to_openai_fn(
             a request based on the OpenAI function schema.
     """
     try:
-        from aiagentsforce_community.tools import APIOperation
+        from aibaba_ai_community.tools import APIOperation
     except ImportError:
         raise ImportError(
-            "Could not import aiagentsforce_community.tools. "
+            "Could not import aibaba_ai_community.tools. "
             "Please install it with `pip install langchain-community`."
         )
 
@@ -276,7 +276,7 @@ def get_openapi_chain(
             from typing import Any
 
             from langchain.chains.openai_functions.openapi import openapi_spec_to_openai_fn
-            from aiagentsforce_community.utilities.openapi import OpenAPISpec
+            from aibaba_ai_community.utilities.openapi import OpenAPISpec
             from aibaba_ai_core.prompts import ChatPromptTemplate
             from langchain_openai import ChatOpenAI
 
@@ -350,10 +350,10 @@ def get_openapi_chain(
         request_chain: Chain for taking the functions output and executing the request.
     """  # noqa: E501
     try:
-        from aiagentsforce_community.utilities.openapi import OpenAPISpec
+        from aibaba_ai_community.utilities.openapi import OpenAPISpec
     except ImportError as e:
         raise ImportError(
-            "Could not import aiagentsforce_community.utilities.openapi. "
+            "Could not import aibaba_ai_community.utilities.openapi. "
             "Please install it with `pip install langchain-community`."
         ) from e
     if isinstance(spec, str):

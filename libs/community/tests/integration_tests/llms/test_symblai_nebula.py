@@ -1,6 +1,6 @@
 """Test Nebula API wrapper."""
 
-from aiagentsforce_community.llms.symblai_nebula import Nebula
+from aibaba_ai_community.llms.symblai_nebula import Nebula
 
 
 def test_symblai_nebula_call() -> None:

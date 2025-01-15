@@ -7,7 +7,7 @@ from unittest.mock import patch
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.embedchain import EmbedchainRetriever
+from aibaba_ai_community.retrievers.embedchain import EmbedchainRetriever
 
 try:
     from embedchain import Pipeline

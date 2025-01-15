@@ -9,7 +9,7 @@ from uuid import uuid4
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.weaviate_hybrid_search import (
+from aibaba_ai_community.retrievers.weaviate_hybrid_search import (
     WeaviateHybridSearchRetriever,
 )
 

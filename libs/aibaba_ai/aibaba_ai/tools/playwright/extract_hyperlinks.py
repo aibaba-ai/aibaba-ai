@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import ExtractHyperlinksTool
-    from aiagentsforce_community.tools.playwright.extract_hyperlinks import (
+    from aibaba_ai_community.tools import ExtractHyperlinksTool
+    from aibaba_ai_community.tools.playwright.extract_hyperlinks import (
         ExtractHyperlinksToolInput,
     )
 
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "ExtractHyperlinksToolInput": (
-        "aiagentsforce_community.tools.playwright.extract_hyperlinks"
+        "aibaba_ai_community.tools.playwright.extract_hyperlinks"
     ),
-    "ExtractHyperlinksTool": "aiagentsforce_community.tools",
+    "ExtractHyperlinksTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

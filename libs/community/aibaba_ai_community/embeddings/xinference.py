@@ -64,7 +64,7 @@ class XinferenceEmbeddings(Embeddings):
 
     .. code-block:: python
 
-        from aiagentsforce_community.embeddings import XinferenceEmbeddings
+        from aibaba_ai_community.embeddings import XinferenceEmbeddings
 
         xinference = XinferenceEmbeddings(
             server_url="http://0.0.0.0:9997",

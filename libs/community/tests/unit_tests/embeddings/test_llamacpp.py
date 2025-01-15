@@ -3,13 +3,13 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from aiagentsforce_community.embeddings.llamacpp import LlamaCppEmbeddings
+from aibaba_ai_community.embeddings.llamacpp import LlamaCppEmbeddings
 
 
 @pytest.fixture
 def mock_llama_client() -> Generator[MagicMock, None, None]:
     with patch(
-        "aiagentsforce_community.embeddings.llamacpp.LlamaCppEmbeddings"
+        "aibaba_ai_community.embeddings.llamacpp.LlamaCppEmbeddings"
     ) as MockLlama:
         mock_client = MagicMock()
         MockLlama.return_value = mock_client

@@ -5,7 +5,7 @@ from typing import Any, Optional
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.brave_search import BraveSearchWrapper
+from aibaba_ai_community.utilities.brave_search import BraveSearchWrapper
 
 
 class BraveSearch(BaseTool):  # type: ignore[override]

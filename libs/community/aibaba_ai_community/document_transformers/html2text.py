@@ -12,7 +12,7 @@ class Html2TextTransformer(BaseDocumentTransformer):
 
     Example:
         .. code-block:: python
-            from aiagentsforce_community.document_transformers import Html2TextTransformer
+            from aibaba_ai_community.document_transformers import Html2TextTransformer
             html2text = Html2TextTransformer()
             docs_transform = html2text.transform_documents(docs)
     """

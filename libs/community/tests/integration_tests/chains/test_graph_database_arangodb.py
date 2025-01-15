@@ -2,10 +2,10 @@
 
 from typing import Any
 
-from aiagentsforce_community.chains.graph_qa.arangodb import ArangoGraphQAChain
-from aiagentsforce_community.graphs import ArangoGraph
-from aiagentsforce_community.graphs.arangodb_graph import get_arangodb_client
-from aiagentsforce_community.llms.openai import OpenAI
+from aibaba_ai_community.chains.graph_qa.arangodb import ArangoGraphQAChain
+from aibaba_ai_community.graphs import ArangoGraph
+from aibaba_ai_community.graphs.arangodb_graph import get_arangodb_client
+from aibaba_ai_community.llms.openai import OpenAI
 
 
 def populate_arangodb_database(db: Any) -> None:

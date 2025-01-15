@@ -73,7 +73,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.llms.tongyi import (
+from aibaba_ai_community.llms.tongyi import (
     agenerate_with_last_element_mark,
     check_response,
     generate_with_last_element_mark,
@@ -269,7 +269,7 @@ class ChatTongyi(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatTongyi
+            from aibaba_ai_community.chat_models import ChatTongyi
 
             tongyi_chat = ChatTongyi(
                 model="qwen-max",

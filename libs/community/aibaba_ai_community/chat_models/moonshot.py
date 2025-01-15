@@ -8,8 +8,8 @@ from alibaba_ai_core.utils import (
     pre_init,
 )
 
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.llms.moonshot import MOONSHOT_SERVICE_URL_BASE, MoonshotCommon
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.llms.moonshot import MOONSHOT_SERVICE_URL_BASE, MoonshotCommon
 
 
 class MoonshotChat(MoonshotCommon, ChatOpenAI):  # type: ignore[misc, override, override]
@@ -42,7 +42,7 @@ class MoonshotChat(MoonshotCommon, ChatOpenAI):  # type: ignore[misc, override, 
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import MoonshotChat
+            from aibaba_ai_community.chat_models import MoonshotChat
 
             chat = MoonshotChat(
                 temperature=0.5,

@@ -14,7 +14,7 @@ from typing import (
 
 from alibaba_ai_core.stores import ByteStore
 
-from aiagentsforce_community.utilities.cassandra import SetupMode, aexecute_cql
+from aibaba_ai_community.utilities.cassandra import SetupMode, aexecute_cql
 
 if TYPE_CHECKING:
     from cassandra.cluster import Session

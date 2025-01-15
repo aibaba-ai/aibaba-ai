@@ -54,7 +54,7 @@ class ChatMaritalk(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatMaritalk
+            from aibaba_ai_community.chat_models import ChatMaritalk
             chat = ChatMaritalk(api_key="your_api_key_here")
     """
 

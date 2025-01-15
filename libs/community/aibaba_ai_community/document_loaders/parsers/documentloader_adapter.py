@@ -36,7 +36,7 @@ class DocumentLoaderAsParser(BaseBlobParser):
 
         Example:
             ```
-            from aiagentsforce_community.document_loaders.excel import UnstructuredExcelLoader
+            from aibaba_ai_community.document_loaders.excel import UnstructuredExcelLoader
 
             # Initialize parser adapter with a document loader
             excel_parser = DocumentLoaderAsParser(UnstructuredExcelLoader, mode="elements")

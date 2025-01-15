@@ -13,7 +13,7 @@ from alibaba_ai_core.messages import (
 )
 from langchain_tests.unit_tests import ChatModelUnitTests
 
-from aiagentsforce_community.chat_models.cloudflare_workersai import (
+from aibaba_ai_community.chat_models.cloudflare_workersai import (
     ChatCloudflareWorkersAI,
     _convert_messages_to_cloudflare_messages,
 )

@@ -1,6 +1,6 @@
 """Test Replicate API wrapper."""
 
-from aiagentsforce_community.llms.replicate import Replicate
+from aibaba_ai_community.llms.replicate import Replicate
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 TEST_MODEL_HELLO = (

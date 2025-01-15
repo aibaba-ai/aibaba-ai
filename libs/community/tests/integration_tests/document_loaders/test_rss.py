@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders.rss import RSSFeedLoader
+from aibaba_ai_community.document_loaders.rss import RSSFeedLoader
 
 
 def test_rss_loader() -> None:

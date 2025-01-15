@@ -19,7 +19,7 @@ class RocksetChatMessageHistory(BaseChatMessageHistory):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_message_histories import (
+            from aibaba_ai_community.chat_message_histories import (
                 RocksetChatMessageHistory
             )
             from rockset import RocksetClient

@@ -113,121 +113,121 @@ def __getattr__(name: str) -> Any:
 
         return VectorDBQAWithSourcesChain
     elif name == "InMemoryDocstore":
-        from aiagentsforce_community.docstore import InMemoryDocstore
+        from aibaba_ai_community.docstore import InMemoryDocstore
 
         _warn_on_import(name, replacement="langchain.docstore.InMemoryDocstore")
 
         return InMemoryDocstore
     elif name == "Wikipedia":
-        from aiagentsforce_community.docstore import Wikipedia
+        from aibaba_ai_community.docstore import Wikipedia
 
         _warn_on_import(name, replacement="langchain.docstore.Wikipedia")
 
         return Wikipedia
     elif name == "Anthropic":
-        from aiagentsforce_community.llms import Anthropic
+        from aibaba_ai_community.llms import Anthropic
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Anthropic")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Anthropic")
 
         return Anthropic
     elif name == "Banana":
-        from aiagentsforce_community.llms import Banana
+        from aibaba_ai_community.llms import Banana
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Banana")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Banana")
 
         return Banana
     elif name == "CerebriumAI":
-        from aiagentsforce_community.llms import CerebriumAI
+        from aibaba_ai_community.llms import CerebriumAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.CerebriumAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.CerebriumAI")
 
         return CerebriumAI
     elif name == "Cohere":
-        from aiagentsforce_community.llms import Cohere
+        from aibaba_ai_community.llms import Cohere
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Cohere")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Cohere")
 
         return Cohere
     elif name == "ForefrontAI":
-        from aiagentsforce_community.llms import ForefrontAI
+        from aibaba_ai_community.llms import ForefrontAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.ForefrontAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.ForefrontAI")
 
         return ForefrontAI
     elif name == "GooseAI":
-        from aiagentsforce_community.llms import GooseAI
+        from aibaba_ai_community.llms import GooseAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.GooseAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.GooseAI")
 
         return GooseAI
     elif name == "HuggingFaceHub":
-        from aiagentsforce_community.llms import HuggingFaceHub
+        from aibaba_ai_community.llms import HuggingFaceHub
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.HuggingFaceHub")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.HuggingFaceHub")
 
         return HuggingFaceHub
     elif name == "HuggingFaceTextGenInference":
-        from aiagentsforce_community.llms import HuggingFaceTextGenInference
+        from aibaba_ai_community.llms import HuggingFaceTextGenInference
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.llms.HuggingFaceTextGenInference"
+            name, replacement="aibaba_ai_community.llms.HuggingFaceTextGenInference"
         )
 
         return HuggingFaceTextGenInference
     elif name == "LlamaCpp":
-        from aiagentsforce_community.llms import LlamaCpp
+        from aibaba_ai_community.llms import LlamaCpp
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.LlamaCpp")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.LlamaCpp")
 
         return LlamaCpp
     elif name == "Modal":
-        from aiagentsforce_community.llms import Modal
+        from aibaba_ai_community.llms import Modal
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Modal")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Modal")
 
         return Modal
     elif name == "OpenAI":
-        from aiagentsforce_community.llms import OpenAI
+        from aibaba_ai_community.llms import OpenAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.OpenAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.OpenAI")
 
         return OpenAI
     elif name == "Petals":
-        from aiagentsforce_community.llms import Petals
+        from aibaba_ai_community.llms import Petals
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Petals")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Petals")
 
         return Petals
     elif name == "PipelineAI":
-        from aiagentsforce_community.llms import PipelineAI
+        from aibaba_ai_community.llms import PipelineAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.PipelineAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.PipelineAI")
 
         return PipelineAI
     elif name == "SagemakerEndpoint":
-        from aiagentsforce_community.llms import SagemakerEndpoint
+        from aibaba_ai_community.llms import SagemakerEndpoint
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.SagemakerEndpoint")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.SagemakerEndpoint")
 
         return SagemakerEndpoint
     elif name == "StochasticAI":
-        from aiagentsforce_community.llms import StochasticAI
+        from aibaba_ai_community.llms import StochasticAI
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.StochasticAI")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.StochasticAI")
 
         return StochasticAI
     elif name == "Writer":
-        from aiagentsforce_community.llms import Writer
+        from aibaba_ai_community.llms import Writer
 
-        _warn_on_import(name, replacement="aiagentsforce_community.llms.Writer")
+        _warn_on_import(name, replacement="aibaba_ai_community.llms.Writer")
 
         return Writer
     elif name == "HuggingFacePipeline":
-        from aiagentsforce_community.llms.huggingface_pipeline import HuggingFacePipeline
+        from aibaba_ai_community.llms.huggingface_pipeline import HuggingFacePipeline
 
         _warn_on_import(
             name,
-            replacement="aiagentsforce_community.llms.huggingface_pipeline.HuggingFacePipeline",
+            replacement="aibaba_ai_community.llms.huggingface_pipeline.HuggingFacePipeline",
         )
 
         return HuggingFacePipeline
@@ -260,95 +260,95 @@ def __getattr__(name: str) -> Any:
 
         return BasePromptTemplate
     elif name == "ArxivAPIWrapper":
-        from aiagentsforce_community.utilities import ArxivAPIWrapper
+        from aibaba_ai_community.utilities import ArxivAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.ArxivAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.ArxivAPIWrapper"
         )
 
         return ArxivAPIWrapper
     elif name == "GoldenQueryAPIWrapper":
-        from aiagentsforce_community.utilities import GoldenQueryAPIWrapper
+        from aibaba_ai_community.utilities import GoldenQueryAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.GoldenQueryAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.GoldenQueryAPIWrapper"
         )
 
         return GoldenQueryAPIWrapper
     elif name == "GoogleSearchAPIWrapper":
-        from aiagentsforce_community.utilities import GoogleSearchAPIWrapper
+        from aibaba_ai_community.utilities import GoogleSearchAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.GoogleSearchAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.GoogleSearchAPIWrapper"
         )
 
         return GoogleSearchAPIWrapper
     elif name == "GoogleSerperAPIWrapper":
-        from aiagentsforce_community.utilities import GoogleSerperAPIWrapper
+        from aibaba_ai_community.utilities import GoogleSerperAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.GoogleSerperAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.GoogleSerperAPIWrapper"
         )
 
         return GoogleSerperAPIWrapper
     elif name == "PowerBIDataset":
-        from aiagentsforce_community.utilities import PowerBIDataset
+        from aibaba_ai_community.utilities import PowerBIDataset
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.PowerBIDataset"
+            name, replacement="aibaba_ai_community.utilities.PowerBIDataset"
         )
 
         return PowerBIDataset
     elif name == "SearxSearchWrapper":
-        from aiagentsforce_community.utilities import SearxSearchWrapper
+        from aibaba_ai_community.utilities import SearxSearchWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.SearxSearchWrapper"
+            name, replacement="aibaba_ai_community.utilities.SearxSearchWrapper"
         )
 
         return SearxSearchWrapper
     elif name == "WikipediaAPIWrapper":
-        from aiagentsforce_community.utilities import WikipediaAPIWrapper
+        from aibaba_ai_community.utilities import WikipediaAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.WikipediaAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.WikipediaAPIWrapper"
         )
 
         return WikipediaAPIWrapper
     elif name == "WolframAlphaAPIWrapper":
-        from aiagentsforce_community.utilities import WolframAlphaAPIWrapper
+        from aibaba_ai_community.utilities import WolframAlphaAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.WolframAlphaAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.WolframAlphaAPIWrapper"
         )
 
         return WolframAlphaAPIWrapper
     elif name == "SQLDatabase":
-        from aiagentsforce_community.utilities import SQLDatabase
+        from aibaba_ai_community.utilities import SQLDatabase
 
-        _warn_on_import(name, replacement="aiagentsforce_community.utilities.SQLDatabase")
+        _warn_on_import(name, replacement="aibaba_ai_community.utilities.SQLDatabase")
 
         return SQLDatabase
     elif name == "FAISS":
-        from aiagentsforce_community.vectorstores import FAISS
+        from aibaba_ai_community.vectorstores import FAISS
 
-        _warn_on_import(name, replacement="aiagentsforce_community.vectorstores.FAISS")
+        _warn_on_import(name, replacement="aibaba_ai_community.vectorstores.FAISS")
 
         return FAISS
     elif name == "ElasticVectorSearch":
-        from aiagentsforce_community.vectorstores import ElasticVectorSearch
+        from aibaba_ai_community.vectorstores import ElasticVectorSearch
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.vectorstores.ElasticVectorSearch"
+            name, replacement="aibaba_ai_community.vectorstores.ElasticVectorSearch"
         )
 
         return ElasticVectorSearch
     # For backwards compatibility
     elif name == "SerpAPIChain" or name == "SerpAPIWrapper":
-        from aiagentsforce_community.utilities import SerpAPIWrapper
+        from aibaba_ai_community.utilities import SerpAPIWrapper
 
         _warn_on_import(
-            name, replacement="aiagentsforce_community.utilities.SerpAPIWrapper"
+            name, replacement="aibaba_ai_community.utilities.SerpAPIWrapper"
         )
 
         return SerpAPIWrapper

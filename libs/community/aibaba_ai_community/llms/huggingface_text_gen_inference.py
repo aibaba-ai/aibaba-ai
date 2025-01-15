@@ -43,7 +43,7 @@ class HuggingFaceTextGenInference(LLM):
             print(llm.invoke("What is Deep Learning?"))  # noqa: T201
 
             # Streaming response example
-            from aiagentsforce_community.callbacks import streaming_stdout
+            from aibaba_ai_community.callbacks import streaming_stdout
 
             callbacks = [streaming_stdout.StreamingStdOutCallbackHandler()]
             llm = HuggingFaceTextGenInference(

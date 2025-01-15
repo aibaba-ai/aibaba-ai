@@ -7,7 +7,7 @@ You can check it out here: https://app.premai.io
 
 import pytest
 
-from aiagentsforce_community.embeddings.premai import PremAIEmbeddings
+from aibaba_ai_community.embeddings.premai import PremAIEmbeddings
 
 
 @pytest.fixture

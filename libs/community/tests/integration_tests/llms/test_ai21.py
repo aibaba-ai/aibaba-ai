@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from aiagentsforce_community.llms.ai21 import AI21
-from aiagentsforce_community.llms.loading import load_llm
+from aibaba_ai_community.llms.ai21 import AI21
+from aibaba_ai_community.llms.loading import load_llm
 
 
 def test_ai21_call() -> None:

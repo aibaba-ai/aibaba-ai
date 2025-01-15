@@ -8,7 +8,7 @@ from alibaba_ai_core.utils import (
 )
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +26,7 @@ class Banana(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Banana
+            from aibaba_ai_community.llms import Banana
             banana = Banana(model_key="", model_url_slug="")
     """
 

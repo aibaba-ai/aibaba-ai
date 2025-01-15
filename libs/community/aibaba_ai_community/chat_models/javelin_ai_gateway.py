@@ -42,7 +42,7 @@ class ChatJavelinAIGateway(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatJavelinAIGateway
+            from aibaba_ai_community.chat_models import ChatJavelinAIGateway
 
             chat = ChatJavelinAIGateway(
                 gateway_uri="<javelin-ai-gateway-uri>",

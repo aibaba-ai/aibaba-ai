@@ -3,7 +3,7 @@ import json
 from langchain.memory import ConversationBufferMemory
 from alibaba_ai_core.messages import message_to_dict
 
-from aiagentsforce_community.chat_message_histories import SingleStoreDBChatMessageHistory
+from aibaba_ai_community.chat_message_histories import SingleStoreDBChatMessageHistory
 
 # Replace these with your mongodb connection string
 TEST_SINGLESTOREDB_URL = "root:pass@localhost:3306/db"

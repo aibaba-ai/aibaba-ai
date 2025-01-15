@@ -4,28 +4,28 @@ from typing import Any, Dict, Iterator, Literal, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.document_loaders.parsers.language.c import CSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.cobol import CobolSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.cpp import CPPSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.csharp import CSharpSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.elixir import ElixirSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.go import GoSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.java import JavaSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.javascript import (
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.document_loaders.parsers.language.c import CSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.cobol import CobolSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.cpp import CPPSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.csharp import CSharpSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.elixir import ElixirSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.go import GoSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.java import JavaSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.javascript import (
     JavaScriptSegmenter,
 )
-from aiagentsforce_community.document_loaders.parsers.language.kotlin import KotlinSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.lua import LuaSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.perl import PerlSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.php import PHPSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.python import PythonSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.ruby import RubySegmenter
-from aiagentsforce_community.document_loaders.parsers.language.rust import RustSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.scala import ScalaSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.sql import SQLSegmenter
-from aiagentsforce_community.document_loaders.parsers.language.typescript import (
+from aibaba_ai_community.document_loaders.parsers.language.kotlin import KotlinSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.lua import LuaSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.perl import PerlSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.php import PHPSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.python import PythonSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.ruby import RubySegmenter
+from aibaba_ai_community.document_loaders.parsers.language.rust import RustSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.scala import ScalaSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.sql import SQLSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.typescript import (
     TypeScriptSegmenter,
 )
 
@@ -143,8 +143,8 @@ class LanguageParser(BaseBlobParser):
 
        .. code-block:: python
 
-            from aiagentsforce_community.document_loaders.generic import GenericLoader
-            from aiagentsforce_community.document_loaders.parsers import LanguageParser
+            from aibaba_ai_community.document_loaders.generic import GenericLoader
+            from aibaba_ai_community.document_loaders.parsers import LanguageParser
 
             loader = GenericLoader.from_filesystem(
                 "./code",

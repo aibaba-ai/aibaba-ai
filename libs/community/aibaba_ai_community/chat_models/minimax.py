@@ -189,7 +189,7 @@ class MiniMaxChat(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import MiniMaxChat
+            from aibaba_ai_community.chat_models import MiniMaxChat
 
             chat = MiniMaxChat(
                 api_key=api_key,
@@ -701,7 +701,7 @@ class MiniMaxChat(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import MiniMaxChat
+                from aibaba_ai_community.chat_models import MiniMaxChat
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -722,7 +722,7 @@ class MiniMaxChat(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=True):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import MiniMaxChat
+                from aibaba_ai_community.chat_models import MiniMaxChat
                 from pydantic import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -744,7 +744,7 @@ class MiniMaxChat(BaseChatModel):
         Example: Function-calling, dict schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from aiagentsforce_community.chat_models import MiniMaxChat
+                from aibaba_ai_community.chat_models import MiniMaxChat
                 from pydantic import BaseModel
                 from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
 

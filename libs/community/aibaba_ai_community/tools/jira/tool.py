@@ -12,8 +12,8 @@ To use this tool, you must first set as environment variables:
 Below is a sample script that uses the Jira tool:
 
 ```python
-from aiagentsforce_community.agent_toolkits.jira.toolkit import JiraToolkit
-from aiagentsforce_community.utilities.jira import JiraAPIWrapper
+from aibaba_ai_community.agent_toolkits.jira.toolkit import JiraToolkit
+from aibaba_ai_community.utilities.jira import JiraAPIWrapper
 
 jira = JiraAPIWrapper()
 toolkit = JiraToolkit.from_jira_api_wrapper(jira)
@@ -26,7 +26,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.jira import JiraAPIWrapper
+from aibaba_ai_community.utilities.jira import JiraAPIWrapper
 
 
 class JiraAction(BaseTool):  # type: ignore[override]

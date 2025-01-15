@@ -2,8 +2,8 @@
 
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 
-from aiagentsforce_community.chat_models.mlx import ChatMLX
-from aiagentsforce_community.llms.mlx_pipeline import MLXPipeline
+from aibaba_ai_community.chat_models.mlx import ChatMLX
+from aibaba_ai_community.llms.mlx_pipeline import MLXPipeline
 
 
 def test_default_call() -> None:

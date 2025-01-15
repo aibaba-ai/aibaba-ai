@@ -1,6 +1,6 @@
 from typing import List
 
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 
 class UnstructuredImageLoader(UnstructuredFileLoader):
@@ -15,7 +15,7 @@ class UnstructuredImageLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredImageLoader
+    from aibaba_ai_community.document_loaders import UnstructuredImageLoader
 
     loader = UnstructuredImageLoader(
         "example.png", mode="elements", strategy="fast",

@@ -22,13 +22,13 @@ from alibaba_ai_core.prompts.chat import (
     MessagesPlaceholder,
 )
 
-from aiagentsforce_community.agent_toolkits.sql.prompt import (
+from aibaba_ai_community.agent_toolkits.sql.prompt import (
     SQL_FUNCTIONS_SUFFIX,
     SQL_PREFIX,
     SQL_SUFFIX,
 )
-from aiagentsforce_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
-from aiagentsforce_community.tools.sql_database.tool import (
+from aibaba_ai_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
+from aibaba_ai_community.tools.sql_database.tool import (
     InfoSQLDatabaseTool,
     ListSQLDatabaseTool,
 )
@@ -40,7 +40,7 @@ if TYPE_CHECKING:
     from alibaba_ai_core.language_models import BaseLanguageModel
     from alibaba_ai_core.tools import BaseTool
 
-    from aiagentsforce_community.utilities.sql_database import SQLDatabase
+    from aibaba_ai_community.utilities.sql_database import SQLDatabase
 
 
 def create_sql_agent(
@@ -108,8 +108,8 @@ def create_sql_agent(
         .. code-block:: python
 
             from langchain_openai import ChatOpenAI
-            from aiagentsforce_community.agent_toolkits import create_sql_agent
-            from aiagentsforce_community.utilities import SQLDatabase
+            from aibaba_ai_community.agent_toolkits import create_sql_agent
+            from aibaba_ai_community.utilities import SQLDatabase
 
             db = SQLDatabase.from_uri("sqlite:///Chinook.db")
             llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)

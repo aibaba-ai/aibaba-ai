@@ -5,8 +5,8 @@ from typing import List, Tuple
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers import QdrantSparseVectorRetriever
-from aiagentsforce_community.vectorstores.qdrant import QdrantException
+from aibaba_ai_community.retrievers import QdrantSparseVectorRetriever
+from aibaba_ai_community.vectorstores.qdrant import QdrantException
 
 
 def consistent_fake_sparse_encoder(

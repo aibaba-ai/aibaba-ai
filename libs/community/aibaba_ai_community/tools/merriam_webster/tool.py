@@ -5,7 +5,7 @@ from typing import Optional
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 
-from aiagentsforce_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
+from aibaba_ai_community.utilities.merriam_webster import MerriamWebsterAPIWrapper
 
 
 class MerriamWebsterQueryRun(BaseTool):  # type: ignore[override]

@@ -27,7 +27,7 @@ class QuantizedBiEncoderEmbeddings(BaseModel, Embeddings):
 
     Example:
 
-    from aiagentsforce_community.embeddings import QuantizedBiEncoderEmbeddings
+    from aibaba_ai_community.embeddings import QuantizedBiEncoderEmbeddings
 
     model_name = "Intel/bge-small-en-v1.5-rag-int8-static"
     encode_kwargs = {'normalize_embeddings': True}

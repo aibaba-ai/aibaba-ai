@@ -1,5 +1,5 @@
 """Jina AI toolkit"""
 
-from aiagentsforce_community.tools.jina_search.tool import JinaSearch
+from aibaba_ai_community.tools.jina_search.tool import JinaSearch
 
 __all__ = ["JinaSearch"]

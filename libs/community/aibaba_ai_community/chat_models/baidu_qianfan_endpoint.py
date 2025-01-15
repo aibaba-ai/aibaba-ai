@@ -185,7 +185,7 @@ class QianfanChatEndpoint(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import QianfanChatEndpoint
+            from aibaba_ai_community.chat_models import QianfanChatEndpoint
 
             qianfan_chat = QianfanChatEndpoint(
                 model="ERNIE-3.5-8K",

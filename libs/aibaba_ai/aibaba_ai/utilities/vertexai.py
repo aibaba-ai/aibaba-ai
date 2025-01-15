@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utilities.vertexai import (
+    from aibaba_ai_community.utilities.vertexai import (
         create_retry_decorator,
         get_client_info,
         init_vertexai,
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "create_retry_decorator": "aiagentsforce_community.utilities.vertexai",
-    "raise_vertex_import_error": "aiagentsforce_community.utilities.vertexai",
-    "init_vertexai": "aiagentsforce_community.utilities.vertexai",
-    "get_client_info": "aiagentsforce_community.utilities.vertexai",
+    "create_retry_decorator": "aibaba_ai_community.utilities.vertexai",
+    "raise_vertex_import_error": "aibaba_ai_community.utilities.vertexai",
+    "init_vertexai": "aibaba_ai_community.utilities.vertexai",
+    "get_client_info": "aibaba_ai_community.utilities.vertexai",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

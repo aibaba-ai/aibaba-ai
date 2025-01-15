@@ -18,7 +18,7 @@ class NeuralDBVectorStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import NeuralDBVectorStore
+            from aibaba_ai_community.vectorstores import NeuralDBVectorStore
             from thirdai import neural_db as ndb
 
             db = ndb.NeuralDB()
@@ -64,7 +64,7 @@ class NeuralDBVectorStore(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import NeuralDBVectorStore
+                from aibaba_ai_community.vectorstores import NeuralDBVectorStore
 
                 vectorstore = NeuralDBVectorStore.from_scratch(
                     thirdai_key="your-thirdai-key",
@@ -98,7 +98,7 @@ class NeuralDBVectorStore(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import NeuralDBVectorStore
+                from aibaba_ai_community.vectorstores import NeuralDBVectorStore
 
                 vectorstore = NeuralDBVectorStore.from_checkpoint(
                     checkpoint="/path/to/checkpoint.ndb",
@@ -309,7 +309,7 @@ class NeuralDBClientVectorStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import NeuralDBClientVectorStore
+            from aibaba_ai_community.vectorstores import NeuralDBClientVectorStore
             from thirdai.neural_db import ModelBazaar, NeuralDBClient
 
             bazaar = ModelBazaar(base_url="http://{NEURAL_DB_ENTERPRISE_IP}/api/")

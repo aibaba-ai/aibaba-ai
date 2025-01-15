@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import PolarsDataFrameLoader
+from aibaba_ai_community.document_loaders import PolarsDataFrameLoader
 
 if TYPE_CHECKING:
     import polars as pl

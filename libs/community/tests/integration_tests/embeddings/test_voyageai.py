@@ -1,6 +1,6 @@
 """Test voyage embeddings."""
 
-from aiagentsforce_community.embeddings.voyageai import VoyageEmbeddings
+from aibaba_ai_community.embeddings.voyageai import VoyageEmbeddings
 
 # Please set VOYAGE_API_KEY in the environment variables
 MODEL = "voyage-2"

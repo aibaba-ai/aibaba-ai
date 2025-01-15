@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.document_loaders.python import PythonLoader
+from aibaba_ai_community.document_loaders.python import PythonLoader
 
 
 @pytest.mark.parametrize("filename", ["default-encoding.py", "non-utf8-encoding.py"])

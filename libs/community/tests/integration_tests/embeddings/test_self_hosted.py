@@ -2,7 +2,7 @@
 
 from typing import Any
 
-from aiagentsforce_community.embeddings import (
+from aibaba_ai_community.embeddings import (
     SelfHostedEmbeddings,
     SelfHostedHuggingFaceEmbeddings,
     SelfHostedHuggingFaceInstructEmbeddings,

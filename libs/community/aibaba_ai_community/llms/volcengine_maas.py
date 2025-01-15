@@ -117,7 +117,7 @@ class VolcEngineMaasLLM(LLM, VolcEngineMaasBase):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import VolcEngineMaasLLM
+            from aibaba_ai_community.llms import VolcEngineMaasLLM
             model = VolcEngineMaasLLM(model="skylark-lite-public",
                                           volc_engine_maas_ak="your_ak",
                                           volc_engine_maas_sk="your_sk")

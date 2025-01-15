@@ -1,6 +1,6 @@
 """Integration test for Serper.dev's Google Search API Wrapper."""
 
-from aiagentsforce_community.utilities.google_serper import GoogleSerperAPIWrapper
+from aibaba_ai_community.utilities.google_serper import GoogleSerperAPIWrapper
 
 
 def test_search_call() -> None:

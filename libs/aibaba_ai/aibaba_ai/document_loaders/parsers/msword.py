@@ -3,13 +3,13 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders.parsers.msword import MsWordParser
+    from aibaba_ai_community.document_loaders.parsers.msword import MsWordParser
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "MsWordParser": "aiagentsforce_community.document_loaders.parsers.msword"
+    "MsWordParser": "aibaba_ai_community.document_loaders.parsers.msword"
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

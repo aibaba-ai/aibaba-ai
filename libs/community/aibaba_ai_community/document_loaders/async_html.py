@@ -18,8 +18,8 @@ import aiohttp
 import requests
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utils.user_agent import get_user_agent
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utils.user_agent import get_user_agent
 
 logger = logging.getLogger(__name__)
 

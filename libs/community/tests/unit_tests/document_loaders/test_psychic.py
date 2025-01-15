@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.psychic import PsychicLoader
+from aibaba_ai_community.document_loaders.psychic import PsychicLoader
 
 
 @pytest.fixture

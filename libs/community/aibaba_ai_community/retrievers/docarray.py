@@ -9,7 +9,7 @@ from alibaba_ai_core.retrievers import BaseRetriever
 from alibaba_ai_core.utils.pydantic import get_fields
 from pydantic import ConfigDict
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 
 class SearchType(str, Enum):

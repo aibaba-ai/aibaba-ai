@@ -20,7 +20,7 @@ from alibaba_ai_core.retrievers import BaseRetriever
 from alibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict
 
-from aiagentsforce_community.vectorstores.qdrant import Qdrant, QdrantException
+from aibaba_ai_community.vectorstores.qdrant import Qdrant, QdrantException
 
 
 @deprecated(

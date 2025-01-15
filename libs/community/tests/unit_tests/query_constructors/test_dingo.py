@@ -8,7 +8,7 @@ from alibaba_ai_core.structured_query import (
     StructuredQuery,
 )
 
-from aiagentsforce_community.query_constructors.dingo import DingoDBTranslator
+from aibaba_ai_community.query_constructors.dingo import DingoDBTranslator
 
 DEFAULT_TRANSLATOR = DingoDBTranslator()
 

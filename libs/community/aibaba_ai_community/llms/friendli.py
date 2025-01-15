@@ -109,7 +109,7 @@ class Friendli(LLM, BaseFriendli):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Friendli
+            from aibaba_ai_community.llms import Friendli
 
             friendli = Friendli(
                 model="meta-llama-3.1-8b-instruct", friendli_token="YOUR FRIENDLI TOKEN"

@@ -7,7 +7,7 @@ from urllib.request import urlretrieve
 
 import pytest
 
-from aiagentsforce_community.llms import LlamaCpp
+from aibaba_ai_community.llms import LlamaCpp
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 

@@ -183,7 +183,7 @@ def standardize_model_name(
             since="0.3.13",
             message=(
                 "is_completion is deprecated. Use token_type instead. Example:\n\n"
-                "from aiagentsforce_community.callbacks.openai_info import TokenType\n\n"
+                "from aibaba_ai_community.callbacks.openai_info import TokenType\n\n"
                 "standardize_model_name('gpt-4o', token_type=TokenType.COMPLETION)\n"
             ),
             removal="1.0",
@@ -239,7 +239,7 @@ def get_openai_token_cost_for_model(
             since="0.3.13",
             message=(
                 "is_completion is deprecated. Use token_type instead. Example:\n\n"
-                "from aiagentsforce_community.callbacks.openai_info import TokenType\n\n"
+                "from aibaba_ai_community.callbacks.openai_info import TokenType\n\n"
                 "get_openai_token_cost_for_model('gpt-4o', 10, token_type=TokenType.COMPLETION)\n"  # noqa: E501
             ),
             removal="1.0",

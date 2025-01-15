@@ -1,6 +1,6 @@
 from alibaba_ai_core.messages import AIMessage, HumanMessage
 
-from aiagentsforce_community.chat_models.sambanova import (
+from aibaba_ai_community.chat_models.sambanova import (
     ChatSambaNovaCloud,
     ChatSambaStudio,
 )

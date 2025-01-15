@@ -22,8 +22,8 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import Field, model_validator
 
-from aiagentsforce_community.adapters.openai import convert_message_to_dict
-from aiagentsforce_community.chat_models.openai import (
+from aibaba_ai_community.adapters.openai import convert_message_to_dict
+from aibaba_ai_community.chat_models.openai import (
     ChatOpenAI,
     _import_tiktoken,
 )
@@ -51,7 +51,7 @@ class ChatEverlyAI(ChatOpenAI):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatEverlyAI
+            from aibaba_ai_community.chat_models import ChatEverlyAI
             chat = ChatEverlyAI(model_name="meta-llama/Llama-2-7b-chat-hf")
     """
 

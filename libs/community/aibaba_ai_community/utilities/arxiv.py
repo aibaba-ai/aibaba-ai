@@ -41,7 +41,7 @@ class ArxivAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.utilities.arxiv import ArxivAPIWrapper
+            from aibaba_ai_community.utilities.arxiv import ArxivAPIWrapper
             arxiv = ArxivAPIWrapper(
                 top_k_results = 3,
                 ARXIV_MAX_QUERY_LENGTH = 300,

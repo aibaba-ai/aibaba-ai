@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers.azure_ai_search import (
+from aibaba_ai_community.retrievers.azure_ai_search import (
     AzureAISearchRetriever,
     AzureCognitiveSearchRetriever,
 )

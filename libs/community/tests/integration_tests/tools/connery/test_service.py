@@ -1,6 +1,6 @@
 """Integration test for Connery API Wrapper."""
 
-from aiagentsforce_community.tools.connery import ConneryService
+from aibaba_ai_community.tools.connery import ConneryService
 
 
 def test_list_actions() -> None:

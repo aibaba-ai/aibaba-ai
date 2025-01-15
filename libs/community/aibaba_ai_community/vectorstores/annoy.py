@@ -13,9 +13,9 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import guard_import
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.base import Docstore
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.docstore.base import Docstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 INDEX_METRICS = frozenset(["angular", "euclidean", "manhattan", "hamming", "dot"])
 DEFAULT_METRIC = "angular"
@@ -34,7 +34,7 @@ class Annoy(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Annoy
+            from aibaba_ai_community.vectorstores import Annoy
             db = Annoy(embedding_function, index, docstore, index_to_docstore_id)
 
     """
@@ -344,8 +344,8 @@ class Annoy(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Annoy
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Annoy
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 index = Annoy.from_texts(texts, embeddings)
         """
@@ -384,8 +384,8 @@ class Annoy(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import Annoy
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import Annoy
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))

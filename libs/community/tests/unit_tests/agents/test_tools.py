@@ -14,7 +14,7 @@ from langchain.agents.react.base import ReActDocstoreAgent, ReActTextWorldAgent
 from langchain.agents.self_ask_with_search.base import SelfAskWithSearchAgent
 from alibaba_ai_core.tools import Tool, ToolException, tool
 
-from aiagentsforce_community.agent_toolkits.load_tools import load_tools
+from aibaba_ai_community.agent_toolkits.load_tools import load_tools
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

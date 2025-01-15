@@ -12,7 +12,7 @@ from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import Document
 from typing_extensions import TypeAlias
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 Element: TypeAlias = Any
 
@@ -187,7 +187,7 @@ class UnstructuredFileLoader(UnstructuredBaseLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredFileLoader
+    from aibaba_ai_community.document_loaders import UnstructuredFileLoader
 
     loader = UnstructuredFileLoader(
         "example.pdf", mode="elements", strategy="fast",
@@ -293,7 +293,7 @@ class UnstructuredAPIFileLoader(UnstructuredBaseLoader):
 
     Examples
     ```python
-    from aiagentsforce_community.document_loaders import UnstructuredAPIFileLoader
+    from aibaba_ai_community.document_loaders import UnstructuredAPIFileLoader
 
     loader = UnstructuredAPIFileLoader(
         "example.pdf", mode="elements", strategy="fast", api_key="MY_API_KEY",
@@ -370,7 +370,7 @@ class UnstructuredFileIOLoader(UnstructuredBaseLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredFileIOLoader
+    from aibaba_ai_community.document_loaders import UnstructuredFileIOLoader
 
     with open("example.pdf", "rb") as f:
         loader = UnstructuredFileIOLoader(
@@ -442,7 +442,7 @@ class UnstructuredAPIFileIOLoader(UnstructuredBaseLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders import UnstructuredAPIFileLoader
+    from aibaba_ai_community.document_loaders import UnstructuredAPIFileLoader
 
     with open("example.pdf", "rb") as f:
         loader = UnstructuredAPIFileIOLoader(

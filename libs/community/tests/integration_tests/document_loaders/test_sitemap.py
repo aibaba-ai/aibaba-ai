@@ -3,8 +3,8 @@ from typing import Any
 
 import pytest
 
-from aiagentsforce_community.document_loaders import SitemapLoader
-from aiagentsforce_community.document_loaders.sitemap import _extract_scheme_and_domain
+from aibaba_ai_community.document_loaders import SitemapLoader
+from aibaba_ai_community.document_loaders.sitemap import _extract_scheme_and_domain
 
 
 def test_sitemap() -> None:

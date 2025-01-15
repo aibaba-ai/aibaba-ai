@@ -29,7 +29,7 @@ class MlflowAIGateway(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import MlflowAIGateway
+            from aibaba_ai_community.llms import MlflowAIGateway
 
             completions = MlflowAIGateway(
                 gateway_uri="<your-mlflow-ai-gateway-uri>",

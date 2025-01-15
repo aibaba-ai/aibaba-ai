@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import (
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.google_serper import GoogleSerperAPIWrapper
+from aibaba_ai_community.utilities.google_serper import GoogleSerperAPIWrapper
 
 
 class GoogleSerperRun(BaseTool):  # type: ignore[override]

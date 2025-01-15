@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.spreedly import SpreedlyLoader
+from aibaba_ai_community.document_loaders.spreedly import SpreedlyLoader
 
 
 def test_spreedly_loader() -> None:

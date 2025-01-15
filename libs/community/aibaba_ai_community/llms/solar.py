@@ -12,7 +12,7 @@ from pydantic import (
     model_validator,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 SOLAR_SERVICE_URL_BASE = "https://api.upstage.ai/v1/solar"
 SOLAR_SERVICE = "https://api.upstage.ai"

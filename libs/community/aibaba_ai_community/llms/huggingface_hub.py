@@ -7,7 +7,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 # key: task
 # value: key in the output dictionary
@@ -39,7 +39,7 @@ class HuggingFaceHub(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import HuggingFaceHub
+            from aibaba_ai_community.llms import HuggingFaceHub
             hf = HuggingFaceHub(repo_id="gpt2", huggingfacehub_api_token="my-api-key")
     """
 

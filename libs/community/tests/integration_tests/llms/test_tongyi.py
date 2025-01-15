@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.tongyi import Tongyi
+from aibaba_ai_community.llms.tongyi import Tongyi
 
 
 def test_tongyi_call() -> None:

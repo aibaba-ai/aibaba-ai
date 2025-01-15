@@ -33,7 +33,7 @@ class EdenaiTool(BaseTool):  # type: ignore[override]
 
     @staticmethod
     def get_user_agent() -> str:
-        from aiagentsforce_community import __version__
+        from aibaba_ai_community import __version__
 
         return f"langchain/{__version__}"
 

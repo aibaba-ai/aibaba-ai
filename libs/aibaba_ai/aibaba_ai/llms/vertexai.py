@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.llms import VertexAI, VertexAIModelGarden
+    from aibaba_ai_community.llms import VertexAI, VertexAIModelGarden
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "VertexAI": "aiagentsforce_community.llms",
-    "VertexAIModelGarden": "aiagentsforce_community.llms",
+    "VertexAI": "aibaba_ai_community.llms",
+    "VertexAIModelGarden": "aibaba_ai_community.llms",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

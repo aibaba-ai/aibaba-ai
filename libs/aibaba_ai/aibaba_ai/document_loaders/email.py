@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_loaders import (
+    from aibaba_ai_community.document_loaders import (
         OutlookMessageLoader,
         UnstructuredEmailLoader,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "UnstructuredEmailLoader": "aiagentsforce_community.document_loaders",
-    "OutlookMessageLoader": "aiagentsforce_community.document_loaders",
+    "UnstructuredEmailLoader": "aibaba_ai_community.document_loaders",
+    "OutlookMessageLoader": "aibaba_ai_community.document_loaders",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

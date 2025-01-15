@@ -5,7 +5,7 @@ from typing import Dict, Iterator, Union
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +24,7 @@ class BSHTMLLoader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import BSHTMLLoader
+            from aibaba_ai_community.document_loaders import BSHTMLLoader
 
             loader = BSHTMLLoader(
                 file_path="./example_data/fake-content.html",

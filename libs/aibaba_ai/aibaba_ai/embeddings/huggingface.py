@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.embeddings import (
+    from aibaba_ai_community.embeddings import (
         HuggingFaceBgeEmbeddings,
         HuggingFaceEmbeddings,
         HuggingFaceInferenceAPIEmbeddings,
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "HuggingFaceEmbeddings": "aiagentsforce_community.embeddings",
-    "HuggingFaceInstructEmbeddings": "aiagentsforce_community.embeddings",
-    "HuggingFaceBgeEmbeddings": "aiagentsforce_community.embeddings",
-    "HuggingFaceInferenceAPIEmbeddings": "aiagentsforce_community.embeddings",
+    "HuggingFaceEmbeddings": "aibaba_ai_community.embeddings",
+    "HuggingFaceInstructEmbeddings": "aibaba_ai_community.embeddings",
+    "HuggingFaceBgeEmbeddings": "aibaba_ai_community.embeddings",
+    "HuggingFaceInferenceAPIEmbeddings": "aibaba_ai_community.embeddings",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

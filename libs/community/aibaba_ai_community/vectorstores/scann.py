@@ -12,9 +12,9 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import guard_import
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.base import AddableMixin, Docstore
-from aiagentsforce_community.docstore.in_memory import InMemoryDocstore
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.docstore.base import AddableMixin, Docstore
+from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
 
 def normalize(x: np.ndarray) -> np.ndarray:
@@ -38,8 +38,8 @@ class ScaNN(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import HuggingFaceEmbeddings
-            from aiagentsforce_community.vectorstores import ScaNN
+            from aibaba_ai_community.embeddings import HuggingFaceEmbeddings
+            from aibaba_ai_community.vectorstores import ScaNN
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             db = ScaNN.from_texts(
@@ -377,8 +377,8 @@ class ScaNN(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import ScaNN
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import ScaNN
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 scann = ScaNN.from_texts(texts, embeddings)
         """
@@ -413,8 +413,8 @@ class ScaNN(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import ScaNN
-                from aiagentsforce_community.embeddings import OpenAIEmbeddings
+                from aibaba_ai_community.vectorstores import ScaNN
+                from aibaba_ai_community.embeddings import OpenAIEmbeddings
                 embeddings = OpenAIEmbeddings()
                 text_embeddings = embeddings.embed_documents(texts)
                 text_embedding_pairs = list(zip(texts, text_embeddings))

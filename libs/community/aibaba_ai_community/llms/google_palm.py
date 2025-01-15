@@ -9,8 +9,8 @@ from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, SecretStr
 
-from aiagentsforce_community.llms import BaseLLM
-from aiagentsforce_community.utilities.vertexai import create_retry_decorator
+from aibaba_ai_community.llms import BaseLLM
+from aibaba_ai_community.utilities.vertexai import create_retry_decorator
 
 
 def completion_with_retry(

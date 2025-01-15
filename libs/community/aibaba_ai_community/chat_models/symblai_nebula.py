@@ -61,7 +61,7 @@ class ChatNebula(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatNebula
+            from aibaba_ai_community.chat_models import ChatNebula
             from alibaba_ai_core.messages import SystemMessage, HumanMessage
 
             chat = ChatNebula(max_new_tokens=1024, temperature=0.5)

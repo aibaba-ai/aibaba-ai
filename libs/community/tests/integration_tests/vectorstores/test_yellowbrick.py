@@ -3,8 +3,8 @@ from typing import List, Optional
 
 import pytest
 
-from aiagentsforce_community.docstore.document import Document
-from aiagentsforce_community.vectorstores import Yellowbrick
+from aibaba_ai_community.docstore.document import Document
+from aibaba_ai_community.vectorstores import Yellowbrick
 from tests.integration_tests.vectorstores.fake_embeddings import (
     ConsistentFakeEmbeddings,
     fake_texts,

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.prompts import (
+    from aibaba_ai_community.chains.graph_qa.prompts import (
         AQL_FIX_TEMPLATE,
         AQL_GENERATION_TEMPLATE,
         AQL_QA_TEMPLATE,
@@ -32,34 +32,34 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "AQL_FIX_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "AQL_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "AQL_QA_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "CYPHER_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "CYPHER_QA_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "CYPHER_QA_PROMPT": "aiagentsforce_community.chains.graph_qa.prompts",
-    "CYPHER_GENERATION_PROMPT": "aiagentsforce_community.chains.graph_qa.prompts",
-    "GRAPHDB_QA_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "GRAPHDB_SPARQL_FIX_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "GRAPHDB_SPARQL_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "GREMLIN_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "KUZU_EXTRA_INSTRUCTIONS": "aiagentsforce_community.chains.graph_qa.prompts",
-    "KUZU_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "NEBULAGRAPH_EXTRA_INSTRUCTIONS": "aiagentsforce_community.chains.graph_qa.prompts",
+    "AQL_FIX_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "AQL_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "AQL_QA_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "CYPHER_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "CYPHER_QA_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "CYPHER_QA_PROMPT": "aibaba_ai_community.chains.graph_qa.prompts",
+    "CYPHER_GENERATION_PROMPT": "aibaba_ai_community.chains.graph_qa.prompts",
+    "GRAPHDB_QA_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "GRAPHDB_SPARQL_FIX_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "GRAPHDB_SPARQL_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "GREMLIN_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "KUZU_EXTRA_INSTRUCTIONS": "aibaba_ai_community.chains.graph_qa.prompts",
+    "KUZU_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "NEBULAGRAPH_EXTRA_INSTRUCTIONS": "aibaba_ai_community.chains.graph_qa.prompts",
     "NEPTUNE_OPENCYPHER_EXTRA_INSTRUCTIONS": (
-        "aiagentsforce_community.chains.graph_qa.prompts"
+        "aibaba_ai_community.chains.graph_qa.prompts"
     ),
     "NEPTUNE_OPENCYPHER_GENERATION_SIMPLE_TEMPLATE": (
-        "aiagentsforce_community.chains.graph_qa.prompts"
+        "aibaba_ai_community.chains.graph_qa.prompts"
     ),
     "NEPTUNE_OPENCYPHER_GENERATION_TEMPLATE": (
-        "aiagentsforce_community.chains.graph_qa.prompts"
+        "aibaba_ai_community.chains.graph_qa.prompts"
     ),
-    "NGQL_GENERATION_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "SPARQL_GENERATION_SELECT_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "SPARQL_GENERATION_UPDATE_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "SPARQL_INTENT_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
-    "SPARQL_QA_TEMPLATE": "aiagentsforce_community.chains.graph_qa.prompts",
+    "NGQL_GENERATION_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "SPARQL_GENERATION_SELECT_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "SPARQL_GENERATION_UPDATE_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "SPARQL_INTENT_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
+    "SPARQL_QA_TEMPLATE": "aibaba_ai_community.chains.graph_qa.prompts",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

@@ -1,6 +1,6 @@
 import pytest
 
-from aiagentsforce_community.embeddings.ovhcloud import OVHCloudEmbeddings
+from aibaba_ai_community.embeddings.ovhcloud import OVHCloudEmbeddings
 
 
 def test_ovhcloud_correct_instantiation() -> None:

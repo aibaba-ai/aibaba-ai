@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.document_transformers import OpenAIMetadataTagger
-    from aiagentsforce_community.document_transformers.openai_functions import (
+    from aibaba_ai_community.document_transformers import OpenAIMetadataTagger
+    from aibaba_ai_community.document_transformers.openai_functions import (
         create_metadata_tagger,
     )
 
@@ -12,9 +12,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "OpenAIMetadataTagger": "aiagentsforce_community.document_transformers",
+    "OpenAIMetadataTagger": "aibaba_ai_community.document_transformers",
     "create_metadata_tagger": (
-        "aiagentsforce_community.document_transformers.openai_functions"
+        "aibaba_ai_community.document_transformers.openai_functions"
     ),
 }
 

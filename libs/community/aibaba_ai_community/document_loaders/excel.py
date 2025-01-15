@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Any, List, Union
 
-from aiagentsforce_community.document_loaders.unstructured import (
+from aibaba_ai_community.document_loaders.unstructured import (
     UnstructuredFileLoader,
     validate_unstructured_version,
 )
@@ -22,7 +22,7 @@ class UnstructuredExcelLoader(UnstructuredFileLoader):
 
     Examples
     --------
-    from aiagentsforce_community.document_loaders.excel import UnstructuredExcelLoader
+    from aibaba_ai_community.document_loaders.excel import UnstructuredExcelLoader
 
     loader = UnstructuredExcelLoader("stanley-cups.xlsx", mode="elements")
     docs = loader.load()

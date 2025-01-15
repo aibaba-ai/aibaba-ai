@@ -38,7 +38,7 @@ class MapRerankDocumentsChain(BaseCombineDocumentsChain):
 
             from langchain.chains import MapRerankDocumentsChain, LLMChain
             from aibaba_ai_core.prompts import PromptTemplate
-            from aiagentsforce_community.llms import OpenAI
+            from aibaba_ai_community.llms import OpenAI
             from langchain.output_parsers.regex import RegexParser
 
             document_variable_name = "context"

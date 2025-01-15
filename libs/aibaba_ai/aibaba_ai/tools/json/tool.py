@@ -3,16 +3,16 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import JsonGetValueTool, JsonListKeysTool
-    from aiagentsforce_community.tools.json.tool import JsonSpec
+    from aibaba_ai_community.tools import JsonGetValueTool, JsonListKeysTool
+    from aibaba_ai_community.tools.json.tool import JsonSpec
 
 # Create a way to dynamically look up deprecated imports.
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "JsonSpec": "aiagentsforce_community.tools.json.tool",
-    "JsonListKeysTool": "aiagentsforce_community.tools",
-    "JsonGetValueTool": "aiagentsforce_community.tools",
+    "JsonSpec": "aibaba_ai_community.tools.json.tool",
+    "JsonListKeysTool": "aibaba_ai_community.tools",
+    "JsonGetValueTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

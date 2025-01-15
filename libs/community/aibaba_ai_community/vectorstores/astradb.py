@@ -27,11 +27,11 @@ from alibaba_ai_core.runnables.utils import gather_with_concurrency
 from alibaba_ai_core.utils.iter import batch_iterate
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.utilities.astradb import (
+from aibaba_ai_community.utilities.astradb import (
     SetupMode,
     _AstraDBCollectionEnvironment,
 )
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     from astrapy.db import AstraDB as LibAstraDB
@@ -114,7 +114,7 @@ class AstraDB(VectorStore):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.vectorstores import AstraDB
+                from aibaba_ai_community.vectorstores import AstraDB
                 from langchain_openai.embeddings import OpenAIEmbeddings
 
                 embeddings = OpenAIEmbeddings()

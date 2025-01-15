@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers import (
+    from aibaba_ai_community.retrievers import (
         LlamaIndexGraphRetriever,
         LlamaIndexRetriever,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "LlamaIndexRetriever": "aiagentsforce_community.retrievers",
-    "LlamaIndexGraphRetriever": "aiagentsforce_community.retrievers",
+    "LlamaIndexRetriever": "aibaba_ai_community.retrievers",
+    "LlamaIndexGraphRetriever": "aibaba_ai_community.retrievers",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

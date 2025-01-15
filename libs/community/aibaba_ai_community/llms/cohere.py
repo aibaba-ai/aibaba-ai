@@ -20,7 +20,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -132,7 +132,7 @@ class Cohere(LLM, BaseCohere):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import Cohere
+            from aibaba_ai_community.llms import Cohere
 
             cohere = Cohere(model="gptd-instruct-tft", cohere_api_key="my-api-key")
     """

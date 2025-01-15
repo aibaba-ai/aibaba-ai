@@ -11,7 +11,7 @@ from alibaba_ai_core.load.dump import dumps
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 from alibaba_ai_core.outputs import ChatGeneration, Generation, LLMResult
 
-from aiagentsforce_community.cache import AsyncRedisCache, RedisCache, RedisSemanticCache
+from aibaba_ai_community.cache import AsyncRedisCache, RedisCache, RedisSemanticCache
 from tests.integration_tests.cache.fake_embeddings import (
     ConsistentFakeEmbeddings,
     FakeEmbeddings,

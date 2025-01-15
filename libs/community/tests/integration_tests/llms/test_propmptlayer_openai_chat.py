@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from aiagentsforce_community.llms.loading import load_llm
-from aiagentsforce_community.llms.promptlayer_openai import PromptLayerOpenAIChat
+from aibaba_ai_community.llms.loading import load_llm
+from aibaba_ai_community.llms.promptlayer_openai import PromptLayerOpenAIChat
 
 
 def test_promptlayer_openai_chat_call() -> None:

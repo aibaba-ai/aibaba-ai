@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utils.ernie_functions import (
+    from aibaba_ai_community.utils.ernie_functions import (
         FunctionDescription,
         ToolDescription,
         convert_pydantic_to_ernie_function,
@@ -14,10 +14,10 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "FunctionDescription": "aiagentsforce_community.utils.ernie_functions",
-    "ToolDescription": "aiagentsforce_community.utils.ernie_functions",
-    "convert_pydantic_to_ernie_function": "aiagentsforce_community.utils.ernie_functions",
-    "convert_pydantic_to_ernie_tool": "aiagentsforce_community.utils.ernie_functions",
+    "FunctionDescription": "aibaba_ai_community.utils.ernie_functions",
+    "ToolDescription": "aibaba_ai_community.utils.ernie_functions",
+    "convert_pydantic_to_ernie_function": "aibaba_ai_community.utils.ernie_functions",
+    "convert_pydantic_to_ernie_tool": "aibaba_ai_community.utils.ernie_functions",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

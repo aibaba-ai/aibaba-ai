@@ -1,7 +1,7 @@
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.retrievers import DriaRetriever
+from aibaba_ai_community.retrievers import DriaRetriever
 
 
 # Set a fixture for DriaRetriever

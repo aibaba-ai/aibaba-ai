@@ -1,4 +1,4 @@
-from aiagentsforce_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
+from aibaba_ai_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
 
 
 def test_async_recursive_url_loader() -> None:

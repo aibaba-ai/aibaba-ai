@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.ernie_functions.base import (
+    from aibaba_ai_community.chains.ernie_functions.base import (
         convert_python_function_to_ernie_function,
         convert_to_ernie_function,
         create_ernie_fn_chain,
@@ -18,16 +18,16 @@ if TYPE_CHECKING:
 # handling optional imports.
 DEPRECATED_LOOKUP = {
     "convert_python_function_to_ernie_function": (
-        "aiagentsforce_community.chains.ernie_functions.base"
+        "aibaba_ai_community.chains.ernie_functions.base"
     ),
-    "convert_to_ernie_function": "aiagentsforce_community.chains.ernie_functions.base",
-    "create_ernie_fn_chain": "aiagentsforce_community.chains.ernie_functions.base",
-    "create_ernie_fn_runnable": "aiagentsforce_community.chains.ernie_functions.base",
-    "create_structured_output_chain": "aiagentsforce_community.chains.ernie_functions.base",
+    "convert_to_ernie_function": "aibaba_ai_community.chains.ernie_functions.base",
+    "create_ernie_fn_chain": "aibaba_ai_community.chains.ernie_functions.base",
+    "create_ernie_fn_runnable": "aibaba_ai_community.chains.ernie_functions.base",
+    "create_structured_output_chain": "aibaba_ai_community.chains.ernie_functions.base",
     "create_structured_output_runnable": (
-        "aiagentsforce_community.chains.ernie_functions.base"
+        "aibaba_ai_community.chains.ernie_functions.base"
     ),
-    "get_ernie_output_parser": "aiagentsforce_community.chains.ernie_functions.base",
+    "get_ernie_output_parser": "aibaba_ai_community.chains.ernie_functions.base",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

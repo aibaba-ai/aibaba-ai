@@ -18,7 +18,7 @@ class CTransformers(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import CTransformers
+            from aibaba_ai_community.llms import CTransformers
 
             llm = CTransformers(model="/path/to/ggml-gpt-2.bin", model_type="gpt2")
     """

@@ -8,7 +8,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import get_from_env
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import DistanceStrategy
+from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 
 
 class SemaDB(VectorStore):
@@ -19,7 +19,7 @@ class SemaDB(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import SemaDB
+            from aibaba_ai_community.vectorstores import SemaDB
 
             db = SemaDB('mycollection', 768, embeddings, DistanceStrategy.COSINE)
 

@@ -29,12 +29,12 @@ from alibaba_ai_core.messages import (
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from alibaba_ai_core.utils import pre_init
 
-from aiagentsforce_community.llms.vertexai import (
+from aibaba_ai_community.llms.vertexai import (
     _VertexAICommon,
     is_codey_model,
     is_gemini_model,
 )
-from aiagentsforce_community.utilities.vertexai import (
+from aibaba_ai_community.utilities.vertexai import (
     load_image_from_gcs,
     raise_vertex_import_error,
 )

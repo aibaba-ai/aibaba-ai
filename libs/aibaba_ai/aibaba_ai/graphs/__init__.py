@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.graphs import (
+    from aibaba_ai_community.graphs import (
         ArangoGraph,
         FalkorDBGraph,
         HugeGraph,
@@ -23,16 +23,16 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "MemgraphGraph": "aiagentsforce_community.graphs",
-    "NetworkxEntityGraph": "aiagentsforce_community.graphs",
-    "Neo4jGraph": "aiagentsforce_community.graphs",
-    "NebulaGraph": "aiagentsforce_community.graphs",
-    "NeptuneGraph": "aiagentsforce_community.graphs",
-    "KuzuGraph": "aiagentsforce_community.graphs",
-    "HugeGraph": "aiagentsforce_community.graphs",
-    "RdfGraph": "aiagentsforce_community.graphs",
-    "ArangoGraph": "aiagentsforce_community.graphs",
-    "FalkorDBGraph": "aiagentsforce_community.graphs",
+    "MemgraphGraph": "aibaba_ai_community.graphs",
+    "NetworkxEntityGraph": "aibaba_ai_community.graphs",
+    "Neo4jGraph": "aibaba_ai_community.graphs",
+    "NebulaGraph": "aibaba_ai_community.graphs",
+    "NeptuneGraph": "aibaba_ai_community.graphs",
+    "KuzuGraph": "aibaba_ai_community.graphs",
+    "HugeGraph": "aibaba_ai_community.graphs",
+    "RdfGraph": "aibaba_ai_community.graphs",
+    "ArangoGraph": "aibaba_ai_community.graphs",
+    "FalkorDBGraph": "aibaba_ai_community.graphs",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

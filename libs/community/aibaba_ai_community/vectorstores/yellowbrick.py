@@ -23,7 +23,7 @@ from typing import (
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.docstore.document import Document
+from aibaba_ai_community.docstore.document import Document
 
 if TYPE_CHECKING:
     from psycopg2.extensions import connection as PgConnection
@@ -34,8 +34,8 @@ class Yellowbrick(VectorStore):
     """Yellowbrick as a vector database.
     Example:
         .. code-block:: python
-            from aiagentsforce_community.vectorstores import Yellowbrick
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import Yellowbrick
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
             ...
     """
 

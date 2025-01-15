@@ -34,7 +34,7 @@ class VectorStoreToolkit(BaseToolkit):
     def get_tools(self) -> List[BaseTool]:
         """Get the tools in the toolkit."""
         try:
-            from aiagentsforce_community.tools.vectorstore.tool import (
+            from aibaba_ai_community.tools.vectorstore.tool import (
                 VectorStoreQATool,
                 VectorStoreQAWithSourcesTool,
             )
@@ -77,7 +77,7 @@ class VectorStoreRouterToolkit(BaseToolkit):
         """Get the tools in the toolkit."""
         tools: List[BaseTool] = []
         try:
-            from aiagentsforce_community.tools.vectorstore.tool import (
+            from aibaba_ai_community.tools.vectorstore.tool import (
                 VectorStoreQATool,
             )
         except ImportError:

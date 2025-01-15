@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.tools import (
+    from aibaba_ai_community.tools import (
         BaseRequestsTool,
         RequestsDeleteTool,
         RequestsGetTool,
@@ -16,12 +16,12 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "BaseRequestsTool": "aiagentsforce_community.tools",
-    "RequestsGetTool": "aiagentsforce_community.tools",
-    "RequestsPostTool": "aiagentsforce_community.tools",
-    "RequestsPatchTool": "aiagentsforce_community.tools",
-    "RequestsPutTool": "aiagentsforce_community.tools",
-    "RequestsDeleteTool": "aiagentsforce_community.tools",
+    "BaseRequestsTool": "aibaba_ai_community.tools",
+    "RequestsGetTool": "aibaba_ai_community.tools",
+    "RequestsPostTool": "aibaba_ai_community.tools",
+    "RequestsPatchTool": "aibaba_ai_community.tools",
+    "RequestsPutTool": "aibaba_ai_community.tools",
+    "RequestsDeleteTool": "aibaba_ai_community.tools",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

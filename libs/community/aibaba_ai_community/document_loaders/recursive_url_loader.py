@@ -20,7 +20,7 @@ import requests
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils.html import extract_sub_links
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 logger = logging.getLogger(__name__)
 
@@ -93,7 +93,7 @@ class RecursiveUrlLoader(BaseLoader):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import RecursiveUrlLoader
+            from aibaba_ai_community.document_loaders import RecursiveUrlLoader
 
             loader = RecursiveUrlLoader(
                 "https://docs.python.org/3.9/",

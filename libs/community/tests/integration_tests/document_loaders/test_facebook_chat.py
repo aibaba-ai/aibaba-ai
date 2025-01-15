@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aiagentsforce_community.document_loaders import FacebookChatLoader
+from aibaba_ai_community.document_loaders import FacebookChatLoader
 
 
 def test_facebook_chat_loader() -> None:

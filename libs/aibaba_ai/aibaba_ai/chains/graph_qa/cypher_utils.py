@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.chains.graph_qa.cypher_utils import (
+    from aibaba_ai_community.chains.graph_qa.cypher_utils import (
         CypherQueryCorrector,
         Schema,
     )
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "CypherQueryCorrector": "aiagentsforce_community.chains.graph_qa.cypher_utils",
-    "Schema": "aiagentsforce_community.chains.graph_qa.cypher_utils",
+    "CypherQueryCorrector": "aibaba_ai_community.chains.graph_qa.cypher_utils",
+    "Schema": "aibaba_ai_community.chains.graph_qa.cypher_utils",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

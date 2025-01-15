@@ -1,6 +1,6 @@
 """Test GooseAI API wrapper."""
 
-from aiagentsforce_community.llms.gooseai import GooseAI
+from aibaba_ai_community.llms.gooseai import GooseAI
 
 
 def test_gooseai_call() -> None:

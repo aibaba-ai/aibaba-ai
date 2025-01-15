@@ -25,45 +25,45 @@ QUERY_CONSTRUCTOR_RUN_NAME = "query_constructor"
 def _get_builtin_translator(vectorstore: VectorStore) -> Visitor:
     """Get the translator class corresponding to the vector store class."""
     try:
-        import aiagentsforce_community  # noqa: F401
+        import aibaba_ai_community  # noqa: F401
     except ImportError:
         raise ImportError(
             "The langchain-community package must be installed to use this feature."
             " Please install it using `pip install langchain-community`."
         )
 
-    from aiagentsforce_community.query_constructors.astradb import AstraDBTranslator
-    from aiagentsforce_community.query_constructors.chroma import ChromaTranslator
-    from aiagentsforce_community.query_constructors.dashvector import DashvectorTranslator
-    from aiagentsforce_community.query_constructors.databricks_vector_search import (
+    from aibaba_ai_community.query_constructors.astradb import AstraDBTranslator
+    from aibaba_ai_community.query_constructors.chroma import ChromaTranslator
+    from aibaba_ai_community.query_constructors.dashvector import DashvectorTranslator
+    from aibaba_ai_community.query_constructors.databricks_vector_search import (
         DatabricksVectorSearchTranslator,
     )
-    from aiagentsforce_community.query_constructors.deeplake import DeepLakeTranslator
-    from aiagentsforce_community.query_constructors.dingo import DingoDBTranslator
-    from aiagentsforce_community.query_constructors.elasticsearch import (
+    from aibaba_ai_community.query_constructors.deeplake import DeepLakeTranslator
+    from aibaba_ai_community.query_constructors.dingo import DingoDBTranslator
+    from aibaba_ai_community.query_constructors.elasticsearch import (
         ElasticsearchTranslator,
     )
-    from aiagentsforce_community.query_constructors.milvus import MilvusTranslator
-    from aiagentsforce_community.query_constructors.mongodb_atlas import (
+    from aibaba_ai_community.query_constructors.milvus import MilvusTranslator
+    from aibaba_ai_community.query_constructors.mongodb_atlas import (
         MongoDBAtlasTranslator,
     )
-    from aiagentsforce_community.query_constructors.myscale import MyScaleTranslator
-    from aiagentsforce_community.query_constructors.neo4j import Neo4jTranslator
-    from aiagentsforce_community.query_constructors.opensearch import OpenSearchTranslator
-    from aiagentsforce_community.query_constructors.pgvector import PGVectorTranslator
-    from aiagentsforce_community.query_constructors.pinecone import PineconeTranslator
-    from aiagentsforce_community.query_constructors.qdrant import QdrantTranslator
-    from aiagentsforce_community.query_constructors.redis import RedisTranslator
-    from aiagentsforce_community.query_constructors.supabase import SupabaseVectorTranslator
-    from aiagentsforce_community.query_constructors.tencentvectordb import (
+    from aibaba_ai_community.query_constructors.myscale import MyScaleTranslator
+    from aibaba_ai_community.query_constructors.neo4j import Neo4jTranslator
+    from aibaba_ai_community.query_constructors.opensearch import OpenSearchTranslator
+    from aibaba_ai_community.query_constructors.pgvector import PGVectorTranslator
+    from aibaba_ai_community.query_constructors.pinecone import PineconeTranslator
+    from aibaba_ai_community.query_constructors.qdrant import QdrantTranslator
+    from aibaba_ai_community.query_constructors.redis import RedisTranslator
+    from aibaba_ai_community.query_constructors.supabase import SupabaseVectorTranslator
+    from aibaba_ai_community.query_constructors.tencentvectordb import (
         TencentVectorDBTranslator,
     )
-    from aiagentsforce_community.query_constructors.timescalevector import (
+    from aibaba_ai_community.query_constructors.timescalevector import (
         TimescaleVectorTranslator,
     )
-    from aiagentsforce_community.query_constructors.vectara import VectaraTranslator
-    from aiagentsforce_community.query_constructors.weaviate import WeaviateTranslator
-    from aiagentsforce_community.vectorstores import (
+    from aibaba_ai_community.query_constructors.vectara import VectaraTranslator
+    from aibaba_ai_community.query_constructors.weaviate import WeaviateTranslator
+    from aibaba_ai_community.vectorstores import (
         AstraDB,
         DashVector,
         DatabricksVectorSearch,
@@ -82,16 +82,16 @@ def _get_builtin_translator(vectorstore: VectorStore) -> Visitor:
         Vectara,
         Weaviate,
     )
-    from aiagentsforce_community.vectorstores import (
+    from aibaba_ai_community.vectorstores import (
         Chroma as CommunityChroma,
     )
-    from aiagentsforce_community.vectorstores import (
+    from aibaba_ai_community.vectorstores import (
         ElasticsearchStore as ElasticsearchStoreCommunity,
     )
-    from aiagentsforce_community.vectorstores import (
+    from aibaba_ai_community.vectorstores import (
         MongoDBAtlasVectorSearch as CommunityMongoDBAtlasVectorSearch,
     )
-    from aiagentsforce_community.vectorstores import (
+    from aibaba_ai_community.vectorstores import (
         Pinecone as CommunityPinecone,
     )
 
@@ -197,8 +197,8 @@ def _get_builtin_translator(vectorstore: VectorStore) -> Visitor:
 
         try:
             # Added in langchain-community==0.2.11
-            from aiagentsforce_community.query_constructors.hanavector import HanaTranslator
-            from aiagentsforce_community.vectorstores import HanaDB
+            from aibaba_ai_community.query_constructors.hanavector import HanaTranslator
+            from aibaba_ai_community.vectorstores import HanaDB
         except ImportError:
             pass
         else:

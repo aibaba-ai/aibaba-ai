@@ -30,7 +30,7 @@ def _embedding_factory() -> Embeddings:
         from langchain_openai import OpenAIEmbeddings
     except ImportError:
         try:
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
         except ImportError:
             raise ImportError(
                 "Could not import OpenAIEmbeddings. Please install the "
@@ -89,7 +89,7 @@ class _EmbeddingDistanceChainMixin(Chain):
             pass
 
         try:
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             types_.append(OpenAIEmbeddings)
         except ImportError:
@@ -165,7 +165,7 @@ class _EmbeddingDistanceChainMixin(Chain):
             np.ndarray: The cosine distance.
         """
         try:
-            from aiagentsforce_community.utils.math import cosine_similarity
+            from aibaba_ai_community.utils.math import cosine_similarity
         except ImportError:
             raise ImportError(
                 "The cosine_similarity function is required to compute cosine distance."

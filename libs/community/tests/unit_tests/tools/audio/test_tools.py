@@ -8,7 +8,7 @@ from unittest.mock import Mock, mock_open, patch
 import pytest
 from pydantic import SecretStr
 
-from aiagentsforce_community.tools.audio import HuggingFaceTextToSpeechModelInference
+from aibaba_ai_community.tools.audio import HuggingFaceTextToSpeechModelInference
 
 AUDIO_FORMAT_EXT = "wav"
 

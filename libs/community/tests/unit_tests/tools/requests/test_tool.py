@@ -4,7 +4,7 @@ from typing import Any, Dict
 
 import pytest
 
-from aiagentsforce_community.tools.requests.tool import (
+from aibaba_ai_community.tools.requests.tool import (
     RequestsDeleteTool,
     RequestsGetTool,
     RequestsPatchTool,
@@ -12,7 +12,7 @@ from aiagentsforce_community.tools.requests.tool import (
     RequestsPutTool,
     _parse_input,
 )
-from aiagentsforce_community.utilities.requests import (
+from aibaba_ai_community.utilities.requests import (
     JsonRequestsWrapper,
     TextRequestsWrapper,
 )

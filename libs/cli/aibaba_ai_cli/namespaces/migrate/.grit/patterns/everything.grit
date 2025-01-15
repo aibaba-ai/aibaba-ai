@@ -6,7 +6,7 @@ pattern langchain_all_migrations() {
     langchain_migrate_fireworks(),
     langchain_migrate_ibm(),
     langchain_migrate_aiagentforce_to_core(),
-    langchain_migrate_aiagentforce_to_aiagentsforce_community(),
+    langchain_migrate_aiagentforce_to_aibaba_ai_community(),
     langchain_migrate_aiagentforce_to_textsplitters(),
     langchain_migrate_openai(),
     langchain_migrate_pinecone(),

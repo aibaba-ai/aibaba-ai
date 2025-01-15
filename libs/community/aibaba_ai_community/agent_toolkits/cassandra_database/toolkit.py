@@ -6,12 +6,12 @@ from alibaba_ai_core.tools import BaseTool
 from alibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.tools.cassandra_database.tool import (
+from aibaba_ai_community.tools.cassandra_database.tool import (
     GetSchemaCassandraDatabaseTool,
     GetTableDataCassandraDatabaseTool,
     QueryCassandraDatabaseTool,
 )
-from aiagentsforce_community.utilities.cassandra_database import CassandraDatabase
+from aibaba_ai_community.utilities.cassandra_database import CassandraDatabase
 
 
 class CassandraDatabaseToolkit(BaseToolkit):

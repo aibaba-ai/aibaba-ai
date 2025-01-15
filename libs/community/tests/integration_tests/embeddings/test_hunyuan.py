@@ -1,4 +1,4 @@
-from aiagentsforce_community.embeddings.hunyuan import HunyuanEmbeddings
+from aibaba_ai_community.embeddings.hunyuan import HunyuanEmbeddings
 
 
 def test_embedding_query() -> None:

@@ -6,7 +6,7 @@ from alibaba_ai_core.language_models.llms import LLM
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import ConfigDict
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 INSTRUCTION_KEY = "### Instruction:"
 RESPONSE_KEY = "### Response:"
@@ -36,7 +36,7 @@ class MosaicML(LLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import MosaicML
+            from aibaba_ai_community.llms import MosaicML
             endpoint_url = (
                 "https://models.hosted-on.mosaicml.hosting/mpt-7b-instruct/v1/predict"
             )

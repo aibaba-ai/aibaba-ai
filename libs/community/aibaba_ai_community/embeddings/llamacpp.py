@@ -15,7 +15,7 @@ class LlamaCppEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import LlamaCppEmbeddings
+            from aibaba_ai_community.embeddings import LlamaCppEmbeddings
             llama = LlamaCppEmbeddings(model_path="/path/to/model.bin")
     """
 

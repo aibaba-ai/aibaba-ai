@@ -6,8 +6,8 @@ from alibaba_ai_core._api import deprecated
 from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, Field
 
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.llms.solar import SOLAR_SERVICE_URL_BASE, SolarCommon
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.llms.solar import SOLAR_SERVICE_URL_BASE, SolarCommon
 
 
 @deprecated(  # type: ignore[arg-type]
@@ -22,7 +22,7 @@ class SolarChat(SolarCommon, ChatOpenAI):  # type: ignore[override, override]
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models.solar import SolarChat
+            from aibaba_ai_community.chat_models.solar import SolarChat
 
             solar = SolarChat(model="solar-1-mini-chat")
     """

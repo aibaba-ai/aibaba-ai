@@ -2,7 +2,7 @@ from typing import Any, Callable, Iterator, List, Optional, Tuple
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 def default_joiner(docs: List[Tuple[str, Any]]) -> str:
@@ -29,7 +29,7 @@ class RocksetLoader(BaseLoader):
             # collection as Documents, with the `text` column used as
             # the content
 
-            from aiagentsforce_community.document_loaders import RocksetLoader
+            from aibaba_ai_community.document_loaders import RocksetLoader
             from rockset import RocksetClient, Regions, models
 
             loader = RocksetLoader(

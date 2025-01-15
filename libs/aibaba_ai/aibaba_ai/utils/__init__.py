@@ -33,7 +33,7 @@ from aibaba_ai_core.utils.utils import (
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.utils.math import (
+    from aibaba_ai_community.utils.math import (
         cosine_similarity,
         cosine_similarity_top_k,
     )
@@ -41,8 +41,8 @@ if TYPE_CHECKING:
 # Not deprecated right now because we will likely need to move these functions
 # back into langchain (as long as we're OK with the dependency on numpy).
 _MODULE_LOOKUP = {
-    "cosine_similarity": "aiagentsforce_community.utils.math",
-    "cosine_similarity_top_k": "aiagentsforce_community.utils.math",
+    "cosine_similarity": "aibaba_ai_community.utils.math",
+    "cosine_similarity_top_k": "aibaba_ai_community.utils.math",
 }
 
 _import_attribute = create_importer(__package__, module_lookup=_MODULE_LOOKUP)

@@ -7,7 +7,7 @@ import requests
 from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field, model_validator, validator
 
-from aiagentsforce_community.tools.edenai.edenai_base_tool import EdenaiTool
+from aibaba_ai_community.tools.edenai.edenai_base_tool import EdenaiTool
 
 logger = logging.getLogger(__name__)
 

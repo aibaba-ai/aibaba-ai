@@ -6,7 +6,7 @@ from alibaba_ai_core.callbacks import CallbackManager
 from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
 from alibaba_ai_core.outputs import ChatGeneration, LLMResult
 
-from aiagentsforce_community.chat_models.pai_eas_endpoint import PaiEasChatEndpoint
+from aibaba_ai_community.chat_models.pai_eas_endpoint import PaiEasChatEndpoint
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

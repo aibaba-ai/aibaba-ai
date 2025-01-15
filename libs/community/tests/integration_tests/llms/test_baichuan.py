@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.outputs import LLMResult
 
-from aiagentsforce_community.llms.baichuan import BaichuanLLM
+from aibaba_ai_community.llms.baichuan import BaichuanLLM
 
 
 def test_call() -> None:

@@ -21,7 +21,7 @@ class MlflowAIGatewayEmbeddings(Embeddings, BaseModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import MlflowAIGatewayEmbeddings
+            from aibaba_ai_community.embeddings import MlflowAIGatewayEmbeddings
 
             embeddings = MlflowAIGatewayEmbeddings(
                 gateway_uri="<your-mlflow-ai-gateway-uri>",

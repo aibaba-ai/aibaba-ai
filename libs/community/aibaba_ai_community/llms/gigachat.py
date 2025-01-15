@@ -194,7 +194,7 @@ class GigaChat(_BaseGigaChat, BaseLLM):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import GigaChat
+            from aibaba_ai_community.llms import GigaChat
             giga = GigaChat(credentials=..., scope=..., verify_ssl_certs=False)
     """
 

@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.query_constructors.elasticsearch import (
+    from aibaba_ai_community.query_constructors.elasticsearch import (
         ElasticsearchTranslator,
     )
 
@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "ElasticsearchTranslator": "aiagentsforce_community.query_constructors.elasticsearch",
+    "ElasticsearchTranslator": "aibaba_ai_community.query_constructors.elasticsearch",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

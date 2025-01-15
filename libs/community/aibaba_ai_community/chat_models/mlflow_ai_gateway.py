@@ -44,7 +44,7 @@ class ChatMLflowAIGateway(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatMLflowAIGateway
+            from aibaba_ai_community.chat_models import ChatMLflowAIGateway
 
             chat = ChatMLflowAIGateway(
                 gateway_uri="<your-mlflow-ai-gateway-uri>",

@@ -10,7 +10,7 @@ from langchain._api import create_importer
 
 _importer = create_importer(
     __package__,
-    deprecated_lookups={"PythonREPL": "aiagentsforce_community.utilities.python"},
+    deprecated_lookups={"PythonREPL": "aibaba_ai_community.utilities.python"},
 )
 
 

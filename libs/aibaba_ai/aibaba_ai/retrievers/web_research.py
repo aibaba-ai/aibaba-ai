@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Any
 from langchain._api import create_importer
 
 if TYPE_CHECKING:
-    from aiagentsforce_community.retrievers.web_research import (
+    from aibaba_ai_community.retrievers.web_research import (
         QuestionListOutputParser,
         SearchQueries,
         WebResearchRetriever,
@@ -13,9 +13,9 @@ if TYPE_CHECKING:
 # Used to consolidate logic for raising deprecation warnings and
 # handling optional imports.
 DEPRECATED_LOOKUP = {
-    "QuestionListOutputParser": "aiagentsforce_community.retrievers.web_research",
-    "SearchQueries": "aiagentsforce_community.retrievers.web_research",
-    "WebResearchRetriever": "aiagentsforce_community.retrievers.web_research",
+    "QuestionListOutputParser": "aibaba_ai_community.retrievers.web_research",
+    "SearchQueries": "aibaba_ai_community.retrievers.web_research",
+    "WebResearchRetriever": "aibaba_ai_community.retrievers.web_research",
 }
 
 _import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)

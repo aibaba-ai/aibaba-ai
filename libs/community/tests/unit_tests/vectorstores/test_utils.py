@@ -5,7 +5,7 @@ from typing import cast
 import numpy as np
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores.utils import (
+from aibaba_ai_community.vectorstores.utils import (
     filter_complex_metadata,
     maximal_marginal_relevance,
 )

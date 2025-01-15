@@ -7,7 +7,7 @@ from typing import Any, Dict, Iterator, List, Optional, Tuple
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 
 class AthenaLoader(BaseLoader):

@@ -16,7 +16,7 @@ class MosaicMLInstructorEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import MosaicMLInstructorEmbeddings
+            from aibaba_ai_community.llms import MosaicMLInstructorEmbeddings
             endpoint_url = (
                 "https://models.hosted-on.mosaicml.hosting/instructor-large/v1/predict"
             )

@@ -2,8 +2,8 @@ from typing import Callable, Dict, Iterator, Optional
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.utilities.tensorflow_datasets import TensorflowDatasets
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.utilities.tensorflow_datasets import TensorflowDatasets
 
 
 class TensorflowDatasetLoader(BaseLoader):
@@ -19,7 +19,7 @@ class TensorflowDatasetLoader(BaseLoader):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders import TensorflowDatasetLoader
+            from aibaba_ai_community.document_loaders import TensorflowDatasetLoader
 
             def mlqaen_example_to_document(example: dict) -> Document:
                 return Document(

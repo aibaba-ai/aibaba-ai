@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from aiagentsforce_community.document_loaders.parsers.language.csharp import CSharpSegmenter
+from aibaba_ai_community.document_loaders.parsers.language.csharp import CSharpSegmenter
 
 
 @pytest.mark.requires("tree_sitter", "tree_sitter_languages")

@@ -2,7 +2,7 @@
 
 import pytest
 
-from aiagentsforce_community.utilities.github import GitHubAPIWrapper
+from aibaba_ai_community.utilities.github import GitHubAPIWrapper
 
 # Make sure you have set the following env variables:
 # GITHUB_REPOSITORY

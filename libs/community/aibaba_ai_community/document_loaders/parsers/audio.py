@@ -6,9 +6,9 @@ from typing import Any, Callable, Dict, Iterator, Literal, Optional, Tuple, Unio
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseBlobParser
-from aiagentsforce_community.document_loaders.blob_loaders import Blob
-from aiagentsforce_community.utils.openai import is_openai_v1
+from aibaba_ai_community.document_loaders.base import BaseBlobParser
+from aibaba_ai_community.document_loaders.blob_loaders import Blob
+from aibaba_ai_community.utils.openai import is_openai_v1
 
 logger = logging.getLogger(__name__)
 
@@ -66,10 +66,10 @@ class AzureOpenAIWhisperParser(BaseBlobParser):
     YoutubeAudioLoader Example:
         .. code-block:: python
 
-            from aiagentsforce_community.document_loaders.blob_loaders import (
+            from aibaba_ai_community.document_loaders.blob_loaders import (
                 YoutubeAudioLoader
                 )
-            from aiagentsforce_community.document_loaders.generic import GenericLoader
+            from aibaba_ai_community.document_loaders.generic import GenericLoader
 
             # Must be a list
             youtube_url = ["https://your-youtube-url"]
@@ -581,7 +581,7 @@ class FasterWhisperParser(BaseBlobParser):
         .. code-block:: python
 
             from langchain.document_loaders.generic import GenericLoader
-            from aiagentsforce_community.document_loaders.parsers.audio
+            from aibaba_ai_community.document_loaders.parsers.audio
                 import FasterWhisperParser
             from langchain.document_loaders.blob_loaders.youtube_audio
                 import YoutubeAudioLoader

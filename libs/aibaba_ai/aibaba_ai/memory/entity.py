@@ -216,10 +216,10 @@ class RedisEntityStore(BaseEntityStore):
         super().__init__(*args, **kwargs)
 
         try:
-            from aiagentsforce_community.utilities.redis import get_client
+            from aibaba_ai_community.utilities.redis import get_client
         except ImportError:
             raise ImportError(
-                "Could not import aiagentsforce_community.utilities.redis.get_client. "
+                "Could not import aibaba_ai_community.utilities.redis.get_client. "
                 "Please install it with `pip install langchain-community`."
             )
 

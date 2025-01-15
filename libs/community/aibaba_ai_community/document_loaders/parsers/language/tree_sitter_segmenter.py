@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from typing import TYPE_CHECKING, List
 
-from aiagentsforce_community.document_loaders.parsers.language.code_segmenter import (
+from aibaba_ai_community.document_loaders.parsers.language.code_segmenter import (
     CodeSegmenter,
 )
 

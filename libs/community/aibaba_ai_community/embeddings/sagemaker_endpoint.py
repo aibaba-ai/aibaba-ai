@@ -4,7 +4,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
-from aiagentsforce_community.llms.sagemaker_endpoint import ContentHandlerBase
+from aibaba_ai_community.llms.sagemaker_endpoint import ContentHandlerBase
 
 
 class EmbeddingsContentHandler(ContentHandlerBase[List[str], List[List[float]]]):
@@ -33,7 +33,7 @@ class SagemakerEndpointEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import SagemakerEndpointEmbeddings
+            from aibaba_ai_community.embeddings import SagemakerEndpointEmbeddings
             endpoint_name = (
                 "my-endpoint-name"
             )
@@ -86,7 +86,7 @@ class SagemakerEndpointEmbeddings(BaseModel, Embeddings):
      Example:
         .. code-block:: python
 
-        from aiagentsforce_community.embeddings.sagemaker_endpoint import EmbeddingsContentHandler
+        from aibaba_ai_community.embeddings.sagemaker_endpoint import EmbeddingsContentHandler
 
         class ContentHandler(EmbeddingsContentHandler):
                 content_type = "application/json"

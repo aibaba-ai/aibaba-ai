@@ -1,6 +1,6 @@
 """Test SambaNova Embeddings."""
 
-from aiagentsforce_community.embeddings.sambanova import (
+from aibaba_ai_community.embeddings.sambanova import (
     SambaStudioEmbeddings,
 )
 

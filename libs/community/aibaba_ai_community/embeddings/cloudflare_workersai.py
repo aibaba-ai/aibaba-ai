@@ -16,7 +16,7 @@ class CloudflareWorkersAIEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.embeddings import CloudflareWorkersAIEmbeddings
+            from aibaba_ai_community.embeddings import CloudflareWorkersAIEmbeddings
 
             account_id = "my_account_id"
             api_token = "my_secret_api_token"

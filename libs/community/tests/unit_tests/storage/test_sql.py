@@ -7,7 +7,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.stores import BaseStore
 from packaging import version
 
-from aiagentsforce_community.storage.sql import SQLStore
+from aibaba_ai_community.storage.sql import SQLStore
 
 is_sqlalchemy_v1 = version.parse(sa.__version__).major == 1
 

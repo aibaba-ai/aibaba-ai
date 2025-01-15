@@ -60,7 +60,7 @@ from pydantic import (
     model_validator,
 )
 
-from aiagentsforce_community.chat_models.llamacpp import (
+from aibaba_ai_community.chat_models.llamacpp import (
     _lc_invalid_tool_call_to_openai_tool_call,
     _lc_tool_call_to_openai_tool_call,
 )
@@ -221,7 +221,7 @@ class ChatBaichuan(BaseChatModel):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatBaichuan
+            from aibaba_ai_community.chat_models import ChatBaichuan
 
             chat = ChatBaichuan(
                 api_key=api_key,

@@ -26,15 +26,15 @@ from alibaba_ai_core.prompts import (
 from alibaba_ai_core.runnables import Runnable
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.cypher_utils import (
+from aibaba_ai_community.chains.graph_qa.cypher_utils import (
     CypherQueryCorrector,
     Schema,
 )
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     CYPHER_GENERATION_PROMPT,
     CYPHER_QA_PROMPT,
 )
-from aiagentsforce_community.graphs.graph_store import GraphStore
+from aibaba_ai_community.graphs.graph_store import GraphStore
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

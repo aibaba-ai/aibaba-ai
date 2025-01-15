@@ -1,6 +1,6 @@
 from alibaba_ai_core.language_models.llms import BaseLLM
 
-from aiagentsforce_community import llms
+from aibaba_ai_community import llms
 
 EXPECT_ALL = [
     "AI21",

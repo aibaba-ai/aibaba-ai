@@ -2,8 +2,8 @@ from typing import Callable, Iterable, Set, TypeVar
 
 from alibaba_ai_core._api import beta
 
-from aiagentsforce_community.graph_vectorstores import Link
-from aiagentsforce_community.graph_vectorstores.extractors.link_extractor import (
+from aibaba_ai_community.graph_vectorstores import Link
+from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,
 )
 

@@ -63,7 +63,7 @@ class SparkLLM(LLM):
     Instantiate:
         .. code-block:: python
 
-            from aiagentsforce_community.llms import SparkLLM
+            from aibaba_ai_community.llms import SparkLLM
 
             llm = SparkLLM(
                 app_id="your-app-id",

@@ -2,7 +2,7 @@
 
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.vectorstores import AwaDB
+from aibaba_ai_community.vectorstores import AwaDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 
 

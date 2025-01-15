@@ -17,7 +17,7 @@ from typing import Any, List, Optional, Union
 
 from alibaba_ai_core.vectorstores import VectorStoreRetriever
 
-from aiagentsforce_community.chains.pebblo_retrieval.models import (
+from aibaba_ai_community.chains.pebblo_retrieval.models import (
     AuthContext,
     SemanticContext,
 )

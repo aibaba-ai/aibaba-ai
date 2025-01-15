@@ -3,7 +3,7 @@ from typing import Any, Callable, Iterator, Mapping, Optional
 from alibaba_ai_core.documents import Document
 from alibaba_ai_core.utils.utils import guard_import
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
 
 RecordHandler = Callable[[Any, Optional[str]], Document]
 

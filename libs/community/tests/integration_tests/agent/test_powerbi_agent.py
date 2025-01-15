@@ -1,9 +1,9 @@
 import pytest
 from alibaba_ai_core.utils import get_from_env
 
-from aiagentsforce_community.agent_toolkits import PowerBIToolkit, create_pbi_agent
-from aiagentsforce_community.chat_models import ChatOpenAI
-from aiagentsforce_community.utilities.powerbi import PowerBIDataset
+from aibaba_ai_community.agent_toolkits import PowerBIToolkit, create_pbi_agent
+from aibaba_ai_community.chat_models import ChatOpenAI
+from aibaba_ai_community.utilities.powerbi import PowerBIDataset
 
 
 def azure_installed() -> bool:

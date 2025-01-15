@@ -18,12 +18,12 @@ from alibaba_ai_core.messages import (
 from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from pydantic import ConfigDict
 
-from aiagentsforce_community.chat_models.anthropic import (
+from aibaba_ai_community.chat_models.anthropic import (
     convert_messages_to_prompt_anthropic,
 )
-from aiagentsforce_community.chat_models.meta import convert_messages_to_prompt_llama
-from aiagentsforce_community.llms.bedrock import BedrockBase
-from aiagentsforce_community.utilities.anthropic import (
+from aibaba_ai_community.chat_models.meta import convert_messages_to_prompt_llama
+from aibaba_ai_community.llms.bedrock import BedrockBase
+from aibaba_ai_community.utilities.anthropic import (
     get_num_tokens_anthropic,
     get_token_ids_anthropic,
 )

@@ -6,7 +6,7 @@ import json
 import uuid
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional, Sequence
 
-from aiagentsforce_community.utilities.cassandra import SetupMode
+from aibaba_ai_community.utilities.cassandra import SetupMode
 
 if TYPE_CHECKING:
     from cassandra.cluster import Session

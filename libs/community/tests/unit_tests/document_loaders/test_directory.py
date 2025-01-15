@@ -4,8 +4,8 @@ from typing import Any, Iterator, List
 import pytest
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders import DirectoryLoader
-from aiagentsforce_community.document_loaders.text import TextLoader
+from aibaba_ai_community.document_loaders import DirectoryLoader
+from aibaba_ai_community.document_loaders.text import TextLoader
 
 
 def test_raise_error_if_path_not_exist() -> None:

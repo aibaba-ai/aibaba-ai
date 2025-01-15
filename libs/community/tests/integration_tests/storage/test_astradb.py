@@ -7,8 +7,8 @@ from typing import TYPE_CHECKING
 
 import pytest
 
-from aiagentsforce_community.storage.astradb import AstraDBByteStore, AstraDBStore
-from aiagentsforce_community.utilities.astradb import SetupMode
+from aibaba_ai_community.storage.astradb import AstraDBByteStore, AstraDBStore
+from aibaba_ai_community.utilities.astradb import SetupMode
 
 if TYPE_CHECKING:
     from astrapy.db import AstraDB, AsyncAstraDB

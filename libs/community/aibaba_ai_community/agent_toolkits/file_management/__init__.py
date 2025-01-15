@@ -1,6 +1,6 @@
 """Local file management toolkit."""
 
-from aiagentsforce_community.agent_toolkits.file_management.toolkit import (
+from aibaba_ai_community.agent_toolkits.file_management.toolkit import (
     FileManagementToolkit,
 )
 

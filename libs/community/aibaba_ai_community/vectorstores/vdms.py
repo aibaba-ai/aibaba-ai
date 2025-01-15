@@ -26,7 +26,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 if TYPE_CHECKING:
     import vdms
@@ -159,7 +159,7 @@ class VDMS(VectorStore):
         .. code-block:: python
 
             from langchain_huggingface import HuggingFaceEmbeddings
-            from aiagentsforce_community.vectorstores.vdms import VDMS, VDMS_Client
+            from aibaba_ai_community.vectorstores.vdms import VDMS, VDMS_Client
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             vectorstore = VDMS(

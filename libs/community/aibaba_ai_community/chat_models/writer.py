@@ -55,7 +55,7 @@ class ChatWriter(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.chat_models import ChatWriter
+            from aibaba_ai_community.chat_models import ChatWriter
 
             chat = ChatWriter(
                 api_key="your key"

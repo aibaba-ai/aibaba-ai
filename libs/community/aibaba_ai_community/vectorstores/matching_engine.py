@@ -11,7 +11,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 if TYPE_CHECKING:
     from google.cloud import storage
@@ -21,7 +21,7 @@ if TYPE_CHECKING:
     )
     from google.oauth2.service_account import Credentials
 
-    from aiagentsforce_community.embeddings import TensorflowHubEmbeddings
+    from aibaba_ai_community.embeddings import TensorflowHubEmbeddings
 
 logger = logging.getLogger(__name__)
 
@@ -601,6 +601,6 @@ class MatchingEngine(VectorStore):
             Default TensorflowHubEmbeddings to use.
         """
 
-        from aiagentsforce_community.embeddings import TensorflowHubEmbeddings
+        from aibaba_ai_community.embeddings import TensorflowHubEmbeddings
 
         return TensorflowHubEmbeddings()

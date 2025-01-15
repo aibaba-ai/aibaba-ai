@@ -6,7 +6,7 @@ from alibaba_ai_core.documents import Document
 from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 DEFAULT_K = 4  # Number of Documents to return.
 
@@ -30,8 +30,8 @@ class SurrealDBStore(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores.surrealdb import SurrealDBStore
-            from aiagentsforce_community.embeddings import HuggingFaceEmbeddings
+            from aibaba_ai_community.vectorstores.surrealdb import SurrealDBStore
+            from aibaba_ai_community.embeddings import HuggingFaceEmbeddings
 
             model_name = "sentence-transformers/all-mpnet-base-v2"
             embedding_function = HuggingFaceEmbeddings(model_name=model_name)

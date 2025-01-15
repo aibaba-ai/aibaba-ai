@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from aiagentsforce_community.chat_models import ChatLlamaCpp
+from aibaba_ai_community.chat_models import ChatLlamaCpp
 
 
 class Joke(BaseModel):

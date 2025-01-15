@@ -17,7 +17,7 @@ from alibaba_ai_core.messages import (
 from alibaba_ai_core.outputs import ChatGeneration, ChatResult
 from pydantic import Field
 
-from aiagentsforce_community.llms.utils import enforce_stop_tokens
+from aibaba_ai_community.llms.utils import enforce_stop_tokens
 
 
 def _display_messages(messages: List[BaseMessage]) -> None:

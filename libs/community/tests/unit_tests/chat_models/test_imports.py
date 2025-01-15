@@ -1,4 +1,4 @@
-from aiagentsforce_community.chat_models import __all__, _module_lookup
+from aibaba_ai_community.chat_models import __all__, _module_lookup
 
 EXPECTED_ALL = [
     "AzureChatOpenAI",

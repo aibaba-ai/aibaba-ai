@@ -13,13 +13,13 @@ from alibaba_ai_core.language_models import BaseLanguageModel
 from alibaba_ai_core.prompts.base import BasePromptTemplate
 from pydantic import Field
 
-from aiagentsforce_community.chains.graph_qa.prompts import (
+from aibaba_ai_community.chains.graph_qa.prompts import (
     SPARQL_GENERATION_SELECT_PROMPT,
     SPARQL_GENERATION_UPDATE_PROMPT,
     SPARQL_INTENT_PROMPT,
     SPARQL_QA_PROMPT,
 )
-from aiagentsforce_community.graphs.rdf_graph import RdfGraph
+from aibaba_ai_community.graphs.rdf_graph import RdfGraph
 
 
 class GraphSparqlQAChain(Chain):

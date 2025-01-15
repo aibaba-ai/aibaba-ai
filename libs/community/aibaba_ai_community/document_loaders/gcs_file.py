@@ -5,9 +5,9 @@ from typing import Callable, List, Optional
 from alibaba_ai_core._api.deprecation import deprecated
 from alibaba_ai_core.documents import Document
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
-from aiagentsforce_community.utilities.vertexai import get_client_info
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.utilities.vertexai import get_client_info
 
 
 @deprecated(
@@ -37,7 +37,7 @@ class GCSFileLoader(BaseLoader):
 
         Examples:
             To use an alternative PDF loader:
-            >> from from aiagentsforce_community.document_loaders import PyPDFLoader
+            >> from from aibaba_ai_community.document_loaders import PyPDFLoader
             >> loader = GCSFileLoader(..., loader_func=PyPDFLoader)
 
             To use UnstructuredFileLoader with additional arguments:

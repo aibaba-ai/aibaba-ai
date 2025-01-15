@@ -144,7 +144,7 @@ class KoboldApiLLM(LLM):
         Example:
             .. code-block:: python
 
-                from aiagentsforce_community.llms import KoboldApiLLM
+                from aibaba_ai_community.llms import KoboldApiLLM
 
                 llm = KoboldApiLLM(endpoint="http://localhost:5000")
                 llm.invoke("Write a story about dragons.")

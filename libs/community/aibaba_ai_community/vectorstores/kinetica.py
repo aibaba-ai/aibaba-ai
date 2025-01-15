@@ -17,7 +17,7 @@ from alibaba_ai_core.embeddings import Embeddings
 from alibaba_ai_core.vectorstores import VectorStore
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from aiagentsforce_community.vectorstores.utils import maximal_marginal_relevance
+from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
 
 class DistanceStrategy(str, enum.Enum):
@@ -108,8 +108,8 @@ class Kinetica(VectorStore):
     Example:
         .. code-block:: python
 
-            from aiagentsforce_community.vectorstores import Kinetica, KineticaSettings
-            from aiagentsforce_community.embeddings.openai import OpenAIEmbeddings
+            from aibaba_ai_community.vectorstores import Kinetica, KineticaSettings
+            from aibaba_ai_community.embeddings.openai import OpenAIEmbeddings
 
             kinetica_settings = KineticaSettings(
                 host="http://127.0.0.1", username="", password=""

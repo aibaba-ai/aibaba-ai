@@ -9,7 +9,7 @@ from alibaba_ai_core.callbacks import CallbackManagerForToolRun
 from alibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
-from aiagentsforce_community.utilities.nasa import NasaAPIWrapper
+from aibaba_ai_community.utilities.nasa import NasaAPIWrapper
 
 
 class NasaAction(BaseTool):  # type: ignore[override]

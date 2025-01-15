@@ -6,8 +6,8 @@ from typing import TYPE_CHECKING, List
 from alibaba_ai_core.documents import Document
 from pydantic import BaseModel, ConfigDict, Field
 
-from aiagentsforce_community.document_loaders.base import BaseLoader
-from aiagentsforce_community.document_loaders.unstructured import UnstructuredFileLoader
+from aibaba_ai_community.document_loaders.base import BaseLoader
+from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader
 
 if TYPE_CHECKING:
     from O365.drive import File

@@ -1,6 +1,6 @@
 """Test utils function in falkordb_vector.py"""
 
-from aiagentsforce_community.vectorstores.falkordb_vector import (
+from aibaba_ai_community.vectorstores.falkordb_vector import (
     dict_to_yaml_str,
 )
 

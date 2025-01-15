@@ -75,7 +75,7 @@ def test_typeerror() -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_openai_llm(snapshot: Any) -> None:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     with patch.dict(os.environ, {"LANGCHAIN_API_KEY": "test-api-key"}):
         llm = OpenAI(  # type: ignore[call-arg]
@@ -91,7 +91,7 @@ def test_serialize_openai_llm(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain(snapshot: Any) -> None:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     llm = OpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = PromptTemplate.from_template("hello {name}!")
@@ -101,7 +101,7 @@ def test_serialize_llmchain(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_env() -> None:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     llm = OpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = PromptTemplate.from_template("hello {name}!")
@@ -125,7 +125,7 @@ def test_serialize_llmchain_env() -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_chat(snapshot: Any) -> None:
-    from aiagentsforce_community.chat_models.openai import ChatOpenAI
+    from aibaba_ai_community.chat_models.openai import ChatOpenAI
 
     llm = ChatOpenAI(model="davinci", temperature=0.5, openai_api_key="hello")  # type: ignore[call-arg]
     prompt = ChatPromptTemplate.from_messages(
@@ -154,7 +154,7 @@ def test_serialize_llmchain_chat(snapshot: Any) -> None:
 
 @pytest.mark.requires("openai")
 def test_serialize_llmchain_with_non_serializable_arg(snapshot: Any) -> None:
-    from aiagentsforce_community.llms.openai import OpenAI
+    from aibaba_ai_community.llms.openai import OpenAI
 
     llm = OpenAI(  # type: ignore[call-arg]
         model="davinci",
