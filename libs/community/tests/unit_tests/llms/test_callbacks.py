@@ -1,6 +1,6 @@
 """Test LLM callbacks."""
 
-from alibaba_ai_core.messages import HumanMessage
+from aibaba_ai_core.messages import HumanMessage
 
 from aibaba_ai_community.chat_models.fake import FakeListChatModel
 from aibaba_ai_community.llms.fake import FakeListLLM

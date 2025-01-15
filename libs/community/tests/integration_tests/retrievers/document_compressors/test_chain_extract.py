@@ -1,7 +1,7 @@
 """Integration test for LLMChainExtractor."""
 
 from langchain.retrievers.document_compressors import LLMChainExtractor
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.chat_models import ChatOpenAI
 

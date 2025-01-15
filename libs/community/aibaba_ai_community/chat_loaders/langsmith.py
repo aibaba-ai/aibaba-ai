@@ -3,9 +3,9 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Dict, Iterable, Iterator, List, Optional, Union, cast
 
-from alibaba_ai_core.chat_loaders import BaseChatLoader
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.load.load import load
+from aibaba_ai_core.chat_loaders import BaseChatLoader
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.load.load import load
 
 if TYPE_CHECKING:
     from langsmith.client import Client

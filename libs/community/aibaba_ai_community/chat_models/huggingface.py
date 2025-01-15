@@ -2,24 +2,24 @@
 
 from typing import Any, AsyncIterator, Iterator, List, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,

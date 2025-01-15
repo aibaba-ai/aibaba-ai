@@ -4,12 +4,12 @@ import re
 from typing import Any, Dict, Iterator, List, Mapping, Optional, Type
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -20,8 +20,8 @@ from alibaba_ai_core.messages import (
     HumanMessageChunk,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import get_pydantic_field_names
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import get_pydantic_field_names
 from pydantic import ConfigDict, model_validator
 
 logger = logging.getLogger(__name__)

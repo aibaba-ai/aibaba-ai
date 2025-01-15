@@ -1,6 +1,6 @@
 """Test ChatNaver chat model."""
 
-from alibaba_ai_core.messages import AIMessage, AIMessageChunk
+from aibaba_ai_core.messages import AIMessage, AIMessageChunk
 
 from aibaba_ai_community.chat_models import ChatClovaX
 

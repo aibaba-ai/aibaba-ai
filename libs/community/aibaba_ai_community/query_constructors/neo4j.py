@@ -1,7 +1,7 @@
 from typing import Dict, Tuple, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.structured_query import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.structured_query import (
     Comparator,
     Comparison,
     Operation,

@@ -13,7 +13,7 @@ import logging
 import traceback
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict
 
 if TYPE_CHECKING:

@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Type
 
-from alibaba_ai_core.tools import BaseTool, BaseToolkit
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.tools import BaseTool, BaseToolkit
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import model_validator
 
 from aibaba_ai_community.tools.file_management.copy import CopyFileTool

@@ -4,7 +4,7 @@ import copy
 from typing import TYPE_CHECKING, List
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
 from aibaba_ai_community.retrievers import ZepRetriever

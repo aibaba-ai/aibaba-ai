@@ -4,8 +4,8 @@ from datetime import datetime
 from typing import Any, Callable, Dict, Iterator, List, Literal, Optional, Union
 
 import requests
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, field_validator, model_validator
 
 from aibaba_ai_community.document_loaders.base import BaseLoader

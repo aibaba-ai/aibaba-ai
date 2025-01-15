@@ -6,15 +6,15 @@ import datetime
 from typing import TYPE_CHECKING, Any, Callable, Dict, List, Optional, Tuple
 from uuid import UUID
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     LLMResult,
 )

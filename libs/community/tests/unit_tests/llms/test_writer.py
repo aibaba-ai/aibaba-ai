@@ -3,7 +3,7 @@ from unittest import mock
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-from alibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.callbacks import CallbackManager
 from pydantic import SecretStr
 
 from aibaba_ai_community.llms.writer import Writer

@@ -1,14 +1,14 @@
 import logging
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import get_pydantic_field_names, pre_init
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import get_pydantic_field_names, pre_init
 from pydantic import ConfigDict, Field, model_validator
 
 logger = logging.getLogger(__name__)

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.ecloud_vector_search import EcloudESVectorStore
 from tests.integration_tests.vectorstores.fake_embeddings import (

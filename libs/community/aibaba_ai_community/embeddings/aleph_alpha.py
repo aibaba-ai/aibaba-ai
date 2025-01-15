@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, model_validator
 
 

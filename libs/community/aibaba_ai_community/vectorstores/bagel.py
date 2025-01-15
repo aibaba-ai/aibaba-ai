@@ -18,10 +18,10 @@ if TYPE_CHECKING:
     import bagel.config
     from bagel.api.types import ID, OneOrMany, Where, WhereDocument
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import xor_args
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import xor_args
+from aibaba_ai_core.vectorstores import VectorStore
 
 DEFAULT_K = 5
 

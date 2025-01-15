@@ -4,8 +4,8 @@ import json
 import warnings
 from typing import Any, List, Literal, Optional, Type, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper

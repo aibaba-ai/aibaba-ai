@@ -4,11 +4,11 @@ import logging
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import get_pydantic_field_names, pre_init
-from alibaba_ai_core.utils.utils import _build_model_kwargs
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import get_pydantic_field_names, pre_init
+from aibaba_ai_core.utils.utils import _build_model_kwargs
 from pydantic import Field, model_validator
 
 logger = logging.getLogger(__name__)

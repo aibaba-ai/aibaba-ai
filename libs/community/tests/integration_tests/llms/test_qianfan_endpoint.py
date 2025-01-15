@@ -2,7 +2,7 @@
 
 from typing import Generator, cast
 
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.outputs import LLMResult
 from pydantic import SecretStr
 
 from aibaba_ai_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint

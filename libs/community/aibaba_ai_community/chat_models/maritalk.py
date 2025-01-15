@@ -3,19 +3,19 @@ from http import HTTPStatus
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
 
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 from pydantic import Field
 from requests import Response
 from requests.exceptions import HTTPError

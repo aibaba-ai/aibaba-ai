@@ -1,7 +1,7 @@
 """Integration test for Kay.ai API Wrapper."""
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.retrievers import KayAiRetriever
 

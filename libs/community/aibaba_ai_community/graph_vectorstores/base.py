@@ -11,15 +11,15 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.load import Serializable
-from alibaba_ai_core.runnables import run_in_executor
-from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.load import Serializable
+from aibaba_ai_core.runnables import run_in_executor
+from aibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from pydantic import Field
 
 from aibaba_ai_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link

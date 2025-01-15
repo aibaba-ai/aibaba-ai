@@ -7,8 +7,8 @@ from typing import List, cast
 
 import numpy as np
 import pytest
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
 
 from aibaba_ai_community.vectorstores.singlestoredb import SingleStoreDB
 from aibaba_ai_community.vectorstores.utils import DistanceStrategy

@@ -5,13 +5,13 @@ from typing import Dict, Generator, List, Union
 
 import pytest
 from _pytest.fixtures import FixtureRequest
-from alibaba_ai_core.caches import InMemoryCache
-from alibaba_ai_core.language_models import FakeListChatModel, FakeListLLM
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.load import dumps
-from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
-from alibaba_ai_core.outputs import ChatGeneration
+from aibaba_ai_core.caches import InMemoryCache
+from aibaba_ai_core.language_models import FakeListChatModel, FakeListLLM
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.load import dumps
+from aibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
+from aibaba_ai_core.outputs import ChatGeneration
 from sqlalchemy import Column, Integer, Sequence, String, create_engine
 from sqlalchemy.orm import Session
 
@@ -21,7 +21,7 @@ except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
 
 from langchain.globals import get_llm_cache, set_llm_cache
-from alibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.outputs import Generation, LLMResult
 
 from aibaba_ai_community.cache import SQLAlchemyCache
 from tests.unit_tests.llms.fake_llm import FakeLLM

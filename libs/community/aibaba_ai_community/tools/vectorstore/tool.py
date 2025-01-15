@@ -3,13 +3,13 @@
 import json
 from typing import Any, Dict, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.vectorstores import VectorStore
 from pydantic import BaseModel, ConfigDict, Field
 
 from aibaba_ai_community.llms.openai import OpenAI

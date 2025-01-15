@@ -3,17 +3,17 @@ import threading
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
     HumanMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import model_validator
 
 logger = logging.getLogger(__name__)

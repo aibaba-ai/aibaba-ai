@@ -13,17 +13,17 @@ from typing import (
     Type,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -37,7 +37,7 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 from aibaba_ai_community.llms.gigachat import _BaseGigaChat
 

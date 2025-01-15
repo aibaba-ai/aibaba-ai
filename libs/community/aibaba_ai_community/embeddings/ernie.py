@@ -4,10 +4,10 @@ import threading
 from typing import Dict, List, Optional
 
 import requests
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.runnables.config import run_in_executor
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict
 
 logger = logging.getLogger(__name__)

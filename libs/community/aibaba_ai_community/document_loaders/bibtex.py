@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from typing import Any, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.utilities.bibtex import BibtexparserWrapper

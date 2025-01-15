@@ -4,10 +4,10 @@ import concurrent.futures
 from typing import Any, Iterable, List, Optional
 
 import numpy as np
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import ConfigDict
 
 

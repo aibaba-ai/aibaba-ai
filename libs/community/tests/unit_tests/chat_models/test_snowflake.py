@@ -1,6 +1,6 @@
 """Test ChatSnowflakeCortex."""
 
-from alibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
+from aibaba_ai_core.messages import AIMessage, HumanMessage, SystemMessage
 
 from aibaba_ai_community.chat_models.snowflake import _convert_message_to_dict
 

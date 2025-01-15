@@ -8,8 +8,8 @@ Required to run this test:
 from importlib.util import find_spec
 
 import pytest
-from alibaba_ai_core.globals import get_llm_cache, set_llm_cache
-from alibaba_ai_core.outputs import Generation
+from aibaba_ai_core.globals import get_llm_cache, set_llm_cache
+from aibaba_ai_core.outputs import Generation
 
 from aibaba_ai_community.cache import SingleStoreDBSemanticCache
 from tests.integration_tests.cache.fake_embeddings import FakeEmbeddings

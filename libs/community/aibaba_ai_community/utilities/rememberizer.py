@@ -3,8 +3,8 @@
 from typing import Any, Dict, List, Optional, cast
 
 import requests
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, model_validator
 
 

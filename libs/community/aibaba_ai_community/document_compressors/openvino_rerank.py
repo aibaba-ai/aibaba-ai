@@ -2,9 +2,9 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Sequence
 
 import numpy as np
-from alibaba_ai_core.callbacks import Callbacks
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.documents.compressor import BaseDocumentCompressor
+from aibaba_ai_core.callbacks import Callbacks
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.documents.compressor import BaseDocumentCompressor
 from pydantic import Field
 
 

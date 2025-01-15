@@ -1,7 +1,7 @@
 import random
 import string
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.pyspark_dataframe import (
     PySparkDataFrameLoader,

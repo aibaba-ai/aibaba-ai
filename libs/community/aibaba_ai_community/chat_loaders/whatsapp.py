@@ -4,9 +4,9 @@ import re
 import zipfile
 from typing import Iterator, List, Union
 
-from alibaba_ai_core.chat_loaders import BaseChatLoader
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import AIMessage, HumanMessage
+from aibaba_ai_core.chat_loaders import BaseChatLoader
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import AIMessage, HumanMessage
 
 logger = logging.getLogger(__name__)
 

@@ -5,7 +5,7 @@ from typing import Any, List, Optional
 from urllib.parse import urljoin
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from requests.auth import HTTPBasicAuth
 
 from aibaba_ai_community.document_loaders.base import BaseLoader

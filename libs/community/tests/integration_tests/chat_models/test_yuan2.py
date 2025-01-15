@@ -3,9 +3,9 @@
 from typing import List
 
 import pytest
-from alibaba_ai_core.callbacks import CallbackManager
-from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     LLMResult,
 )

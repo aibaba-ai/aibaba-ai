@@ -3,9 +3,9 @@ import os
 from typing import Any, Dict, List, Mapping, Optional, Union, cast
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, model_validator
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

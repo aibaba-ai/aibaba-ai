@@ -3,9 +3,9 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
 from pydantic import ConfigDict
 
 DEFAULT_MODEL_ID = "mlx-community/quantized-gemma-2b"

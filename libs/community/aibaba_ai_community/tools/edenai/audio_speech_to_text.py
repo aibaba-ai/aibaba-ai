@@ -6,7 +6,7 @@ import time
 from typing import List, Optional, Type
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field, HttpUrl, validator
 
 from aibaba_ai_community.tools.edenai.edenai_base_tool import EdenaiTool

@@ -5,9 +5,9 @@ import tempfile
 from copy import deepcopy
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
 
 from aibaba_ai_community.callbacks.utils import (
     flatten_dict,

@@ -1,6 +1,6 @@
 from typing import List
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.azure_blob_storage_file import (
     AzureBlobStorageFileLoader,

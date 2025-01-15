@@ -2,7 +2,7 @@ import hashlib
 import sys
 from typing import Any, Dict, List, Optional, Union
 
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.utils import get_from_env
 
 from aibaba_ai_community.graphs.graph_document import GraphDocument, Node, Relationship
 from aibaba_ai_community.graphs.graph_store import GraphStore

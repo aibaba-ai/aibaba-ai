@@ -5,8 +5,8 @@ from __future__ import annotations
 import traceback
 from typing import TYPE_CHECKING, Any, Dict, Optional, Sequence, Type, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, ConfigDict, Field
 
 from aibaba_ai_community.utilities.cassandra_database import CassandraDatabase

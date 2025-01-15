@@ -3,8 +3,8 @@ import os
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import Field
 
 logger = logging.getLogger(__name__)

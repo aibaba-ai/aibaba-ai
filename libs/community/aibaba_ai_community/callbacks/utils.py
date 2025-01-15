@@ -2,7 +2,7 @@ import hashlib
 from pathlib import Path
 from typing import Any, Dict, Iterable, Tuple, Union
 
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.utils import guard_import
 
 
 def import_spacy() -> Any:

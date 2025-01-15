@@ -8,7 +8,7 @@ import warnings
 from datetime import datetime, timezone
 from typing import TYPE_CHECKING, Any, Iterator, List, Optional, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

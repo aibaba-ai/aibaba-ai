@@ -11,8 +11,8 @@ from wsgiref.handlers import format_date_time
 
 import numpy as np
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import (
     secret_from_env,
 )
 from numpy import ndarray

@@ -4,9 +4,9 @@ import os
 from typing import Any
 
 import pytest
-from alibaba_ai_core.callbacks import CallbackManager
-from alibaba_ai_core.messages import BaseMessage, HumanMessage
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import BaseMessage, HumanMessage
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from aibaba_ai_community.chat_models import AzureChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

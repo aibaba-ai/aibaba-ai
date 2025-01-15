@@ -4,7 +4,7 @@ import time
 from typing import Iterator, List
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

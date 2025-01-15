@@ -2,12 +2,12 @@
 
 from typing import Dict, List, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 
 from aibaba_ai_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
 

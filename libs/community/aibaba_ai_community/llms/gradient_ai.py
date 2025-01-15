@@ -5,13 +5,13 @@ from typing import Any, Dict, List, Mapping, Optional, Sequence, TypedDict
 
 import aiohttp
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, LLMResult
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, Field, model_validator
 from typing_extensions import Self
 

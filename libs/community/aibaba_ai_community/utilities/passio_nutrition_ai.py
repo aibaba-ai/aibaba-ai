@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from typing import Any, Callable, Dict, Optional, final
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 

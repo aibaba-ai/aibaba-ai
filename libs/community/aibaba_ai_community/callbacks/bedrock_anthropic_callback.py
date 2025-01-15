@@ -1,8 +1,8 @@
 import threading
 from typing import Any, Dict, List, Union
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
 
 MODEL_COST_PER_1K_INPUT_TOKENS = {
     "anthropic.claude-instant-v1": 0.0008,

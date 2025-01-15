@@ -2,9 +2,9 @@ from typing import Optional, Type
 
 
 from pydantic import BaseModel
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.prompts import BasePromptTemplate
-from alibaba_ai_core.prompts.prompt import PromptTemplate
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.prompts import BasePromptTemplate
+from aibaba_ai_core.prompts.prompt import PromptTemplate
 
 from aibaba_ai_community.graphs import NetworkxEntityGraph
 from aibaba_ai_community.graphs.networkx_graph import KG_TRIPLE_DELIMITER

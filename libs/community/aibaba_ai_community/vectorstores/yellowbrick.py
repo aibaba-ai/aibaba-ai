@@ -20,8 +20,8 @@ from typing import (
     Type,
 )
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.docstore.document import Document
 

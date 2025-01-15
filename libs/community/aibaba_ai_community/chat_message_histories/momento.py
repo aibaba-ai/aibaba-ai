@@ -4,13 +4,13 @@ import json
 from datetime import timedelta
 from typing import TYPE_CHECKING, Any, Optional
 
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,
 )
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.utils import get_from_env
 
 if TYPE_CHECKING:
     import momento

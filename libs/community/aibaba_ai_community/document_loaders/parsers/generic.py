@@ -5,7 +5,7 @@ This module contains some logic to help assemble more sophisticated parsers.
 
 from typing import Iterator, Mapping, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseBlobParser
 from aibaba_ai_community.document_loaders.blob_loaders.schema import Blob

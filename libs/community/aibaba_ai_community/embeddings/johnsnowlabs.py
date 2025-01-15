@@ -2,7 +2,7 @@ import os
 import sys
 from typing import Any, List
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict
 
 

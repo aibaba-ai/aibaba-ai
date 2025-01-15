@@ -14,11 +14,11 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
-    from alibaba_ai_core.embeddings import Embeddings
+    from aibaba_ai_core.embeddings import Embeddings
     from pymongo.collection import Collection
 
 

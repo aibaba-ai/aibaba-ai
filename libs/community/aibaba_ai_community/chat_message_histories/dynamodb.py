@@ -4,8 +4,8 @@ import logging
 from decimal import Decimal
 from typing import TYPE_CHECKING, Dict, List, Optional
 
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

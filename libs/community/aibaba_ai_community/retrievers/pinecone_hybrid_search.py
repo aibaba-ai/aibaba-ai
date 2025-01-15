@@ -3,11 +3,11 @@
 import hashlib
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict
 
 

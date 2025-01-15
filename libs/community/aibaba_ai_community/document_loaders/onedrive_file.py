@@ -3,7 +3,7 @@ from __future__ import annotations
 import tempfile
 from typing import TYPE_CHECKING, List
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, ConfigDict, Field
 
 from aibaba_ai_community.document_loaders.base import BaseLoader

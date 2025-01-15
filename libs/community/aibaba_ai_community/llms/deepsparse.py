@@ -1,19 +1,19 @@
 # flake8: noqa
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils import pre_init
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils import pre_init
 from pydantic import root_validator
-from alibaba_ai_core.utils import pre_init
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.utils import pre_init
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.utils import pre_init
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils import pre_init
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import pre_init
 from aibaba_ai_community.llms.utils import enforce_stop_tokens
-from alibaba_ai_core.utils import pre_init
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import pre_init
+from aibaba_ai_core.outputs import GenerationChunk
 
 
 class DeepSparse(LLM):

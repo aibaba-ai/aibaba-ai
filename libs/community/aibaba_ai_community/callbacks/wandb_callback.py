@@ -4,11 +4,11 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Union
 
-from alibaba_ai_core._api import warn_deprecated
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core._api import warn_deprecated
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.utils import guard_import
 
 from aibaba_ai_community.callbacks.utils import (
     BaseMetadataCallbackHandler,

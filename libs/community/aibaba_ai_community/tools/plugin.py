@@ -5,11 +5,11 @@ from typing import Optional, Type
 
 import requests
 import yaml
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel
 
 

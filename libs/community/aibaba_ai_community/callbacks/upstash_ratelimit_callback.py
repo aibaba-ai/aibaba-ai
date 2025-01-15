@@ -3,8 +3,8 @@
 import logging
 from typing import Any, Dict, List, Literal, Optional
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
 
 logger = logging.getLogger(__name__)
 try:

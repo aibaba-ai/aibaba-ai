@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Iterator, Optional, Sequence
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.utilities.openweathermap import OpenWeatherMapAPIWrapper

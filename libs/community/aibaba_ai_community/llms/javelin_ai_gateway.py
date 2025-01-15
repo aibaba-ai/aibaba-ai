@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import BaseModel
 
 

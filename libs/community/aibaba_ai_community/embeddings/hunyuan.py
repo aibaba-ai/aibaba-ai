@@ -1,9 +1,9 @@
 import json
 from typing import Any, Dict, List, Literal, Optional, Type
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.runnables.config import run_in_executor
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import BaseModel, Field, SecretStr, model_validator
 
 

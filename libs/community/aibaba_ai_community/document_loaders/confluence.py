@@ -4,7 +4,7 @@ from io import BytesIO
 from typing import Any, Callable, Dict, Iterator, List, Optional, Union
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from tenacity import (
     before_sleep_log,
     retry,

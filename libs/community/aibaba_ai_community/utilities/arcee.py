@@ -6,7 +6,7 @@ from enum import Enum
 from typing import Any, Dict, List, Literal, Mapping, Optional, Union
 
 import requests
-from alibaba_ai_core.retrievers import Document
+from aibaba_ai_core.retrievers import Document
 from pydantic import BaseModel, SecretStr, model_validator
 
 

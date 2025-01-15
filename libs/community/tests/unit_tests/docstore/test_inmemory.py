@@ -1,7 +1,7 @@
 """Test in memory docstore."""
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
 

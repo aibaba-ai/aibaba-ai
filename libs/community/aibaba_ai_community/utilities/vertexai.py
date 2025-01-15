@@ -3,11 +3,11 @@
 from importlib import metadata
 from typing import TYPE_CHECKING, Any, Callable, Optional, Union
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
+from aibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
 
 if TYPE_CHECKING:
     from google.api_core.gapic_v1.client_info import ClientInfo

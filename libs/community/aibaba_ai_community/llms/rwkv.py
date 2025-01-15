@@ -6,9 +6,9 @@ Based on https://github.com/saharNooby/rwkv.cpp/blob/master/rwkv/chat_with_bot.p
 
 from typing import Any, Dict, List, Mapping, Optional, Set
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

@@ -2,7 +2,7 @@ import json
 import uuid
 from typing import List
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.tools.nuclia.tool import NucliaUnderstandingAPI

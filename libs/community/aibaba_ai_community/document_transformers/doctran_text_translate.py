@@ -3,9 +3,9 @@ from __future__ import annotations
 import asyncio
 from typing import Any, Optional, Sequence
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
-from alibaba_ai_core.runnables.config import run_in_executor
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core.utils import get_from_env
 
 
 class DoctranTextTranslator(BaseDocumentTransformer):

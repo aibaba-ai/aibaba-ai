@@ -2,10 +2,10 @@ import base64
 import re
 from typing import Any, Iterator
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.chat_loaders import BaseChatLoader
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import HumanMessage
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.chat_loaders import BaseChatLoader
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import HumanMessage
 
 
 def _extract_email_content(msg: Any) -> HumanMessage:

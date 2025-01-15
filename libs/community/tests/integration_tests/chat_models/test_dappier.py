@@ -1,8 +1,8 @@
 from typing import List
 
 import pytest
-from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
-from alibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
 
 from aibaba_ai_community.chat_models.dappier import (
     ChatDappierAI,

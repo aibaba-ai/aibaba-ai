@@ -3,13 +3,13 @@ import json
 from typing import Any, Dict, List, Optional, Type, Union
 
 import jsonpatch
-from alibaba_ai_core.exceptions import OutputParserException
-from alibaba_ai_core.output_parsers import (
+from aibaba_ai_core.exceptions import OutputParserException
+from aibaba_ai_core.output_parsers import (
     BaseCumulativeTransformOutputParser,
     BaseGenerationOutputParser,
 )
-from alibaba_ai_core.output_parsers.json import parse_partial_json
-from alibaba_ai_core.outputs.chat_generation import (
+from aibaba_ai_core.output_parsers.json import parse_partial_json
+from aibaba_ai_core.outputs.chat_generation import (
     ChatGeneration,
     Generation,
 )

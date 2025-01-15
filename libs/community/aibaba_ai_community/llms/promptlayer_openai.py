@@ -1,11 +1,11 @@
 import datetime
 from typing import Any, List, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.outputs import LLMResult
 
 from aibaba_ai_community.llms.openai import OpenAI, OpenAIChat
 

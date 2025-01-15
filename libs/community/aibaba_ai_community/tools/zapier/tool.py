@@ -70,13 +70,13 @@ toolkit = ZapierToolkit.from_zapier_nla_wrapper(zapier)
 
 from typing import Any, Dict, Optional
 
-from alibaba_ai_core._api import warn_deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api import warn_deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import pre_init
 from pydantic import Field
 
 from aibaba_ai_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT

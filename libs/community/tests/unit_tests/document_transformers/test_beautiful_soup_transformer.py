@@ -1,7 +1,7 @@
 """Unit tests for beautiful soup document transformer."""
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_transformers import BeautifulSoupTransformer
 

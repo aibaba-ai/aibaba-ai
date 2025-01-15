@@ -2,7 +2,7 @@
 
 from typing import Dict, List, Optional, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.docstore.base import AddableMixin, Docstore
 

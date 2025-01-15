@@ -11,22 +11,22 @@ from typing import (
     Optional,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.prompt_values import PromptValue
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.prompt_values import PromptValue
+from aibaba_ai_core.utils import (
     check_package_version,
     get_from_dict_or_env,
     get_pydantic_field_names,
     pre_init,
 )
-from alibaba_ai_core.utils.utils import _build_model_kwargs, convert_to_secret_str
+from aibaba_ai_core.utils.utils import _build_model_kwargs, convert_to_secret_str
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
 

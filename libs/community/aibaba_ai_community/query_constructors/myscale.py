@@ -1,7 +1,7 @@
 import re
 from typing import Any, Callable, Dict, Tuple
 
-from alibaba_ai_core.structured_query import (
+from aibaba_ai_core.structured_query import (
     Comparator,
     Comparison,
     Operation,

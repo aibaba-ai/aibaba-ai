@@ -1,7 +1,7 @@
 """Integration test for POWERBI API Wrapper."""
 
 import pytest
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.utils import get_from_env
 
 from aibaba_ai_community.utilities.powerbi import PowerBIDataset
 

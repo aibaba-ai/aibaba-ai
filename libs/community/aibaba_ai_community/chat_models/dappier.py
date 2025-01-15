@@ -1,19 +1,19 @@
 from typing import Any, Dict, List, Optional, Union
 
 from aiohttp import ClientSession
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
 from aibaba_ai_community.utilities.requests import Requests
@@ -48,7 +48,7 @@ class ChatDappierAI(BaseChatModel):
         .. code-block:: python
 
             from aibaba_ai_community.chat_models import ChatDappierAI
-            from alibaba_ai_core.messages import HumanMessage
+            from aibaba_ai_core.messages import HumanMessage
 
             # Initialize `ChatDappierAI` with the desired configuration
             chat = ChatDappierAI(

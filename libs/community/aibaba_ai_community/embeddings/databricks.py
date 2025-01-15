@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Iterator, List
 from urllib.parse import urlparse
 
-from alibaba_ai_core._api import deprecated
+from aibaba_ai_core._api import deprecated
 
 from aibaba_ai_community.embeddings.mlflow import MlflowEmbeddings
 

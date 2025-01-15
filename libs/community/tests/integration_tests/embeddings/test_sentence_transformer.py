@@ -1,7 +1,7 @@
 # flake8: noqa
 """Test sentence_transformer embeddings."""
 
-from alibaba_ai_core.vectorstores import InMemoryVectorStore
+from aibaba_ai_core.vectorstores import InMemoryVectorStore
 
 from aibaba_ai_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,

@@ -2,13 +2,13 @@ import json
 from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
 import aiohttp
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import ConfigDict
 
 from aibaba_ai_community.utilities.requests import Requests

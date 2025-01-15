@@ -1,7 +1,7 @@
 from typing import Any, Optional, Sequence
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 
 from aibaba_ai_community.utilities.vertexai import get_client_info
 

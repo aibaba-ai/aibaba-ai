@@ -21,16 +21,16 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from alibaba_ai_core.tools import (
+    from aibaba_ai_core.tools import (
         BaseTool as BaseTool,
     )
-    from alibaba_ai_core.tools import (
+    from aibaba_ai_core.tools import (
         StructuredTool as StructuredTool,
     )
-    from alibaba_ai_core.tools import (
+    from aibaba_ai_core.tools import (
         Tool as Tool,
     )
-    from alibaba_ai_core.tools.convert import tool as tool
+    from aibaba_ai_core.tools.convert import tool as tool
 
     from aibaba_ai_community.tools.ainetwork.app import (
         AINAppOps,
@@ -527,7 +527,7 @@ _module_lookup = {
     "BaseRequestsTool": "aibaba_ai_community.tools.requests.tool",
     "BaseSQLDatabaseTool": "aibaba_ai_community.tools.sql_database.tool",
     "BaseSparkSQLTool": "aibaba_ai_community.tools.spark_sql.tool",
-    "BaseTool": "alibaba_ai_core.tools",
+    "BaseTool": "aibaba_ai_core.tools",
     "BearlyInterpreterTool": "aibaba_ai_community.tools.bearly.tool",
     "BingSearchResults": "aibaba_ai_community.tools.bing_search.tool",
     "BingSearchRun": "aibaba_ai_community.tools.bing_search.tool",
@@ -635,10 +635,10 @@ _module_lookup = {
     "StdInInquireTool": "aibaba_ai_community.tools.interaction.tool",
     "SteamWebAPIQueryRun": "aibaba_ai_community.tools.steam.tool",
     "SteamshipImageGenerationTool": "aibaba_ai_community.tools.steamship_image_generation",  # noqa: E501
-    "StructuredTool": "alibaba_ai_core.tools",
+    "StructuredTool": "aibaba_ai_core.tools",
     "TavilyAnswer": "aibaba_ai_community.tools.tavily_search",
     "TavilySearchResults": "aibaba_ai_community.tools.tavily_search",
-    "Tool": "alibaba_ai_core.tools",
+    "Tool": "aibaba_ai_core.tools",
     "VectorStoreQATool": "aibaba_ai_community.tools.vectorstore.tool",
     "VectorStoreQAWithSourcesTool": "aibaba_ai_community.tools.vectorstore.tool",
     "WikipediaQueryRun": "aibaba_ai_community.tools.wikipedia.tool",
@@ -653,7 +653,7 @@ _module_lookup = {
     "ZenGuardTool": "aibaba_ai_community.tools.zenguard.tool",
     "authenticate": "aibaba_ai_community.tools.office365.utils",
     "format_tool_to_openai_function": "aibaba_ai_community.tools.convert_to_openai",
-    "tool": "alibaba_ai_core.tools",
+    "tool": "aibaba_ai_core.tools",
 }
 
 

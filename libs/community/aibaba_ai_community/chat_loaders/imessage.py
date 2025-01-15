@@ -4,9 +4,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING, Iterator, List, Optional, Union
 
-from alibaba_ai_core.chat_loaders import BaseChatLoader
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import HumanMessage
+from aibaba_ai_core.chat_loaders import BaseChatLoader
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import HumanMessage
 
 if TYPE_CHECKING:
     import sqlite3

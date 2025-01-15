@@ -4,8 +4,8 @@ from decimal import Decimal
 from hashlib import md5
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Type, Union
 
-from alibaba_ai_core.tools import BaseTool, StructuredTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool, StructuredTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import BaseModel, Field, create_model
 from typing_extensions import Self
 

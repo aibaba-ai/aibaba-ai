@@ -15,9 +15,9 @@ from typing import (
 from uuid import uuid4
 
 import numpy as np
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 

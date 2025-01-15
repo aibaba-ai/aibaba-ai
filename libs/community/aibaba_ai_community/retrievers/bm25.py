@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Any, Callable, Dict, Iterable, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import ConfigDict, Field
 
 

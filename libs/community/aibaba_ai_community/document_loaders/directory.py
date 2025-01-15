@@ -4,7 +4,7 @@ import random
 from pathlib import Path
 from typing import Any, Callable, Iterator, List, Optional, Sequence, Tuple, Type, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.csv_loader import CSVLoader

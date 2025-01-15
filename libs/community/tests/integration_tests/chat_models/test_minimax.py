@@ -1,7 +1,7 @@
 import os
 
-from alibaba_ai_core.messages import AIMessage, HumanMessage, ToolMessage
-from alibaba_ai_core.tools import tool
+from aibaba_ai_core.messages import AIMessage, HumanMessage, ToolMessage
+from aibaba_ai_core.tools import tool
 from pydantic import BaseModel
 
 from aibaba_ai_community.chat_models import MiniMaxChat

@@ -1,6 +1,6 @@
 from typing import Any, List
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict
 
 DEFAULT_MODEL_URL = "https://tfhub.dev/google/universal-sentence-encoder-multilingual/3"

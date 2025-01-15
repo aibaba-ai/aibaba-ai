@@ -4,7 +4,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.redis import (
     Redis,

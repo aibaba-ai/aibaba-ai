@@ -5,9 +5,9 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
 import requests
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LLM
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LLM
 from pydantic import (
     BaseModel,
     ConfigDict,

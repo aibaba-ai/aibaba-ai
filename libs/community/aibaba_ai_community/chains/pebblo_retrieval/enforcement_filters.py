@@ -15,7 +15,7 @@ The methods in this module are designed to work with different types of vector s
 import logging
 from typing import Any, List, Optional, Union
 
-from alibaba_ai_core.vectorstores import VectorStoreRetriever
+from aibaba_ai_core.vectorstores import VectorStoreRetriever
 
 from aibaba_ai_community.chains.pebblo_retrieval.models import (
     AuthContext,

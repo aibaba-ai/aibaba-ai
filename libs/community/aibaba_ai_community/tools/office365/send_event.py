@@ -7,7 +7,7 @@ https://learn.microsoft.com/en-us/graph/auth/
 from datetime import datetime as dt
 from typing import List, Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 from zoneinfo import ZoneInfo
 

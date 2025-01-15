@@ -17,8 +17,8 @@ from typing import (
 
 import aiohttp
 import requests
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils.html import extract_sub_links
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils.html import extract_sub_links
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

@@ -1,12 +1,12 @@
 from functools import partial
 from typing import Any, Dict, List, Optional, Sequence
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import pre_init
 
 
 class CTransformers(LLM):

@@ -5,7 +5,7 @@ import re
 from typing import List, Type
 
 import pytest
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 
 from aibaba_ai_community.tools.amadeus.base import AmadeusBaseTool
 from aibaba_ai_community.tools.gmail.base import GmailBaseTool

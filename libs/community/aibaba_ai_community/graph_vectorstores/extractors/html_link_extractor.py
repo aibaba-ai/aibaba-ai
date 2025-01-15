@@ -4,8 +4,8 @@ from dataclasses import dataclass
 from typing import TYPE_CHECKING, List, Optional, Set, Union
 from urllib.parse import urldefrag, urljoin, urlparse
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.graph_vectorstores import Link
 from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
@@ -111,7 +111,7 @@ class HtmlLinkExtractor(LinkExtractor[HtmlInput]):
                 HtmlLinkExtractor,
             )
             from aibaba_ai_community.graph_vectorstores.links import add_links
-            from alibaba_ai_core.documents import Document
+            from aibaba_ai_core.documents import Document
 
             loader = AsyncHtmlLoader(
                 [

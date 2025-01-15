@@ -11,12 +11,12 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import Field, SecretStr
 
 from aibaba_ai_community.chat_models.openai import ChatOpenAI

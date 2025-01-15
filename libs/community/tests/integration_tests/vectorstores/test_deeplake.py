@@ -1,7 +1,7 @@
 """Test Deep Lake functionality."""
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pytest import FixtureRequest
 
 from aibaba_ai_community.vectorstores import DeepLake

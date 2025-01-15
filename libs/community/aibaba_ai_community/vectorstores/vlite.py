@@ -5,9 +5,9 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 from uuid import uuid4
 
 # Aibaba AI imports
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 
 class VLite(VectorStore):

@@ -11,13 +11,13 @@ from typing import Any, Dict, List, Optional
 
 from langchain.chains.base import Chain
 from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.vectorstores import VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.vectorstores import VectorStoreRetriever
 from pydantic import ConfigDict, Field, validator
 
 from aibaba_ai_community.chains.pebblo_retrieval.enforcement_filters import (

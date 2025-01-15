@@ -4,9 +4,9 @@ from copy import deepcopy
 from typing import Any, Dict, List, Optional, Sequence, Union
 
 import requests
-from alibaba_ai_core.callbacks import Callbacks
-from alibaba_ai_core.documents import BaseDocumentCompressor, Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.callbacks import Callbacks
+from aibaba_ai_core.documents import BaseDocumentCompressor, Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, model_validator
 
 JINA_API_URL: str = "https://api.jina.ai/v1/rerank"

@@ -16,17 +16,17 @@ from typing import (
 )
 
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -39,19 +39,19 @@ from alibaba_ai_core.messages import (
     SystemMessageChunk,
     ToolMessage,
 )
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.openai_tools import (
     make_invalid_tool_call,
     parse_tool_call,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import (
     convert_to_secret_str,
     get_from_dict_or_env,
     get_pydantic_field_names,
 )
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import (
     BaseModel,
     ConfigDict,

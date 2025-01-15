@@ -9,7 +9,7 @@ from typing import Any, Dict, Generator, List, Optional, Sequence, Union
 from urllib.parse import parse_qs, urlparse
 from xml.etree.ElementTree import ParseError  # OK: trusted-source
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import model_validator
 from pydantic.dataclasses import dataclass
 

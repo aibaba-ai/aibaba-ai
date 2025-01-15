@@ -4,7 +4,7 @@ from typing import Any, Dict
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from alibaba_ai_core.outputs import Generation
+from aibaba_ai_core.outputs import Generation
 
 from aibaba_ai_community.cache import AzureCosmosDBNoSqlSemanticCache
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

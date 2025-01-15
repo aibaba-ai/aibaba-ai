@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
 from aibaba_ai_community.document_loaders.base import BaseLoader

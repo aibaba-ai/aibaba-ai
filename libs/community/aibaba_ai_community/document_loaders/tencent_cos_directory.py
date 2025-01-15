@@ -1,6 +1,6 @@
 from typing import Any, Iterator
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.tencent_cos_file import TencentCOSFileLoader

@@ -2,16 +2,16 @@
 
 from typing import Any, AsyncIterator, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import AIMessageChunk, BaseMessage
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.messages import AIMessageChunk, BaseMessage
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 from aibaba_ai_community.chat_models.litellm import (
     ChatLiteLLM,

@@ -3,10 +3,10 @@ from uuid import uuid4
 
 import numpy as np
 import requests
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_env
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 

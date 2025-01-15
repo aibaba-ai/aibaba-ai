@@ -1,13 +1,13 @@
 import json
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union, cast
 
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel, LangSmithParams
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel, LangSmithParams
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -15,7 +15,7 @@ from alibaba_ai_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 from aibaba_ai_community.llms.ollama import OllamaEndpointNotFoundError, _OllamaCommon
 

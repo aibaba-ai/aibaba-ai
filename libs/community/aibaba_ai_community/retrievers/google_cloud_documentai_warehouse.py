@@ -2,11 +2,11 @@
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 
 from aibaba_ai_community.utilities.vertexai import get_client_info
 

@@ -3,7 +3,7 @@
 from typing import cast
 
 import numpy as np
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.utils import (
     filter_complex_metadata,

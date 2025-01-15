@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Any, List, Optional, Sequence
 
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import Field
 
 from aibaba_ai_community.agent_toolkits.nla.tool import NLATool

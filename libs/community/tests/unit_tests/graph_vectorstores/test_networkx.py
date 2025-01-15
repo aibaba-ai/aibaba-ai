@@ -1,5 +1,5 @@
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.graph_vectorstores.links import METADATA_LINKS_KEY, Link
 from aibaba_ai_community.graph_vectorstores.networkx import documents_to_networkx

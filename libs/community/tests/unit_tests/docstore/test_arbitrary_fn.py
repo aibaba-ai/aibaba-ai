@@ -1,4 +1,4 @@
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.docstore.arbitrary_fn import DocstoreFn
 

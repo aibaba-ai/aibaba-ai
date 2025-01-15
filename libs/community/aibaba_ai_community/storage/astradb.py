@@ -15,8 +15,8 @@ from typing import (
     TypeVar,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.stores import BaseStore, ByteStore
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.stores import BaseStore, ByteStore
 
 from aibaba_ai_community.utilities.astradb import (
     SetupMode,

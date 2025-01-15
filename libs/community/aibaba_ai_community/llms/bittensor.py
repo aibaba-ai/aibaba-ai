@@ -3,8 +3,8 @@ import json
 import ssl
 from typing import Any, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 
 
 class NIBittensorLLM(LLM):

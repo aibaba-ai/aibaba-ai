@@ -2,15 +2,15 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, AsyncIterator, Callable, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import convert_to_secret_str, pre_init
-from alibaba_ai_core.utils.env import get_from_dict_or_env
+from aibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import convert_to_secret_str, pre_init
+from aibaba_ai_core.utils.env import get_from_dict_or_env
 from pydantic import Field, SecretStr
 
 

@@ -1,10 +1,10 @@
 """Test Friendli chat API."""
 
 import pytest
-from alibaba_ai_core.messages.ai import AIMessage
-from alibaba_ai_core.messages.human import HumanMessage
-from alibaba_ai_core.outputs.generation import Generation
-from alibaba_ai_core.outputs.llm_result import LLMResult
+from aibaba_ai_core.messages.ai import AIMessage
+from aibaba_ai_core.messages.human import HumanMessage
+from aibaba_ai_core.outputs.generation import Generation
+from aibaba_ai_core.outputs.llm_result import LLMResult
 
 from aibaba_ai_community.chat_models.friendli import ChatFriendli
 

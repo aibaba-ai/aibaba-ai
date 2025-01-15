@@ -3,10 +3,10 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Sequence
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import Generation, LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.utils import guard_import
 
 import aibaba_ai_community
 from aibaba_ai_community.callbacks.utils import (

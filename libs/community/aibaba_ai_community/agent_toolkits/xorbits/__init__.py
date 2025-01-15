@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Any
 
-from alibaba_ai_core._api.path import as_import_path
+from aibaba_ai_core._api.path import as_import_path
 
 
 def __getattr__(name: str) -> Any:

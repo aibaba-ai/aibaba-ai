@@ -15,13 +15,13 @@ from typing import (
 )
 
 import httpx
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel, LangSmithParams
-from alibaba_ai_core.language_models.llms import create_base_retry_decorator
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel, LangSmithParams
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -33,8 +33,8 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_env
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_env
 from pydantic import AliasChoices, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 
@@ -167,7 +167,7 @@ class ChatClovaX(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from alibaba_ai_core.messages import HumanMessage
+            from aibaba_ai_core.messages import HumanMessage
 
             from aibaba_ai_community import ChatClovaX
 

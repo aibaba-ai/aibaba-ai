@@ -1,9 +1,9 @@
 from typing import Any, Dict, List, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LLM
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LLM
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import (
     BaseModel,
     ConfigDict,

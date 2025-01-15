@@ -62,10 +62,10 @@ from typing import (
 )
 from uuid import UUID
 
-from alibaba_ai_core.callbacks.base import BaseCallbackHandler
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.callbacks.base import BaseCallbackHandler
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.utils import guard_import
 
 logger = logging.getLogger(__name__)
 handler = logging.StreamHandler(sys.stdout)

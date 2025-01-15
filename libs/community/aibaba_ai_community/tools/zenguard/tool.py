@@ -3,7 +3,7 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Type
 
 import requests
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field, ValidationError, validator
 
 

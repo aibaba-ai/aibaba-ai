@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Optional
 
 import requests
-from alibaba_ai_core.messages import get_buffer_string
+from aibaba_ai_core.messages import get_buffer_string
 
 try:
     # Temporarily tuck import in a conditional import until

@@ -12,9 +12,9 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -22,15 +22,15 @@ from alibaba_ai_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import (
     convert_to_secret_str,
     get_from_dict_or_env,
     get_pydantic_field_names,
 )
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
-from alibaba_ai_core.utils.utils import _build_model_kwargs
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.utils import _build_model_kwargs
 from pydantic import Field, SecretStr, model_validator
 
 SUPPORTED_ROLES: List[str] = [

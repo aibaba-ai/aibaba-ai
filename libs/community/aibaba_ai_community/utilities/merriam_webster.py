@@ -5,7 +5,7 @@ from typing import Any, Dict, Iterator, List, Optional
 from urllib.parse import quote
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
 MERRIAM_WEBSTER_API_URL = (

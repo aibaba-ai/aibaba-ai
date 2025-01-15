@@ -63,7 +63,7 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "BaseChatLoader": "alibaba_ai_core.chat_loaders",
+    "BaseChatLoader": "aibaba_ai_core.chat_loaders",
     "FolderFacebookMessengerChatLoader": "aibaba_ai_community.chat_loaders.facebook_messenger",  # noqa: E501
     "GMailLoader": "aibaba_ai_community.chat_loaders.gmail",
     "IMessageChatLoader": "aibaba_ai_community.chat_loaders.imessage",

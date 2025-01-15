@@ -5,7 +5,7 @@ from typing import Any
 from unittest.mock import patch
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.retrievers.embedchain import EmbedchainRetriever
 

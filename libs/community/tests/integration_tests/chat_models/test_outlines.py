@@ -7,8 +7,8 @@ import platform
 import pytest
 
 from aibaba_ai_community.chat_models.outlines import ChatOutlines
-from alibaba_ai_core.messages import AIMessage, HumanMessage, BaseMessage
-from alibaba_ai_core.messages import BaseMessageChunk
+from aibaba_ai_core.messages import AIMessage, HumanMessage, BaseMessage
+from aibaba_ai_core.messages import BaseMessageChunk
 from pydantic import BaseModel
 
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

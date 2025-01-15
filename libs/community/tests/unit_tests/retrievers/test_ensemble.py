@@ -1,7 +1,7 @@
 import pytest
 from langchain.retrievers.ensemble import EnsembleRetriever
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import FakeEmbeddings
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import FakeEmbeddings
 
 
 @pytest.mark.requires("rank_bm25")

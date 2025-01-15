@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Optional, cast
 
 import numpy as np
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
 LASER_MULTILINGUAL_MODEL: str = "laser2"

@@ -3,9 +3,9 @@ from uuid import uuid4
 
 import numpy as np
 import pytest
-from alibaba_ai_core.messages import AIMessage
-from alibaba_ai_core.outputs import ChatGeneration, LLMResult
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.messages import AIMessage
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.utils.pydantic import get_fields
 
 from aibaba_ai_community.callbacks import OpenAICallbackHandler
 from aibaba_ai_community.llms.openai import BaseOpenAI

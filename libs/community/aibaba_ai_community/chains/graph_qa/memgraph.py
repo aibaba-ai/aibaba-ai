@@ -6,22 +6,22 @@ import re
 from typing import Any, Dict, List, Optional, Union
 
 from langchain.chains.base import Chain
-from alibaba_ai_core.callbacks import CallbackManagerForChainRun
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import CallbackManagerForChainRun
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     SystemMessage,
     ToolMessage,
 )
-from alibaba_ai_core.output_parsers import StrOutputParser
-from alibaba_ai_core.prompts import (
+from aibaba_ai_core.output_parsers import StrOutputParser
+from aibaba_ai_core.prompts import (
     BasePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
 )
-from alibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.runnables import Runnable
 from pydantic import Field
 
 from aibaba_ai_community.chains.graph_qa.prompts import (

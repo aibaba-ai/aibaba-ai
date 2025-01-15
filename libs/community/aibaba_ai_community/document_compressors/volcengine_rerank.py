@@ -3,9 +3,9 @@ from __future__ import annotations
 from copy import deepcopy
 from typing import Any, Dict, List, Optional, Sequence, Union
 
-from alibaba_ai_core.callbacks.base import Callbacks
-from alibaba_ai_core.documents import BaseDocumentCompressor, Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.callbacks.base import Callbacks
+from aibaba_ai_core.documents import BaseDocumentCompressor, Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import ConfigDict, model_validator
 
 

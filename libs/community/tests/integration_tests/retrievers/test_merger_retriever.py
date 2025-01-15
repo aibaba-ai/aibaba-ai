@@ -1,5 +1,5 @@
 from langchain.retrievers.merger_retriever import MergerRetriever
-from alibaba_ai_core.vectorstores import InMemoryVectorStore
+from aibaba_ai_core.vectorstores import InMemoryVectorStore
 
 from aibaba_ai_community.embeddings import OpenAIEmbeddings
 

@@ -6,7 +6,7 @@ from time import sleep
 from typing import Any, Optional
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.embeddings import OpenAIEmbeddings
 from aibaba_ai_community.vectorstores.documentdb import (

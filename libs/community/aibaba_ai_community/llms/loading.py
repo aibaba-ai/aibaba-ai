@@ -5,8 +5,8 @@ from pathlib import Path
 from typing import Any, Union
 
 import yaml
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.utils.pydantic import get_fields
 
 from aibaba_ai_community.llms import get_type_to_cls_dict
 

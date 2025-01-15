@@ -6,7 +6,7 @@ import logging
 import os
 from typing import TYPE_CHECKING, List, Optional, Tuple
 
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.utils import guard_import
 
 if TYPE_CHECKING:
     from google.auth.transport.requests import Request

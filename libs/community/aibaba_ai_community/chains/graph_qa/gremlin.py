@@ -6,10 +6,10 @@ from typing import Any, Dict, List, Optional
 
 from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain
-from alibaba_ai_core.callbacks.manager import CallbackManager, CallbackManagerForChainRun
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.prompts import BasePromptTemplate
-from alibaba_ai_core.prompts.prompt import PromptTemplate
+from aibaba_ai_core.callbacks.manager import CallbackManager, CallbackManagerForChainRun
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.prompts import BasePromptTemplate
+from aibaba_ai_core.prompts.prompt import PromptTemplate
 from pydantic import Field
 
 from aibaba_ai_community.chains.graph_qa.prompts import (

@@ -8,7 +8,7 @@ from typing import (
     Optional,
 )
 
-from alibaba_ai_core.tracers.context import register_configure_hook
+from aibaba_ai_core.tracers.context import register_configure_hook
 
 from aibaba_ai_community.callbacks.bedrock_anthropic_callback import (
     BedrockAnthropicTokenUsageCallbackHandler,

@@ -8,7 +8,7 @@ from typing import List, Union
 from urllib.parse import urlparse
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader

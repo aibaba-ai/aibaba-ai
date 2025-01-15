@@ -1,8 +1,8 @@
 from types import ModuleType, SimpleNamespace
 from typing import TYPE_CHECKING, Any, Callable, Dict
 
-from alibaba_ai_core.tracers import BaseTracer
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.tracers import BaseTracer
+from aibaba_ai_core.utils import guard_import
 
 if TYPE_CHECKING:
     from uuid import UUID

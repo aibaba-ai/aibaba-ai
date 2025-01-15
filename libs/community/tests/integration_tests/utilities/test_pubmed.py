@@ -3,8 +3,8 @@
 from typing import Any, List
 
 import pytest
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.tools import BaseTool
 
 from aibaba_ai_community.tools import PubmedQueryRun
 from aibaba_ai_community.utilities import PubMedAPIWrapper

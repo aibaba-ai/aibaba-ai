@@ -4,7 +4,7 @@ import uuid
 
 import langchain
 import pytest
-from alibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.outputs import Generation, LLMResult
 
 from aibaba_ai_community.cache import UpstashRedisCache
 from tests.unit_tests.llms.fake_chat_model import FakeChatModel

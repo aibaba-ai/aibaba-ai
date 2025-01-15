@@ -1,7 +1,7 @@
 from typing import Any, Awaitable, Callable, Dict, Optional
 from uuid import UUID
 
-from alibaba_ai_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
+from aibaba_ai_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
 
 
 def _default_approve(_input: str) -> bool:

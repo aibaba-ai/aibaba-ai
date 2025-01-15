@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import Any, Optional
 
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.tools import Tool
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.tools import Tool
 
 from aibaba_ai_community.chains.openapi.chain import OpenAPIEndpointChain
 from aibaba_ai_community.tools.openapi.utils.api_models import APIOperation

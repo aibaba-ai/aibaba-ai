@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import Any, Dict, Iterator, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict, Field, SecretStr
 
 

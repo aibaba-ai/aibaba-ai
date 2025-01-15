@@ -3,7 +3,7 @@
 from typing import Any, Dict, List
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 # BING_SEARCH_ENDPOINT is the default endpoint for Bing Web Search API.

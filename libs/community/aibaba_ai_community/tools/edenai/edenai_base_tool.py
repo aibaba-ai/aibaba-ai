@@ -5,9 +5,9 @@ from abc import abstractmethod
 from typing import Any, Dict, List, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import secret_from_env
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import secret_from_env
 from pydantic import Field, SecretStr
 
 logger = logging.getLogger(__name__)

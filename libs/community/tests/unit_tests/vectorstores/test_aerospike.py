@@ -3,7 +3,7 @@ from typing import Any, Callable, Generator
 from unittest.mock import MagicMock, Mock, call
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.aerospike import Aerospike
 from aibaba_ai_community.vectorstores.utils import DistanceStrategy

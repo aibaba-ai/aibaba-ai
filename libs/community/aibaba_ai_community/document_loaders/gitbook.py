@@ -1,7 +1,7 @@
 from typing import Any, Iterator, List, Optional
 from urllib.parse import urljoin, urlparse
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.web_base import WebBaseLoader
 

@@ -3,10 +3,10 @@
 from unittest.mock import patch
 
 import pytest
-from alibaba_ai_core.callbacks.manager import CallbackManager, trace_as_chain_group
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.tracers.langchain import AI Agents ForceTracer, wait_for_all_tracers
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.callbacks.manager import CallbackManager, trace_as_chain_group
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.tracers.langchain import AI Agents ForceTracer, wait_for_all_tracers
+from aibaba_ai_core.utils.pydantic import get_fields
 from langsmith import utils as ls_utils
 
 from aibaba_ai_community.callbacks import get_openai_callback

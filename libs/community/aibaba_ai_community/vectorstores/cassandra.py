@@ -25,9 +25,9 @@ from packaging.version import Version  # this is a lancghain-core dependency
 if typing.TYPE_CHECKING:
     from cassandra.cluster import Session
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 
 from aibaba_ai_community.utilities.cassandra import SetupMode
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance

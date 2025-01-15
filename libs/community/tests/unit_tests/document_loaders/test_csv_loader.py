@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.csv_loader import CSVLoader
 

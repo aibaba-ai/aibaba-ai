@@ -1,7 +1,7 @@
 import warnings
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core._api import deprecated
+from aibaba_ai_core._api import deprecated
 
 from aibaba_ai_community.graphs.graph_document import GraphDocument
 from aibaba_ai_community.graphs.graph_store import GraphStore

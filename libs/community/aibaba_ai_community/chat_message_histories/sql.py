@@ -14,15 +14,15 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core._api import deprecated, warn_deprecated
+from aibaba_ai_core._api import deprecated, warn_deprecated
 from sqlalchemy import Column, Integer, Text, delete, select
 
 try:
     from sqlalchemy.orm import declarative_base
 except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,
@@ -123,7 +123,7 @@ class SQLChatMessageHistory(BaseChatMessageHistory):
     Example:
         .. code-block:: python
 
-            from alibaba_ai_core.messages import HumanMessage
+            from aibaba_ai_core.messages import HumanMessage
 
             from aibaba_ai_community.chat_message_histories import SQLChatMessageHistory
 

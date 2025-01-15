@@ -6,9 +6,9 @@ from typing import Any, Dict, List, Optional
 
 import aiohttp
 import requests
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel
 
 

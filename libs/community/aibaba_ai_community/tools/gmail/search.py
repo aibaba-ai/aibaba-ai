@@ -3,7 +3,7 @@ import email
 from enum import Enum
 from typing import Any, Dict, List, Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.tools.gmail.base import GmailBaseTool

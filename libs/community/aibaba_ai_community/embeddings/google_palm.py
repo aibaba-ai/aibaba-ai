@@ -3,8 +3,8 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict
 from tenacity import (
     before_sleep_log,

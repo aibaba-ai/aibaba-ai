@@ -19,8 +19,8 @@ import traceback
 from html.parser import HTMLParser
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union
 
-from alibaba_ai_core.document_loaders import BaseLoader
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.document_loaders import BaseLoader
+from aibaba_ai_core.documents import Document
 from langchain_text_splitters import TextSplitter
 
 if TYPE_CHECKING:

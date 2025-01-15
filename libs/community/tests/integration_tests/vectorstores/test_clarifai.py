@@ -2,7 +2,7 @@
 
 import time
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import Clarifai
 

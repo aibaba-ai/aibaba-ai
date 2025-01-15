@@ -1,8 +1,8 @@
 import importlib
 from typing import Any, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

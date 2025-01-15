@@ -3,8 +3,8 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Any, Optional
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.utils import get_from_env, guard_import
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.utils import get_from_env, guard_import
 
 if TYPE_CHECKING:
     from whylogs.api.logger.logger import Logger

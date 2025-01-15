@@ -1,9 +1,9 @@
 from typing import List
 
 import requests
-from alibaba_ai_core.callbacks.manager import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents.base import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks.manager import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents.base import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 
 
 class BreebsRetriever(BaseRetriever):

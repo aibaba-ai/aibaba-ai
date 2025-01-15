@@ -36,8 +36,8 @@ https://maker.ifttt.com/use/YOUR_IFTTT_KEY. Grab the YOUR_IFTTT_KEY value.
 from typing import Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 
 
 class IFTTTWebhook(BaseTool):  # type: ignore[override]

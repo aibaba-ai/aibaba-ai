@@ -4,7 +4,7 @@ from typing import List
 from unittest.mock import MagicMock
 
 import pytest
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,

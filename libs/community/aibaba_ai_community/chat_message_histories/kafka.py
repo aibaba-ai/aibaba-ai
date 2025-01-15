@@ -11,8 +11,8 @@ import time
 from enum import Enum
 from typing import TYPE_CHECKING, List, Optional, Sequence
 
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import BaseMessage, message_to_dict, messages_from_dict
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import BaseMessage, message_to_dict, messages_from_dict
 
 if TYPE_CHECKING:
     from confluent_kafka import TopicPartition

@@ -5,7 +5,7 @@ import os
 import re
 from typing import Any, Dict, Iterator, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
 logger = logging.getLogger(__name__)

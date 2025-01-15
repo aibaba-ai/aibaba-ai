@@ -4,8 +4,8 @@ from copy import deepcopy
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Sequence, Union
 
 from langchain.retrievers.document_compressors.base import BaseDocumentCompressor
-from alibaba_ai_core.callbacks.manager import Callbacks
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.callbacks.manager import Callbacks
+from aibaba_ai_core.documents import Document
 from pydantic import ConfigDict, model_validator
 
 if TYPE_CHECKING:

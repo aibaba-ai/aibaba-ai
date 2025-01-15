@@ -1,7 +1,7 @@
 """Test USearch functionality."""
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.usearch import USearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

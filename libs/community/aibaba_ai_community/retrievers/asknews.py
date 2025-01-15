@@ -2,12 +2,12 @@ import os
 import re
 from typing import Any, Dict, List, Literal, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 
 
 class AskNewsRetriever(BaseRetriever):

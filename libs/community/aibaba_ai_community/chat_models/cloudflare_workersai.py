@@ -16,31 +16,31 @@ from uuid import uuid4
 
 import requests
 from langchain.schema import AIMessage, ChatGeneration, ChatResult, HumanMessage
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessageChunk,
     BaseMessage,
     SystemMessage,
     ToolCall,
     ToolMessage,
 )
-from alibaba_ai_core.messages.tool import tool_call
-from alibaba_ai_core.output_parsers import (
+from aibaba_ai_core.messages.tool import tool_call
+from aibaba_ai_core.output_parsers import (
     JsonOutputParser,
     PydanticOutputParser,
 )
-from alibaba_ai_core.output_parsers.base import OutputParserLike
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
 )
-from alibaba_ai_core.runnables import Runnable, RunnablePassthrough
-from alibaba_ai_core.runnables.base import RunnableMap
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
-from alibaba_ai_core.utils.pydantic import is_basemodel_subclass
+from aibaba_ai_core.runnables import Runnable, RunnablePassthrough
+from aibaba_ai_core.runnables.base import RunnableMap
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel, Field
 
 # Initialize logging

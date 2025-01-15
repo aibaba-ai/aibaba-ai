@@ -3,9 +3,9 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Optional, Union
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.language_models.llms import create_base_retry_decorator
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, SecretStr
 
 logger = logging.getLogger(__name__)

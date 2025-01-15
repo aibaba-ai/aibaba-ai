@@ -1,5 +1,5 @@
 # flake8: noqa
-from alibaba_ai_core.prompts.prompt import PromptTemplate
+from aibaba_ai_core.prompts.prompt import PromptTemplate
 
 _DEFAULT_ENTITY_EXTRACTION_TEMPLATE = """Extract all entities from the following text. As a guideline, a proper noun is generally capitalized. You should definitely extract all names and places.
 

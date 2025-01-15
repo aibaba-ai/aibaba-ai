@@ -2,9 +2,9 @@ import json
 import logging
 from typing import Any, List, Optional, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     FunctionMessage,

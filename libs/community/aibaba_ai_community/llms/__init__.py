@@ -20,8 +20,8 @@ access to the large language model (**LLM**) APIs and services.
 
 from typing import Any, Callable, Dict, Type
 
-from alibaba_ai_core._api.deprecation import warn_deprecated
-from alibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core._api.deprecation import warn_deprecated
+from aibaba_ai_core.language_models.llms import BaseLLM
 
 
 def _import_ai21() -> Type[BaseLLM]:

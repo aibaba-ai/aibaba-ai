@@ -19,9 +19,9 @@ from typing import (
 )
 
 import numpy as np
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import (
     get_from_dict_or_env,
     get_pydantic_field_names,
     pre_init,

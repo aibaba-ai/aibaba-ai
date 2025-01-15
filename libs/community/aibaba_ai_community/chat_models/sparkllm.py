@@ -12,14 +12,14 @@ from typing import Any, Dict, Generator, Iterator, List, Mapping, Optional, Type
 from urllib.parse import urlencode, urlparse, urlunparse
 from wsgiref.handlers import format_date_time
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -32,20 +32,20 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     ToolMessageChunk,
 )
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.openai_tools import (
     make_invalid_tool_call,
     parse_tool_call,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
 )
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.utils import (
     get_from_dict_or_env,
     get_pydantic_field_names,
 )
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import ConfigDict, Field, model_validator
 
 logger = logging.getLogger(__name__)

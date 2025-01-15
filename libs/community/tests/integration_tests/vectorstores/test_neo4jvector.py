@@ -4,7 +4,7 @@ import os
 from math import isclose
 from typing import Any, Dict, List, cast
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from yaml import safe_load
 
 from aibaba_ai_community.graphs import Neo4jGraph

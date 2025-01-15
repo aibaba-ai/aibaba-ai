@@ -2,7 +2,7 @@ import logging
 from pathlib import Path
 from typing import Iterator, Optional, Sequence, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

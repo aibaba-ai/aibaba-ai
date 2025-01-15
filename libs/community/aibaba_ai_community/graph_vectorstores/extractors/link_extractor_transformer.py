@@ -1,8 +1,8 @@
 from typing import Any, Sequence
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.documents.transformers import BaseDocumentTransformer
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.documents.transformers import BaseDocumentTransformer
 
 from aibaba_ai_community.graph_vectorstores.extractors.link_extractor import (
     LinkExtractor,

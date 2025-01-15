@@ -15,15 +15,15 @@ from typing import (
 )
 
 from langchain.chains import LLMChain
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.output_parsers import (
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.output_parsers import (
     BaseGenerationOutputParser,
     BaseLLMOutputParser,
     BaseOutputParser,
 )
-from alibaba_ai_core.prompts import BasePromptTemplate
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.utils.pydantic import is_basemodel_subclass
+from aibaba_ai_core.prompts import BasePromptTemplate
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel
 
 from aibaba_ai_community.output_parsers.ernie_functions import (
@@ -242,7 +242,7 @@ def create_ernie_fn_runnable(
 
                 from langchain.chains.ernie_functions import create_ernie_fn_chain
                 from aibaba_ai_community.chat_models import ErnieBotChat
-                from alibaba_ai_core.prompts import ChatPromptTemplate
+                from aibaba_ai_core.prompts import ChatPromptTemplate
                 from pydantic import BaseModel, Field
 
 
@@ -316,7 +316,7 @@ def create_structured_output_runnable(
 
             from langchain.chains.ernie_functions import create_structured_output_chain
             from aibaba_ai_community.chat_models import ErnieBotChat
-            from alibaba_ai_core.prompts import ChatPromptTemplate
+            from aibaba_ai_core.prompts import ChatPromptTemplate
             from pydantic import BaseModel, Field
 
             class Dog(BaseModel):
@@ -413,7 +413,7 @@ def create_ernie_fn_chain(
 
                 from langchain.chains.ernie_functions import create_ernie_fn_chain
                 from aibaba_ai_community.chat_models import ErnieBotChat
-                from alibaba_ai_core.prompts import ChatPromptTemplate
+                from aibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field
 
@@ -500,7 +500,7 @@ def create_structured_output_chain(
 
                 from langchain.chains.ernie_functions import create_structured_output_chain
                 from aibaba_ai_community.chat_models import ErnieBotChat
-                from alibaba_ai_core.prompts import ChatPromptTemplate
+                from aibaba_ai_core.prompts import ChatPromptTemplate
 
                 from pydantic import BaseModel, Field
 

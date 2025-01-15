@@ -1,8 +1,8 @@
 from enum import Enum
 from typing import Any, Dict, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
 CUSTOM_ENDPOINT_PREFIX = "ocid1.generativeaiendpoint"

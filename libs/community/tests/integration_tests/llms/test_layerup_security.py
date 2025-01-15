@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
 import pytest
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 
 from aibaba_ai_community.llms.layerup_security import LayerupSecurity
 

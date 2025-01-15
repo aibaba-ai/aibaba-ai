@@ -11,21 +11,21 @@ from importlib.metadata import version
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Pattern, cast
 
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils import pre_init
 
 if TYPE_CHECKING:
     import gpudb
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.output_parsers.transform import BaseOutputParser
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult, Generation
+from aibaba_ai_core.output_parsers.transform import BaseOutputParser
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, Generation
 from pydantic import BaseModel, ConfigDict, Field
 
 LOG = logging.getLogger(__name__)

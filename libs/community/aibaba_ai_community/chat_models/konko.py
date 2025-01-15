@@ -18,12 +18,12 @@ from typing import (
 )
 
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.messages import AIMessageChunk, BaseMessage
-from alibaba_ai_core.outputs import ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.messages import AIMessageChunk, BaseMessage
+from aibaba_ai_core.outputs import ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import Field, SecretStr
 
 from aibaba_ai_community.adapters.openai import (

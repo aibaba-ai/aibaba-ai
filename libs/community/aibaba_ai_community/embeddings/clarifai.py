@@ -1,7 +1,7 @@
 import logging
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 logger = logging.getLogger(__name__)

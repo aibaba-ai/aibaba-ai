@@ -4,11 +4,11 @@ import logging
 from time import perf_counter
 from typing import Any, Dict, Optional, Tuple
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import ConfigDict, Field, model_validator
 
 from aibaba_ai_community.chat_models.openai import _import_tiktoken

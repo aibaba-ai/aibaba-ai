@@ -3,7 +3,7 @@
 from abc import ABC, abstractmethod
 from typing import Dict, List, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 
 class Docstore(ABC):

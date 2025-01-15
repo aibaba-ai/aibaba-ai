@@ -1,7 +1,7 @@
 from typing import Dict, List
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 
 from aibaba_ai_community.tools.jira.prompt import (
     JIRA_CATCH_ALL_PROMPT,

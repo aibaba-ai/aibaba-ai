@@ -2,8 +2,8 @@ import json
 import urllib.request
 from typing import Any, List
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import stringify_dict
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import stringify_dict
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

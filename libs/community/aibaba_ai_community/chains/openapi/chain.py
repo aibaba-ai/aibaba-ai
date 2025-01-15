@@ -9,8 +9,8 @@ from langchain.chains.api.openapi.requests_chain import APIRequesterChain
 from langchain.chains.api.openapi.response_chain import APIResponderChain
 from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain
-from alibaba_ai_core.callbacks import CallbackManagerForChainRun, Callbacks
-from alibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import CallbackManagerForChainRun, Callbacks
+from aibaba_ai_core.language_models import BaseLanguageModel
 from pydantic import BaseModel, Field
 from requests import Response
 

@@ -1,10 +1,10 @@
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     FunctionMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.openai_tools import (
     parse_tool_call,
 )
 

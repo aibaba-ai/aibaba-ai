@@ -10,7 +10,7 @@ from pathlib import Path
 from time import strptime
 from typing import Any, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

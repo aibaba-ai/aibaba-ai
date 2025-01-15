@@ -1,7 +1,7 @@
 # coding:utf-8
 from typing import List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.obs_file import OBSFileLoader

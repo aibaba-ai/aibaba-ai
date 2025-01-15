@@ -1,7 +1,7 @@
 import logging
 from typing import Any, Optional
 
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.language_models.llms import LLM
 
 from aibaba_ai_community.llms.ipex_llm import IpexLLM
 

@@ -6,7 +6,7 @@ import json
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
 if TYPE_CHECKING:

@@ -8,7 +8,7 @@ import sys
 from typing import Any, Dict, Optional, Tuple
 
 import aiohttp
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 

@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass, fields
 from typing import Any, Dict, List, Mapping, Optional, Tuple, Type, Union
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
 DEFAULT_URL = "https://api.clickup.com/api/v2"

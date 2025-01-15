@@ -4,9 +4,9 @@ import os
 from typing import Any, Dict, List, Optional
 
 import numpy as np
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables.config import run_in_executor
 from pydantic import BaseModel, ConfigDict, model_validator
 from typing_extensions import Self
 

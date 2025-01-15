@@ -19,16 +19,16 @@ from typing import (
     get_origin,
 )
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.callbacks.manager import AsyncCallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import AIMessage, AIMessageChunk, BaseMessage
-from alibaba_ai_core.output_parsers import JsonOutputParser, PydanticOutputParser
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.callbacks.manager import AsyncCallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import AIMessage, AIMessageChunk, BaseMessage
+from aibaba_ai_core.output_parsers import JsonOutputParser, PydanticOutputParser
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import BaseModel, Field, model_validator
 from typing_extensions import Literal
 

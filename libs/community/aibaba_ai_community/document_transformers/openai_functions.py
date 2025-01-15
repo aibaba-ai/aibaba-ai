@@ -2,9 +2,9 @@
 
 from typing import Any, Dict, Optional, Sequence, Type, Union
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.prompts import ChatPromptTemplate
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel
 
 
@@ -16,7 +16,7 @@ class OpenAIMetadataTagger(BaseDocumentTransformer, BaseModel):
 
                 from aibaba_ai_community.chat_models import ChatOpenAI
                 from aibaba_ai_community.document_transformers import OpenAIMetadataTagger
-                from alibaba_ai_core.documents import Document
+                from aibaba_ai_core.documents import Document
 
                 schema = {
                     "properties": {
@@ -99,7 +99,7 @@ def create_metadata_tagger(
 
                 from aibaba_ai_community.chat_models import ChatOpenAI
                 from aibaba_ai_community.document_transformers import create_metadata_tagger
-                from alibaba_ai_core.documents import Document
+                from aibaba_ai_core.documents import Document
 
                 schema = {
                     "properties": {

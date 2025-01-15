@@ -6,9 +6,9 @@ import uuid
 from hashlib import sha1
 from typing import Any, Dict, Iterable, List, Optional, Type
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 logger = logging.getLogger()

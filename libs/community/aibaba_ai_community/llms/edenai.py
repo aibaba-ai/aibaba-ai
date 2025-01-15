@@ -4,13 +4,13 @@ import logging
 from typing import Any, Dict, List, Literal, Optional
 
 from aiohttp import ClientSession
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import ConfigDict, Field, model_validator
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

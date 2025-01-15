@@ -8,10 +8,10 @@ from typing import Any, Dict, List, Union, cast
 from uuid import UUID
 
 import requests
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.outputs import LLMResult
 from packaging.version import parse
 
 logger = logging.getLogger(__name__)

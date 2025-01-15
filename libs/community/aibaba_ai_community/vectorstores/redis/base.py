@@ -22,15 +22,15 @@ from typing import (
 
 import numpy as np
 import yaml
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env
-from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from pydantic import ConfigDict
 
 from aibaba_ai_community.utilities.redis import (
@@ -121,7 +121,7 @@ class Redis(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from alibaba_ai_core.documents import Document
+            from aibaba_ai_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

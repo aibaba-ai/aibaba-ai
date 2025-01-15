@@ -3,8 +3,8 @@ from __future__ import annotations
 from typing import Any, Dict, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 
 
 class CogniswitchKnowledgeRequest(BaseTool):  # type: ignore[override]

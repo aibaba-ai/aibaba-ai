@@ -6,7 +6,7 @@ import uuid
 from importlib.metadata import version
 from typing import Any, Dict, Iterable, Iterator, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.utilities.pebblo import (

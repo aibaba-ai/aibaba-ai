@@ -3,9 +3,9 @@ from __future__ import annotations
 import uuid
 from typing import Any, Dict, Iterable, List, Literal, Optional, Tuple, Union
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 
 class PGVecto_rs(VectorStore):

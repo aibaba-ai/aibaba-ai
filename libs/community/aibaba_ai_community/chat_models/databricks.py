@@ -1,7 +1,7 @@
 import logging
 from urllib.parse import urlparse
 
-from alibaba_ai_core._api import deprecated
+from aibaba_ai_core._api import deprecated
 
 from aibaba_ai_community.chat_models.mlflow import ChatMlflow
 

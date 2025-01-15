@@ -4,7 +4,7 @@ from langchain.retrievers.document_compressors import (
     DocumentCompressorPipeline,
     EmbeddingsFilter,
 )
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from langchain_text_splitters.character import CharacterTextSplitter
 
 from aibaba_ai_community.document_transformers import EmbeddingsRedundantFilter

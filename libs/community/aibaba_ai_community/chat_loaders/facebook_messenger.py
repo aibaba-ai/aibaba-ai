@@ -3,9 +3,9 @@ import logging
 from pathlib import Path
 from typing import Iterator, Union
 
-from alibaba_ai_core.chat_loaders import BaseChatLoader
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import HumanMessage
+from aibaba_ai_core.chat_loaders import BaseChatLoader
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import HumanMessage
 
 logger = logging.getLogger(__file__)
 

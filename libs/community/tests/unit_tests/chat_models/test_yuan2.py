@@ -1,7 +1,7 @@
 """Test ChatYuan2 wrapper."""
 
 import pytest
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     HumanMessage,
     SystemMessage,

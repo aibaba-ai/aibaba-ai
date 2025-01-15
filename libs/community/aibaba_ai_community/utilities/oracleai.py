@@ -13,7 +13,7 @@ import logging
 import traceback
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 if TYPE_CHECKING:
     from oracledb import Connection

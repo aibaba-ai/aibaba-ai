@@ -18,7 +18,7 @@ from math import isclose
 from typing import Any, Dict, List
 
 from dotenv import load_dotenv
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.falkordb_vector import (
     FalkorDBVector,

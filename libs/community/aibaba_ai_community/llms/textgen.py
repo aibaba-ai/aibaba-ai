@@ -3,12 +3,12 @@ import logging
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional
 
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
 from pydantic import Field
 
 logger = logging.getLogger(__name__)

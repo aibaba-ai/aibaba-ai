@@ -7,10 +7,10 @@ API keys:      https://dashboard.riza.io
 
 from typing import Any, Optional, Type
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool, ToolException
+from aibaba_ai_core.tools import BaseTool, ToolException
 from pydantic import BaseModel, Field
 
 

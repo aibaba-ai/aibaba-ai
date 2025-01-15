@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import List, Union
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.load.serializable import Serializable
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.load.serializable import Serializable
 from pydantic import Field
 
 

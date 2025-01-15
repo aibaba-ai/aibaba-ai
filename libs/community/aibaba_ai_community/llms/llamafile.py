@@ -5,10 +5,10 @@ from io import StringIO
 from typing import Any, Dict, Iterator, List, Optional
 
 import requests
-from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import get_pydantic_field_names
+from aibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import get_pydantic_field_names
 from pydantic import ConfigDict
 
 

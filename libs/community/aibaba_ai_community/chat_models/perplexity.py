@@ -15,12 +15,12 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -34,8 +34,8 @@ from alibaba_ai_core.messages import (
     SystemMessageChunk,
     ToolMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import (
     from_env,
     get_pydantic_field_names,
 )

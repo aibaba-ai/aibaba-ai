@@ -13,8 +13,8 @@ from typing import (
     overload,
 )
 
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
