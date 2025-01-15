@@ -4,7 +4,7 @@ import json
 from typing import Any, Dict, Optional
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
 GOLDEN_BASE_URL = "https://golden.com"

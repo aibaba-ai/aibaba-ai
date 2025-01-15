@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Iterator, List, Optional
 
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.utils import get_from_env
 
 if TYPE_CHECKING:
     from odps import ODPS

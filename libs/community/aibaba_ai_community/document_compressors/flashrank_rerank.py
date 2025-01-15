@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, Optional, Sequence
 
-from alibaba_ai_core.callbacks.manager import Callbacks
-from alibaba_ai_core.documents import BaseDocumentCompressor, Document
+from aibaba_ai_core.callbacks.manager import Callbacks
+from aibaba_ai_core.documents import BaseDocumentCompressor, Document
 from pydantic import ConfigDict, model_validator
 
 if TYPE_CHECKING:

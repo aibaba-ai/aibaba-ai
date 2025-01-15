@@ -23,7 +23,7 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from alibaba_ai_core.vectorstores import (
+    from aibaba_ai_core.vectorstores import (
         VectorStore,
     )
 
@@ -513,7 +513,7 @@ _module_lookup = {
     "VDMS": "aibaba_ai_community.vectorstores.vdms",
     "Vearch": "aibaba_ai_community.vectorstores.vearch",
     "Vectara": "aibaba_ai_community.vectorstores.vectara",
-    "VectorStore": "alibaba_ai_core.vectorstores",
+    "VectorStore": "aibaba_ai_core.vectorstores",
     "VespaStore": "aibaba_ai_community.vectorstores.vespa",
     "VLite": "aibaba_ai_community.vectorstores.vlite",
     "Weaviate": "aibaba_ai_community.vectorstores.weaviate",

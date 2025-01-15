@@ -16,15 +16,15 @@ from typing import (
 )
 
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -34,23 +34,23 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from alibaba_ai_core.output_parsers import (
+from aibaba_ai_core.output_parsers import (
     JsonOutputParser,
     PydanticOutputParser,
 )
-from alibaba_ai_core.output_parsers.base import OutputParserLike
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
     make_invalid_tool_call,
     parse_tool_call,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
-from alibaba_ai_core.utils.pydantic import is_basemodel_subclass
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import is_basemodel_subclass
 from pydantic import BaseModel, Field, SecretStr
 from requests import Response
 
@@ -391,7 +391,7 @@ class ChatSambaNovaCloud(BaseChatModel):
                 If `schema` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`alibaba_ai_core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -414,7 +414,7 @@ class ChatSambaNovaCloud(BaseChatModel):
                 with keys "raw", "parsed", and "parsing_error".
 
         Returns:
-            A Runnable that takes same inputs as a :class:`alibaba_ai_core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aibaba_ai_core.language_models.chat.BaseChatModel`.
 
             If `include_raw` is False and `schema` is a Pydantic class, Runnable outputs
             an instance of `schema` (i.e., a Pydantic object).
@@ -1298,7 +1298,7 @@ class ChatSambaStudio(BaseChatModel):
                 If `schema` is a Pydantic class then the model output will be a
                 Pydantic instance of that class, and the model-generated fields will be
                 validated by the Pydantic class. Otherwise the model output will be a
-                dict and will not be validated. See :meth:`alibaba_ai_core.utils.function_calling.convert_to_openai_tool`
+                dict and will not be validated. See :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`
                 for more on how to properly specify types and descriptions of
                 schema fields when specifying a Pydantic or TypedDict class.
 
@@ -1321,7 +1321,7 @@ class ChatSambaStudio(BaseChatModel):
                 with keys "raw", "parsed", and "parsing_error".
 
         Returns:
-            A Runnable that takes same inputs as a :class:`alibaba_ai_core.language_models.chat.BaseChatModel`.
+            A Runnable that takes same inputs as a :class:`aibaba_ai_core.language_models.chat.BaseChatModel`.
 
             If `include_raw` is False and `schema` is a Pydantic class, Runnable outputs
             an instance of `schema` (i.e., a Pydantic object).

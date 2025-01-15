@@ -3,8 +3,8 @@ import urllib.request
 from base64 import b64encode
 from typing import List, Optional
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_env, stringify_value
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_env, stringify_value
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

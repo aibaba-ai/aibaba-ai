@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "aibaba_ai_community"
-version = "0.3.14"
+version = "0.3.16"
 description = "Community contributed Aibaba AI integrations."
 authors = []
 license = "MIT"

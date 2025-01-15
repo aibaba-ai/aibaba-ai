@@ -17,13 +17,13 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -33,20 +33,20 @@ from alibaba_ai_core.messages import (
     ToolCall,
     ToolMessage,
 )
-from alibaba_ai_core.messages.tool import ToolCallChunk
-from alibaba_ai_core.output_parsers import (
+from aibaba_ai_core.messages.tool import ToolCallChunk
+from aibaba_ai_core.output_parsers import (
     JsonOutputParser,
     PydanticOutputParser,
 )
-from alibaba_ai_core.output_parsers.base import OutputParserLike
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils.function_calling import convert_to_openai_function
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_function
 from pydantic import BaseModel, ConfigDict
 
 from aibaba_ai_community.llms.oci_generative_ai import OCIGenAIBase
@@ -105,7 +105,7 @@ def _format_oci_tool_calls(
 
 
 def _convert_oci_tool_call_to_langchain(tool_call: Any) -> ToolCall:
-    """Convert a OCI GenAI tool call into alibaba_ai_core.messages.ToolCall"""
+    """Convert a OCI GenAI tool call into aibaba_ai_core.messages.ToolCall"""
     _id = uuid.uuid4().hex[:]
     return ToolCall(name=tool_call.name, args=tool_call.parameters, id=_id)
 

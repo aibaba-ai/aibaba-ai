@@ -5,10 +5,10 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, SecretStr
 
 

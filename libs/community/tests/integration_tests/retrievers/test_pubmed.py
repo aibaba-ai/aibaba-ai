@@ -3,7 +3,7 @@
 from typing import List
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.retrievers import PubMedRetriever
 

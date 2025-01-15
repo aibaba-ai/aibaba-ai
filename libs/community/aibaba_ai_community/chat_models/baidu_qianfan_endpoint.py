@@ -17,13 +17,13 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -33,19 +33,19 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from alibaba_ai_core.messages.ai import UsageMetadata
-from alibaba_ai_core.messages.tool import tool_call_chunk
-from alibaba_ai_core.output_parsers.base import OutputParserLike
-from alibaba_ai_core.output_parsers.openai_tools import (
+from aibaba_ai_core.messages.ai import UsageMetadata
+from aibaba_ai_core.messages.tool import tool_call_chunk
+from aibaba_ai_core.output_parsers.base import OutputParserLike
+from aibaba_ai_core.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     PydanticToolsParser,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
-from alibaba_ai_core.utils.pydantic import get_fields, is_basemodel_subclass
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable, RunnableMap, RunnablePassthrough
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.utils.pydantic import get_fields, is_basemodel_subclass
 from pydantic import (
     BaseModel,
     ConfigDict,
@@ -796,7 +796,7 @@ class QianfanChatEndpoint(BaseChatModel):
 
                 from langchain_mistralai import QianfanChatEndpoint
                 from pydantic import BaseModel
-                from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+                from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 
                 class AnswerWithJustification(BaseModel):
                     '''An answer to the user question along with justification for the answer.'''

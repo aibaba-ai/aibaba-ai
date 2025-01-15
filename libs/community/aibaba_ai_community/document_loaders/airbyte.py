@@ -1,7 +1,7 @@
 from typing import Any, Callable, Iterator, Mapping, Optional
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils.utils import guard_import
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils.utils import guard_import
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

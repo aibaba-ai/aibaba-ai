@@ -3,8 +3,8 @@ import logging
 from datetime import datetime
 from typing import List, Optional
 
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import BaseMessage, message_to_dict, messages_from_dict
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import BaseMessage, message_to_dict, messages_from_dict
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import sessionmaker

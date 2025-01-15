@@ -1,7 +1,7 @@
 from typing import List, Type
 
-from alibaba_ai_core.tools import BaseTool, StructuredTool
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.tools import BaseTool, StructuredTool
+from aibaba_ai_core.utils.pydantic import get_fields
 
 import aibaba_ai_community.tools
 from aibaba_ai_community.tools import _DEPRECATED_TOOLS

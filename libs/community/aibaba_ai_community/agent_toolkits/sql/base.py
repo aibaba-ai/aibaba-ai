@@ -14,9 +14,9 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core.messages import AIMessage, SystemMessage
-from alibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
-from alibaba_ai_core.prompts.chat import (
+from aibaba_ai_core.messages import AIMessage, SystemMessage
+from aibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
+from aibaba_ai_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
@@ -36,9 +36,9 @@ from aibaba_ai_community.tools.sql_database.tool import (
 if TYPE_CHECKING:
     from langchain.agents.agent import AgentExecutor
     from langchain.agents.agent_types import AgentType
-    from alibaba_ai_core.callbacks import BaseCallbackManager
-    from alibaba_ai_core.language_models import BaseLanguageModel
-    from alibaba_ai_core.tools import BaseTool
+    from aibaba_ai_core.callbacks import BaseCallbackManager
+    from aibaba_ai_core.language_models import BaseLanguageModel
+    from aibaba_ai_core.tools import BaseTool
 
     from aibaba_ai_community.utilities.sql_database import SQLDatabase
 

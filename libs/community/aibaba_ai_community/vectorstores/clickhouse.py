@@ -6,9 +6,9 @@ from hashlib import sha1
 from threading import Thread
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 logger = logging.getLogger()
@@ -133,7 +133,7 @@ class Clickhouse(VectorStore):
     Add Documents:
         .. code-block:: python
 
-            from alibaba_ai_core.documents import Document
+            from aibaba_ai_core.documents import Document
 
             document_1 = Document(page_content="foo", metadata={"baz": "bar"})
             document_2 = Document(page_content="thud", metadata={"bar": "baz"})

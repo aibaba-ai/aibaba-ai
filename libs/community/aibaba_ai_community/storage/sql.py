@@ -15,7 +15,7 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core.stores import BaseStore
+from aibaba_ai_core.stores import BaseStore
 from sqlalchemy import (
     LargeBinary,
     Text,

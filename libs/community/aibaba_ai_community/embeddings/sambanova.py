@@ -2,8 +2,8 @@ import json
 from typing import Dict, Generator, List, Optional
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict
 
 

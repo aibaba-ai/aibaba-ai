@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Optional, Type
 from urllib.parse import urlparse
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )

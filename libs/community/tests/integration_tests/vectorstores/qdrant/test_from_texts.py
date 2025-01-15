@@ -3,7 +3,7 @@ import uuid
 from typing import Optional
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import Qdrant
 from aibaba_ai_community.vectorstores.qdrant import QdrantException

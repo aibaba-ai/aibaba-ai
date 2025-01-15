@@ -5,13 +5,13 @@ import json
 from typing import Any, Dict, Optional, Union
 
 from pydantic import BaseModel
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
 
 from aibaba_ai_community.utilities.requests import GenericRequestsWrapper
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 
 
 def _parse_input(text: str) -> Dict[str, Any]:

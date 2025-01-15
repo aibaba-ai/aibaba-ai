@@ -3,7 +3,7 @@
 import logging
 from typing import Any, Dict, Mapping, Optional, Tuple, Union
 
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.utils import (
     from_env,
     get_pydantic_field_names,
     secret_from_env,

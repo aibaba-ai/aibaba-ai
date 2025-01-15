@@ -4,9 +4,9 @@ import logging
 import uuid
 from typing import Any, Iterable, List, Optional, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.vectorstores.utils import DistanceStrategy
 

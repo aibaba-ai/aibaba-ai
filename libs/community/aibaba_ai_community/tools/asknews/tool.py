@@ -8,11 +8,11 @@ To use this tool, you must first set your credentials as environment variables:
 
 from typing import Any, Optional, Type
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.utilities.asknews import AskNewsAPIWrapper

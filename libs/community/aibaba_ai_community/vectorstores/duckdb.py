@@ -7,9 +7,9 @@ import uuid
 import warnings
 from typing import Any, Iterable, List, Optional, Type
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VST, VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VST, VectorStore
 
 logger = logging.getLogger(__name__)
 

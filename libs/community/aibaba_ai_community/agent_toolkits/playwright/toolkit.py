@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Optional, Type, cast
 
-from alibaba_ai_core.tools import BaseTool, BaseToolkit
+from aibaba_ai_core.tools import BaseTool, BaseToolkit
 from pydantic import ConfigDict, model_validator
 
 from aibaba_ai_community.tools.playwright.base import (

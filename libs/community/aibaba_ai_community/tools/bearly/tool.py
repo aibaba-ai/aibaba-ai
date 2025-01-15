@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Dict, List, Type
 
 import requests
-from alibaba_ai_core.tools import Tool
+from aibaba_ai_core.tools import Tool
 from pydantic import BaseModel, Field
 
 

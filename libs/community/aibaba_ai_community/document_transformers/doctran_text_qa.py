@@ -1,7 +1,7 @@
 from typing import Any, Optional, Sequence
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.utils import get_from_env
 
 
 class DoctranQATransformer(BaseDocumentTransformer):

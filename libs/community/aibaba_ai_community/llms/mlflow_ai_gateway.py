@@ -3,8 +3,8 @@ from __future__ import annotations
 import warnings
 from typing import Any, Dict, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import BaseModel
 
 

@@ -4,11 +4,11 @@ import logging
 import warnings
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import ConfigDict, SecretStr, model_validator
 
 from aibaba_ai_community.utils.openai import is_openai_v1

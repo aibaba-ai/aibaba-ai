@@ -2,7 +2,7 @@
 
 from typing import Iterator
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseBlobParser
 from aibaba_ai_community.document_loaders.blob_loaders import Blob

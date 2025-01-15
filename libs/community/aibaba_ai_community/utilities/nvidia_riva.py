@@ -23,9 +23,9 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core.messages import AnyMessage, BaseMessage
-from alibaba_ai_core.prompt_values import PromptValue
-from alibaba_ai_core.runnables import RunnableConfig, RunnableSerializable
+from aibaba_ai_core.messages import AnyMessage, BaseMessage
+from aibaba_ai_core.prompt_values import PromptValue
+from aibaba_ai_core.runnables import RunnableConfig, RunnableSerializable
 from pydantic import (
     AnyHttpUrl,
     BaseModel,

@@ -3,9 +3,9 @@ import os
 import warnings
 from typing import Any, Dict, List, Optional, Union
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.outputs import LLMResult
 
 
 class DeepEvalCallbackHandler(BaseCallbackHandler):

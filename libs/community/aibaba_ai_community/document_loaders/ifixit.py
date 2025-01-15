@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.web_base import WebBaseLoader

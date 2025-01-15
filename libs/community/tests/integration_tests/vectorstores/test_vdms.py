@@ -7,7 +7,7 @@ import os
 from typing import TYPE_CHECKING
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import VDMS
 from aibaba_ai_community.vectorstores.vdms import VDMS_Client, embedding2bytes

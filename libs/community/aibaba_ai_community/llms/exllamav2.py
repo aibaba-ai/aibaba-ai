@@ -1,9 +1,9 @@
 from typing import Any, Callable, Dict, Iterator, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import pre_init
 from pydantic import Field
 
 

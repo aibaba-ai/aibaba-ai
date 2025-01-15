@@ -3,12 +3,12 @@ from __future__ import annotations
 from enum import Enum
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import model_validator
 
 if TYPE_CHECKING:

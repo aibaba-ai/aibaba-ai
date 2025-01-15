@@ -10,10 +10,10 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Type
 import numpy as np
 
 # Local imports
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.indexing.base import UpsertResponse
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.indexing.base import UpsertResponse
+from aibaba_ai_core.vectorstores import VectorStore
 from typing_extensions import override
 
 # Configure some defaults

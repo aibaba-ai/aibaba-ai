@@ -3,14 +3,14 @@ import logging
 import os
 from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import (
     get_pydantic_field_names,
     pre_init,
 )
@@ -56,7 +56,7 @@ class HuggingFaceEndpoint(LLM):
             print(llm.invoke("What is Deep Learning?"))
 
             # Streaming response example
-            from alibaba_ai_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+            from aibaba_ai_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
             callbacks = [StreamingStdOutCallbackHandler()]
             llm = HuggingFaceEndpoint(

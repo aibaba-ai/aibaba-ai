@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Iterator, Literal, Optional, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_env
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

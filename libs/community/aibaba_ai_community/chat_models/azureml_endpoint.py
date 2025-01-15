@@ -12,12 +12,12 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -31,7 +31,7 @@ from alibaba_ai_core.messages import (
     SystemMessageChunk,
     ToolMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 from aibaba_ai_community.llms.azureml_endpoint import (
     AzureMLBaseEndpoint,

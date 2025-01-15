@@ -18,13 +18,13 @@ from typing import (
     TypeVar,
 )
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import Field
 from requests.exceptions import HTTPError
 from tenacity import (

@@ -1,11 +1,11 @@
 import time
 from typing import Any, Dict, List, Optional, cast
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.outputs import ChatGeneration, LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.utils import guard_import
 
 
 def import_infino() -> Any:

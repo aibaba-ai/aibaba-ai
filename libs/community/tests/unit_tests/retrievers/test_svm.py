@@ -1,5 +1,5 @@
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.embeddings import FakeEmbeddings
 from aibaba_ai_community.retrievers.svm import SVMRetriever

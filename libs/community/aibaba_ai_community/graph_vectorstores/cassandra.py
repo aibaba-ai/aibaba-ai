@@ -21,8 +21,8 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
 from typing_extensions import override
 
 from aibaba_ai_community.graph_vectorstores.base import GraphVectorStore, Node
@@ -35,7 +35,7 @@ CGVST = TypeVar("CGVST", bound="CassandraGraphVectorStore")
 
 if TYPE_CHECKING:
     from cassandra.cluster import Session
-    from alibaba_ai_core.embeddings import Embeddings
+    from aibaba_ai_core.embeddings import Embeddings
 
 
 logger = logging.getLogger(__name__)

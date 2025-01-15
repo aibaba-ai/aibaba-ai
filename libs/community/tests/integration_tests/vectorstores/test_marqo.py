@@ -3,7 +3,7 @@
 from typing import Dict
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.marqo import Marqo
 

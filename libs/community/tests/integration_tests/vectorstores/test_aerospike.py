@@ -7,7 +7,7 @@ import time
 from typing import Any, Generator
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.aerospike import (
     Aerospike,

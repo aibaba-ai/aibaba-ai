@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Optional, Tuple, Type
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import guard_import
 from pydantic import model_validator
 
 if TYPE_CHECKING:

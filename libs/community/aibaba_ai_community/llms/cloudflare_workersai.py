@@ -3,9 +3,9 @@ import logging
 from typing import Any, Dict, Iterator, List, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
 
 logger = logging.getLogger(__name__)
 

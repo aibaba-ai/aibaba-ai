@@ -7,15 +7,15 @@ from sqlalchemy.engine import Result
 
 from pydantic import BaseModel, Field, root_validator, model_validator, ConfigDict
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.prompts import PromptTemplate
+from aibaba_ai_core.prompts import PromptTemplate
 from aibaba_ai_community.utilities.sql_database import SQLDatabase
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from aibaba_ai_community.tools.sql_database.prompt import QUERY_CHECKER
 
 

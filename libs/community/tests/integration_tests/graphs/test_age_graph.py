@@ -3,7 +3,7 @@ import re
 import unittest
 from typing import Any, Dict
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.graphs.age_graph import AGEGraph
 from aibaba_ai_community.graphs.graph_document import GraphDocument, Node, Relationship

@@ -9,13 +9,13 @@ from hashlib import md5
 from typing import Any, Iterable, Iterator, List, Optional, Tuple, Type
 
 import requests
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core.callbacks.manager import (
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.runnables import Runnable, RunnableConfig
-from alibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables import Runnable, RunnableConfig
+from aibaba_ai_core.vectorstores import VectorStore, VectorStoreRetriever
 from pydantic import ConfigDict
 
 logger = logging.getLogger(__name__)

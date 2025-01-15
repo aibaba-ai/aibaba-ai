@@ -22,9 +22,9 @@ from typing import (
 )
 
 import numpy as np
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 
@@ -152,7 +152,7 @@ class VDMS(VectorStore):
             VDMS supports TileDBDense, TileDBSparse, FaissFlat, FaissIVFFlat,
             and Flinng [Default: FaissFlat]
         embedding: Any embedding function implementing
-            `alibaba_ai_core.embeddings.Embeddings` interface.
+            `aibaba_ai_core.embeddings.Embeddings` interface.
         relevance_score_fn: Function for obtaining relevance score
 
     Example:

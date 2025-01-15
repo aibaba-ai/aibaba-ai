@@ -7,8 +7,8 @@ from time import sleep
 from typing import Any
 
 import pytest
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
 
 from aibaba_ai_community.vectorstores.mongodb_atlas import MongoDBAtlasVectorSearch
 

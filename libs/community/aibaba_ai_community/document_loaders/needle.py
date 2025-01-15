@@ -1,7 +1,7 @@
 from typing import Dict, Iterator, List, Optional
 
-from alibaba_ai_core.document_loaders.base import BaseLoader
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.document_loaders.base import BaseLoader
+from aibaba_ai_core.documents import Document
 
 
 class NeedleLoader(BaseLoader):

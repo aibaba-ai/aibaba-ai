@@ -10,9 +10,9 @@ from time import time
 from typing import TYPE_CHECKING, Any, DefaultDict, Dict, List, Optional
 
 import numpy as np
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
 
 if TYPE_CHECKING:
     import arthurai

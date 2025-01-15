@@ -1,6 +1,6 @@
 from typing import Any, Callable, List
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import ConfigDict
 
 from aibaba_ai_community.llms.self_hosted import SelfHostedPipeline

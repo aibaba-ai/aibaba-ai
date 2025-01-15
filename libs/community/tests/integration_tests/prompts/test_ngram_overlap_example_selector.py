@@ -1,7 +1,7 @@
 """Test functionality related to ngram overlap based selector."""
 
 import pytest
-from alibaba_ai_core.prompts import PromptTemplate
+from aibaba_ai_core.prompts import PromptTemplate
 
 from aibaba_ai_community.example_selectors import (
     NGramOverlapExampleSelector,

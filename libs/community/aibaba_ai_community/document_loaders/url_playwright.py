@@ -4,7 +4,7 @@ import logging
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, AsyncIterator, Dict, Iterator, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

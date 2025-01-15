@@ -3,7 +3,7 @@
 import time
 from typing import List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import TencentVectorDB
 from aibaba_ai_community.vectorstores.tencentvectordb import ConnectionParams

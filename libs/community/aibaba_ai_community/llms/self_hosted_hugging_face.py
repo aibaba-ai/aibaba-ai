@@ -2,7 +2,7 @@ import importlib.util
 import logging
 from typing import Any, Callable, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
 from pydantic import ConfigDict
 
 from aibaba_ai_community.llms.self_hosted import SelfHostedPipeline

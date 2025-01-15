@@ -13,11 +13,11 @@ from typing import (
     cast,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import pre_init
 from pydantic import ConfigDict
 
 from aibaba_ai_community.vectorstores.qdrant import Qdrant, QdrantException

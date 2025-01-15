@@ -1,9 +1,9 @@
 import logging
 from typing import Any, Dict, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import (
     convert_to_secret_str,
     get_from_dict_or_env,
     get_pydantic_field_names,

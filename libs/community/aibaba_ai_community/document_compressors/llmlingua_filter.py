@@ -3,9 +3,9 @@
 import re
 from typing import Any, Dict, List, Optional, Pattern, Sequence, Tuple
 
-from alibaba_ai_core.callbacks import Callbacks
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.documents.compressor import (
+from aibaba_ai_core.callbacks import Callbacks
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.documents.compressor import (
     BaseDocumentCompressor,
 )
 from pydantic import ConfigDict, Field, model_validator

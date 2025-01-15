@@ -2,13 +2,13 @@ import asyncio
 import time
 from typing import Any, AsyncIterator, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.runnables import RunnableConfig
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.runnables import RunnableConfig
 
 
 class FakeListLLM(LLM):

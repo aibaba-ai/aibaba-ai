@@ -1,7 +1,7 @@
 import re
 from typing import Any, List, Optional, Sequence, Union
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 
 
 class MarkdownifyTransformer(BaseDocumentTransformer):

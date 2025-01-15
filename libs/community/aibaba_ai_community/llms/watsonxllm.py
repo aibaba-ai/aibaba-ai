@@ -2,11 +2,11 @@ import logging
 import os
 from typing import Any, Dict, Iterator, List, Mapping, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, SecretStr
 
 logger = logging.getLogger(__name__)

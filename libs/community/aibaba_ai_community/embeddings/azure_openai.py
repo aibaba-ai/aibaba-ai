@@ -6,8 +6,8 @@ import os
 import warnings
 from typing import Any, Awaitable, Callable, Dict, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import Field, model_validator
 from typing_extensions import Self
 

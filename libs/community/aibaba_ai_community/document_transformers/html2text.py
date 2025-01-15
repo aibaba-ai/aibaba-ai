@@ -1,6 +1,6 @@
 from typing import Any, Sequence
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 
 
 class Html2TextTransformer(BaseDocumentTransformer):

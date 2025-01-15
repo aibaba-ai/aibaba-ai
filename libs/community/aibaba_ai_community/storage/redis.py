@@ -1,6 +1,6 @@
 from typing import Any, Iterator, List, Optional, Sequence, Tuple, cast
 
-from alibaba_ai_core.stores import ByteStore
+from aibaba_ai_core.stores import ByteStore
 
 from aibaba_ai_community.utilities.redis import get_client
 

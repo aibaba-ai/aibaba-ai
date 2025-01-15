@@ -4,7 +4,7 @@ from unittest.mock import Mock
 
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pytest_mock import MockerFixture
 
 from aibaba_ai_community.document_loaders.onenote import OneNoteLoader

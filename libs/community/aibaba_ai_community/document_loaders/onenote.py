@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import (
     BaseModel,
     Field,

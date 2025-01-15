@@ -6,8 +6,8 @@ from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Sequence, Union
 
 import requests
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
 from aibaba_ai_community.document_loaders.base import BaseLoader

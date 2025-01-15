@@ -12,7 +12,7 @@ from typing import (
     Tuple,
 )
 
-from alibaba_ai_core.stores import ByteStore
+from aibaba_ai_core.stores import ByteStore
 
 from aibaba_ai_community.utilities.cassandra import SetupMode, aexecute_cql
 

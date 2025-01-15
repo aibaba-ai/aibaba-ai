@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING, Any, Dict, Generator, List, Mapping, Optional, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 
 if TYPE_CHECKING:
     from xinference.client import RESTfulChatModelHandle, RESTfulGenerateModelHandle

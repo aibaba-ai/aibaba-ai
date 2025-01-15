@@ -4,13 +4,13 @@ import asyncio
 import time
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel, SimpleChatModel
-from alibaba_ai_core.messages import AIMessageChunk, BaseMessage
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.language_models.chat_models import BaseChatModel, SimpleChatModel
+from aibaba_ai_core.messages import AIMessageChunk, BaseMessage
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 
 class FakeMessagesListChatModel(BaseChatModel):

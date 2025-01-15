@@ -5,10 +5,10 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Tuple, Union
 from uuid import UUID
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import BaseMessage, ChatMessage
-from alibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import BaseMessage, ChatMessage
+from aibaba_ai_core.outputs import Generation, LLMResult
 
 
 class LabelStudioMode(Enum):

@@ -1,6 +1,6 @@
 from typing import Any, Callable, Dict, List
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, model_validator
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
@@ -15,7 +15,7 @@ class ApifyDatasetLoader(BaseLoader, BaseModel):
         .. code-block:: python
 
             from aibaba_ai_community.document_loaders import ApifyDatasetLoader
-            from alibaba_ai_core.documents import Document
+            from aibaba_ai_core.documents import Document
 
             loader = ApifyDatasetLoader(
                 dataset_id="YOUR-DATASET-ID",

@@ -2,7 +2,7 @@
 
 from typing import Any, Dict, Optional, cast
 
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, SecretStr, model_validator
 
 

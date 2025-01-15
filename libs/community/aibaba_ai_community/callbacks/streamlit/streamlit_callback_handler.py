@@ -5,9 +5,9 @@ from __future__ import annotations
 from enum import Enum
 from typing import TYPE_CHECKING, Any, Dict, List, NamedTuple, Optional
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
 
 from aibaba_ai_community.callbacks.streamlit.mutable_expander import MutableExpander
 

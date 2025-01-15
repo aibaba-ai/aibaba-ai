@@ -3,9 +3,9 @@ import time
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

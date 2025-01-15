@@ -2,14 +2,14 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional
 
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.utils import get_from_env
 
 if TYPE_CHECKING:
     from elasticsearch import Elasticsearch
     from elasticsearch.client import MlClient
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 
 
 @deprecated(

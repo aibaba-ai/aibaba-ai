@@ -3,8 +3,8 @@
 from copy import deepcopy
 from typing import Iterable, Iterator, List
 
-from alibaba_ai_core.chat_sessions import ChatSession
-from alibaba_ai_core.messages import AIMessage, BaseMessage
+from aibaba_ai_core.chat_sessions import ChatSession
+from aibaba_ai_core.messages import AIMessage, BaseMessage
 
 
 def merge_chat_runs_in_session(

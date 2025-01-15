@@ -4,8 +4,8 @@ import logging
 from typing import Any, Callable, Dict, List, Optional
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import BaseModel, ConfigDict, Field, SecretStr
 from tenacity import (
     before_sleep_log,

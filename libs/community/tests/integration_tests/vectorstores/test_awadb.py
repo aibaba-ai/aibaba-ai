@@ -1,6 +1,6 @@
 """Test AwaDB functionality."""
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import AwaDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

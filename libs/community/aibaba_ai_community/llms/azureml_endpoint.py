@@ -5,10 +5,10 @@ from abc import abstractmethod
 from enum import Enum
 from typing import Any, Dict, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, LLMResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, SecretStr, model_validator, validator
 
 DEFAULT_TIMEOUT = 50

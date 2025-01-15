@@ -4,9 +4,9 @@ import json
 import logging
 from typing import Any, List, Optional, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 logger = logging.getLogger(__name__)
 

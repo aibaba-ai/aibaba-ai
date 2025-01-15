@@ -3,7 +3,7 @@ import json
 import uuid
 from typing import Any, Sequence
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 
 from aibaba_ai_community.tools.nuclia.tool import NucliaUnderstandingAPI
 

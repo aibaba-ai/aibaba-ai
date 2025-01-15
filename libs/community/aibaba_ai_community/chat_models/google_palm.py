@@ -5,23 +5,23 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Any, Callable, Dict, List, Optional, cast
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     ChatResult,
 )
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import BaseModel, SecretStr
 from tenacity import (
     before_sleep_log,

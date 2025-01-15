@@ -1,6 +1,6 @@
 from typing import Tuple, Union
 
-from alibaba_ai_core.structured_query import (
+from aibaba_ai_core.structured_query import (
     Comparator,
     Comparison,
     Operation,

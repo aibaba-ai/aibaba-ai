@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 from unittest.mock import MagicMock, patch
 
 import pytest
-from alibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from aibaba_ai_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from pydantic import ValidationError
 
 from aibaba_ai_community.chat_models import ChatReka

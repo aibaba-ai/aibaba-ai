@@ -4,9 +4,9 @@ import logging
 import warnings
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
     from zep_cloud import CreateDocumentRequest, DocumentCollectionResponse, SearchType

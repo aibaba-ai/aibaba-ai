@@ -4,10 +4,10 @@ import os
 from typing import Any, Dict, List
 from uuid import UUID
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.utils import guard_import
 
 
 def import_context() -> Any:

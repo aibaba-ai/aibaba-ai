@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.utilities.vertexai import get_client_info

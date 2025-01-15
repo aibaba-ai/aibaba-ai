@@ -2,19 +2,19 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import HumanMessage
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import HumanMessage
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import ConfigDict, Field
 
 if TYPE_CHECKING:
-    from alibaba_ai_core.messages import BaseMessage
+    from aibaba_ai_core.messages import BaseMessage
 
 
 def _get_docs(response: Any) -> List[Document]:

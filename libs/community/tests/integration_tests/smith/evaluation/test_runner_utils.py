@@ -7,8 +7,8 @@ from langchain.evaluation import EvaluatorType
 from langchain.smith import RunEvalConfig, run_on_dataset
 from langchain.smith.evaluation import InputFormatError
 from langchain.smith.evaluation.runner_utils import arun_on_dataset
-from alibaba_ai_core.messages import BaseMessage, HumanMessage
-from alibaba_ai_core.prompts.chat import ChatPromptTemplate
+from aibaba_ai_core.messages import BaseMessage, HumanMessage
+from aibaba_ai_core.prompts.chat import ChatPromptTemplate
 from langsmith import Client as Client
 from langsmith.evaluation import run_evaluator
 from langsmith.schemas import DataType, Example, Run

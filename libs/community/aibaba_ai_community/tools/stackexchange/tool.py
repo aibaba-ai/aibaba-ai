@@ -2,8 +2,8 @@
 
 from typing import Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 
 from aibaba_ai_community.utilities.stackexchange import StackExchangeAPIWrapper
 

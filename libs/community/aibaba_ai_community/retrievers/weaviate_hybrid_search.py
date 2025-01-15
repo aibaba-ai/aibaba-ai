@@ -3,9 +3,9 @@ from __future__ import annotations
 from typing import Any, Dict, List, Optional, cast
 from uuid import uuid4
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 from pydantic import ConfigDict, model_validator
 
 

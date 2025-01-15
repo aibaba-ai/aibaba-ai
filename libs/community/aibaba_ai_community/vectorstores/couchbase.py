@@ -3,10 +3,10 @@ from __future__ import annotations
 import uuid
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional, Tuple, Type
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
     from couchbase.cluster import Cluster

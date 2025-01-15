@@ -4,7 +4,7 @@ import time
 from typing import Any, List
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict
 
 logger = logging.getLogger(__name__)

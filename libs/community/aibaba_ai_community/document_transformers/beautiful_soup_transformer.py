@@ -1,6 +1,6 @@
 from typing import Any, Iterator, List, Sequence, Tuple, Union, cast
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 
 
 class BeautifulSoupTransformer(BaseDocumentTransformer):

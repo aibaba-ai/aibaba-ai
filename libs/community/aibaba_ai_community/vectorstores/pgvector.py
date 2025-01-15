@@ -19,7 +19,7 @@ from typing import (
 
 import numpy as np
 import sqlalchemy
-from alibaba_ai_core._api import deprecated, warn_deprecated
+from aibaba_ai_core._api import deprecated, warn_deprecated
 from sqlalchemy import delete, func
 from sqlalchemy.dialects.postgresql import JSON, JSONB, UUID
 from sqlalchemy.orm import Session, relationship
@@ -35,11 +35,11 @@ except ImportError:
     # for sqlalchemy < 2
     SQLColumnExpression = Any  # type: ignore
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.runnables.config import run_in_executor
-from alibaba_ai_core.utils import get_from_dict_or_env
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.runnables.config import run_in_executor
+from aibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
 

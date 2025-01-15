@@ -2,7 +2,7 @@
 
 from typing import Generator
 
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.outputs import LLMResult
 from pydantic import SecretStr
 from pytest import CaptureFixture
 

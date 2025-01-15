@@ -4,7 +4,7 @@ import uuid
 from typing import Generator, Iterator, List
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders import TextLoader
 from aibaba_ai_community.embeddings import OpenAIEmbeddings

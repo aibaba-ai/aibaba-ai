@@ -10,14 +10,14 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.language_models.llms import create_base_retry_decorator
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -31,9 +31,9 @@ from alibaba_ai_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import convert_to_secret_str
-from alibaba_ai_core.utils.env import get_from_dict_or_env
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import convert_to_secret_str
+from aibaba_ai_core.utils.env import get_from_dict_or_env
 from pydantic import Field, SecretStr, model_validator
 
 from aibaba_ai_community.adapters.openai import convert_message_to_dict

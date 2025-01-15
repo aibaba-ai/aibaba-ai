@@ -2,11 +2,11 @@ import logging
 import warnings
 from typing import Any, Dict, List, Mapping, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -14,7 +14,7 @@ from alibaba_ai_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     ChatResult,
 )

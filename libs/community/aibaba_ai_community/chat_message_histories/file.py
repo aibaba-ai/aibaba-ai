@@ -2,10 +2,10 @@ import json
 from pathlib import Path
 from typing import List, Optional
 
-from alibaba_ai_core.chat_history import (
+from aibaba_ai_core.chat_history import (
     BaseChatMessageHistory,
 )
-from alibaba_ai_core.messages import BaseMessage, messages_from_dict, messages_to_dict
+from aibaba_ai_core.messages import BaseMessage, messages_from_dict, messages_to_dict
 
 
 class FileChatMessageHistory(BaseChatMessageHistory):

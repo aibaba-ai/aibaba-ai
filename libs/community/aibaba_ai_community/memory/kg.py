@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Type, Union
 
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.messages import BaseMessage, SystemMessage, get_buffer_string
-from alibaba_ai_core.prompts import BasePromptTemplate
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.messages import BaseMessage, SystemMessage, get_buffer_string
+from aibaba_ai_core.prompts import BasePromptTemplate
 from pydantic import Field
 
 from aibaba_ai_community.graphs import NetworkxEntityGraph

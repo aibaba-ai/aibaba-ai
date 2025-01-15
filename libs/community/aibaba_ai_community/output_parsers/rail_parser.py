@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Callable, Dict, Optional
 
-from alibaba_ai_core.output_parsers import BaseOutputParser
+from aibaba_ai_core.output_parsers import BaseOutputParser
 
 
 class GuardrailsOutputParser(BaseOutputParser):

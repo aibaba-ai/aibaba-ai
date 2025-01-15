@@ -2,8 +2,8 @@ import logging
 from typing import Any, Dict, List, Optional, cast
 
 import httpx
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_env
 from pydantic import (
     AliasChoices,
     BaseModel,

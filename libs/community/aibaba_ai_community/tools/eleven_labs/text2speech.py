@@ -2,9 +2,9 @@ import tempfile
 from enum import Enum
 from typing import Any, Dict, Optional, Union
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import model_validator
 
 

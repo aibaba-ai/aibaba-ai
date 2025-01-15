@@ -25,16 +25,16 @@ from typing import (
 )
 
 import numpy as np
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.exceptions import AI Agents ForceException
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import get_from_env
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.exceptions import AI Agents ForceException
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import get_from_env
+from aibaba_ai_core.vectorstores import VectorStore
 from pydantic import ConfigDict, model_validator
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance
@@ -474,7 +474,7 @@ class AzureSearch(VectorStore):
 
         # when `keys` are not passed in and there is `ids` in kwargs, use those instead
         # base class expects `ids` passed in rather than `keys`
-        # https://github.com/aibaba-ai/aibaba-ai/blob/4cdaca67dc51dba887289f56c6fead3c1a52f97d/libs/core/alibaba_ai_core/vectorstores/base.py#L65
+        # https://github.com/aibaba-ai/aibaba-ai/blob/4cdaca67dc51dba887289f56c6fead3c1a52f97d/libs/core/aibaba_ai_core/vectorstores/base.py#L65
         if (not keys) and ("ids" in kwargs) and (len(kwargs["ids"]) == len(embeddings)):
             keys = kwargs["ids"]
 
@@ -504,7 +504,7 @@ class AzureSearch(VectorStore):
 
         # when `keys` are not passed in and there is `ids` in kwargs, use those instead
         # base class expects `ids` passed in rather than `keys`
-        # https://github.com/aibaba-ai/aibaba-ai/blob/4cdaca67dc51dba887289f56c6fead3c1a52f97d/libs/core/alibaba_ai_core/vectorstores/base.py#L65
+        # https://github.com/aibaba-ai/aibaba-ai/blob/4cdaca67dc51dba887289f56c6fead3c1a52f97d/libs/core/aibaba_ai_core/vectorstores/base.py#L65
         if (not keys) and ("ids" in kwargs) and (len(kwargs["ids"]) == len(embeddings)):
             keys = kwargs["ids"]
 

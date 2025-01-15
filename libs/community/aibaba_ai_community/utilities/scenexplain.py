@@ -9,7 +9,7 @@ You can obtain a key by following the steps below.
 from typing import Any, Dict
 
 import requests
-from alibaba_ai_core.utils import from_env, get_from_dict_or_env
+from aibaba_ai_core.utils import from_env, get_from_dict_or_env
 from pydantic import BaseModel, Field, model_validator
 
 

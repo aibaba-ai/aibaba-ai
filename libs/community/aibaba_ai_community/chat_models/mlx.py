@@ -13,28 +13,28 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import (
+from aibaba_ai_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
     LLMResult,
 )
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 
 from aibaba_ai_community.llms.mlx_pipeline import MLXPipeline
 
@@ -225,7 +225,7 @@ class ChatMLX(BaseChatModel):
         Args:
             tools: A list of tool definitions to bind to this chat model.
                 Supports any tool definition handled by
-                :meth:`alibaba_ai_core.utils.function_calling.convert_to_openai_tool`.
+                :meth:`aibaba_ai_core.utils.function_calling.convert_to_openai_tool`.
             tool_choice: Which tool to require the model to call.
                 Must be the name of the single provided function or
                 "auto" to automatically determine which function to call

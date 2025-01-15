@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import List
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
 from aibaba_ai_community.tools.financial_datasets.balance_sheets import BalanceSheets

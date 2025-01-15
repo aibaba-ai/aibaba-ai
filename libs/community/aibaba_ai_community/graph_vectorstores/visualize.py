@@ -1,8 +1,8 @@
 import re
 from typing import TYPE_CHECKING, Dict, Iterable, Optional, Tuple
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.graph_vectorstores.links import get_links
 

@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, List, Literal, Optional, Union
 if TYPE_CHECKING:
     from selenium.webdriver import Chrome, Firefox
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

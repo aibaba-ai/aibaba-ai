@@ -2,8 +2,8 @@ import warnings
 from typing import Any, Dict, List, Optional
 
 import requests
-from alibaba_ai_core._api import deprecated, warn_deprecated
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core._api import deprecated, warn_deprecated
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict, Field, SecretStr
 
 DEFAULT_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"

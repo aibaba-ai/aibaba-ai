@@ -7,9 +7,9 @@ import os
 import warnings
 from typing import Any, Awaitable, Callable, Dict, List, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.outputs import ChatResult
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.outputs import ChatResult
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.chat_models.openai import ChatOpenAI

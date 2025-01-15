@@ -2,7 +2,7 @@ from typing import Dict, List
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.mongodb import MongodbLoader
 

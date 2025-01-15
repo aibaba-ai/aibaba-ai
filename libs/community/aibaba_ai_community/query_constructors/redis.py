@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Tuple
 
-from alibaba_ai_core.structured_query import (
+from aibaba_ai_core.structured_query import (
     Comparator,
     Comparison,
     Operation,

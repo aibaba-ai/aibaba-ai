@@ -2,7 +2,7 @@
 
 from typing import Any, List, Sequence
 
-from alibaba_ai_core.documents import BaseDocumentTransformer, Document
+from aibaba_ai_core.documents import BaseDocumentTransformer, Document
 from pydantic import BaseModel, ConfigDict
 
 

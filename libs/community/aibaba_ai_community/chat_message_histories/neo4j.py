@@ -1,9 +1,9 @@
 from typing import List, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import BaseMessage, messages_from_dict
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import BaseMessage, messages_from_dict
+from aibaba_ai_core.utils import get_from_dict_or_env
 
 from aibaba_ai_community.graphs import Neo4jGraph
 

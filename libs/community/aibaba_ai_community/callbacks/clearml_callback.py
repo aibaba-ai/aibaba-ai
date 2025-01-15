@@ -5,10 +5,10 @@ from copy import deepcopy
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Sequence
 
-from alibaba_ai_core.agents import AgentAction, AgentFinish
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.agents import AgentAction, AgentFinish
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.utils import guard_import
 
 from aibaba_ai_community.callbacks.utils import (
     BaseMetadataCallbackHandler,

@@ -2,8 +2,8 @@
 
 from typing import Dict, List, Literal, Optional, Tuple
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 
 from aibaba_ai_community.utilities.bing_search import BingSearchAPIWrapper
 

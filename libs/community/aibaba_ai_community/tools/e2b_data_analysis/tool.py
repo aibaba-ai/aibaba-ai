@@ -7,12 +7,12 @@ from io import StringIO
 from sys import version_info
 from typing import IO, TYPE_CHECKING, Any, Callable, List, Optional, Type, Union
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManager,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool, Tool
+from aibaba_ai_core.tools import BaseTool, Tool
 from pydantic import BaseModel, Field, PrivateAttr
 
 from aibaba_ai_community.tools.e2b_data_analysis.unparse import Unparser

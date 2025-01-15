@@ -1,7 +1,7 @@
 from typing import Any
 
-from alibaba_ai_core.messages import AIMessage, AIMessageChunk, HumanMessage
-from alibaba_ai_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from aibaba_ai_core.messages import AIMessage, AIMessageChunk, HumanMessage
+from aibaba_ai_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
 from aibaba_ai_community.chat_models.sparkllm import ChatSparkLLM
 

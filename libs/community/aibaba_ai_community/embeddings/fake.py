@@ -2,7 +2,7 @@ import hashlib
 from typing import List
 
 import numpy as np
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel
 
 

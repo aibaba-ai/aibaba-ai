@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Optional, Union
 
 import numpy as np
 import yaml
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import BaseModel, Field, field_validator, validator
 from typing_extensions import TYPE_CHECKING, Literal
 

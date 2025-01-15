@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict
 
 DEFAULT_MODEL_NAME = "@cf/baai/bge-base-en-v1.5"

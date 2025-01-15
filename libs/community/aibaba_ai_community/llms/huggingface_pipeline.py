@@ -4,10 +4,10 @@ import importlib.util
 import logging
 from typing import Any, Iterator, List, Mapping, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
 from pydantic import ConfigDict
 
 DEFAULT_MODEL_ID = "gpt2"

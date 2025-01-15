@@ -5,13 +5,13 @@ from typing import Any, Dict, List, Optional
 
 import aiohttp
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils import get_from_dict_or_env, get_from_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils import get_from_dict_or_env, get_from_env
 from pydantic import ConfigDict, model_validator
 
 DEFAULT_URL_SUFFIX = "search.windows.net"
@@ -56,9 +56,9 @@ class AzureAISearchRetriever(BaseRetriever):
     Use within a chain:
         .. code-block:: python
 
-            from alibaba_ai_core.output_parsers import StrOutputParser
-            from alibaba_ai_core.prompts import ChatPromptTemplate
-            from alibaba_ai_core.runnables import RunnablePassthrough
+            from aibaba_ai_core.output_parsers import StrOutputParser
+            from aibaba_ai_core.prompts import ChatPromptTemplate
+            from aibaba_ai_core.runnables import RunnablePassthrough
             from langchain_openai import AzureChatOpenAI
 
             prompt = ChatPromptTemplate.from_template(

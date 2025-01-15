@@ -10,8 +10,8 @@ To use this tool, you must first set as environment variables:
 
 from typing import Any, Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.utilities.github import GitHubAPIWrapper

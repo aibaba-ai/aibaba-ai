@@ -1,7 +1,7 @@
 from typing import Any, Iterator
 
-from alibaba_ai_core.document_loaders import BaseLoader
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.document_loaders import BaseLoader
+from aibaba_ai_core.documents import Document
 
 
 class AirtableLoader(BaseLoader):

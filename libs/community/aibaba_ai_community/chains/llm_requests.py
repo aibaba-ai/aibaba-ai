@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Optional
 
 from langchain.chains import LLMChain
 from langchain.chains.base import Chain
-from alibaba_ai_core.callbacks import CallbackManagerForChainRun
+from aibaba_ai_core.callbacks import CallbackManagerForChainRun
 from pydantic import ConfigDict, Field, model_validator
 
 from aibaba_ai_community.utilities.requests import TextRequestsWrapper

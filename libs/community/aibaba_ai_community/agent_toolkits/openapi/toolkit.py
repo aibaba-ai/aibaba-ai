@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from typing import Any, List
 
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.tools import BaseTool, Tool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.tools import BaseTool, Tool
+from aibaba_ai_core.tools.base import BaseToolkit
 
 from aibaba_ai_community.agent_toolkits.json.base import create_json_agent
 from aibaba_ai_community.agent_toolkits.json.toolkit import JsonToolkit

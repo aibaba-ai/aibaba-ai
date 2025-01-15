@@ -1,11 +1,11 @@
 from abc import abstractmethod
 from typing import Any, Optional, Protocol, Sequence, runtime_checkable
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
 from aibaba_ai_community.llms.gradient_ai import TrainResult

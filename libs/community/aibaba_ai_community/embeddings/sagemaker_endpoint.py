@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict
 
 from aibaba_ai_community.llms.sagemaker_endpoint import ContentHandlerBase

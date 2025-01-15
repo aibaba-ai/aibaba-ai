@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional
 
 import requests  # type: ignore
-from alibaba_ai_core.document_loaders import BaseLoader
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.document_loaders import BaseLoader
+from aibaba_ai_core.documents import Document
 from pydantic import Field
 
 from aibaba_ai_community.document_loaders.base_o365 import (

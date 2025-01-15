@@ -7,8 +7,8 @@ from contextlib import contextmanager
 from typing import Any, Generator, Iterable, List, Optional
 
 import pytest
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
 
 from aibaba_ai_community.graph_vectorstores import CassandraGraphVectorStore
 from aibaba_ai_community.graph_vectorstores.base import Node

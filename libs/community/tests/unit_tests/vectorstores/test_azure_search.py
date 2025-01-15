@@ -197,7 +197,7 @@ def test_ids_used_correctly() -> None:
     """Check whether vector store uses the document ids when provided with them."""
     from azure.search.documents import SearchClient
     from azure.search.documents.indexes import SearchIndexClient
-    from alibaba_ai_core.documents import Document
+    from aibaba_ai_core.documents import Document
 
     class Response:
         def __init__(self) -> None:

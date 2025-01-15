@@ -3,14 +3,14 @@ from __future__ import annotations
 from concurrent.futures import Executor, ThreadPoolExecutor
 from typing import TYPE_CHECKING, Any, ClassVar, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import pre_init
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import pre_init
 from pydantic import BaseModel, ConfigDict, Field
 
 from aibaba_ai_community.utilities.vertexai import (

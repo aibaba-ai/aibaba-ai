@@ -17,9 +17,9 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import Field, model_validator
 
 from aibaba_ai_community.adapters.openai import convert_message_to_dict

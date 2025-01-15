@@ -5,9 +5,9 @@ from __future__ import annotations
 import uuid
 from typing import Any, Iterable, List
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 
 
 class ElasticSearchBM25Retriever(BaseRetriever):

@@ -6,9 +6,9 @@ from typing import Any
 
 from langchain.chains.api.openapi.prompts import RESPONSE_TEMPLATE
 from langchain.chains.llm import LLMChain
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.output_parsers import BaseOutputParser
-from alibaba_ai_core.prompts.prompt import PromptTemplate
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.output_parsers import BaseOutputParser
+from aibaba_ai_core.prompts.prompt import PromptTemplate
 
 
 class APIResponderOutputParser(BaseOutputParser):

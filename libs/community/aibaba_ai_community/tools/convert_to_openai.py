@@ -1,4 +1,4 @@
-from alibaba_ai_core.utils.function_calling import (
+from aibaba_ai_core.utils.function_calling import (
     format_tool_to_openai_function,
     format_tool_to_openai_tool,
 )

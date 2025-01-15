@@ -1,6 +1,6 @@
 """Test SparkLLM."""
 
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.outputs import LLMResult
 
 from aibaba_ai_community.llms.sparkllm import SparkLLM
 

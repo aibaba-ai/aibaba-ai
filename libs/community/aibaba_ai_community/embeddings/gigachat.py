@@ -4,10 +4,10 @@ import logging
 from functools import cached_property
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import pre_init
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import BaseModel
 
 logger = logging.getLogger(__name__)

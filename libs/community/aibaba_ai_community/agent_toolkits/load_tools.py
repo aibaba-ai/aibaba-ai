@@ -99,10 +99,10 @@ from aibaba_ai_community.utilities.stackexchange import StackExchangeAPIWrapper
 from aibaba_ai_community.utilities.twilio import TwilioAPIWrapper
 from aibaba_ai_community.utilities.wikipedia import WikipediaAPIWrapper
 from aibaba_ai_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
-from alibaba_ai_core.callbacks import BaseCallbackManager
-from alibaba_ai_core.callbacks import Callbacks
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.tools import BaseTool, Tool
+from aibaba_ai_core.callbacks import BaseCallbackManager
+from aibaba_ai_core.callbacks import Callbacks
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.tools import BaseTool, Tool
 
 
 def _get_tools_requests_get() -> BaseTool:

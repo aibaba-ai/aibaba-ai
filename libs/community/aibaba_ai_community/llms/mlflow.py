@@ -3,8 +3,8 @@ from __future__ import annotations
 from typing import Any, Dict, List, Mapping, Optional
 from urllib.parse import urlparse
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models import LLM
 from pydantic import Field, PrivateAttr
 
 

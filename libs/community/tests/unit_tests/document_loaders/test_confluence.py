@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.confluence import (
     ConfluenceLoader,

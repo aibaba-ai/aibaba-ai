@@ -3,16 +3,16 @@ from __future__ import annotations
 import os
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional
 
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.load.serializable import Serializable
-from alibaba_ai_core.outputs import GenerationChunk, LLMResult
-from alibaba_ai_core.utils import pre_init
-from alibaba_ai_core.utils.env import get_from_dict_or_env
-from alibaba_ai_core.utils.utils import convert_to_secret_str
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.load.serializable import Serializable
+from aibaba_ai_core.outputs import GenerationChunk, LLMResult
+from aibaba_ai_core.utils import pre_init
+from aibaba_ai_core.utils.env import get_from_dict_or_env
+from aibaba_ai_core.utils.utils import convert_to_secret_str
 from pydantic import Field, SecretStr
 
 

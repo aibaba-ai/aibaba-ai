@@ -132,7 +132,7 @@ from typing import Any, Dict, List, Optional
 
 import aiohttp
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import (
     BaseModel,
     ConfigDict,

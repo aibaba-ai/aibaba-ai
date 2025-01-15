@@ -4,10 +4,10 @@ import threading
 from enum import Enum, auto
 from typing import Any, Dict, List
 
-from alibaba_ai_core._api import warn_deprecated
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import AIMessage
-from alibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core._api import warn_deprecated
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import AIMessage
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
 
 MODEL_COST_PER_1K_TOKENS = {
     # OpenAI o1-preview input

@@ -2,7 +2,7 @@
 
 import typing
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.graph_vectorstores.links import get_links
 

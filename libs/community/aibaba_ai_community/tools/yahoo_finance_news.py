@@ -1,8 +1,8 @@
 from typing import Iterable, Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field
 from requests.exceptions import HTTPError, ReadTimeout
 from urllib3.exceptions import ConnectionError

@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from typing import List, Tuple
 
-from alibaba_ai_core.utils.json_schema import dereference_refs
+from aibaba_ai_core.utils.json_schema import dereference_refs
 
 
 @dataclass(frozen=True)

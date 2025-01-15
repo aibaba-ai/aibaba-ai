@@ -3,7 +3,7 @@ import json
 import logging
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

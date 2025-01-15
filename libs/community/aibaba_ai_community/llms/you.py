@@ -2,9 +2,9 @@ import os
 from typing import Any, Dict, Generator, Iterator, List, Literal, Optional
 
 import requests
-from alibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.callbacks.manager import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
 from pydantic import Field
 
 SMART_ENDPOINT = "https://chat-api.you.com/smart"

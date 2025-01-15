@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, List, Optional, Tuple
 from urllib.parse import unquote
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.directory import DirectoryLoader
 from aibaba_ai_community.document_loaders.pdf import PyPDFLoader

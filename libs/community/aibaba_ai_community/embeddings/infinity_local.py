@@ -4,7 +4,7 @@ import asyncio
 from logging import getLogger
 from typing import Any, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict, model_validator
 from typing_extensions import Self
 

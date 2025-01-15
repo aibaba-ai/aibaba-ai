@@ -13,10 +13,10 @@ from threading import Lock, Thread
 from typing import Any, Callable, Dict, List, Optional, Tuple, Type
 
 import numpy as np
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.utils.google import get_client_info
 from aibaba_ai_community.vectorstores.utils import (

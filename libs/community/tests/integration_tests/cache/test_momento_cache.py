@@ -13,7 +13,7 @@ from typing import Iterator
 
 import pytest
 from langchain.globals import set_llm_cache
-from alibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.outputs import Generation, LLMResult
 
 from aibaba_ai_community.cache import MomentoCache
 from tests.unit_tests.llms.fake_llm import FakeLLM

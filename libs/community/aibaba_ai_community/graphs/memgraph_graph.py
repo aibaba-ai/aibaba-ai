@@ -2,7 +2,7 @@ import logging
 from hashlib import md5
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 
 from aibaba_ai_community.graphs.graph_document import GraphDocument, Node, Relationship
 from aibaba_ai_community.graphs.graph_store import GraphStore

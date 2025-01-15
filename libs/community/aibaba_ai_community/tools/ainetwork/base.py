@@ -5,8 +5,8 @@ import threading
 from enum import Enum
 from typing import TYPE_CHECKING, Any, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 from pydantic import Field
 
 from aibaba_ai_community.tools.ainetwork.utils import authenticate

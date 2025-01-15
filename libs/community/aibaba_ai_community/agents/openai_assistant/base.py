@@ -12,12 +12,12 @@ from typing import (
 )
 
 from langchain.agents.openai_assistant.base import OpenAIAssistantRunnable, OutputType
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.callbacks import CallbackManager
-from alibaba_ai_core.load import dumpd
-from alibaba_ai_core.runnables import RunnableConfig, ensure_config
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils.function_calling import convert_to_openai_tool
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.load import dumpd
+from aibaba_ai_core.runnables import RunnableConfig, ensure_config
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils.function_calling import convert_to_openai_tool
 from pydantic import BaseModel, Field, model_validator
 from typing_extensions import Self
 
@@ -189,7 +189,7 @@ class OpenAIAssistantV2Runnable(OpenAIAssistantRunnable):
 
             from langchain.agents.openai_assistant import OpenAIAssistantV2Runnable
             from langchain.agents import AgentExecutor
-            from alibaba_ai_core.agents import AgentFinish
+            from aibaba_ai_core.agents import AgentFinish
             from langchain.tools import E2BDataAnalysisTool
 
 

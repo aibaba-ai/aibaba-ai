@@ -5,18 +5,18 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Optional, cast
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult
 from tenacity import (
     before_sleep_log,
     retry,

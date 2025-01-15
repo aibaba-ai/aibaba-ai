@@ -7,8 +7,8 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 import aiohttp
 import numpy as np
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, ConfigDict, model_validator
 
 __all__ = ["InfinityEmbeddings"]

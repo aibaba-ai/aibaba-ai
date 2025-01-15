@@ -12,9 +12,9 @@ from functools import partial
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple, Type
 
 import numpy as np
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance

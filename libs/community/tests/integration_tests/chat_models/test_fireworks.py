@@ -4,8 +4,8 @@ import sys
 from typing import cast
 
 import pytest
-from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from aibaba_ai_community.chat_models.fireworks import ChatFireworks
 

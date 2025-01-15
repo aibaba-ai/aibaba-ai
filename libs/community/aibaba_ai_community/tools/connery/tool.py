@@ -2,11 +2,11 @@ import asyncio
 from functools import partial
 from typing import Any, Dict, List, Optional, Type
 
-from alibaba_ai_core.callbacks.manager import (
+from aibaba_ai_core.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, Field, create_model, model_validator
 
 from aibaba_ai_community.tools.connery.models import Action, Parameter

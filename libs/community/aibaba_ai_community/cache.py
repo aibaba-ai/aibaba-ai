@@ -65,14 +65,14 @@ try:
 except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
 
-from alibaba_ai_core._api.deprecation import deprecated, warn_deprecated
-from alibaba_ai_core.caches import RETURN_VAL_TYPE, BaseCache
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.language_models.llms import LLM, aget_prompts, get_prompts
-from alibaba_ai_core.load.dump import dumps
-from alibaba_ai_core.load.load import loads
-from alibaba_ai_core.outputs import ChatGeneration, Generation
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core._api.deprecation import deprecated, warn_deprecated
+from aibaba_ai_core.caches import RETURN_VAL_TYPE, BaseCache
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.language_models.llms import LLM, aget_prompts, get_prompts
+from aibaba_ai_core.load.dump import dumps
+from aibaba_ai_core.load.load import loads
+from aibaba_ai_core.outputs import ChatGeneration, Generation
+from aibaba_ai_core.utils import get_from_env
 
 from aibaba_ai_community.utilities.astradb import (
     SetupMode as AstraSetupMode,
@@ -1059,7 +1059,7 @@ class CassandraCache(BaseCache):
             import cassio
 
             from aibaba_ai_community.cache import CassandraCache
-            from alibaba_ai_core.globals import set_llm_cache
+            from aibaba_ai_core.globals import set_llm_cache
 
             cassio.init(auto=True)  # Requires env. variables, see CassIO docs
 
@@ -1225,7 +1225,7 @@ class CassandraSemanticCache(BaseCache):
             import cassio
 
             from aibaba_ai_community.cache import CassandraSemanticCache
-            from alibaba_ai_core.globals import set_llm_cache
+            from aibaba_ai_core.globals import set_llm_cache
 
             cassio.init(auto=True)  # Requires env. variables, see CassIO docs
 

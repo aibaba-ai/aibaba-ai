@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import BaseCallbackManager
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.callbacks import BaseCallbackManager
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
 
 from aibaba_ai_community.agent_toolkits.powerbi.prompt import (
     POWERBI_CHAT_PREFIX,

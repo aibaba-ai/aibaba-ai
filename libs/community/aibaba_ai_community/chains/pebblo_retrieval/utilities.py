@@ -8,10 +8,10 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import aiohttp
 from aiohttp import ClientTimeout
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.env import get_runtime_environment
-from alibaba_ai_core.utils import get_from_dict_or_env
-from alibaba_ai_core.vectorstores import VectorStoreRetriever
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.env import get_runtime_environment
+from aibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.vectorstores import VectorStoreRetriever
 from pydantic import BaseModel
 from requests import Response, request
 from requests.exceptions import RequestException

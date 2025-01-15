@@ -7,8 +7,8 @@ from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Sequence,
 
 import aiohttp
 import requests
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.utils.user_agent import get_user_agent

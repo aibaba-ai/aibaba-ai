@@ -1,9 +1,9 @@
 from enum import Enum
 from typing import Any, Iterator, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
 from pydantic import BaseModel, ConfigDict
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

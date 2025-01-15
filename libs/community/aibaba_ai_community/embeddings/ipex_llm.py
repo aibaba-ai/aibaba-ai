@@ -3,7 +3,7 @@
 
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel, ConfigDict, Field
 
 DEFAULT_BGE_MODEL = "BAAI/bge-small-en-v1.5"

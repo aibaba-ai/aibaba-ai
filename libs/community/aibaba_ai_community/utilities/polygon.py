@@ -7,7 +7,7 @@ import json
 from typing import Any, Dict, Optional
 
 import requests
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import BaseModel, model_validator
 
 POLYGON_BASE_URL = "https://api.polygon.io/"

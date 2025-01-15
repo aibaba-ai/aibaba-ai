@@ -6,12 +6,12 @@ from typing import Any, List
 from unittest.mock import Mock
 
 import pytest
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.vectorstores import (
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.vectorstores import (
     InMemoryVectorStore,
     VectorStore,
     VectorStoreRetriever,

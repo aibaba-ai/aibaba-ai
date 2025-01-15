@@ -4,17 +4,17 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional, Union
 
-from alibaba_ai_core.callbacks import BaseCallbackManager
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.prompts import PromptTemplate
-from alibaba_ai_core.prompts.chat import (
+from aibaba_ai_core.callbacks import BaseCallbackManager
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.prompts import PromptTemplate
+from aibaba_ai_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, Field
 
 from aibaba_ai_community.tools.powerbi.prompt import (

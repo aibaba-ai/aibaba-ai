@@ -4,7 +4,7 @@ import os
 import tempfile
 from typing import Any, List, Optional
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.unstructured import UnstructuredFileLoader

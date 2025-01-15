@@ -16,10 +16,10 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core._api import warn_deprecated
-from alibaba_ai_core.output_parsers.pydantic import PydanticBaseModel
-from alibaba_ai_core.tracers.base import BaseTracer
-from alibaba_ai_core.tracers.schemas import Run
+from aibaba_ai_core._api import warn_deprecated
+from aibaba_ai_core.output_parsers.pydantic import PydanticBaseModel
+from aibaba_ai_core.tracers.base import BaseTracer
+from aibaba_ai_core.tracers.schemas import Run
 
 if TYPE_CHECKING:
     from wandb import Settings as WBSettings

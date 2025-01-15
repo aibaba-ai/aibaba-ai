@@ -1,7 +1,7 @@
 from typing import Iterator, List, Optional, Sequence, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.stores import BaseStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.stores import BaseStore
 
 
 class MongoDBByteStore(BaseStore[str, bytes]):

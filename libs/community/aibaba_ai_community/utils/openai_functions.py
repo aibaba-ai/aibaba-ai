@@ -1,6 +1,6 @@
 # these stubs are just for backwards compatibility
 
-from alibaba_ai_core.utils.function_calling import (
+from aibaba_ai_core.utils.function_calling import (
     FunctionDescription,
     ToolDescription,
     convert_pydantic_to_openai_function,

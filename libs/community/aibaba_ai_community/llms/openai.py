@@ -22,20 +22,20 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import (
     get_from_dict_or_env,
     get_pydantic_field_names,
     pre_init,
 )
-from alibaba_ai_core.utils.pydantic import get_fields
-from alibaba_ai_core.utils.utils import _build_model_kwargs
+from aibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.utils.utils import _build_model_kwargs
 from pydantic import ConfigDict, Field, model_validator
 
 from aibaba_ai_community.utils.openai import is_openai_v1

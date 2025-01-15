@@ -1,8 +1,8 @@
 import logging
 from typing import Any, Callable, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
 from pydantic import model_validator
 
 logger = logging.getLogger(__name__)

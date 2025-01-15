@@ -1,9 +1,9 @@
 from typing import Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.example_selectors import BaseExampleSelector
-from alibaba_ai_core.prompts import FewShotPromptTemplate, PromptTemplate
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.example_selectors import BaseExampleSelector
+from aibaba_ai_core.prompts import FewShotPromptTemplate, PromptTemplate
+from aibaba_ai_core.tools import BaseTool
 from pydantic import BaseModel, ConfigDict, Field
 
 

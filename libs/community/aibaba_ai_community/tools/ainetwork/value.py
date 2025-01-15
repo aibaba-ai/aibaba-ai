@@ -2,7 +2,7 @@ import builtins
 import json
 from typing import Optional, Type, Union
 
-from alibaba_ai_core.callbacks import AsyncCallbackManagerForToolRun
+from aibaba_ai_core.callbacks import AsyncCallbackManagerForToolRun
 from pydantic import BaseModel, Field
 
 from aibaba_ai_community.tools.ainetwork.base import AINBaseTool, OperationType

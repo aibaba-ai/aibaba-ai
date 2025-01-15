@@ -2,7 +2,7 @@ import json
 import logging
 from typing import Any, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
 
 from aibaba_ai_community.tools.slack.base import SlackBaseTool
 

@@ -1,6 +1,6 @@
 from typing import Literal, Optional, Type, TypedDict
 
-from alibaba_ai_core.utils.json_schema import dereference_refs
+from aibaba_ai_core.utils.json_schema import dereference_refs
 from pydantic import BaseModel
 
 

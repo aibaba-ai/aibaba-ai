@@ -22,19 +22,19 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import LanguageModelInput
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models import LanguageModelInput
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.language_models.llms import create_base_retry_decorator
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.messages import (
     AIMessageChunk,
     BaseMessage,
     BaseMessageChunk,
@@ -44,10 +44,10 @@ from alibaba_ai_core.messages import (
     SystemMessageChunk,
     ToolMessageChunk,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.runnables import Runnable
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.runnables import Runnable
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.utils import (
     get_from_dict_or_env,
     get_pydantic_field_names,
     pre_init,

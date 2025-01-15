@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import ValidationError
 
 from aibaba_ai_community.utilities.tensorflow_datasets import TensorflowDatasets

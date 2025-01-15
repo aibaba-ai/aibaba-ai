@@ -1,9 +1,9 @@
 import uuid
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.vectorstores import VectorStore
 
 DEFAULT_DISTANCE_STRATEGY = "cosine"  # or "l2"
 DEFAULT_TiDB_VECTOR_TABLE_NAME = "langchain_vector"

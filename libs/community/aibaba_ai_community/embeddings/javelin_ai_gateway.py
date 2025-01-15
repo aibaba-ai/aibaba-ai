@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Iterator, List, Optional
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel
 
 

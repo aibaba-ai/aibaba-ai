@@ -4,7 +4,7 @@ import os
 import time
 from typing import Any, Callable, Dict, Iterator, Literal, Optional, Tuple, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseBlobParser
 from aibaba_ai_community.document_loaders.blob_loaders import Blob

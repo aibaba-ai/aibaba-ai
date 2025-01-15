@@ -19,14 +19,14 @@ from typing import (
 
 import aiohttp
 import requests
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
-from alibaba_ai_core.load.serializable import Serializable
-from alibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.language_models.llms import BaseLLM, create_base_retry_decorator
+from aibaba_ai_core.load.serializable import Serializable
+from aibaba_ai_core.outputs import Generation, GenerationChunk, LLMResult
+from aibaba_ai_core.utils import get_from_dict_or_env
 from pydantic import Field, model_validator
 
 from aibaba_ai_community.utilities.requests import Requests

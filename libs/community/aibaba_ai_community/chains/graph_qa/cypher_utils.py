@@ -2,7 +2,7 @@ import re
 from collections import namedtuple
 from typing import Any, Dict, List, Optional, Tuple
 
-from alibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core._api.deprecation import deprecated
 
 Schema = namedtuple("Schema", ["left_node", "relation", "right_node"])
 

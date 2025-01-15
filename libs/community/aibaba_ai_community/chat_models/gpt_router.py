@@ -18,19 +18,19 @@ from typing import (
     Union,
 )
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import (
+from aibaba_ai_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from alibaba_ai_core.language_models.llms import create_base_retry_decorator
-from alibaba_ai_core.messages import AIMessageChunk, BaseMessage, BaseMessageChunk
-from alibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.language_models.llms import create_base_retry_decorator
+from aibaba_ai_core.messages import AIMessageChunk, BaseMessage, BaseMessageChunk
+from aibaba_ai_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import BaseModel, Field, SecretStr, model_validator
 from typing_extensions import Self
 

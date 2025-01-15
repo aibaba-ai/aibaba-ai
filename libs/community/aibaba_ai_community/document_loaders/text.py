@@ -2,7 +2,7 @@ import logging
 from pathlib import Path
 from typing import Iterator, Optional, Union
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.helpers import detect_file_encodings

@@ -4,7 +4,7 @@ import logging
 from typing import Any, Dict, List, Literal, Optional, Type
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
 from pydantic import BaseModel, Field, model_validator, validator
 
 from aibaba_ai_community.tools.edenai.edenai_base_tool import EdenaiTool

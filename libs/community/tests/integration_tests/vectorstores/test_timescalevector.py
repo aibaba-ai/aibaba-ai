@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 from typing import List
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores.timescalevector import TimescaleVector
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

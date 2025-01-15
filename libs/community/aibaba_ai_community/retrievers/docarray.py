@@ -2,11 +2,11 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Union
 
 import numpy as np
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.utils.pydantic import get_fields
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.utils.pydantic import get_fields
 from pydantic import ConfigDict
 
 from aibaba_ai_community.vectorstores.utils import maximal_marginal_relevance

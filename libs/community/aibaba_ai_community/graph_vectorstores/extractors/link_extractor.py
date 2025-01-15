@@ -3,7 +3,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Generic, Iterable, Set, TypeVar
 
-from alibaba_ai_core._api import beta
+from aibaba_ai_core._api import beta
 
 from aibaba_ai_community.graph_vectorstores import Link
 

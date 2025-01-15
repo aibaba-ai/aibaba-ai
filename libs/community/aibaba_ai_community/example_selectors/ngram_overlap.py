@@ -7,8 +7,8 @@ https://aclanthology.org/P02-1040.pdf
 from typing import Any, Dict, List
 
 import numpy as np
-from alibaba_ai_core.example_selectors import BaseExampleSelector
-from alibaba_ai_core.prompts import PromptTemplate
+from aibaba_ai_core.example_selectors import BaseExampleSelector
+from aibaba_ai_core.prompts import PromptTemplate
 from pydantic import BaseModel, model_validator
 
 

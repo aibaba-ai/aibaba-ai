@@ -16,8 +16,8 @@ from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import aiohttp
 import numpy as np
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import from_env, secret_from_env
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import from_env, secret_from_env
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
 

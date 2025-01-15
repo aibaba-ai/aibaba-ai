@@ -2,8 +2,8 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 from typing import Literal, Union
 
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
 
 
 @beta()

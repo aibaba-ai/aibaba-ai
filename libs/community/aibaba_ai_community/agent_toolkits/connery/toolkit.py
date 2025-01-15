@@ -1,7 +1,7 @@
 from typing import Any, List
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import model_validator
 
 from aibaba_ai_community.tools.connery import ConneryService

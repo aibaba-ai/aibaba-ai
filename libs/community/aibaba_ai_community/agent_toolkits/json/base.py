@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import BaseCallbackManager
-from alibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import BaseCallbackManager
+from aibaba_ai_core.language_models import BaseLanguageModel
 
 from aibaba_ai_community.agent_toolkits.json.prompt import JSON_PREFIX, JSON_SUFFIX
 from aibaba_ai_community.agent_toolkits.json.toolkit import JsonToolkit

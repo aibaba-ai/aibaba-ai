@@ -2,8 +2,8 @@ import json
 import logging
 from typing import List, Optional
 
-from alibaba_ai_core.chat_history import BaseChatMessageHistory
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.chat_history import BaseChatMessageHistory
+from aibaba_ai_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

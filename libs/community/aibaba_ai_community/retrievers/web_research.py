@@ -4,16 +4,16 @@ from typing import Any, List, Optional
 
 from langchain.chains import LLMChain
 from langchain.chains.prompt_selector import ConditionalPromptSelector
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.language_models import BaseLLM
-from alibaba_ai_core.output_parsers import BaseOutputParser
-from alibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
-from alibaba_ai_core.retrievers import BaseRetriever
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.language_models import BaseLLM
+from aibaba_ai_core.output_parsers import BaseOutputParser
+from aibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
+from aibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.vectorstores import VectorStore
 from langchain_text_splitters import RecursiveCharacterTextSplitter, TextSplitter
 from pydantic import BaseModel, Field
 

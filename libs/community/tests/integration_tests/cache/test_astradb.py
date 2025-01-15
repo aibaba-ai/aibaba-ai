@@ -16,9 +16,9 @@ from typing import AsyncIterator, Iterator
 
 import pytest
 from langchain.globals import get_llm_cache, set_llm_cache
-from alibaba_ai_core.caches import BaseCache
-from alibaba_ai_core.language_models import LLM
-from alibaba_ai_core.outputs import Generation, LLMResult
+from aibaba_ai_core.caches import BaseCache
+from aibaba_ai_core.language_models import LLM
+from aibaba_ai_core.outputs import Generation, LLMResult
 
 from aibaba_ai_community.cache import AstraDBCache, AstraDBSemanticCache
 from aibaba_ai_community.utilities.astradb import SetupMode

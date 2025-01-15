@@ -5,8 +5,8 @@ from __future__ import annotations
 from typing import Any, Dict, Iterable, List, Literal, Optional, Sequence, Union
 
 import sqlalchemy
-from alibaba_ai_core._api import deprecated
-from alibaba_ai_core.utils import get_from_env
+from aibaba_ai_core._api import deprecated
+from aibaba_ai_core.utils import get_from_env
 from sqlalchemy import (
     MetaData,
     Table,

@@ -2,9 +2,9 @@ import time
 from typing import Any, Dict, List, Optional
 from uuid import UUID
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.outputs import LLMResult
-from alibaba_ai_core.utils import guard_import
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.utils import guard_import
 
 from aibaba_ai_community.callbacks.utils import import_pandas
 

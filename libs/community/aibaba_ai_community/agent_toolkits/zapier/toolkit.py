@@ -2,9 +2,9 @@
 
 from typing import List
 
-from alibaba_ai_core._api import warn_deprecated
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core._api import warn_deprecated
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 
 from aibaba_ai_community.tools.zapier.tool import ZapierNLARunAction
 from aibaba_ai_community.utilities.zapier import ZapierNLAWrapper

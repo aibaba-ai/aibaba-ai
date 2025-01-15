@@ -3,9 +3,9 @@ import logging
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import ConfigDict, SecretStr
 from requests import ConnectTimeout, ReadTimeout, RequestException
 from tenacity import (

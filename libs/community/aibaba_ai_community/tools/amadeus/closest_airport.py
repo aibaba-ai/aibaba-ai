@@ -1,7 +1,7 @@
 from typing import Any, Dict, Optional, Type
 
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.language_models import BaseLanguageModel
 from pydantic import BaseModel, Field, model_validator
 
 from aibaba_ai_community.chat_models import ChatOpenAI

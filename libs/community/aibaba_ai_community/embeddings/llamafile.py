@@ -2,7 +2,7 @@ import logging
 from typing import List, Optional
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 from pydantic import BaseModel
 
 logger = logging.getLogger(__name__)

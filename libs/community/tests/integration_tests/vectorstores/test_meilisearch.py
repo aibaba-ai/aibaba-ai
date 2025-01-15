@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Any, Dict, Generator
 
 import pytest
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.vectorstores import Meilisearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

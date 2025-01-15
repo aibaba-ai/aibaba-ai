@@ -3,12 +3,12 @@
 import datetime
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.messages import BaseMessage
-from alibaba_ai_core.outputs import ChatResult
+from aibaba_ai_core.messages import BaseMessage
+from aibaba_ai_core.outputs import ChatResult
 
 from aibaba_ai_community.chat_models import ChatOpenAI
 

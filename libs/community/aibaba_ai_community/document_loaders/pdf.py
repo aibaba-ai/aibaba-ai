@@ -21,8 +21,8 @@ from typing import (
 from urllib.parse import urlparse
 
 import requests
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 from aibaba_ai_community.document_loaders.blob_loaders import Blob

@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union, cast
 
 import numpy as np
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import guard_import
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import guard_import
+from aibaba_ai_core.vectorstores import VectorStore
 
 from aibaba_ai_community.docstore.base import AddableMixin, Docstore
 from aibaba_ai_community.docstore.in_memory import InMemoryDocstore

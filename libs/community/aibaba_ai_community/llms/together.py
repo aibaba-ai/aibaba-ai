@@ -4,13 +4,13 @@ import logging
 from typing import Any, Dict, List, Optional
 
 from aiohttp import ClientSession
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env
 from pydantic import ConfigDict, SecretStr, model_validator
 
 from aibaba_ai_community.utilities.requests import Requests

@@ -1,6 +1,6 @@
 from typing import List
 
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,

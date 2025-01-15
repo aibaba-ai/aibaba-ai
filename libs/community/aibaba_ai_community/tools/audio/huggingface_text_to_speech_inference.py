@@ -5,8 +5,8 @@ from datetime import datetime
 from typing import Callable, Literal, Optional
 
 import requests
-from alibaba_ai_core.callbacks import CallbackManagerForToolRun
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.callbacks import CallbackManagerForToolRun
+from aibaba_ai_core.tools import BaseTool
 from pydantic import SecretStr
 
 logger = logging.getLogger(__name__)

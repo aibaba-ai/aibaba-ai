@@ -2,9 +2,9 @@ import inspect
 from typing import Any, Dict, Iterator, Type
 
 from langchain.document_loaders.base import BaseBlobParser, BaseLoader
-from alibaba_ai_core._api import beta
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.documents.base import Blob
+from aibaba_ai_core._api import beta
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.documents.base import Blob
 
 
 @beta()

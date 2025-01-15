@@ -1,6 +1,6 @@
 import os
 
-from alibaba_ai_core.messages import AIMessage, HumanMessage
+from aibaba_ai_core.messages import AIMessage, HumanMessage
 
 from aibaba_ai_community.chat_message_histories import Neo4jChatMessageHistory
 from aibaba_ai_community.graphs import Neo4jGraph

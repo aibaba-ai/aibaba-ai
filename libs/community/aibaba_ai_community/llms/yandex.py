@@ -3,13 +3,13 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Optional, Sequence
 
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.load.serializable import Serializable
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.load.serializable import Serializable
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import SecretStr
 from tenacity import (
     before_sleep_log,

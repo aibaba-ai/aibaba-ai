@@ -2,8 +2,8 @@ import os
 from typing import Any, Dict, List, Optional
 from uuid import UUID
 
-from alibaba_ai_core.callbacks import BaseCallbackHandler
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.callbacks import BaseCallbackHandler
+from aibaba_ai_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -11,7 +11,7 @@ from alibaba_ai_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from alibaba_ai_core.outputs import LLMResult
+from aibaba_ai_core.outputs import LLMResult
 
 
 def _convert_message_to_dict(message: BaseMessage) -> dict:

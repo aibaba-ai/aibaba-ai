@@ -2,7 +2,7 @@ import asyncio
 import logging
 from typing import Dict, List, Optional, Sequence
 
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

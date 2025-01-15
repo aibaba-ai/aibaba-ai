@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Iterator
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.document_loaders.base import BaseLoader
 

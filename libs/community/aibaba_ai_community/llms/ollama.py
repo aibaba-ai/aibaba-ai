@@ -16,14 +16,14 @@ from typing import (
 
 import aiohttp
 import requests
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.language_models.llms import BaseLLM
-from alibaba_ai_core.outputs import GenerationChunk, LLMResult
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.language_models.llms import BaseLLM
+from aibaba_ai_core.outputs import GenerationChunk, LLMResult
 from pydantic import ConfigDict
 
 

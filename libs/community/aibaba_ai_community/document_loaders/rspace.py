@@ -1,8 +1,8 @@
 import os
 from typing import Any, Dict, Iterator, List, Optional, Union
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.utils import get_from_dict_or_env
 
 from aibaba_ai_community.document_loaders import PyPDFLoader
 from aibaba_ai_community.document_loaders.base import BaseLoader

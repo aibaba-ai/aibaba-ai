@@ -7,11 +7,11 @@ import warnings
 from typing import TYPE_CHECKING, Any, Callable, Iterable, List, Optional, Tuple, Union
 
 import numpy as np
-from alibaba_ai_core._api.deprecation import deprecated
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils.iter import batch_iterate
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core._api.deprecation import deprecated
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils.iter import batch_iterate
+from aibaba_ai_core.vectorstores import VectorStore
 from packaging import version
 
 from aibaba_ai_community.vectorstores.utils import (

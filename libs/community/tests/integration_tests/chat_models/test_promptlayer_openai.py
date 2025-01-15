@@ -1,9 +1,9 @@
 """Test PromptLayerChatOpenAI wrapper."""
 
 import pytest
-from alibaba_ai_core.callbacks import CallbackManager
-from alibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
+from aibaba_ai_core.callbacks import CallbackManager
+from aibaba_ai_core.messages import BaseMessage, HumanMessage, SystemMessage
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from aibaba_ai_community.chat_models.promptlayer_openai import PromptLayerChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

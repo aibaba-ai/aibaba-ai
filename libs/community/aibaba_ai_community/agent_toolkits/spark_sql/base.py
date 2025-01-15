@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import BaseCallbackManager, Callbacks
-from alibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import BaseCallbackManager, Callbacks
+from aibaba_ai_core.language_models import BaseLanguageModel
 
 from aibaba_ai_community.agent_toolkits.spark_sql.prompt import SQL_PREFIX, SQL_SUFFIX
 from aibaba_ai_community.agent_toolkits.spark_sql.toolkit import SparkSQLToolkit

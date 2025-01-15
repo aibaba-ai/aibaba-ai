@@ -4,17 +4,17 @@ from io import StringIO
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
 import yaml
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from alibaba_ai_core.language_models.chat_models import BaseChatModel
-from alibaba_ai_core.messages import (
+from aibaba_ai_core.language_models.chat_models import BaseChatModel
+from aibaba_ai_core.messages import (
     BaseMessage,
     HumanMessage,
     _message_from_dict,
     messages_to_dict,
 )
-from alibaba_ai_core.outputs import ChatGeneration, ChatResult
+from aibaba_ai_core.outputs import ChatGeneration, ChatResult
 from pydantic import Field
 
 from aibaba_ai_community.llms.utils import enforce_stop_tokens

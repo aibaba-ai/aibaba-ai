@@ -5,10 +5,10 @@ import logging
 import uuid
 from typing import Any, Iterable, List, Optional, Type
 
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import get_from_dict_or_env
-from alibaba_ai_core.vectorstores import VectorStore
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import get_from_dict_or_env
+from aibaba_ai_core.vectorstores import VectorStore
 
 logger = logging.getLogger(__name__)
 

@@ -2,7 +2,7 @@ from typing import List
 from unittest.mock import MagicMock
 
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.retrievers import AmazonKnowledgeBasesRetriever
 

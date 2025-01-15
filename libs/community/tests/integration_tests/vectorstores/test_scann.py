@@ -5,7 +5,7 @@ import tempfile
 
 import numpy as np
 import pytest
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 
 from aibaba_ai_community.docstore.in_memory import InMemoryDocstore
 from aibaba_ai_community.vectorstores.scann import (

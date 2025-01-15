@@ -14,10 +14,10 @@ from typing import Any, Dict, Generator, Iterator, List, Optional
 from urllib.parse import urlencode, urlparse, urlunparse
 from wsgiref.handlers import format_date_time
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.outputs import GenerationChunk
-from alibaba_ai_core.utils import get_from_dict_or_env, pre_init
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.outputs import GenerationChunk
+from aibaba_ai_core.utils import get_from_dict_or_env, pre_init
 from pydantic import Field
 
 logger = logging.getLogger(__name__)

@@ -1,9 +1,9 @@
 import logging
 from typing import Any, Dict, List, Mapping, Optional, cast
 
-from alibaba_ai_core.callbacks import CallbackManagerForLLMRun
-from alibaba_ai_core.language_models.llms import LLM
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.callbacks import CallbackManagerForLLMRun
+from aibaba_ai_core.language_models.llms import LLM
+from aibaba_ai_core.utils import (
     secret_from_env,
 )
 from pydantic import ConfigDict, Field, SecretStr, model_validator

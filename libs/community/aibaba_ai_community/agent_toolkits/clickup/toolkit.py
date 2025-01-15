@@ -1,7 +1,7 @@
 from typing import Dict, List
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 
 from aibaba_ai_community.tools.clickup.prompt import (
     CLICKUP_FOLDER_CREATE_PROMPT,

@@ -2,7 +2,7 @@ import json
 from typing import List
 
 import requests
-from alibaba_ai_core.documents import Document
+from aibaba_ai_core.documents import Document
 from pydantic import BaseModel, Field
 
 

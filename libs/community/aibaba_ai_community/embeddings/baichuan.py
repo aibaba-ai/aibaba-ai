@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
 import requests
-from alibaba_ai_core.embeddings import Embeddings
-from alibaba_ai_core.utils import (
+from aibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.utils import (
     secret_from_env,
 )
 from pydantic import (

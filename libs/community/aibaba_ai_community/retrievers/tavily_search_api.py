@@ -2,9 +2,9 @@ import os
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-from alibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
-from alibaba_ai_core.documents import Document
-from alibaba_ai_core.retrievers import BaseRetriever
+from aibaba_ai_core.callbacks import CallbackManagerForRetrieverRun
+from aibaba_ai_core.documents import Document
+from aibaba_ai_core.retrievers import BaseRetriever
 
 
 class SearchDepth(Enum):
@@ -52,9 +52,9 @@ class TavilySearchAPIRetriever(BaseRetriever):
     Use within a chain:
         .. code-block:: python
 
-            from alibaba_ai_core.output_parsers import StrOutputParser
-            from alibaba_ai_core.prompts import ChatPromptTemplate
-            from alibaba_ai_core.runnables import RunnablePassthrough
+            from aibaba_ai_core.output_parsers import StrOutputParser
+            from aibaba_ai_core.prompts import ChatPromptTemplate
+            from aibaba_ai_core.runnables import RunnablePassthrough
             from langchain_openai import ChatOpenAI
 
             prompt = ChatPromptTemplate.from_template(

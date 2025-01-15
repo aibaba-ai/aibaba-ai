@@ -5,14 +5,14 @@ from typing import Any, Dict, Optional
 
 from pydantic import BaseModel, Field, root_validator, model_validator, ConfigDict
 
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.callbacks import (
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from alibaba_ai_core.prompts import PromptTemplate
+from aibaba_ai_core.prompts import PromptTemplate
 from aibaba_ai_community.utilities.spark_sql import SparkSQL
-from alibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools import BaseTool
 from aibaba_ai_community.tools.spark_sql.prompt import QUERY_CHECKER
 
 

@@ -2,11 +2,11 @@
 
 from typing import List
 
-from alibaba_ai_core.messages import BaseMessage, HumanMessage
-from alibaba_ai_core.messages.ai import AIMessage
-from alibaba_ai_core.messages.tool import ToolMessage
-from alibaba_ai_core.outputs import ChatGeneration, LLMResult
-from alibaba_ai_core.runnables.base import RunnableBinding
+from aibaba_ai_core.messages import BaseMessage, HumanMessage
+from aibaba_ai_core.messages.ai import AIMessage
+from aibaba_ai_core.messages.tool import ToolMessage
+from aibaba_ai_core.outputs import ChatGeneration, LLMResult
+from aibaba_ai_core.runnables.base import RunnableBinding
 from pydantic import BaseModel
 
 from aibaba_ai_community.chat_models.deepinfra import ChatDeepInfra

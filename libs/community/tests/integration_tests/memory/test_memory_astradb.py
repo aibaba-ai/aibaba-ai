@@ -3,7 +3,7 @@ from typing import AsyncIterable, Iterable
 
 import pytest
 from langchain.memory import ConversationBufferMemory
-from alibaba_ai_core.messages import AIMessage, HumanMessage
+from aibaba_ai_core.messages import AIMessage, HumanMessage
 
 from aibaba_ai_community.chat_message_histories.astradb import (
     AstraDBChatMessageHistory,

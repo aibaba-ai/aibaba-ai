@@ -1,6 +1,6 @@
 from typing import Any, Dict
 
-from alibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
+from aibaba_ai_core.utils import convert_to_secret_str, get_from_dict_or_env, pre_init
 from pydantic import Field, SecretStr
 
 from aibaba_ai_community.llms.openai import BaseOpenAI

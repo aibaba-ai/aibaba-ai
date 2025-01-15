@@ -3,7 +3,7 @@
 import math
 from typing import List
 
-from alibaba_ai_core.embeddings import Embeddings
+from aibaba_ai_core.embeddings import Embeddings
 
 fake_texts = ["foo", "bar", "baz"]
 

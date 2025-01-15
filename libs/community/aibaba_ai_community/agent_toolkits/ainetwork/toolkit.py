@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Literal, Optional
 
-from alibaba_ai_core.tools import BaseTool
-from alibaba_ai_core.tools.base import BaseToolkit
+from aibaba_ai_core.tools import BaseTool
+from aibaba_ai_core.tools.base import BaseToolkit
 from pydantic import ConfigDict, model_validator
 
 from aibaba_ai_community.tools.ainetwork.app import AINAppOps

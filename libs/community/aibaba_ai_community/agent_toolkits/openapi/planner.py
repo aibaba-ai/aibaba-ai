@@ -6,10 +6,10 @@ from functools import partial
 from typing import Any, Callable, Dict, List, Literal, Optional, Sequence, cast
 
 import yaml
-from alibaba_ai_core.callbacks import BaseCallbackManager
-from alibaba_ai_core.language_models import BaseLanguageModel
-from alibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
-from alibaba_ai_core.tools import BaseTool, Tool
+from aibaba_ai_core.callbacks import BaseCallbackManager
+from aibaba_ai_core.language_models import BaseLanguageModel
+from aibaba_ai_core.prompts import BasePromptTemplate, PromptTemplate
+from aibaba_ai_core.tools import BaseTool, Tool
 from pydantic import Field
 
 from aibaba_ai_community.agent_toolkits.openapi.planner_prompt import (
