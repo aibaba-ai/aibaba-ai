@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aibaba_ai_cli"
-version = "0.0.35"
+version = "0.0.37"
 description = "CLI for interacting with Aibaba AI"
 authors = ["Erick Friis <erick@langchain.dev>"]
 readme = "README.md"
